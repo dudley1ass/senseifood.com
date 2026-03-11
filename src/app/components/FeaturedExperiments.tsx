@@ -12,12 +12,12 @@ export function FeaturedExperiments() {
       url: '/articles/why-cookies-spread'
     },
     {
-      title: 'Brown Sugar vs White Sugar',
-      description: 'Compare how different sugars affect cookie texture, spread, flavor, and moisture retention.',
-      category: 'Cookie Science',
+      title: 'Why Bread Rises',
+      description: 'Understand the biological and chemical processes that turn dense dough into light, airy bread.',
+      category: 'Bread Science',
       readTime: '6 min read',
-      color: 'from-orange-500 to-amber-700',
-      url: '/articles/brown-sugar-vs-white-sugar'
+      color: 'from-amber-500 to-yellow-600',
+      url: '/articles/why-bread-rises'
     },
     {
       title: 'Why Ice Cream Gets Icy',
@@ -26,30 +26,6 @@ export function FeaturedExperiments() {
       readTime: '6 min read',
       color: 'from-cyan-500 to-blue-600',
       url: '/articles/why-ice-cream-gets-icy'
-    },
-    {
-      title: 'Why Coffee Tastes Bitter',
-      description: 'Understand what causes bitter coffee and how to fix it through better brewing technique.',
-      category: 'Coffee Science',
-      readTime: '5 min read',
-      color: 'from-stone-600 to-amber-800',
-      url: '/articles/why-coffee-tastes-bitter'
-    },
-    {
-      title: 'Coffee Extraction Science',
-      description: 'Master extraction ratios, water temperature, and grind size for perfect coffee brewing.',
-      category: 'Coffee Science',
-      readTime: '7 min read',
-      color: 'from-amber-700 to-stone-800',
-      url: '/articles/coffee-extraction-science'
-    },
-    {
-      title: 'Why Cakes Collapse',
-      description: 'Understand the science behind cake structure and how to prevent sinking or collapsing.',
-      category: 'Cake Science',
-      readTime: '7 min read',
-      color: 'from-pink-500 to-rose-600',
-      url: '/articles/why-cakes-collapse'
     }
   ];
 
@@ -61,7 +37,7 @@ export function FeaturedExperiments() {
             <BookOpen className="w-4 h-4" />
             <span className="text-sm">Learn the Science</span>
           </div>
-          <h2 className="text-4xl mb-4 bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent">Food Science Articles</h2>
+          <h2 className="text-4xl mb-4 bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent">Featured Articles</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Dive deep into the chemistry and physics behind great food
           </p>
@@ -99,8 +75,16 @@ export function FeaturedExperiments() {
         </div>
 
         <div className="text-center mt-12">
-          <p className="text-sm text-muted-foreground">
-            More articles coming soon! Check back regularly for new food science content.
+          <Link
+            to="/articles"
+            className="inline-flex items-center gap-3 bg-gradient-to-r from-cyan-600 to-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
+          >
+            <BookOpen className="w-5 h-5" />
+            See All Articles
+            <ArrowRight className="w-5 h-5" />
+          </Link>
+          <p className="text-sm text-muted-foreground mt-4">
+            13 articles covering cookies, cakes, bread, pies, ice cream & coffee science
           </p>
         </div>
       </div>

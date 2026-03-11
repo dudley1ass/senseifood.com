@@ -1,5 +1,6 @@
 import { Github, Twitter, Mail } from 'lucide-react';
 import { useState } from 'react';
+import { Link } from 'react-router';
 import { ContactFormModal } from './ContactFormModal';
 
 export function Footer() {
@@ -101,9 +102,9 @@ export function Footer() {
                   </button>
                 </li>
                 <li>
-                  <a href="/articles/why-cookies-spread" className="text-sm text-white/70 hover:text-white transition-colors">
+                  <Link to="/articles" className="text-sm text-white/70 hover:text-white transition-colors">
                     Articles
-                  </a>
+                  </Link>
                 </li>
               </ul>
               
