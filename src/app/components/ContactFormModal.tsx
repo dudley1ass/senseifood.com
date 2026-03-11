@@ -3,7 +3,7 @@ import { X, Send, Check } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 
 // Initialize EmailJS with public key
-emailjs.init('148oPsMY-2W3BkVQJA');
+emailjs.init('14gxP6MY-2W3BXKQA');
 
 interface ContactFormModalProps {
   isOpen: boolean;
@@ -28,17 +28,23 @@ export function ContactFormModal({ isOpen, onClose }: ContactFormModalProps) {
     setSubmitStatus('idle');
 
     try {
-      // EmailJS configuration
-      await emailjs.send(
-        'service_va0nk2l', // EmailJS Service ID (CORRECTED!)
+      // EmailJS configuration - matching your template variables
+      const templateParams = {
+        name: formData.name,
+        email: formData.email,
+        subject: formData.subject,
+        message: formData.message
+      };
+
+      console.log('Sending email with params:', templateParams);
+
+      const response = await emailjs.send(
+        'service_va0nk2l', // EmailJS Service ID
         'template_16j3y85', // EmailJS Template ID
-        {
-          name: formData.name,
-          email: formData.email,
-          subject: formData.subject,
-          message: formData.message
-        }
+        templateParams
       );
+
+      console.log('EmailJS response:', response);
 
       setSubmitStatus('success');
       setFormData({ name: '', email: '', subject: '', message: '' });
@@ -50,6 +56,7 @@ export function ContactFormModal({ isOpen, onClose }: ContactFormModalProps) {
       }, 2000);
     } catch (error) {
       console.error('Email send error:', error);
+      console.error('Error details:', JSON.stringify(error, null, 2));
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
