@@ -20,6 +20,10 @@ pages.forEach((page) => {
 xml += `
 </urlset>`;
 
-fs.writeFileSync("./public/sitemap.xml", xml);
+if (!fs.existsSync("./dist")) {
+  fs.mkdirSync("./dist");
+}
+
+fs.writeFileSync("./dist/sitemap.xml", xml);
 
 console.log("Sitemap generated.");
