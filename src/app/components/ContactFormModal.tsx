@@ -2,6 +2,9 @@ import { useState } from 'react';
 import { X, Send, Check } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 
+// Initialize EmailJS with public key
+emailjs.init('148oPsMY-2W3BkVQJA');
+
 interface ContactFormModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -34,8 +37,7 @@ export function ContactFormModal({ isOpen, onClose }: ContactFormModalProps) {
           email: formData.email,
           subject: formData.subject,
           message: formData.message
-        },
-        '148oPsMY-2W3BkVQJA' // EmailJS Public Key
+        }
       );
 
       setSubmitStatus('success');

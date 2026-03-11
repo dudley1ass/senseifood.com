@@ -29,27 +29,27 @@ export function Footer() {
               <h4 className="mb-4 text-white/90">Tools</h4>
               <ul className="space-y-3">
                 <li>
-                  <a href="https://cookiessensei.com" target="_blank" rel="noopener noreferrer" className="text-sm text-white/70 hover:text-white transition-colors">
+                  <a href="https://cookiesensei.senseifood.com" target="_blank" rel="noopener noreferrer" className="text-sm text-white/70 hover:text-white transition-colors">
                     CookieSensei
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.cakesensei.com/" target="_blank" rel="noopener noreferrer" className="text-sm text-white/70 hover:text-white transition-colors">
+                  <a href="https://cakesensei.senseifood.com" target="_blank" rel="noopener noreferrer" className="text-sm text-white/70 hover:text-white transition-colors">
                     CakeSensei
                   </a>
                 </li>
                 <li>
-                  <a href="https://piesensei.com" target="_blank" rel="noopener noreferrer" className="text-sm text-white/70 hover:text-white transition-colors">
+                  <a href="https://piesensei.senseifood.com" target="_blank" rel="noopener noreferrer" className="text-sm text-white/70 hover:text-white transition-colors">
                     PieSensei
                   </a>
                 </li>
                 <li>
-                  <a href="https://icecreamsensei.com" target="_blank" rel="noopener noreferrer" className="text-sm text-white/70 hover:text-white transition-colors">
+                  <a href="https://icecreamsensei.senseifood.com" target="_blank" rel="noopener noreferrer" className="text-sm text-white/70 hover:text-white transition-colors">
                     IceCreamSensei
                   </a>
                 </li>
                 <li>
-                  <a href="https://beansensei.com" target="_blank" rel="noopener noreferrer" className="text-sm text-white/70 hover:text-white transition-colors">
+                  <a href="https://beansensei.senseifood.com" target="_blank" rel="noopener noreferrer" className="text-sm text-white/70 hover:text-white transition-colors">
                     BeanSensei
                   </a>
                 </li>
@@ -71,13 +71,13 @@ export function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-sm text-white/70 hover:text-white transition-colors">
-                    Food Science 101
+                  <a href="#tools" className="text-sm text-white/70 hover:text-white transition-colors">
+                    Our Tools
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-sm text-white/70 hover:text-white transition-colors">
-                    Recipe Engineering
+                  <a href="#what-can-i-make" className="text-sm text-white/70 hover:text-white transition-colors">
+                    What Can I Make?
                   </a>
                 </li>
               </ul>
@@ -88,18 +88,21 @@ export function Footer() {
               <h4 className="mb-4 text-white/90">Connect</h4>
               <ul className="space-y-3 mb-6">
                 <li>
-                  <a href="#" className="text-sm text-white/70 hover:text-white transition-colors">
+                  <a href="#about" className="text-sm text-white/70 hover:text-white transition-colors">
                     About Us
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-sm text-white/70 hover:text-white transition-colors">
+                  <button 
+                    onClick={() => setIsContactModalOpen(true)}
+                    className="text-sm text-white/70 hover:text-white transition-colors text-left"
+                  >
                     Contact
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a href="#" className="text-sm text-white/70 hover:text-white transition-colors">
-                    Privacy Policy
+                  <a href="/articles/why-cookies-spread" className="text-sm text-white/70 hover:text-white transition-colors">
+                    Articles
                   </a>
                 </li>
               </ul>

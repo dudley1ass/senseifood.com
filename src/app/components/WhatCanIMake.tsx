@@ -2,7 +2,7 @@ import { ChefHat, Package, ArrowRight, Sparkles } from 'lucide-react';
 
 export function WhatCanIMake() {
   return (
-    <section className="py-24 px-6 bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50">
+    <section id="what-can-i-make" className="py-24 px-6 bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Visual */}
