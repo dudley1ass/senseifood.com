@@ -26,10 +26,9 @@ export function ContactFormModal({ isOpen, onClose }: ContactFormModalProps) {
 
     try {
       // EmailJS configuration
-      // You'll need to replace these with your actual EmailJS credentials
       await emailjs.send(
-        'YOUR_SERVICE_ID', // Replace with your EmailJS Service ID
-        'YOUR_TEMPLATE_ID', // Replace with your EmailJS Template ID
+        'service_x10qjcm', // EmailJS Service ID
+        'template_16j3y85', // EmailJS Template ID
         {
           from_name: formData.name,
           from_email: formData.email,
@@ -37,7 +36,7 @@ export function ContactFormModal({ isOpen, onClose }: ContactFormModalProps) {
           message: formData.message,
           to_email: 'senseiselector@gmail.com'
         },
-        'YOUR_PUBLIC_KEY' // Replace with your EmailJS Public Key
+        '148oPsMY-2W3BkVQJA' // EmailJS Public Key
       );
 
       setSubmitStatus('success');
