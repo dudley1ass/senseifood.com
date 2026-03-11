@@ -27,14 +27,13 @@ export function ContactFormModal({ isOpen, onClose }: ContactFormModalProps) {
     try {
       // EmailJS configuration
       await emailjs.send(
-        'service_x10qjcm', // EmailJS Service ID
+        'service_va0nk2l', // EmailJS Service ID (CORRECTED!)
         'template_16j3y85', // EmailJS Template ID
         {
-          from_name: formData.name,
-          from_email: formData.email,
+          name: formData.name,
+          email: formData.email,
           subject: formData.subject,
-          message: formData.message,
-          to_email: 'senseiselector@gmail.com'
+          message: formData.message
         },
         '148oPsMY-2W3BkVQJA' // EmailJS Public Key
       );
