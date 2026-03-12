@@ -9,7 +9,7 @@ export function FeaturedExperiments() {
       category: 'Cookie Science',
       readTime: '5 min read',
       color: 'from-amber-500 to-orange-600',
-      url: '/articles/why-cookies-spread'
+      url: '/cookie-science/why-cookies-spread'
     },
     {
       title: 'Why Bread Rises',
@@ -17,7 +17,7 @@ export function FeaturedExperiments() {
       category: 'Bread Science',
       readTime: '6 min read',
       color: 'from-amber-500 to-yellow-600',
-      url: '/articles/why-bread-rises'
+      url: '/bread-science/why-bread-rises'
     },
     {
       title: 'Why Ice Cream Gets Icy',
@@ -25,7 +25,7 @@ export function FeaturedExperiments() {
       category: 'Ice Cream Science',
       readTime: '6 min read',
       color: 'from-cyan-500 to-blue-600',
-      url: '/articles/why-ice-cream-gets-icy'
+      url: '/ice-cream-science/why-ice-cream-gets-icy'
     }
   ];
 
@@ -84,7 +84,7 @@ export function FeaturedExperiments() {
             <ArrowRight className="w-5 h-5" />
           </Link>
           <p className="text-sm text-muted-foreground mt-4">
-            13 articles covering cookies, cakes, bread, pies, ice cream & coffee science
+            29 articles covering cookies, cakes, bread, pies, ice cream & coffee science
           </p>
         </div>
       </div>

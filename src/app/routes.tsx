@@ -23,19 +23,31 @@ export const router = createBrowserRouter([
     children: [
       { index: true, Component: Home },
       { path: "articles", Component: Articles },
-      { path: "articles/why-cookies-spread", Component: WhyCookiesSpread },
-      { path: "articles/why-ice-cream-gets-icy", Component: WhyIceCreamGetsIcy },
-      { path: "articles/coffee-extraction-science", Component: CoffeeExtractionScience },
-      { path: "articles/brown-sugar-vs-white-sugar", Component: BrownSugarVsWhiteSugar },
-      { path: "articles/why-coffee-tastes-bitter", Component: WhyCoffeeTastesBitter },
-      { path: "articles/why-cakes-collapse", Component: WhyCakesCollapse },
-      { path: "articles/why-bread-rises", Component: WhyBreadRises },
-      { path: "articles/how-yeast-works", Component: HowYeastWorks },
-      { path: "articles/why-cakes-dome", Component: WhyCakesDome },
-      { path: "articles/why-cakes-sink", Component: WhyCakesSink },
-      { path: "articles/why-cookies-turn-hard", Component: WhyCookiesHard },
-      { path: "articles/why-coffee-tastes-sour", Component: WhyCoffeeSour },
-      { path: "articles/why-pie-crust-is-flaky", Component: WhyPieCrustFlaky },
+      
+      // Cookie Science
+      { path: "cookie-science/why-cookies-spread", Component: WhyCookiesSpread },
+      { path: "cookie-science/brown-sugar-vs-white-sugar", Component: BrownSugarVsWhiteSugar },
+      { path: "cookie-science/why-cookies-turn-hard", Component: WhyCookiesHard },
+      
+      // Bread Science
+      { path: "bread-science/why-bread-rises", Component: WhyBreadRises },
+      { path: "bread-science/how-yeast-works", Component: HowYeastWorks },
+      
+      // Cake Science
+      { path: "cake-science/why-cakes-dome", Component: WhyCakesDome },
+      { path: "cake-science/why-cakes-collapse", Component: WhyCakesCollapse },
+      { path: "cake-science/why-cakes-sink", Component: WhyCakesSink },
+      
+      // Pie Science
+      { path: "pie-science/why-pie-crust-is-flaky", Component: WhyPieCrustFlaky },
+      
+      // Ice Cream Science
+      { path: "ice-cream-science/why-ice-cream-gets-icy", Component: WhyIceCreamGetsIcy },
+      
+      // Coffee Science
+      { path: "coffee-science/coffee-extraction-science", Component: CoffeeExtractionScience },
+      { path: "coffee-science/why-coffee-tastes-bitter", Component: WhyCoffeeTastesBitter },
+      { path: "coffee-science/why-coffee-tastes-sour", Component: WhyCoffeeSour },
     ],
   },
 ]);

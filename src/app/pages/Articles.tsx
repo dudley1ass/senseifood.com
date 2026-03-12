@@ -16,7 +16,7 @@ export default function Articles() {
       category: 'Cookie Science',
       readTime: '5 min read',
       color: 'from-amber-500 to-orange-600',
-      url: '/articles/why-cookies-spread'
+      url: '/cookie-science/why-cookies-spread'
     },
     {
       title: 'Brown Sugar vs White Sugar',
@@ -24,7 +24,7 @@ export default function Articles() {
       category: 'Cookie Science',
       readTime: '6 min read',
       color: 'from-orange-500 to-amber-700',
-      url: '/articles/brown-sugar-vs-white-sugar'
+      url: '/cookie-science/brown-sugar-vs-white-sugar'
     },
     {
       title: 'Why Cookies Turn Hard',
@@ -32,7 +32,47 @@ export default function Articles() {
       category: 'Cookie Science',
       readTime: '6 min read',
       color: 'from-amber-600 to-orange-700',
-      url: '/articles/why-cookies-turn-hard'
+      url: '/cookie-science/why-cookies-turn-hard'
+    },
+    {
+      title: 'Why Cookies Are Chewy',
+      description: 'Discover the perfect balance of moisture, fat, and sugar that creates irresistibly chewy cookies.',
+      category: 'Cookie Science',
+      readTime: '6 min read',
+      color: 'from-amber-500 to-orange-500',
+      url: '/cookie-science/why-cookies-are-chewy'
+    },
+    {
+      title: 'Why Cookies Get Crispy',
+      description: 'Learn how low moisture content, high sugar, and proper baking create perfectly crispy cookies.',
+      category: 'Cookie Science',
+      readTime: '5 min read',
+      color: 'from-orange-600 to-amber-600',
+      url: '/cookie-science/why-cookies-get-crispy'
+    },
+    {
+      title: 'Why Cookies Flatten',
+      description: 'Understand the science behind cookie spreading and how to control thickness and shape.',
+      category: 'Cookie Science',
+      readTime: '6 min read',
+      color: 'from-amber-400 to-orange-500',
+      url: '/cookie-science/why-cookies-flatten'
+    },
+    {
+      title: 'Why Cookies Spread Too Much',
+      description: 'Fix over-spreading cookies by understanding butter temperature, flour ratios, and chilling techniques.',
+      category: 'Cookie Science',
+      readTime: '6 min read',
+      color: 'from-orange-500 to-red-500',
+      url: '/cookie-science/why-cookies-spread-too-much'
+    },
+    {
+      title: "Why Cookies Don't Spread",
+      description: 'Discover what prevents cookies from spreading and how to achieve the perfect flat, wide cookie.',
+      category: 'Cookie Science',
+      readTime: '6 min read',
+      color: 'from-amber-600 to-orange-800',
+      url: '/cookie-science/why-cookies-dont-spread'
     },
     // Bread Science
     {
@@ -41,7 +81,7 @@ export default function Articles() {
       category: 'Bread Science',
       readTime: '6 min read',
       color: 'from-amber-500 to-yellow-600',
-      url: '/articles/why-bread-rises'
+      url: '/bread-science/why-bread-rises'
     },
     {
       title: 'How Yeast Works in Baking',
@@ -49,7 +89,7 @@ export default function Articles() {
       category: 'Bread Science',
       readTime: '5 min read',
       color: 'from-green-500 to-emerald-600',
-      url: '/articles/how-yeast-works'
+      url: '/bread-science/how-yeast-works'
     },
     // Cake Science
     {
@@ -58,7 +98,7 @@ export default function Articles() {
       category: 'Cake Science',
       readTime: '5 min read',
       color: 'from-pink-500 to-purple-600',
-      url: '/articles/why-cakes-dome'
+      url: '/cake-science/why-cakes-dome'
     },
     {
       title: 'Why Cakes Collapse',
@@ -66,7 +106,7 @@ export default function Articles() {
       category: 'Cake Science',
       readTime: '7 min read',
       color: 'from-pink-500 to-rose-600',
-      url: '/articles/why-cakes-collapse'
+      url: '/cake-science/why-cakes-collapse'
     },
     {
       title: 'Why Cakes Sink in the Middle',
@@ -74,7 +114,39 @@ export default function Articles() {
       category: 'Cake Science',
       readTime: '7 min read',
       color: 'from-pink-600 to-red-600',
-      url: '/articles/why-cakes-sink'
+      url: '/cake-science/why-cakes-sink'
+    },
+    {
+      title: 'Why Cakes Crack on Top',
+      description: 'Discover why cakes develop cracks and how to prevent them with proper temperature and moisture control.',
+      category: 'Cake Science',
+      readTime: '6 min read',
+      color: 'from-pink-500 to-rose-500',
+      url: '/cake-science/why-cakes-crack-on-top'
+    },
+    {
+      title: 'Why Cakes Are Dense',
+      description: 'Learn what causes dense, heavy cakes and how to achieve light, fluffy texture every time.',
+      category: 'Cake Science',
+      readTime: '7 min read',
+      color: 'from-rose-500 to-pink-600',
+      url: '/cake-science/why-cakes-are-dense'
+    },
+    {
+      title: 'Why Cakes Stick to the Pan',
+      description: 'Understand the science of pan preparation and how to release cakes perfectly every time.',
+      category: 'Cake Science',
+      readTime: '5 min read',
+      color: 'from-pink-400 to-rose-500',
+      url: '/cake-science/why-cakes-stick-to-pan'
+    },
+    {
+      title: 'Why Cakes Dry Out',
+      description: 'Master the moisture balance and storage techniques that keep cakes tender and moist for days.',
+      category: 'Cake Science',
+      readTime: '6 min read',
+      color: 'from-rose-600 to-red-500',
+      url: '/cake-science/why-cakes-dry-out'
     },
     // Pie Science (NEW!)
     {
@@ -83,7 +155,15 @@ export default function Articles() {
       category: 'Pie Science',
       readTime: '7 min read',
       color: 'from-orange-500 to-amber-600',
-      url: '/articles/why-pie-crust-is-flaky'
+      url: '/pie-science/why-pie-crust-is-flaky'
+    },
+    {
+      title: 'Why Pie Crust Shrinks',
+      description: 'Learn what causes pie crust to shrink during baking and how to prevent it with proper technique.',
+      category: 'Pie Science',
+      readTime: '6 min read',
+      color: 'from-amber-600 to-orange-700',
+      url: '/pie-science/why-pie-crust-shrinks'
     },
     // Ice Cream Science
     {
@@ -92,7 +172,31 @@ export default function Articles() {
       category: 'Ice Cream Science',
       readTime: '6 min read',
       color: 'from-cyan-500 to-blue-600',
-      url: '/articles/why-ice-cream-gets-icy'
+      url: '/ice-cream-science/why-ice-cream-gets-icy'
+    },
+    {
+      title: 'Why Ice Cream Melts Fast',
+      description: 'Discover the science behind melting rates and how to keep ice cream frozen longer.',
+      category: 'Ice Cream Science',
+      readTime: '5 min read',
+      color: 'from-blue-400 to-cyan-500',
+      url: '/ice-cream-science/why-ice-cream-melts-fast'
+    },
+    {
+      title: 'Why Ice Cream Is Creamy',
+      description: 'Learn how fat content, air incorporation, and stabilizers create smooth, creamy texture.',
+      category: 'Ice Cream Science',
+      readTime: '6 min read',
+      color: 'from-cyan-400 to-blue-500',
+      url: '/ice-cream-science/why-ice-cream-is-creamy'
+    },
+    {
+      title: 'Why Ice Cream Gets Freezer Burn',
+      description: 'Understand freezer burn formation and how to prevent ice crystals from ruining your ice cream.',
+      category: 'Ice Cream Science',
+      readTime: '5 min read',
+      color: 'from-blue-500 to-cyan-600',
+      url: '/ice-cream-science/why-ice-cream-gets-freezer-burn'
     },
     // Coffee Science
     {
@@ -101,7 +205,7 @@ export default function Articles() {
       category: 'Coffee Science',
       readTime: '7 min read',
       color: 'from-amber-700 to-stone-800',
-      url: '/articles/coffee-extraction-science'
+      url: '/coffee-science/coffee-extraction-science'
     },
     {
       title: 'Why Coffee Tastes Bitter',
@@ -109,7 +213,7 @@ export default function Articles() {
       category: 'Coffee Science',
       readTime: '5 min read',
       color: 'from-stone-600 to-amber-800',
-      url: '/articles/why-coffee-tastes-bitter'
+      url: '/coffee-science/why-coffee-tastes-bitter'
     },
     {
       title: 'Why Coffee Tastes Sour',
@@ -117,7 +221,31 @@ export default function Articles() {
       category: 'Coffee Science',
       readTime: '6 min read',
       color: 'from-amber-600 to-yellow-700',
-      url: '/articles/why-coffee-tastes-sour'
+      url: '/coffee-science/why-coffee-tastes-sour'
+    },
+    {
+      title: 'Why Coffee Tastes Weak',
+      description: 'Fix weak, watery coffee by mastering brew ratios, extraction time, and water temperature.',
+      category: 'Coffee Science',
+      readTime: '5 min read',
+      color: 'from-stone-500 to-amber-600',
+      url: '/coffee-science/why-coffee-tastes-weak'
+    },
+    {
+      title: 'Why Coffee Tastes Burnt',
+      description: 'Learn what causes burnt-tasting coffee and how to prevent it through proper roasting and brewing.',
+      category: 'Coffee Science',
+      readTime: '6 min read',
+      color: 'from-stone-700 to-amber-900',
+      url: '/coffee-science/why-coffee-tastes-burnt'
+    },
+    {
+      title: 'Why Coffee Tastes Watery',
+      description: 'Discover how to fix thin, watery coffee with better grind size, brewing time, and coffee-to-water ratios.',
+      category: 'Coffee Science',
+      readTime: '5 min read',
+      color: 'from-amber-500 to-stone-700',
+      url: '/coffee-science/why-coffee-tastes-watery'
     }
   ];
 

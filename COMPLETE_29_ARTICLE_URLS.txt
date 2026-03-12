@@ -1,0 +1,182 @@
+🎯 SenseiFood - COMPLETE 29 ARTICLES - SEO-OPTIMIZED URLS
+================================================================
+
+✅ ALL 5 MISSING ARTICLES ADDED!
+✅ URL STRUCTURE: /[category-science]/[article-slug]
+
+TOTAL: 29 ARTICLES (was 24, added 5 new)
+
+================================================================
+ALL 29 ARTICLE URLS FOR GOOGLE INDEXING
+================================================================
+
+🍪 COOKIE SCIENCE (8 articles - added 1 new):
+1. https://senseifood.com/cookie-science/why-cookies-spread
+2. https://senseifood.com/cookie-science/brown-sugar-vs-white-sugar
+3. https://senseifood.com/cookie-science/why-cookies-turn-hard
+4. https://senseifood.com/cookie-science/why-cookies-are-chewy
+5. https://senseifood.com/cookie-science/why-cookies-get-crispy
+6. https://senseifood.com/cookie-science/why-cookies-flatten
+7. https://senseifood.com/cookie-science/why-cookies-spread-too-much
+8. https://senseifood.com/cookie-science/why-cookies-dont-spread 🆕
+
+🍞 BREAD SCIENCE (2 articles):
+9. https://senseifood.com/bread-science/why-bread-rises
+10. https://senseifood.com/bread-science/how-yeast-works
+
+🎂 CAKE SCIENCE (7 articles):
+11. https://senseifood.com/cake-science/why-cakes-dome
+12. https://senseifood.com/cake-science/why-cakes-collapse
+13. https://senseifood.com/cake-science/why-cakes-sink
+14. https://senseifood.com/cake-science/why-cakes-crack-on-top
+15. https://senseifood.com/cake-science/why-cakes-are-dense
+16. https://senseifood.com/cake-science/why-cakes-stick-to-pan
+17. https://senseifood.com/cake-science/why-cakes-dry-out
+
+🥧 PIE SCIENCE (2 articles - added 1 new):
+18. https://senseifood.com/pie-science/why-pie-crust-is-flaky
+19. https://senseifood.com/pie-science/why-pie-crust-shrinks 🆕
+
+🍦 ICE CREAM SCIENCE (4 articles - added 3 new):
+20. https://senseifood.com/ice-cream-science/why-ice-cream-gets-icy
+21. https://senseifood.com/ice-cream-science/why-ice-cream-melts-fast 🆕
+22. https://senseifood.com/ice-cream-science/why-ice-cream-is-creamy 🆕
+23. https://senseifood.com/ice-cream-science/why-ice-cream-gets-freezer-burn 🆕
+
+☕ COFFEE SCIENCE (6 articles):
+24. https://senseifood.com/coffee-science/coffee-extraction-science
+25. https://senseifood.com/coffee-science/why-coffee-tastes-bitter
+26. https://senseifood.com/coffee-science/why-coffee-tastes-sour
+27. https://senseifood.com/coffee-science/why-coffee-tastes-weak
+28. https://senseifood.com/coffee-science/why-coffee-tastes-burnt
+29. https://senseifood.com/coffee-science/why-coffee-tastes-watery
+
+📋 MAIN PAGES:
+- https://senseifood.com/ (Homepage)
+- https://senseifood.com/articles (Article Hub)
+
+================================================================
+TOTAL: 29 Articles + 2 Main Pages = 31 URLs
+================================================================
+
+🔥 HIGH-PRIORITY URLs (Submit to Google First):
+================================================================
+
+TIER 1 - MASSIVE TRAFFIC POTENTIAL:
+1. https://senseifood.com/cake-science/why-cakes-sink (🔥 HUGE)
+2. https://senseifood.com/coffee-science/why-coffee-tastes-sour (🔥 HUGE)
+3. https://senseifood.com/cookie-science/why-cookies-turn-hard (🔥 HIGH)
+4. https://senseifood.com/cake-science/why-cakes-crack-on-top (🔥 HIGH)
+5. https://senseifood.com/cake-science/why-cakes-are-dense (🔥 HIGH)
+
+TIER 2 - HIGH TRAFFIC POTENTIAL:
+6. https://senseifood.com/cookie-science/why-cookies-are-chewy (HIGH)
+7. https://senseifood.com/coffee-science/why-coffee-tastes-burnt (MED-HIGH)
+8. https://senseifood.com/cake-science/why-cakes-stick-to-pan (MEDIUM)
+9. https://senseifood.com/cake-science/why-cakes-dry-out (MEDIUM)
+10. https://senseifood.com/ice-cream-science/why-ice-cream-melts-fast 🆕 (MEDIUM)
+
+TIER 3 - SOLID TRAFFIC POTENTIAL:
+11. https://senseifood.com/cookie-science/why-cookies-spread (MEDIUM)
+12. https://senseifood.com/cookie-science/why-cookies-dont-spread 🆕 (MEDIUM)
+13. https://senseifood.com/pie-science/why-pie-crust-shrinks 🆕 (MEDIUM)
+14. https://senseifood.com/ice-cream-science/why-ice-cream-is-creamy 🆕 (MEDIUM)
+15. https://senseifood.com/ice-cream-science/why-ice-cream-gets-freezer-burn 🆕 (MEDIUM)
+
+================================================================
+✅ WHAT'S COMPLETE:
+================================================================
+
+1. ✅ All 29 articles added to /articles page
+2. ✅ SEO-optimized URL structure (/[category-science]/*)
+3. ✅ All existing routes updated with new URLs
+4. ✅ FeaturedExperiments component updated (shows 29 articles)
+5. ✅ Article cards showing in proper categories
+6. ✅ Search and filter functionality working
+
+================================================================
+⚠️ STILL NEEDS IMPLEMENTATION:
+================================================================
+
+ARTICLE DETAIL PAGES (16 pages need to be created):
+
+Cookie Science (5 pages):
+- /src/app/pages/WhyCookiesChewy.tsx ✓ (template created)
+- /src/app/pages/WhyCookiesGetCrispy.tsx
+- /src/app/pages/WhyCookiesFlatten.tsx
+- /src/app/pages/WhyCookiesSpreadTooMuch.tsx
+- /src/app/pages/WhyCookiesDontSpread.tsx 🆕
+
+Cake Science (4 pages):
+- /src/app/pages/WhyCakesCrackOnTop.tsx
+- /src/app/pages/WhyCakesAreDense.tsx
+- /src/app/pages/WhyCakesStickToPan.tsx
+- /src/app/pages/WhyCakesDryOut.tsx
+
+Pie Science (1 page):
+- /src/app/pages/WhyPieCrustShrinks.tsx 🆕
+
+Ice Cream Science (3 pages):
+- /src/app/pages/WhyIceCreamMeltsFast.tsx 🆕
+- /src/app/pages/WhyIceCreamIsCreamy.tsx 🆕
+- /src/app/pages/WhyIceCreamGetsFreezerBurn.tsx 🆕
+
+Coffee Science (3 pages):
+- /src/app/pages/WhyCoffeeTastesWeak.tsx
+- /src/app/pages/WhyCoffeeTastesBurnt.tsx
+- /src/app/pages/WhyCoffeeTastesWatery.tsx
+
+ALSO NEEDS:
+- Add 16 new imports to routes.tsx
+- Add 16 new route paths to routes.tsx
+
+================================================================
+📊 CATEGORY BREAKDOWN:
+================================================================
+
+Cookie Science: 8 articles (largest category!)
+Cake Science: 7 articles
+Coffee Science: 6 articles
+Ice Cream Science: 4 articles (grew from 1 to 4! 🍦)
+Pie Science: 2 articles (doubled!)
+Bread Science: 2 articles
+
+================================================================
+🎯 SEO STRATEGY NOTES:
+================================================================
+
+✅ STRONG CATEGORIES:
+- Cookie Science (8 articles) - Build authority hub
+- Cake Science (7 articles) - Build authority hub
+- Coffee Science (6 articles) - Build authority hub
+
+📈 GROWTH CATEGORIES:
+- Ice Cream Science (4 articles) - Trending up!
+- Pie Science (2 articles) - Room to grow
+- Bread Science (2 articles) - Opportunity for expansion
+
+💡 FUTURE OPPORTUNITIES:
+Consider creating category landing pages:
+- /cookie-science/ → Cookie Science hub (8 articles)
+- /cake-science/ → Cake Science hub (7 articles)
+- /coffee-science/ → Coffee Science hub (6 articles)
+
+These hubs would:
+1. Improve internal linking structure
+2. Create topical authority
+3. Capture category-level search traffic
+4. Better organize content for users
+
+================================================================
+📝 NEXT STEPS:
+================================================================
+
+1. Create remaining 16 article detail pages
+2. Update routes.tsx with new imports and paths
+3. Test all article links
+4. Submit all 29 URLs to Google Search Console
+5. Create sitemap.xml (optional but recommended)
+6. Monitor Google Analytics for traffic patterns
+7. Consider creating category landing pages
+
+================================================================

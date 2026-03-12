@@ -1,0 +1,53 @@
+SenseiFood Article URLs for Google Search Console Indexing
+==============================================================
+
+Submit these URLs to Google Search Console for indexing:
+
+Cookie Science (3 articles):
+https://senseifood.com/articles/why-cookies-spread
+https://senseifood.com/articles/brown-sugar-vs-white-sugar
+https://senseifood.com/articles/why-cookies-turn-hard
+
+Bread Science (2 articles):
+https://senseifood.com/articles/why-bread-rises
+https://senseifood.com/articles/how-yeast-works
+
+Cake Science (3 articles):
+https://senseifood.com/articles/why-cakes-dome
+https://senseifood.com/articles/why-cakes-collapse
+https://senseifood.com/articles/why-cakes-sink
+
+Pie Science (1 article):
+https://senseifood.com/articles/why-pie-crust-is-flaky
+
+Ice Cream Science (1 article):
+https://senseifood.com/articles/why-ice-cream-gets-icy
+
+Coffee Science (3 articles):
+https://senseifood.com/articles/coffee-extraction-science
+https://senseifood.com/articles/why-coffee-tastes-bitter
+https://senseifood.com/articles/why-coffee-tastes-sour
+
+Additional Pages:
+https://senseifood.com/
+https://senseifood.com/articles
+
+==============================================================
+TOTAL: 13 Articles + 2 Main Pages = 15 URLs
+==============================================================
+
+To submit to Google Search Console:
+1. Go to https://search.google.com/search-console
+2. Select your senseifood.com property
+3. Go to "URL Inspection" in the left sidebar
+4. Paste each URL and click "Request Indexing"
+
+OR use the Bulk URL Submission method:
+1. Create a sitemap.xml (recommended)
+2. Submit sitemap to Google Search Console
+
+High-Priority URLs (High Search Volume):
+- https://senseifood.com/articles/why-cakes-sink (huge traffic potential)
+- https://senseifood.com/articles/why-cookies-turn-hard (high search volume)
+- https://senseifood.com/articles/why-coffee-tastes-sour (huge volume)
+- https://senseifood.com/articles/why-pie-crust-is-flaky (introducing Pie Science)
