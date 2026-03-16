@@ -1,0 +1,64 @@
+import { ArrowLeft } from 'lucide-react';
+import { Link } from 'react-router';
+import { Navigation } from '../components/Navigation';
+import { Footer } from '../components/Footer';
+
+export default function WhyCookiesBrown() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50">
+      <Navigation />
+      <article className="max-w-4xl mx-auto px-6 py-16">
+        <Link to="/" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors">
+          <ArrowLeft className="w-4 h-4" />Back to Home
+        </Link>
+        <header className="mb-12">
+          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-orange-600 text-white px-4 py-2 rounded-full text-sm mb-6">Cookie Science</div>
+          <h1 className="text-5xl md:text-6xl mb-6 bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">Why Cookies Brown</h1>
+          <p className="text-xl text-muted-foreground">Understand the Maillard reaction and caramelization — the two chemical processes responsible for golden-brown color and rich cookie flavor.</p>
+          <div className="flex items-center gap-4 mt-6 text-sm text-muted-foreground"><span>6 min read</span><span>•</span><span>Intermediate</span></div>
+        </header>
+        <div className="w-full h-80 bg-gradient-to-br from-amber-200 to-orange-400 rounded-3xl mb-12 flex items-center justify-center shadow-2xl"><span className="text-8xl">🟤</span></div>
+        <div className="prose prose-lg max-w-none">
+          <p className="text-xl leading-relaxed text-foreground/80 mb-8">Cookie browning isn't just cosmetic — it's the creation of hundreds of new flavor compounds that make cookies taste complex, nutty, and rich. Two distinct chemical reactions drive it, and understanding both lets you control exactly how brown your cookies get.</p>
+
+          <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">The Two Browning Reactions</h2>
+
+          <div className="grid md:grid-cols-2 gap-6 my-10">
+            <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200">
+              <h3 className="text-xl mb-3">🔬 Maillard Reaction</h3>
+              <p className="text-sm text-muted-foreground mb-3">Proteins + reducing sugars react at 280–330°F. Creates hundreds of flavor compounds: nutty, toasty, caramel notes. Responsible for the brown color on cookie tops and edges.</p>
+              <div className="bg-amber-50 rounded-lg p-3 text-xs"><strong>Boosted by:</strong> Brown sugar, milk proteins (butter/milk), higher temp, longer bake time</div>
+            </div>
+            <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-orange-200">
+              <h3 className="text-xl mb-3">🍬 Caramelization</h3>
+              <p className="text-sm text-muted-foreground mb-3">Sugars alone break down at 320–375°F. Creates butterscotch and toffee-like compounds. Primarily responsible for browning on the cookie base and edges where sugar concentration is highest.</p>
+              <div className="bg-orange-50 rounded-lg p-3 text-xs"><strong>Boosted by:</strong> More sugar, white sugar (lower melting point), higher temp, thinner cookies</div>
+            </div>
+          </div>
+
+          <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">What Controls Browning</h2>
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-amber-200 my-8">
+            <div className="space-y-4">
+              <div className="border-l-4 border-amber-500 pl-6 py-2"><h4 className="font-medium mb-1">Sugar type</h4><p className="text-sm text-muted-foreground">Brown sugar browns faster than white (molasses accelerates Maillard). Honey and corn syrup also promote heavy browning.</p></div>
+              <div className="border-l-4 border-orange-500 pl-6 py-2"><h4 className="font-medium mb-1">Baking temperature</h4><p className="text-sm text-muted-foreground">Higher temp = faster, darker browning. 375°F gives well-browned edges. 325°F gives pale, even color.</p></div>
+              <div className="border-l-4 border-yellow-500 pl-6 py-2"><h4 className="font-medium mb-1">Baking soda vs. baking powder</h4><p className="text-sm text-muted-foreground">Baking soda raises pH, making the dough more alkaline — which dramatically accelerates the Maillard reaction and produces deeper browning.</p></div>
+              <div className="border-l-4 border-amber-700 pl-6 py-2"><h4 className="font-medium mb-1">Cookie thickness</h4><p className="text-sm text-muted-foreground">Thin cookies brown more evenly and quickly. Thick cookies brown on the outside while staying pale in the center.</p></div>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl p-6 my-8 border-l-4 border-cyan-500">
+            <h4 className="text-lg mb-2 text-cyan-800">🔬 Science Note: Why Brown Butter Works</h4>
+            <p className="text-sm text-muted-foreground leading-relaxed">Browning butter before adding it to dough pre-triggers the Maillard reaction in the fat itself, creating nutty pyrazines and furanones. These compounds layer on top of whatever browning happens in the oven, giving cookies a noticeably deeper, more complex flavor than regular butter provides.</p>
+          </div>
+
+          <div className="bg-gradient-to-r from-amber-500 to-orange-600 text-white rounded-2xl p-8 my-12">
+            <h2 className="text-3xl mb-4">Control Your Cookie Color</h2>
+            <p className="text-lg text-white/90 mb-6">Use CookieSensei to predict browning based on your sugar ratio and bake temp.</p>
+            <a href="https://cookiesensei.senseifood.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-white text-amber-600 px-6 py-3 rounded-lg hover:shadow-xl transition-all hover:scale-105">Open CookieSensei<ArrowLeft className="w-4 h-4 rotate-180" /></a>
+          </div>
+        </div>
+      </article>
+      <Footer />
+    </div>
+  );
+}

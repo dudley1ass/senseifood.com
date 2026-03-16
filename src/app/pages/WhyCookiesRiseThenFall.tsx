@@ -1,0 +1,50 @@
+import { ArrowLeft } from 'lucide-react';
+import { Link } from 'react-router';
+import { Navigation } from '../components/Navigation';
+import { Footer } from '../components/Footer';
+
+export default function WhyCookiesRiseThenFall() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-orange-50 via-amber-50 to-yellow-50">
+      <Navigation />
+      <article className="max-w-4xl mx-auto px-6 py-16">
+        <Link to="/" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Home</Link>
+        <header className="mb-12">
+          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-amber-600 text-white px-4 py-2 rounded-full text-sm mb-6">Cookie Science</div>
+          <h1 className="text-5xl md:text-6xl mb-6 bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent">Why Cookies Rise Then Fall</h1>
+          <p className="text-xl text-muted-foreground">Understand why cookies puff up beautifully in the oven then collapse flat as they cool — and what it means for structure.</p>
+          <div className="flex items-center gap-4 mt-6 text-sm text-muted-foreground"><span>5 min read</span><span>•</span><span>Intermediate</span></div>
+        </header>
+        <div className="w-full h-80 bg-gradient-to-br from-orange-200 to-amber-300 rounded-3xl mb-12 flex items-center justify-center shadow-2xl"><span className="text-8xl">📉</span></div>
+        <div className="prose prose-lg max-w-none">
+          <p className="text-xl leading-relaxed text-foreground/80 mb-8">Cookies that puff up during baking then deflate as they cool are experiencing a structural collapse — the air and gas that inflated them escapes before the cookie's protein and starch network is strong enough to hold the shape.</p>
+          <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent">The Rise and Fall Cycle</h2>
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-orange-200 my-8">
+            <div className="space-y-3">
+              <div className="flex items-start gap-4"><span className="text-2xl">⬆️</span><div><h4 className="font-medium">Rise Phase</h4><p className="text-sm text-muted-foreground">Heat expands air bubbles and activates leavening (CO₂). Cookie puffs up. Fat is still liquid, supporting the expanded structure temporarily.</p></div></div>
+              <div className="flex items-start gap-4"><span className="text-2xl">⬇️</span><div><h4 className="font-medium">Fall Phase</h4><p className="text-sm text-muted-foreground">Oven door opens or cookies leave the oven. CO₂ escapes. If structure hasn't set (too much fat, underbaked, too much leavening), cookie collapses under its own weight.</p></div></div>
+            </div>
+          </div>
+          <div className="space-y-6 my-8">
+            <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-orange-200">
+              <h3 className="text-xl mb-3">🧂 Too Much Leavening</h3>
+              <p className="text-sm text-muted-foreground mb-3">Excess baking powder creates more gas than the structure can hold. The overinflated cookie collapses as soon as CO₂ escapes on cooling.</p>
+              <div className="bg-green-50 rounded-lg p-3 text-xs text-green-800"><strong>Fix:</strong> Reduce baking powder — use exact recipe amounts with level measures.</div>
+            </div>
+            <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200">
+              <h3 className="text-xl mb-3">🧈 Too Much Fat</h3>
+              <p className="text-sm text-muted-foreground mb-3">Excess butter creates a weak structure. The fat-to-flour ratio is out of balance — there's not enough gluten and starch to hold the risen shape once gas leaves.</p>
+              <div className="bg-green-50 rounded-lg p-3 text-xs text-green-800"><strong>Fix:</strong> Measure butter precisely by weight. If collapse persists, add 2 tablespoons of flour to strengthen the structure.</div>
+            </div>
+          </div>
+          <div className="bg-gradient-to-r from-orange-500 to-amber-600 text-white rounded-2xl p-8 my-12">
+            <h2 className="text-3xl mb-4">Build Structural Integrity</h2>
+            <p className="text-lg text-white/90 mb-6">Use CookieSensei to balance your recipe ratios.</p>
+            <a href="https://cookiesensei.senseifood.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-white text-orange-600 px-6 py-3 rounded-lg hover:shadow-xl transition-all hover:scale-105">Open CookieSensei<ArrowLeft className="w-4 h-4 rotate-180" /></a>
+          </div>
+        </div>
+      </article>
+      <Footer />
+    </div>
+  );
+}
