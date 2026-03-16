@@ -9,7 +9,7 @@ export default function Articles() {
   const [selectedCategory, setSelectedCategory] = useState('All');
 
   const articles = [
-    // Cookie Science
+    // Cookie Science (20 articles)
     {
       title: 'Why Cookies Spread',
       description: 'Discover how butter temperature, sugar ratios, and leavening agents control cookie spread and texture.',
@@ -74,7 +74,103 @@ export default function Articles() {
       color: 'from-amber-600 to-orange-800',
       url: '/cookie-science/why-cookies-dont-spread'
     },
-    // Bread Science
+    {
+      title: 'Why Cookies Burn on the Bottom',
+      description: 'Discover why cookie bottoms scorch while the tops stay pale — and the simple pan and temperature fixes that solve it.',
+      category: 'Cookie Science',
+      readTime: '5 min read',
+      color: 'from-orange-600 to-red-600',
+      url: '/cookie-science/why-cookies-burn-on-the-bottom'
+    },
+    {
+      title: 'Why Cookies Crack on Top',
+      description: 'Learn why some cookies develop surface cracks during baking and when those cracks are intentional versus a problem.',
+      category: 'Cookie Science',
+      readTime: '5 min read',
+      color: 'from-amber-500 to-orange-600',
+      url: '/cookie-science/why-cookies-crack-on-top'
+    },
+    {
+      title: 'Why Cookies Turn Cakey',
+      description: 'Find out why your cookies bake up soft and cake-like instead of dense and chewy — and which ingredient swaps fix it.',
+      category: 'Cookie Science',
+      readTime: '6 min read',
+      color: 'from-pink-500 to-amber-500',
+      url: '/cookie-science/why-cookies-turn-cakey'
+    },
+    {
+      title: 'Why Cookies Brown',
+      description: 'Understand the Maillard reaction and caramelization — the two chemical processes responsible for golden-brown cookie color and rich flavor.',
+      category: 'Cookie Science',
+      readTime: '6 min read',
+      color: 'from-amber-600 to-orange-700',
+      url: '/cookie-science/why-cookies-brown'
+    },
+    {
+      title: 'Why Cookies Stick to the Pan',
+      description: 'Learn why cookies bond to baking sheets and how parchment paper, pan choice, and cooling time prevent tearing.',
+      category: 'Cookie Science',
+      readTime: '5 min read',
+      color: 'from-red-500 to-orange-500',
+      url: '/cookie-science/why-cookies-stick-to-pan'
+    },
+    {
+      title: 'Why Cookies Spread Unevenly',
+      description: 'Discover why cookies spread into lopsided ovals instead of round circles — and how to get perfectly symmetrical results.',
+      category: 'Cookie Science',
+      readTime: '5 min read',
+      color: 'from-yellow-500 to-amber-600',
+      url: '/cookie-science/why-cookies-spread-unevenly'
+    },
+    {
+      title: 'Why Cookies Turn Oily',
+      description: 'Find out why cookies come out greasy and leave an oily residue — and how fat balance and mixing technique fix it.',
+      category: 'Cookie Science',
+      readTime: '5 min read',
+      color: 'from-amber-500 to-orange-500',
+      url: '/cookie-science/why-cookies-turn-oily'
+    },
+    {
+      title: 'Why Cookies Taste Bitter',
+      description: 'Learn what causes an unpleasant bitter aftertaste in cookies — from excess leavening to burnt sugars and cocoa issues.',
+      category: 'Cookie Science',
+      readTime: '5 min read',
+      color: 'from-stone-600 to-amber-700',
+      url: '/cookie-science/why-cookies-taste-bitter'
+    },
+    {
+      title: 'Why Cookies Get Hard After Baking',
+      description: 'Understand why cookies that came out perfectly soft turn hard and rock-like the next day — and how to keep them soft for longer.',
+      category: 'Cookie Science',
+      readTime: '5 min read',
+      color: 'from-amber-600 to-stone-700',
+      url: '/cookie-science/why-cookies-get-hard-after-baking'
+    },
+    {
+      title: 'Why Cookies Rise Then Fall',
+      description: 'Understand why cookies puff up beautifully in the oven then collapse flat as they cool — and what it means for structure.',
+      category: 'Cookie Science',
+      readTime: '5 min read',
+      color: 'from-orange-500 to-amber-600',
+      url: '/cookie-science/why-cookies-rise-then-fall'
+    },
+    {
+      title: 'Why Cookies Bake Faster on the Edges',
+      description: 'Learn the physics behind crispy edges and soft centers — and how to use this to your advantage.',
+      category: 'Cookie Science',
+      readTime: '5 min read',
+      color: 'from-yellow-500 to-amber-600',
+      url: '/cookie-science/why-cookies-bake-faster-on-edges'
+    },
+    {
+      title: 'Why Cookies Change Color',
+      description: 'Understand what drives color changes in cookies — from pale gold to deep brown — and how to control it precisely.',
+      category: 'Cookie Science',
+      readTime: '5 min read',
+      color: 'from-amber-500 to-red-500',
+      url: '/cookie-science/why-cookies-change-color'
+    },
+    // Bread Science (2 articles)
     {
       title: 'Why Bread Rises',
       description: 'Understand the biological and chemical processes that turn dense dough into light, airy bread.',
@@ -91,7 +187,7 @@ export default function Articles() {
       color: 'from-green-500 to-emerald-600',
       url: '/bread-science/how-yeast-works'
     },
-    // Cake Science
+    // Cake Science (17 articles)
     {
       title: 'Why Cakes Dome in the Middle',
       description: 'Understand why cakes rise higher in the center and learn techniques to achieve perfectly flat tops.',
@@ -148,7 +244,87 @@ export default function Articles() {
       color: 'from-rose-600 to-red-500',
       url: '/cake-science/why-cakes-dry-out'
     },
-    // Pie Science (NEW!)
+    {
+      title: 'Why Cakes Rise',
+      description: 'Understand the three forces that lift a cake — leavening gases, steam, and trapped air — and how they work together.',
+      category: 'Cake Science',
+      readTime: '7 min read',
+      color: 'from-pink-500 to-purple-600',
+      url: '/cake-science/why-cakes-rise'
+    },
+    {
+      title: 'Why Cakes Brown',
+      description: 'Understand the Maillard reaction and caramelization in cakes — why the crust forms and how to control color depth.',
+      category: 'Cake Science',
+      readTime: '6 min read',
+      color: 'from-amber-500 to-rose-500',
+      url: '/cake-science/why-cakes-brown'
+    },
+    {
+      title: 'Why Cakes Stick to Paper Liners',
+      description: 'Learn why cupcakes and cakes cling to paper liners and how to get clean, easy release every time.',
+      category: 'Cake Science',
+      readTime: '5 min read',
+      color: 'from-rose-500 to-orange-500',
+      url: '/cake-science/why-cakes-stick-to-paper-liners'
+    },
+    {
+      title: 'Why Cakes Have Large Holes',
+      description: 'Discover why cakes develop large tunnels and air pockets in the crumb — and how mixing technique prevents them.',
+      category: 'Cake Science',
+      readTime: '5 min read',
+      color: 'from-purple-500 to-pink-600',
+      url: '/cake-science/why-cakes-have-large-holes'
+    },
+    {
+      title: 'Why Cakes Fall After Baking',
+      description: 'Discover why a perfectly risen cake collapses as it cools — and the structural fixes that keep it tall.',
+      category: 'Cake Science',
+      readTime: '5 min read',
+      color: 'from-rose-500 to-red-600',
+      url: '/cake-science/why-cakes-fall-after-baking'
+    },
+    {
+      title: 'Why Cakes Taste Dry',
+      description: 'Understand what strips moisture from cake crumb and how to bake moist, tender cakes every time.',
+      category: 'Cake Science',
+      readTime: '5 min read',
+      color: 'from-amber-500 to-orange-600',
+      url: '/cake-science/why-cakes-taste-dry'
+    },
+    {
+      title: 'Why Cakes Turn Gummy',
+      description: 'Find out why cakes develop a dense, gummy, sticky crumb — and the starch science behind fixing it.',
+      category: 'Cake Science',
+      readTime: '5 min read',
+      color: 'from-pink-500 to-purple-600',
+      url: '/cake-science/why-cakes-turn-gummy'
+    },
+    {
+      title: 'Why Cakes Rise Unevenly',
+      description: 'Learn why one side of your cake is higher than the other — and how pan prep, oven calibration, and mixing fix it.',
+      category: 'Cake Science',
+      readTime: '5 min read',
+      color: 'from-teal-500 to-green-600',
+      url: '/cake-science/why-cakes-rise-unevenly'
+    },
+    {
+      title: 'Why Cakes Turn Rubbery',
+      description: 'Discover why cakes develop a tough, rubbery texture instead of a tender crumb — and how mixing and fat control prevent it.',
+      category: 'Cake Science',
+      readTime: '5 min read',
+      color: 'from-indigo-500 to-purple-600',
+      url: '/cake-science/why-cakes-turn-rubbery'
+    },
+    {
+      title: 'Why Cakes Stick to Cooling Racks',
+      description: 'Find out why cakes bond to wire cooling racks and how to prevent tearing when transferring warm cakes.',
+      category: 'Cake Science',
+      readTime: '5 min read',
+      color: 'from-orange-500 to-red-500',
+      url: '/cake-science/why-cakes-stick-to-cooling-rack'
+    },
+    // Pie Science (2 articles)
     {
       title: 'Why Pie Crust Is Flaky',
       description: 'Discover the science behind creating layers of buttery, flaky pie crust that shatters perfectly.',
@@ -165,7 +341,7 @@ export default function Articles() {
       color: 'from-amber-600 to-orange-700',
       url: '/pie-science/why-pie-crust-shrinks'
     },
-    // Ice Cream Science
+    // Ice Cream Science (4 articles)
     {
       title: 'Why Ice Cream Gets Icy',
       description: 'Learn about ice crystal formation, fat content, and stabilizers that prevent icy texture.',
@@ -176,7 +352,7 @@ export default function Articles() {
     },
     {
       title: 'Why Ice Cream Melts Fast',
-      description: 'Discover the science behind melting rates and how to keep ice cream frozen longer.',
+      description: 'Discover the science behind melting rates and how fat content, overrun, and stabilizers affect how long your scoop holds its shape.',
       category: 'Ice Cream Science',
       readTime: '5 min read',
       color: 'from-blue-400 to-cyan-500',
@@ -192,27 +368,27 @@ export default function Articles() {
     },
     {
       title: 'Why Ice Cream Gets Freezer Burn',
-      description: 'Understand freezer burn formation and how to prevent ice crystals from ruining your ice cream.',
+      description: 'Learn what causes those icy, grayish patches on your ice cream and how to prevent freezer burn for good.',
       category: 'Ice Cream Science',
       readTime: '5 min read',
-      color: 'from-blue-500 to-cyan-600',
+      color: 'from-slate-500 to-blue-600',
       url: '/ice-cream-science/why-ice-cream-gets-freezer-burn'
     },
-    // Coffee Science
+    // Coffee Science (18 articles)
     {
       title: 'Coffee Extraction Science',
-      description: 'Master extraction ratios, water temperature, and grind size for perfect coffee brewing.',
+      description: 'Master the chemistry of coffee extraction and learn how to control flavor by adjusting grind, temperature, and time.',
       category: 'Coffee Science',
-      readTime: '7 min read',
-      color: 'from-amber-700 to-stone-800',
+      readTime: '8 min read',
+      color: 'from-stone-600 to-amber-800',
       url: '/coffee-science/coffee-extraction-science'
     },
     {
       title: 'Why Coffee Tastes Bitter',
-      description: 'Understand what causes bitter coffee and how to fix it through better brewing technique.',
+      description: 'Understand over-extraction and how grind size, water temperature, and brew time create bitter coffee.',
       category: 'Coffee Science',
-      readTime: '5 min read',
-      color: 'from-stone-600 to-amber-800',
+      readTime: '6 min read',
+      color: 'from-stone-700 to-amber-900',
       url: '/coffee-science/why-coffee-tastes-bitter'
     },
     {
@@ -246,16 +422,112 @@ export default function Articles() {
       readTime: '5 min read',
       color: 'from-amber-500 to-stone-700',
       url: '/coffee-science/why-coffee-tastes-watery'
-    }
+    },
+    {
+      title: 'Why Coffee Smells Good',
+      description: 'Discover the volatile aromatic compounds released during roasting and brewing that make coffee one of the most complex scents in the world.',
+      category: 'Coffee Science',
+      readTime: '6 min read',
+      color: 'from-stone-600 to-amber-700',
+      url: '/coffee-science/why-coffee-smells-good'
+    },
+    {
+      title: 'Why Coffee Loses Flavor',
+      description: 'Understand why coffee goes stale so quickly after roasting and how to store beans to preserve peak flavor.',
+      category: 'Coffee Science',
+      readTime: '6 min read',
+      color: 'from-amber-600 to-stone-700',
+      url: '/coffee-science/why-coffee-loses-flavor'
+    },
+    {
+      title: 'Why Coffee Tastes Acidic',
+      description: 'Learn the difference between pleasant brightness and harsh acidity — and which organic acids in coffee contribute to each.',
+      category: 'Coffee Science',
+      readTime: '7 min read',
+      color: 'from-yellow-600 to-amber-700',
+      url: '/coffee-science/why-coffee-tastes-acidic'
+    },
+    {
+      title: 'Why Coffee Makes Crema',
+      description: 'Discover the physics and chemistry behind espresso crema — what it is, why it forms, and what it tells you about shot quality.',
+      category: 'Coffee Science',
+      readTime: '6 min read',
+      color: 'from-amber-600 to-orange-700',
+      url: '/coffee-science/why-coffee-makes-crema'
+    },
+    {
+      title: 'Why Coffee Gets Oily',
+      description: 'Learn why dark roast coffee beans develop a shiny, oily surface — and what that oil means for flavor and freshness.',
+      category: 'Coffee Science',
+      readTime: '5 min read',
+      color: 'from-stone-700 to-amber-800',
+      url: '/coffee-science/why-coffee-gets-oily'
+    },
+    {
+      title: 'Why Coffee Grind Size Matters',
+      description: 'Understand how grind size controls extraction rate and flavor balance — the single most impactful variable in coffee brewing.',
+      category: 'Coffee Science',
+      readTime: '7 min read',
+      color: 'from-amber-500 to-stone-600',
+      url: '/coffee-science/why-coffee-grind-size-matters'
+    },
+    {
+      title: 'Why Coffee Brewing Time Matters',
+      description: 'Learn how contact time between water and grounds controls which flavor compounds extract — and every brew method\'s ideal window.',
+      category: 'Coffee Science',
+      readTime: '6 min read',
+      color: 'from-stone-600 to-amber-700',
+      url: '/coffee-science/why-coffee-brewing-time-matters'
+    },
+    {
+      title: 'Why Coffee Tastes Different Cold',
+      description: 'Discover the sensory science behind why coffee flavor changes as it cools — and why cold brew tastes nothing like chilled hot coffee.',
+      category: 'Coffee Science',
+      readTime: '6 min read',
+      color: 'from-blue-500 to-cyan-600',
+      url: '/coffee-science/why-coffee-tastes-different-cold'
+    },
+    {
+      title: 'Why Coffee Oxidizes',
+      description: 'Learn how oxygen degrades coffee\'s aromatic compounds, creating stale and rancid flavors — and how to minimize oxidation at every stage.',
+      category: 'Coffee Science',
+      readTime: '6 min read',
+      color: 'from-stone-600 to-red-700',
+      url: '/coffee-science/why-coffee-oxidizes'
+    },
+    {
+      title: 'Why Coffee Beans Expand When Roasted',
+      description: 'Discover the physics and chemistry behind coffee bean expansion during roasting — including the first and second crack phenomena.',
+      category: 'Coffee Science',
+      readTime: '6 min read',
+      color: 'from-amber-600 to-orange-700',
+      url: '/coffee-science/why-coffee-beans-expand-when-roasted'
+    },
+    {
+      title: 'Why Coffee Tastes Salty',
+      description: 'Understand why some coffees have a noticeable salty edge — and why a tiny bit of salt can actually improve your cup.',
+      category: 'Coffee Science',
+      readTime: '5 min read',
+      color: 'from-blue-600 to-stone-700',
+      url: '/coffee-science/why-coffee-tastes-salty'
+    },
+    {
+      title: 'Why Coffee Stales',
+      description: 'Understand the complete science of coffee staling — the chemical processes that transform vibrant fresh coffee into flat, cardboard-tasting brew.',
+      category: 'Coffee Science',
+      readTime: '7 min read',
+      color: 'from-stone-700 to-amber-800',
+      url: '/coffee-science/why-coffee-stales'
+    },
   ];
 
   const categories = ['All', 'Cookie Science', 'Bread Science', 'Cake Science', 'Pie Science', 'Ice Cream Science', 'Coffee Science'];
 
   const filteredArticles = articles.filter(article => {
-    const matchesCategory = selectedCategory === 'All' || article.category === selectedCategory;
     const matchesSearch = article.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                         article.description.toLowerCase().includes(searchQuery.toLowerCase());
-    return matchesCategory && matchesSearch;
+      article.description.toLowerCase().includes(searchQuery.toLowerCase());
+    const matchesCategory = selectedCategory === 'All' || article.category === selectedCategory;
+    return matchesSearch && matchesCategory;
   });
 
   const articlesByCategory = categories
@@ -374,6 +646,9 @@ export default function Articles() {
                     {category === 'Coffee Science' && '☕'}
                   </span>
                   {category}
+                  <span className="text-lg text-muted-foreground font-normal">
+                    ({categoryArticles.length} articles)
+                  </span>
                 </h2>
                 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -399,15 +674,6 @@ export default function Articles() {
                     </Link>
                   ))}
                 </div>
-
-                {/* Coming Soon placeholder for categories with few articles */}
-                {categoryArticles.length < 3 && (
-                  <div className="mt-6 p-6 bg-white/50 rounded-2xl border-2 border-dashed border-gray-300">
-                    <p className="text-muted-foreground text-center">
-                      📚 More {category} articles coming soon!
-                    </p>
-                  </div>
-                )}
               </section>
             ))}
           </div>
