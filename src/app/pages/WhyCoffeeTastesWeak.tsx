@@ -10,11 +10,11 @@ export default function WhyCoffeeTastesWeak() {
 
       <article className="max-w-4xl mx-auto px-6 py-16">
         <Link
-          to="/"
+          to="/articles"
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
-          Back to Home
+          Back to Articles
         </Link>
 
         <header className="mb-12">
@@ -49,6 +49,42 @@ export default function WhyCoffeeTastesWeak() {
           <p className="text-foreground/80 leading-relaxed mb-6">
             Coffee <strong>strength</strong> refers to concentration — how much flavor per unit of water. <strong>Extraction</strong> refers to efficiency — how much flavor was pulled from the grounds. You can have well-extracted but weak coffee (right technique, too much water) or strong but poorly extracted coffee (too little water, bad technique). Fixing weak coffee means addressing both.
           </p>
+
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">Why does my coffee taste weak even when I use a lot?</h3>
+                <p className="text-muted-foreground text-sm">Grind size is likely too coarse. Even with a generous dose, water rushes through large particles without extracting enough flavor. Grind finer and you'll notice an immediate improvement in strength.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">What is the right coffee-to-water ratio?</h3>
+                <p className="text-muted-foreground text-sm">The SCA recommends 1g coffee per 15–16g water, or 60g per liter. Weigh your coffee — volume measurements like tablespoons are unreliable because grind size changes how much fits in a spoon.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Can stale beans make coffee taste weak?</h3>
+                <p className="text-muted-foreground text-sm">Yes. Beans that are weeks or months past their roast date have lost their CO₂ and volatile aromatics. Even brewed perfectly, they produce a flat, weak cup because the flavor compounds aren't there to extract.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why does drip machine coffee taste weak?</h3>
+                <p className="text-muted-foreground text-sm">Most drip machines don't reach optimal brewing temperature (195–205°F). They also often have a short contact time. Use freshly ground coffee, a medium grind, and verify your machine reaches proper temperature.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/coffee-science/coffee-extraction-science" className="block text-amber-700 hover:underline text-sm font-medium">→ Coffee Extraction Science</Link>
+              <Link to="/coffee-science/why-coffee-tastes-bitter" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Tastes Bitter</Link>
+              <Link to="/coffee-science/why-coffee-tastes-sour" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Tastes Sour</Link>
+              <Link to="/coffee-science/why-coffee-grind-size-matters" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Grind Size Matters</Link>
+              <Link to="/coffee-science/why-coffee-brewing-time-matters" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Brewing Time Matters</Link>
+              <Link to="/coffee-science/why-coffee-stales" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Stales</Link>
+            </div>
+          </div>
 
           <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
             <h3 className="text-xl mb-6">Strength vs. Extraction Matrix</h3>

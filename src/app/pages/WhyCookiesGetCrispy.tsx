@@ -10,11 +10,11 @@ export default function WhyCookiesGetCrispy() {
 
       <article className="max-w-4xl mx-auto px-6 py-16">
         <Link
-          to="/"
+          to="/articles"
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
-          Back to Home
+          Back to Articles
         </Link>
 
         <header className="mb-12">
@@ -165,6 +165,41 @@ export default function WhyCookiesGetCrispy() {
             <p className="text-sm text-muted-foreground leading-relaxed">
               Crispy cookies exist in a "glassy" state — sugar molecules are locked in a rigid amorphous solid. When humidity introduces water molecules, they plasticize the sugar network, lowering its glass transition temperature below room temp. This is why crispy cookies go soft in a humid environment.
             </p>
+          </div>
+
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">How do I make my cookies stay crispy?</h3>
+                <p className="text-muted-foreground text-sm">Cool completely before storing (steam softens crispy cookies). Store with a silica packet or piece of dry bread to absorb ambient moisture. Re-crisp at 300°F for 5–8 minutes if they soften.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why do crispy cookies go soft overnight?</h3>
+                <p className="text-muted-foreground text-sm">Sugar in the cookie absorbs moisture from the air — this is the glass transition from rigid to plasticized. Store in an airtight container with a moisture absorber, or in a dry environment.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">What sugar makes the crispiest cookies?</h3>
+                <p className="text-muted-foreground text-sm">White sugar promotes maximum crispiness — it lacks molasses and doesn't attract ambient moisture. All white sugar = crispier cookies. All brown sugar = softer, chewier cookies.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Does cookie thickness affect crispiness?</h3>
+                <p className="text-muted-foreground text-sm">Significantly — thin cookies have a high surface-area-to-volume ratio, allowing moisture to escape quickly and completely during baking. Press dough balls flat before baking for thinner, crispier results.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/cookie-science/why-cookies-spread" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Spread</Link>
+              <Link to="/cookie-science/why-cookies-are-chewy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Are Chewy</Link>
+              <Link to="/cookie-science/why-cookies-flatten" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Flatten</Link>
+              <Link to="/cookie-science/why-cookies-spread-too-much" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Spread Too Much</Link>
+              <Link to="/cookie-science/brown-sugar-vs-white-sugar" className="block text-amber-700 hover:underline text-sm font-medium">→ Brown Sugar vs White Sugar</Link>
+            </div>
           </div>
 
           <div className="bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-2xl p-8 my-12">

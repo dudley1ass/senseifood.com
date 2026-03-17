@@ -10,11 +10,11 @@ export default function WhyIceCreamIsCreamy() {
 
       <article className="max-w-4xl mx-auto px-6 py-16">
         <Link
-          to="/"
+          to="/articles"
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
-          Back to Home
+          Back to Articles
         </Link>
 
         <header className="mb-12">
@@ -119,6 +119,39 @@ export default function WhyIceCreamIsCreamy() {
             <p className="text-sm text-muted-foreground leading-relaxed">
               Even perfectly creamy ice cream develops larger crystals over time in storage — a process called recrystallization. When ice cream warms and re-cools (e.g. left out and refrozen), small crystals dissolve and water re-freezes onto larger existing crystals. This is why repeatedly thawed ice cream becomes progressively icier and less creamy.
             </p>
+          </div>
+
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">What makes ice cream smooth and creamy?</h3>
+                <p className="text-muted-foreground text-sm">Crystal size is everything. Ice crystals smaller than 40–50 micrometers feel smooth. Rapid freezing during churning, high fat content, egg yolk emulsifiers, and stabilizers all work to keep crystals microscopic.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why is gelato creamier than regular ice cream?</h3>
+                <p className="text-muted-foreground text-sm">Gelato uses more egg yolks (natural emulsifiers), less air (lower overrun), and is served at a slightly warmer temperature (-11°C vs -18°C for ice cream). The warmer serving temp keeps it softer and more pliable on the tongue.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Does more fat make ice cream creamier?</h3>
+                <p className="text-muted-foreground text-sm">Yes — fat physically blocks ice crystal growth and adds richness. Premium ice cream at 16–18% fat tastes dramatically creamier than regular ice cream at 10% fat, even with identical crystal sizes.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why does ice cream get grainy after being refrozen?</h3>
+                <p className="text-muted-foreground text-sm">This is recrystallization. When ice cream partially melts and refreezes, small crystals dissolve and water migrates to existing larger crystals. Each thaw-refreeze cycle produces progressively larger, detectable crystals.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/ice-cream-science/why-ice-cream-gets-icy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Ice Cream Gets Icy</Link>
+              <Link to="/ice-cream-science/why-ice-cream-melts-fast" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Ice Cream Melts Fast</Link>
+              <Link to="/ice-cream-science/why-ice-cream-gets-freezer-burn" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Ice Cream Gets Freezer Burn</Link>
+            </div>
           </div>
 
           <div className="bg-gradient-to-r from-pink-500 to-purple-500 text-white rounded-2xl p-8 my-12">

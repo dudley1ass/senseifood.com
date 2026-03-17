@@ -17,7 +17,7 @@ export default function WhyCakesRiseUnevenly() {
     <div className={`min-h-screen bg-gradient-to-br ${config.gradient}`}>
       <Navigation />
       <article className="max-w-4xl mx-auto px-6 py-16">
-        <Link to="/" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Home</Link>
+        <Link to="/articles" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Articles</Link>
         <header className="mb-12">
           <div className={`inline-flex items-center gap-2 bg-gradient-to-r from-${config.from} to-${config.to} text-white px-4 py-2 rounded-full text-sm mb-6`}>Cake Science</div>
           <h1 className={`text-5xl md:text-6xl mb-6 bg-gradient-to-r from-${config.from} to-${config.to} bg-clip-text text-transparent`}>{config.title}</h1>
@@ -37,6 +37,41 @@ export default function WhyCakesRiseUnevenly() {
               </div>
             ))}
           </div>
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">Why does one side of my cake rise higher?</h3>
+                <p className="text-muted-foreground text-sm">Almost always oven hot spots — areas that run hotter cause faster setting on one side. Rotating the pan 180° at the halfway point equalizes heat exposure across the pan.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">How do I know if my oven has hot spots?</h3>
+                <p className="text-muted-foreground text-sm">Place slices of white bread across the entire oven rack and bake at 350°F for a few minutes. The toast pattern reveals exactly where hot and cool zones are. Every home oven has them.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Can a tilted oven rack cause uneven rising?</h3>
+                <p className="text-muted-foreground text-sm">Yes. Even a slight tilt causes batter to pool to one side, creating thickness variations. The thicker area rises higher. Check with a level and adjust oven feet if needed.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Do baking strips help with even rising?</h3>
+                <p className="text-muted-foreground text-sm">Yes — wet fabric strips wrapped around the pan slow the edges from setting too fast, allowing the entire cake to rise and set more uniformly. They're particularly effective for large layer cakes.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/cake-science/why-cakes-sink" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Sink in the Middle</Link>
+              <Link to="/cake-science/why-cakes-are-dense" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Are Dense</Link>
+              <Link to="/cake-science/why-cakes-collapse" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Collapse</Link>
+              <Link to="/cake-science/why-cakes-dry-out" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Dry Out</Link>
+              <Link to="/cake-science/why-cakes-crack-on-top" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Crack on Top</Link>
+            </div>
+          </div>
+
           <div className="bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-2xl p-8 my-12">
             <h2 className="text-3xl mb-4">Master Cake Baking Science</h2>
             <p className="text-lg text-white/90 mb-6">Browse all our cake science articles.</p>

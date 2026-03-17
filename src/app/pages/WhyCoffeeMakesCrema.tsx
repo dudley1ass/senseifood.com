@@ -8,7 +8,7 @@ export default function WhyCoffeeMakesCrema() {
     <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-stone-50">
       <Navigation />
       <article className="max-w-4xl mx-auto px-6 py-16">
-        <Link to="/" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Home</Link>
+        <Link to="/articles" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Articles</Link>
         <header className="mb-12">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-600 to-orange-700 text-white px-4 py-2 rounded-full text-sm mb-6">Coffee Science</div>
           <h1 className="text-5xl md:text-6xl mb-6 bg-gradient-to-r from-amber-700 to-orange-700 bg-clip-text text-transparent">Why Coffee Makes Crema</h1>
@@ -58,6 +58,42 @@ export default function WhyCoffeeMakesCrema() {
             <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200">
               <h3 className="text-xl mb-3">⚙️ Fine, Even Grind</h3>
               <p className="text-sm text-muted-foreground">A consistent, fine espresso grind creates resistance that forces water to build pressure. Uneven grinds cause channeling — water finds paths of least resistance and bypasses most grounds, producing thin, pale, quickly-dissipating crema.</p>
+            </div>
+          </div>
+
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">Why doesn't my espresso have crema?</h3>
+                <p className="text-muted-foreground text-sm">Most commonly: beans are too old (CO₂ depleted), grind is too coarse (insufficient pressure), or machine pressure is too low. Use beans 1–3 weeks post-roast, grind fine enough to create resistance, and ensure machine reaches 9 bars.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Is crema necessary for good espresso?</h3>
+                <p className="text-muted-foreground text-sm">Not strictly — crema is an indicator of freshness and proper extraction, but the quality of what's underneath matters most. Old beans can be extracted beautifully without much crema, and fresh beans can produce crema with poor extraction.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why does crema disappear quickly?</h3>
+                <p className="text-muted-foreground text-sm">Very fresh beans (under 3 days post-roast) have excess CO₂ that produces unstable, quick-dissipating crema. Stale beans have little CO₂ and make thin crema that vanishes fast. The sweet spot is 1–3 weeks post-roast.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Does crema color indicate quality?</h3>
+                <p className="text-muted-foreground text-sm">Yes. Hazelnut to dark amber with tiger-stripe patterns indicates well-extracted espresso. Very pale/white crema suggests under-extraction. Very dark/black center suggests over-extraction or excessively dark roast beans.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/coffee-science/coffee-extraction-science" className="block text-amber-700 hover:underline text-sm font-medium">→ Coffee Extraction Science</Link>
+              <Link to="/coffee-science/why-coffee-tastes-bitter" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Tastes Bitter</Link>
+              <Link to="/coffee-science/why-coffee-tastes-sour" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Tastes Sour</Link>
+              <Link to="/coffee-science/why-coffee-grind-size-matters" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Grind Size Matters</Link>
+              <Link to="/coffee-science/why-coffee-brewing-time-matters" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Brewing Time Matters</Link>
+              <Link to="/coffee-science/why-coffee-stales" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Stales</Link>
             </div>
           </div>
 

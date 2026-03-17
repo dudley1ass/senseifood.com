@@ -8,8 +8,8 @@ export default function WhyCookiesBrown() {
     <div className="min-h-screen bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50">
       <Navigation />
       <article className="max-w-4xl mx-auto px-6 py-16">
-        <Link to="/" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors">
-          <ArrowLeft className="w-4 h-4" />Back to Home
+        <Link to="/articles" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors">
+          <ArrowLeft className="w-4 h-4" />Back to Articles
         </Link>
         <header className="mb-12">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-orange-600 text-white px-4 py-2 rounded-full text-sm mb-6">Cookie Science</div>
@@ -49,6 +49,42 @@ export default function WhyCookiesBrown() {
           <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl p-6 my-8 border-l-4 border-cyan-500">
             <h4 className="text-lg mb-2 text-cyan-800">🔬 Science Note: Why Brown Butter Works</h4>
             <p className="text-sm text-muted-foreground leading-relaxed">Browning butter before adding it to dough pre-triggers the Maillard reaction in the fat itself, creating nutty pyrazines and furanones. These compounds layer on top of whatever browning happens in the oven, giving cookies a noticeably deeper, more complex flavor than regular butter provides.</p>
+          </div>
+
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">Why do my cookies come out pale even when fully baked?</h3>
+                <p className="text-muted-foreground text-sm">Oven temperature may be low, or too much white sugar (which browns less than brown sugar). Try increasing oven temp by 25°F or replacing some white sugar with brown for more Maillard browning.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why do some cookies brown faster than others?</h3>
+                <p className="text-muted-foreground text-sm">Higher sugar content, more brown sugar, more baking soda (alkaline = faster Maillard), and thinner cookies all brown faster. Different recipes can bake at the same temperature with very different browning rates.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Does butter affect cookie browning?</h3>
+                <p className="text-muted-foreground text-sm">Yes. Butter's milk proteins participate in the Maillard reaction. Browned butter (pre-Maillard) adds extra browning compounds. Shortening lacks milk proteins and produces paler cookies at the same temperature.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">How do I prevent cookies from over-browning on the edges?</h3>
+                <p className="text-muted-foreground text-sm">Reduce oven temperature by 25°F and increase bake time slightly. Use a lighter-colored pan. Ensure cookies are equal thickness so edges and centers cook at the same rate.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/cookie-science/why-cookies-spread" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Spread</Link>
+              <Link to="/cookie-science/why-cookies-are-chewy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Are Chewy</Link>
+              <Link to="/cookie-science/why-cookies-get-crispy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Get Crispy</Link>
+              <Link to="/cookie-science/why-cookies-flatten" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Flatten</Link>
+              <Link to="/cookie-science/why-cookies-spread-too-much" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Spread Too Much</Link>
+              <Link to="/cookie-science/brown-sugar-vs-white-sugar" className="block text-amber-700 hover:underline text-sm font-medium">→ Brown Sugar vs White Sugar</Link>
+            </div>
           </div>
 
           <div className="bg-gradient-to-r from-amber-500 to-orange-600 text-white rounded-2xl p-8 my-12">

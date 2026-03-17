@@ -17,7 +17,7 @@ export default function WhyCakesStickToCoolingRack() {
     <div className={`min-h-screen bg-gradient-to-br ${config.gradient}`}>
       <Navigation />
       <article className="max-w-4xl mx-auto px-6 py-16">
-        <Link to="/" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Home</Link>
+        <Link to="/articles" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Articles</Link>
         <header className="mb-12">
           <div className={`inline-flex items-center gap-2 bg-gradient-to-r from-${config.from} to-${config.to} text-white px-4 py-2 rounded-full text-sm mb-6`}>Cake Science</div>
           <h1 className={`text-5xl md:text-6xl mb-6 bg-gradient-to-r from-${config.from} to-${config.to} bg-clip-text text-transparent`}>{config.title}</h1>
@@ -37,6 +37,42 @@ export default function WhyCakesStickToCoolingRack() {
               </div>
             ))}
           </div>
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">How do I stop cake from sticking to the wire rack?</h3>
+                <p className="text-muted-foreground text-sm">Let it cool in the pan for 10–15 minutes first (surface firms up), lightly spray the rack with cooking spray, or place a piece of parchment on the rack before inverting. For glazed cakes, parchment is essential.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why does glazed cake stick to the cooling rack?</h3>
+                <p className="text-muted-foreground text-sm">Warm glaze is liquid sugar — it flows into the wire rack gaps and bonds when cooled. Always let the glaze partially set (10–15 minutes) before placing on the rack, and use parchment under glazed cakes.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">How long should cake cool on a rack?</h3>
+                <p className="text-muted-foreground text-sm">Cool completely before frosting — 1–2 hours for layer cakes. Frosting a warm cake causes buttercream to melt and slide. For storage, cool completely before wrapping to prevent steam from creating condensation inside the wrap.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Can I cool cake in the pan instead of on a rack?</h3>
+                <p className="text-muted-foreground text-sm">For the first 10–15 minutes, yes — this is recommended. After that, the pan retains heat and the continued warmth can over-cook the bottom and sides. Transfer to a wire rack for complete cooling.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/cake-science/why-cakes-sink" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Sink in the Middle</Link>
+              <Link to="/cake-science/why-cakes-rise" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Rise</Link>
+              <Link to="/cake-science/why-cakes-are-dense" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Are Dense</Link>
+              <Link to="/cake-science/why-cakes-collapse" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Collapse</Link>
+              <Link to="/cake-science/why-cakes-dry-out" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Dry Out</Link>
+              <Link to="/cake-science/why-cakes-crack-on-top" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Crack on Top</Link>
+            </div>
+          </div>
+
           <div className="bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-2xl p-8 my-12">
             <h2 className="text-3xl mb-4">Master Cake Baking Science</h2>
             <p className="text-lg text-white/90 mb-6">Browse all our cake science articles.</p>

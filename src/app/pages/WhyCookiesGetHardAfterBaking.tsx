@@ -8,7 +8,7 @@ export default function WhyCookiesGetHardAfterBaking() {
     <div className="min-h-screen bg-gradient-to-br from-amber-50 via-stone-50 to-orange-50">
       <Navigation />
       <article className="max-w-4xl mx-auto px-6 py-16">
-        <Link to="/" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Home</Link>
+        <Link to="/articles" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Articles</Link>
         <header className="mb-12">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-600 to-stone-700 text-white px-4 py-2 rounded-full text-sm mb-6">Cookie Science</div>
           <h1 className="text-5xl md:text-6xl mb-6 bg-gradient-to-r from-amber-700 to-stone-700 bg-clip-text text-transparent">Why Cookies Get Hard After Baking</h1>
@@ -41,6 +41,42 @@ export default function WhyCookiesGetHardAfterBaking() {
             <h4 className="text-lg mb-2 text-cyan-800">💡 Rescue Tip: Soften Hard Cookies</h4>
             <p className="text-sm text-muted-foreground leading-relaxed">Place hard cookies in a sealed container with a damp paper towel (not touching the cookies) overnight. The moisture migrates into the cookies and softens them. Alternatively, 10 seconds in the microwave restores softness temporarily.</p>
           </div>
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">Why do my cookies harden within hours?</h3>
+                <p className="text-muted-foreground text-sm">Either over-baked (no residual moisture) or stored in a container that's not airtight. Use all-brown-sugar recipes, pull cookies 1–2 minutes early, and store immediately in a sealed container with a bread slice.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Can I save already-hard cookies?</h3>
+                <p className="text-muted-foreground text-sm">Yes — place in a sealed container with a damp paper towel (not touching cookies) for several hours. Alternatively, 8–10 seconds in the microwave softens them temporarily.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why do snickerdoodles get hard so fast?</h3>
+                <p className="text-muted-foreground text-sm">The cream of tartar in snickerdoodles makes them more prone to drying out. Store in an airtight container immediately. Adding 1–2 tsp cornstarch to the dough helps retain moisture.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Does the cooling rack affect hardening?</h3>
+                <p className="text-muted-foreground text-sm">Only slightly — prolonged cooling on a rack in dry air can remove some moisture. Cool for 5 minutes, then store in a container rather than leaving out.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/cookie-science/why-cookies-spread" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Spread</Link>
+              <Link to="/cookie-science/why-cookies-are-chewy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Are Chewy</Link>
+              <Link to="/cookie-science/why-cookies-get-crispy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Get Crispy</Link>
+              <Link to="/cookie-science/why-cookies-flatten" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Flatten</Link>
+              <Link to="/cookie-science/why-cookies-spread-too-much" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Spread Too Much</Link>
+              <Link to="/cookie-science/brown-sugar-vs-white-sugar" className="block text-amber-700 hover:underline text-sm font-medium">→ Brown Sugar vs White Sugar</Link>
+            </div>
+          </div>
+
           <div className="bg-gradient-to-r from-amber-600 to-stone-700 text-white rounded-2xl p-8 my-12">
             <h2 className="text-3xl mb-4">Keep Cookies Soft Longer</h2>
             <p className="text-lg text-white/90 mb-6">Use CookieSensei to engineer moisture retention into your recipe.</p>

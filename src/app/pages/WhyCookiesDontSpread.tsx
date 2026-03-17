@@ -10,11 +10,11 @@ export default function WhyCookiesDontSpread() {
 
       <article className="max-w-4xl mx-auto px-6 py-16">
         <Link
-          to="/"
+          to="/articles"
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
-          Back to Home
+          Back to Articles
         </Link>
 
         <header className="mb-12">
@@ -137,6 +137,42 @@ export default function WhyCookiesDontSpread() {
               If you suspect your dough won't spread, simply press each ball down gently with your palm or a flat-bottomed glass to about ¾ of its original height before baking. This gives the spreading process a head start.
             </p>
             <div className="text-center text-4xl">👋→🍪</div>
+          </div>
+
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">Why won't my cookies flatten out at all?</h3>
+                <p className="text-muted-foreground text-sm">Too much flour is the most common cause. Scooping flour packs in 20–30% extra. Weigh it instead: 1 cup = 120–125g. Also try pressing dough balls down slightly before baking.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Can I add something to make cookies spread more?</h3>
+                <p className="text-muted-foreground text-sm">Yes — increase white sugar (promotes spreading), use melted butter (more liquid in dough), reduce flour slightly, or add a tablespoon of milk. Also ensure dough is at room temperature before baking, not ice cold.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Does bread flour prevent cookie spreading?</h3>
+                <p className="text-muted-foreground text-sm">Compared to all-purpose flour, yes slightly — higher protein creates more structure that resists spreading. But the main spreader is the butter-sugar ratio, not flour type.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why do my cookies stay as balls even after baking?</h3>
+                <p className="text-muted-foreground text-sm">Oven temperature is likely too high — the exterior sets almost instantly before any spreading begins. Try reducing oven temp by 25–50°F.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/cookie-science/why-cookies-spread" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Spread</Link>
+              <Link to="/cookie-science/why-cookies-are-chewy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Are Chewy</Link>
+              <Link to="/cookie-science/why-cookies-get-crispy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Get Crispy</Link>
+              <Link to="/cookie-science/why-cookies-flatten" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Flatten</Link>
+              <Link to="/cookie-science/why-cookies-spread-too-much" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Spread Too Much</Link>
+              <Link to="/cookie-science/brown-sugar-vs-white-sugar" className="block text-amber-700 hover:underline text-sm font-medium">→ Brown Sugar vs White Sugar</Link>
+            </div>
           </div>
 
           <div className="bg-gradient-to-r from-amber-600 to-yellow-600 text-white rounded-2xl p-8 my-12">

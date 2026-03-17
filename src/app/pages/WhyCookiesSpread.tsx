@@ -11,11 +11,11 @@ export default function WhyCookiesSpread() {
       <article className="max-w-4xl mx-auto px-6 py-16">
         {/* Back button */}
         <Link 
-          to="/" 
+          to="/articles" 
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
-          Back to Home
+          Back to Articles
         </Link>
 
         {/* Header */}
@@ -223,6 +223,40 @@ export default function WhyCookiesSpread() {
                 </tr>
               </tbody>
             </table>
+          </div>
+
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">Why do my cookies spread so much they merge together?</h3>
+                <p className="text-muted-foreground text-sm">Butter too warm, dough not chilled, or too much white sugar. Chill portioned dough balls for at least 30 minutes before baking. This is the single most effective fix for excessive spreading.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why do my cookies spread unevenly?</h3>
+                <p className="text-muted-foreground text-sm">Oven hot spots cause differential spreading. Rotate your pan 180° at the halfway point. Also check that dough balls are uniformly round — any flat spot will spread first.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Does parchment paper affect cookie spreading?</h3>
+                <p className="text-muted-foreground text-sm">Yes — parchment reduces spreading compared to a greased pan by creating slight friction. A silicone mat reduces spreading even more. Greased pans actively promote spreading.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why do the same cookies spread differently each time?</h3>
+                <p className="text-muted-foreground text-sm">Butter temperature is likely inconsistent. Even a few degrees makes a significant difference in spreading rate. Use butter at exactly 65–68°F for consistent results.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/cookie-science/why-cookies-are-chewy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Are Chewy</Link>
+              <Link to="/cookie-science/why-cookies-get-crispy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Get Crispy</Link>
+              <Link to="/cookie-science/why-cookies-flatten" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Flatten</Link>
+              <Link to="/cookie-science/brown-sugar-vs-white-sugar" className="block text-amber-700 hover:underline text-sm font-medium">→ Brown Sugar vs White Sugar</Link>
+            </div>
           </div>
 
           <div className="bg-gradient-to-r from-amber-500 to-orange-600 text-white rounded-2xl p-8 my-12">

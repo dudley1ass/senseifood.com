@@ -10,11 +10,11 @@ export default function WhyCakesStickToPan() {
 
       <article className="max-w-4xl mx-auto px-6 py-16">
         <Link
-          to="/"
+          to="/articles"
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
-          Back to Home
+          Back to Articles
         </Link>
 
         <header className="mb-12">
@@ -122,6 +122,42 @@ export default function WhyCakesStickToPan() {
                   <p className="text-sm text-muted-foreground pt-1">{step}</p>
                 </div>
               ))}
+            </div>
+          </div>
+
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">Why does cake stick even after greasing the pan?</h3>
+                <p className="text-muted-foreground text-sm">Greasing alone often leaves thin spots or misses areas entirely. The gold standard is butter + flour + parchment paper on the bottom. Any one missing creates a bonding point.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">How long should cake cool before removing from pan?</h3>
+                <p className="text-muted-foreground text-sm">Cool in the pan for 10–15 minutes on a wire rack. This allows the cake to contract slightly from the sides and the structure to firm up enough to handle.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">What is the best way to grease a cake pan?</h3>
+                <p className="text-muted-foreground text-sm">Coat every surface with softened butter (not spray), add 2 tablespoons of flour, tilt to coat all surfaces, tap out excess, then press a parchment circle onto the bottom and lightly grease the parchment.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Does non-stick spray work for cake pans?</h3>
+                <p className="text-muted-foreground text-sm">Better than nothing, but less reliable than butter + flour. For important cakes or high-sugar recipes, always use butter, flour, and parchment.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/cake-science/why-cakes-sink" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Sink in the Middle</Link>
+              <Link to="/cake-science/why-cakes-rise" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Rise</Link>
+              <Link to="/cake-science/why-cakes-are-dense" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Are Dense</Link>
+              <Link to="/cake-science/why-cakes-collapse" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Collapse</Link>
+              <Link to="/cake-science/why-cakes-dry-out" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Dry Out</Link>
+              <Link to="/cake-science/why-cakes-crack-on-top" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Crack on Top</Link>
             </div>
           </div>
 

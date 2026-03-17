@@ -10,11 +10,11 @@ export default function WhyCookiesFlatten() {
 
       <article className="max-w-4xl mx-auto px-6 py-16">
         <Link
-          to="/"
+          to="/articles"
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
-          Back to Home
+          Back to Articles
         </Link>
 
         <header className="mb-12">
@@ -142,6 +142,41 @@ export default function WhyCookiesFlatten() {
             <p className="text-sm text-muted-foreground leading-relaxed">
               A too-low oven temperature gives fat more time to melt before structure sets, resulting in flatter cookies. A properly preheated oven (325–375°F) sets the outer structure quickly while the interior is still spreading, halting excessive flatness. Always preheat for at least 15–20 minutes.
             </p>
+          </div>
+
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">Why do my cookies flatten into pancakes?</h3>
+                <p className="text-muted-foreground text-sm">Butter too warm or melted. Chill portioned dough for at least 30 minutes before baking — cold fat spreads slowly, allowing structure to set before the cookie collapses.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Can too much sugar cause flat cookies?</h3>
+                <p className="text-muted-foreground text-sm">Yes. Excess white sugar liquefies in the oven and flows outward before structure sets. Try replacing some white sugar with brown sugar, which resists spreading.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why do the cookies in the center of the pan flatten more?</h3>
+                <p className="text-muted-foreground text-sm">Center cookies stay warmer between batches. Always cool the baking sheet completely between batches, or use a separate cold pan. Warm pans cause immediate butter melting when the dough touches the surface.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Does baking soda make cookies flat?</h3>
+                <p className="text-muted-foreground text-sm">Too much baking soda can increase spreading. Baking soda is alkaline, which lowers the temperature at which fat melts, causing earlier spreading. Use precise measurements.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/cookie-science/why-cookies-spread" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Spread</Link>
+              <Link to="/cookie-science/why-cookies-are-chewy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Are Chewy</Link>
+              <Link to="/cookie-science/why-cookies-get-crispy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Get Crispy</Link>
+              <Link to="/cookie-science/why-cookies-spread-too-much" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Spread Too Much</Link>
+              <Link to="/cookie-science/brown-sugar-vs-white-sugar" className="block text-amber-700 hover:underline text-sm font-medium">→ Brown Sugar vs White Sugar</Link>
+            </div>
           </div>
 
           <div className="bg-gradient-to-r from-orange-500 to-amber-600 text-white rounded-2xl p-8 my-12">

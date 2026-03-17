@@ -8,7 +8,7 @@ export default function WhyCoffeeSmellsGood() {
     <div className="min-h-screen bg-gradient-to-br from-stone-50 via-amber-50 to-yellow-50">
       <Navigation />
       <article className="max-w-4xl mx-auto px-6 py-16">
-        <Link to="/" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Home</Link>
+        <Link to="/articles" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Articles</Link>
         <header className="mb-12">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-stone-600 to-amber-700 text-white px-4 py-2 rounded-full text-sm mb-6">Coffee Science</div>
           <h1 className="text-5xl md:text-6xl mb-6 bg-gradient-to-r from-stone-700 to-amber-700 bg-clip-text text-transparent">Why Coffee Smells Good</h1>
@@ -39,6 +39,42 @@ export default function WhyCoffeeSmellsGood() {
           <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl p-6 my-8 border-l-4 border-cyan-500">
             <h4 className="text-lg mb-2 text-cyan-800">🔬 Science Note: Why Brewed Coffee Smells Better Than It Tastes</h4>
             <p className="text-sm text-muted-foreground leading-relaxed">Many of coffee's most pleasant aroma compounds (like 2-furfurylthiol) are present at extremely low concentrations in the cup but highly detectable by smell. The nose can detect these molecules at parts-per-trillion. When you drink coffee, you lose direct access to these volatiles — they evaporate too quickly. This is why coffee aroma often exceeds its flavor complexity.</p>
+          </div>
+
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">Why does coffee smell better than it tastes?</h3>
+                <p className="text-muted-foreground text-sm">Many of coffee's most pleasant aroma compounds are present at extremely low concentrations but highly detectable by smell. When you drink, volatile aromatics evaporate quickly. Smell also captures compounds from the surface while drinking only delivers dissolved ones.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why does freshly ground coffee smell stronger?</h3>
+                <p className="text-muted-foreground text-sm">Grinding creates millions of new surfaces simultaneously, releasing the volatile aromatic compounds all at once. The same beans whole have these aromatics locked inside their cellular structure.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why does coffee from a cafe smell better than home coffee?</h3>
+                <p className="text-muted-foreground text-sm">Commercial espresso machines extract at higher pressure and temperature, releasing more aromatics. High-volume cafes also use very fresh beans (often daily deliveries) and burr grinders with precise settings.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Does coffee smell change with roast level?</h3>
+                <p className="text-muted-foreground text-sm">Yes dramatically. Light roasts have floral, fruity, citrus-forward aromas. Dark roasts have smoky, chocolatey, caramelized aromas. The roasting process creates and destroys different aromatic compounds at each temperature stage.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/coffee-science/coffee-extraction-science" className="block text-amber-700 hover:underline text-sm font-medium">→ Coffee Extraction Science</Link>
+              <Link to="/coffee-science/why-coffee-tastes-bitter" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Tastes Bitter</Link>
+              <Link to="/coffee-science/why-coffee-tastes-sour" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Tastes Sour</Link>
+              <Link to="/coffee-science/why-coffee-grind-size-matters" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Grind Size Matters</Link>
+              <Link to="/coffee-science/why-coffee-brewing-time-matters" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Brewing Time Matters</Link>
+              <Link to="/coffee-science/why-coffee-stales" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Stales</Link>
+            </div>
           </div>
 
           <div className="bg-gradient-to-r from-stone-600 to-amber-700 text-white rounded-2xl p-8 my-12">

@@ -8,7 +8,7 @@ export default function WhyCoffeeGetsOily() {
     <div className="min-h-screen bg-gradient-to-br from-stone-50 via-amber-50 to-orange-50">
       <Navigation />
       <article className="max-w-4xl mx-auto px-6 py-16">
-        <Link to="/" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Home</Link>
+        <Link to="/articles" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Articles</Link>
         <header className="mb-12">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-stone-700 to-amber-800 text-white px-4 py-2 rounded-full text-sm mb-6">Coffee Science</div>
           <h1 className="text-5xl md:text-6xl mb-6 bg-gradient-to-r from-stone-800 to-amber-800 bg-clip-text text-transparent">Why Coffee Gets Oily</h1>
@@ -52,6 +52,42 @@ export default function WhyCoffeeGetsOily() {
             <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200">
               <h3 className="text-xl mb-3">⚙️ Oily Beans and Grinders</h3>
               <p className="text-sm text-muted-foreground mb-3">Surface oils from dark roast beans coat grinder burrs and accumulate over time. This oil buildup goes rancid and adds off-flavors to every subsequent grind — even lighter roasts. Dark roast fans should clean their grinders more frequently (weekly) than those who primarily brew light roasts.</p>
+            </div>
+          </div>
+
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">Is oily coffee bad?</h3>
+                <p className="text-muted-foreground text-sm">Not inherently — it just means dark roast. The issue is that surface oils oxidize faster, so dark roast beans have a shorter shelf life once the bag is opened. Consume within 2–3 weeks of opening.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why do oily beans clog my grinder?</h3>
+                <p className="text-muted-foreground text-sm">Surface oils coat burrs and accumulate over time, eventually gumming up the grinding mechanism. Dark roast fans should clean their grinders more frequently (weekly) than those primarily grinding lighter roasts.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Can oily beans damage an espresso machine?</h3>
+                <p className="text-muted-foreground text-sm">Yes over time. Oils from dark roast beans can build up in the portafilter, group head, and brewing chamber. Regular backflushing and cleaning is especially important with dark roast beans.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">What roast level is oiliest?</h3>
+                <p className="text-muted-foreground text-sm">French roast and Italian roast (the darkest levels) are the oiliest. The extended roast time pushes more lipids to the bean surface. Medium and light roasts have dry surfaces with oils intact inside the bean.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/coffee-science/coffee-extraction-science" className="block text-amber-700 hover:underline text-sm font-medium">→ Coffee Extraction Science</Link>
+              <Link to="/coffee-science/why-coffee-tastes-bitter" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Tastes Bitter</Link>
+              <Link to="/coffee-science/why-coffee-tastes-sour" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Tastes Sour</Link>
+              <Link to="/coffee-science/why-coffee-grind-size-matters" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Grind Size Matters</Link>
+              <Link to="/coffee-science/why-coffee-brewing-time-matters" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Brewing Time Matters</Link>
+              <Link to="/coffee-science/why-coffee-stales" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Stales</Link>
             </div>
           </div>
 

@@ -10,11 +10,11 @@ export default function WhyCakesCrackOnTop() {
 
       <article className="max-w-4xl mx-auto px-6 py-16">
         <Link
-          to="/"
+          to="/articles"
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
-          Back to Home
+          Back to Articles
         </Link>
 
         <header className="mb-12">
@@ -135,6 +135,41 @@ export default function WhyCakesCrackOnTop() {
             <p className="text-sm text-muted-foreground leading-relaxed">
               Many bakers intentionally score a line down the center of pound cake batter before baking — this guides the crack to form in a straight, attractive line rather than randomly. The scored line is a weak point in the forming crust, so the rising batter breaks through there predictably.
             </p>
+          </div>
+
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">Is a crack on top of a cake normal?</h3>
+                <p className="text-muted-foreground text-sm">It depends on the cake. Pound cakes and loaf cakes are expected to crack — it's a natural part of their bake. Layer cakes and cheesecakes should not crack. The crack means the interior forced through the set crust.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">How do I prevent cake from cracking on top?</h3>
+                <p className="text-muted-foreground text-sm">Lower oven temperature by 25°F, move to middle rack, ensure leavening is measured precisely, and don't overfill the pan (maximum ⅔ full). For pound cakes, you can guide the crack by scoring a line of softened butter down the center.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why do pound cakes crack on top?</h3>
+                <p className="text-muted-foreground text-sm">Pound cakes are designed to crack — the high sugar, high fat batter sets a hard crust quickly while the interior continues rising. Some bakers enhance this by scoring butter down the center before baking to control where the crack forms.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Can the wrong size pan cause cake cracking?</h3>
+                <p className="text-muted-foreground text-sm">Yes. A too-small pan forces batter above ⅔ full, and the excess rise has nowhere to go but through the crust. Always use the pan size specified in the recipe.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/cake-science/why-cakes-sink" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Sink in the Middle</Link>
+              <Link to="/cake-science/why-cakes-rise" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Rise</Link>
+              <Link to="/cake-science/why-cakes-are-dense" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Are Dense</Link>
+              <Link to="/cake-science/why-cakes-collapse" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Collapse</Link>
+              <Link to="/cake-science/why-cakes-dry-out" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Dry Out</Link>
+            </div>
           </div>
 
           <div className="bg-gradient-to-r from-pink-500 to-rose-600 text-white rounded-2xl p-8 my-12">

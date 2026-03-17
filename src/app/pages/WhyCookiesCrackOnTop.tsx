@@ -8,8 +8,8 @@ export default function WhyCookiesCrackOnTop() {
     <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50">
       <Navigation />
       <article className="max-w-4xl mx-auto px-6 py-16">
-        <Link to="/" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors">
-          <ArrowLeft className="w-4 h-4" />Back to Home
+        <Link to="/articles" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors">
+          <ArrowLeft className="w-4 h-4" />Back to Articles
         </Link>
         <header className="mb-12">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-orange-600 text-white px-4 py-2 rounded-full text-sm mb-6">Cookie Science</div>
@@ -69,6 +69,42 @@ export default function WhyCookiesCrackOnTop() {
           <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl p-6 my-8 border-l-4 border-cyan-500">
             <h4 className="text-lg mb-2 text-cyan-800">💡 Pro Tip: How to Engineer Cracks on Purpose</h4>
             <p className="text-sm text-muted-foreground leading-relaxed">For crinkle cookies, chill the dough thoroughly, roll balls in powdered sugar, then bake at a slightly higher temp (375°F). The cold interior expands aggressively against the set sugary exterior, creating dramatic, even cracks.</p>
+          </div>
+
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">Why do crinkle cookies have cracks?</h3>
+                <p className="text-muted-foreground text-sm">By design — the dough ball is chilled so the sugar coating sets hard while the interior is still cold and dense. In the oven, the cold, expanding interior ruptures through the set exterior coating, creating the signature crack pattern.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why does my shortbread crack?</h3>
+                <p className="text-muted-foreground text-sm">Unlike other cookies, shortbread cracking usually indicates too little fat or too much flour — the dough is too dry and crumbles rather than holding together. Also, not chilling before cutting or using a too-thin cut.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">How do I make bigger cracks on crinkle cookies?</h3>
+                <p className="text-muted-foreground text-sm">Chill the dough more thoroughly, roll in powdered sugar generously (double coating helps), and bake at 375°F. The greater the temperature contrast between frozen interior and hot oven, the more dramatic the crack.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why do my sugar cookies crack when rolling?</h3>
+                <p className="text-muted-foreground text-sm">Dough too cold or too dry. Let chilled dough temper at room temperature for 5–10 minutes before rolling. If it still cracks, knead in 1 teaspoon of milk or water to increase moisture.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/cookie-science/why-cookies-spread" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Spread</Link>
+              <Link to="/cookie-science/why-cookies-are-chewy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Are Chewy</Link>
+              <Link to="/cookie-science/why-cookies-get-crispy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Get Crispy</Link>
+              <Link to="/cookie-science/why-cookies-flatten" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Flatten</Link>
+              <Link to="/cookie-science/why-cookies-spread-too-much" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Spread Too Much</Link>
+              <Link to="/cookie-science/brown-sugar-vs-white-sugar" className="block text-amber-700 hover:underline text-sm font-medium">→ Brown Sugar vs White Sugar</Link>
+            </div>
           </div>
 
           <div className="bg-gradient-to-r from-amber-500 to-orange-600 text-white rounded-2xl p-8 my-12">

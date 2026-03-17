@@ -8,8 +8,8 @@ export default function WhyCookiesStickToPan() {
     <div className="min-h-screen bg-gradient-to-br from-red-50 via-orange-50 to-amber-50">
       <Navigation />
       <article className="max-w-4xl mx-auto px-6 py-16">
-        <Link to="/" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors">
-          <ArrowLeft className="w-4 h-4" />Back to Home
+        <Link to="/articles" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors">
+          <ArrowLeft className="w-4 h-4" />Back to Articles
         </Link>
         <header className="mb-12">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-red-500 to-orange-500 text-white px-4 py-2 rounded-full text-sm mb-6">Cookie Science</div>
@@ -44,6 +44,42 @@ export default function WhyCookiesStickToPan() {
               <h3 className="text-xl mb-3">🍳 Worn Non-Stick Coating</h3>
               <p className="text-sm text-muted-foreground mb-3">Non-stick coatings lose their effectiveness with use and scratching. An old or damaged non-stick pan can stick worse than a regular pan because the coating creates an uneven surface that traps sugar.</p>
               <div className="bg-green-50 rounded-lg p-3 text-xs text-green-800"><strong>Fix:</strong> Use parchment on all pans regardless of coating. Replace pans with flaking or visibly damaged non-stick surfaces.</div>
+            </div>
+          </div>
+
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">Why do cookies stick even with parchment paper?</h3>
+                <p className="text-muted-foreground text-sm">Removed too soon — cookies need 3–5 minutes on the hot pan after removal from the oven to firm up. Or the parchment itself is too thin/cheap. Use quality parchment or a silicone mat.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Can I reuse parchment paper for multiple batches?</h3>
+                <p className="text-muted-foreground text-sm">Yes, for 2–3 batches if it's not too dark. Once parchment becomes very dark or brittle, replace it — it loses its non-stick properties and can transfer burnt flavors.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">What do I do if cookies are stuck to the pan?</h3>
+                <p className="text-muted-foreground text-sm">Return to the warm (turned off) oven for 2–3 minutes to slightly re-soften the caramelized base, then gently slide a spatula underneath. Don't force it — they'll break.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Does greasing a non-stick pan help prevent sticking?</h3>
+                <p className="text-muted-foreground text-sm">No — extra grease on a non-stick pan actually increases spreading, which can make the thin edges stickier. Use parchment paper instead, even on non-stick pans.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/cookie-science/why-cookies-spread" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Spread</Link>
+              <Link to="/cookie-science/why-cookies-are-chewy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Are Chewy</Link>
+              <Link to="/cookie-science/why-cookies-get-crispy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Get Crispy</Link>
+              <Link to="/cookie-science/why-cookies-flatten" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Flatten</Link>
+              <Link to="/cookie-science/why-cookies-spread-too-much" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Spread Too Much</Link>
+              <Link to="/cookie-science/brown-sugar-vs-white-sugar" className="block text-amber-700 hover:underline text-sm font-medium">→ Brown Sugar vs White Sugar</Link>
             </div>
           </div>
 

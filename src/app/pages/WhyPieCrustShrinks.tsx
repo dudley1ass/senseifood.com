@@ -10,11 +10,11 @@ export default function WhyPieCrustShrinks() {
 
       <article className="max-w-4xl mx-auto px-6 py-16">
         <Link
-          to="/"
+          to="/articles"
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
-          Back to Home
+          Back to Articles
         </Link>
 
         <header className="mb-12">
@@ -133,6 +133,37 @@ export default function WhyPieCrustShrinks() {
             <p className="text-sm text-muted-foreground leading-relaxed">
               Fat coats flour proteins and physically blocks them from hydrating and bonding into gluten networks. This is why pie dough with more butter (or lard) has less shrinkage than lean doughs. Keeping fat cold and in visible chunks maximizes this protective effect.
             </p>
+          </div>
+
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">Why does my pie crust shrink away from the pan?</h3>
+                <p className="text-muted-foreground text-sm">Shrinkage is caused by gluten tension. When you roll and fit the dough, you stretch the gluten strands. In the oven, heat causes these strands to contract back to their original length, pulling the crust away from the pan sides.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">How do I stop pie crust from shrinking?</h3>
+                <p className="text-muted-foreground text-sm">Chill the dough before rolling, handle it minimally, drape rather than stretch it into the pan, and refrigerate the fitted crust for 30–60 minutes before baking. This relaxes the gluten so it contracts less.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Should I blind bake pie crust?</h3>
+                <p className="text-muted-foreground text-sm">For custard or no-bake fillings, yes. Line the crust with parchment and fill with pie weights or dried beans to hold the sides in place during baking. This prevents both shrinkage and the bottom puffing up.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Does egg wash prevent pie crust shrinkage?</h3>
+                <p className="text-muted-foreground text-sm">No — egg wash affects color and shine but not shrinkage. Shrinkage is entirely a gluten and handling issue, not a surface treatment issue.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/pie-science/why-pie-crust-is-flaky" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Pie Crust Is Flaky</Link>
+            </div>
           </div>
 
           <div className="bg-gradient-to-r from-amber-600 to-orange-600 text-white rounded-2xl p-8 my-12">

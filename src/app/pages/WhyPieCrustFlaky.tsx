@@ -11,15 +11,47 @@ export default function WhyPieCrustFlaky() {
       <article className="max-w-4xl mx-auto px-6 py-16">
         {/* Back button */}
         <Link 
-          to="/" 
+          to="/articles" 
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
-          Back to Home
+          Back to Articles
         </Link>
 
         {/* Header */}
         <header className="mb-12">
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">Why is my pie crust tough instead of flaky?</h3>
+                <p className="text-muted-foreground text-sm">Over-working the dough develops too much gluten, creating a tough, elastic crust instead of flaky layers. Handle dough as little as possible — mix just until it comes together.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">What is the best fat for flaky pie crust?</h3>
+                <p className="text-muted-foreground text-sm">Butter gives the best flavor and decent flakiness. Shortening creates the flakiest texture (higher melting point means butter stays solid longer during baking). Lard is the traditional choice for maximum flake and flavor.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why should pie crust be kept cold?</h3>
+                <p className="text-muted-foreground text-sm">Cold fat stays in solid pieces rather than blending into the flour. When those solid fat pieces hit the oven heat, they melt and create steam — pushing apart the dough layers and creating flakiness.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Can I make pie crust ahead of time?</h3>
+                <p className="text-muted-foreground text-sm">Yes — pie crust actually improves with resting. After mixing, wrap tightly and refrigerate for at least 30 minutes or up to 3 days. This relaxes the gluten and redistributes moisture for a more tender, easier-to-roll crust.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/pie-science/why-pie-crust-is-flaky" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Pie Crust Is Flaky</Link>
+              <Link to="/pie-science/why-pie-crust-shrinks" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Pie Crust Shrinks</Link>
+            </div>
+          </div>
+
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-amber-600 text-white px-4 py-2 rounded-full text-sm mb-6">
             Pie Science
           </div>

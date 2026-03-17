@@ -11,11 +11,11 @@ export default function CoffeeExtractionScience() {
       <article className="max-w-4xl mx-auto px-6 py-16">
         {/* Back button */}
         <Link 
-          to="/" 
+          to="/articles" 
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
-          Back to Home
+          Back to Articles
         </Link>
 
         {/* Header */}
@@ -245,6 +245,41 @@ export default function CoffeeExtractionScience() {
                   If coffee tastes bitter/harsh → grind coarser (decrease extraction)
                 </p>
               </div>
+            </div>
+          </div>
+
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">What is the ideal coffee extraction percentage?</h3>
+                <p className="text-muted-foreground text-sm">The Specialty Coffee Association recommends 18–22% extraction yield. Below 18% is under-extracted (sour, weak), above 22% is over-extracted (bitter, harsh).</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">How does grind size affect extraction?</h3>
+                <p className="text-muted-foreground text-sm">Finer grinds extract faster because they have more surface area in contact with water. Coarser grinds extract more slowly. Matching grind to brew time is the core of dialing in any coffee.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">What is TDS in coffee?</h3>
+                <p className="text-muted-foreground text-sm">TDS stands for Total Dissolved Solids — the concentration of extracted compounds in your brew. The ideal range is 1.15–1.35%. Below this tastes watery; above this tastes too strong.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why does water temperature matter for extraction?</h3>
+                <p className="text-muted-foreground text-sm">Water temperature controls how efficiently compounds dissolve. Below 195°F, heavier flavor molecules (sugars, oils) don't fully dissolve. Above 205°F, harsh compounds over-extract.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/coffee-science/why-coffee-tastes-bitter" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Tastes Bitter</Link>
+              <Link to="/coffee-science/why-coffee-tastes-sour" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Tastes Sour</Link>
+              <Link to="/coffee-science/why-coffee-grind-size-matters" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Grind Size Matters</Link>
+              <Link to="/coffee-science/why-coffee-brewing-time-matters" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Brewing Time Matters</Link>
+              <Link to="/coffee-science/why-coffee-stales" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Stales</Link>
             </div>
           </div>
 

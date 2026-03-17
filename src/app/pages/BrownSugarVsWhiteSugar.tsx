@@ -10,11 +10,11 @@ export default function BrownSugarVsWhiteSugar() {
       
       <article className="max-w-4xl mx-auto px-6 py-16">
         <Link 
-          to="/" 
+          to="/articles" 
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
-          Back to Home
+          Back to Articles
         </Link>
 
         <header className="mb-12">
@@ -297,6 +297,43 @@ export default function BrownSugarVsWhiteSugar() {
                   <li>✓ You want cookies that stay soft</li>
                 </ul>
               </div>
+            </div>
+          </div>
+
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">Does brown sugar make cookies chewier?</h3>
+                <p className="text-muted-foreground text-sm">Yes. Brown sugar contains molasses which is hygroscopic — it attracts and holds moisture, keeping cookies soft and chewy longer than white sugar.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Can I substitute white sugar for brown sugar in cookies?</h3>
+                <p className="text-muted-foreground text-sm">You can, but the texture will change. Cookies made with all white sugar spread more, bake thinner, and turn crispier. Expect less chew and a lighter color.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">What is the best sugar ratio for chewy cookies?</h3>
+                <p className="text-muted-foreground text-sm">A 50/50 split of brown to white sugar is the classic balance — giving you chewy centers with slightly crispy edges. For maximum chewiness, use 75–100% brown sugar.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why does brown sugar go hard in the bag?</h3>
+                <p className="text-muted-foreground text-sm">Brown sugar hardens when moisture evaporates from the molasses. Store it in an airtight container with a piece of bread or a terra cotta sugar saver to keep it soft.</p>
+              </div>
+            </div>
+          </div>
+
+
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/cookie-science/why-cookies-spread" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Spread</Link>
+              <Link to="/cookie-science/why-cookies-are-chewy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Are Chewy</Link>
+              <Link to="/cookie-science/why-cookies-get-crispy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Get Crispy</Link>
+              <Link to="/cookie-science/why-cookies-flatten" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Flatten</Link>
+              <Link to="/cookie-science/why-cookies-spread-too-much" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Spread Too Much</Link>
             </div>
           </div>
 

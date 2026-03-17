@@ -8,7 +8,7 @@ export default function WhyCoffeeTastesDifferentCold() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-cyan-50 to-amber-50">
       <Navigation />
       <article className="max-w-4xl mx-auto px-6 py-16">
-        <Link to="/" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Home</Link>
+        <Link to="/articles" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Articles</Link>
         <header className="mb-12">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-cyan-600 text-white px-4 py-2 rounded-full text-sm mb-6">Coffee Science</div>
           <h1 className="text-5xl md:text-6xl mb-6 bg-gradient-to-r from-blue-600 to-cyan-700 bg-clip-text text-transparent">Why Coffee Tastes Different Cold</h1>
@@ -56,6 +56,42 @@ export default function WhyCoffeeTastesDifferentCold() {
                   <li>• Smoother, chocolate/caramel notes</li>
                 </ul>
               </div>
+            </div>
+          </div>
+
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">Why does iced coffee taste more bitter than hot coffee?</h3>
+                <p className="text-muted-foreground text-sm">Cold temperatures suppress sweetness perception and amplify bitterness. The same compounds taste more bitter and less sweet at cold temperatures due to reduced sweet receptor sensitivity.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Is cold brew the same as iced coffee?</h3>
+                <p className="text-muted-foreground text-sm">No. Iced coffee is hot-brewed then chilled. Cold brew is brewed cold from the start (12–18 hours). Cold brew has lower acidity, less bitterness, and naturally sweeter flavor because cold water extracts fewer acidic compounds.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why does leftover morning coffee taste bad cold?</h3>
+                <p className="text-muted-foreground text-sm">Hot coffee that cools undergoes continued oxidation and further chemical reactions. The aroma compounds that made it pleasant hot have largely evaporated. Cold brew, by contrast, was never hot so it doesn't undergo this degradation.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">What roast works best for cold coffee?</h3>
+                <p className="text-muted-foreground text-sm">Medium to medium-dark roasts work well cold — they have enough body and sweetness to be enjoyable without the heat-activated aromatics. Very light roasts can taste sharp and overly acidic when cold.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/coffee-science/coffee-extraction-science" className="block text-amber-700 hover:underline text-sm font-medium">→ Coffee Extraction Science</Link>
+              <Link to="/coffee-science/why-coffee-tastes-bitter" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Tastes Bitter</Link>
+              <Link to="/coffee-science/why-coffee-tastes-sour" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Tastes Sour</Link>
+              <Link to="/coffee-science/why-coffee-grind-size-matters" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Grind Size Matters</Link>
+              <Link to="/coffee-science/why-coffee-brewing-time-matters" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Brewing Time Matters</Link>
+              <Link to="/coffee-science/why-coffee-stales" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Stales</Link>
             </div>
           </div>
 

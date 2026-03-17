@@ -11,11 +11,11 @@ export default function WhyIceCreamGetsIcy() {
       <article className="max-w-4xl mx-auto px-6 py-16">
         {/* Back button */}
         <Link 
-          to="/" 
+          to="/articles" 
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
-          Back to Home
+          Back to Articles
         </Link>
 
         {/* Header */}
@@ -287,6 +287,40 @@ export default function WhyIceCreamGetsIcy() {
             </a>
           </div>
         </div>
+      
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">Why does homemade ice cream get icy?</h3>
+                <p className="text-muted-foreground text-sm">Homemade ice cream typically lacks stabilizers and has fewer fat emulsifiers than commercial versions. Without these, ice crystals grow larger over time. Churning faster, using more fat, and adding a small amount of stabilizer all help.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">What causes ice crystals in store-bought ice cream?</h3>
+                <p className="text-muted-foreground text-sm">Temperature fluctuations during storage cause partial thaw-refreeze cycles. Each cycle allows small ice crystals to melt and refreeze onto larger ones (recrystallization), progressively making the texture icier.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Does sugar prevent ice cream from getting icy?</h3>
+                <p className="text-muted-foreground text-sm">Yes — sugar lowers the freezing point of the mix, keeping more water in an unfrozen liquid state at serving temperature. This syrup lubricates the texture and slows ice crystal growth.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">How do I fix icy ice cream?</h3>
+                <p className="text-muted-foreground text-sm">Once ice crystals have formed, you can't reverse them. Prevention is the only fix: store at consistent 0°F or below, minimize temperature swings, press plastic wrap directly onto the surface before closing the lid.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/ice-cream-science/why-ice-cream-gets-icy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Ice Cream Gets Icy</Link>
+              <Link to="/ice-cream-science/why-ice-cream-is-creamy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Ice Cream Is Creamy</Link>
+              <Link to="/ice-cream-science/why-ice-cream-melts-fast" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Ice Cream Melts Fast</Link>
+              <Link to="/ice-cream-science/why-ice-cream-gets-freezer-burn" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Ice Cream Gets Freezer Burn</Link>
+            </div>
+          </div>
+
       </article>
 
       <Footer />

@@ -10,11 +10,11 @@ export default function WhyIceCreamMeltsFast() {
 
       <article className="max-w-4xl mx-auto px-6 py-16">
         <Link
-          to="/"
+          to="/articles"
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
-          Back to Home
+          Back to Articles
         </Link>
 
         <header className="mb-12">
@@ -123,6 +123,39 @@ export default function WhyIceCreamMeltsFast() {
             <p className="text-sm text-muted-foreground leading-relaxed">
               Leave a scoop of premium ice cream and a scoop of cheap store brand side by side at room temperature. The cheap brand will puddle first — its high overrun collapses immediately. Premium ice cream maintains its shape significantly longer thanks to denser fat networks and lower air content. This test is the clearest quality signal in ice cream.
             </p>
+          </div>
+
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">Why does cheap ice cream melt faster?</h3>
+                <p className="text-muted-foreground text-sm">Cheap ice cream has high overrun (up to 100% air by volume) and less fat. The air bubble structure collapses instantly when warmed, and without fat to form a stabilizing scaffold, the liquid spreads immediately.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Does fat content affect how fast ice cream melts?</h3>
+                <p className="text-muted-foreground text-sm">Significantly. Fat globules cluster around air bubbles and ice crystals, forming a network that resists collapse. Premium ice cream with 14–18% fat melts noticeably slower than regular ice cream at 10%.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">What makes gelato melt slower than ice cream?</h3>
+                <p className="text-muted-foreground text-sm">Gelato has lower overrun (less air) and higher egg yolk content, which acts as a natural emulsifier and stabilizer. The denser structure and stabilized emulsion hold together longer when warmed.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Can you make ice cream that doesn't melt?</h3>
+                <p className="text-muted-foreground text-sm">You can slow melting significantly with higher fat content, lower overrun, and more stabilizers, but all ice cream eventually melts at room temperature. Some research has explored cellulose-based stabilizers that dramatically extend melt resistance.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/ice-cream-science/why-ice-cream-gets-icy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Ice Cream Gets Icy</Link>
+              <Link to="/ice-cream-science/why-ice-cream-is-creamy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Ice Cream Is Creamy</Link>
+              <Link to="/ice-cream-science/why-ice-cream-gets-freezer-burn" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Ice Cream Gets Freezer Burn</Link>
+            </div>
           </div>
 
           <div className="bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-2xl p-8 my-12">

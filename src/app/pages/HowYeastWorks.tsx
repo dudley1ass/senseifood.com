@@ -11,11 +11,11 @@ export default function HowYeastWorks() {
       <article className="max-w-4xl mx-auto px-6 py-16">
         {/* Back button */}
         <Link 
-          to="/" 
+          to="/articles" 
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
-          Back to Home
+          Back to Articles
         </Link>
 
         {/* Header */}
@@ -249,6 +249,37 @@ export default function HowYeastWorks() {
             </a>
           </div>
         </div>
+      
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">What does yeast do in bread?</h3>
+                <p className="text-muted-foreground text-sm">Yeast consumes sugars in the dough and produces CO₂ gas and alcohol. The CO₂ gets trapped in gluten strands, inflating the dough and making bread rise. The alcohol evaporates during baking.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why does bread dough need to rest and rise?</h3>
+                <p className="text-muted-foreground text-sm">Yeast needs time to consume sugars and produce enough CO₂ to inflate the dough. The rest period (proofing) also allows gluten to relax and develop flavor compounds from fermentation.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">What kills yeast in bread dough?</h3>
+                <p className="text-muted-foreground text-sm">Water above 140°F kills yeast. Salt can inhibit yeast if added directly — always combine salt with flour before mixing with yeast. Old or expired yeast may not activate at all.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">What is the difference between active dry and instant yeast?</h3>
+                <p className="text-muted-foreground text-sm">Active dry yeast must be dissolved in warm water before use (bloomed). Instant yeast can be mixed directly into flour without blooming. Instant yeast also acts faster and can be used in smaller quantities.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/bread-science/why-bread-rises" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Bread Rises</Link>
+            </div>
+          </div>
+
       </article>
 
       <Footer />

@@ -10,11 +10,11 @@ export default function WhyCookiesSpreadTooMuch() {
 
       <article className="max-w-4xl mx-auto px-6 py-16">
         <Link
-          to="/"
+          to="/articles"
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
-          Back to Home
+          Back to Articles
         </Link>
 
         <header className="mb-12">
@@ -146,6 +146,40 @@ export default function WhyCookiesSpreadTooMuch() {
                   <span className="text-sm text-muted-foreground">{item.text}</span>
                 </div>
               ))}
+            </div>
+          </div>
+
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">Can I fix cookies that have already spread too much?</h3>
+                <p className="text-muted-foreground text-sm">Not the current batch — once baked, the structure is set. For future batches: chill the dough, verify butter was at the right temperature, add 2 tablespoons more flour, and check that leavening is fresh.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why do cookies spread more on the second baking sheet?</h3>
+                <p className="text-muted-foreground text-sm">The pan is still warm from the first batch, causing butter to melt immediately on contact. Always cool baking sheets completely between batches, or use multiple pans.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Does brown sugar prevent spreading?</h3>
+                <p className="text-muted-foreground text-sm">Yes — brown sugar is hygroscopic and retains moisture, which increases dough viscosity and reduces spreading. Replacing some white sugar with brown is an effective fix for over-spreading.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why do cookies spread in the oven but puff up on the cooling rack?</h3>
+                <p className="text-muted-foreground text-sm">That's actually normal and desirable. In the oven, fat melts and the cookie spreads. As it cools, the fat re-solidifies and pulls the cookie up slightly. A small rise during cooling indicates good fat structure.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/cookie-science/why-cookies-are-chewy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Are Chewy</Link>
+              <Link to="/cookie-science/why-cookies-get-crispy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Get Crispy</Link>
+              <Link to="/cookie-science/why-cookies-flatten" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Flatten</Link>
+              <Link to="/cookie-science/brown-sugar-vs-white-sugar" className="block text-amber-700 hover:underline text-sm font-medium">→ Brown Sugar vs White Sugar</Link>
             </div>
           </div>
 

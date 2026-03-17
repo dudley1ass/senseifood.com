@@ -8,7 +8,7 @@ export default function WhyCoffeeTastesSalty() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-stone-50 to-amber-50">
       <Navigation />
       <article className="max-w-4xl mx-auto px-6 py-16">
-        <Link to="/" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Home</Link>
+        <Link to="/articles" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Articles</Link>
         <header className="mb-12">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-stone-700 text-white px-4 py-2 rounded-full text-sm mb-6">Coffee Science</div>
           <h1 className="text-5xl md:text-6xl mb-6 bg-gradient-to-r from-blue-700 to-stone-700 bg-clip-text text-transparent">Why Coffee Tastes Salty</h1>
@@ -40,6 +40,42 @@ export default function WhyCoffeeTastesSalty() {
           <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl p-6 my-8 border-l-4 border-cyan-500">
             <h4 className="text-lg mb-2 text-cyan-800">💡 Science Note: Why a Pinch of Salt Works</h4>
             <p className="text-sm text-muted-foreground leading-relaxed">Adding a tiny pinch of salt (1/8 tsp per 12 cups) to coffee grounds before brewing is a legitimate trick — not a myth. Sodium ions suppress the perception of bitterness by blocking bitter taste receptors. The salt itself is imperceptible at these concentrations but measurably reduces harshness, particularly in over-extracted or stale coffee. It's why some high-end coffee shops add trace amounts of salt to their brew water.</p>
+          </div>
+
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">Why does some coffee taste salty?</h3>
+                <p className="text-muted-foreground text-sm">Most commonly: mineral-heavy brewing water (especially softened water with high sodium), under-extraction, or certain bean origins with naturally higher mineral content.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Does adding salt to coffee work?</h3>
+                <p className="text-muted-foreground text-sm">Yes — a tiny pinch (1/8 tsp per 12 cups) added to grounds before brewing suppresses bitterness perception without making the coffee taste salty. Sodium ions block bitter taste receptors at these trace concentrations.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">What water minerals affect coffee taste?</h3>
+                <p className="text-muted-foreground text-sm">Magnesium enhances flavor extraction. Calcium provides balance. Sodium at low levels enhances sweetness; at high levels causes saltiness. Total hardness between 75–150 ppm is generally ideal for brewing.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why does softened water make coffee taste salty?</h3>
+                <p className="text-muted-foreground text-sm">Water softeners replace calcium and magnesium ions with sodium ions. This can dramatically increase sodium content, directly causing a salty taste. Use filtered water with balanced minerals, not softened water.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/coffee-science/coffee-extraction-science" className="block text-amber-700 hover:underline text-sm font-medium">→ Coffee Extraction Science</Link>
+              <Link to="/coffee-science/why-coffee-tastes-bitter" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Tastes Bitter</Link>
+              <Link to="/coffee-science/why-coffee-tastes-sour" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Tastes Sour</Link>
+              <Link to="/coffee-science/why-coffee-grind-size-matters" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Grind Size Matters</Link>
+              <Link to="/coffee-science/why-coffee-brewing-time-matters" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Brewing Time Matters</Link>
+              <Link to="/coffee-science/why-coffee-stales" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Stales</Link>
+            </div>
           </div>
 
           <div className="bg-gradient-to-r from-blue-600 to-stone-700 text-white rounded-2xl p-8 my-12">

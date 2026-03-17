@@ -8,7 +8,7 @@ export default function WhyCoffeeBrewingTimeMatters() {
     <div className="min-h-screen bg-gradient-to-br from-stone-50 via-amber-50 to-orange-50">
       <Navigation />
       <article className="max-w-4xl mx-auto px-6 py-16">
-        <Link to="/" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Home</Link>
+        <Link to="/articles" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Articles</Link>
         <header className="mb-12">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-stone-600 to-amber-700 text-white px-4 py-2 rounded-full text-sm mb-6">Coffee Science</div>
           <h1 className="text-5xl md:text-6xl mb-6 bg-gradient-to-r from-stone-700 to-amber-700 bg-clip-text text-transparent">Why Coffee Brewing Time Matters</h1>
@@ -49,6 +49,41 @@ export default function WhyCoffeeBrewingTimeMatters() {
                 <tr><td className="py-3 font-medium">Cold Brew</td><td className="py-3 text-green-700">12–18 hours</td><td className="py-3 text-muted-foreground">Very weak</td><td className="py-3 text-muted-foreground">Bitter, over-steeped</td></tr>
               </tbody>
             </table>
+          </div>
+
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">What happens if you brew coffee too long?</h3>
+                <p className="text-muted-foreground text-sm">Over-extraction: bitter, harsh, astringent flavors from melanoidins and tannins dominate. The cup loses brightness and sweetness. For French press, leaving grounds in contact too long after the target time consistently causes this.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">What happens if you brew coffee too short?</h3>
+                <p className="text-muted-foreground text-sm">Under-extraction: only the light, acidic compounds extract. The cup tastes sour, weak, and hollow — without the sweetness and body that come from longer extraction of sugars and oils.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why does cold brew take 12–18 hours?</h3>
+                <p className="text-muted-foreground text-sm">Cold water is far less efficient at dissolving flavor compounds than hot water. To achieve the same extraction yield that hot water achieves in 4 minutes, cold water needs 12–18 hours of contact time.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Can I adjust brew time to fix bad coffee?</h3>
+                <p className="text-muted-foreground text-sm">Yes — it's one of the primary tuning variables. Too bitter? Shorten brew time or grind coarser. Too sour/weak? Extend brew time or grind finer. Always change one variable at a time to identify the effect.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/coffee-science/coffee-extraction-science" className="block text-amber-700 hover:underline text-sm font-medium">→ Coffee Extraction Science</Link>
+              <Link to="/coffee-science/why-coffee-tastes-bitter" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Tastes Bitter</Link>
+              <Link to="/coffee-science/why-coffee-tastes-sour" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Tastes Sour</Link>
+              <Link to="/coffee-science/why-coffee-grind-size-matters" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Grind Size Matters</Link>
+              <Link to="/coffee-science/why-coffee-stales" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Stales</Link>
+            </div>
           </div>
 
           <div className="bg-gradient-to-r from-stone-600 to-amber-700 text-white rounded-2xl p-8 my-12">

@@ -10,11 +10,11 @@ export default function WhyCakesCollapse() {
       
       <article className="max-w-4xl mx-auto px-6 py-16">
         <Link 
-          to="/" 
+          to="/articles" 
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
-          Back to Home
+          Back to Articles
         </Link>
 
         <header className="mb-12">
@@ -349,6 +349,41 @@ export default function WhyCakesCollapse() {
                   <span>Cooled in pan 10-15 min before inverting</span>
                 </div>
               </div>
+            </div>
+          </div>
+
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">What causes a cake to collapse in the middle?</h3>
+                <p className="text-muted-foreground text-sm">Most commonly: under-baking (structure not fully set), too much leavening (over-expansion then collapse), or opening the oven too early (temperature drop pops bubbles before structure sets).</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Can I save a collapsed cake?</h3>
+                <p className="text-muted-foreground text-sm">If it's underbaked, return it to the oven immediately. If it collapsed after cooling, the structure has failed — the cake can't be saved structurally. You can repurpose it as a trifle layer or cake pops.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why does my cake look done on the outside but collapse?</h3>
+                <p className="text-muted-foreground text-sm">The exterior browns and sets faster than the interior. A golden top is not a reliable doneness indicator. Always test with a toothpick (moist crumbs, not wet batter) and check that internal temperature reaches 200–210°F.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Does high altitude affect cake collapsing?</h3>
+                <p className="text-muted-foreground text-sm">Yes — at high altitude, lower air pressure means leavening gases expand more aggressively. Cakes can over-expand and collapse. Reduce baking powder by 25% and consider adding extra flour to strengthen structure.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/cake-science/why-cakes-sink" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Sink in the Middle</Link>
+              <Link to="/cake-science/why-cakes-rise" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Rise</Link>
+              <Link to="/cake-science/why-cakes-are-dense" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Are Dense</Link>
+              <Link to="/cake-science/why-cakes-dry-out" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Dry Out</Link>
+              <Link to="/cake-science/why-cakes-crack-on-top" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Crack on Top</Link>
             </div>
           </div>
 

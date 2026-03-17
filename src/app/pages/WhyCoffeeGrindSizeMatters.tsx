@@ -8,7 +8,7 @@ export default function WhyCoffeeGrindSizeMatters() {
     <div className="min-h-screen bg-gradient-to-br from-amber-50 via-stone-50 to-yellow-50">
       <Navigation />
       <article className="max-w-4xl mx-auto px-6 py-16">
-        <Link to="/" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Home</Link>
+        <Link to="/articles" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Articles</Link>
         <header className="mb-12">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-stone-600 text-white px-4 py-2 rounded-full text-sm mb-6">Coffee Science</div>
           <h1 className="text-5xl md:text-6xl mb-6 bg-gradient-to-r from-amber-600 to-stone-700 bg-clip-text text-transparent">Why Coffee Grind Size Matters</h1>
@@ -21,6 +21,41 @@ export default function WhyCoffeeGrindSizeMatters() {
 
           <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-amber-600 to-stone-700 bg-clip-text text-transparent">The Surface Area Principle</h2>
           <p className="text-foreground/80 leading-relaxed mb-6">Grinding breaks a whole bean into smaller particles, dramatically increasing the surface area in contact with water. More surface area = faster extraction. Finer grind = more surface area = extracts faster. Coarser grind = less surface area = extracts slower. This is why you must match grind to brew time — if water contact time is short (espresso: 25–30 sec), you need a fine grind to extract enough flavor. If contact time is long (French press: 4 min), a coarse grind prevents over-extraction.</p>
+
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">What happens if coffee grind is too fine?</h3>
+                <p className="text-muted-foreground text-sm">Over-extraction: the cup tastes bitter, harsh, and astringent. For espresso, shots run too slowly or not at all (choked). The solution is always to grind coarser.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">What happens if coffee grind is too coarse?</h3>
+                <p className="text-muted-foreground text-sm">Under-extraction: the cup tastes sour, weak, and watery. For espresso, shots run too fast and appear pale. The solution is to grind finer.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Does grind size affect caffeine?</h3>
+                <p className="text-muted-foreground text-sm">Marginally. Finer grinds extract slightly more caffeine due to increased surface area and extraction efficiency. The difference is small — grind size has far more impact on flavor than on caffeine content.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why is a burr grinder better than a blade grinder?</h3>
+                <p className="text-muted-foreground text-sm">Burr grinders produce consistent particle sizes, enabling even extraction. Blade grinders create wildly inconsistent sizes — some powder-fine, some boulder-coarse — producing simultaneous over- and under-extraction in the same cup.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/coffee-science/coffee-extraction-science" className="block text-amber-700 hover:underline text-sm font-medium">→ Coffee Extraction Science</Link>
+              <Link to="/coffee-science/why-coffee-tastes-bitter" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Tastes Bitter</Link>
+              <Link to="/coffee-science/why-coffee-tastes-sour" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Tastes Sour</Link>
+              <Link to="/coffee-science/why-coffee-brewing-time-matters" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Brewing Time Matters</Link>
+              <Link to="/coffee-science/why-coffee-stales" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Stales</Link>
+            </div>
+          </div>
 
           <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-amber-200 my-10">
             <h3 className="text-xl mb-6 text-center">Grind Size Guide by Brew Method</h3>

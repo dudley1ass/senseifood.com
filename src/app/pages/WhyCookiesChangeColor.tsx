@@ -8,7 +8,7 @@ export default function WhyCookiesChangeColor() {
     <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-red-50">
       <Navigation />
       <article className="max-w-4xl mx-auto px-6 py-16">
-        <Link to="/" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Home</Link>
+        <Link to="/articles" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Articles</Link>
         <header className="mb-12">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-red-500 text-white px-4 py-2 rounded-full text-sm mb-6">Cookie Science</div>
           <h1 className="text-5xl md:text-6xl mb-6 bg-gradient-to-r from-amber-600 to-red-600 bg-clip-text text-transparent">Why Cookies Change Color</h1>
@@ -19,6 +19,42 @@ export default function WhyCookiesChangeColor() {
         <div className="prose prose-lg max-w-none">
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">Cookie color is a direct read-out of temperature, time, and ingredient chemistry. A pale cookie and a dark golden cookie are chemically very different — different flavor compounds, different textures, different moisture levels.</p>
           <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-amber-600 to-red-600 bg-clip-text text-transparent">The Color-to-Chemistry Map</h2>
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">Why do my cookies look pale even when the bottom is done?</h3>
+                <p className="text-muted-foreground text-sm">The top of the cookie heats only by convection (hot air), which is much less efficient than the conduction heating the bottom. Switch to convection mode if available, which circulates hot air more efficiently around the tops.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">What is the perfect cookie color to aim for?</h3>
+                <p className="text-muted-foreground text-sm">For most chocolate chip cookies: golden brown edges with a slightly lighter center. The center should look set but not as dark as the edges. This produces crispy edges with a chewy center.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Can I use egg wash to get browner cookies?</h3>
+                <p className="text-muted-foreground text-sm">Yes — brushing with egg yolk wash before baking accelerates browning via Maillard reaction. Used on cookies like shortbread or cutout cookies for a glossy, deep golden finish.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why did my cookies come out much darker than last time?</h3>
+                <p className="text-muted-foreground text-sm">Most likely the oven was hotter (common with convection mode left on accidentally), butter was darker/more browned than usual, or brown sugar ratio was higher. Check your oven temp with a thermometer.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/cookie-science/why-cookies-spread" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Spread</Link>
+              <Link to="/cookie-science/why-cookies-are-chewy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Are Chewy</Link>
+              <Link to="/cookie-science/why-cookies-get-crispy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Get Crispy</Link>
+              <Link to="/cookie-science/why-cookies-flatten" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Flatten</Link>
+              <Link to="/cookie-science/why-cookies-spread-too-much" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Spread Too Much</Link>
+              <Link to="/cookie-science/brown-sugar-vs-white-sugar" className="block text-amber-700 hover:underline text-sm font-medium">→ Brown Sugar vs White Sugar</Link>
+            </div>
+          </div>
+
           <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-amber-200 my-8">
             <div className="space-y-3">
               {[

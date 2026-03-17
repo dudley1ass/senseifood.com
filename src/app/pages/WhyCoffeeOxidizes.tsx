@@ -8,7 +8,7 @@ export default function WhyCoffeeOxidizes() {
     <div className="min-h-screen bg-gradient-to-br from-stone-50 via-red-50 to-amber-50">
       <Navigation />
       <article className="max-w-4xl mx-auto px-6 py-16">
-        <Link to="/" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Home</Link>
+        <Link to="/articles" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Articles</Link>
         <header className="mb-12">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-stone-600 to-red-700 text-white px-4 py-2 rounded-full text-sm mb-6">Coffee Science</div>
           <h1 className="text-5xl md:text-6xl mb-6 bg-gradient-to-r from-stone-700 to-red-700 bg-clip-text text-transparent">Why Coffee Oxidizes</h1>
@@ -54,6 +54,42 @@ export default function WhyCoffeeOxidizes() {
                 <p className="text-xs text-muted-foreground">{detail}</p>
               </div>
             ))}
+          </div>
+
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">How do I prevent coffee oxidation?</h3>
+                <p className="text-muted-foreground text-sm">Minimize oxygen exposure at every stage: store beans in an airtight container, grind only before brewing, use beans within 2–4 weeks of opening the bag, and transfer brewed coffee to a sealed thermal carafe immediately.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Does coffee oxidize after brewing?</h3>
+                <p className="text-muted-foreground text-sm">Yes, very rapidly. Brewed coffee exposed to air goes flat and stale within 20–30 minutes. The dissolved aromatic compounds continue reacting with oxygen and evaporating after brewing stops.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">What does oxidized coffee taste like?</h3>
+                <p className="text-muted-foreground text-sm">Flat, cardboard-like, papery, or rancid. The pleasant volatile aromatics have either evaporated or reacted into less pleasant compounds. There's a noticeable absence of brightness and complexity.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Does vacuum sealing coffee prevent oxidation?</h3>
+                <p className="text-muted-foreground text-sm">Significantly — removing oxygen slows oxidation dramatically. One-way valve bags (which let CO₂ out but keep oxygen out) are ideal for fresh roasted beans. Vacuum-sealed canisters work well for beans you've already opened.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/coffee-science/coffee-extraction-science" className="block text-amber-700 hover:underline text-sm font-medium">→ Coffee Extraction Science</Link>
+              <Link to="/coffee-science/why-coffee-tastes-bitter" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Tastes Bitter</Link>
+              <Link to="/coffee-science/why-coffee-tastes-sour" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Tastes Sour</Link>
+              <Link to="/coffee-science/why-coffee-grind-size-matters" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Grind Size Matters</Link>
+              <Link to="/coffee-science/why-coffee-brewing-time-matters" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Brewing Time Matters</Link>
+              <Link to="/coffee-science/why-coffee-stales" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Stales</Link>
+            </div>
           </div>
 
           <div className="bg-gradient-to-r from-stone-600 to-red-700 text-white rounded-2xl p-8 my-12">

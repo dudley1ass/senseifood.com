@@ -11,15 +11,50 @@ export default function WhyCoffeeSour() {
       <article className="max-w-4xl mx-auto px-6 py-16">
         {/* Back button */}
         <Link 
-          to="/" 
+          to="/articles" 
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
-          Back to Home
+          Back to Articles
         </Link>
 
         {/* Header */}
         <header className="mb-12">
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">What causes sour coffee?</h3>
+                <p className="text-muted-foreground text-sm">Sour coffee is almost always under-extraction — water hasn't been in contact with the grounds long enough or at a high enough temperature to extract the balancing sugars and oils. Only the light, acidic compounds extract early.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">How do I fix sour coffee?</h3>
+                <p className="text-muted-foreground text-sm">In order of impact: increase water temperature to 195–205°F, grind finer, brew longer, increase your coffee dose. Any combination of these increases extraction and pulls in the sweetness that balances acidity.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Is sour coffee bad?</h3>
+                <p className="text-muted-foreground text-sm">Harsh, vinegary sourness is undesirable. But pleasant brightness (from citric and malic acids) is a desirable quality in well-extracted coffee. The goal is balanced acidity, not zero acidity.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why does pour-over coffee taste sour?</h3>
+                <p className="text-muted-foreground text-sm">Pour-over is particularly prone to sourness if water temperature is too low, grind is too coarse, or the pour is too fast. Slow down your pour, use 200°F water, and grind medium-fine to extract properly.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/coffee-science/coffee-extraction-science" className="block text-amber-700 hover:underline text-sm font-medium">→ Coffee Extraction Science</Link>
+              <Link to="/coffee-science/why-coffee-tastes-bitter" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Tastes Bitter</Link>
+              <Link to="/coffee-science/why-coffee-grind-size-matters" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Grind Size Matters</Link>
+              <Link to="/coffee-science/why-coffee-brewing-time-matters" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Brewing Time Matters</Link>
+              <Link to="/coffee-science/why-coffee-stales" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Stales</Link>
+            </div>
+          </div>
+
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-600 to-yellow-700 text-white px-4 py-2 rounded-full text-sm mb-6">
             Coffee Science
           </div>

@@ -11,15 +11,51 @@ export default function WhyCakesDome() {
       <article className="max-w-4xl mx-auto px-6 py-16">
         {/* Back button */}
         <Link 
-          to="/" 
+          to="/articles" 
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
-          Back to Home
+          Back to Articles
         </Link>
 
         {/* Header */}
         <header className="mb-12">
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">Why do cakes dome more on top than the sides?</h3>
+                <p className="text-muted-foreground text-sm">The edges of the pan absorb heat and set first, while the center is still liquid. As the center batter continues to rise after the edges have set, it can only go upward — creating the dome.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Can I prevent cake doming?</h3>
+                <p className="text-muted-foreground text-sm">Yes. Lower your oven temperature by 25°F and bake longer. Use baking strips (wet fabric strips wrapped around the pan) to slow edge cooking. Or level the dome with a serrated knife after cooling.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Is cake doming a sign of over-leavening?</h3>
+                <p className="text-muted-foreground text-sm">Not always — doming happens even in well-balanced recipes. However, excess baking powder amplifies doming because extra CO₂ pushes the center up more aggressively before it sets.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Does baking two pans at once affect doming?</h3>
+                <p className="text-muted-foreground text-sm">Yes — two pans can block airflow and heat, causing uneven baking that makes doming worse. Rotate pans halfway through baking and ensure there's at least 2 inches of space between pans.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/cake-science/why-cakes-sink" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Sink in the Middle</Link>
+              <Link to="/cake-science/why-cakes-rise" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Rise</Link>
+              <Link to="/cake-science/why-cakes-are-dense" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Are Dense</Link>
+              <Link to="/cake-science/why-cakes-collapse" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Collapse</Link>
+              <Link to="/cake-science/why-cakes-dry-out" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Dry Out</Link>
+              <Link to="/cake-science/why-cakes-crack-on-top" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Crack on Top</Link>
+            </div>
+          </div>
+
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white px-4 py-2 rounded-full text-sm mb-6">
             Cake Science
           </div>

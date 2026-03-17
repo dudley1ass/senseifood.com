@@ -8,7 +8,7 @@ export default function WhyCookiesSpreadUnevenly() {
     <div className="min-h-screen bg-gradient-to-br from-yellow-50 via-amber-50 to-orange-50">
       <Navigation />
       <article className="max-w-4xl mx-auto px-6 py-16">
-        <Link to="/" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Home</Link>
+        <Link to="/articles" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Articles</Link>
         <header className="mb-12">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white px-4 py-2 rounded-full text-sm mb-6">Cookie Science</div>
           <h1 className="text-5xl md:text-6xl mb-6 bg-gradient-to-r from-yellow-600 to-amber-600 bg-clip-text text-transparent">Why Cookies Spread Unevenly</h1>
@@ -35,6 +35,41 @@ export default function WhyCookiesSpreadUnevenly() {
               <div className="bg-green-50 rounded-lg p-3 text-xs text-green-800"><strong>Fix:</strong> Use a heavy, flat half-sheet pan. Warped thin pans are a leading cause of uneven spread — replace them.</div>
             </div>
           </div>
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">How do I make perfectly round cookies?</h3>
+                <p className="text-muted-foreground text-sm">Roll each dough portion into a smooth ball between your palms, ensuring there are no flat spots. Use a cookie scoop for consistent sizing. Also rotate your pan 180° halfway through baking.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why do my cookies spread into ovals?</h3>
+                <p className="text-muted-foreground text-sm">Usually oven hot spots combined with uneven dough balls. Map your oven's hot spots (toast test), rotate pans, and ensure dough balls are perfectly round.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Does a warped pan cause uneven spreading?</h3>
+                <p className="text-muted-foreground text-sm">Yes — a warped pan causes melting fat to pool toward the low side. Invest in a heavy, flat half-sheet pan. This is one of the most impactful equipment upgrades for cookie baking.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why do edge cookies bake differently than center cookies?</h3>
+                <p className="text-muted-foreground text-sm">Edge cookies are exposed to radiant heat from the oven walls, causing faster browning and spreading. Rotate the pan and consider leaving the outer positions on the pan empty for more uniform results.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/cookie-science/why-cookies-are-chewy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Are Chewy</Link>
+              <Link to="/cookie-science/why-cookies-get-crispy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Get Crispy</Link>
+              <Link to="/cookie-science/why-cookies-flatten" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Flatten</Link>
+              <Link to="/cookie-science/why-cookies-spread-too-much" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Spread Too Much</Link>
+              <Link to="/cookie-science/brown-sugar-vs-white-sugar" className="block text-amber-700 hover:underline text-sm font-medium">→ Brown Sugar vs White Sugar</Link>
+            </div>
+          </div>
+
           <div className="bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-2xl p-8 my-12">
             <h2 className="text-3xl mb-4">Get Perfectly Round Cookies</h2>
             <p className="text-lg text-white/90 mb-6">Use CookieSensei to master your spread every time.</p>

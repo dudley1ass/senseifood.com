@@ -11,15 +11,50 @@ export default function WhyCakesSink() {
       <article className="max-w-4xl mx-auto px-6 py-16">
         {/* Back button */}
         <Link 
-          to="/" 
+          to="/articles" 
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
-          Back to Home
+          Back to Articles
         </Link>
 
         {/* Header */}
         <header className="mb-12">
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">Why does my cake sink every time?</h3>
+                <p className="text-muted-foreground text-sm">The most likely cause is under-baking — the structure hasn't set enough to hold the risen shape when removed from the oven. Check internal temperature (should reach 200–210°F) and test with a toothpick in the center.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Can too much sugar cause a cake to sink?</h3>
+                <p className="text-muted-foreground text-sm">Yes. Excess sugar weakens gluten structure and holds moisture that prevents the crumb from setting properly. Always measure sugar by weight, and don't add more than the recipe specifies.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Does opening the oven cause cakes to sink?</h3>
+                <p className="text-muted-foreground text-sm">Yes, especially in the first 20 minutes. Cold air lowers oven temperature, which can collapse delicate CO₂ bubbles before the structure has set. Wait until at least 75% of the bake time has passed before opening.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why does my cake sink after coming out of the oven?</h3>
+                <p className="text-muted-foreground text-sm">The structure wasn't fully set when removed. The center is still partly liquid and collapses under its own weight as it cools. The internal temperature should reach 200–210°F before removal.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/cake-science/why-cakes-rise" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Rise</Link>
+              <Link to="/cake-science/why-cakes-are-dense" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Are Dense</Link>
+              <Link to="/cake-science/why-cakes-collapse" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Collapse</Link>
+              <Link to="/cake-science/why-cakes-dry-out" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Dry Out</Link>
+              <Link to="/cake-science/why-cakes-crack-on-top" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Crack on Top</Link>
+            </div>
+          </div>
+
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-pink-500 to-rose-600 text-white px-4 py-2 rounded-full text-sm mb-6">
             Cake Science
           </div>

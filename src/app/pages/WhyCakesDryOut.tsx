@@ -10,11 +10,11 @@ export default function WhyCakesDryOut() {
 
       <article className="max-w-4xl mx-auto px-6 py-16">
         <Link
-          to="/"
+          to="/articles"
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
-          Back to Home
+          Back to Articles
         </Link>
 
         <header className="mb-12">
@@ -49,6 +49,41 @@ export default function WhyCakesDryOut() {
           <p className="text-foreground/80 leading-relaxed mb-6">
             Moisture in cake comes from multiple sources: water in eggs, milk, butter, and any liquid ingredients. These are bound by <strong>fat</strong> (which coats proteins and slows evaporation) and <strong>sugar</strong> (which is hygroscopic — it attracts and holds water). A moist cake has enough fat and sugar to keep water trapped in the crumb structure even after baking.
           </p>
+
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">How do I keep cake moist for several days?</h3>
+                <p className="text-muted-foreground text-sm">Wrap tightly in plastic wrap pressed directly against cut surfaces. A layer of buttercream or ganache seals in moisture. Store at room temperature for up to 3 days; refrigerate only if filling requires it (and wrap very well).</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Can I add moisture back to a dry cake?</h3>
+                <p className="text-muted-foreground text-sm">Yes — brush each layer with simple syrup (equal parts sugar and water, simmered until dissolved) while the cake is still slightly warm. The syrup soaks in and restores moisture. Professional bakeries do this routinely.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why does refrigerating cake make it dry?</h3>
+                <p className="text-muted-foreground text-sm">Refrigerators are low-humidity environments that actively pull moisture from food. An unprotected cake dries out much faster in the fridge than at room temperature. Always wrap tightly before refrigerating.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why is my cake dry even though I followed the recipe?</h3>
+                <p className="text-muted-foreground text-sm">Most likely: too much flour (common when scooping rather than spooning into the measuring cup), over-baking by even a few minutes, or ingredients at different temperatures that prevented proper emulsification.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/cake-science/why-cakes-sink" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Sink in the Middle</Link>
+              <Link to="/cake-science/why-cakes-rise" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Rise</Link>
+              <Link to="/cake-science/why-cakes-are-dense" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Are Dense</Link>
+              <Link to="/cake-science/why-cakes-collapse" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Collapse</Link>
+              <Link to="/cake-science/why-cakes-crack-on-top" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Crack on Top</Link>
+            </div>
+          </div>
 
           <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-amber-200 my-10">
             <h3 className="text-xl mb-6">Moisture Retention: Key Ingredients</h3>

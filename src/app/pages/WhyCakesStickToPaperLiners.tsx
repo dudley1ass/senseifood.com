@@ -8,7 +8,7 @@ export default function WhyCakesStickToPaperLiners() {
     <div className="min-h-screen bg-gradient-to-br from-rose-50 via-pink-50 to-orange-50">
       <Navigation />
       <article className="max-w-4xl mx-auto px-6 py-16">
-        <Link to="/" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Home</Link>
+        <Link to="/articles" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Articles</Link>
         <header className="mb-12">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-rose-500 to-orange-500 text-white px-4 py-2 rounded-full text-sm mb-6">Cake Science</div>
           <h1 className="text-5xl md:text-6xl mb-6 bg-gradient-to-r from-rose-600 to-orange-600 bg-clip-text text-transparent">Why Cakes Stick to Paper Liners</h1>
@@ -37,6 +37,42 @@ export default function WhyCakesStickToPaperLiners() {
               <div className="bg-green-50 rounded-lg p-3 text-xs text-green-800"><strong>Fix:</strong> For very moist batters, spray the inside of the liner lightly with cooking spray before filling, or switch to foil liners.</div>
             </div>
           </div>
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">How do I stop cupcakes from sticking to liners?</h3>
+                <p className="text-muted-foreground text-sm">Use high-quality parchment or foil liners (not thin paper ones), cool completely before peeling (45–60 minutes minimum), or lightly spray the inside of liners before filling.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why do some cupcakes peel cleanly and others don't?</h3>
+                <p className="text-muted-foreground text-sm">Batter composition makes a big difference. High-fat, high-sugar batters (carrot, banana) stick more aggressively. Using better quality liners helps across all recipes.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">What are the best cupcake liners to prevent sticking?</h3>
+                <p className="text-muted-foreground text-sm">Foil liners release most cleanly. Parchment-lined paper liners are excellent. Tulip-style liners are pre-greased and release beautifully. Thin uncoated paper liners are the most prone to sticking.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Should I grease cupcake liners?</h3>
+                <p className="text-muted-foreground text-sm">For standard butter-based cupcakes, usually not necessary with quality liners. For very moist or oil-heavy batters, a light spray of cooking oil inside the liner significantly improves release.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/cake-science/why-cakes-sink" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Sink in the Middle</Link>
+              <Link to="/cake-science/why-cakes-rise" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Rise</Link>
+              <Link to="/cake-science/why-cakes-are-dense" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Are Dense</Link>
+              <Link to="/cake-science/why-cakes-collapse" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Collapse</Link>
+              <Link to="/cake-science/why-cakes-dry-out" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Dry Out</Link>
+              <Link to="/cake-science/why-cakes-crack-on-top" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Crack on Top</Link>
+            </div>
+          </div>
+
           <div className="bg-gradient-to-r from-rose-500 to-orange-500 text-white rounded-2xl p-8 my-12">
             <h2 className="text-3xl mb-4">Bake Perfect Cupcakes</h2>
             <p className="text-lg text-white/90 mb-6">Browse all our cake science articles for more fixes.</p>

@@ -11,11 +11,11 @@ export default function WhyCookiesHard() {
       <article className="max-w-4xl mx-auto px-6 py-16">
         {/* Back button */}
         <Link 
-          to="/" 
+          to="/articles" 
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
-          Back to Home
+          Back to Articles
         </Link>
 
         {/* Header */}
@@ -159,6 +159,42 @@ export default function WhyCookiesHard() {
           <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
             How to Keep Cookies Soft
           </h2>
+
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">Why are my cookies hard right after baking?</h3>
+                <p className="text-muted-foreground text-sm">Over-baking drives out all moisture, leaving a rigid sugar-starch structure. Try removing cookies 1–2 minutes earlier — they continue cooking on the hot pan after the oven.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">How do I soften hard cookies?</h3>
+                <p className="text-muted-foreground text-sm">Place in a sealed container with a slice of fresh bread overnight. The moisture from the bread migrates into the cookies and softens them. Alternatively, 8–10 seconds in the microwave softens them temporarily.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why do brown sugar cookies stay softer than white sugar cookies?</h3>
+                <p className="text-muted-foreground text-sm">Brown sugar contains molasses, which is hygroscopic — it actively attracts and holds moisture from the air. This prevents the staling that makes cookies hard.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Can the type of flour make cookies harder?</h3>
+                <p className="text-muted-foreground text-sm">Higher-protein bread flour develops more gluten, which sets into a firmer, harder structure. For softer cookies, use all-purpose flour or add 1–2 tsp of cornstarch per cup of flour to inhibit gluten development.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/cookie-science/why-cookies-spread" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Spread</Link>
+              <Link to="/cookie-science/why-cookies-are-chewy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Are Chewy</Link>
+              <Link to="/cookie-science/why-cookies-get-crispy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Get Crispy</Link>
+              <Link to="/cookie-science/why-cookies-flatten" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Flatten</Link>
+              <Link to="/cookie-science/why-cookies-spread-too-much" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Spread Too Much</Link>
+              <Link to="/cookie-science/brown-sugar-vs-white-sugar" className="block text-amber-700 hover:underline text-sm font-medium">→ Brown Sugar vs White Sugar</Link>
+            </div>
+          </div>
 
           <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 my-8 border-2 border-green-200">
             <h3 className="text-2xl mb-6">Storage Methods That Work</h3>

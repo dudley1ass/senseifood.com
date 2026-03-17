@@ -8,7 +8,7 @@ export default function WhyCoffeeTastesAcidic() {
     <div className="min-h-screen bg-gradient-to-br from-yellow-50 via-amber-50 to-orange-50">
       <Navigation />
       <article className="max-w-4xl mx-auto px-6 py-16">
-        <Link to="/" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Home</Link>
+        <Link to="/articles" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Articles</Link>
         <header className="mb-12">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-600 to-amber-700 text-white px-4 py-2 rounded-full text-sm mb-6">Coffee Science</div>
           <h1 className="text-5xl md:text-6xl mb-6 bg-gradient-to-r from-yellow-700 to-amber-700 bg-clip-text text-transparent">Why Coffee Tastes Acidic</h1>
@@ -47,6 +47,42 @@ export default function WhyCoffeeTastesAcidic() {
             <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-yellow-200">
               <h3 className="text-xl mb-3">🌍 Bean Origin</h3>
               <p className="text-sm text-muted-foreground mb-3">High-altitude grown beans (Ethiopian, Kenyan, Colombian) naturally develop more organic acids due to slower maturation. Low-altitude beans (Brazilian, Indonesian) produce fewer acids and taste flatter but smoother. Choose origin based on your acidity preference.</p>
+            </div>
+          </div>
+
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">Is acidic coffee bad for you?</h3>
+                <p className="text-muted-foreground text-sm">For most people, no. Some people with acid reflux do better with low-acid coffees (dark roast, cold brew, or low-altitude origins like Brazilian or Sumatran beans).</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">How do I make coffee less acidic?</h3>
+                <p className="text-muted-foreground text-sm">Choose a darker roast, use cold brew method, try low-altitude beans (Brazil, Sumatra), or use slightly coarser grind and cooler water. Each reduces acid extraction.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Does cold brew have less acid?</h3>
+                <p className="text-muted-foreground text-sm">Yes — cold water extracts less citric and malic acid than hot water. Cold brew typically has 60–70% less acidity than hot-brewed coffee from the same beans.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">What coffee is least acidic?</h3>
+                <p className="text-muted-foreground text-sm">Dark roast coffees from low-altitude growing regions (Brazilian, Sumatran) brewed as cold brew are the least acidic options. These beans naturally develop fewer acids and cold brewing extracts even less.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/coffee-science/coffee-extraction-science" className="block text-amber-700 hover:underline text-sm font-medium">→ Coffee Extraction Science</Link>
+              <Link to="/coffee-science/why-coffee-tastes-bitter" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Tastes Bitter</Link>
+              <Link to="/coffee-science/why-coffee-tastes-sour" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Tastes Sour</Link>
+              <Link to="/coffee-science/why-coffee-grind-size-matters" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Grind Size Matters</Link>
+              <Link to="/coffee-science/why-coffee-brewing-time-matters" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Brewing Time Matters</Link>
+              <Link to="/coffee-science/why-coffee-stales" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Stales</Link>
             </div>
           </div>
 

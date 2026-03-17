@@ -10,11 +10,11 @@ export default function WhyCakesAreDense() {
 
       <article className="max-w-4xl mx-auto px-6 py-16">
         <Link
-          to="/"
+          to="/articles"
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
-          Back to Home
+          Back to Articles
         </Link>
 
         <header className="mb-12">
@@ -131,6 +131,41 @@ export default function WhyCakesAreDense() {
               <div className="bg-green-50 rounded-lg p-3 text-xs text-green-800">
                 <strong>Fix:</strong> Always preheat the oven for at least 20 minutes. Verify temperature with an oven thermometer.
               </div>
+            </div>
+          </div>
+
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">What makes a cake dense instead of fluffy?</h3>
+                <p className="text-muted-foreground text-sm">Most commonly: under-creamed butter and sugar (not enough air incorporation), too much flour, cold ingredients, or over-mixing after adding flour (builds too much gluten).</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Can I fix a dense cake after baking?</h3>
+                <p className="text-muted-foreground text-sm">No — texture is set once baked. But you can improve it: brush with simple syrup to add moisture, or serve with whipped cream to create a textural contrast.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Does oil make cakes denser than butter?</h3>
+                <p className="text-muted-foreground text-sm">Oil-based cakes are actually moister and more tender than butter cakes, but they can feel denser because they lack the air incorporated by creaming. They're not structurally dense — they're fudgier.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why is my cake dense in the middle but fine on the edges?</h3>
+                <p className="text-muted-foreground text-sm">Under-baking. The edges cook first and set properly; the center is still partially liquid or under-set. Use a toothpick test in the very center and ensure oven temperature is accurate with a thermometer.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/cake-science/why-cakes-sink" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Sink in the Middle</Link>
+              <Link to="/cake-science/why-cakes-rise" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Rise</Link>
+              <Link to="/cake-science/why-cakes-collapse" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Collapse</Link>
+              <Link to="/cake-science/why-cakes-dry-out" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Dry Out</Link>
+              <Link to="/cake-science/why-cakes-crack-on-top" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Crack on Top</Link>
             </div>
           </div>
 

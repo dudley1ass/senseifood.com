@@ -11,11 +11,11 @@ export default function WhyBreadRises() {
       <article className="max-w-4xl mx-auto px-6 py-16">
         {/* Back button */}
         <Link 
-          to="/" 
+          to="/articles" 
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
-          Back to Home
+          Back to Articles
         </Link>
 
         {/* Header */}
@@ -148,6 +148,37 @@ export default function WhyBreadRises() {
           <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-amber-600 to-yellow-600 bg-clip-text text-transparent">
             Oven Spring: The Final Rise
           </h2>
+
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">Why did my bread not rise?</h3>
+                <p className="text-muted-foreground text-sm">Most commonly: yeast was killed by water that was too hot (above 140°F), yeast was old and no longer active, or the dough didn't have enough time to proof. Always test yeast by proofing it in warm water first.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Can bread rise too much?</h3>
+                <p className="text-muted-foreground text-sm">Yes — this is called over-proofing. Over-proofed dough collapses during baking because the gluten network has weakened and can't hold the gas. The crust can blister and the crumb becomes dense.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Does salt affect bread rising?</h3>
+                <p className="text-muted-foreground text-sm">Yes. Salt slows yeast activity, which is actually desirable — slower fermentation develops more flavor. However, adding salt directly to yeast can kill it. Always mix salt into flour before combining with yeast.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why does bread rise more in a warm place?</h3>
+                <p className="text-muted-foreground text-sm">Yeast is more metabolically active at warmer temperatures (75–80°F is ideal for most breads). Warmer environments accelerate CO₂ production, speeding the rise. Too hot and yeast dies; too cold and it barely activates.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/bread-science/how-yeast-works" className="block text-amber-700 hover:underline text-sm font-medium">→ How Yeast Works in Baking</Link>
+            </div>
+          </div>
 
           <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-8 my-8 border-2 border-orange-200">
             <h3 className="text-2xl mb-4 flex items-center gap-3">

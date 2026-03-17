@@ -17,7 +17,7 @@ export default function WhyCakesTurnRubbery() {
     <div className={`min-h-screen bg-gradient-to-br ${config.gradient}`}>
       <Navigation />
       <article className="max-w-4xl mx-auto px-6 py-16">
-        <Link to="/" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Home</Link>
+        <Link to="/articles" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Articles</Link>
         <header className="mb-12">
           <div className={`inline-flex items-center gap-2 bg-gradient-to-r from-${config.from} to-${config.to} text-white px-4 py-2 rounded-full text-sm mb-6`}>Cake Science</div>
           <h1 className={`text-5xl md:text-6xl mb-6 bg-gradient-to-r from-${config.from} to-${config.to} bg-clip-text text-transparent`}>{config.title}</h1>
@@ -37,6 +37,42 @@ export default function WhyCakesTurnRubbery() {
               </div>
             ))}
           </div>
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">Why is my cake rubbery and dense?</h3>
+                <p className="text-muted-foreground text-sm">Over-mixing after adding flour is the primary cause. Overdeveloped gluten creates an elastic, bread-like network instead of a tender, crumbly crumb. Fold flour in gently and stop the moment it disappears.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Can the wrong flour make cake rubbery?</h3>
+                <p className="text-muted-foreground text-sm">Yes. High-protein bread flour (12–14% protein) develops far more gluten than cake flour (8% protein). Using bread flour in a cake recipe is a reliable way to produce a rubbery result. Always use the flour type specified.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why does my cake taste like bread?</h3>
+                <p className="text-muted-foreground text-sm">Too much gluten development — either from over-mixing, using bread flour, or under-measuring fat (fat coats flour proteins and blocks gluten formation). The rubbery, chewy texture is identical to an under-proofed bread.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">How do I make a cake more tender?</h3>
+                <p className="text-muted-foreground text-sm">Use cake flour, don't over-mix after adding flour, ensure adequate fat (don't reduce butter/oil), bring all ingredients to room temperature before mixing so they emulsify properly, and add acid (buttermilk, sour cream) to tenderize gluten.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/cake-science/why-cakes-sink" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Sink in the Middle</Link>
+              <Link to="/cake-science/why-cakes-rise" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Rise</Link>
+              <Link to="/cake-science/why-cakes-are-dense" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Are Dense</Link>
+              <Link to="/cake-science/why-cakes-collapse" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Collapse</Link>
+              <Link to="/cake-science/why-cakes-dry-out" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Dry Out</Link>
+              <Link to="/cake-science/why-cakes-crack-on-top" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cakes Crack on Top</Link>
+            </div>
+          </div>
+
           <div className="bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-2xl p-8 my-12">
             <h2 className="text-3xl mb-4">Master Cake Baking Science</h2>
             <p className="text-lg text-white/90 mb-6">Browse all our cake science articles.</p>

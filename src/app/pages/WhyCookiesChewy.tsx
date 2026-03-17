@@ -10,11 +10,11 @@ export default function WhyCookiesChewy() {
 
       <article className="max-w-4xl mx-auto px-6 py-16">
         <Link
-          to="/"
+          to="/articles"
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
-          Back to Home
+          Back to Articles
         </Link>
 
         <header className="mb-12">
@@ -147,6 +147,42 @@ export default function WhyCookiesChewy() {
             <p className="text-sm text-muted-foreground leading-relaxed">
               The brown crust on a cookie forms via the Maillard reaction (proteins + sugars reacting to heat). Under-baking means less Maillard on the interior — which is exactly why under-baked cookies are chewier. The interior stays moist and gel-like rather than setting into a stiff crumb.
             </p>
+          </div>
+
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">What makes cookies chewy instead of crispy?</h3>
+                <p className="text-muted-foreground text-sm">Brown sugar (hygroscopic moisture retention), melted butter (denser structure), extra egg yolks (fat and emulsifiers), and under-baking by 1–2 minutes. All four together produce maximum chewiness.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">How long do chewy cookies stay chewy?</h3>
+                <p className="text-muted-foreground text-sm">With all-brown-sugar recipes stored in an airtight container, 5–7 days. Add a slice of bread to the container — it donates moisture and extends softness significantly.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why are my cookies chewy when warm but hard when cold?</h3>
+                <p className="text-muted-foreground text-sm">Normal — this is caramelized sugar behavior. Sugar is semi-liquid when warm and rigid when cold. The key is having enough brown sugar (hygroscopic) and moisture to stay soft even when cold.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Does chilling dough make cookies chewier?</h3>
+                <p className="text-muted-foreground text-sm">Yes. Chilling for 24–72 hours allows moisture to redistribute through the dough, reduces spreading (keeping cookies thicker), and concentrates flavor. Thicker cookies have more moist interior mass and stay chewier.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/cookie-science/why-cookies-spread" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Spread</Link>
+              <Link to="/cookie-science/why-cookies-are-chewy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Are Chewy</Link>
+              <Link to="/cookie-science/why-cookies-get-crispy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Get Crispy</Link>
+              <Link to="/cookie-science/why-cookies-flatten" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Flatten</Link>
+              <Link to="/cookie-science/why-cookies-spread-too-much" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Spread Too Much</Link>
+              <Link to="/cookie-science/brown-sugar-vs-white-sugar" className="block text-amber-700 hover:underline text-sm font-medium">→ Brown Sugar vs White Sugar</Link>
+            </div>
           </div>
 
           <div className="bg-gradient-to-r from-amber-500 to-orange-600 text-white rounded-2xl p-8 my-12">

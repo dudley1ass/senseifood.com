@@ -8,7 +8,7 @@ export default function WhyCoffeeStales() {
     <div className="min-h-screen bg-gradient-to-br from-stone-50 via-amber-50 to-brown-50">
       <Navigation />
       <article className="max-w-4xl mx-auto px-6 py-16">
-        <Link to="/" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Home</Link>
+        <Link to="/articles" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Articles</Link>
         <header className="mb-12">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-stone-700 to-amber-800 text-white px-4 py-2 rounded-full text-sm mb-6">Coffee Science</div>
           <h1 className="text-5xl md:text-6xl mb-6 bg-gradient-to-r from-stone-800 to-amber-800 bg-clip-text text-transparent">Why Coffee Stales</h1>
@@ -79,6 +79,41 @@ export default function WhyCoffeeStales() {
                   <span className="text-sm text-muted-foreground">{item.desc}</span>
                 </div>
               ))}
+            </div>
+          </div>
+
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">How quickly does coffee go stale?</h3>
+                <p className="text-muted-foreground text-sm">Whole beans: noticeable decline after 2–4 weeks post-roast. Ground coffee: noticeable in 15–30 minutes in open air, significantly stale within 1–2 days. Brewed coffee: noticeably stale in 20–30 minutes at room temperature.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Does freezing coffee stop staling?</h3>
+                <p className="text-muted-foreground text-sm">Freezing dramatically slows all staling processes. For beans you won't use within 4 weeks, freezing in an airtight container is effective. The key is to freeze once and thaw completely — repeated freeze-thaw cycles cause condensation damage.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">What does stale coffee taste like?</h3>
+                <p className="text-muted-foreground text-sm">Flat, cardboard-like, papery, or rancid depending on the stage of staling. Early staling removes brightness and complexity. Advanced staling adds actively unpleasant rancid or musty notes from oxidized lipids.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Is there a way to refresh stale coffee beans?</h3>
+                <p className="text-muted-foreground text-sm">No — once aromatic compounds have off-gassed or oxidized, they're gone. Prevention is the only solution. Some people warm stale beans briefly in a dry pan to volatilize remaining surface compounds, but the improvement is minimal.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/coffee-science/coffee-extraction-science" className="block text-amber-700 hover:underline text-sm font-medium">→ Coffee Extraction Science</Link>
+              <Link to="/coffee-science/why-coffee-tastes-bitter" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Tastes Bitter</Link>
+              <Link to="/coffee-science/why-coffee-tastes-sour" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Tastes Sour</Link>
+              <Link to="/coffee-science/why-coffee-grind-size-matters" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Grind Size Matters</Link>
+              <Link to="/coffee-science/why-coffee-brewing-time-matters" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Brewing Time Matters</Link>
             </div>
           </div>
 

@@ -8,7 +8,7 @@ export default function WhyCoffeeLosesFlavor() {
     <div className="min-h-screen bg-gradient-to-br from-amber-50 via-stone-50 to-yellow-50">
       <Navigation />
       <article className="max-w-4xl mx-auto px-6 py-16">
-        <Link to="/" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Home</Link>
+        <Link to="/articles" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Articles</Link>
         <header className="mb-12">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-600 to-stone-700 text-white px-4 py-2 rounded-full text-sm mb-6">Coffee Science</div>
           <h1 className="text-5xl md:text-6xl mb-6 bg-gradient-to-r from-amber-700 to-stone-700 bg-clip-text text-transparent">Why Coffee Loses Flavor</h1>
@@ -51,6 +51,42 @@ export default function WhyCoffeeLosesFlavor() {
                   <p className="text-sm text-muted-foreground">{text}</p>
                 </div>
               ))}
+            </div>
+          </div>
+
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">How long does coffee stay fresh after roasting?</h3>
+                <p className="text-muted-foreground text-sm">Peak flavor is 3–14 days post-roast. Quality noticeably declines by 4–6 weeks. Most supermarket coffee is already weeks or months old. Always buy from roasters with a roast date, not a "best by" date.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Does grinding coffee make it go stale faster?</h3>
+                <p className="text-muted-foreground text-sm">Dramatically faster. Pre-ground coffee has 40–50x more surface area exposed to oxygen than whole beans. Noticeable flavor loss occurs within 15–30 minutes in open air. Grind only what you need, immediately before brewing.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Should I store coffee in the freezer?</h3>
+                <p className="text-muted-foreground text-sm">Only for long-term storage (6+ weeks). Freeze once in a sealed container, then thaw completely and store at room temperature. Never repeatedly freeze and thaw — condensation destroys flavor.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why does coffee in an open bag go stale so quickly?</h3>
+                <p className="text-muted-foreground text-sm">Oxygen reacts with coffee oils and aromatics, creating rancid, cardboard-like compounds. An opened bag accelerates this exposure dramatically. Transfer to an airtight container immediately after opening.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/coffee-science/coffee-extraction-science" className="block text-amber-700 hover:underline text-sm font-medium">→ Coffee Extraction Science</Link>
+              <Link to="/coffee-science/why-coffee-tastes-bitter" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Tastes Bitter</Link>
+              <Link to="/coffee-science/why-coffee-tastes-sour" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Tastes Sour</Link>
+              <Link to="/coffee-science/why-coffee-grind-size-matters" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Grind Size Matters</Link>
+              <Link to="/coffee-science/why-coffee-brewing-time-matters" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Brewing Time Matters</Link>
+              <Link to="/coffee-science/why-coffee-stales" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Stales</Link>
             </div>
           </div>
 

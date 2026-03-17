@@ -10,11 +10,11 @@ export default function WhyIceCreamGetsFreezerBurn() {
 
       <article className="max-w-4xl mx-auto px-6 py-16">
         <Link
-          to="/"
+          to="/articles"
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
-          Back to Home
+          Back to Articles
         </Link>
 
         <header className="mb-12">
@@ -134,6 +134,40 @@ export default function WhyIceCreamGetsFreezerBurn() {
                   <p className="text-sm text-muted-foreground">{tip}</p>
                 </div>
               ))}
+            </div>
+          </div>
+
+
+          {/* FAQ Section */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">Is freezer-burned ice cream safe to eat?</h3>
+                <p className="text-muted-foreground text-sm">Yes, freezer burn is a quality issue, not a safety issue. The affected portions taste gritty and flavorless, but you can scrape off the surface layer and eat the unaffected portion underneath.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">How long does ice cream last before getting freezer burn?</h3>
+                <p className="text-muted-foreground text-sm">At a stable 0°F, commercial ice cream stays good for 2–3 months. Once opened, freezer burn can develop within 2–3 weeks if the surface isn't protected with plastic wrap.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Does the type of container affect freezer burn?</h3>
+                <p className="text-muted-foreground text-sm">Yes. Thin cardboard or plastic containers allow some moisture vapor transmission over time. Rigid, airtight containers significantly slow freezer burn. The best protection is always pressing plastic wrap directly onto the ice cream surface.</p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why does ice cream get freezer burn faster than other frozen foods?</h3>
+                <p className="text-muted-foreground text-sm">Ice cream's high sugar content lowers its freezing point, meaning more of its water stays as syrup rather than solid ice. This syrup is more mobile and more prone to sublimation at the surface.</p>
+              </div>
+            </div>
+          </div>
+          {/* Related Articles */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related Articles</h3>
+            <div className="space-y-3">
+              <Link to="/ice-cream-science/why-ice-cream-gets-icy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Ice Cream Gets Icy</Link>
+              <Link to="/ice-cream-science/why-ice-cream-is-creamy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Ice Cream Is Creamy</Link>
+              <Link to="/ice-cream-science/why-ice-cream-melts-fast" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Ice Cream Melts Fast</Link>
+              <Link to="/ice-cream-science/why-ice-cream-gets-freezer-burn" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Ice Cream Gets Freezer Burn</Link>
             </div>
           </div>
 
