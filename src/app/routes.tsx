@@ -74,6 +74,9 @@ import WhyCoffeeBeansExpandWhenRoasted from "./pages/WhyCoffeeBeansExpandWhenRoa
 import WhyCoffeeTastesSalty from "./pages/WhyCoffeeTastesSalty";
 import WhyCoffeeStales from "./pages/WhyCoffeeStales";
 
+import WhyPieCrustGetsTough from "./pages/WhyPieCrustGetsTough";
+import ButterVsShorteningInCrust from "./pages/ButterVsShorteningInCrust";
+
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -127,9 +130,12 @@ export const router = createBrowserRouter([
       { path: "cake-science/why-cakes-turn-rubbery", Component: WhyCakesTurnRubbery },
       { path: "cake-science/why-cakes-stick-to-cooling-rack", Component: WhyCakesStickToCoolingRack },
 
-      // Pie Science (2 articles)
+      // Pie Science (4 articles)
       { path: "pie-science/why-pie-crust-is-flaky", Component: WhyPieCrustFlaky },
       { path: "pie-science/why-pie-crust-shrinks", Component: WhyPieCrustShrinks },
+
+      { path: "pie-science/why-pie-crust-gets-tough", Component: WhyPieCrustGetsTough },
+      { path: "pie-science/butter-vs-shortening-in-crust", Component: ButterVsShorteningInCrust },
 
       // Ice Cream Science (4 articles)
       { path: "ice-cream-science/why-ice-cream-gets-icy", Component: WhyIceCreamGetsIcy },
