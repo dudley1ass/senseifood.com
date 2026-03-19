@@ -17,6 +17,16 @@ export default function WhyCoffeeTastesSalty() {
         </header>
         <div className="w-full h-80 bg-gradient-to-br from-blue-200 to-stone-400 rounded-3xl mb-12 flex items-center justify-center shadow-2xl"><span className="text-8xl">🧂</span></div>
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-blue-50 border-l-4 border-blue-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">🧂</span>
+            <div>
+              <p className="font-bold text-blue-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Salty coffee is usually caused by mineral-heavy water (especially softened water with high sodium) or under-extraction. Use filtered water with balanced minerals. A tiny pinch of salt also suppresses bitterness.</p>
+            </div>
+          </div>
+
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">A noticeably salty taste in coffee is unusual but has specific causes — most commonly mineral-heavy water, certain bean origins, or early extraction phases. Interestingly, a tiny, imperceptible amount of salt actually enhances coffee by suppressing bitterness.</p>
 
           <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-blue-700 to-stone-700 bg-clip-text text-transparent">Why Coffee Can Taste Salty</h2>

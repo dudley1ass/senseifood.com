@@ -43,6 +43,15 @@ export default function WhyIceCreamGetsIcy() {
 
         {/* Content */}
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-cyan-50 border-l-4 border-cyan-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">🧊</span>
+            <div>
+              <p className="font-bold text-cyan-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Icy ice cream has ice crystals larger than 40–50 micrometers — detectable on the tongue. Temperature fluctuations cause recrystallization. Press plastic wrap directly onto the surface before closing the lid.</p>
+            </div>
+          </div>
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">
             Nothing ruins great ice cream faster than icy texture. Understanding why ice crystals form and how to control them is the key to creating smooth, creamy frozen desserts that rival premium brands.
           </p>

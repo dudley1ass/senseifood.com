@@ -19,6 +19,16 @@ export default function WhyCookiesCrackOnTop() {
         </header>
         <div className="w-full h-80 bg-gradient-to-br from-amber-200 to-orange-300 rounded-3xl mb-12 flex items-center justify-center shadow-2xl"><span className="text-8xl">🍪</span></div>
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-amber-50 border-l-4 border-amber-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">🍪</span>
+            <div>
+              <p className="font-bold text-amber-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Surface cracks happen when the crust sets before the interior finishes expanding. For intentional cracks (crinkles): chill thoroughly + roll in powdered sugar. To prevent: lower oven temp 25°F.</p>
+            </div>
+          </div>
+
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">Surface cracks on cookies like crinkles and snickerdoodles are a signature feature — deliberately engineered. On other cookies, they signal a structure problem. Understanding the mechanism lets you control it either way.</p>
 
           <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">The Cracking Mechanism</h2>

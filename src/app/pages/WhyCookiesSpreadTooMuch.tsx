@@ -39,6 +39,16 @@ export default function WhyCookiesSpreadTooMuch() {
         </div>
 
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-red-50 border-l-4 border-red-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">😱</span>
+            <div>
+              <p className="font-bold text-red-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Over-spreading is caused by warm butter, too much white sugar, or not enough flour. Chill the dough, swap some white sugar for brown, and add 2 tablespoons more flour.</p>
+            </div>
+          </div>
+
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">
             Opening the oven to find your cookies have merged into one giant flat sheet is a baker's nightmare. Excessive spreading happens when the fat melts and the dough flows outward faster than the structure can set. Several small fixes can solve this completely.
           </p>

@@ -39,6 +39,16 @@ export default function WhyCoffeeTastesBitter() {
         </div>
 
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-stone-50 border-l-4 border-stone-500 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">😬</span>
+            <div>
+              <p className="font-bold text-stone-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Bitter coffee is over-extracted. Grind coarser, lower water temperature slightly (195°F), or shorten brew time. Any one of these will reduce bitterness.</p>
+            </div>
+          </div>
+
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">
             Bitter coffee is frustrating—especially when you've spent good money on quality beans. The good news? Bitterness is almost always fixable once you understand what's causing it.
           </p>

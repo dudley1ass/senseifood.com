@@ -17,6 +17,16 @@ export default function WhyCoffeeTastesAcidic() {
         </header>
         <div className="w-full h-80 bg-gradient-to-br from-yellow-200 to-amber-400 rounded-3xl mb-12 flex items-center justify-center shadow-2xl"><span className="text-8xl">🍋</span></div>
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-yellow-50 border-l-4 border-yellow-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">🍋</span>
+            <div>
+              <p className="font-bold text-yellow-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Coffee acidity comes from organic acids in the bean. Pleasant brightness = citric/malic acid. Harsh sourness = under-extraction or acetic acid. Brew hotter and longer to balance it.</p>
+            </div>
+          </div>
+
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">Coffee is naturally acidic — pH 4.5–6.0 depending on roast and brew method. This acidity isn't a flaw; it's responsible for much of coffee's brightness and complexity. The key is distinguishing desirable acids from problematic ones.</p>
 
           <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-yellow-700 to-amber-700 bg-clip-text text-transparent">The Acids in Coffee</h2>

@@ -324,7 +324,7 @@ export default function Articles() {
       color: 'from-orange-500 to-red-500',
       url: '/cake-science/why-cakes-stick-to-cooling-rack'
     },
-    // Pie Science (4 articles)
+    // Pie Science (2 articles)
     {
       title: 'Why Pie Crust Is Flaky',
       description: 'Discover the science behind creating layers of buttery, flaky pie crust that shatters perfectly.',
@@ -340,22 +340,6 @@ export default function Articles() {
       readTime: '6 min read',
       color: 'from-amber-600 to-orange-700',
       url: '/pie-science/why-pie-crust-shrinks'
-    },
-    {
-      title: 'Why Pie Crust Gets Tough',
-      description: 'Learn why pie crust turns hard and chewy instead of tender and flaky — and how controlling gluten development fixes it.',
-      category: 'Pie Science',
-      readTime: '7 min read',
-      color: 'from-amber-600 to-orange-700',
-      url: '/pie-science/why-pie-crust-gets-tough'
-    },
-    {
-      title: 'Butter vs Shortening in Pie Crust',
-      description: 'Compare how butter and shortening affect flakiness, flavor, tenderness, and workability — and when to use each or combine both.',
-      category: 'Pie Science',
-      readTime: '7 min read',
-      color: 'from-yellow-600 to-amber-700',
-      url: '/pie-science/butter-vs-shortening-in-crust'
     },
     // Ice Cream Science (4 articles)
     {

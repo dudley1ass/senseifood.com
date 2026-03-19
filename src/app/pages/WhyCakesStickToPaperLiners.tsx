@@ -17,6 +17,16 @@ export default function WhyCakesStickToPaperLiners() {
         </header>
         <div className="w-full h-80 bg-gradient-to-br from-rose-200 to-orange-300 rounded-3xl mb-12 flex items-center justify-center shadow-2xl"><span className="text-8xl">🧁</span></div>
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-rose-50 border-l-4 border-rose-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">🧁</span>
+            <div>
+              <p className="font-bold text-rose-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Cupcakes stick to liners when moisture soaks the paper during baking and bonds to the crust. Use foil liners or parchment-coated liners, and cool fully (45–60 min) before peeling.</p>
+            </div>
+          </div>
+
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">Paper liners that peel away half the cupcake are a frustrating but common problem. Sticking happens when moisture from the batter soaks into the paper during baking and creates a bond between the paper fibers and the cake's starch-sugar matrix.</p>
           <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-rose-600 to-orange-600 bg-clip-text text-transparent">Why Paper Liners Stick</h2>
           <p className="text-foreground/80 leading-relaxed mb-6">Paper is porous. During baking, steam and moisture from the batter migrate outward and saturate the paper. As the cake cools, this moisture-laden paper dries and contracts against the cake surface, bonding to the sugar and starch in the outer crust. The wetter the batter and the thinner/cheaper the liner, the worse the sticking.</p>

@@ -39,6 +39,16 @@ export default function WhyCookiesDontSpread() {
         </div>
 
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-amber-50 border-l-4 border-amber-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">🧱</span>
+            <div>
+              <p className="font-bold text-amber-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Cookies that won't spread have too much flour (from scooping the cup) or dough is too cold. Weigh flour at 120g per cup, let dough temper 10 minutes at room temp, or press balls flat before baking.</p>
+            </div>
+          </div>
+
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">
             Cookies that bake into dense, domed balls instead of flattening into rounds are the opposite problem from spreading too much — but they're just as frustrating. The dough is too stiff or too cold for the fat to flow, so the cookie holds its mounded shape throughout baking.
           </p>

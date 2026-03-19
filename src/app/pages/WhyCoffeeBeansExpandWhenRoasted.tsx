@@ -17,6 +17,16 @@ export default function WhyCoffeeBeansExpandWhenRoasted() {
         </header>
         <div className="w-full h-80 bg-gradient-to-br from-amber-200 to-orange-400 rounded-3xl mb-12 flex items-center justify-center shadow-2xl"><span className="text-8xl">💥</span></div>
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-amber-50 border-l-4 border-amber-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">💥</span>
+            <div>
+              <p className="font-bold text-amber-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Beans expand up to 100% during roasting as CO₂ pressure builds and ruptures the cell walls — called "first crack." Dark roasts expand further when cell walls shatter at "second crack."</p>
+            </div>
+          </div>
+
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">A green coffee bean roughly doubles in volume during roasting. This dramatic expansion is driven by water vaporization, CO₂ production, and pyrolysis reactions that fundamentally transform the bean's physical structure and chemical composition.</p>
 
           <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-amber-700 to-orange-700 bg-clip-text text-transparent">The Roasting Stages</h2>

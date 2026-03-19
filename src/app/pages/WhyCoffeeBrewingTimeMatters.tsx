@@ -17,6 +17,16 @@ export default function WhyCoffeeBrewingTimeMatters() {
         </header>
         <div className="w-full h-80 bg-gradient-to-br from-stone-200 to-amber-400 rounded-3xl mb-12 flex items-center justify-center shadow-2xl"><span className="text-8xl">⏱️</span></div>
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-stone-50 border-l-4 border-stone-500 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">⏱️</span>
+            <div>
+              <p className="font-bold text-stone-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Brew time controls which flavor compounds extract. Too short = sour (only acids). Too long = bitter (harsh compounds). French press: 4 min. Pour over: 3–4 min. Espresso: 25–30 sec.</p>
+            </div>
+          </div>
+
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">Brewing time determines which flavor compounds have enough contact time with water to dissolve. Different compounds extract at different rates — and brewing time controls how many of them make it into your cup.</p>
 
           <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-stone-700 to-amber-700 bg-clip-text text-transparent">The Extraction Timeline</h2>

@@ -39,6 +39,16 @@ export default function BrownSugarVsWhiteSugar() {
         </div>
 
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-orange-50 border-l-4 border-orange-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">🍬</span>
+            <div>
+              <p className="font-bold text-orange-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Brown sugar makes cookies chewy (hygroscopic molasses retains moisture). White sugar makes cookies crispy (pure sucrose dries out). Mix both for the classic crispy-edge, chewy-center result.</p>
+            </div>
+          </div>
+
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">
             The type of sugar you use fundamentally changes your cookies. Brown and white sugar aren't interchangeable—they create completely different textures, flavors, and appearances.
           </p>

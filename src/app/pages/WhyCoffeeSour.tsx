@@ -78,6 +78,15 @@ export default function WhyCoffeeSour() {
 
         {/* Content */}
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-yellow-50 border-l-4 border-yellow-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">🍋</span>
+            <div>
+              <p className="font-bold text-yellow-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Sour coffee means under-extraction — acids extracted but not the balancing sugars. Use hotter water (195–205°F), grind finer, and brew longer.</p>
+            </div>
+          </div>
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">
             Sour coffee is unpleasant and sharp, leaving an acidic aftertaste. While some bright acidity can be desirable, excessive sourness indicates under-extraction—when hot water hasn't pulled enough flavor compounds from the coffee grounds.
           </p>

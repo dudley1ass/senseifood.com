@@ -40,6 +40,16 @@ export default function WhyCoffeeTastesBurnt() {
         </div>
 
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-stone-50 border-l-4 border-stone-500 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">🔥</span>
+            <div>
+              <p className="font-bold text-stone-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Burnt coffee is caused by water that's too hot (above 205°F), coffee left on a warming plate, or over-roasted beans. Transfer to a thermal carafe immediately after brewing and use 195–205°F water.</p>
+            </div>
+          </div>
+
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">
             Burnt coffee has a harsh, acrid, almost ashy flavor that overwhelms every other taste. It's one of the most common coffee complaints — and nearly always preventable once you understand what's causing it.
           </p>

@@ -17,6 +17,16 @@ export default function WhyCookiesChangeColor() {
         </header>
         <div className="w-full h-80 bg-gradient-to-br from-amber-200 to-red-300 rounded-3xl mb-12 flex items-center justify-center shadow-2xl"><span className="text-8xl">🎨</span></div>
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-amber-50 border-l-4 border-amber-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">🎨</span>
+            <div>
+              <p className="font-bold text-amber-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Cookie color = Maillard reaction depth. Baking soda (alkaline) dramatically accelerates browning. More brown sugar = darker. Higher temp = darker. Golden brown = ideal flavor. Dark brown = bitter.</p>
+            </div>
+          </div>
+
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">Cookie color is a direct read-out of temperature, time, and ingredient chemistry. A pale cookie and a dark golden cookie are chemically very different — different flavor compounds, different textures, different moisture levels.</p>
           <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-amber-600 to-red-600 bg-clip-text text-transparent">The Color-to-Chemistry Map</h2>
 

@@ -43,6 +43,15 @@ export default function WhyCookiesHard() {
 
         {/* Content */}
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-amber-50 border-l-4 border-amber-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">🪨</span>
+            <div>
+              <p className="font-bold text-amber-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Hard cookies have lost moisture — either over-baked or stored in air. Use all brown sugar, pull cookies 1–2 minutes early, and store immediately in an airtight container with a slice of bread.</p>
+            </div>
+          </div>
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">
             Hard cookies are one of the most common baking disappointments. Whether they come out of the oven hard or turn hard after a day or two, understanding moisture loss is key to solving this problem.
           </p>

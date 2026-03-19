@@ -39,6 +39,16 @@ export default function WhyCakesStickToPan() {
         </div>
 
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-rose-50 border-l-4 border-rose-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">😩</span>
+            <div>
+              <p className="font-bold text-rose-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Cakes stick from caramelized sugar bonding to bare metal. Use butter + flour + parchment paper on the bottom. Cool 10–15 minutes in the pan before inverting — never try to remove it hot.</p>
+            </div>
+          </div>
+
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">
             Few things are more disheartening than watching a beautifully baked cake tear itself apart as you try to remove it from the pan. Sticking happens when the batter makes direct contact with bare metal and the sugars caramelize and bond to the surface during baking.
           </p>

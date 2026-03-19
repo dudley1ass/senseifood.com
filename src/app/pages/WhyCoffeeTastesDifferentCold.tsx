@@ -17,6 +17,16 @@ export default function WhyCoffeeTastesDifferentCold() {
         </header>
         <div className="w-full h-80 bg-gradient-to-br from-blue-200 to-cyan-300 rounded-3xl mb-12 flex items-center justify-center shadow-2xl"><span className="text-8xl">🧊</span></div>
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-blue-50 border-l-4 border-blue-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">🧊</span>
+            <div>
+              <p className="font-bold text-blue-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Cold suppresses sweetness and amplifies bitterness. Cold brew (brewed cold from start) has 60% less acid than iced hot coffee. For best cold coffee, use cold brew method, not chilled hot brew.</p>
+            </div>
+          </div>
+
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">Cold coffee tastes fundamentally different from the same coffee served hot — and it's not just temperature. Temperature affects aroma volatility, taste receptor sensitivity, and the chemical balance of flavor compounds in ways that completely transform the experience.</p>
 
           <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-blue-600 to-cyan-700 bg-clip-text text-transparent">Why Temperature Changes Flavor</h2>

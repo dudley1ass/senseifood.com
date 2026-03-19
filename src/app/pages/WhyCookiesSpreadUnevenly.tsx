@@ -17,6 +17,16 @@ export default function WhyCookiesSpreadUnevenly() {
         </header>
         <div className="w-full h-80 bg-gradient-to-br from-yellow-200 to-amber-300 rounded-3xl mb-12 flex items-center justify-center shadow-2xl"><span className="text-8xl">🍪</span></div>
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-yellow-50 border-l-4 border-yellow-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">🍪</span>
+            <div>
+              <p className="font-bold text-yellow-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Uneven spreading = oven hot spots + uneven dough balls. Roll each ball perfectly round and rotate the pan 180° halfway through baking.</p>
+            </div>
+          </div>
+
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">Uneven spreading is almost always caused by uneven heat, uneven dough shaping, or inconsistent pan surfaces. The cookie spreads in the direction of least resistance — which is wherever heat or lubrication is greatest.</p>
           <div className="space-y-6 my-8">
             <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-yellow-200">

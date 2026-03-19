@@ -39,6 +39,16 @@ export default function WhyIceCreamGetsFreezerBurn() {
         </div>
 
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-slate-50 border-l-4 border-slate-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">🥶</span>
+            <div>
+              <p className="font-bold text-slate-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Freezer burn = moisture sublimating off the surface into the dry freezer air. Fix: press plastic wrap directly onto the ice cream surface after every scoop before replacing the lid.</p>
+            </div>
+          </div>
+
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">
             Freezer burn is that grayish, crusty, flavorless layer that ruins ice cream stored too long or improperly. It's not a safety issue — it's a moisture migration problem. And it's almost entirely preventable.
           </p>

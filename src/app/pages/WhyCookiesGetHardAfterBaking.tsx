@@ -17,6 +17,16 @@ export default function WhyCookiesGetHardAfterBaking() {
         </header>
         <div className="w-full h-80 bg-gradient-to-br from-amber-200 to-stone-400 rounded-3xl mb-12 flex items-center justify-center shadow-2xl"><span className="text-8xl">🪨</span></div>
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-amber-50 border-l-4 border-amber-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">🪨</span>
+            <div>
+              <p className="font-bold text-amber-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Cookies harden overnight from moisture loss. Use all brown sugar, under-bake slightly, store immediately in airtight container with a slice of bread, which donates moisture back.</p>
+            </div>
+          </div>
+
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">Cookies that harden overnight have lost moisture to the surrounding air. This is a storage and recipe problem — either the cookies weren't moist enough to begin with, or they weren't stored in a way that prevented moisture loss.</p>
           <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-amber-700 to-stone-700 bg-clip-text text-transparent">Why Cookies Harden Over Time</h2>
           <p className="text-foreground/80 leading-relaxed mb-6">Freshly baked cookies contain moisture in their sugar, fat, and starch network. When exposed to dry air, this moisture migrates outward through evaporation and the sugar network becomes increasingly rigid — a process called staling. Cookies with more hygroscopic ingredients (brown sugar, honey) resist this longer. Crispy cookies are simply the fully staled end state.</p>

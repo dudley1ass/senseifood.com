@@ -39,6 +39,16 @@ export default function WhyPieCrustShrinks() {
         </div>
 
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-orange-50 border-l-4 border-orange-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">📏</span>
+            <div>
+              <p className="font-bold text-orange-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Crust shrinks because gluten contracts under heat. Chill the fitted crust in the pan for 30–60 minutes before baking. Never stretch the dough to fit — drape it in gently.</p>
+            </div>
+          </div>
+
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">
             A pie crust that pulls back from the pan edges, slides down the sides, or loses its crimped shape is one of the most frustrating baking problems. Shrinkage is a gluten issue — and once you understand gluten's elastic behavior, it's completely preventable.
           </p>

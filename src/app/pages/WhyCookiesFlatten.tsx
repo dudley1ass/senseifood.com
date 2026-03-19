@@ -39,6 +39,16 @@ export default function WhyCookiesFlatten() {
         </div>
 
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-orange-50 border-l-4 border-orange-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">🫓</span>
+            <div>
+              <p className="font-bold text-orange-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Flat cookies = butter too warm before it hit the oven. Chill portioned dough balls for at least 30 minutes. Also check pan isn't greased — use parchment instead.</p>
+            </div>
+          </div>
+
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">
             Flat cookies are one of the most common baking frustrations. You expect puffy, thick rounds and pull out pancake-thin wafers instead. Almost always, this comes down to fat melting before the cookie structure has a chance to set.
           </p>

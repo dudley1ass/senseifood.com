@@ -39,6 +39,16 @@ export default function WhyCookiesGetCrispy() {
         </div>
 
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-yellow-50 border-l-4 border-yellow-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">🥠</span>
+            <div>
+              <p className="font-bold text-yellow-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Crispy cookies need white sugar (no moisture retention), thin shape, and full bake time. Store with a silica packet — any moisture absorption turns them soft.</p>
+            </div>
+          </div>
+
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">
             Crispy cookies shatter satisfyingly with every bite. Getting that snap and crunch is entirely intentional — it comes down to driving out moisture and creating a rigid sugar-and-protein structure throughout the cookie.
           </p>

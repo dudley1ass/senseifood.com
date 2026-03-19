@@ -43,6 +43,15 @@ export default function WhyCookiesSpread() {
 
         {/* Content */}
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-amber-50 border-l-4 border-amber-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">🍪</span>
+            <div>
+              <p className="font-bold text-amber-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Cookies spread because butter melts and flows before the dough structure sets. Chill your dough for 30–60 minutes before baking — this is the single most effective fix.</p>
+            </div>
+          </div>
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">
             Cookie spread is one of the most critical factors in cookie baking. Understanding the science behind spreading helps you achieve your desired texture—from thick and chewy to thin and crispy.
           </p>

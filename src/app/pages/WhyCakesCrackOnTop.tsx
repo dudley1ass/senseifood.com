@@ -39,6 +39,16 @@ export default function WhyCakesCrackOnTop() {
         </div>
 
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-rose-50 border-l-4 border-rose-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">💥</span>
+            <div>
+              <p className="font-bold text-rose-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Cake cracks when the crust sets before the interior finishes rising. Lower oven temp 25°F, move to middle rack, and never overfill the pan past ⅔ full.</p>
+            </div>
+          </div>
+
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">
             A cracked top on a cake can be alarming — or completely intentional. Pound cakes and banana breads are expected to crack; a delicate layer cake is not. Understanding why it happens lets you control it.
           </p>

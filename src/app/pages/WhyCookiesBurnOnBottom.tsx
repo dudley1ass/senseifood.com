@@ -19,6 +19,16 @@ export default function WhyCookiesBurnOnBottom() {
         </header>
         <div className="w-full h-80 bg-gradient-to-br from-orange-200 to-red-300 rounded-3xl mb-12 flex items-center justify-center shadow-2xl"><span className="text-8xl">🔥</span></div>
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-orange-50 border-l-4 border-orange-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">🔥</span>
+            <div>
+              <p className="font-bold text-orange-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Bottom burning = pan too dark, bottom rack, or oven too hot. Switch to a light-colored pan, move to the middle rack, and always use parchment paper — this alone solves most cases.</p>
+            </div>
+          </div>
+
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">Burnt cookie bottoms are a direct result of too much direct heat hitting the base before the rest of the cookie has time to bake. The culprit is almost always your pan, your oven rack position, or your oven temperature.</p>
 
           <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">Why the Bottom Burns First</h2>

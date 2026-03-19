@@ -39,6 +39,16 @@ export default function WhyCakesCollapse() {
         </div>
 
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-rose-50 border-l-4 border-rose-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">📉</span>
+            <div>
+              <p className="font-bold text-rose-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Cakes collapse when removed too early — the structure hasn't set yet. Check internal temp reaches 200–210°F and never open the oven in the first 20 minutes.</p>
+            </div>
+          </div>
+
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">
             A collapsed cake is heartbreaking—especially after investing time in baking. But cake collapse isn't random. It's always caused by structural failure during or after baking, and it's almost always preventable.
           </p>

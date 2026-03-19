@@ -17,6 +17,16 @@ export default function WhyCoffeeStales() {
         </header>
         <div className="w-full h-80 bg-gradient-to-br from-stone-300 to-amber-600 rounded-3xl mb-12 flex items-center justify-center shadow-2xl"><span className="text-8xl">😴</span></div>
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-stone-50 border-l-4 border-stone-500 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">😴</span>
+            <div>
+              <p className="font-bold text-stone-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Coffee staling is caused by 4 simultaneous processes: CO₂ off-gassing, lipid oxidation, aromatic compound degradation, and moisture absorption. Peak flavor is 3–14 days post-roast.</p>
+            </div>
+          </div>
+
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">Coffee staling is not a single process — it's at least four simultaneous chemical reactions happening from the moment roasting ends. Understanding each one reveals exactly why coffee has such a short peak window and what you can do to slow each process.</p>
 
           <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-stone-800 to-amber-800 bg-clip-text text-transparent">The Four Staling Processes</h2>

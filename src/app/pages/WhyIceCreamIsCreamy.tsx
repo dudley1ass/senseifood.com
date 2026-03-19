@@ -39,6 +39,16 @@ export default function WhyIceCreamIsCreamy() {
         </div>
 
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-pink-50 border-l-4 border-pink-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">🍨</span>
+            <div>
+              <p className="font-bold text-pink-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Creaminess = ice crystals smaller than 40 micrometers. Rapid churning, high fat content, egg yolk emulsifiers, and stabilizers all keep crystals microscopic and the texture silky smooth.</p>
+            </div>
+          </div>
+
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">
             The difference between creamy, luxurious ice cream and icy, grainy frozen disappointment comes down to one thing: ice crystal size. Creaminess is achieved by keeping ice crystals microscopic — small enough that your tongue can't detect individual crystals.
           </p>

@@ -39,6 +39,16 @@ export default function WhyCakesAreDense() {
         </div>
 
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-purple-50 border-l-4 border-purple-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">🧱</span>
+            <div>
+              <p className="font-bold text-purple-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Dense cake = not enough air incorporated. Cream butter and sugar for a full 3–5 minutes until pale and fluffy. Cold ingredients also collapse air — bring everything to room temperature first.</p>
+            </div>
+          </div>
+
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">
             A dense, heavy cake that sits like a brick is one of the most disappointing baking outcomes. Light, airy cakes depend on a precise balance of trapped air, proper leavening, and correct gluten development — knock any of these off and density follows.
           </p>

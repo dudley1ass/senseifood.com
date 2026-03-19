@@ -39,6 +39,16 @@ export default function WhyCakesDryOut() {
         </div>
 
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-amber-50 border-l-4 border-amber-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">🏜️</span>
+            <div>
+              <p className="font-bold text-amber-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Dry cake = over-baked or too much flour. Pull when toothpick shows moist crumbs (not wet batter). Wrap cut surfaces in plastic wrap immediately to prevent moisture loss.</p>
+            </div>
+          </div>
+
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">
             A dry cake is a sad cake. Whether it comes out of the oven dry or dries out over a couple of days, the cause is the same: moisture has escaped the crumb. Keeping cake moist requires both good baking technique and proper storage.
           </p>

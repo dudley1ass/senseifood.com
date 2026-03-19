@@ -43,6 +43,15 @@ export default function HowYeastWorks() {
 
         {/* Content */}
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-emerald-50 border-l-4 border-emerald-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">🦠</span>
+            <div>
+              <p className="font-bold text-emerald-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Yeast are living organisms that eat sugars and exhale CO₂ + alcohol. CO₂ inflates the dough; alcohol evaporates during baking. Water above 140°F kills them — always use warm, not hot water.</p>
+            </div>
+          </div>
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">
             Yeast is a living microorganism that powers many breads and baked goods. It belongs to a group of fungi called <em>Saccharomyces cerevisiae</em>, and understanding how it works is key to mastering bread baking.
           </p>

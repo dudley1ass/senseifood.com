@@ -17,6 +17,16 @@ export default function WhyCoffeeSmellsGood() {
         </header>
         <div className="w-full h-80 bg-gradient-to-br from-stone-300 to-amber-500 rounded-3xl mb-12 flex items-center justify-center shadow-2xl"><span className="text-8xl">😍</span></div>
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-amber-50 border-l-4 border-amber-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">😍</span>
+            <div>
+              <p className="font-bold text-amber-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Coffee's incredible aroma comes from 800+ volatile compounds created during roasting. Grinding releases them all at once — grind fresh for maximum aroma every time.</p>
+            </div>
+          </div>
+
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">Coffee contains over 800 identified aroma compounds — more than wine or chocolate. When you smell fresh coffee, you're detecting dozens of volatile molecules simultaneously: pyrazines (earthy, roasted), furans (caramel, sweet), and thiols (fruity, wine-like) — all created during roasting via the Maillard reaction.</p>
 
           <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-stone-700 to-amber-700 bg-clip-text text-transparent">Where the Aroma Comes From</h2>

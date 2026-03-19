@@ -39,6 +39,16 @@ export default function WhyCoffeeTastesWeak() {
         </div>
 
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-amber-50 border-l-4 border-amber-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">😞</span>
+            <div>
+              <p className="font-bold text-amber-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Weak coffee means you're not extracting enough flavor — most likely too little coffee or too coarse a grind. Dose 60g per liter and grind one notch finer.</p>
+            </div>
+          </div>
+
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">
             Weak coffee lacks boldness, caffeine kick, and satisfying depth. Unlike watery coffee (thin and flavorless), weak coffee may have some taste — just not enough of it. Both trace back to under-extraction, but the causes and fixes differ.
           </p>

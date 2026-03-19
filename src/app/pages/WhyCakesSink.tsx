@@ -78,6 +78,15 @@ export default function WhyCakesSink() {
 
         {/* Content */}
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-pink-50 border-l-4 border-pink-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">😔</span>
+            <div>
+              <p className="font-bold text-pink-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Sinking cakes = under-baked center, too much leavening, or oven opened too early. Test with a toothpick in the very center — moist crumbs are fine, wet batter means more time needed.</p>
+            </div>
+          </div>
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">
             A cake that sinks in the middle is one of the most common—and frustrating—baking problems. The good news? It's almost always preventable once you understand the science behind cake structure.
           </p>

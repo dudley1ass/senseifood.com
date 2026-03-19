@@ -17,6 +17,16 @@ export default function WhyCookiesRiseThenFall() {
         </header>
         <div className="w-full h-80 bg-gradient-to-br from-orange-200 to-amber-300 rounded-3xl mb-12 flex items-center justify-center shadow-2xl"><span className="text-8xl">📉</span></div>
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-orange-50 border-l-4 border-orange-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">📉</span>
+            <div>
+              <p className="font-bold text-orange-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Cookies puff then deflate when too much leavening creates gas that escapes before the structure sets. Reduce baking powder and ensure flour ratio is correct.</p>
+            </div>
+          </div>
+
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">Cookies that puff up during baking then deflate as they cool are experiencing a structural collapse — the air and gas that inflated them escapes before the cookie's protein and starch network is strong enough to hold the shape.</p>
           <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent">The Rise and Fall Cycle</h2>
           <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-orange-200 my-8">

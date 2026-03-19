@@ -43,6 +43,15 @@ export default function WhyBreadRises() {
 
         {/* Content */}
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-green-50 border-l-4 border-green-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">⬆️</span>
+            <div>
+              <p className="font-bold text-green-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Bread rises because yeast consumes sugars and produces CO₂, which gets trapped in gluten strands and expands in the oven's heat. Gluten structure sets when proteins coagulate above 140°F.</p>
+            </div>
+          </div>
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">
             Bread rising looks like magic, but it's actually a simple biological and chemical process. When dough rises, tiny organisms called yeast eat sugars and release gas that expands the dough.
           </p>

@@ -26,6 +26,16 @@ export default function WhyCakesTurnGummy() {
         </header>
         <div className="w-full h-80 bg-gradient-to-br from-pink-200 to-purple-300 rounded-3xl mb-12 flex items-center justify-center shadow-2xl"><span className="text-8xl">{config.emoji}</span></div>
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-pink-50 border-l-4 border-pink-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">🫠</span>
+            <div>
+              <p className="font-bold text-pink-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Gummy cake = under-baked starch. Starches need to reach 200–210°F to fully gelatinize and set. A toothpick that comes out clean is not enough — check internal temperature.</p>
+            </div>
+          </div>
+
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">{config.content}</p>
           <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">Causes & Fixes</h2>
           <div className="space-y-6 my-8">

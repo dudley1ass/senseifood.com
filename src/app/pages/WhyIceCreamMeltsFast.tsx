@@ -39,6 +39,16 @@ export default function WhyIceCreamMeltsFast() {
         </div>
 
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-blue-50 border-l-4 border-blue-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">🍦</span>
+            <div>
+              <p className="font-bold text-blue-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Fast-melting ice cream has too much air (high overrun) and too little fat. Premium ice cream (14–18% fat, 20–30% overrun) melts noticeably slower than cheap brands pumped full of air.</p>
+            </div>
+          </div>
+
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">
             Ice cream that becomes a puddle before you finish your cone is both a physics problem and a recipe quality indicator. How fast ice cream melts is determined by its structure — specifically how much fat, air, and stabilizer it contains.
           </p>

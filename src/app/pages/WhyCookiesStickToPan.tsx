@@ -19,6 +19,16 @@ export default function WhyCookiesStickToPan() {
         </header>
         <div className="w-full h-80 bg-gradient-to-br from-red-200 to-orange-300 rounded-3xl mb-12 flex items-center justify-center shadow-2xl"><span className="text-8xl">😩</span></div>
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-red-50 border-l-4 border-red-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">😩</span>
+            <div>
+              <p className="font-bold text-red-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Cookies stick because caramelized sugar bonds to hot metal. Always use parchment paper and leave cookies on the pan for 3–5 minutes after the oven before lifting.</p>
+            </div>
+          </div>
+
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">Cookies that tear apart when you try to lift them have bonded to the pan through caramelized sugar. The fix is always about creating a barrier or removing that bond before it fully sets.</p>
 
           <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-red-600 to-orange-600 bg-clip-text text-transparent">Why Cookies Bond to Metal</h2>

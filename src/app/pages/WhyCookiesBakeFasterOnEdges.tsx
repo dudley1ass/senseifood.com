@@ -17,6 +17,16 @@ export default function WhyCookiesBakeFasterOnEdges() {
         </header>
         <div className="w-full h-80 bg-gradient-to-br from-yellow-200 to-amber-300 rounded-3xl mb-12 flex items-center justify-center shadow-2xl"><span className="text-8xl">🍪</span></div>
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-yellow-50 border-l-4 border-yellow-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">🍪</span>
+            <div>
+              <p className="font-bold text-yellow-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Edge cookies are exposed to heat on 3 sides vs 1 for the center — conduction is 20x faster than convection. Pull when edges are golden and center looks underdone; carryover heat finishes the middle.</p>
+            </div>
+          </div>
+
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">Crispy edges with a soft center is arguably the ideal cookie texture — and it's not a mistake. It's the natural result of physics. The edges of a cookie experience more heat exposure than the center, causing them to set, brown, and crisp first.</p>
           <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-yellow-600 to-amber-600 bg-clip-text text-transparent">The Physics of Edge Baking</h2>
           <p className="text-foreground/80 leading-relaxed mb-6">Cookie edges are exposed to hot oven air on three sides (top, outer edge, and bottom via the pan). The center of a cookie is only exposed from the top and bottom — the surrounding dough insulates it. Additionally, moisture released from the interior travels outward toward the edges and evaporates there, carrying heat with it and accelerating edge drying.</p>

@@ -17,6 +17,16 @@ export default function WhyCoffeeMakesCrema() {
         </header>
         <div className="w-full h-80 bg-gradient-to-br from-amber-300 to-orange-400 rounded-3xl mb-12 flex items-center justify-center shadow-2xl"><span className="text-8xl">☕</span></div>
         <div className="prose prose-lg max-w-none">
+
+          {/* Quick Answer */}
+          <div className="bg-amber-50 border-l-4 border-amber-400 p-5 rounded-xl mb-8 flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">☕</span>
+            <div>
+              <p className="font-bold text-amber-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
+              <p className="text-foreground/80 leading-relaxed">Crema forms when CO₂ trapped in fresh beans dissolves under espresso pressure, then releases as millions of tiny bubbles. Use beans 1–3 weeks post-roast for best crema.</p>
+            </div>
+          </div>
+
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">Crema is the golden-brown foam that sits on top of a well-pulled espresso shot. It's not just a visual indicator — it's a complex emulsion of CO₂ bubbles, coffee oils, and dissolved compounds that directly influences flavor and mouthfeel.</p>
 
           <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-amber-700 to-orange-700 bg-clip-text text-transparent">How Crema Forms</h2>
