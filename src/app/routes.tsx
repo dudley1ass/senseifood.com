@@ -77,6 +77,24 @@ import WhyCoffeeStales from "./pages/WhyCoffeeStales";
 import WhyPieCrustGetsTough from "./pages/WhyPieCrustGetsTough";
 import ButterVsShorteningInCrust from "./pages/ButterVsShorteningInCrust";
 
+// Batch 3 - Cookie Science
+import WhyCookiesTasteBland from "./pages/WhyCookiesTasteBland";
+import WhyCookiesStayThick from "./pages/WhyCookiesStayThick";
+
+// Batch 3 - Pie Science
+import WhyPieCrustGetsSoggy from "./pages/WhyPieCrustGetsSoggy";
+import WhyPieFillingIsRunny from "./pages/WhyPieFillingIsRunny";
+
+// Batch 3 - Coffee Science
+import WhyCoffeeTastesFlat from "./pages/WhyCoffeeTastesFlat";
+import WhyCoffeeTastesMetallic from "./pages/WhyCoffeeTastesMetallic";
+
+// Batch 3 - Baking Science
+import WhyButterTemperatureMatters from "./pages/WhyButterTemperatureMatters";
+import WhyEggsMatterInBaking from "./pages/WhyEggsMatterInBaking";
+import WhySaltMakesFoodTasteBetter from "./pages/WhySaltMakesFoodTasteBetter";
+import WhyRecipesFail from "./pages/WhyRecipesFail";
+
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -85,7 +103,7 @@ export const router = createBrowserRouter([
       { index: true, Component: Home },
       { path: "articles", Component: Articles },
 
-      // Cookie Science (20 articles)
+      // Cookie Science (22 articles)
       { path: "cookie-science/why-cookies-spread", Component: WhyCookiesSpread },
       { path: "cookie-science/brown-sugar-vs-white-sugar", Component: BrownSugarVsWhiteSugar },
       { path: "cookie-science/why-cookies-turn-hard", Component: WhyCookiesHard },
@@ -106,6 +124,8 @@ export const router = createBrowserRouter([
       { path: "cookie-science/why-cookies-rise-then-fall", Component: WhyCookiesRiseThenFall },
       { path: "cookie-science/why-cookies-bake-faster-on-edges", Component: WhyCookiesBakeFasterOnEdges },
       { path: "cookie-science/why-cookies-change-color", Component: WhyCookiesChangeColor },
+      { path: "cookie-science/why-cookies-taste-bland", Component: WhyCookiesTasteBland },
+      { path: "cookie-science/why-cookies-stay-thick", Component: WhyCookiesStayThick },
 
       // Bread Science (2 articles)
       { path: "bread-science/why-bread-rises", Component: WhyBreadRises },
@@ -130,12 +150,13 @@ export const router = createBrowserRouter([
       { path: "cake-science/why-cakes-turn-rubbery", Component: WhyCakesTurnRubbery },
       { path: "cake-science/why-cakes-stick-to-cooling-rack", Component: WhyCakesStickToCoolingRack },
 
-      // Pie Science (4 articles)
+      // Pie Science (6 articles)
       { path: "pie-science/why-pie-crust-is-flaky", Component: WhyPieCrustFlaky },
       { path: "pie-science/why-pie-crust-shrinks", Component: WhyPieCrustShrinks },
-
       { path: "pie-science/why-pie-crust-gets-tough", Component: WhyPieCrustGetsTough },
       { path: "pie-science/butter-vs-shortening-in-crust", Component: ButterVsShorteningInCrust },
+      { path: "pie-science/why-pie-crust-gets-soggy", Component: WhyPieCrustGetsSoggy },
+      { path: "pie-science/why-pie-filling-is-runny", Component: WhyPieFillingIsRunny },
 
       // Ice Cream Science (4 articles)
       { path: "ice-cream-science/why-ice-cream-gets-icy", Component: WhyIceCreamGetsIcy },
@@ -143,7 +164,7 @@ export const router = createBrowserRouter([
       { path: "ice-cream-science/why-ice-cream-is-creamy", Component: WhyIceCreamIsCreamy },
       { path: "ice-cream-science/why-ice-cream-gets-freezer-burn", Component: WhyIceCreamGetsFreezerBurn },
 
-      // Coffee Science (18 articles)
+      // Coffee Science (20 articles)
       { path: "coffee-science/coffee-extraction-science", Component: CoffeeExtractionScience },
       { path: "coffee-science/why-coffee-tastes-bitter", Component: WhyCoffeeTastesBitter },
       { path: "coffee-science/why-coffee-tastes-sour", Component: WhyCoffeeSour },
@@ -162,6 +183,14 @@ export const router = createBrowserRouter([
       { path: "coffee-science/why-coffee-beans-expand-when-roasted", Component: WhyCoffeeBeansExpandWhenRoasted },
       { path: "coffee-science/why-coffee-tastes-salty", Component: WhyCoffeeTastesSalty },
       { path: "coffee-science/why-coffee-stales", Component: WhyCoffeeStales },
+      { path: "coffee-science/why-coffee-tastes-flat", Component: WhyCoffeeTastesFlat },
+      { path: "coffee-science/why-coffee-tastes-metallic", Component: WhyCoffeeTastesMetallic },
+
+      // Baking Science (4 articles)
+      { path: "baking-science/why-butter-temperature-matters", Component: WhyButterTemperatureMatters },
+      { path: "baking-science/why-eggs-matter-in-baking", Component: WhyEggsMatterInBaking },
+      { path: "baking-science/why-salt-makes-food-taste-better", Component: WhySaltMakesFoodTasteBetter },
+      { path: "baking-science/why-recipes-fail", Component: WhyRecipesFail },
     ],
   },
 ]);

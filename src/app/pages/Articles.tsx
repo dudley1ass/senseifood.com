@@ -9,7 +9,7 @@ export default function Articles() {
   const [selectedCategory, setSelectedCategory] = useState('All');
 
   const articles = [
-    // Cookie Science (20 articles)
+    // Cookie Science (22 articles)
     {
       title: 'Why Cookies Spread',
       description: 'Discover how butter temperature, sugar ratios, and leavening agents control cookie spread and texture.',
@@ -170,6 +170,22 @@ export default function Articles() {
       color: 'from-amber-500 to-red-500',
       url: '/cookie-science/why-cookies-change-color'
     },
+    {
+      title: 'Why Cookies Taste Bland',
+      description: 'If your cookies taste "meh," you're missing one key ingredient. Here's the flavor science behind cookies that actually excite — salt, browning, and brown butter.',
+      category: 'Cookie Science',
+      readTime: '6 min read',
+      color: 'from-amber-500 to-orange-600',
+      url: '/cookie-science/why-cookies-taste-bland'
+    },
+    {
+      title: 'Why Cookies Stay Thick',
+      description: 'Thick cookies aren't always good — here's when staying puffy is a problem, and how to get that perfect settled, dense chew every time.',
+      category: 'Cookie Science',
+      readTime: '6 min read',
+      color: 'from-orange-500 to-amber-600',
+      url: '/cookie-science/why-cookies-stay-thick'
+    },
     // Bread Science (2 articles)
     {
       title: 'Why Bread Rises',
@@ -324,7 +340,7 @@ export default function Articles() {
       color: 'from-orange-500 to-red-500',
       url: '/cake-science/why-cakes-stick-to-cooling-rack'
     },
-    // Pie Science (2 articles)
+    // Pie Science (6 articles)
     {
       title: 'Why Pie Crust Is Flaky',
       description: 'Discover the science behind creating layers of buttery, flaky pie crust that shatters perfectly.',
@@ -340,6 +356,38 @@ export default function Articles() {
       readTime: '6 min read',
       color: 'from-amber-600 to-orange-700',
       url: '/pie-science/why-pie-crust-shrinks'
+    },
+    {
+      title: 'Why Pie Crust Gets Tough',
+      description: 'Learn why pie crust turns hard and chewy instead of tender and flaky — and how controlling gluten development fixes it.',
+      category: 'Pie Science',
+      readTime: '7 min read',
+      color: 'from-amber-600 to-orange-700',
+      url: '/pie-science/why-pie-crust-gets-tough'
+    },
+    {
+      title: 'Butter vs Shortening in Pie Crust',
+      description: 'Compare how butter and shortening affect flakiness, flavor, tenderness, and workability — and when to use each or combine both.',
+      category: 'Pie Science',
+      readTime: '7 min read',
+      color: 'from-yellow-600 to-amber-700',
+      url: '/pie-science/butter-vs-shortening-in-crust'
+    },
+    {
+      title: 'Why Pie Crust Gets Soggy',
+      description: 'Flaky on top, mush on the bottom — here's the moisture science behind soggy pie crust and how to prevent it every time.',
+      category: 'Pie Science',
+      readTime: '7 min read',
+      color: 'from-amber-500 to-orange-600',
+      url: '/pie-science/why-pie-crust-gets-soggy'
+    },
+    {
+      title: 'Why Pie Filling Is Runny',
+      description: 'Your pie didn't fail — your starch did. Learn the thickener science behind perfectly set pie filling that slices cleanly every time.',
+      category: 'Pie Science',
+      readTime: '7 min read',
+      color: 'from-orange-600 to-amber-700',
+      url: '/pie-science/why-pie-filling-is-runny'
     },
     // Ice Cream Science (4 articles)
     {
@@ -374,7 +422,7 @@ export default function Articles() {
       color: 'from-slate-500 to-blue-600',
       url: '/ice-cream-science/why-ice-cream-gets-freezer-burn'
     },
-    // Coffee Science (18 articles)
+    // Coffee Science (20 articles)
     {
       title: 'Coffee Extraction Science',
       description: 'Master the chemistry of coffee extraction and learn how to control flavor by adjusting grind, temperature, and time.',
@@ -519,9 +567,58 @@ export default function Articles() {
       color: 'from-stone-700 to-amber-800',
       url: '/coffee-science/why-coffee-stales'
     },
+    {
+      title: 'Why Coffee Tastes Flat',
+      description: 'Flat coffee isn't weak — it's missing its chemistry. Discover why your cup has lost its vibrancy and how water quality, stale beans, and grind consistency fix it.',
+      category: 'Coffee Science',
+      readTime: '7 min read',
+      color: 'from-stone-600 to-amber-700',
+      url: '/coffee-science/why-coffee-tastes-flat'
+    },
+    {
+      title: 'Why Coffee Tastes Metallic',
+      description: 'If your coffee tastes like pennies, it's not the beans. Here's exactly what's causing that metallic taste — water pipes, dirty equipment, and over-extraction.',
+      category: 'Coffee Science',
+      readTime: '6 min read',
+      color: 'from-slate-600 to-stone-700',
+      url: '/coffee-science/why-coffee-tastes-metallic'
+    },
+    // Baking Science (4 articles)
+    {
+      title: 'Why Butter Temperature Matters',
+      description: 'The single variable that changes everything — from cookie spread to cake texture. The complete science of cold, room temp, melted, and browned butter.',
+      category: 'Baking Science',
+      readTime: '8 min read',
+      color: 'from-yellow-500 to-amber-600',
+      url: '/baking-science/why-butter-temperature-matters'
+    },
+    {
+      title: 'Why Eggs Matter in Baking',
+      description: 'Eggs do five completely different jobs simultaneously. Understanding each one explains why changing yolk-to-white ratios transforms texture.',
+      category: 'Baking Science',
+      readTime: '8 min read',
+      color: 'from-yellow-500 to-orange-500',
+      url: '/baking-science/why-eggs-matter-in-baking'
+    },
+    {
+      title: 'Why Salt Makes Food Taste Better',
+      description: 'Salt isn't just a flavor — it's a bitterness suppressor, flavor amplifier, and chemistry catalyst. Here's the complete science behind the most important ingredient in cooking.',
+      category: 'Baking Science',
+      readTime: '8 min read',
+      color: 'from-blue-600 to-slate-700',
+      url: '/baking-science/why-salt-makes-food-taste-better'
+    },
+    {
+      title: 'Why Recipes Fail',
+      description: 'It's almost never the recipe. Here are the 10 universal reasons baking goes wrong — and the systematic way to diagnose and fix any failure.',
+      category: 'Baking Science',
+      readTime: '10 min read',
+      color: 'from-rose-500 to-orange-600',
+      url: '/baking-science/why-recipes-fail'
+    },
   ];
 
-  const categories = ['All', 'Cookie Science', 'Bread Science', 'Cake Science', 'Pie Science', 'Ice Cream Science', 'Coffee Science'];
+  const categories = ['All', 'Cookie Science', 'Bread Science', 'Cake Science', 'Pie Science', 'Ice Cream Science', 'Coffee Science', 'Baking Science'];
 
   const filteredArticles = articles.filter(article => {
     const matchesSearch = article.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -644,6 +741,7 @@ export default function Articles() {
                     {category === 'Pie Science' && '🥧'}
                     {category === 'Ice Cream Science' && '🍦'}
                     {category === 'Coffee Science' && '☕'}
+                    {category === 'Baking Science' && '🔬'}
                   </span>
                   {category}
                   <span className="text-lg text-muted-foreground font-normal">
