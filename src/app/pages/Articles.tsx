@@ -172,7 +172,7 @@ export default function Articles() {
     },
     {
       title: 'Why Cookies Taste Bland',
-      description: 'If your cookies taste "meh," you're missing one key ingredient. Here's the flavor science behind cookies that actually excite — salt, browning, and brown butter.',
+      description: 'If your cookies taste "meh," you\'re missing one key ingredient. Here\'s the flavor science behind cookies that actually excite — salt, browning, and brown butter.',
       category: 'Cookie Science',
       readTime: '6 min read',
       color: 'from-amber-500 to-orange-600',
@@ -180,7 +180,7 @@ export default function Articles() {
     },
     {
       title: 'Why Cookies Stay Thick',
-      description: 'Thick cookies aren't always good — here's when staying puffy is a problem, and how to get that perfect settled, dense chew every time.',
+      description: 'Thick cookies aren\'t always good — here\'s when staying puffy is a problem, and how to get that perfect settled, dense chew every time.',
       category: 'Cookie Science',
       readTime: '6 min read',
       color: 'from-orange-500 to-amber-600',
@@ -375,7 +375,7 @@ export default function Articles() {
     },
     {
       title: 'Why Pie Crust Gets Soggy',
-      description: 'Flaky on top, mush on the bottom — here's the moisture science behind soggy pie crust and how to prevent it every time.',
+      description: 'Flaky on top, mush on the bottom — here\'s the moisture science behind soggy pie crust and how to prevent it every time.',
       category: 'Pie Science',
       readTime: '7 min read',
       color: 'from-amber-500 to-orange-600',
@@ -383,7 +383,7 @@ export default function Articles() {
     },
     {
       title: 'Why Pie Filling Is Runny',
-      description: 'Your pie didn't fail — your starch did. Learn the thickener science behind perfectly set pie filling that slices cleanly every time.',
+      description: 'Your pie didn\'t fail — your starch did. Learn the thickener science behind perfectly set pie filling that slices cleanly every time.',
       category: 'Pie Science',
       readTime: '7 min read',
       color: 'from-orange-600 to-amber-700',
@@ -569,7 +569,7 @@ export default function Articles() {
     },
     {
       title: 'Why Coffee Tastes Flat',
-      description: 'Flat coffee isn't weak — it's missing its chemistry. Discover why your cup has lost its vibrancy and how water quality, stale beans, and grind consistency fix it.',
+      description: 'Flat coffee isn\'t weak — it\'s missing its chemistry. Discover why your cup has lost its vibrancy and how water quality, stale beans, and grind consistency fix it.',
       category: 'Coffee Science',
       readTime: '7 min read',
       color: 'from-stone-600 to-amber-700',
@@ -577,7 +577,7 @@ export default function Articles() {
     },
     {
       title: 'Why Coffee Tastes Metallic',
-      description: 'If your coffee tastes like pennies, it's not the beans. Here's exactly what's causing that metallic taste — water pipes, dirty equipment, and over-extraction.',
+      description: 'If your coffee tastes like pennies, it\'s not the beans. Here\'s exactly what\'s causing that metallic taste — water pipes, dirty equipment, and over-extraction.',
       category: 'Coffee Science',
       readTime: '6 min read',
       color: 'from-slate-600 to-stone-700',
@@ -602,7 +602,7 @@ export default function Articles() {
     },
     {
       title: 'Why Salt Makes Food Taste Better',
-      description: 'Salt isn't just a flavor — it's a bitterness suppressor, flavor amplifier, and chemistry catalyst. Here's the complete science behind the most important ingredient in cooking.',
+      description: 'Salt isn\'t just a flavor — it\'s a bitterness suppressor, flavor amplifier, and chemistry catalyst. Here\'s the complete science behind the most important ingredient in cooking.',
       category: 'Baking Science',
       readTime: '8 min read',
       color: 'from-blue-600 to-slate-700',
@@ -610,7 +610,7 @@ export default function Articles() {
     },
     {
       title: 'Why Recipes Fail',
-      description: 'It's almost never the recipe. Here are the 10 universal reasons baking goes wrong — and the systematic way to diagnose and fix any failure.',
+      description: 'It\'s almost never the recipe. Here are the 10 universal reasons baking goes wrong — and the systematic way to diagnose and fix any failure.',
       category: 'Baking Science',
       readTime: '10 min read',
       color: 'from-rose-500 to-orange-600',
