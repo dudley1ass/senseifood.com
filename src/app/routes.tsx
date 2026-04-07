@@ -95,6 +95,102 @@ import WhyEggsMatterInBaking from "./pages/WhyEggsMatterInBaking";
 import WhySaltMakesFoodTasteBetter from "./pages/WhySaltMakesFoodTasteBetter";
 import WhyRecipesFail from "./pages/WhyRecipesFail";
 
+const cookieScienceRoutes = [
+  { path: "cookie-science/why-cookies-spread", Component: WhyCookiesSpread },
+  { path: "cookie-science/brown-sugar-vs-white-sugar", Component: BrownSugarVsWhiteSugar },
+  { path: "cookie-science/why-cookies-turn-hard", Component: WhyCookiesHard },
+  { path: "cookie-science/why-cookies-are-chewy", Component: WhyCookiesChewy },
+  { path: "cookie-science/why-cookies-get-crispy", Component: WhyCookiesGetCrispy },
+  { path: "cookie-science/why-cookies-flatten", Component: WhyCookiesFlatten },
+  { path: "cookie-science/why-cookies-spread-too-much", Component: WhyCookiesSpreadTooMuch },
+  { path: "cookie-science/why-cookies-dont-spread", Component: WhyCookiesDontSpread },
+  { path: "cookie-science/why-cookies-burn-on-the-bottom", Component: WhyCookiesBurnOnBottom },
+  { path: "cookie-science/why-cookies-crack-on-top", Component: WhyCookiesCrackOnTop },
+  { path: "cookie-science/why-cookies-turn-cakey", Component: WhyCookiesTurnCakey },
+  { path: "cookie-science/why-cookies-brown", Component: WhyCookiesBrown },
+  { path: "cookie-science/why-cookies-stick-to-pan", Component: WhyCookiesStickToPan },
+  { path: "cookie-science/why-cookies-spread-unevenly", Component: WhyCookiesSpreadUnevenly },
+  { path: "cookie-science/why-cookies-turn-oily", Component: WhyCookiesTurnOily },
+  { path: "cookie-science/why-cookies-taste-bitter", Component: WhyCookiesTasteBitter },
+  { path: "cookie-science/why-cookies-get-hard-after-baking", Component: WhyCookiesGetHardAfterBaking },
+  { path: "cookie-science/why-cookies-rise-then-fall", Component: WhyCookiesRiseThenFall },
+  { path: "cookie-science/why-cookies-bake-faster-on-edges", Component: WhyCookiesBakeFasterOnEdges },
+  { path: "cookie-science/why-cookies-change-color", Component: WhyCookiesChangeColor },
+  { path: "cookie-science/why-cookies-taste-bland", Component: WhyCookiesTasteBland },
+  { path: "cookie-science/why-cookies-stay-thick", Component: WhyCookiesStayThick },
+];
+
+const breadScienceRoutes = [
+  { path: "bread-science/why-bread-rises", Component: WhyBreadRises },
+  { path: "bread-science/how-yeast-works", Component: HowYeastWorks },
+];
+
+const cakeScienceRoutes = [
+  { path: "cake-science/why-cakes-dome", Component: WhyCakesDome },
+  { path: "cake-science/why-cakes-collapse", Component: WhyCakesCollapse },
+  { path: "cake-science/why-cakes-sink", Component: WhyCakesSink },
+  { path: "cake-science/why-cakes-crack-on-top", Component: WhyCakesCrackOnTop },
+  { path: "cake-science/why-cakes-are-dense", Component: WhyCakesAreDense },
+  { path: "cake-science/why-cakes-stick-to-pan", Component: WhyCakesStickToPan },
+  { path: "cake-science/why-cakes-dry-out", Component: WhyCakesDryOut },
+  { path: "cake-science/why-cakes-rise", Component: WhyCakesRise },
+  { path: "cake-science/why-cakes-brown", Component: WhyCakesBrown },
+  { path: "cake-science/why-cakes-stick-to-paper-liners", Component: WhyCakesStickToPaperLiners },
+  { path: "cake-science/why-cakes-have-large-holes", Component: WhyCakesHaveLargeHoles },
+  { path: "cake-science/why-cakes-fall-after-baking", Component: WhyCakesFallAfterBaking },
+  { path: "cake-science/why-cakes-taste-dry", Component: WhyCakesTasteDry },
+  { path: "cake-science/why-cakes-turn-gummy", Component: WhyCakesTurnGummy },
+  { path: "cake-science/why-cakes-rise-unevenly", Component: WhyCakesRiseUnevenly },
+  { path: "cake-science/why-cakes-turn-rubbery", Component: WhyCakesTurnRubbery },
+  { path: "cake-science/why-cakes-stick-to-cooling-rack", Component: WhyCakesStickToCoolingRack },
+];
+
+const pieScienceRoutes = [
+  { path: "pie-science/why-pie-crust-is-flaky", Component: WhyPieCrustFlaky },
+  { path: "pie-science/why-pie-crust-shrinks", Component: WhyPieCrustShrinks },
+  { path: "pie-science/why-pie-crust-gets-tough", Component: WhyPieCrustGetsTough },
+  { path: "pie-science/butter-vs-shortening-in-crust", Component: ButterVsShorteningInCrust },
+  { path: "pie-science/why-pie-crust-gets-soggy", Component: WhyPieCrustGetsSoggy },
+  { path: "pie-science/why-pie-filling-is-runny", Component: WhyPieFillingIsRunny },
+];
+
+const iceCreamScienceRoutes = [
+  { path: "ice-cream-science/why-ice-cream-gets-icy", Component: WhyIceCreamGetsIcy },
+  { path: "ice-cream-science/why-ice-cream-melts-fast", Component: WhyIceCreamMeltsFast },
+  { path: "ice-cream-science/why-ice-cream-is-creamy", Component: WhyIceCreamIsCreamy },
+  { path: "ice-cream-science/why-ice-cream-gets-freezer-burn", Component: WhyIceCreamGetsFreezerBurn },
+];
+
+const coffeeScienceRoutes = [
+  { path: "coffee-science/coffee-extraction-science", Component: CoffeeExtractionScience },
+  { path: "coffee-science/why-coffee-tastes-bitter", Component: WhyCoffeeTastesBitter },
+  { path: "coffee-science/why-coffee-tastes-sour", Component: WhyCoffeeSour },
+  { path: "coffee-science/why-coffee-tastes-weak", Component: WhyCoffeeTastesWeak },
+  { path: "coffee-science/why-coffee-tastes-burnt", Component: WhyCoffeeTastesBurnt },
+  { path: "coffee-science/why-coffee-tastes-watery", Component: WhyCoffeeTastesWatery },
+  { path: "coffee-science/why-coffee-smells-good", Component: WhyCoffeeSmellsGood },
+  { path: "coffee-science/why-coffee-loses-flavor", Component: WhyCoffeeLosesFlavor },
+  { path: "coffee-science/why-coffee-tastes-acidic", Component: WhyCoffeeTastesAcidic },
+  { path: "coffee-science/why-coffee-makes-crema", Component: WhyCoffeeMakesCrema },
+  { path: "coffee-science/why-coffee-gets-oily", Component: WhyCoffeeGetsOily },
+  { path: "coffee-science/why-coffee-grind-size-matters", Component: WhyCoffeeGrindSizeMatters },
+  { path: "coffee-science/why-coffee-brewing-time-matters", Component: WhyCoffeeBrewingTimeMatters },
+  { path: "coffee-science/why-coffee-tastes-different-cold", Component: WhyCoffeeTastesDifferentCold },
+  { path: "coffee-science/why-coffee-oxidizes", Component: WhyCoffeeOxidizes },
+  { path: "coffee-science/why-coffee-beans-expand-when-roasted", Component: WhyCoffeeBeansExpandWhenRoasted },
+  { path: "coffee-science/why-coffee-tastes-salty", Component: WhyCoffeeTastesSalty },
+  { path: "coffee-science/why-coffee-stales", Component: WhyCoffeeStales },
+  { path: "coffee-science/why-coffee-tastes-flat", Component: WhyCoffeeTastesFlat },
+  { path: "coffee-science/why-coffee-tastes-metallic", Component: WhyCoffeeTastesMetallic },
+];
+
+const bakingScienceRoutes = [
+  { path: "baking-science/why-butter-temperature-matters", Component: WhyButterTemperatureMatters },
+  { path: "baking-science/why-eggs-matter-in-baking", Component: WhyEggsMatterInBaking },
+  { path: "baking-science/why-salt-makes-food-taste-better", Component: WhySaltMakesFoodTasteBetter },
+  { path: "baking-science/why-recipes-fail", Component: WhyRecipesFail },
+];
+
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -102,95 +198,13 @@ export const router = createBrowserRouter([
     children: [
       { index: true, Component: Home },
       { path: "articles", Component: Articles },
-
-      // Cookie Science (22 articles)
-      { path: "cookie-science/why-cookies-spread", Component: WhyCookiesSpread },
-      { path: "cookie-science/brown-sugar-vs-white-sugar", Component: BrownSugarVsWhiteSugar },
-      { path: "cookie-science/why-cookies-turn-hard", Component: WhyCookiesHard },
-      { path: "cookie-science/why-cookies-are-chewy", Component: WhyCookiesChewy },
-      { path: "cookie-science/why-cookies-get-crispy", Component: WhyCookiesGetCrispy },
-      { path: "cookie-science/why-cookies-flatten", Component: WhyCookiesFlatten },
-      { path: "cookie-science/why-cookies-spread-too-much", Component: WhyCookiesSpreadTooMuch },
-      { path: "cookie-science/why-cookies-dont-spread", Component: WhyCookiesDontSpread },
-      { path: "cookie-science/why-cookies-burn-on-the-bottom", Component: WhyCookiesBurnOnBottom },
-      { path: "cookie-science/why-cookies-crack-on-top", Component: WhyCookiesCrackOnTop },
-      { path: "cookie-science/why-cookies-turn-cakey", Component: WhyCookiesTurnCakey },
-      { path: "cookie-science/why-cookies-brown", Component: WhyCookiesBrown },
-      { path: "cookie-science/why-cookies-stick-to-pan", Component: WhyCookiesStickToPan },
-      { path: "cookie-science/why-cookies-spread-unevenly", Component: WhyCookiesSpreadUnevenly },
-      { path: "cookie-science/why-cookies-turn-oily", Component: WhyCookiesTurnOily },
-      { path: "cookie-science/why-cookies-taste-bitter", Component: WhyCookiesTasteBitter },
-      { path: "cookie-science/why-cookies-get-hard-after-baking", Component: WhyCookiesGetHardAfterBaking },
-      { path: "cookie-science/why-cookies-rise-then-fall", Component: WhyCookiesRiseThenFall },
-      { path: "cookie-science/why-cookies-bake-faster-on-edges", Component: WhyCookiesBakeFasterOnEdges },
-      { path: "cookie-science/why-cookies-change-color", Component: WhyCookiesChangeColor },
-      { path: "cookie-science/why-cookies-taste-bland", Component: WhyCookiesTasteBland },
-      { path: "cookie-science/why-cookies-stay-thick", Component: WhyCookiesStayThick },
-
-      // Bread Science (2 articles)
-      { path: "bread-science/why-bread-rises", Component: WhyBreadRises },
-      { path: "bread-science/how-yeast-works", Component: HowYeastWorks },
-
-      // Cake Science (17 articles)
-      { path: "cake-science/why-cakes-dome", Component: WhyCakesDome },
-      { path: "cake-science/why-cakes-collapse", Component: WhyCakesCollapse },
-      { path: "cake-science/why-cakes-sink", Component: WhyCakesSink },
-      { path: "cake-science/why-cakes-crack-on-top", Component: WhyCakesCrackOnTop },
-      { path: "cake-science/why-cakes-are-dense", Component: WhyCakesAreDense },
-      { path: "cake-science/why-cakes-stick-to-pan", Component: WhyCakesStickToPan },
-      { path: "cake-science/why-cakes-dry-out", Component: WhyCakesDryOut },
-      { path: "cake-science/why-cakes-rise", Component: WhyCakesRise },
-      { path: "cake-science/why-cakes-brown", Component: WhyCakesBrown },
-      { path: "cake-science/why-cakes-stick-to-paper-liners", Component: WhyCakesStickToPaperLiners },
-      { path: "cake-science/why-cakes-have-large-holes", Component: WhyCakesHaveLargeHoles },
-      { path: "cake-science/why-cakes-fall-after-baking", Component: WhyCakesFallAfterBaking },
-      { path: "cake-science/why-cakes-taste-dry", Component: WhyCakesTasteDry },
-      { path: "cake-science/why-cakes-turn-gummy", Component: WhyCakesTurnGummy },
-      { path: "cake-science/why-cakes-rise-unevenly", Component: WhyCakesRiseUnevenly },
-      { path: "cake-science/why-cakes-turn-rubbery", Component: WhyCakesTurnRubbery },
-      { path: "cake-science/why-cakes-stick-to-cooling-rack", Component: WhyCakesStickToCoolingRack },
-
-      // Pie Science (6 articles)
-      { path: "pie-science/why-pie-crust-is-flaky", Component: WhyPieCrustFlaky },
-      { path: "pie-science/why-pie-crust-shrinks", Component: WhyPieCrustShrinks },
-      { path: "pie-science/why-pie-crust-gets-tough", Component: WhyPieCrustGetsTough },
-      { path: "pie-science/butter-vs-shortening-in-crust", Component: ButterVsShorteningInCrust },
-      { path: "pie-science/why-pie-crust-gets-soggy", Component: WhyPieCrustGetsSoggy },
-      { path: "pie-science/why-pie-filling-is-runny", Component: WhyPieFillingIsRunny },
-
-      // Ice Cream Science (4 articles)
-      { path: "ice-cream-science/why-ice-cream-gets-icy", Component: WhyIceCreamGetsIcy },
-      { path: "ice-cream-science/why-ice-cream-melts-fast", Component: WhyIceCreamMeltsFast },
-      { path: "ice-cream-science/why-ice-cream-is-creamy", Component: WhyIceCreamIsCreamy },
-      { path: "ice-cream-science/why-ice-cream-gets-freezer-burn", Component: WhyIceCreamGetsFreezerBurn },
-
-      // Coffee Science (20 articles)
-      { path: "coffee-science/coffee-extraction-science", Component: CoffeeExtractionScience },
-      { path: "coffee-science/why-coffee-tastes-bitter", Component: WhyCoffeeTastesBitter },
-      { path: "coffee-science/why-coffee-tastes-sour", Component: WhyCoffeeSour },
-      { path: "coffee-science/why-coffee-tastes-weak", Component: WhyCoffeeTastesWeak },
-      { path: "coffee-science/why-coffee-tastes-burnt", Component: WhyCoffeeTastesBurnt },
-      { path: "coffee-science/why-coffee-tastes-watery", Component: WhyCoffeeTastesWatery },
-      { path: "coffee-science/why-coffee-smells-good", Component: WhyCoffeeSmellsGood },
-      { path: "coffee-science/why-coffee-loses-flavor", Component: WhyCoffeeLosesFlavor },
-      { path: "coffee-science/why-coffee-tastes-acidic", Component: WhyCoffeeTastesAcidic },
-      { path: "coffee-science/why-coffee-makes-crema", Component: WhyCoffeeMakesCrema },
-      { path: "coffee-science/why-coffee-gets-oily", Component: WhyCoffeeGetsOily },
-      { path: "coffee-science/why-coffee-grind-size-matters", Component: WhyCoffeeGrindSizeMatters },
-      { path: "coffee-science/why-coffee-brewing-time-matters", Component: WhyCoffeeBrewingTimeMatters },
-      { path: "coffee-science/why-coffee-tastes-different-cold", Component: WhyCoffeeTastesDifferentCold },
-      { path: "coffee-science/why-coffee-oxidizes", Component: WhyCoffeeOxidizes },
-      { path: "coffee-science/why-coffee-beans-expand-when-roasted", Component: WhyCoffeeBeansExpandWhenRoasted },
-      { path: "coffee-science/why-coffee-tastes-salty", Component: WhyCoffeeTastesSalty },
-      { path: "coffee-science/why-coffee-stales", Component: WhyCoffeeStales },
-      { path: "coffee-science/why-coffee-tastes-flat", Component: WhyCoffeeTastesFlat },
-      { path: "coffee-science/why-coffee-tastes-metallic", Component: WhyCoffeeTastesMetallic },
-
-      // Baking Science (4 articles)
-      { path: "baking-science/why-butter-temperature-matters", Component: WhyButterTemperatureMatters },
-      { path: "baking-science/why-eggs-matter-in-baking", Component: WhyEggsMatterInBaking },
-      { path: "baking-science/why-salt-makes-food-taste-better", Component: WhySaltMakesFoodTasteBetter },
-      { path: "baking-science/why-recipes-fail", Component: WhyRecipesFail },
+      ...cookieScienceRoutes,
+      ...breadScienceRoutes,
+      ...cakeScienceRoutes,
+      ...pieScienceRoutes,
+      ...iceCreamScienceRoutes,
+      ...coffeeScienceRoutes,
+      ...bakingScienceRoutes,
     ],
   },
 ]);
