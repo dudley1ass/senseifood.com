@@ -1,7 +1,7 @@
 /**
- * SenseiFood.com - Sitemap Generator
- * Generates sitemap.xml with all 29 articles + main pages
- * Run: node generate-sitemap.js
+ * SenseiFood — sitemap.xml generator
+ * Derives article URLs from src/app/routes.tsx so it stays in sync with the router.
+ * Run: npm run generate-sitemap
  */
 
 import fs from 'fs';
@@ -12,220 +12,52 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const BASE_URL = 'https://senseifood.com';
+const ROUTES_FILE = path.join(__dirname, 'src', 'app', 'routes.tsx');
 const OUTPUT_FILE = path.join(__dirname, 'public', 'sitemap.xml');
 
-// Get current date in ISO format
 const currentDate = new Date().toISOString().split('T')[0];
 
-// Define all URLs with priority and change frequency
-const urls = [
-  // Main Pages
-  {
-    loc: '/',
-    priority: '1.0',
-    changefreq: 'daily',
-    lastmod: currentDate
-  },
-  {
-    loc: '/articles',
-    priority: '0.9',
-    changefreq: 'weekly',
-    lastmod: currentDate
-  },
-  
-  // Cookie Science (8 articles)
-  {
-    loc: '/cookie-science/why-cookies-spread',
-    priority: '0.8',
-    changefreq: 'monthly',
-    lastmod: currentDate
-  },
-  {
-    loc: '/cookie-science/brown-sugar-vs-white-sugar',
-    priority: '0.8',
-    changefreq: 'monthly',
-    lastmod: currentDate
-  },
-  {
-    loc: '/cookie-science/why-cookies-turn-hard',
-    priority: '0.8',
-    changefreq: 'monthly',
-    lastmod: currentDate
-  },
-  {
-    loc: '/cookie-science/why-cookies-are-chewy',
-    priority: '0.8',
-    changefreq: 'monthly',
-    lastmod: currentDate
-  },
-  {
-    loc: '/cookie-science/why-cookies-get-crispy',
-    priority: '0.8',
-    changefreq: 'monthly',
-    lastmod: currentDate
-  },
-  {
-    loc: '/cookie-science/why-cookies-flatten',
-    priority: '0.8',
-    changefreq: 'monthly',
-    lastmod: currentDate
-  },
-  {
-    loc: '/cookie-science/why-cookies-spread-too-much',
-    priority: '0.8',
-    changefreq: 'monthly',
-    lastmod: currentDate
-  },
-  {
-    loc: '/cookie-science/why-cookies-dont-spread',
-    priority: '0.8',
-    changefreq: 'monthly',
-    lastmod: currentDate
-  },
-  
-  // Bread Science (2 articles)
-  {
-    loc: '/bread-science/why-bread-rises',
-    priority: '0.8',
-    changefreq: 'monthly',
-    lastmod: currentDate
-  },
-  {
-    loc: '/bread-science/how-yeast-works',
-    priority: '0.8',
-    changefreq: 'monthly',
-    lastmod: currentDate
-  },
-  
-  // Cake Science (7 articles)
-  {
-    loc: '/cake-science/why-cakes-dome',
-    priority: '0.8',
-    changefreq: 'monthly',
-    lastmod: currentDate
-  },
-  {
-    loc: '/cake-science/why-cakes-collapse',
-    priority: '0.8',
-    changefreq: 'monthly',
-    lastmod: currentDate
-  },
-  {
-    loc: '/cake-science/why-cakes-sink',
-    priority: '0.9', // HIGH TRAFFIC
-    changefreq: 'monthly',
-    lastmod: currentDate
-  },
-  {
-    loc: '/cake-science/why-cakes-crack-on-top',
-    priority: '0.8',
-    changefreq: 'monthly',
-    lastmod: currentDate
-  },
-  {
-    loc: '/cake-science/why-cakes-are-dense',
-    priority: '0.8',
-    changefreq: 'monthly',
-    lastmod: currentDate
-  },
-  {
-    loc: '/cake-science/why-cakes-stick-to-pan',
-    priority: '0.8',
-    changefreq: 'monthly',
-    lastmod: currentDate
-  },
-  {
-    loc: '/cake-science/why-cakes-dry-out',
-    priority: '0.8',
-    changefreq: 'monthly',
-    lastmod: currentDate
-  },
-  
-  // Pie Science (2 articles)
-  {
-    loc: '/pie-science/why-pie-crust-is-flaky',
-    priority: '0.8',
-    changefreq: 'monthly',
-    lastmod: currentDate
-  },
-  {
-    loc: '/pie-science/why-pie-crust-shrinks',
-    priority: '0.8',
-    changefreq: 'monthly',
-    lastmod: currentDate
-  },
-  
-  // Ice Cream Science (4 articles)
-  {
-    loc: '/ice-cream-science/why-ice-cream-gets-icy',
-    priority: '0.8',
-    changefreq: 'monthly',
-    lastmod: currentDate
-  },
-  {
-    loc: '/ice-cream-science/why-ice-cream-melts-fast',
-    priority: '0.8',
-    changefreq: 'monthly',
-    lastmod: currentDate
-  },
-  {
-    loc: '/ice-cream-science/why-ice-cream-is-creamy',
-    priority: '0.8',
-    changefreq: 'monthly',
-    lastmod: currentDate
-  },
-  {
-    loc: '/ice-cream-science/why-ice-cream-gets-freezer-burn',
-    priority: '0.8',
-    changefreq: 'monthly',
-    lastmod: currentDate
-  },
-  
-  // Coffee Science (6 articles)
-  {
-    loc: '/coffee-science/coffee-extraction-science',
-    priority: '0.8',
-    changefreq: 'monthly',
-    lastmod: currentDate
-  },
-  {
-    loc: '/coffee-science/why-coffee-tastes-bitter',
-    priority: '0.8',
-    changefreq: 'monthly',
-    lastmod: currentDate
-  },
-  {
-    loc: '/coffee-science/why-coffee-tastes-sour',
-    priority: '0.9', // HIGH TRAFFIC
-    changefreq: 'monthly',
-    lastmod: currentDate
-  },
-  {
-    loc: '/coffee-science/why-coffee-tastes-weak',
-    priority: '0.8',
-    changefreq: 'monthly',
-    lastmod: currentDate
-  },
-  {
-    loc: '/coffee-science/why-coffee-tastes-burnt',
-    priority: '0.8',
-    changefreq: 'monthly',
-    lastmod: currentDate
-  },
-  {
-    loc: '/coffee-science/why-coffee-tastes-watery',
-    priority: '0.8',
-    changefreq: 'monthly',
-    lastmod: currentDate
-  }
-];
+/** Slightly higher priority for historically strong URLs (edit as you learn from GSC). */
+const HIGH_PRIORITY_LOCS = new Set([
+  '/cake-science/why-cakes-sink',
+  '/coffee-science/why-coffee-tastes-sour',
+  '/cookie-science/why-cookies-spread',
+]);
 
-// Generate XML
-function generateSitemap() {
+function extractArticlePathsFromRoutes() {
+  const content = fs.readFileSync(ROUTES_FILE, 'utf8');
+  const re = /\{\s*path:\s*"([^"]+)",\s*Component:/g;
+  const out = [];
+  let m;
+  while ((m = re.exec(content)) !== null) {
+    const p = m[1];
+    if (p === '/' || !p.includes('/')) continue;
+    out.push(p);
+  }
+  return [...new Set(out)].sort();
+}
+
+function writeSitemap() {
+  const articlePaths = extractArticlePathsFromRoutes();
+
+  const urls = [
+    { loc: '/', priority: '1.0', changefreq: 'daily', lastmod: currentDate },
+    { loc: '/articles', priority: '0.9', changefreq: 'weekly', lastmod: currentDate },
+    ...articlePaths.map((p) => {
+      const loc = `/${p}`;
+      return {
+        loc,
+        priority: HIGH_PRIORITY_LOCS.has(loc) ? '0.9' : '0.8',
+        changefreq: 'monthly',
+        lastmod: currentDate,
+      };
+    }),
+  ];
+
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
-  
-  urls.forEach(url => {
+
+  urls.forEach((url) => {
     xml += '  <url>\n';
     xml += `    <loc>${BASE_URL}${url.loc}</loc>\n`;
     xml += `    <lastmod>${url.lastmod}</lastmod>\n`;
@@ -233,44 +65,20 @@ function generateSitemap() {
     xml += `    <priority>${url.priority}</priority>\n`;
     xml += '  </url>\n';
   });
-  
-  xml += '</urlset>';
-  
-  return xml;
-}
 
-// Write sitemap to file
-function writeSitemap() {
-  const sitemap = generateSitemap();
-  
-  // Ensure public directory exists
+  xml += '</urlset>';
+
   const publicDir = path.join(__dirname, 'public');
   if (!fs.existsSync(publicDir)) {
     fs.mkdirSync(publicDir, { recursive: true });
   }
-  
-  fs.writeFileSync(OUTPUT_FILE, sitemap, 'utf8');
-  
-  console.log('✅ Sitemap generated successfully!');
-  console.log(`📍 Location: ${OUTPUT_FILE}`);
-  console.log(`📊 Total URLs: ${urls.length}`);
-  console.log(`🔗 Sitemap URL: ${BASE_URL}/sitemap.xml`);
-  console.log('\n📋 Breakdown:');
-  console.log('   - Main Pages: 2');
-  console.log('   - Cookie Science: 8 articles');
-  console.log('   - Cake Science: 7 articles');
-  console.log('   - Coffee Science: 6 articles');
-  console.log('   - Ice Cream Science: 4 articles');
-  console.log('   - Pie Science: 2 articles');
-  console.log('   - Bread Science: 2 articles');
-  console.log('   -------------------------');
-  console.log(`   - TOTAL: ${urls.length} URLs`);
-  console.log('\n🚀 Next Steps:');
-  console.log('   1. Deploy to production');
-  console.log('   2. Submit to Google Search Console: https://search.google.com/search-console');
-  console.log('   3. Add sitemap URL: https://senseifood.com/sitemap.xml');
-  console.log('   4. Monitor indexing status');
+
+  fs.writeFileSync(OUTPUT_FILE, xml, 'utf8');
+
+  console.log('Sitemap generated.');
+  console.log(`  File: ${OUTPUT_FILE}`);
+  console.log(`  URLs: ${urls.length} (home + articles index + ${articlePaths.length} article routes)`);
+  console.log(`  Submit: ${BASE_URL}/sitemap.xml`);
 }
 
-// Run the generator
 writeSitemap();
