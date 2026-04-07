@@ -22,7 +22,7 @@ export function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="/#tools" className="text-foreground/80 hover:text-purple-600 transition-colors">
+            <a href="/#pick-starting-point" className="text-foreground/80 hover:text-purple-600 transition-colors">
               Tools
             </a>
             <Link to="/articles" className="text-foreground/80 hover:text-purple-600 transition-colors">
@@ -50,7 +50,7 @@ export function Navigation() {
         {isOpen && (
           <div className="md:hidden mt-4 pb-4 flex flex-col gap-4">
             <a 
-              href="/#tools" 
+              href="/#pick-starting-point" 
               className="text-foreground/80 hover:text-foreground transition-colors py-2"
               onClick={() => setIsOpen(false)}
             >

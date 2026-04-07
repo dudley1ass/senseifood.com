@@ -7,12 +7,14 @@ interface ToolCardProps {
   description: string;
   url: string;
   color: string;
+  /** Outcome-first line shown above the product name */
+  outcome?: string;
 }
 
-export function ToolCard({ name, icon: Icon, description, url, color }: ToolCardProps) {
+export function ToolCard({ name, icon: Icon, description, url, color, outcome }: ToolCardProps) {
   const handleToolLaunch = () => {
-    trackCTAClick('home_tools_grid', `launch_${name.toLowerCase()}`);
-    trackToolStart(name, 'home_tools_grid');
+    trackCTAClick('home_pick_starting_point', `launch_${name.toLowerCase()}`);
+    trackToolStart(name, 'home_pick_starting_point');
   };
 
   return (
@@ -34,6 +36,11 @@ export function ToolCard({ name, icon: Icon, description, url, color }: ToolCard
         </div>
 
         {/* Content */}
+        {outcome ? (
+          <p className={`text-sm font-semibold mb-2 bg-gradient-to-r ${color} bg-clip-text text-transparent`}>
+            {outcome}
+          </p>
+        ) : null}
         <h3 className="text-2xl mb-3">{name}</h3>
         <p className="text-muted-foreground mb-6 leading-relaxed">
           {description}

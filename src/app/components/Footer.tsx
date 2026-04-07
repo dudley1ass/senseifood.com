@@ -72,7 +72,7 @@ export function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="#tools" className="text-sm text-white/70 hover:text-white transition-colors">
+                  <a href="/#pick-starting-point" className="text-sm text-white/70 hover:text-white transition-colors">
                     Our Tools
                   </a>
                 </li>

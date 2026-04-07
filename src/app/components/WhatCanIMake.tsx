@@ -1,6 +1,12 @@
 import { ChefHat, Package, ArrowRight, Sparkles } from 'lucide-react';
+import { trackCTAClick, trackHomePath } from '../utils/analytics';
 
 export function WhatCanIMake() {
+  const handleStartIngredients = () => {
+    trackHomePath('ingredients', 'what_can_i_make_section');
+    trackCTAClick('what_can_i_make', 'start_with_ingredients');
+  };
+
   return (
     <section id="what-can-i-make" className="py-24 px-6 bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50">
       <div className="max-w-7xl mx-auto">
@@ -103,11 +109,12 @@ export function WhatCanIMake() {
               </div>
             </div>
 
-            <a 
-              href="#tools"
+            <a
+              href="#pick-starting-point"
+              onClick={handleStartIngredients}
               className="inline-flex items-center gap-2 bg-gradient-to-r from-green-600 to-emerald-600 text-white px-6 py-3 rounded-lg hover:shadow-xl hover:shadow-green-500/30 transition-all hover:scale-105"
             >
-              Try It Now
+              Start with ingredients
               <ArrowRight className="w-5 h-5" />
             </a>
           </div>

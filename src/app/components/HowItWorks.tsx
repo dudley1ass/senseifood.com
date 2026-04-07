@@ -4,8 +4,8 @@ export function HowItWorks() {
   const steps = [
     {
       icon: Beaker,
-      title: 'Choose Your Tool',
-      description: 'Select from our specialized recipe builders for cookies, cakes, pies, ice cream, or coffee',
+      title: 'Pick a starting point',
+      description: 'Choose the outcome you want—cookies, cake, pie, ice cream, or coffee—and open the matching builder',
       color: 'from-blue-500 to-cyan-600'
     },
     {

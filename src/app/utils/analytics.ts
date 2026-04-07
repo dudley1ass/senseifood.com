@@ -72,6 +72,19 @@ export function trackToolStart(toolName: string, source: string) {
 }
 
 /**
+ * Homepage decision paths (bake / brew / create / ingredients)
+ */
+export function trackHomePath(
+  path: 'bake' | 'brew' | 'create' | 'ingredients',
+  source: string = 'home_hero'
+) {
+  trackEvent('home_path_selected', {
+    path,
+    source,
+  });
+}
+
+/**
  * Track completion-style events from tools
  */
 export function trackToolComplete(toolName: string, completionType: string = 'generate_recipe') {
