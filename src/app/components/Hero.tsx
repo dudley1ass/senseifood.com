@@ -1,6 +1,18 @@
 import { ArrowRight, Sparkles } from 'lucide-react';
+import { trackCTAClick, trackToolStart } from '../utils/analytics';
+
+const PRIMARY_TOOL_URL = 'https://cookiesensei.senseifood.com';
 
 export function Hero() {
+  const handlePrimaryCtaClick = () => {
+    trackCTAClick('home_hero', 'build_analyze_recipe');
+    trackToolStart('CookieSensei', 'home_hero');
+  };
+
+  const handleSecondaryCtaClick = () => {
+    trackCTAClick('home_hero', 'explore_all_tools');
+  };
+
   return (
     <section className="relative overflow-hidden py-32 px-6">
       {/* Vibrant background gradient */}
@@ -31,17 +43,21 @@ export function Hero() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a 
-            href="#tools"
+            href={PRIMARY_TOOL_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={handlePrimaryCtaClick}
             className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-lg hover:shadow-xl hover:shadow-purple-500/30 transition-all hover:scale-105"
           >
-            Explore Tools
+            Build / Analyze a Recipe
             <ArrowRight className="w-5 h-5" />
           </a>
           <a 
-            href="#how-it-works"
+            href="#tools"
+            onClick={handleSecondaryCtaClick}
             className="inline-flex items-center justify-center gap-2 border-2 border-purple-600 text-purple-600 px-8 py-4 rounded-lg hover:bg-purple-50 transition-all hover:scale-105"
           >
-            How It Works
+            Explore All Tools
           </a>
         </div>
 

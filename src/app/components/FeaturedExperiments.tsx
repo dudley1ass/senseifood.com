@@ -1,7 +1,13 @@
 import { BookOpen, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router';
+import { trackArticleClick, trackCTAClick } from '../utils/analytics';
 
 export function FeaturedExperiments() {
+  const handleFeaturedArticleClick = (articleTitle: string) => {
+    trackArticleClick(articleTitle);
+    trackCTAClick('home_featured_articles', 'read_article');
+  };
+
   const experiments = [
     {
       title: 'Why Cookies Spread',
@@ -48,6 +54,7 @@ export function FeaturedExperiments() {
             <Link
               key={experiment.title}
               to={experiment.url}
+              onClick={() => handleFeaturedArticleClick(experiment.title)}
               className="bg-white border-2 border-transparent rounded-2xl p-8 hover:shadow-2xl hover:border-current transition-all group cursor-pointer hover:scale-105 block"
             >
               <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">

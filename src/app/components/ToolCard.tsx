@@ -1,4 +1,5 @@
 import { ArrowRight, LucideIcon } from 'lucide-react';
+import { trackCTAClick, trackToolStart } from '../utils/analytics';
 
 interface ToolCardProps {
   name: string;
@@ -9,11 +10,17 @@ interface ToolCardProps {
 }
 
 export function ToolCard({ name, icon: Icon, description, url, color }: ToolCardProps) {
+  const handleToolLaunch = () => {
+    trackCTAClick('home_tools_grid', `launch_${name.toLowerCase()}`);
+    trackToolStart(name, 'home_tools_grid');
+  };
+
   return (
     <a
       href={url}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={handleToolLaunch}
       className="group relative bg-white border-2 border-transparent rounded-2xl p-8 hover:shadow-2xl hover:border-current transition-all duration-300 overflow-hidden hover:scale-105"
       style={{ color: `color-mix(in srgb, ${color.split(' ')[1].replace('to-', '')} 50%, transparent)` }}
     >

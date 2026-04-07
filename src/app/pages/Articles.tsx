@@ -3,10 +3,21 @@ import { Link } from 'react-router';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
 import { useState } from 'react';
+import { trackArticleClick, trackCTAClick, trackToolStart } from '../utils/analytics';
 
 export default function Articles() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
+
+  const handleArticleClick = (articleTitle: string, source: string) => {
+    trackArticleClick(articleTitle);
+    trackCTAClick(source, 'read_article');
+  };
+
+  const handleToolCtaClick = (location: string) => {
+    trackCTAClick(location, 'try_cookie_sensei');
+    trackToolStart('CookieSensei', location);
+  };
 
   const articles = [
     // Cookie Science (22 articles)
@@ -660,6 +671,20 @@ export default function Articles() {
           <p className="text-xl text-muted-foreground max-w-3xl">
             Dive deep into the chemistry and physics behind great food. Learn the science that makes your cooking better.
           </p>
+          <div className="mt-8 bg-white/80 border border-cyan-200 rounded-2xl p-6 max-w-3xl">
+            <p className="text-base text-muted-foreground mb-4">
+              Ready to apply this immediately? Test your recipe in a live tool while you read.
+            </p>
+            <a
+              href="https://cookiesensei.senseifood.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => handleToolCtaClick('articles_header')}
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-600 to-blue-600 text-white px-6 py-3 rounded-lg hover:shadow-lg transition-all hover:scale-105"
+            >
+              Try CookieSensei
+            </a>
+          </div>
         </header>
 
         {/* Search and Filter */}
@@ -706,6 +731,7 @@ export default function Articles() {
               <Link
                 key={article.title}
                 to={article.url}
+                onClick={() => handleArticleClick(article.title, 'articles_filtered_grid')}
                 className="bg-white border-2 border-transparent rounded-2xl p-8 hover:shadow-2xl hover:border-current transition-all group cursor-pointer hover:scale-105 block"
               >
                 <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
@@ -754,6 +780,7 @@ export default function Articles() {
                     <Link
                       key={article.title}
                       to={article.url}
+                      onClick={() => handleArticleClick(article.title, 'articles_category_grid')}
                       className="bg-white border-2 border-transparent rounded-2xl p-8 hover:shadow-2xl hover:border-current transition-all group cursor-pointer hover:scale-105 block"
                     >
                       <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
@@ -803,6 +830,7 @@ export default function Articles() {
               href="https://cookiesensei.senseifood.com"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => handleToolCtaClick('articles_footer')}
               className="inline-block bg-blue-500 text-white px-8 py-4 rounded-xl font-bold hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-2 border-white"
             >
               Try Our Tools →

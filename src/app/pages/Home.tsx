@@ -7,8 +7,14 @@ import { WhatCanIMake } from '../components/WhatCanIMake';
 import { FeaturedExperiments } from '../components/FeaturedExperiments';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
+import { trackCTAClick, trackToolStart } from '../utils/analytics';
 
 export default function Home() {
+  const handleFooterCtaClick = () => {
+    trackCTAClick('home_footer', 'try_cookie_sensei');
+    trackToolStart('CookieSensei', 'home_footer');
+  };
+
   const tools = [
     {
       name: 'CookieSensei',
@@ -177,10 +183,13 @@ export default function Home() {
             Start experimenting with your first recipe builder and discover the science behind great food.
           </p>
           <a 
-            href="#tools" 
+            href="https://cookiesensei.senseifood.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={handleFooterCtaClick}
             className="inline-flex items-center gap-2 bg-white text-purple-600 px-8 py-4 rounded-lg hover:shadow-2xl transition-all hover:scale-105"
           >
-            Explore Tools
+            Try CookieSensei
             <ArrowRight className="w-5 h-5" />
           </a>
         </div>

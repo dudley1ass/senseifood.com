@@ -60,3 +60,28 @@ export function trackCTAClick(ctaLocation: string, ctaText: string) {
     text: ctaText,
   });
 }
+
+/**
+ * Track when a user starts using a tool (clicked through)
+ */
+export function trackToolStart(toolName: string, source: string) {
+  trackEvent('tool_start', {
+    tool_name: toolName,
+    source,
+  });
+}
+
+/**
+ * Track completion-style events from tools
+ */
+export function trackToolComplete(toolName: string, completionType: string = 'generate_recipe') {
+  trackEvent('tool_complete', {
+    tool_name: toolName,
+    completion_type: completionType,
+  });
+  trackEvent('generate_recipe', {
+    event_category: 'engagement',
+    event_label: toolName,
+    completion_type: completionType,
+  });
+}
