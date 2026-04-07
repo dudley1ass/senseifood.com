@@ -106,7 +106,7 @@ export function Hero() {
             We’ll suggest what you can make — then you can jump into a tool with real controls.
           </p>
           <a
-            href="#what-can-i-make"
+            href="#ingredient-picker"
             onClick={handleIngredientsClick}
             className="inline-flex items-center justify-center gap-2 w-full sm:w-auto bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-3 rounded-xl font-semibold hover:shadow-lg transition-all hover:scale-[1.02]"
           >
