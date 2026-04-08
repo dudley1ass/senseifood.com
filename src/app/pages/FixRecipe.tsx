@@ -1,10 +1,20 @@
-import { useMemo, useEffect, useState } from 'react';
+import { useMemo, useEffect, useState, useCallback } from 'react';
 import { Link, useSearchParams } from 'react-router';
-import { ArrowLeft, FlaskConical, SlidersHorizontal } from 'lucide-react';
+import { ArrowLeft, FlaskConical, Plus, SlidersHorizontal, Trash2 } from 'lucide-react';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
 import { evaluateDiagnostic } from '../diagnostics/evaluate';
 import type { DiagnosticFinding, RecipeCategory } from '../diagnostics/types';
+import {
+  INGREDIENT_CATALOG,
+  aggregateRecipeRows,
+  defaultUnitForSystem,
+  METRIC_UNITS,
+  US_UNITS,
+  type MeasurementSystem,
+  type MetricUnit,
+  type UsUnit,
+} from '../diagnostics/recipeIngredientModel';
 import { trackCTAClick, trackEvent } from '../utils/analytics';
 
 const CATEGORIES: { id: RecipeCategory; label: string; description: string }[] = [
@@ -82,6 +92,44 @@ function isRecipeCategory(v: string): v is RecipeCategory {
   );
 }
 
+type RecipeRow = {
+  rowId: string;
+  ingredientId: string;
+  amount: string;
+  unit: MetricUnit | UsUnit | 'count';
+};
+
+function newRowId(): string {
+  if (typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function') {
+    return crypto.randomUUID();
+  }
+  return `row-${Date.now()}-${Math.random().toString(36).slice(2, 9)}`;
+}
+
+function createRecipeRow(system: MeasurementSystem): RecipeRow {
+  return {
+    rowId: newRowId(),
+    ingredientId: 'flour-ap',
+    amount: '',
+    unit: defaultUnitForSystem(system),
+  };
+}
+
+const SENSEI_GROUPS = (() => {
+  const seen = new Set<string>();
+  const order: string[] = [];
+  for (const ing of INGREDIENT_CATALOG) {
+    if (!seen.has(ing.sensei)) {
+      seen.add(ing.sensei);
+      order.push(ing.sensei);
+    }
+  }
+  return order.map((sensei) => ({
+    sensei,
+    items: INGREDIENT_CATALOG.filter((i) => i.sensei === sensei),
+  }));
+})();
+
 function buildWhatIfPreview(
   finding: DiagnosticFinding | undefined,
   flourAdj: number,
@@ -115,9 +163,9 @@ export default function FixRecipe() {
     return PROBLEM_OPTIONS[initialCategory][0]?.id ?? 'general';
   });
 
-  const [flourG, setFlourG] = useState('');
-  const [butterG, setButterG] = useState('');
-  const [sugarG, setSugarG] = useState('');
+  const [recipeNotes, setRecipeNotes] = useState('');
+  const [measurementSystem, setMeasurementSystem] = useState<MeasurementSystem>('us');
+  const [rows, setRows] = useState<RecipeRow[]>(() => [createRecipeRow('us')]);
 
   const [flourAdj, setFlourAdj] = useState(0);
   const [fatAdj, setFatAdj] = useState(0);
@@ -137,16 +185,53 @@ export default function FixRecipe() {
     }
   }, [category, problemId]);
 
+  const aggregated = useMemo(
+    () =>
+      aggregateRecipeRows(
+        rows.map((r) => ({
+          ingredientId: r.ingredientId,
+          amount: r.amount,
+          system: measurementSystem,
+          unit: r.unit,
+        }))
+      ),
+    [rows, measurementSystem]
+  );
+
   const evalInput = useMemo(
     () => ({
       category,
       problemId,
-      flourG: flourG === '' ? undefined : Number(flourG),
-      butterG: butterG === '' ? undefined : Number(butterG),
-      sugarG: sugarG === '' ? undefined : Number(sugarG),
+      flourG: aggregated.flourG > 0 ? aggregated.flourG : undefined,
+      butterG: aggregated.butterG > 0 ? aggregated.butterG : undefined,
+      sugarG: aggregated.sugarG > 0 ? aggregated.sugarG : undefined,
     }),
-    [category, problemId, flourG, butterG, sugarG]
+    [category, problemId, aggregated]
   );
+
+  const setSystem = useCallback((system: MeasurementSystem) => {
+    setMeasurementSystem(system);
+    setRows((prev) =>
+      prev.map((r) =>
+        r.ingredientId === 'egg-whole' ? { ...r, unit: 'count' } : { ...r, unit: defaultUnitForSystem(system) }
+      )
+    );
+  }, []);
+
+  const updateRow = useCallback((rowId: string, patch: Partial<RecipeRow>) => {
+    setRows((prev) =>
+      prev.map((r) => {
+        if (r.rowId !== rowId) return r;
+        const merged: RecipeRow = { ...r, ...patch };
+        if (merged.ingredientId === 'egg-whole') {
+          merged.unit = 'count';
+        } else if (patch.ingredientId != null && r.ingredientId === 'egg-whole') {
+          merged.unit = defaultUnitForSystem(measurementSystem);
+        }
+        return merged;
+      })
+    );
+  }, [measurementSystem]);
 
   const result = useMemo(() => evaluateDiagnostic(evalInput), [evalInput]);
   const primary = result.findings[0];
@@ -159,6 +244,9 @@ export default function FixRecipe() {
       category,
       problem: problemId,
       signals: r.signals.join(','),
+      measurement: measurementSystem,
+      ingredient_rows: rows.filter((x) => x.amount.trim() !== '').length,
+      has_recipe_notes: recipeNotes.trim().length > 0,
     });
     setSearchParams({ category, problem: problemId }, { replace: true });
   };
@@ -185,9 +273,15 @@ export default function FixRecipe() {
             Debugger for cooking
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl">
-            Tell us what went wrong and optionally plug in a few weights. We run a deterministic rule engine (no AI) to
-            suggest high-impact levers—then use the sliders to preview what small ratio shifts usually do.
+            Say what you were making, paste or describe your recipe, then line up ingredients in metric or US measures.
+            We run a deterministic rule engine (no AI) for ratio-aware hints—then use the sliders to preview small shifts.
           </p>
+          <div className="mt-6 max-w-2xl rounded-xl border border-amber-200/90 bg-amber-50/90 px-4 py-3 text-sm text-amber-950/90 leading-relaxed">
+            <strong className="font-semibold">Got an old recipe and not sure if that&apos;s tablespoons or teaspoons?</strong>{' '}
+            Enter the amount in the ingredient lines and switch the unit—the flour, fat, and sugar totals update
+            immediately, so you can tell which reading is plausible. Run <span className="font-medium">Diagnose</span> and
+            the ratio signals will highlight when the formula looks badly off.
+          </div>
         </header>
 
         <div className="grid gap-8 md:grid-cols-1">
@@ -195,7 +289,9 @@ export default function FixRecipe() {
             <h2 className="text-xl font-semibold text-foreground mb-6">Inputs</h2>
             <div className="space-y-5">
               <div>
-                <label className="block text-sm font-medium text-foreground/80 mb-2">Category</label>
+                <label className="block text-sm font-medium text-foreground/80 mb-2">
+                  What were you trying to make?
+                </label>
                 <select
                   value={category}
                   onChange={(e) => {
@@ -213,7 +309,160 @@ export default function FixRecipe() {
                 </select>
               </div>
               <div>
-                <label className="block text-sm font-medium text-foreground/80 mb-2">Problem</label>
+                <label className="block text-sm font-medium text-foreground/80 mb-2">
+                  Your recipe (paste or describe — optional)
+                </label>
+                <textarea
+                  value={recipeNotes}
+                  onChange={(e) => setRecipeNotes(e.target.value)}
+                  placeholder="e.g. 2 cups flour, 1 stick butter, 3/4 cup sugar, baked 350°F for 12 min…"
+                  rows={4}
+                  className="w-full rounded-xl border-2 border-purple-100 bg-white px-4 py-3 text-sm resize-y min-h-[100px] placeholder:text-muted-foreground/60"
+                />
+              </div>
+              <div>
+                <span className="block text-sm font-medium text-foreground/80 mb-2">Measurements</span>
+                <div className="flex rounded-xl border-2 border-purple-100 p-1 gap-1 bg-purple-50/40">
+                  <button
+                    type="button"
+                    onClick={() => setSystem('metric')}
+                    className={`flex-1 rounded-lg py-2.5 text-sm font-medium transition-colors ${
+                      measurementSystem === 'metric'
+                        ? 'bg-purple-600 text-white shadow-sm'
+                        : 'text-foreground/70 hover:text-foreground'
+                    }`}
+                  >
+                    Metric (g, kg, ml)
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setSystem('us')}
+                    className={`flex-1 rounded-lg py-2.5 text-sm font-medium transition-colors ${
+                      measurementSystem === 'us'
+                        ? 'bg-purple-600 text-white shadow-sm'
+                        : 'text-foreground/70 hover:text-foreground'
+                    }`}
+                  >
+                    US (cups, tbsp, tsp, oz)
+                  </button>
+                </div>
+              </div>
+              <div>
+                <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
+                  <label className="text-sm font-medium text-foreground/80">Ingredients</label>
+                  <button
+                    type="button"
+                    onClick={() => setRows((r) => [...r, createRecipeRow(measurementSystem)])}
+                    className="inline-flex items-center gap-1.5 text-sm font-medium text-purple-700 hover:text-purple-900"
+                  >
+                    <Plus className="w-4 h-4" />
+                    Add line
+                  </button>
+                </div>
+                <p className="text-xs text-muted-foreground mb-3">
+                  Options cover Cookie, cake, pie, ice cream, coffee, and bread-style ingredients. Amounts convert to grams
+                  for flour, fat, and sugar ratio signals.
+                </p>
+                <ul className="space-y-3">
+                  {rows.map((row) => {
+                    const isEgg = row.ingredientId === 'egg-whole';
+                    const unitChoices = measurementSystem === 'metric' ? METRIC_UNITS : US_UNITS;
+                    return (
+                      <li
+                        key={row.rowId}
+                        className="flex flex-col sm:flex-row sm:flex-wrap gap-2 sm:items-end rounded-xl border border-purple-100 bg-purple-50/30 p-3"
+                      >
+                        <div className="flex-1 min-w-[200px]">
+                          <label className="sr-only">Ingredient</label>
+                          <select
+                            value={row.ingredientId}
+                            onChange={(e) => updateRow(row.rowId, { ingredientId: e.target.value })}
+                            className="w-full rounded-lg border-2 border-purple-100 bg-white px-3 py-2 text-sm"
+                          >
+                            {SENSEI_GROUPS.map(({ sensei, items }) => (
+                              <optgroup key={sensei} label={sensei}>
+                                {items.map((ing) => (
+                                  <option key={ing.id} value={ing.id}>
+                                    {ing.label}
+                                  </option>
+                                ))}
+                              </optgroup>
+                            ))}
+                          </select>
+                        </div>
+                        <div className="w-full sm:w-28">
+                          <label className="sr-only">Amount</label>
+                          <input
+                            type="text"
+                            inputMode="decimal"
+                            placeholder="Amount"
+                            value={row.amount}
+                            onChange={(e) => updateRow(row.rowId, { amount: e.target.value })}
+                            className="w-full rounded-lg border-2 border-purple-100 bg-white px-3 py-2 text-sm tabular-nums"
+                          />
+                        </div>
+                        <div className="w-full sm:w-36">
+                          <label className="sr-only">Unit</label>
+                          {isEgg ? (
+                            <div className="rounded-lg border-2 border-purple-100 bg-white px-3 py-2 text-sm text-foreground/80">
+                              whole egg(s)
+                            </div>
+                          ) : (
+                            <select
+                              value={row.unit === 'count' ? defaultUnitForSystem(measurementSystem) : row.unit}
+                              onChange={(e) =>
+                                updateRow(row.rowId, { unit: e.target.value as MetricUnit | UsUnit })
+                              }
+                              className="w-full rounded-lg border-2 border-purple-100 bg-white px-3 py-2 text-sm"
+                            >
+                              {unitChoices.map((u) => (
+                                <option key={u.value} value={u.value}>
+                                  {u.label}
+                                </option>
+                              ))}
+                            </select>
+                          )}
+                        </div>
+                        <button
+                          type="button"
+                          disabled={rows.length <= 1}
+                          onClick={() => {
+                            if (rows.length <= 1) return;
+                            setRows((r) => r.filter((x) => x.rowId !== row.rowId));
+                          }}
+                          className="inline-flex items-center justify-center rounded-lg border-2 border-transparent p-2 text-muted-foreground hover:text-red-600 hover:bg-red-50 disabled:opacity-40 disabled:pointer-events-none shrink-0"
+                          aria-label="Remove ingredient row"
+                        >
+                          <Trash2 className="w-4 h-4" />
+                        </button>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+              {aggregated.flourG > 0 || aggregated.butterG > 0 || aggregated.sugarG > 0 ? (
+                <div className="rounded-xl border border-purple-200 bg-gradient-to-br from-purple-50 to-pink-50/80 px-4 py-3">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-purple-900/80 mb-2">
+                    Totals used for ratio signals
+                  </p>
+                  <dl className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-sm">
+                    <div className="flex justify-between sm:block gap-2">
+                      <dt className="text-muted-foreground">Flour (equiv.)</dt>
+                      <dd className="font-medium tabular-nums">{aggregated.flourG} g</dd>
+                    </div>
+                    <div className="flex justify-between sm:block gap-2">
+                      <dt className="text-muted-foreground">Fat (equiv.)</dt>
+                      <dd className="font-medium tabular-nums">{aggregated.butterG} g</dd>
+                    </div>
+                    <div className="flex justify-between sm:block gap-2">
+                      <dt className="text-muted-foreground">Sugar (equiv.)</dt>
+                      <dd className="font-medium tabular-nums">{aggregated.sugarG} g</dd>
+                    </div>
+                  </dl>
+                </div>
+              ) : null}
+              <div>
+                <label className="block text-sm font-medium text-foreground/80 mb-2">What went wrong?</label>
                 <select
                   value={problemId}
                   onChange={(e) => setProblemId(e.target.value)}
@@ -226,44 +475,9 @@ export default function FixRecipe() {
                   ))}
                 </select>
               </div>
-              <div className="grid sm:grid-cols-3 gap-4">
-                <div>
-                  <label className="block text-sm font-medium text-foreground/80 mb-2">Flour (g)</label>
-                  <input
-                    type="number"
-                    min={0}
-                    placeholder="optional"
-                    value={flourG}
-                    onChange={(e) => setFlourG(e.target.value)}
-                    className="w-full rounded-xl border-2 border-purple-100 bg-white px-4 py-3 text-sm"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-foreground/80 mb-2">Butter / fat (g)</label>
-                  <input
-                    type="number"
-                    min={0}
-                    placeholder="optional"
-                    value={butterG}
-                    onChange={(e) => setButterG(e.target.value)}
-                    className="w-full rounded-xl border-2 border-purple-100 bg-white px-4 py-3 text-sm"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-foreground/80 mb-2">Sugar (g)</label>
-                  <input
-                    type="number"
-                    min={0}
-                    placeholder="optional"
-                    value={sugarG}
-                    onChange={(e) => setSugarG(e.target.value)}
-                    className="w-full rounded-xl border-2 border-purple-100 bg-white px-4 py-3 text-sm"
-                  />
-                </div>
-              </div>
               <p className="text-xs text-muted-foreground">
-                Optional weights unlock ratio flags (e.g. high fat vs flour) so rules can tighten confidence. Coffee/bread
-                can ignore these fields for now.
+                Ratio totals come from the ingredient lines above (not from the free-text recipe). Coffee- and bread-heavy
+                flows can still use problem-only rules if you skip those lines.
               </p>
               <button
                 type="button"
@@ -278,7 +492,8 @@ export default function FixRecipe() {
           <section className="bg-white/90 backdrop-blur rounded-2xl border-2 border-purple-100 shadow-lg p-6 md:p-8">
             <h2 className="text-xl font-semibold text-foreground mb-2">Signals</h2>
             <p className="text-sm text-muted-foreground mb-4">
-              Derived from your grams (when provided). Empty fields mean we only match on the problem you selected.
+              Derived from flour / fat / sugar grams implied by your ingredient lines. If those totals are empty, we only
+              match on the problem you selected.
             </p>
             {result.signals.length ? (
               <ul className="flex flex-wrap gap-2">
@@ -289,7 +504,9 @@ export default function FixRecipe() {
                 ))}
               </ul>
             ) : (
-              <p className="text-sm text-muted-foreground">No ratio signals yet—add flour (and fat/sugar) or keep going with problem-only rules.</p>
+              <p className="text-sm text-muted-foreground">
+                No ratio signals yet—add flour, fat, or sugar lines (or continue with problem-only rules).
+              </p>
             )}
           </section>
 

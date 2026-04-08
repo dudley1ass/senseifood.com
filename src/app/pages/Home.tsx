@@ -77,6 +77,11 @@ export default function Home() {
               Open the rule-based <strong>Fix My Recipe</strong> debugger, or browse <strong>Fix it</strong> guides in the
               science library—built to funnel you from symptom → next test.
             </p>
+            <p className="text-sm text-purple-900/80 max-w-xl leading-relaxed mt-3 border-l-4 border-purple-400/70 pl-3">
+              <strong className="text-purple-950">Vintage recipe cards:</strong> not sure if that line is tablespoons or
+              teaspoons? Put it in Fix My Recipe and flip the unit—the totals update on the spot so you can spot an error
+              before you bake.
+            </p>
           </div>
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 shrink-0">
             <Link

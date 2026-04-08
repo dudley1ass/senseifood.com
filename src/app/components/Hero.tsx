@@ -79,6 +79,10 @@ export function Hero() {
           <span className="text-center text-xs leading-relaxed text-muted-foreground md:max-w-[28ch]">
             Say what could have gone wrong — we&apos;ll point to likely causes and levers to try.
           </span>
+          <span className="text-center text-[11px] leading-snug text-purple-800/75 md:max-w-[34ch]">
+            Old recipe and not sure that&apos;s tablespoons or teaspoons? Enter it and switch units—the debugger shows when
+            totals look wrong.
+          </span>
           <span className="mt-0.5 text-[11px] font-medium text-purple-600 opacity-90 group-hover:opacity-100">
             Open debugger →
           </span>
