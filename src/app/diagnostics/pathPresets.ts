@@ -11,6 +11,7 @@ const SEGMENT_TO_CATEGORY: Record<string, RecipeCategory> = {
 };
 
 function cookieSlugToProblem(slug: string): string {
+  if (slug.includes('how-to-debug')) return 'general';
   if (
     slug.includes('spread-too-much') ||
     slug === 'why-cookies-spread' ||
@@ -32,6 +33,7 @@ function cookieSlugToProblem(slug: string): string {
 }
 
 function cakeSlugToProblem(slug: string): string {
+  if (slug.includes('how-to-debug')) return 'general';
   if (slug.includes('collapse') || slug.includes('fall-after')) return 'collapse';
   if (slug.includes('sink')) return 'sink';
   if (slug.includes('dense')) return 'too-dense';
@@ -41,6 +43,7 @@ function cakeSlugToProblem(slug: string): string {
 }
 
 function coffeeSlugToProblem(slug: string): string {
+  if (slug.includes('how-to-debug')) return 'extraction-balance';
   if (slug.includes('bitter') || slug.includes('burnt')) return 'bitter';
   if (slug.includes('sour') || slug.includes('acidic')) return 'sour';
   if (slug.includes('weak') || slug.includes('watery')) return 'weak';
@@ -67,6 +70,8 @@ function iceCreamSlugToProblem(slug: string): string {
 }
 
 function bakingSlugToProblem(slug: string): string {
+  if (slug.includes('how-to-use-fix')) return 'general';
+  if (slug.includes('one-variable')) return 'recipes-fail';
   if (slug.includes('butter-temperature')) return 'butter-temp';
   if (slug.includes('recipes-fail')) return 'recipes-fail';
   return 'general';

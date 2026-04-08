@@ -20,7 +20,16 @@ export default function Articles() {
   };
 
   const articles = [
-    // Cookie Science (22 articles)
+    // Cookie Science (23 articles)
+    {
+      title: 'How to Debug Cookie Batch Issues',
+      description:
+        'Too thin, too thick, uneven, or weird texture—use this practical map, then open Fix My Recipe with cookie context.',
+      category: 'Cookie Science',
+      readTime: '7 min read',
+      color: 'from-amber-500 to-orange-600',
+      url: '/cookie-science/how-to-debug-cookie-batch-issues',
+    },
     {
       title: 'Why Cookies Spread',
       description: 'Discover how butter temperature, sugar ratios, and leavening agents control cookie spread and texture.',
@@ -214,7 +223,16 @@ export default function Articles() {
       color: 'from-green-500 to-emerald-600',
       url: '/bread-science/how-yeast-works'
     },
-    // Cake Science (17 articles)
+    // Cake Science (18 articles)
+    {
+      title: 'How to Debug Cake Problems',
+      description:
+        'Collapsed centers, dense crumb, dryness—name the pattern, then use Fix My Recipe’s cake mode with the right article links.',
+      category: 'Cake Science',
+      readTime: '7 min read',
+      color: 'from-pink-500 to-rose-600',
+      url: '/cake-science/how-to-debug-cake-problems',
+    },
     {
       title: 'Why Cakes Dome in the Middle',
       description: 'Understand why cakes rise higher in the center and learn techniques to achieve perfectly flat tops.',
@@ -433,7 +451,16 @@ export default function Articles() {
       color: 'from-slate-500 to-blue-600',
       url: '/ice-cream-science/why-ice-cream-gets-freezer-burn'
     },
-    // Coffee Science (20 articles)
+    // Coffee Science (21 articles)
+    {
+      title: 'How to Debug Your Coffee',
+      description:
+        'Bitter, sour, weak, or flat—map what you taste to extraction levers, then try Fix My Recipe in coffee mode.',
+      category: 'Coffee Science',
+      readTime: '7 min read',
+      color: 'from-stone-600 to-amber-800',
+      url: '/coffee-science/how-to-debug-your-coffee',
+    },
     {
       title: 'Coffee Extraction Science',
       description: 'Master the chemistry of coffee extraction and learn how to control flavor by adjusting grind, temperature, and time.',
@@ -594,7 +621,25 @@ export default function Articles() {
       color: 'from-slate-600 to-stone-700',
       url: '/coffee-science/why-coffee-tastes-metallic'
     },
-    // Baking Science (4 articles)
+    // Baking Science (6 articles)
+    {
+      title: 'How to Use Fix My Recipe',
+      description:
+        'Step-by-step for SenseiFood’s rule-based recipe debugger—categories, grams, findings, sliders, and how to retest.',
+      category: 'Baking Science',
+      readTime: '6 min read',
+      color: 'from-violet-500 to-fuchsia-600',
+      url: '/baking-science/how-to-use-fix-my-recipe',
+    },
+    {
+      title: 'Fix Recipes One Variable at a Time',
+      description:
+        'The engineering habit that makes fixes stick—why one lever per bake beats “change everything,” with links to Fix My Recipe.',
+      category: 'Baking Science',
+      readTime: '6 min read',
+      color: 'from-teal-500 to-cyan-600',
+      url: '/baking-science/fix-recipes-one-variable-at-a-time',
+    },
     {
       title: 'Why Butter Temperature Matters',
       description: 'The single variable that changes everything — from cookie spread to cake texture. The complete science of cold, room temp, melted, and browned butter.',

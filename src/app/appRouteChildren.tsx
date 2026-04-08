@@ -89,8 +89,14 @@ import WhyEggsMatterInBaking from "./pages/WhyEggsMatterInBaking";
 import WhySaltMakesFoodTasteBetter from "./pages/WhySaltMakesFoodTasteBetter";
 import WhyRecipesFail from "./pages/WhyRecipesFail";
 import FixRecipe from "./pages/FixRecipe";
+import HowToUseFixMyRecipe from "./pages/HowToUseFixMyRecipe";
+import FixRecipesOneVariableAtATime from "./pages/FixRecipesOneVariableAtATime";
+import HowToDebugCookieBatchIssues from "./pages/HowToDebugCookieBatchIssues";
+import HowToDebugCakeProblems from "./pages/HowToDebugCakeProblems";
+import HowToDebugYourCoffee from "./pages/HowToDebugYourCoffee";
 
 const cookieScienceRoutes = [
+  { path: "cookie-science/how-to-debug-cookie-batch-issues", Component: HowToDebugCookieBatchIssues },
   { path: "cookie-science/why-cookies-spread", Component: WhyCookiesSpread },
   { path: "cookie-science/brown-sugar-vs-white-sugar", Component: BrownSugarVsWhiteSugar },
   { path: "cookie-science/why-cookies-turn-hard", Component: WhyCookiesHard },
@@ -121,6 +127,7 @@ const breadScienceRoutes = [
 ];
 
 const cakeScienceRoutes = [
+  { path: "cake-science/how-to-debug-cake-problems", Component: HowToDebugCakeProblems },
   { path: "cake-science/why-cakes-dome", Component: WhyCakesDome },
   { path: "cake-science/why-cakes-collapse", Component: WhyCakesCollapse },
   { path: "cake-science/why-cakes-sink", Component: WhyCakesSink },
@@ -157,6 +164,7 @@ const iceCreamScienceRoutes = [
 ];
 
 const coffeeScienceRoutes = [
+  { path: "coffee-science/how-to-debug-your-coffee", Component: HowToDebugYourCoffee },
   { path: "coffee-science/coffee-extraction-science", Component: CoffeeExtractionScience },
   { path: "coffee-science/why-coffee-tastes-bitter", Component: WhyCoffeeTastesBitter },
   { path: "coffee-science/why-coffee-tastes-sour", Component: WhyCoffeeSour },
@@ -180,6 +188,8 @@ const coffeeScienceRoutes = [
 ];
 
 const bakingScienceRoutes = [
+  { path: "baking-science/how-to-use-fix-my-recipe", Component: HowToUseFixMyRecipe },
+  { path: "baking-science/fix-recipes-one-variable-at-a-time", Component: FixRecipesOneVariableAtATime },
   { path: "baking-science/why-butter-temperature-matters", Component: WhyButterTemperatureMatters },
   { path: "baking-science/why-eggs-matter-in-baking", Component: WhyEggsMatterInBaking },
   { path: "baking-science/why-salt-makes-food-taste-better", Component: WhySaltMakesFoodTasteBetter },
