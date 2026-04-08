@@ -855,33 +855,6 @@ export default function Articles() {
           </div>
         </div>
 
-        {/* Fix it funnel strip (only on Fix it tab, no search) */}
-        {!searchQuery.trim() && activeTab === 'fix-it' ? (
-          <div className="mb-8 rounded-2xl border-2 border-dashed border-purple-300 bg-purple-50/60 p-6 md:p-8">
-            <h2 className="text-2xl font-semibold text-purple-950 mb-2">See if the debugger fits your issue</h2>
-            <p className="text-muted-foreground text-sm md:text-base max-w-3xl mb-6">
-              If you can name what went wrong (spread, dry, bitter cup, dense crumb…), you can run Fix My Recipe in under
-              a minute. Read the guides below for the full workflow, or jump straight in.
-            </p>
-            <div className="flex flex-wrap gap-3">
-              <Link
-                to="/fix-recipe"
-                onClick={handleFixRecipeOpen}
-                className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold px-6 py-3 text-sm shadow-md hover:opacity-95"
-              >
-                Try Fix My Recipe now →
-              </Link>
-              <Link
-                to="/baking-science/how-to-use-fix-my-recipe"
-                onClick={() => handleArticleClick('How to Use Fix My Recipe', 'articles_fix_it_read_guide')}
-                className="inline-flex items-center justify-center rounded-xl border-2 border-purple-400 bg-white text-purple-900 font-semibold px-6 py-3 text-sm hover:bg-purple-50"
-              >
-                Read how it works first
-              </Link>
-            </div>
-          </div>
-        ) : null}
-
         {/* Tab title (no search) */}
         {!searchQuery.trim() ? (
           <div className="mb-6 flex flex-wrap items-baseline gap-2">
