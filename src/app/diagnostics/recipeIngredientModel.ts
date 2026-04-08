@@ -111,22 +111,17 @@ export type MeasurementSystem = 'metric' | 'us';
 export type MetricUnit = 'g' | 'kg' | 'ml';
 export type UsUnit = 'cup' | 'tbsp' | 'tsp' | 'oz';
 
-/** Convert one line to grams contributed to flour / fat / sugar buckets. */
-export function gramsFromRow(
+/** Total grams for one line (any ingredient). Eggs return 0 — use row count for eggs. */
+export function ingredientGrams(
   ingredientId: string,
   amount: number,
   system: MeasurementSystem,
   unit: MetricUnit | UsUnit
-): { flour: number; fat: number; sugar: number } {
-  const empty = { flour: 0, fat: 0, sugar: 0 };
-  if (!Number.isFinite(amount) || amount <= 0) return empty;
+): number {
+  if (!Number.isFinite(amount) || amount <= 0) return 0;
   const def = getIngredientDef(ingredientId);
-  if (!def) return empty;
-
-  // Eggs: count only — not used in flour/fat/sugar ratio flags today
-  if (ingredientId === 'egg-whole') {
-    return empty;
-  }
+  if (!def) return 0;
+  if (ingredientId === 'egg-whole') return 0;
 
   const gPerTbsp = def.gPerTbsp ?? (def.gPerCup != null ? def.gPerCup / 16 : 0);
   const gPerTsp = def.gPerTsp ?? (gPerTbsp ? gPerTbsp / 3 : 0);
@@ -145,7 +140,27 @@ export function gramsFromRow(
     else if (u === 'tsp') g = amount * gPerTsp;
   }
 
-  if (!Number.isFinite(g) || g <= 0) return empty;
+  return Number.isFinite(g) && g > 0 ? g : 0;
+}
+
+/** Convert one line to grams contributed to flour / fat / sugar buckets. */
+export function gramsFromRow(
+  ingredientId: string,
+  amount: number,
+  system: MeasurementSystem,
+  unit: MetricUnit | UsUnit
+): { flour: number; fat: number; sugar: number } {
+  const empty = { flour: 0, fat: 0, sugar: 0 };
+  if (!Number.isFinite(amount) || amount <= 0) return empty;
+  const def = getIngredientDef(ingredientId);
+  if (!def) return empty;
+
+  if (ingredientId === 'egg-whole') {
+    return empty;
+  }
+
+  const g = ingredientGrams(ingredientId, amount, system, unit);
+  if (g <= 0) return empty;
 
   const out = { ...empty };
   if (def.bucket === 'flour') out.flour = g;
@@ -172,6 +187,67 @@ export function aggregateRecipeRows(
     flourG: flour > 0 ? Math.round(flour * 10) / 10 : 0,
     butterG: fat > 0 ? Math.round(fat * 10) / 10 : 0,
     sugarG: sugar > 0 ? Math.round(sugar * 10) / 10 : 0,
+  };
+}
+
+const LIQUID_IDS = new Set<string>([
+  'water',
+  'milk-whole',
+  'milk-plant',
+  'milk-ice',
+  'coffee-brewed',
+  'espresso',
+  'vanilla',
+]);
+
+/** Flour / fat / sugar buckets plus eggs, chemical leaveners, yeast, and rough liquids for characterization. */
+export function aggregateRecipeRowsExtended(
+  rows: { ingredientId: string; amount: string; system: MeasurementSystem; unit: string }[]
+): {
+  flourG: number;
+  butterG: number;
+  sugarG: number;
+  eggCount: number;
+  bakingPowderG: number;
+  bakingSodaG: number;
+  yeastG: number;
+  liquidG: number;
+} {
+  const base = aggregateRecipeRows(rows);
+  let eggCount = 0;
+  let bakingPowderG = 0;
+  let bakingSodaG = 0;
+  let yeastG = 0;
+  let liquidG = 0;
+
+  for (const row of rows) {
+    const amt = parseFloat(row.amount);
+    if (!Number.isFinite(amt) || amt <= 0) continue;
+    const id = row.ingredientId;
+    const u = row.unit as MetricUnit | UsUnit;
+
+    if (id === 'egg-whole') {
+      eggCount += Math.max(0, Math.round(amt));
+      continue;
+    }
+
+    const g = ingredientGrams(id, amt, row.system, u);
+    if (g <= 0) continue;
+
+    if (id === 'baking-powder') bakingPowderG += g;
+    else if (id === 'baking-soda') bakingSodaG += g;
+    else if (id === 'yeast-dry') yeastG += g;
+    else if (LIQUID_IDS.has(id)) liquidG += g;
+  }
+
+  const r = (x: number) => (x > 0 ? Math.round(x * 10) / 10 : 0);
+  return {
+    ...base,
+    eggCount,
+    bakingPowderG: r(bakingPowderG),
+    bakingSodaG: r(bakingSodaG),
+    yeastG: r(yeastG),
+    liquidG: r(liquidG),
   };
 }
 

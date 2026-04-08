@@ -1,6 +1,13 @@
+import { deriveRecipeCharacterization } from './recipeCharacterization';
 import { deriveSignals } from './signals';
 import { rulePacks } from './rules/index';
-import type { DiagnosticFinding, DiagnosticInput, DiagnosticRule, EvaluationResult } from './types';
+import type {
+  DiagnosticFinding,
+  DiagnosticInput,
+  DiagnosticRule,
+  EvaluationResult,
+  RecipeCategory,
+} from './types';
 
 function ruleToFinding(rule: DiagnosticRule): DiagnosticFinding {
   return {
@@ -76,5 +83,9 @@ export function evaluateDiagnostic(input: DiagnosticInput): EvaluationResult {
     findings = [fallbackFinding(input.category, input.problemId)];
   }
 
-  return { findings, signals };
+  return {
+    findings,
+    signals,
+    characterization: deriveRecipeCharacterization(input),
+  };
 }

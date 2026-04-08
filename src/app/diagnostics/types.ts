@@ -38,6 +38,19 @@ export type DiagnosticInput = {
   flourG?: number;
   butterG?: number;
   sugarG?: number;
+  /** Large eggs ≈50 g each — from egg line counts */
+  eggCount?: number;
+  bakingPowderG?: number;
+  bakingSodaG?: number;
+  yeastG?: number;
+  /** Water, milks, coffee liquids, vanilla — rough hydration picture */
+  liquidG?: number;
+};
+
+/** Plain-language “what this formula tends to bake like” from ratios. */
+export type RecipeCharacterization = {
+  headline: string;
+  blurb: string;
 };
 
 export type DiagnosticFinding = {
@@ -53,4 +66,5 @@ export type DiagnosticFinding = {
 export type EvaluationResult = {
   findings: DiagnosticFinding[];
   signals: string[];
+  characterization: RecipeCharacterization | null;
 };
