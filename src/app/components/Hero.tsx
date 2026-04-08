@@ -1,4 +1,5 @@
-import { Sparkles, ArrowRight } from 'lucide-react';
+import { Sparkles, ArrowRight, FlaskConical } from 'lucide-react';
+import { Link } from 'react-router';
 import { trackCTAClick, trackHomePath, trackToolStart } from '../utils/analytics';
 
 const BEANSENSEI = 'https://beansensei.senseifood.com';
@@ -27,6 +28,10 @@ export function Hero() {
     trackCTAClick('home_hero', 'start_with_ingredients');
   };
 
+  const handleFixRecipeClick = () => {
+    trackCTAClick('home_hero', 'fix_my_recipe');
+  };
+
   return (
     <section className="relative overflow-hidden py-20 md:py-28 px-6">
       <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 via-pink-500/10 to-orange-500/10 -z-10" />
@@ -41,9 +46,43 @@ export function Hero() {
           <span className="text-sm">Food science tools — free, no account</span>
         </div>
 
-        <h1 className="text-4xl md:text-6xl lg:text-7xl mb-6 font-semibold tracking-tight bg-gradient-to-r from-purple-600 via-pink-600 to-orange-600 bg-clip-text text-transparent">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl mb-8 font-semibold tracking-tight bg-gradient-to-r from-purple-600 via-pink-600 to-orange-600 bg-clip-text text-transparent">
           What Do You Want To Make Today?
         </h1>
+
+        <div className="flex items-center gap-3 sm:gap-4 mb-6 max-w-lg mx-auto px-2">
+          <div
+            className="h-px flex-1 bg-gradient-to-r from-transparent via-purple-300/70 to-purple-200/40"
+            aria-hidden
+          />
+          <span className="shrink-0 text-[10px] sm:text-xs font-semibold tracking-[0.2em] text-purple-500/90 uppercase">
+            or
+          </span>
+          <div
+            className="h-px flex-1 bg-gradient-to-l from-transparent via-purple-300/70 to-purple-200/40"
+            aria-hidden
+          />
+        </div>
+
+        <Link
+          to="/fix-recipe"
+          onClick={handleFixRecipeClick}
+          className="group mx-auto mb-10 flex max-w-md flex-col items-center gap-1.5 rounded-2xl border border-purple-200/90 bg-white/70 px-6 py-4 shadow-sm backdrop-blur-sm transition-all hover:border-purple-300 hover:bg-white/95 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-500"
+        >
+          <span className="flex items-center gap-2 text-sm font-semibold text-purple-900 md:text-[0.95rem]">
+            <FlaskConical
+              className="h-4 w-4 shrink-0 text-purple-600 opacity-90 group-hover:opacity-100"
+              aria-hidden
+            />
+            Fix my recipe
+          </span>
+          <span className="text-center text-xs leading-relaxed text-muted-foreground md:max-w-[28ch]">
+            Say what could have gone wrong — we&apos;ll point to likely causes and levers to try.
+          </span>
+          <span className="mt-0.5 text-[11px] font-medium text-purple-600 opacity-90 group-hover:opacity-100">
+            Open debugger →
+          </span>
+        </Link>
 
         <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
           Pick one path. We’ll point you to the right tool so you can fix a recipe or build something new — with chemistry you can actually use.
