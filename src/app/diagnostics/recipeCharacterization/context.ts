@@ -10,6 +10,8 @@ export type RatioContext = {
   fatG: number;
   sugarG: number;
   liquidG: number;
+  /** Ice water / water line only — pie hydration % */
+  waterG: number;
   coffeeBeanG: number;
   coffeeLiquorG: number;
   eggCount: number;
@@ -109,6 +111,7 @@ export function buildRatioContext(input: DiagnosticInput): RatioContext {
   const fatG = input.butterG ?? 0;
   const sugarG = input.sugarG ?? 0;
   const liquidG = input.liquidG ?? 0;
+  const waterG = input.waterG ?? 0;
   const coffeeBeanG = input.coffeeBeanG ?? 0;
   const coffeeLiquorG = input.coffeeLiquorG ?? 0;
   const eggCount = input.eggCount ?? 0;
@@ -143,6 +146,7 @@ export function buildRatioContext(input: DiagnosticInput): RatioContext {
     fatG,
     sugarG,
     liquidG,
+    waterG,
     coffeeBeanG,
     coffeeLiquorG,
     eggCount,

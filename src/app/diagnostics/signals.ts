@@ -1,4 +1,11 @@
 import type { DiagnosticInput } from './types';
+import {
+  cookieBakersSignals,
+  iceCreamBakersSignals,
+  pieCrustBakersSignals,
+} from './bakersPercent';
+import { cakeBalanceSignals } from './cakeBalance';
+import { buildRatioContext } from './recipeCharacterization/context';
 import { shouldFlagLowEggVsFatBinding } from './structureBinding';
 
 /**
@@ -24,6 +31,12 @@ export function deriveSignals(input: DiagnosticInput): string[] {
   if (shouldFlagLowEggVsFatBinding(input)) {
     signals.push('low_egg_vs_fat_binding');
   }
+
+  const ctx = buildRatioContext(input);
+  signals.push(...cakeBalanceSignals(ctx));
+  signals.push(...cookieBakersSignals(ctx));
+  signals.push(...pieCrustBakersSignals(ctx));
+  signals.push(...iceCreamBakersSignals(ctx));
 
   return signals;
 }

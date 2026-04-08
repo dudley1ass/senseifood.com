@@ -210,6 +210,7 @@ export function aggregateRecipeRowsExtended(
   bakingSodaG: number;
   yeastG: number;
   liquidG: number;
+  waterG: number;
   coffeeBeanG: number;
   coffeeLiquorG: number;
 } {
@@ -219,6 +220,7 @@ export function aggregateRecipeRowsExtended(
   let bakingSodaG = 0;
   let yeastG = 0;
   let liquidG = 0;
+  let waterG = 0;
   let coffeeBeanG = 0;
   let coffeeLiquorG = 0;
 
@@ -243,6 +245,9 @@ export function aggregateRecipeRowsExtended(
     else if (id === 'coffee-brewed' || id === 'espresso') {
       liquidG += g;
       coffeeLiquorG += g;
+    } else if (id === 'water') {
+      liquidG += g;
+      waterG += g;
     } else if (LIQUID_IDS.has(id)) liquidG += g;
   }
 
@@ -254,6 +259,7 @@ export function aggregateRecipeRowsExtended(
     bakingSodaG: r(bakingSodaG),
     yeastG: r(yeastG),
     liquidG: r(liquidG),
+    waterG: r(waterG),
     coffeeBeanG: r(coffeeBeanG),
     coffeeLiquorG: r(coffeeLiquorG),
   };

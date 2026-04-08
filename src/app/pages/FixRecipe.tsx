@@ -3,8 +3,10 @@ import { Link, useSearchParams } from 'react-router';
 import { ArrowLeft, FlaskConical, Plus, SlidersHorizontal, Trash2 } from 'lucide-react';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
+import { formatFlourBakersSummary } from '../diagnostics/bakersPercent';
 import { evaluateDiagnostic } from '../diagnostics/evaluate';
-import type { DiagnosticFinding, RecipeCategory } from '../diagnostics/types';
+import { buildRatioContext } from '../diagnostics/recipeCharacterization';
+import type { DiagnosticFinding, DiagnosticInput, RecipeCategory } from '../diagnostics/types';
 import {
   INGREDIENT_GROUPS,
   aggregateRecipeRowsExtended,
@@ -198,6 +200,7 @@ export default function FixRecipe() {
       bakingSodaG: aggregated.bakingSodaG > 0 ? aggregated.bakingSodaG : undefined,
       yeastG: aggregated.yeastG > 0 ? aggregated.yeastG : undefined,
       liquidG: aggregated.liquidG > 0 ? aggregated.liquidG : undefined,
+      waterG: aggregated.waterG > 0 ? aggregated.waterG : undefined,
       coffeeBeanG: aggregated.coffeeBeanG > 0 ? aggregated.coffeeBeanG : undefined,
       coffeeLiquorG: aggregated.coffeeLiquorG > 0 ? aggregated.coffeeLiquorG : undefined,
     }),
@@ -229,6 +232,11 @@ export default function FixRecipe() {
   }, [measurementSystem]);
 
   const result = useMemo(() => evaluateDiagnostic(evalInput), [evalInput]);
+
+  const bakerSummaryLine = useMemo(() => {
+    if (!aggregated.flourG) return null;
+    return formatFlourBakersSummary(buildRatioContext(evalInput as DiagnosticInput));
+  }, [aggregated.flourG, evalInput]);
   const primary = result.findings[0];
 
   const preview = buildWhatIfPreview(primary, flourAdj, fatAdj, sugarAdj);
@@ -284,7 +292,7 @@ export default function FixRecipe() {
         </header>
 
         <div className="xl:grid xl:grid-cols-2 xl:gap-5 xl:items-start space-y-4 xl:space-y-0">
-          <section className="rounded-xl border border-stone-200 bg-white p-4 md:p-5 shadow-sm xl:sticky xl:top-20">
+          <section className="rounded-xl border border-stone-200 bg-white p-4 md:p-5 shadow-sm xl:sticky xl:top-20 xl:self-start">
             <h2 className="text-xs font-bold uppercase tracking-wide text-violet-900 mb-1">Build your recipe</h2>
             <p className="text-xs text-stone-600 mb-3 leading-snug">
               Add ingredients and amounts here, then use <span className="font-semibold text-stone-800">Diagnose</span> for
@@ -413,10 +421,16 @@ export default function FixRecipe() {
                   <span className="text-stone-800">
                     Sugar <span className="tabular-nums font-bold text-violet-950">{aggregated.sugarG}g</span>
                   </span>
+                  {bakerSummaryLine ? (
+                    <span className="w-full text-[11px] text-violet-950 font-semibold leading-snug mt-1.5 pt-1.5 border-t border-violet-200/80">
+                      {bakerSummaryLine}
+                    </span>
+                  ) : null}
                 </div>
               ) : null}
               <p className="text-xs text-stone-700 leading-snug">
-                Ratio totals use only these lines (not the notes on the right). Rule-based engine (no AI).
+                Ratio totals use only these lines (not the notes on the right). Baker’s % is flour = 100%; ice cream uses
+                mix-% in diagnose when there’s no flour. Rule-based engine (no AI).
               </p>
               <button
                 type="button"
@@ -472,7 +486,7 @@ export default function FixRecipe() {
             </div>
           </section>
 
-          <div className="space-y-4">
+          <div className="space-y-4 xl:sticky xl:top-20 xl:self-start">
             <div
               ref={findingsRef}
               tabIndex={-1}

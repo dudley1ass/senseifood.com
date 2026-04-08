@@ -45,6 +45,8 @@ export type DiagnosticInput = {
   yeastG?: number;
   /** Water, milks, coffee liquids, vanilla — rough hydration picture */
   liquidG?: number;
+  /** Plain water only — pie crust hydration vs flour (baker’s %) */
+  waterG?: number;
   /** Whole bean or ground coffee (grams) — coffee / mocha bakes */
   coffeeBeanG?: number;
   /** Brewed coffee + espresso liquid only (grams) — brew ratio read */

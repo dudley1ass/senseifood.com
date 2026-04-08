@@ -1,4 +1,11 @@
 import type { DiagnosticInput, RecipeCategory, RecipeCharacterization } from '../types';
+import {
+  cookieBakersNarrative,
+  formatFlourBakersSummary,
+  iceCreamBakersNarrative,
+  pieBakersNarrative,
+} from '../bakersPercent';
+import { mergeCakeBalanceCharacterization } from '../cakeBalance';
 import { bindingDeficiencyExplanation } from '../structureBinding';
 import {
   LARGE_EGG_G,
@@ -11,6 +18,17 @@ import {
 } from './context';
 
 export type SenseiCharacterizer = (ctx: RatioContext) => RecipeCharacterization | null;
+
+/** Cake-style ratio read + sugar/liquid/fat balance (cookies/baking can still be cake-batter math). */
+function withCakeBalanceIfCake(
+  ctx: RatioContext,
+  category: RecipeCategory,
+  base: RecipeCharacterization
+): RecipeCharacterization {
+  if (category !== 'cookie' && category !== 'cake' && category !== 'baking') return base;
+  if (ctx.structuralKind !== 'cake' || ctx.yeastG > 0.5) return base;
+  return mergeCakeBalanceCharacterization(ctx, base);
+}
 
 function mergeBindingIntoCharacterization(
   base: RecipeCharacterization,
@@ -27,7 +45,11 @@ function mergeBindingIntoCharacterization(
 
 function cookieSensei(ctx: RatioContext): RecipeCharacterization | null {
   if (ctx.flourG <= 0) return null;
-  const base = flourBasedStructureRead(ctx, 'cookie');
+  let base = withCakeBalanceIfCake(ctx, 'cookie', flourBasedStructureRead(ctx, 'cookie'));
+  const sum = formatFlourBakersSummary(ctx);
+  const cookieExtra = ctx.structuralKind === 'cookie' ? cookieBakersNarrative(ctx) : null;
+  const prefix = [sum, cookieExtra].filter(Boolean).join(' ');
+  if (prefix) base = { ...base, blurb: `${prefix} ${base.blurb}` };
   return mergeBindingIntoCharacterization(
     attachMeta(base, ctx, 'cookie', COOKIE_REFERENCE_PROFILES),
     ctx.input
@@ -41,7 +63,9 @@ function cakeSensei(ctx: RatioContext): RecipeCharacterization | null {
       blurb: 'Log flour, fat, sugar, eggs, and liquids so we can read this as cake batter—not from the problem dropdown alone.',
     };
   }
-  const base = flourBasedStructureRead(ctx, 'cake');
+  let base = withCakeBalanceIfCake(ctx, 'cake', flourBasedStructureRead(ctx, 'cake'));
+  const sum = formatFlourBakersSummary(ctx);
+  if (sum) base = { ...base, blurb: `${sum} ${base.blurb}` };
   const profiles = ctx.structuralKind === 'cake' ? CAKE_REFERENCE_PROFILES : COOKIE_REFERENCE_PROFILES;
   return attachMeta(base, ctx, 'cake', profiles);
 }
@@ -55,17 +79,21 @@ function pieSensei(ctx: RatioContext): RecipeCharacterization | null {
   }
   if (ctx.structuralKind === 'cookie') {
     const inner = cookieStyleRead('baking', ctx);
-    return attachMeta(
-      {
-        headline: 'Sweet press-in or cookie-style crust',
-        blurb: `${inner.blurb} PieSensei: high sugar vs flour often means a shortbread or press-in shell—not a low-sugar laminated crust.`,
-      },
-      ctx,
-      'pie',
-      COOKIE_REFERENCE_PROFILES
-    );
+    let shell: RecipeCharacterization = {
+      headline: 'Sweet press-in or cookie-style crust',
+      blurb: `${inner.blurb} PieSensei: high sugar vs flour often means a shortbread or press-in shell—not a low-sugar laminated crust.`,
+    };
+    const sum = formatFlourBakersSummary(ctx);
+    const cN = cookieBakersNarrative(ctx);
+    const prefix = [sum, cN].filter(Boolean).join(' ');
+    if (prefix) shell = { ...shell, blurb: `${prefix} ${shell.blurb}` };
+    return attachMeta(shell, ctx, 'pie', COOKIE_REFERENCE_PROFILES);
   }
-  const base = flourBasedStructureRead(ctx, 'pie');
+  let base = flourBasedStructureRead(ctx, 'pie');
+  const sum = formatFlourBakersSummary(ctx);
+  const pieN = pieBakersNarrative(ctx);
+  const prefix = [sum, pieN].filter(Boolean).join(' ');
+  if (prefix) base = { ...base, blurb: `${prefix} ${base.blurb}` };
   return attachMeta(base, ctx, 'pie', COOKIE_REFERENCE_PROFILES);
 }
 
@@ -118,7 +146,8 @@ function iceCreamSensei(ctx: RatioContext): RecipeCharacterization | null {
       'Sugar, fat, and dairy liquids look balanced in the rough totals; fine-tune with IceCreamSensei for overrun and iciness.';
   }
 
-  return { headline, blurb };
+  const iceExtra = iceCreamBakersNarrative(ctx);
+  return { headline, blurb: iceExtra ? `${iceExtra}${blurb}` : blurb };
 }
 
 function coffeeSensei(ctx: RatioContext): RecipeCharacterization | null {
@@ -187,7 +216,11 @@ function breadSensei(ctx: RatioContext): RecipeCharacterization | null {
 
 function generalBakingSensei(ctx: RatioContext): RecipeCharacterization | null {
   if (ctx.flourG <= 0) return null;
-  const base = flourBasedStructureRead(ctx, 'baking');
+  let base = withCakeBalanceIfCake(ctx, 'baking', flourBasedStructureRead(ctx, 'baking'));
+  const sum = formatFlourBakersSummary(ctx);
+  const cookieExtra = ctx.structuralKind === 'cookie' ? cookieBakersNarrative(ctx) : null;
+  const prefix = [sum, cookieExtra].filter(Boolean).join(' ');
+  if (prefix) base = { ...base, blurb: `${prefix} ${base.blurb}` };
   const profiles = ctx.structuralKind === 'cake' ? CAKE_REFERENCE_PROFILES : COOKIE_REFERENCE_PROFILES;
   return mergeBindingIntoCharacterization(attachMeta(base, ctx, 'baking', profiles), ctx.input);
 }
