@@ -45,12 +45,20 @@ export type DiagnosticInput = {
   yeastG?: number;
   /** Water, milks, coffee liquids, vanilla — rough hydration picture */
   liquidG?: number;
+  /** Whole bean or ground coffee (grams) — coffee / mocha bakes */
+  coffeeBeanG?: number;
+  /** Brewed coffee + espresso liquid only (grams) — brew ratio read */
+  coffeeLiquorG?: number;
 };
 
 /** Plain-language “what this formula tends to bake like” from ratios. */
 export type RecipeCharacterization = {
   headline: string;
   blurb: string;
+  /** Nearest named profile from our reference set (distance match). */
+  referenceMatch?: string;
+  /** Shown when “Making” disagrees with ratio inference. */
+  categoryHint?: string;
 };
 
 export type DiagnosticFinding = {

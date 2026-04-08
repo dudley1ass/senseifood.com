@@ -198,6 +198,8 @@ export default function FixRecipe() {
       bakingSodaG: aggregated.bakingSodaG > 0 ? aggregated.bakingSodaG : undefined,
       yeastG: aggregated.yeastG > 0 ? aggregated.yeastG : undefined,
       liquidG: aggregated.liquidG > 0 ? aggregated.liquidG : undefined,
+      coffeeBeanG: aggregated.coffeeBeanG > 0 ? aggregated.coffeeBeanG : undefined,
+      coffeeLiquorG: aggregated.coffeeLiquorG > 0 ? aggregated.coffeeLiquorG : undefined,
     }),
     [category, problemId, aggregated]
   );
@@ -285,8 +287,8 @@ export default function FixRecipe() {
           <section className="rounded-xl border border-stone-200 bg-white p-4 md:p-5 shadow-sm xl:sticky xl:top-20">
             <h2 className="text-xs font-bold uppercase tracking-wide text-violet-900 mb-1">Build your recipe</h2>
             <p className="text-xs text-stone-600 mb-3 leading-snug">
-              Add ingredients and amounts here. On the right, say what you were making and what went wrong—that drives
-              the findings.
+              Add ingredients and amounts here, then use <span className="font-semibold text-stone-800">Diagnose</span> for
+              the recipe read below the button. On the right, say what went wrong—that drives problem findings.
             </p>
             <div className="space-y-3">
               <div>
@@ -423,18 +425,48 @@ export default function FixRecipe() {
               >
                 Diagnose
               </button>
+              <div className="rounded-lg border border-violet-200 bg-violet-50/90 px-3 py-3 mt-2">
+                <h3 className="text-xs font-bold uppercase tracking-wide text-violet-900 mb-1.5">Recipe diagnose</h3>
+                <p className="text-[11px] text-stone-600 mb-2 leading-snug">
+                  Inferred from your ingredient lines only—not from the &quot;Making&quot; dropdown. We compare your
+                  flour–fat–sugar–egg pattern to reference profiles (Toll House–style, sugar cookie, shortbread, etc.).
+                </p>
+                {result.characterization ? (
+                  <>
+                    <p className="text-base font-bold text-stone-950 leading-snug mb-2">
+                      This will tend to be: {result.characterization.headline}
+                    </p>
+                    <p className="text-sm text-stone-800 leading-relaxed">{result.characterization.blurb}</p>
+                    {result.characterization.referenceMatch ? (
+                      <p className="text-xs text-violet-900 font-semibold mt-2 pt-2 border-t border-violet-200/80">
+                        Similar to: {result.characterization.referenceMatch}
+                      </p>
+                    ) : null}
+                    {result.characterization.categoryHint ? (
+                      <p className="text-xs text-amber-900 bg-amber-50 border border-amber-200 rounded-md px-2 py-2 mt-2 leading-snug">
+                        {result.characterization.categoryHint}
+                      </p>
+                    ) : null}
+                  </>
+                ) : (
+                  <p className="text-xs text-stone-600 leading-relaxed">
+                    Add flour and real amounts in the lines above. Without flour we can&apos;t name the bake (sugar cookie,
+                    cakey bar, shortbread, etc.).
+                  </p>
+                )}
+              </div>
               {diagnoseBanner ? (
                 <p
-                  className="text-sm font-semibold text-violet-900 text-center rounded-lg border border-violet-200 bg-violet-50 px-3 py-2"
+                  className="text-sm font-semibold text-violet-900 text-center rounded-lg border border-violet-200 bg-violet-50 px-3 py-2 mt-2"
                   role="status"
                   aria-live="polite"
                 >
-                  Scrolled to your context and findings.
+                  Scrolled to problem context and findings on the right.
                 </p>
               ) : (
-                <p className="text-xs text-stone-600 text-center leading-snug">
-                  Tip: tap <span className="font-semibold text-stone-800">Diagnose</span> to jump to your context and
-                  findings on the right (they also update as you edit).
+                <p className="text-xs text-stone-600 text-center leading-snug mt-2">
+                  Tip: <span className="font-semibold text-stone-800">Diagnose</span> also jumps to what went wrong and
+                  findings on the right. Recipe diagnose above updates as you edit the table.
                 </p>
               )}
             </div>
@@ -494,25 +526,6 @@ export default function FixRecipe() {
                   rows={2}
                   className={`${field} resize-y min-h-[4.5rem]`}
                 />
-              </div>
-              <div className="border-t border-stone-200 pt-4 mb-4">
-                <h2 className="text-xs font-bold uppercase tracking-wide text-violet-900 mb-2">What this bakes like</h2>
-                <p className="text-[11px] text-stone-600 mb-2 leading-snug">
-                  From your flour, fat, sugar, eggs, leaveners, and liquids vs flour (approximate home-baking math).
-                </p>
-                {result.characterization ? (
-                  <div className="rounded-lg border border-violet-200 bg-violet-50/90 px-3 py-3">
-                    <p className="text-base font-bold text-stone-950 leading-snug mb-2">
-                      This will tend to be: {result.characterization.headline}
-                    </p>
-                    <p className="text-sm text-stone-800 leading-relaxed">{result.characterization.blurb}</p>
-                  </div>
-                ) : (
-                  <p className="text-xs text-stone-600 leading-relaxed">
-                    Add flour and real amounts in the builder on the left. Without flour in the table we can&apos;t classify
-                    the dough (sugar cookie, cakey bar, shortbread, etc.).
-                  </p>
-                )}
               </div>
               <h2 className="text-xs font-bold uppercase tracking-wide text-violet-900 mb-3 border-t border-stone-200 pt-4">
                 Findings

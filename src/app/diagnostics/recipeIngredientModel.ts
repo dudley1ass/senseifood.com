@@ -195,8 +195,6 @@ const LIQUID_IDS = new Set<string>([
   'milk-whole',
   'milk-plant',
   'milk-ice',
-  'coffee-brewed',
-  'espresso',
   'vanilla',
 ]);
 
@@ -212,6 +210,8 @@ export function aggregateRecipeRowsExtended(
   bakingSodaG: number;
   yeastG: number;
   liquidG: number;
+  coffeeBeanG: number;
+  coffeeLiquorG: number;
 } {
   const base = aggregateRecipeRows(rows);
   let eggCount = 0;
@@ -219,6 +219,8 @@ export function aggregateRecipeRowsExtended(
   let bakingSodaG = 0;
   let yeastG = 0;
   let liquidG = 0;
+  let coffeeBeanG = 0;
+  let coffeeLiquorG = 0;
 
   for (const row of rows) {
     const amt = parseFloat(row.amount);
@@ -237,7 +239,11 @@ export function aggregateRecipeRowsExtended(
     if (id === 'baking-powder') bakingPowderG += g;
     else if (id === 'baking-soda') bakingSodaG += g;
     else if (id === 'yeast-dry') yeastG += g;
-    else if (LIQUID_IDS.has(id)) liquidG += g;
+    else if (id === 'coffee-beans') coffeeBeanG += g;
+    else if (id === 'coffee-brewed' || id === 'espresso') {
+      liquidG += g;
+      coffeeLiquorG += g;
+    } else if (LIQUID_IDS.has(id)) liquidG += g;
   }
 
   const r = (x: number) => (x > 0 ? Math.round(x * 10) / 10 : 0);
@@ -248,6 +254,8 @@ export function aggregateRecipeRowsExtended(
     bakingSodaG: r(bakingSodaG),
     yeastG: r(yeastG),
     liquidG: r(liquidG),
+    coffeeBeanG: r(coffeeBeanG),
+    coffeeLiquorG: r(coffeeLiquorG),
   };
 }
 
