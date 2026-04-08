@@ -23,7 +23,7 @@ pnpm dev
 ### Build for Production
 
 ```bash
-# Build the project
+# Build the project (Vite + prerender of all indexable routes into dist/**/index.html)
 npm run build
 # or
 pnpm build
@@ -33,6 +33,13 @@ npm run preview
 # or
 pnpm preview
 ```
+
+### SEO, prerender, and Search Console
+
+- **Prerender:** `npm run build` runs `vite build` then a Node prerender step so crawlers receive real HTML (title, meta, body) on every indexable path. Route metadata is centralized in `src/app/seo/routeMeta.ts`, with optional **hand-tuned overrides** for top URLs in `SEO_OVERRIDES` there.
+- **Google Search Console:** Add a property for `https://senseifood.com`. After each deploy, use **URL Inspection** on `/`, `/articles`, and a few articles; confirm the live page shows the expected `<title>` and meta description.
+- **Tool sites:** This repo is the **hub** only. Subdomain tool apps do not need SSG unless you want them to rank; prioritizing the hub and articles is a common approach.
+- **beansensei.com:** If you own an apex domain (e.g. `beansensei.com`) that duplicates `beansensei.senseifood.com`, configure a **301 redirect** to the canonical subdomain (or the hub) at your DNS/registrar or host (e.g. Render). `public/_redirects` only applies when traffic hits **this** static site’s host.
 
 ## 📦 Project Structure
 
@@ -98,13 +105,15 @@ The hub links to these subdomains (configure in Render + Namecheap):
 ## 📄 Pages
 
 - **Home** (`/`) - Main landing page with all tools
-- **Articles:**
-  - `/articles/why-cookies-spread`
-  - `/articles/brown-sugar-vs-white-sugar`
-  - `/articles/why-ice-cream-gets-icy`
-  - `/articles/why-coffee-tastes-bitter`
-  - `/articles/coffee-extraction-science`
-  - `/articles/why-cakes-collapse`
+- **Article hub** (`/articles`) - All categories and guides
+- **Example article URLs (real route structure):**
+  - `/cookie-science/why-cookies-spread`
+  - `/cookie-science/brown-sugar-vs-white-sugar`
+  - `/cake-science/why-cakes-collapse`
+  - `/ice-cream-science/why-ice-cream-gets-icy`
+  - `/coffee-science/why-coffee-tastes-bitter`
+  - `/coffee-science/coffee-extraction-science`
+  - `/pie-science/why-pie-crust-is-flaky`
 
 ## 🛠 Tech Stack
 

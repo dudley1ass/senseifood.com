@@ -1,9 +1,5 @@
 import { useState } from 'react';
 import { X, Send, Check } from 'lucide-react';
-import emailjs from '@emailjs/browser';
-
-// Initialize EmailJS with public key
-emailjs.init('14gxP6MY-2W3BXKQA');
 
 interface ContactFormModalProps {
   isOpen: boolean;
@@ -28,7 +24,9 @@ export function ContactFormModal({ isOpen, onClose }: ContactFormModalProps) {
     setSubmitStatus('idle');
 
     try {
-      // EmailJS configuration - matching your template variables
+      const emailjs = (await import('@emailjs/browser')).default;
+      emailjs.init('14gxP6MY-2W3BXKQA');
+
       const templateParams = {
         name: formData.name,
         email: formData.email,

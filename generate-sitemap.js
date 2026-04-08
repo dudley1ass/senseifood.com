@@ -12,7 +12,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const BASE_URL = 'https://senseifood.com';
-const ROUTES_FILE = path.join(__dirname, 'src', 'app', 'routes.tsx');
+const ROUTES_FILE = path.join(__dirname, 'src', 'app', 'appRouteChildren.tsx');
 const OUTPUT_FILE = path.join(__dirname, 'public', 'sitemap.xml');
 
 const currentDate = new Date().toISOString().split('T')[0];
