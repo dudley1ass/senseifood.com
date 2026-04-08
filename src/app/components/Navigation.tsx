@@ -25,7 +25,7 @@ export function Navigation() {
             <a href="/#pick-starting-point" className="text-foreground/80 hover:text-purple-600 transition-colors">
               Tools
             </a>
-            <Link to="/articles" className="text-foreground/80 hover:text-purple-600 transition-colors">
+            <Link to="/articles?tab=fix-it" className="text-foreground/80 hover:text-purple-600 transition-colors">
               Articles
             </Link>
             <Link to="/fix-recipe" className="text-foreground/80 hover:text-purple-600 transition-colors">
@@ -60,7 +60,7 @@ export function Navigation() {
               Tools
             </a>
             <Link 
-              to="/articles" 
+              to="/articles?tab=fix-it" 
               className="text-foreground/80 hover:text-foreground transition-colors py-2"
               onClick={() => setIsOpen(false)}
             >

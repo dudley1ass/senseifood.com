@@ -1,13 +1,49 @@
-import { ArrowLeft, BookOpen, Search } from 'lucide-react';
-import { Link } from 'react-router';
+import { ArrowLeft, BookOpen, Search, Wrench } from 'lucide-react';
+import { Link, useSearchParams } from 'react-router';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { trackArticleClick, trackCTAClick, trackToolStart } from '../utils/analytics';
 
+const FIX_IT_URLS = new Set<string>([
+  '/baking-science/how-to-use-fix-my-recipe',
+  '/baking-science/fix-recipes-one-variable-at-a-time',
+  '/baking-science/why-recipes-fail',
+  '/cookie-science/how-to-debug-cookie-batch-issues',
+  '/cake-science/how-to-debug-cake-problems',
+  '/coffee-science/how-to-debug-your-coffee',
+]);
+
+const TAB_IDS = ['fix-it', 'cookies', 'bread', 'cakes', 'pies', 'ice-cream', 'coffee', 'baking', 'all'] as const;
+type TabId = (typeof TAB_IDS)[number];
+
+function parseTabParam(value: string | null): TabId {
+  if (value && (TAB_IDS as readonly string[]).includes(value)) return value as TabId;
+  return 'fix-it';
+}
+
+const ARTICLE_TABS: { id: TabId; label: string; category: 'FIX_IT' | 'ALL' | string }[] = [
+  { id: 'fix-it', label: 'Fix it', category: 'FIX_IT' },
+  { id: 'cookies', label: 'Cookies', category: 'Cookie Science' },
+  { id: 'cakes', label: 'Cakes', category: 'Cake Science' },
+  { id: 'bread', label: 'Bread', category: 'Bread Science' },
+  { id: 'pies', label: 'Pies', category: 'Pie Science' },
+  { id: 'ice-cream', label: 'Ice cream', category: 'Ice Cream Science' },
+  { id: 'coffee', label: 'Coffee', category: 'Coffee Science' },
+  { id: 'baking', label: 'Baking science', category: 'Baking Science' },
+  { id: 'all', label: 'All', category: 'ALL' },
+];
+
 export default function Articles() {
+  const [searchParams, setSearchParams] = useSearchParams();
   const [searchQuery, setSearchQuery] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('All');
+
+  const activeTab = parseTabParam(searchParams.get('tab'));
+
+  const setActiveTab = (id: TabId) => {
+    setSearchParams({ tab: id }, { replace: true });
+    trackCTAClick('articles_tab', id);
+  };
 
   const handleArticleClick = (articleTitle: string, source: string) => {
     trackArticleClick(articleTitle);
@@ -674,21 +710,28 @@ export default function Articles() {
     },
   ];
 
-  const categories = ['All', 'Cookie Science', 'Bread Science', 'Cake Science', 'Pie Science', 'Ice Cream Science', 'Coffee Science', 'Baking Science'];
+  const visibleArticles = useMemo(() => {
+    const q = searchQuery.trim().toLowerCase();
+    if (q) {
+      return articles.filter(
+        (a) =>
+          a.title.toLowerCase().includes(q) ||
+          a.description.toLowerCase().includes(q) ||
+          a.category.toLowerCase().includes(q) ||
+          a.url.toLowerCase().includes(q.replace(/\s+/g, '-'))
+      );
+    }
+    if (activeTab === 'fix-it') return articles.filter((a) => FIX_IT_URLS.has(a.url));
+    if (activeTab === 'all') return articles;
+    const tab = ARTICLE_TABS.find((t) => t.id === activeTab);
+    const cat = tab?.category;
+    if (!cat || cat === 'FIX_IT' || cat === 'ALL') return articles;
+    return articles.filter((a) => a.category === cat);
+  }, [activeTab, searchQuery]);
 
-  const filteredArticles = articles.filter(article => {
-    const matchesSearch = article.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      article.description.toLowerCase().includes(searchQuery.toLowerCase());
-    const matchesCategory = selectedCategory === 'All' || article.category === selectedCategory;
-    return matchesSearch && matchesCategory;
-  });
-
-  const articlesByCategory = categories
-    .filter(cat => cat !== 'All')
-    .map(category => ({
-      category,
-      articles: articles.filter(article => article.category === category)
-    }));
+  const handleFixRecipeOpen = () => {
+    trackCTAClick('articles_header', 'fix_my_recipe');
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-orange-50">
@@ -705,158 +748,211 @@ export default function Articles() {
         </Link>
 
         {/* Header */}
-        <header className="mb-12">
+        <header className="mb-8">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-4 py-2 rounded-full text-sm mb-6">
             <BookOpen className="w-4 h-4" />
             Science Library
           </div>
-          <h1 className="text-5xl md:text-6xl mb-6 bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-6xl mb-4 bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent">
             Food Science Articles
           </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl">
-            Dive deep into the chemistry and physics behind great food. Learn the science that makes your cooking better.
+          <p className="text-xl text-muted-foreground max-w-3xl mb-8">
+            Use the tabs to jump straight to a topic—start with <strong>Fix it</strong> if something just went wrong, then
+            open the rule-based debugger to see what to try next.
           </p>
-          <div className="mt-8 bg-white/80 border border-cyan-200 rounded-2xl p-6 max-w-3xl">
-            <p className="text-base text-muted-foreground mb-4">
-              Ready to apply this immediately? Test your recipe in a live tool while you read.
-            </p>
-            <a
-              href="https://cookiesensei.senseifood.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => handleToolCtaClick('articles_header')}
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-600 to-blue-600 text-white px-6 py-3 rounded-lg hover:shadow-lg transition-all hover:scale-105"
-            >
-              Try CookieSensei
-            </a>
+
+          <div className="grid gap-4 md:grid-cols-2 max-w-4xl">
+            <div className="rounded-2xl border-2 border-purple-300 bg-gradient-to-br from-purple-600 via-purple-600 to-pink-600 p-6 text-white shadow-lg">
+              <div className="flex items-center gap-2 text-white/90 text-sm font-semibold uppercase tracking-wide mb-2">
+                <Wrench className="w-4 h-4" aria-hidden />
+                Fix My Recipe
+              </div>
+              <p className="text-white/95 text-sm leading-relaxed mb-4">
+                Pick a problem, add optional gram weights, get clear causes and levers—no AI, no account.
+              </p>
+              <Link
+                to="/fix-recipe"
+                onClick={handleFixRecipeOpen}
+                className="inline-flex items-center justify-center rounded-xl bg-white text-purple-800 font-bold px-6 py-3 text-sm hover:shadow-lg transition-shadow"
+              >
+                Open Fix My Recipe →
+              </Link>
+            </div>
+            <div className="rounded-2xl border-2 border-cyan-200 bg-white/90 backdrop-blur-sm p-6 shadow-md">
+              <p className="text-sm text-muted-foreground mb-4">
+                Want numeric prediction for cookies? CookieSensei pairs well with these guides.
+              </p>
+              <a
+                href="https://cookiesensei.senseifood.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => handleToolCtaClick('articles_header')}
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-600 to-blue-600 text-white px-6 py-3 rounded-xl font-semibold hover:shadow-lg transition-all text-sm"
+              >
+                Try CookieSensei
+              </a>
+            </div>
           </div>
         </header>
 
-        {/* Search and Filter */}
-        <div className="mb-12 space-y-6">
-          {/* Search Bar */}
-          <div className="relative max-w-xl">
-            <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
-            <input
-              type="text"
-              placeholder="Search articles..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-12 pr-4 py-4 rounded-2xl border-2 border-gray-200 focus:border-blue-500 focus:outline-none transition-colors text-lg"
-            />
-          </div>
+        {/* Search */}
+        <div className="relative max-w-2xl mb-4">
+          <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground pointer-events-none" />
+          <input
+            type="search"
+            placeholder="Search all articles by title, topic, or keyword…"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="w-full pl-12 pr-4 py-4 rounded-2xl border-2 border-gray-200 focus:border-purple-500 focus:outline-none transition-colors text-base shadow-sm"
+            aria-label="Search articles"
+          />
+          {searchQuery.trim() ? (
+            <button
+              type="button"
+              onClick={() => setSearchQuery('')}
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-sm text-purple-600 font-medium hover:underline"
+            >
+              Clear
+            </button>
+          ) : null}
+        </div>
+        {searchQuery.trim() ? (
+          <p className="text-sm text-muted-foreground mb-4">
+            Searching all articles. Tabs below are ignored until you clear the search.
+          </p>
+        ) : null}
 
-          {/* Category Filter */}
-          <div className="flex flex-wrap gap-3">
-            {categories.map((category) => (
-              <button
-                key={category}
-                onClick={() => setSelectedCategory(category)}
-                className={`px-6 py-2.5 rounded-full font-medium transition-all ${
-                  selectedCategory === category
-                    ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white shadow-lg scale-105'
-                    : 'bg-white text-gray-700 hover:shadow-md'
-                }`}
-              >
-                {category}
-              </button>
-            ))}
+        {/* Sticky tabs */}
+        <div className="sticky top-[4.5rem] z-30 -mx-6 px-6 py-3 mb-8 bg-gradient-to-b from-purple-50/98 via-purple-50/95 to-purple-50/90 backdrop-blur-md border-y border-purple-200/80 shadow-sm">
+          <p className="text-xs font-medium text-purple-800/80 uppercase tracking-wide mb-2 md:hidden">Categories</p>
+          <div className="flex gap-2 overflow-x-auto pb-1 snap-x snap-mandatory">
+            {ARTICLE_TABS.map((tab) => {
+              const isActive = !searchQuery.trim() && activeTab === tab.id;
+              return (
+                <button
+                  key={tab.id}
+                  type="button"
+                  onClick={() => setActiveTab(tab.id)}
+                  className={`snap-start shrink-0 px-4 py-2.5 rounded-full text-sm font-semibold transition-all border-2 ${
+                    isActive
+                      ? tab.id === 'fix-it'
+                        ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white border-transparent shadow-md'
+                        : 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white border-transparent shadow-md'
+                      : 'bg-white text-gray-700 border-purple-100 hover:border-purple-300 hover:shadow-sm'
+                  }`}
+                >
+                  {tab.id === 'fix-it' ? (
+                    <span className="inline-flex items-center gap-1.5">
+                      <Wrench className="w-3.5 h-3.5" aria-hidden />
+                      {tab.label}
+                    </span>
+                  ) : (
+                    tab.label
+                  )}
+                </button>
+              );
+            })}
           </div>
         </div>
 
-        {/* Results Count */}
-        <div className="mb-6 text-muted-foreground">
-          Showing {filteredArticles.length} {filteredArticles.length === 1 ? 'article' : 'articles'}
-        </div>
-
-        {/* Articles Grid (when searching or filtering) */}
-        {(searchQuery || selectedCategory !== 'All') && (
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-            {filteredArticles.map((article) => (
+        {/* Fix it funnel strip (only on Fix it tab, no search) */}
+        {!searchQuery.trim() && activeTab === 'fix-it' ? (
+          <div className="mb-8 rounded-2xl border-2 border-dashed border-purple-300 bg-purple-50/60 p-6 md:p-8">
+            <h2 className="text-2xl font-semibold text-purple-950 mb-2">See if the debugger fits your issue</h2>
+            <p className="text-muted-foreground text-sm md:text-base max-w-3xl mb-6">
+              If you can name what went wrong (spread, dry, bitter cup, dense crumb…), you can run Fix My Recipe in under
+              a minute. Read the guides below for the full workflow, or jump straight in.
+            </p>
+            <div className="flex flex-wrap gap-3">
               <Link
-                key={article.title}
-                to={article.url}
-                onClick={() => handleArticleClick(article.title, 'articles_filtered_grid')}
-                className="bg-white border-2 border-transparent rounded-2xl p-8 hover:shadow-2xl hover:border-current transition-all group cursor-pointer hover:scale-105 block"
+                to="/fix-recipe"
+                onClick={handleFixRecipeOpen}
+                className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold px-6 py-3 text-sm shadow-md hover:opacity-95"
               >
-                <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
-                  <span className={`px-4 py-1.5 bg-gradient-to-r ${article.color} text-white rounded-full shadow-md`}>
+                Try Fix My Recipe now →
+              </Link>
+              <Link
+                to="/baking-science/how-to-use-fix-my-recipe"
+                onClick={() => handleArticleClick('How to Use Fix My Recipe', 'articles_fix_it_read_guide')}
+                className="inline-flex items-center justify-center rounded-xl border-2 border-purple-400 bg-white text-purple-900 font-semibold px-6 py-3 text-sm hover:bg-purple-50"
+              >
+                Read how it works first
+              </Link>
+            </div>
+          </div>
+        ) : null}
+
+        {/* Tab title (no search) */}
+        {!searchQuery.trim() ? (
+          <div className="mb-6 flex flex-wrap items-baseline gap-2">
+            <h2 className="text-2xl font-semibold text-foreground">
+              {activeTab === 'fix-it'
+                ? 'Fix it — guides & debugging'
+                : activeTab === 'all'
+                  ? 'All articles'
+                  : ARTICLE_TABS.find((t) => t.id === activeTab)?.label}
+            </h2>
+            <span className="text-muted-foreground">
+              ({visibleArticles.length} {visibleArticles.length === 1 ? 'article' : 'articles'})
+            </span>
+          </div>
+        ) : (
+          <div className="mb-6 text-muted-foreground">
+            {visibleArticles.length} {visibleArticles.length === 1 ? 'result' : 'results'} for &quot;{searchQuery.trim()}&quot;
+          </div>
+        )}
+
+        {/* Article grid */}
+        {visibleArticles.length > 0 ? (
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            {visibleArticles.map((article) => (
+              <Link
+                key={article.url}
+                to={article.url}
+                onClick={() =>
+                  handleArticleClick(
+                    article.title,
+                    searchQuery.trim() ? 'articles_search_grid' : 'articles_tab_grid'
+                  )
+                }
+                className="bg-white border-2 border-transparent rounded-2xl p-6 md:p-8 hover:shadow-2xl hover:border-purple-200 transition-all group cursor-pointer hover:scale-[1.02] flex flex-col h-full min-h-[200px]"
+              >
+                <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground mb-3">
+                  <span className={`px-3 py-1 bg-gradient-to-r ${article.color} text-white rounded-full font-medium`}>
                     {article.category}
                   </span>
-                  <span>•</span>
                   <span>{article.readTime}</span>
+                  {FIX_IT_URLS.has(article.url) ? (
+                    <span className="px-2 py-0.5 rounded-full bg-purple-100 text-purple-800 font-medium">Fix it</span>
+                  ) : null}
                 </div>
-
-                <h3 className={`text-2xl mb-3 bg-gradient-to-r ${article.color} bg-clip-text text-transparent`}>
+                <h3 className={`text-xl md:text-2xl mb-3 bg-gradient-to-r ${article.color} bg-clip-text text-transparent`}>
                   {article.title}
                 </h3>
-                
-                <p className="text-muted-foreground leading-relaxed">
-                  {article.description}
-                </p>
+                <p className="text-muted-foreground leading-relaxed text-sm flex-1">{article.description}</p>
               </Link>
             ))}
           </div>
-        )}
-
-        {/* Articles by Category (default view) */}
-        {!searchQuery && selectedCategory === 'All' && (
-          <div className="space-y-16">
-            {articlesByCategory.map(({ category, articles: categoryArticles }) => (
-              <section key={category}>
-                <h2 className="text-3xl mb-8 flex items-center gap-3">
-                  <span className="text-4xl">
-                    {category === 'Cookie Science' && '🍪'}
-                    {category === 'Bread Science' && '🍞'}
-                    {category === 'Cake Science' && '🎂'}
-                    {category === 'Pie Science' && '🥧'}
-                    {category === 'Ice Cream Science' && '🍦'}
-                    {category === 'Coffee Science' && '☕'}
-                    {category === 'Baking Science' && '🔬'}
-                  </span>
-                  {category}
-                  <span className="text-lg text-muted-foreground font-normal">
-                    ({categoryArticles.length} articles)
-                  </span>
-                </h2>
-                
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {categoryArticles.map((article) => (
-                    <Link
-                      key={article.title}
-                      to={article.url}
-                      onClick={() => handleArticleClick(article.title, 'articles_category_grid')}
-                      className="bg-white border-2 border-transparent rounded-2xl p-8 hover:shadow-2xl hover:border-current transition-all group cursor-pointer hover:scale-105 block"
-                    >
-                      <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
-                        <span className={`px-4 py-1.5 bg-gradient-to-r ${article.color} text-white rounded-full shadow-md text-xs`}>
-                          {article.readTime}
-                        </span>
-                      </div>
-
-                      <h3 className={`text-2xl mb-3 bg-gradient-to-r ${article.color} bg-clip-text text-transparent`}>
-                        {article.title}
-                      </h3>
-                      
-                      <p className="text-muted-foreground leading-relaxed text-sm">
-                        {article.description}
-                      </p>
-                    </Link>
-                  ))}
-                </div>
-              </section>
-            ))}
-          </div>
-        )}
+        ) : null}
 
         {/* Empty State */}
-        {filteredArticles.length === 0 && (
+        {visibleArticles.length === 0 ? (
           <div className="text-center py-16">
             <div className="text-6xl mb-4">🔍</div>
             <h3 className="text-2xl mb-2">No articles found</h3>
-            <p className="text-muted-foreground">Try adjusting your search or filter</p>
+            <p className="text-muted-foreground mb-4">Try another search or switch tabs.</p>
+            <button
+              type="button"
+              onClick={() => {
+                setSearchQuery('');
+                setActiveTab('all');
+              }}
+              className="text-purple-600 font-semibold hover:underline"
+            >
+              Show all articles
+            </button>
           </div>
-        )}
+        ) : null}
 
         {/* CTA Section */}
         <div className="bg-gradient-to-br from-cyan-600 to-blue-600 rounded-3xl p-10 text-white mt-16 shadow-2xl">
@@ -865,9 +961,16 @@ export default function Articles() {
             We're constantly adding new articles covering cookies, cakes, pies, ice cream, coffee, and more. Bookmark this page and check back regularly!
           </p>
           <div className="flex flex-wrap gap-4">
+            <Link
+              to="/fix-recipe"
+              onClick={() => trackCTAClick('articles_footer', 'fix_my_recipe')}
+              className="inline-block bg-white text-purple-700 px-8 py-4 rounded-xl font-bold hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-2 border-white/80"
+            >
+              Fix My Recipe →
+            </Link>
             <Link 
               to="/"
-              className="inline-block bg-white text-blue-600 px-8 py-4 rounded-xl font-bold hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+              className="inline-block bg-white/15 text-white px-8 py-4 rounded-xl font-bold hover:bg-white/25 transition-all duration-300 hover:-translate-y-1 border-2 border-white/40"
             >
               Back to Home
             </Link>

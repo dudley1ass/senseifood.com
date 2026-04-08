@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import { Cookie, Cake, Coffee, IceCream, PieChart, ArrowRight } from 'lucide-react';
 import { Hero } from '../components/Hero';
 import { ToolCard } from '../components/ToolCard';
@@ -67,6 +68,34 @@ export default function Home() {
       <Navigation />
 
       <Hero />
+
+      <section className="px-6 py-10 bg-gradient-to-r from-violet-100/90 via-purple-50 to-pink-100/80 border-b border-purple-200/50">
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+          <div>
+            <h2 className="text-2xl font-bold text-purple-950 mb-2">Something go wrong in the kitchen?</h2>
+            <p className="text-muted-foreground text-sm md:text-base max-w-xl leading-relaxed">
+              Open the rule-based <strong>Fix My Recipe</strong> debugger, or browse <strong>Fix it</strong> guides in the
+              science library—built to funnel you from symptom → next test.
+            </p>
+          </div>
+          <div className="flex flex-col sm:flex-row flex-wrap gap-3 shrink-0">
+            <Link
+              to="/fix-recipe"
+              onClick={() => trackCTAClick('home_fix_strip', 'fix_my_recipe')}
+              className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold px-6 py-3 text-sm shadow-md hover:opacity-95 transition-opacity text-center"
+            >
+              Open Fix My Recipe
+            </Link>
+            <Link
+              to="/articles?tab=fix-it"
+              onClick={() => trackCTAClick('home_fix_strip', 'fix_it_articles_tab')}
+              className="inline-flex items-center justify-center rounded-xl border-2 border-purple-400 bg-white text-purple-900 font-semibold px-6 py-3 text-sm hover:bg-purple-50 transition-colors text-center"
+            >
+              Fix it articles →
+            </Link>
+          </div>
+        </div>
+      </section>
 
       <WhatCanIMake />
 
@@ -143,18 +172,29 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h2 className="text-4xl mb-6">Solve the next recipe problem</h2>
           <p className="text-xl text-white/90 mb-8">
-            Start with CookieSensei or pick a path above — then use the science library when you want the &quot;why.&quot;
+            Fix a failed batch with <strong className="text-white">Fix My Recipe</strong>, go deep in the library, or open
+            a Sensei tool when you want sliders and numbers.
           </p>
-          <a
-            href="https://cookiesensei.senseifood.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={handleFooterCtaClick}
-            className="inline-flex items-center gap-2 bg-white text-purple-600 px-8 py-4 rounded-lg hover:shadow-2xl transition-all hover:scale-105"
-          >
-            Try CookieSensei
-            <ArrowRight className="w-5 h-5" />
-          </a>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link
+              to="/fix-recipe"
+              onClick={() => trackCTAClick('home_purple_cta', 'fix_my_recipe')}
+              className="inline-flex items-center gap-2 bg-white text-purple-600 px-8 py-4 rounded-lg hover:shadow-2xl transition-all hover:scale-105 font-bold"
+            >
+              Fix My Recipe
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+            <a
+              href="https://cookiesensei.senseifood.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={handleFooterCtaClick}
+              className="inline-flex items-center gap-2 bg-white/15 text-white border-2 border-white/50 px-8 py-4 rounded-lg hover:bg-white/25 transition-all hover:scale-105 font-bold"
+            >
+              Try CookieSensei
+              <ArrowRight className="w-5 h-5" />
+            </a>
+          </div>
         </div>
       </section>
 
