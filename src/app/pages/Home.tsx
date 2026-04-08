@@ -72,15 +72,15 @@ export default function Home() {
       <section className="px-6 py-10 bg-gradient-to-r from-violet-100/90 via-purple-50 to-pink-100/80 border-b border-purple-200/50">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           <div>
-            <h2 className="text-2xl font-bold text-purple-950 mb-2">Something go wrong in the kitchen?</h2>
+            <h2 className="text-2xl font-bold text-purple-950 mb-2">Something turned out weird?</h2>
             <p className="text-muted-foreground text-sm md:text-base max-w-xl leading-relaxed">
-              Open the rule-based <strong>Fix My Recipe</strong> debugger, or browse <strong>Fix it</strong> guides in the
-              science library—built to funnel you from symptom → next test.
+              We&apos;ll help you figure out what likely went wrong and what to change next time. Open{' '}
+              <strong>Fix My Recipe</strong>, or browse <strong>Fix it</strong> guides in the science library.
             </p>
-            <p className="text-sm text-purple-900/80 max-w-xl leading-relaxed mt-3 border-l-4 border-purple-400/70 pl-3">
-              <strong className="text-purple-950">Vintage recipe cards:</strong> not sure if that line is tablespoons or
-              teaspoons? Put it in Fix My Recipe and flip the unit—the totals update on the spot so you can spot an error
-              before you bake.
+            <p className="text-sm text-purple-900/85 max-w-xl leading-relaxed mt-3 border-l-4 border-purple-400/70 pl-3">
+              <strong className="text-purple-950">Mystery measurements:</strong> got an old recipe and not sure what that
+              line means? Type it in and switch between tablespoons and teaspoons—we flag amounts that look off before they
+              ruin the batch.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 shrink-0">

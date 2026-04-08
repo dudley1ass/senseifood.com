@@ -251,133 +251,135 @@ export default function FixRecipe() {
     setSearchParams({ category, problem: problemId }, { replace: true });
   };
 
+  const field =
+    'w-full rounded-lg border border-stone-200 bg-white px-3 py-2 text-sm text-stone-900 shadow-sm placeholder:text-stone-400 focus:border-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-400/25';
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-violet-50 via-purple-50 to-fuchsia-50">
+    <div className="min-h-screen bg-stone-100 text-stone-900">
       <Navigation />
 
-      <main className="max-w-4xl mx-auto px-6 py-12 pb-28">
+      <main className="max-w-5xl mx-auto px-4 py-8 pb-20">
         <Link
           to="/articles"
-          className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"
+          className="inline-flex items-center gap-2 text-sm text-stone-500 hover:text-stone-800 mb-5 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
           Back to Articles
         </Link>
 
-        <header className="mb-10">
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-4 py-2 rounded-full text-sm mb-4">
-            <FlaskConical className="w-4 h-4" />
+        <header className="mb-5 max-w-2xl">
+          <div className="inline-flex items-center gap-1.5 rounded-full border border-stone-200 bg-white px-2.5 py-1 text-xs font-medium text-stone-600 mb-2.5">
+            <FlaskConical className="w-3.5 h-3.5 text-stone-500" aria-hidden />
             Fix My Recipe
           </div>
-          <h1 className="text-4xl md:text-5xl font-semibold bg-gradient-to-r from-purple-700 to-pink-600 bg-clip-text text-transparent mb-3">
-            Debugger for cooking
-          </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl">
-            Say what you were making, paste or describe your recipe, then line up ingredients in metric or US measures.
-            We run a deterministic rule engine (no AI) for ratio-aware hints—then use the sliders to preview small shifts.
+          <h1 className="text-2xl md:text-3xl font-semibold tracking-tight text-stone-900 mb-2">Recipe debugger</h1>
+          <p className="text-sm text-stone-600 leading-snug mb-1.5">
+            Something turned out weird? We&apos;ll help you figure out what likely went wrong and what to change next time.
           </p>
-          <div className="mt-6 max-w-2xl rounded-xl border border-amber-200/90 bg-amber-50/90 px-4 py-3 text-sm text-amber-950/90 leading-relaxed">
-            <strong className="font-semibold">Got an old recipe and not sure if that&apos;s tablespoons or teaspoons?</strong>{' '}
-            Enter the amount in the ingredient lines and switch the unit—the flour, fat, and sugar totals update
-            immediately, so you can tell which reading is plausible. Run <span className="font-medium">Diagnose</span> and
-            the ratio signals will highlight when the formula looks badly off.
-          </div>
+          <p className="text-sm text-stone-600 leading-snug">
+            Got an old recipe with a mystery measurement? Type it in and switch between tablespoons and teaspoons—we&apos;ll
+            flag amounts that look off before they ruin the batch.
+          </p>
         </header>
 
-        <div className="grid gap-8 md:grid-cols-1">
-          <section className="bg-white/90 backdrop-blur rounded-2xl border-2 border-purple-100 shadow-lg p-6 md:p-8">
-            <h2 className="text-xl font-semibold text-foreground mb-6">Inputs</h2>
-            <div className="space-y-5">
-              <div>
-                <label className="block text-sm font-medium text-foreground/80 mb-2">
-                  What were you trying to make?
-                </label>
-                <select
-                  value={category}
-                  onChange={(e) => {
-                    const c = e.target.value as RecipeCategory;
-                    setCategory(c);
-                    setProblemId(PROBLEM_OPTIONS[c][0]?.id ?? 'general');
-                  }}
-                  className="w-full rounded-xl border-2 border-purple-100 bg-white px-4 py-3 text-sm"
-                >
-                  {CATEGORIES.map((c) => (
-                    <option key={c.id} value={c.id}>
-                      {c.label} — {c.description}
-                    </option>
-                  ))}
-                </select>
+        <div className="xl:grid xl:grid-cols-2 xl:gap-5 xl:items-start space-y-4 xl:space-y-0">
+          <section className="rounded-xl border border-stone-200 bg-white p-4 md:p-5 shadow-sm xl:sticky xl:top-20">
+            <h2 className="text-xs font-semibold uppercase tracking-wide text-stone-500 mb-3">Your recipe</h2>
+            <div className="space-y-3">
+              <div className="grid gap-3 sm:grid-cols-2">
+                <div>
+                  <label className="block text-xs font-medium text-stone-600 mb-1">Making</label>
+                  <select
+                    value={category}
+                    onChange={(e) => {
+                      const c = e.target.value as RecipeCategory;
+                      setCategory(c);
+                      setProblemId(PROBLEM_OPTIONS[c][0]?.id ?? 'general');
+                    }}
+                    className={field}
+                  >
+                    {CATEGORIES.map((c) => (
+                      <option key={c.id} value={c.id}>
+                        {c.label}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-xs font-medium text-stone-600 mb-1">Problem</label>
+                  <select
+                    value={problemId}
+                    onChange={(e) => setProblemId(e.target.value)}
+                    className={field}
+                  >
+                    {PROBLEM_OPTIONS[category].map((o) => (
+                      <option key={o.id} value={o.id}>
+                        {o.label}
+                      </option>
+                    ))}
+                  </select>
+                </div>
               </div>
               <div>
-                <label className="block text-sm font-medium text-foreground/80 mb-2">
-                  Your recipe (paste or describe — optional)
-                </label>
+                <label className="block text-xs font-medium text-stone-600 mb-1">Notes (optional)</label>
                 <textarea
                   value={recipeNotes}
                   onChange={(e) => setRecipeNotes(e.target.value)}
-                  placeholder="e.g. 2 cups flour, 1 stick butter, 3/4 cup sugar, baked 350°F for 12 min…"
-                  rows={4}
-                  className="w-full rounded-xl border-2 border-purple-100 bg-white px-4 py-3 text-sm resize-y min-h-[100px] placeholder:text-muted-foreground/60"
+                  placeholder="Paste or describe…"
+                  rows={2}
+                  className={`${field} resize-y min-h-[4.5rem]`}
                 />
               </div>
               <div>
-                <span className="block text-sm font-medium text-foreground/80 mb-2">Measurements</span>
-                <div className="flex rounded-xl border-2 border-purple-100 p-1 gap-1 bg-purple-50/40">
+                <span className="block text-xs font-medium text-stone-600 mb-1">Units</span>
+                <div className="flex rounded-lg border border-stone-200 p-0.5 gap-0.5 bg-stone-50">
                   <button
                     type="button"
                     onClick={() => setSystem('metric')}
-                    className={`flex-1 rounded-lg py-2.5 text-sm font-medium transition-colors ${
-                      measurementSystem === 'metric'
-                        ? 'bg-purple-600 text-white shadow-sm'
-                        : 'text-foreground/70 hover:text-foreground'
+                    className={`flex-1 rounded-md py-1.5 text-xs font-medium transition-colors ${
+                      measurementSystem === 'metric' ? 'bg-stone-900 text-white' : 'text-stone-600 hover:text-stone-900'
                     }`}
                   >
-                    Metric (g, kg, ml)
+                    Metric
                   </button>
                   <button
                     type="button"
                     onClick={() => setSystem('us')}
-                    className={`flex-1 rounded-lg py-2.5 text-sm font-medium transition-colors ${
-                      measurementSystem === 'us'
-                        ? 'bg-purple-600 text-white shadow-sm'
-                        : 'text-foreground/70 hover:text-foreground'
+                    className={`flex-1 rounded-md py-1.5 text-xs font-medium transition-colors ${
+                      measurementSystem === 'us' ? 'bg-stone-900 text-white' : 'text-stone-600 hover:text-stone-900'
                     }`}
                   >
-                    US (cups, tbsp, tsp, oz)
+                    US (cup / tbsp / tsp)
                   </button>
                 </div>
               </div>
               <div>
-                <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
-                  <label className="text-sm font-medium text-foreground/80">Ingredients</label>
+                <div className="flex items-center justify-between gap-2 mb-1.5">
+                  <label className="text-xs font-medium text-stone-600">Ingredients</label>
                   <button
                     type="button"
                     onClick={() => setRows((r) => [...r, createRecipeRow(measurementSystem)])}
-                    className="inline-flex items-center gap-1.5 text-sm font-medium text-purple-700 hover:text-purple-900"
+                    className="inline-flex items-center gap-1 text-xs font-medium text-stone-700 hover:text-stone-950"
                   >
-                    <Plus className="w-4 h-4" />
-                    Add line
+                    <Plus className="w-3.5 h-3.5" />
+                    Add
                   </button>
                 </div>
-                <p className="text-xs text-muted-foreground mb-3">
-                  Options cover Cookie, cake, pie, ice cream, coffee, and bread-style ingredients. Amounts convert to grams
-                  for flour, fat, and sugar ratio signals.
-                </p>
-                <ul className="space-y-3">
+                <ul className="space-y-2">
                   {rows.map((row) => {
                     const isEgg = row.ingredientId === 'egg-whole';
                     const unitChoices = measurementSystem === 'metric' ? METRIC_UNITS : US_UNITS;
                     return (
                       <li
                         key={row.rowId}
-                        className="flex flex-col sm:flex-row sm:flex-wrap gap-2 sm:items-end rounded-xl border border-purple-100 bg-purple-50/30 p-3"
+                        className="flex flex-col sm:flex-row gap-2 sm:items-center rounded-lg border border-stone-100 bg-stone-50/80 p-2"
                       >
-                        <div className="flex-1 min-w-[200px]">
+                        <div className="flex-1 min-w-0 sm:min-w-[140px]">
                           <label className="sr-only">Ingredient</label>
                           <select
                             value={row.ingredientId}
                             onChange={(e) => updateRow(row.rowId, { ingredientId: e.target.value })}
-                            className="w-full rounded-lg border-2 border-purple-100 bg-white px-3 py-2 text-sm"
+                            className={field}
                           >
                             {SENSEI_GROUPS.map(({ sensei, items }) => (
                               <optgroup key={sensei} label={sensei}>
@@ -390,30 +392,24 @@ export default function FixRecipe() {
                             ))}
                           </select>
                         </div>
-                        <div className="w-full sm:w-28">
-                          <label className="sr-only">Amount</label>
+                        <div className="flex gap-2 flex-1 sm:flex-initial sm:w-auto">
                           <input
                             type="text"
                             inputMode="decimal"
-                            placeholder="Amount"
+                            placeholder="Amt"
                             value={row.amount}
                             onChange={(e) => updateRow(row.rowId, { amount: e.target.value })}
-                            className="w-full rounded-lg border-2 border-purple-100 bg-white px-3 py-2 text-sm tabular-nums"
+                            className={`${field} w-20 sm:w-24 shrink-0 tabular-nums`}
                           />
-                        </div>
-                        <div className="w-full sm:w-36">
-                          <label className="sr-only">Unit</label>
                           {isEgg ? (
-                            <div className="rounded-lg border-2 border-purple-100 bg-white px-3 py-2 text-sm text-foreground/80">
-                              whole egg(s)
-                            </div>
+                            <div className={`${field} flex-1 sm:w-28 text-stone-600`}>eggs</div>
                           ) : (
                             <select
                               value={row.unit === 'count' ? defaultUnitForSystem(measurementSystem) : row.unit}
                               onChange={(e) =>
                                 updateRow(row.rowId, { unit: e.target.value as MetricUnit | UsUnit })
                               }
-                              className="w-full rounded-lg border-2 border-purple-100 bg-white px-3 py-2 text-sm"
+                              className={`${field} flex-1 sm:w-28`}
                             >
                               {unitChoices.map((u) => (
                                 <option key={u.value} value={u.value}>
@@ -430,8 +426,8 @@ export default function FixRecipe() {
                             if (rows.length <= 1) return;
                             setRows((r) => r.filter((x) => x.rowId !== row.rowId));
                           }}
-                          className="inline-flex items-center justify-center rounded-lg border-2 border-transparent p-2 text-muted-foreground hover:text-red-600 hover:bg-red-50 disabled:opacity-40 disabled:pointer-events-none shrink-0"
-                          aria-label="Remove ingredient row"
+                          className="inline-flex items-center justify-center rounded-lg p-2 text-stone-400 hover:bg-red-50 hover:text-red-700 disabled:opacity-30 disabled:pointer-events-none shrink-0 self-end sm:self-center"
+                          aria-label="Remove row"
                         >
                           <Trash2 className="w-4 h-4" />
                         </button>
@@ -441,170 +437,147 @@ export default function FixRecipe() {
                 </ul>
               </div>
               {aggregated.flourG > 0 || aggregated.butterG > 0 || aggregated.sugarG > 0 ? (
-                <div className="rounded-xl border border-purple-200 bg-gradient-to-br from-purple-50 to-pink-50/80 px-4 py-3">
-                  <p className="text-xs font-semibold uppercase tracking-wide text-purple-900/80 mb-2">
-                    Totals used for ratio signals
-                  </p>
-                  <dl className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-sm">
-                    <div className="flex justify-between sm:block gap-2">
-                      <dt className="text-muted-foreground">Flour (equiv.)</dt>
-                      <dd className="font-medium tabular-nums">{aggregated.flourG} g</dd>
-                    </div>
-                    <div className="flex justify-between sm:block gap-2">
-                      <dt className="text-muted-foreground">Fat (equiv.)</dt>
-                      <dd className="font-medium tabular-nums">{aggregated.butterG} g</dd>
-                    </div>
-                    <div className="flex justify-between sm:block gap-2">
-                      <dt className="text-muted-foreground">Sugar (equiv.)</dt>
-                      <dd className="font-medium tabular-nums">{aggregated.sugarG} g</dd>
-                    </div>
-                  </dl>
+                <div className="flex flex-wrap gap-x-4 gap-y-1 rounded-lg border border-stone-200 bg-stone-50 px-3 py-2 text-xs text-stone-700">
+                  <span className="font-medium text-stone-500">Ratio totals</span>
+                  <span>
+                    Flour <span className="tabular-nums font-medium text-stone-900">{aggregated.flourG}g</span>
+                  </span>
+                  <span>
+                    Fat <span className="tabular-nums font-medium text-stone-900">{aggregated.butterG}g</span>
+                  </span>
+                  <span>
+                    Sugar <span className="tabular-nums font-medium text-stone-900">{aggregated.sugarG}g</span>
+                  </span>
                 </div>
               ) : null}
-              <div>
-                <label className="block text-sm font-medium text-foreground/80 mb-2">What went wrong?</label>
-                <select
-                  value={problemId}
-                  onChange={(e) => setProblemId(e.target.value)}
-                  className="w-full rounded-xl border-2 border-purple-100 bg-white px-4 py-3 text-sm"
-                >
-                  {PROBLEM_OPTIONS[category].map((o) => (
-                    <option key={o.id} value={o.id}>
-                      {o.label}
-                    </option>
-                  ))}
-                </select>
-              </div>
-              <p className="text-xs text-muted-foreground">
-                Ratio totals come from the ingredient lines above (not from the free-text recipe). Coffee- and bread-heavy
-                flows can still use problem-only rules if you skip those lines.
+              <p className="text-[11px] text-stone-500 leading-snug">
+                Totals come from the table, not the notes. Rule-based engine (no AI).
               </p>
               <button
                 type="button"
                 onClick={runDiagnose}
-                className="w-full sm:w-auto rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-3 font-medium shadow-md hover:opacity-95 transition-opacity"
+                className="w-full rounded-lg bg-stone-900 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-stone-800 transition-colors"
               >
                 Diagnose
               </button>
             </div>
           </section>
 
-          <section className="bg-white/90 backdrop-blur rounded-2xl border-2 border-purple-100 shadow-lg p-6 md:p-8">
-            <h2 className="text-xl font-semibold text-foreground mb-2">Signals</h2>
-            <p className="text-sm text-muted-foreground mb-4">
-              Derived from flour / fat / sugar grams implied by your ingredient lines. If those totals are empty, we only
-              match on the problem you selected.
-            </p>
-            {result.signals.length ? (
-              <ul className="flex flex-wrap gap-2">
-                {result.signals.map((s) => (
-                  <li key={s} className="text-xs font-medium px-3 py-1 rounded-full bg-purple-50 text-purple-800 border border-purple-100">
-                    {s.replace(/_/g, ' ')}
-                  </li>
-                ))}
-              </ul>
-            ) : (
-              <p className="text-sm text-muted-foreground">
-                No ratio signals yet—add flour, fat, or sugar lines (or continue with problem-only rules).
+          <div className="space-y-4">
+            <section className="rounded-xl border border-stone-200 bg-white p-4 md:p-5 shadow-sm">
+              <h2 className="text-xs font-semibold uppercase tracking-wide text-stone-500 mb-2">Signals</h2>
+              <p className="text-xs text-stone-500 mb-2 leading-snug">
+                From flour / fat / sugar in your lines—or problem only if empty.
               </p>
-            )}
-          </section>
-
-          <section className="bg-white/90 backdrop-blur rounded-2xl border-2 border-purple-100 shadow-lg p-6 md:p-8">
-            <div className="flex items-center gap-2 mb-4">
-              <SlidersHorizontal className="w-5 h-5 text-purple-700" />
-              <h2 className="text-xl font-semibold text-foreground">What-if sliders</h2>
-            </div>
-            <p className="text-sm text-muted-foreground mb-6">
-              Nudge flour, fat, and sugar in ±15% steps to see plain-language previews. This does not call an API—it
-              extrapolates from baking mechanics tied to your top diagnosis.
-            </p>
-            <div className="space-y-6">
-              {(
-                [
-                  ['Flour vs baseline', flourAdj, setFlourAdj],
-                  ['Fat vs baseline', fatAdj, setFatAdj],
-                  ['Sugar vs baseline', sugarAdj, setSugarAdj],
-                ] as const
-              ).map(([label, val, setVal]) => (
-                <div key={label}>
-                  <div className="flex justify-between text-sm mb-2">
-                    <span className="font-medium text-foreground/90">{label}</span>
-                    <span className="text-purple-700 tabular-nums">{val > 0 ? `+${val}` : val}%</span>
-                  </div>
-                  <input
-                    type="range"
-                    min={-15}
-                    max={15}
-                    step={1}
-                    value={val}
-                    onChange={(e) => setVal(Number(e.target.value))}
-                    className="w-full accent-purple-600"
-                  />
-                </div>
-              ))}
-            </div>
-            <div className="mt-6 rounded-xl bg-gradient-to-br from-purple-50 to-pink-50 border border-purple-100 p-4 text-sm text-foreground/90 leading-relaxed">
-              {preview || 'Run Diagnose to see a predicted effect line, then move sliders for a preview.'}
-            </div>
-          </section>
-
-          <section className="bg-white/90 backdrop-blur rounded-2xl border-2 border-purple-100 shadow-lg p-6 md:p-8">
-            <h2 className="text-xl font-semibold text-foreground mb-6">Findings</h2>
-            <div className="space-y-6">
-              {result.findings.map((f) => (
-                <article key={f.id} className="rounded-xl border border-purple-100 bg-white p-5 shadow-sm">
-                  <div className="flex flex-wrap items-center gap-2 mb-2">
-                    <h3 className="text-lg font-semibold text-foreground">{f.title}</h3>
-                    <span className="text-xs uppercase tracking-wide px-2 py-0.5 rounded-full bg-purple-50 text-purple-800 border border-purple-100">
-                      {f.confidence} confidence
-                    </span>
-                  </div>
-                  <p className="text-sm text-muted-foreground mb-4 leading-relaxed">{f.explanation}</p>
-                  <p className="text-sm font-medium text-foreground mb-2">Suggested changes</p>
-                  <ul className="space-y-2 mb-4">
-                    {f.suggestedChanges.map((c, i) => (
-                      <li key={i} className="text-sm text-foreground/90 flex gap-2">
-                        <span className="text-purple-600 font-semibold shrink-0">
-                          {c.deltaPct === 0 ? '→' : `${c.direction === 'increase' ? '+' : '−'}${Math.abs(c.deltaPct)}%`}
-                        </span>
-                        <span>
-                          <span className="font-medium">{c.ingredient}:</span> {c.rationale}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                  <p className="text-sm text-foreground/90 leading-relaxed border-t border-purple-50 pt-3">
-                    <span className="font-semibold text-purple-800">Predicted effect:</span> {f.predictedEffect}
-                  </p>
-                  {f.relatedArticlePath ? (
-                    <Link
-                      to={f.relatedArticlePath}
-                      className="inline-flex mt-3 text-sm font-medium text-pink-600 hover:underline"
-                      onClick={() => trackCTAClick('fix_recipe_finding', f.relatedArticlePath ?? '')}
+              {result.signals.length ? (
+                <ul className="flex flex-wrap gap-1.5">
+                  {result.signals.map((s) => (
+                    <li
+                      key={s}
+                      className="text-xs font-medium px-2 py-0.5 rounded-md bg-stone-100 text-stone-800 border border-stone-200"
                     >
-                      Read the science article →
-                    </Link>
-                  ) : null}
-                </article>
-              ))}
-            </div>
-          </section>
-
-          {category === 'cookie' ? (
-            <section className="rounded-2xl border-2 border-amber-200 bg-gradient-to-r from-amber-50 to-orange-50 p-6 text-center">
-              <p className="text-sm text-foreground/80 mb-3">Want quantitative spread and texture prediction?</p>
-              <a
-                href="https://cookiesensei.senseifood.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-xl bg-white text-amber-700 font-semibold px-6 py-3 border-2 border-amber-200 shadow-sm hover:shadow-md transition-shadow"
-                onClick={() => trackCTAClick('fix_recipe', 'open_cookie_sensei')}
-              >
-                Open CookieSensei →
-              </a>
+                      {s.replace(/_/g, ' ')}
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="text-xs text-stone-500">No ratio flags yet—add lines or run with problem only.</p>
+              )}
             </section>
-          ) : null}
+
+            <section className="rounded-xl border border-stone-200 bg-white p-4 md:p-5 shadow-sm">
+              <div className="flex items-center gap-2 mb-2">
+                <SlidersHorizontal className="w-4 h-4 text-stone-500" aria-hidden />
+                <h2 className="text-xs font-semibold uppercase tracking-wide text-stone-500">What-if (±15%)</h2>
+              </div>
+              <p className="text-xs text-stone-500 mb-3 leading-snug">Preview how small ratio nudges tend to read—local only.</p>
+              <div className="space-y-3">
+                {(
+                  [
+                    ['Flour', flourAdj, setFlourAdj],
+                    ['Fat', fatAdj, setFatAdj],
+                    ['Sugar', sugarAdj, setSugarAdj],
+                  ] as const
+                ).map(([label, val, setVal]) => (
+                  <div key={label}>
+                    <div className="flex justify-between text-xs mb-1">
+                      <span className="font-medium text-stone-700">{label}</span>
+                      <span className="tabular-nums text-stone-600">{val > 0 ? `+${val}` : val}%</span>
+                    </div>
+                    <input
+                      type="range"
+                      min={-15}
+                      max={15}
+                      step={1}
+                      value={val}
+                      onChange={(e) => setVal(Number(e.target.value))}
+                      className="w-full accent-stone-800"
+                    />
+                  </div>
+                ))}
+              </div>
+              <div className="mt-3 rounded-lg border border-stone-100 bg-stone-50 px-3 py-2 text-xs text-stone-700 leading-snug">
+                {preview || 'Run Diagnose, then move sliders.'}
+              </div>
+            </section>
+
+            <section className="rounded-xl border border-stone-200 bg-white p-4 md:p-5 shadow-sm">
+              <h2 className="text-xs font-semibold uppercase tracking-wide text-stone-500 mb-3">Findings</h2>
+              <div className="space-y-3">
+                {result.findings.map((f) => (
+                  <article key={f.id} className="rounded-lg border border-stone-100 bg-stone-50/50 p-3">
+                    <div className="flex flex-wrap items-baseline gap-2 mb-1.5">
+                      <h3 className="text-sm font-semibold text-stone-900">{f.title}</h3>
+                      <span className="text-[10px] uppercase tracking-wide px-1.5 py-0.5 rounded bg-white border border-stone-200 text-stone-600">
+                        {f.confidence}
+                      </span>
+                    </div>
+                    <p className="text-xs text-stone-600 mb-2 leading-relaxed">{f.explanation}</p>
+                    <p className="text-[11px] font-medium text-stone-700 mb-1">Next try</p>
+                    <ul className="space-y-1 mb-2">
+                      {f.suggestedChanges.map((c, i) => (
+                        <li key={i} className="text-xs text-stone-800 flex gap-1.5">
+                          <span className="text-stone-500 font-semibold shrink-0">
+                            {c.deltaPct === 0 ? '→' : `${c.direction === 'increase' ? '+' : '−'}${Math.abs(c.deltaPct)}%`}
+                          </span>
+                          <span>
+                            <span className="font-medium">{c.ingredient}:</span> {c.rationale}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="text-xs text-stone-700 border-t border-stone-200/80 pt-2 leading-snug">
+                      <span className="font-semibold">Effect:</span> {f.predictedEffect}
+                    </p>
+                    {f.relatedArticlePath ? (
+                      <Link
+                        to={f.relatedArticlePath}
+                        className="inline-flex mt-2 text-xs font-medium text-teal-800 hover:underline"
+                        onClick={() => trackCTAClick('fix_recipe_finding', f.relatedArticlePath ?? '')}
+                      >
+                        Article →
+                      </Link>
+                    ) : null}
+                  </article>
+                ))}
+              </div>
+            </section>
+
+            {category === 'cookie' ? (
+              <section className="rounded-xl border border-amber-200/80 bg-amber-50/50 p-4 text-center">
+                <p className="text-xs text-stone-700 mb-2">Want spread and texture numbers?</p>
+                <a
+                  href="https://cookiesensei.senseifood.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded-lg bg-white text-amber-900 text-xs font-semibold px-4 py-2 border border-amber-200 hover:bg-amber-50 transition-colors"
+                  onClick={() => trackCTAClick('fix_recipe', 'open_cookie_sensei')}
+                >
+                  CookieSensei →
+                </a>
+              </section>
+            ) : null}
+          </div>
         </div>
       </main>
 

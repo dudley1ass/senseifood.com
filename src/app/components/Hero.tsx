@@ -76,12 +76,12 @@ export function Hero() {
             />
             Fix my recipe
           </span>
-          <span className="text-center text-xs leading-relaxed text-muted-foreground md:max-w-[28ch]">
-            Say what could have gone wrong — we&apos;ll point to likely causes and levers to try.
+          <span className="text-center text-xs leading-relaxed text-muted-foreground md:max-w-[32ch]">
+            Something turned out weird? We&apos;ll help you figure out what likely went wrong and what to change next time.
           </span>
-          <span className="text-center text-[11px] leading-snug text-purple-800/75 md:max-w-[34ch]">
-            Old recipe and not sure that&apos;s tablespoons or teaspoons? Enter it and switch units—the debugger shows when
-            totals look wrong.
+          <span className="text-center text-[11px] leading-snug text-purple-800/75 md:max-w-[36ch]">
+            Got an old recipe with a mystery measurement? Type it in and switch between tablespoons and teaspoons—we&apos;ll
+            flag amounts that look off before they ruin the batch.
           </span>
           <span className="mt-0.5 text-[11px] font-medium text-purple-600 opacity-90 group-hover:opacity-100">
             Open debugger →
