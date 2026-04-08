@@ -20,5 +20,5 @@ export function extractArticlePathsFromRoutesFile(routesFile: string): string[] 
 export function getAllPrerenderPaths(projectRoot: string): string[] {
   const routesFile = path.join(projectRoot, 'src', 'app', 'appRouteChildren.tsx');
   const articles = extractArticlePathsFromRoutesFile(routesFile);
-  return ['/', '/articles', ...articles.map((p) => `/${p}`)];
+  return ['/', '/articles', '/fix-recipe', ...articles.map((p) => `/${p}`)];
 }

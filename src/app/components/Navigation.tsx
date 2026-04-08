@@ -28,6 +28,9 @@ export function Navigation() {
             <Link to="/articles" className="text-foreground/80 hover:text-purple-600 transition-colors">
               Articles
             </Link>
+            <Link to="/fix-recipe" className="text-foreground/80 hover:text-purple-600 transition-colors">
+              Fix My Recipe
+            </Link>
             <a href="/#how-it-works" className="text-foreground/80 hover:text-purple-600 transition-colors">
               How It Works
             </a>
@@ -62,6 +65,13 @@ export function Navigation() {
               onClick={() => setIsOpen(false)}
             >
               Articles
+            </Link>
+            <Link
+              to="/fix-recipe"
+              className="text-foreground/80 hover:text-foreground transition-colors py-2"
+              onClick={() => setIsOpen(false)}
+            >
+              Fix My Recipe
             </Link>
             <a 
               href="/#how-it-works" 

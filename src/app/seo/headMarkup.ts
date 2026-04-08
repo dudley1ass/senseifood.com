@@ -15,7 +15,9 @@ export function getStaticHeadMarkupForPath(pathname: string): string {
   const seo = getRouteSeo(pathname);
   const normalized = pathname.replace(/\/$/, '') || '/';
   const ogType =
-    normalized === '/' || normalized === '/articles' ? 'website' : 'article';
+    normalized === '/' || normalized === '/articles' || normalized === '/fix-recipe'
+      ? 'website'
+      : 'article';
 
   const lines = [
     `<title>${escAttr(seo.title)}</title>`,

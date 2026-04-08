@@ -88,6 +88,7 @@ import WhyButterTemperatureMatters from "./pages/WhyButterTemperatureMatters";
 import WhyEggsMatterInBaking from "./pages/WhyEggsMatterInBaking";
 import WhySaltMakesFoodTasteBetter from "./pages/WhySaltMakesFoodTasteBetter";
 import WhyRecipesFail from "./pages/WhyRecipesFail";
+import FixRecipe from "./pages/FixRecipe";
 
 const cookieScienceRoutes = [
   { path: "cookie-science/why-cookies-spread", Component: WhyCookiesSpread },
@@ -188,6 +189,7 @@ const bakingScienceRoutes = [
 export const appRouteChildren = [
   { index: true, Component: Home },
   { path: "articles", Component: Articles },
+  { path: "fix-recipe", Component: FixRecipe },
   ...cookieScienceRoutes,
   ...breadScienceRoutes,
   ...cakeScienceRoutes,

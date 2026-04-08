@@ -257,6 +257,18 @@ function computeRouteSeo(path: string): RouteSeo {
     };
   }
 
+  if (path === '/fix-recipe') {
+    const title = ensureTitleBand(`Fix My Recipe — debug baking & coffee | ${SITE_NAME}`);
+    const description = ensureDescriptionBand(
+      'Rule-based recipe debugger: pick what went wrong, add optional gram weights, get clear causes and variable suggestions. Transparent science—no AI required.'
+    );
+    return {
+      title,
+      description,
+      canonical: `${SITE_URL}/fix-recipe`,
+    };
+  }
+
   const segments = path.split('/').filter(Boolean);
   if (segments.length === 2) {
     const [segment, slug] = segments;
