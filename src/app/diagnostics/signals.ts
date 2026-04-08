@@ -1,4 +1,5 @@
 import type { DiagnosticInput } from './types';
+import { shouldFlagLowEggVsFatBinding } from './structureBinding';
 
 /**
  * Cheap ratio flags from typed grams. Only meaningful when flour is present.
@@ -19,6 +20,10 @@ export function deriveSignals(input: DiagnosticInput): string[] {
   if (fatRatio >= 0.58) signals.push('high_fat_vs_flour');
   if (sugarRatio > 0 && sugarRatio < 0.38) signals.push('low_sugar_vs_flour');
   if (sugarRatio >= 0.62) signals.push('high_sugar_vs_flour');
+
+  if (shouldFlagLowEggVsFatBinding(input)) {
+    signals.push('low_egg_vs_fat_binding');
+  }
 
   return signals;
 }

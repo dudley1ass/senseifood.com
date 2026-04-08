@@ -1,4 +1,5 @@
-import type { RecipeCategory, RecipeCharacterization } from '../types';
+import type { DiagnosticInput, RecipeCategory, RecipeCharacterization } from '../types';
+import { bindingDeficiencyExplanation } from '../structureBinding';
 import {
   LARGE_EGG_G,
   attachMeta,
@@ -11,10 +12,26 @@ import {
 
 export type SenseiCharacterizer = (ctx: RatioContext) => RecipeCharacterization | null;
 
+function mergeBindingIntoCharacterization(
+  base: RecipeCharacterization,
+  input: DiagnosticInput
+): RecipeCharacterization {
+  const note = bindingDeficiencyExplanation(input);
+  if (!note) return base;
+  return {
+    ...base,
+    headline: 'Weak binder risk: egg low vs butter',
+    blurb: `${note} ${base.blurb}`,
+  };
+}
+
 function cookieSensei(ctx: RatioContext): RecipeCharacterization | null {
   if (ctx.flourG <= 0) return null;
   const base = flourBasedStructureRead(ctx, 'cookie');
-  return attachMeta(base, ctx, 'cookie', COOKIE_REFERENCE_PROFILES);
+  return mergeBindingIntoCharacterization(
+    attachMeta(base, ctx, 'cookie', COOKIE_REFERENCE_PROFILES),
+    ctx.input
+  );
 }
 
 function cakeSensei(ctx: RatioContext): RecipeCharacterization | null {
@@ -172,7 +189,7 @@ function generalBakingSensei(ctx: RatioContext): RecipeCharacterization | null {
   if (ctx.flourG <= 0) return null;
   const base = flourBasedStructureRead(ctx, 'baking');
   const profiles = ctx.structuralKind === 'cake' ? CAKE_REFERENCE_PROFILES : COOKIE_REFERENCE_PROFILES;
-  return attachMeta(base, ctx, 'baking', profiles);
+  return mergeBindingIntoCharacterization(attachMeta(base, ctx, 'baking', profiles), ctx.input);
 }
 
 /**

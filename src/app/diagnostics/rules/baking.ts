@@ -2,6 +2,32 @@ import type { DiagnosticRule } from '../types';
 
 export const bakingRules: DiagnosticRule[] = [
   {
+    id: 'baking-low-egg-vs-fat-binding',
+    problems: ['recipes-fail', 'butter-temp', 'general'],
+    whenAllSignals: ['low_egg_vs_fat_binding'],
+    title: 'Check egg vs fat for cookie-style doughs',
+    explanation:
+      'Your table looks like a sweet, butter-heavy, low-liquid mix. Egg mass is low relative to fat—common when a recipe is scaled or an egg was dropped. That mismatch often reads as greasy, crumbly, or structurally weak before you blame oven or chill time.',
+    confidence: 'high',
+    suggestedChanges: [
+      {
+        ingredient: 'Eggs',
+        deltaPct: 0,
+        direction: 'increase',
+        rationale: 'Restore egg count toward typical drop-cookie bands (~more egg per cup of butter) on a test batch.',
+      },
+      {
+        ingredient: 'Fat',
+        deltaPct: 12,
+        direction: 'decrease',
+        rationale: 'Or reduce butter slightly so binding and emulsification catch up.',
+      },
+    ],
+    predictedEffect: 'Better cohesion and less greasy breakdown—clearer diagnosis than fat/sugar spread alone.',
+    relatedArticlePath: '/baking-science/why-recipes-fail',
+    priority: 82,
+  },
+  {
     id: 'baking-butter-temp',
     problems: ['butter-temp', 'general'],
     title: 'Butter temperature changes structure and spread',

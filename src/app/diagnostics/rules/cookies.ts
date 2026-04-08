@@ -2,6 +2,42 @@ import type { DiagnosticRule } from '../types';
 
 export const cookieRules: DiagnosticRule[] = [
   {
+    id: 'cookie-low-egg-vs-fat-binding',
+    problems: [
+      'spreads-too-much',
+      'too-dry',
+      'too-crispy',
+      'cakey',
+      'rise-then-fall',
+      'stay-thick',
+      'too-hard',
+      'too-chewy',
+      'general',
+    ],
+    whenAllSignals: ['low_egg_vs_fat_binding'],
+    title: 'Low egg vs fat — weak structure and greasy risk',
+    explanation:
+      'For enriched, low-liquid doughs, eggs are doing serious work: they bind water and fat and set structure. When butter is high versus egg mass, spread isn’t the only story—you often get fragile, greasy, or unevenly set cookies compared with classic drop profiles that carry more egg per gram of fat.',
+    confidence: 'high',
+    suggestedChanges: [
+      {
+        ingredient: 'Eggs',
+        deltaPct: 0,
+        direction: 'increase',
+        rationale: 'Add a second large egg (or one extra yolk) on a small test batch to restore binding and emulsification vs the butter load.',
+      },
+      {
+        ingredient: 'Butter',
+        deltaPct: 12,
+        direction: 'decrease',
+        rationale: 'Alternatively, trim fat ~10–15% so the existing egg can manage the phase—compare spread and mouthfeel on a few cookies.',
+      },
+    ],
+    predictedEffect: 'Stronger cohesion, less greasy pool, and more predictable set—often fixes “wrong” texture that isn’t explained by spread alone.',
+    relatedArticlePath: '/cookie-science/why-cookies-spread',
+    priority: 88,
+  },
+  {
     id: 'cookie-spread-fat-melt',
     problems: ['spreads-too-much', 'general'],
     title: 'Fat is melting before the dough structure sets',
