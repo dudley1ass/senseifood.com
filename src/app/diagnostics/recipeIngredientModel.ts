@@ -1,14 +1,29 @@
 /**
- * Ingredient options across Sensei domains + conversion to grams for ratio signals.
+ * Ingredient options + conversion to grams for ratio signals.
+ * Dropdown groups are by food type (flour, sugar, dairy…), not by Sensei product.
  * Densities are approximate (home baking variance is large).
  */
 
 export type IngredientBucket = 'flour' | 'fat' | 'sugar' | 'none';
 
+/** Optgroup labels in the Fix Recipe ingredient picker (order in catalog is preserved within each group). */
+export const INGREDIENT_GROUP_ORDER = [
+  'Flours & starches',
+  'Sugars & sweeteners',
+  'Fats & oils',
+  'Dairy & eggs',
+  'Liquids',
+  'Coffee',
+  'Leavening & yeast',
+  'Salt & extracts',
+] as const;
+
+export type IngredientGroup = (typeof INGREDIENT_GROUP_ORDER)[number];
+
 export type IngredientDef = {
   id: string;
   label: string;
-  sensei: string;
+  group: IngredientGroup;
   bucket: IngredientBucket;
   /** Grams per US cup when measured by volume (scooped & leveled where relevant) */
   gPerCup?: number;
@@ -21,51 +36,71 @@ export type IngredientDef = {
 };
 
 export const INGREDIENT_CATALOG: IngredientDef[] = [
-  // CookieSensei / general baking — flours
-  { id: 'flour-ap', label: 'All-purpose flour', sensei: 'Cookie / cake / general', bucket: 'flour', gPerCup: 120, gPerTbsp: 7.8, gPerTsp: 2.6 },
-  { id: 'flour-bread', label: 'Bread flour', sensei: 'Bread / general', bucket: 'flour', gPerCup: 127, gPerTbsp: 8, gPerTsp: 2.7 },
-  { id: 'flour-cake', label: 'Cake flour', sensei: 'Cake', bucket: 'flour', gPerCup: 114, gPerTbsp: 7.5, gPerTsp: 2.5 },
-  { id: 'flour-ww', label: 'Whole wheat flour', sensei: 'Bread / general', bucket: 'flour', gPerCup: 120, gPerTbsp: 7.8, gPerTsp: 2.6 },
-  { id: 'flour-almond', label: 'Almond flour', sensei: 'Cookie / cake', bucket: 'flour', gPerCup: 96, gPerTbsp: 6, gPerTsp: 2 },
-  { id: 'cornstarch', label: 'Cornstarch', sensei: 'Pie / general', bucket: 'flour', gPerCup: 128, gPerTbsp: 8, gPerTsp: 2.7 },
-  // Fats
-  { id: 'butter', label: 'Butter', sensei: 'Cookie / cake / pie', bucket: 'fat', gPerCup: 227, gPerTbsp: 14.2, gPerTsp: 4.7 },
-  { id: 'oil-veg', label: 'Vegetable / canola oil', sensei: 'Cookie / cake', bucket: 'fat', gPerCup: 224, gPerTbsp: 14, gPerTsp: 4.7, gPerMl: 0.92 },
-  { id: 'oil-coconut', label: 'Coconut oil (melted)', sensei: 'Cookie / ice cream', bucket: 'fat', gPerCup: 218, gPerTbsp: 13.6, gPerTsp: 4.5, gPerMl: 0.92 },
-  { id: 'shortening', label: 'Shortening', sensei: 'Pie / cookie', bucket: 'fat', gPerCup: 205, gPerTbsp: 12.8, gPerTsp: 4.3 },
-  { id: 'cream-heavy', label: 'Heavy cream', sensei: 'Ice cream / cake', bucket: 'fat', gPerCup: 238, gPerTbsp: 15, gPerTsp: 5, gPerMl: 0.99 },
-  // Sugars
-  { id: 'sugar-white', label: 'Granulated sugar', sensei: 'Cookie / cake / ice cream', bucket: 'sugar', gPerCup: 200, gPerTbsp: 12.5, gPerTsp: 4.2 },
-  { id: 'sugar-brown', label: 'Brown sugar (packed)', sensei: 'Cookie / cake', bucket: 'sugar', gPerCup: 220, gPerTbsp: 13.8, gPerTsp: 4.6 },
-  { id: 'sugar-powder', label: 'Powdered sugar', sensei: 'Cookie / cake', bucket: 'sugar', gPerCup: 120, gPerTbsp: 7.5, gPerTsp: 2.5 },
-  { id: 'honey', label: 'Honey', sensei: 'Cookie / bread', bucket: 'sugar', gPerCup: 340, gPerTbsp: 21, gPerTsp: 7, gPerMl: 1.42 },
-  { id: 'maple', label: 'Maple syrup', sensei: 'Cookie / general', bucket: 'sugar', gPerCup: 322, gPerTbsp: 20, gPerTsp: 6.7, gPerMl: 1.37 },
-  { id: 'corn-syrup', label: 'Corn syrup', sensei: 'Pie / candy', bucket: 'sugar', gPerCup: 328, gPerTbsp: 20.5, gPerTsp: 6.8, gPerMl: 1.4 },
-  // Liquids (no sugar/flour bucket — optional future)
-  { id: 'water', label: 'Water', sensei: 'Bread / coffee / general', bucket: 'none', gPerCup: 237, gPerTbsp: 14.8, gPerTsp: 4.9, gPerMl: 1 },
-  { id: 'milk-whole', label: 'Milk (whole)', sensei: 'Cake / ice cream', bucket: 'none', gPerCup: 244, gPerTbsp: 15.3, gPerTsp: 5.1, gPerMl: 1.03 },
-  { id: 'milk-plant', label: 'Plant milk (oat, almond, etc.)', sensei: 'Cake / general', bucket: 'none', gPerCup: 240, gPerTbsp: 15, gPerTsp: 5, gPerMl: 1.01 },
-  { id: 'coffee-brewed', label: 'Brewed coffee (liquid)', sensei: 'BeanSensei / cake', bucket: 'none', gPerMl: 1 },
-  { id: 'espresso', label: 'Espresso (liquid)', sensei: 'BeanSensei', bucket: 'none', gPerMl: 1 },
-  // Coffee solids
-  { id: 'coffee-beans', label: 'Coffee beans (whole or ground)', sensei: 'BeanSensei', bucket: 'none', gPerCup: 120, gPerTbsp: 7.5, gPerTsp: 2.5 },
-  // Eggs / dairy / leavening (shown for completeness; bucket none for ratios)
-  { id: 'egg-whole', label: 'Eggs (count — large, ~50 g each)', sensei: 'Cookie / cake', bucket: 'none' },
-  { id: 'yogurt', label: 'Greek yogurt', sensei: 'Cake / bread', bucket: 'none', gPerCup: 227, gPerTbsp: 14, gPerTsp: 4.7, gPerMl: 1.05 },
-  { id: 'sour-cream', label: 'Sour cream', sensei: 'Cake / pie', bucket: 'none', gPerCup: 242, gPerTbsp: 15, gPerTsp: 5, gPerMl: 1.02 },
-  { id: 'cream-cheese', label: 'Cream cheese', sensei: 'Cake / pie', bucket: 'fat', gPerCup: 227, gPerTbsp: 14.2, gPerTsp: 4.7 },
-  { id: 'baking-powder', label: 'Baking powder', sensei: 'Cookie / cake', bucket: 'none', gPerTsp: 4 },
-  { id: 'baking-soda', label: 'Baking soda', sensei: 'Cookie / cake', bucket: 'none', gPerTsp: 4.6 },
-  { id: 'salt', label: 'Salt (table / fine)', sensei: 'All', bucket: 'none', gPerTsp: 6, gPerTbsp: 18 },
-  { id: 'vanilla', label: 'Vanilla extract', sensei: 'Cookie / cake', bucket: 'none', gPerTsp: 4.2, gPerTbsp: 13, gPerCup: 208, gPerMl: 0.88 },
-  // Ice cream base
-  { id: 'sugar-ice-cream', label: 'Sugar (ice cream base)', sensei: 'IceCreamSensei', bucket: 'sugar', gPerCup: 200, gPerTbsp: 12.5, gPerTsp: 4.2 },
-  { id: 'milk-ice', label: 'Milk (ice cream)', sensei: 'IceCreamSensei', bucket: 'none', gPerCup: 244, gPerMl: 1.03 },
-  // Yeast
-  { id: 'yeast-dry', label: 'Instant dry yeast', sensei: 'Bread', bucket: 'none', gPerTsp: 3.1 },
-  // Pie
-  { id: 'shortening-pie', label: 'Shortening (pie crust)', sensei: 'PieSensei', bucket: 'fat', gPerCup: 205, gPerTbsp: 12.8, gPerTsp: 4.3 },
+  // Flours & starches
+  { id: 'flour-ap', label: 'All-purpose flour', group: 'Flours & starches', bucket: 'flour', gPerCup: 120, gPerTbsp: 7.8, gPerTsp: 2.6 },
+  { id: 'flour-bread', label: 'Bread flour', group: 'Flours & starches', bucket: 'flour', gPerCup: 127, gPerTbsp: 8, gPerTsp: 2.7 },
+  { id: 'flour-cake', label: 'Cake flour', group: 'Flours & starches', bucket: 'flour', gPerCup: 114, gPerTbsp: 7.5, gPerTsp: 2.5 },
+  { id: 'flour-ww', label: 'Whole wheat flour', group: 'Flours & starches', bucket: 'flour', gPerCup: 120, gPerTbsp: 7.8, gPerTsp: 2.6 },
+  { id: 'flour-almond', label: 'Almond flour', group: 'Flours & starches', bucket: 'flour', gPerCup: 96, gPerTbsp: 6, gPerTsp: 2 },
+  { id: 'cornstarch', label: 'Cornstarch', group: 'Flours & starches', bucket: 'flour', gPerCup: 128, gPerTbsp: 8, gPerTsp: 2.7 },
+  // Sugars & sweeteners
+  { id: 'sugar', label: 'Sugar (granulated / white)', group: 'Sugars & sweeteners', bucket: 'sugar', gPerCup: 200, gPerTbsp: 12.5, gPerTsp: 4.2 },
+  { id: 'sugar-brown', label: 'Brown sugar (packed)', group: 'Sugars & sweeteners', bucket: 'sugar', gPerCup: 220, gPerTbsp: 13.8, gPerTsp: 4.6 },
+  { id: 'sugar-powder', label: 'Powdered sugar', group: 'Sugars & sweeteners', bucket: 'sugar', gPerCup: 120, gPerTbsp: 7.5, gPerTsp: 2.5 },
+  { id: 'sugar-ice-cream', label: 'Sugar (for ice cream & frozen desserts)', group: 'Sugars & sweeteners', bucket: 'sugar', gPerCup: 200, gPerTbsp: 12.5, gPerTsp: 4.2 },
+  { id: 'honey', label: 'Honey', group: 'Sugars & sweeteners', bucket: 'sugar', gPerCup: 340, gPerTbsp: 21, gPerTsp: 7, gPerMl: 1.42 },
+  { id: 'maple', label: 'Maple syrup', group: 'Sugars & sweeteners', bucket: 'sugar', gPerCup: 322, gPerTbsp: 20, gPerTsp: 6.7, gPerMl: 1.37 },
+  { id: 'corn-syrup', label: 'Corn syrup', group: 'Sugars & sweeteners', bucket: 'sugar', gPerCup: 328, gPerTbsp: 20.5, gPerTsp: 6.8, gPerMl: 1.4 },
+  // Fats & oils
+  { id: 'butter', label: 'Butter', group: 'Fats & oils', bucket: 'fat', gPerCup: 227, gPerTbsp: 14.2, gPerTsp: 4.7 },
+  { id: 'oil-veg', label: 'Vegetable / canola oil', group: 'Fats & oils', bucket: 'fat', gPerCup: 224, gPerTbsp: 14, gPerTsp: 4.7, gPerMl: 0.92 },
+  { id: 'oil-coconut', label: 'Coconut oil (melted)', group: 'Fats & oils', bucket: 'fat', gPerCup: 218, gPerTbsp: 13.6, gPerTsp: 4.5, gPerMl: 0.92 },
+  { id: 'shortening', label: 'Shortening', group: 'Fats & oils', bucket: 'fat', gPerCup: 205, gPerTbsp: 12.8, gPerTsp: 4.3 },
+  { id: 'shortening-pie', label: 'Shortening (pie crust)', group: 'Fats & oils', bucket: 'fat', gPerCup: 205, gPerTbsp: 12.8, gPerTsp: 4.3 },
+  { id: 'cream-heavy', label: 'Heavy cream', group: 'Fats & oils', bucket: 'fat', gPerCup: 238, gPerTbsp: 15, gPerTsp: 5, gPerMl: 0.99 },
+  // Dairy & eggs (cream cheese counts toward fat in ratio signals)
+  { id: 'milk-whole', label: 'Milk (whole)', group: 'Dairy & eggs', bucket: 'none', gPerCup: 244, gPerTbsp: 15.3, gPerTsp: 5.1, gPerMl: 1.03 },
+  { id: 'milk-plant', label: 'Plant milk (oat, almond, etc.)', group: 'Dairy & eggs', bucket: 'none', gPerCup: 240, gPerTbsp: 15, gPerTsp: 5, gPerMl: 1.01 },
+  { id: 'milk-ice', label: 'Milk (for ice cream base)', group: 'Dairy & eggs', bucket: 'none', gPerCup: 244, gPerMl: 1.03 },
+  { id: 'yogurt', label: 'Greek yogurt', group: 'Dairy & eggs', bucket: 'none', gPerCup: 227, gPerTbsp: 14, gPerTsp: 4.7, gPerMl: 1.05 },
+  { id: 'sour-cream', label: 'Sour cream', group: 'Dairy & eggs', bucket: 'none', gPerCup: 242, gPerTbsp: 15, gPerTsp: 5, gPerMl: 1.02 },
+  { id: 'cream-cheese', label: 'Cream cheese', group: 'Dairy & eggs', bucket: 'fat', gPerCup: 227, gPerTbsp: 14.2, gPerTsp: 4.7 },
+  { id: 'egg-whole', label: 'Eggs (count — large, ~50 g each)', group: 'Dairy & eggs', bucket: 'none' },
+  // Liquids
+  { id: 'water', label: 'Water', group: 'Liquids', bucket: 'none', gPerCup: 237, gPerTbsp: 14.8, gPerTsp: 4.9, gPerMl: 1 },
+  { id: 'coffee-brewed', label: 'Brewed coffee (liquid)', group: 'Liquids', bucket: 'none', gPerMl: 1 },
+  { id: 'espresso', label: 'Espresso (liquid)', group: 'Liquids', bucket: 'none', gPerMl: 1 },
+  // Coffee (solids)
+  { id: 'coffee-beans', label: 'Coffee beans (whole or ground)', group: 'Coffee', bucket: 'none', gPerCup: 120, gPerTbsp: 7.5, gPerTsp: 2.5 },
+  // Leavening & yeast
+  { id: 'baking-powder', label: 'Baking powder', group: 'Leavening & yeast', bucket: 'none', gPerTsp: 4 },
+  { id: 'baking-soda', label: 'Baking soda', group: 'Leavening & yeast', bucket: 'none', gPerTsp: 4.6 },
+  { id: 'yeast-dry', label: 'Instant dry yeast', group: 'Leavening & yeast', bucket: 'none', gPerTsp: 3.1 },
+  // Salt & extracts
+  { id: 'salt', label: 'Salt (table / fine)', group: 'Salt & extracts', bucket: 'none', gPerTsp: 6, gPerTbsp: 18 },
+  { id: 'vanilla', label: 'Vanilla extract', group: 'Salt & extracts', bucket: 'none', gPerTsp: 4.2, gPerTbsp: 13, gPerCup: 208, gPerMl: 0.88 },
 ];
+
+/** Optgroups for `<select>`: stable order, items in same order as `INGREDIENT_CATALOG`. */
+export const INGREDIENT_GROUPS: { group: string; items: IngredientDef[] }[] = (() => {
+  const map = new Map<string, IngredientDef[]>();
+  for (const ing of INGREDIENT_CATALOG) {
+    const arr = map.get(ing.group);
+    if (arr) arr.push(ing);
+    else map.set(ing.group, [ing]);
+  }
+  const ordered: { group: string; items: IngredientDef[] }[] = [];
+  for (const g of INGREDIENT_GROUP_ORDER) {
+    const items = map.get(g);
+    if (items?.length) ordered.push({ group: g, items });
+  }
+  for (const [group, items] of map) {
+    if (!INGREDIENT_GROUP_ORDER.includes(group as IngredientGroup)) {
+      ordered.push({ group, items });
+    }
+  }
+  return ordered;
+})();
 
 export function getIngredientDef(id: string): IngredientDef | undefined {
   return INGREDIENT_CATALOG.find((i) => i.id === id);

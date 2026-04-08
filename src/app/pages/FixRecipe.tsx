@@ -6,7 +6,7 @@ import { Footer } from '../components/Footer';
 import { evaluateDiagnostic } from '../diagnostics/evaluate';
 import type { DiagnosticFinding, RecipeCategory } from '../diagnostics/types';
 import {
-  INGREDIENT_CATALOG,
+  INGREDIENT_GROUPS,
   aggregateRecipeRows,
   defaultUnitForSystem,
   METRIC_UNITS,
@@ -114,21 +114,6 @@ function createRecipeRow(system: MeasurementSystem): RecipeRow {
     unit: defaultUnitForSystem(system),
   };
 }
-
-const SENSEI_GROUPS = (() => {
-  const seen = new Set<string>();
-  const order: string[] = [];
-  for (const ing of INGREDIENT_CATALOG) {
-    if (!seen.has(ing.sensei)) {
-      seen.add(ing.sensei);
-      order.push(ing.sensei);
-    }
-  }
-  return order.map((sensei) => ({
-    sensei,
-    items: INGREDIENT_CATALOG.filter((i) => i.sensei === sensei),
-  }));
-})();
 
 function buildWhatIfPreview(
   finding: DiagnosticFinding | undefined,
@@ -252,7 +237,7 @@ export default function FixRecipe() {
   };
 
   const field =
-    'w-full rounded-lg border border-stone-200 bg-white px-3 py-2 text-sm text-stone-900 shadow-sm placeholder:text-stone-400 focus:border-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-400/25';
+    'w-full rounded-lg border border-stone-300 bg-white px-3 py-2 text-sm text-stone-900 shadow-sm placeholder:text-stone-500 focus:border-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-500/25';
 
   return (
     <div className="min-h-screen bg-stone-100 text-stone-900">
@@ -261,22 +246,22 @@ export default function FixRecipe() {
       <main className="max-w-5xl mx-auto px-4 py-8 pb-20">
         <Link
           to="/articles"
-          className="inline-flex items-center gap-2 text-sm text-stone-500 hover:text-stone-800 mb-5 transition-colors"
+          className="inline-flex items-center gap-2 text-sm font-medium text-stone-700 hover:text-violet-800 mb-5 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
           Back to Articles
         </Link>
 
         <header className="mb-5 max-w-2xl">
-          <div className="inline-flex items-center gap-1.5 rounded-full border border-stone-200 bg-white px-2.5 py-1 text-xs font-medium text-stone-600 mb-2.5">
-            <FlaskConical className="w-3.5 h-3.5 text-stone-500" aria-hidden />
+          <div className="inline-flex items-center gap-1.5 rounded-full border border-violet-200 bg-violet-50 px-2.5 py-1 text-xs font-semibold text-violet-900 mb-2.5">
+            <FlaskConical className="w-3.5 h-3.5 text-violet-600" aria-hidden />
             Fix My Recipe
           </div>
-          <h1 className="text-2xl md:text-3xl font-semibold tracking-tight text-stone-900 mb-2">Recipe debugger</h1>
-          <p className="text-sm text-stone-600 leading-snug mb-1.5">
+          <h1 className="text-2xl md:text-3xl font-semibold tracking-tight text-stone-950 mb-2">Recipe debugger</h1>
+          <p className="text-sm text-stone-800 leading-snug mb-1.5">
             Something turned out weird? We&apos;ll help you figure out what likely went wrong and what to change next time.
           </p>
-          <p className="text-sm text-stone-600 leading-snug">
+          <p className="text-sm text-stone-800 leading-snug">
             Got an old recipe with a mystery measurement? Type it in and switch between tablespoons and teaspoons—we&apos;ll
             flag amounts that look off before they ruin the batch.
           </p>
@@ -284,11 +269,11 @@ export default function FixRecipe() {
 
         <div className="xl:grid xl:grid-cols-2 xl:gap-5 xl:items-start space-y-4 xl:space-y-0">
           <section className="rounded-xl border border-stone-200 bg-white p-4 md:p-5 shadow-sm xl:sticky xl:top-20">
-            <h2 className="text-xs font-semibold uppercase tracking-wide text-stone-500 mb-3">Your recipe</h2>
+            <h2 className="text-xs font-bold uppercase tracking-wide text-violet-900 mb-3">Your recipe</h2>
             <div className="space-y-3">
               <div className="grid gap-3 sm:grid-cols-2">
                 <div>
-                  <label className="block text-xs font-medium text-stone-600 mb-1">Making</label>
+                  <label className="block text-xs font-semibold text-stone-800 mb-1">Making</label>
                   <select
                     value={category}
                     onChange={(e) => {
@@ -306,7 +291,7 @@ export default function FixRecipe() {
                   </select>
                 </div>
                 <div>
-                  <label className="block text-xs font-medium text-stone-600 mb-1">Problem</label>
+                  <label className="block text-xs font-semibold text-stone-800 mb-1">Problem</label>
                   <select
                     value={problemId}
                     onChange={(e) => setProblemId(e.target.value)}
@@ -321,7 +306,7 @@ export default function FixRecipe() {
                 </div>
               </div>
               <div>
-                <label className="block text-xs font-medium text-stone-600 mb-1">Notes (optional)</label>
+                <label className="block text-xs font-semibold text-stone-800 mb-1">Notes (optional)</label>
                 <textarea
                   value={recipeNotes}
                   onChange={(e) => setRecipeNotes(e.target.value)}
@@ -331,13 +316,15 @@ export default function FixRecipe() {
                 />
               </div>
               <div>
-                <span className="block text-xs font-medium text-stone-600 mb-1">Units</span>
-                <div className="flex rounded-lg border border-stone-200 p-0.5 gap-0.5 bg-stone-50">
+                <span className="block text-xs font-semibold text-stone-800 mb-1">Units</span>
+                <div className="flex rounded-lg border border-violet-200/80 p-0.5 gap-0.5 bg-violet-50/60">
                   <button
                     type="button"
                     onClick={() => setSystem('metric')}
-                    className={`flex-1 rounded-md py-1.5 text-xs font-medium transition-colors ${
-                      measurementSystem === 'metric' ? 'bg-stone-900 text-white' : 'text-stone-600 hover:text-stone-900'
+                    className={`flex-1 rounded-md py-1.5 text-xs font-semibold transition-colors ${
+                      measurementSystem === 'metric'
+                        ? 'bg-violet-700 text-white shadow-sm'
+                        : 'text-stone-800 hover:bg-white/80 hover:text-violet-900'
                     }`}
                   >
                     Metric
@@ -345,8 +332,10 @@ export default function FixRecipe() {
                   <button
                     type="button"
                     onClick={() => setSystem('us')}
-                    className={`flex-1 rounded-md py-1.5 text-xs font-medium transition-colors ${
-                      measurementSystem === 'us' ? 'bg-stone-900 text-white' : 'text-stone-600 hover:text-stone-900'
+                    className={`flex-1 rounded-md py-1.5 text-xs font-semibold transition-colors ${
+                      measurementSystem === 'us'
+                        ? 'bg-violet-700 text-white shadow-sm'
+                        : 'text-stone-800 hover:bg-white/80 hover:text-violet-900'
                     }`}
                   >
                     US (cup / tbsp / tsp)
@@ -355,11 +344,11 @@ export default function FixRecipe() {
               </div>
               <div>
                 <div className="flex items-center justify-between gap-2 mb-1.5">
-                  <label className="text-xs font-medium text-stone-600">Ingredients</label>
+                  <label className="text-xs font-semibold text-stone-800">Ingredients</label>
                   <button
                     type="button"
                     onClick={() => setRows((r) => [...r, createRecipeRow(measurementSystem)])}
-                    className="inline-flex items-center gap-1 text-xs font-medium text-stone-700 hover:text-stone-950"
+                    className="inline-flex items-center gap-1 text-xs font-semibold text-violet-800 hover:text-violet-950"
                   >
                     <Plus className="w-3.5 h-3.5" />
                     Add
@@ -372,7 +361,7 @@ export default function FixRecipe() {
                     return (
                       <li
                         key={row.rowId}
-                        className="flex flex-col sm:flex-row gap-2 sm:items-center rounded-lg border border-stone-100 bg-stone-50/80 p-2"
+                        className="flex flex-col sm:flex-row gap-2 sm:items-center rounded-lg border border-violet-100/90 bg-violet-50/40 p-2"
                       >
                         <div className="flex-1 min-w-0 sm:min-w-[140px]">
                           <label className="sr-only">Ingredient</label>
@@ -381,8 +370,8 @@ export default function FixRecipe() {
                             onChange={(e) => updateRow(row.rowId, { ingredientId: e.target.value })}
                             className={field}
                           >
-                            {SENSEI_GROUPS.map(({ sensei, items }) => (
-                              <optgroup key={sensei} label={sensei}>
+                            {INGREDIENT_GROUPS.map(({ group, items }) => (
+                              <optgroup key={group} label={group}>
                                 {items.map((ing) => (
                                   <option key={ing.id} value={ing.id}>
                                     {ing.label}
@@ -402,7 +391,7 @@ export default function FixRecipe() {
                             className={`${field} w-20 sm:w-24 shrink-0 tabular-nums`}
                           />
                           {isEgg ? (
-                            <div className={`${field} flex-1 sm:w-28 text-stone-600`}>eggs</div>
+                            <div className={`${field} flex-1 sm:w-28 text-stone-800 font-medium`}>eggs</div>
                           ) : (
                             <select
                               value={row.unit === 'count' ? defaultUnitForSystem(measurementSystem) : row.unit}
@@ -426,7 +415,7 @@ export default function FixRecipe() {
                             if (rows.length <= 1) return;
                             setRows((r) => r.filter((x) => x.rowId !== row.rowId));
                           }}
-                          className="inline-flex items-center justify-center rounded-lg p-2 text-stone-400 hover:bg-red-50 hover:text-red-700 disabled:opacity-30 disabled:pointer-events-none shrink-0 self-end sm:self-center"
+                          className="inline-flex items-center justify-center rounded-lg p-2 text-stone-500 hover:bg-red-50 hover:text-red-700 disabled:opacity-30 disabled:pointer-events-none shrink-0 self-end sm:self-center"
                           aria-label="Remove row"
                         >
                           <Trash2 className="w-4 h-4" />
@@ -437,26 +426,26 @@ export default function FixRecipe() {
                 </ul>
               </div>
               {aggregated.flourG > 0 || aggregated.butterG > 0 || aggregated.sugarG > 0 ? (
-                <div className="flex flex-wrap gap-x-4 gap-y-1 rounded-lg border border-stone-200 bg-stone-50 px-3 py-2 text-xs text-stone-700">
-                  <span className="font-medium text-stone-500">Ratio totals</span>
-                  <span>
-                    Flour <span className="tabular-nums font-medium text-stone-900">{aggregated.flourG}g</span>
+                <div className="flex flex-wrap gap-x-4 gap-y-1 rounded-lg border border-violet-200 bg-violet-50 px-3 py-2.5 text-xs text-stone-900">
+                  <span className="font-bold text-violet-900">Ratio totals</span>
+                  <span className="text-stone-800">
+                    Flour <span className="tabular-nums font-bold text-violet-950">{aggregated.flourG}g</span>
                   </span>
-                  <span>
-                    Fat <span className="tabular-nums font-medium text-stone-900">{aggregated.butterG}g</span>
+                  <span className="text-stone-800">
+                    Fat <span className="tabular-nums font-bold text-violet-950">{aggregated.butterG}g</span>
                   </span>
-                  <span>
-                    Sugar <span className="tabular-nums font-medium text-stone-900">{aggregated.sugarG}g</span>
+                  <span className="text-stone-800">
+                    Sugar <span className="tabular-nums font-bold text-violet-950">{aggregated.sugarG}g</span>
                   </span>
                 </div>
               ) : null}
-              <p className="text-[11px] text-stone-500 leading-snug">
+              <p className="text-xs text-stone-700 leading-snug">
                 Totals come from the table, not the notes. Rule-based engine (no AI).
               </p>
               <button
                 type="button"
                 onClick={runDiagnose}
-                className="w-full rounded-lg bg-stone-900 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-stone-800 transition-colors"
+                className="w-full rounded-lg bg-gradient-to-r from-violet-700 to-violet-600 px-4 py-2.5 text-sm font-semibold text-white shadow-md shadow-violet-500/25 hover:from-violet-800 hover:to-violet-700 transition-colors"
               >
                 Diagnose
               </button>
@@ -465,8 +454,8 @@ export default function FixRecipe() {
 
           <div className="space-y-4">
             <section className="rounded-xl border border-stone-200 bg-white p-4 md:p-5 shadow-sm">
-              <h2 className="text-xs font-semibold uppercase tracking-wide text-stone-500 mb-2">Signals</h2>
-              <p className="text-xs text-stone-500 mb-2 leading-snug">
+              <h2 className="text-xs font-bold uppercase tracking-wide text-violet-900 mb-2">Signals</h2>
+              <p className="text-xs text-stone-800 mb-2 leading-snug">
                 From flour / fat / sugar in your lines—or problem only if empty.
               </p>
               {result.signals.length ? (
@@ -474,23 +463,25 @@ export default function FixRecipe() {
                   {result.signals.map((s) => (
                     <li
                       key={s}
-                      className="text-xs font-medium px-2 py-0.5 rounded-md bg-stone-100 text-stone-800 border border-stone-200"
+                      className="text-xs font-semibold px-2.5 py-1 rounded-md bg-violet-100 text-violet-950 border border-violet-300/70"
                     >
                       {s.replace(/_/g, ' ')}
                     </li>
                   ))}
                 </ul>
               ) : (
-                <p className="text-xs text-stone-500">No ratio flags yet—add lines or run with problem only.</p>
+                <p className="text-xs text-stone-800 font-medium">No ratio flags yet—add lines or run with problem only.</p>
               )}
             </section>
 
             <section className="rounded-xl border border-stone-200 bg-white p-4 md:p-5 shadow-sm">
               <div className="flex items-center gap-2 mb-2">
-                <SlidersHorizontal className="w-4 h-4 text-stone-500" aria-hidden />
-                <h2 className="text-xs font-semibold uppercase tracking-wide text-stone-500">What-if (±15%)</h2>
+                <SlidersHorizontal className="w-4 h-4 text-violet-600" aria-hidden />
+                <h2 className="text-xs font-bold uppercase tracking-wide text-violet-900">What-if (±15%)</h2>
               </div>
-              <p className="text-xs text-stone-500 mb-3 leading-snug">Preview how small ratio nudges tend to read—local only.</p>
+              <p className="text-xs text-stone-800 mb-3 leading-snug">
+                Preview how small ratio nudges tend to read—local only.
+              </p>
               <div className="space-y-3">
                 {(
                   [
@@ -501,8 +492,8 @@ export default function FixRecipe() {
                 ).map(([label, val, setVal]) => (
                   <div key={label}>
                     <div className="flex justify-between text-xs mb-1">
-                      <span className="font-medium text-stone-700">{label}</span>
-                      <span className="tabular-nums text-stone-600">{val > 0 ? `+${val}` : val}%</span>
+                      <span className="font-semibold text-stone-900">{label}</span>
+                      <span className="tabular-nums font-semibold text-violet-800">{val > 0 ? `+${val}` : val}%</span>
                     </div>
                     <input
                       type="range"
@@ -511,48 +502,49 @@ export default function FixRecipe() {
                       step={1}
                       value={val}
                       onChange={(e) => setVal(Number(e.target.value))}
-                      className="w-full accent-stone-800"
+                      className="w-full accent-violet-600"
                     />
                   </div>
                 ))}
               </div>
-              <div className="mt-3 rounded-lg border border-stone-100 bg-stone-50 px-3 py-2 text-xs text-stone-700 leading-snug">
+              <div className="mt-3 rounded-lg border border-violet-100 bg-violet-50/70 px-3 py-2 text-xs text-stone-900 leading-snug">
                 {preview || 'Run Diagnose, then move sliders.'}
               </div>
             </section>
 
             <section className="rounded-xl border border-stone-200 bg-white p-4 md:p-5 shadow-sm">
-              <h2 className="text-xs font-semibold uppercase tracking-wide text-stone-500 mb-3">Findings</h2>
+              <h2 className="text-xs font-bold uppercase tracking-wide text-violet-900 mb-3">Findings</h2>
               <div className="space-y-3">
                 {result.findings.map((f) => (
-                  <article key={f.id} className="rounded-lg border border-stone-100 bg-stone-50/50 p-3">
+                  <article key={f.id} className="rounded-lg border border-violet-100 bg-violet-50/35 p-3">
                     <div className="flex flex-wrap items-baseline gap-2 mb-1.5">
-                      <h3 className="text-sm font-semibold text-stone-900">{f.title}</h3>
-                      <span className="text-[10px] uppercase tracking-wide px-1.5 py-0.5 rounded bg-white border border-stone-200 text-stone-600">
+                      <h3 className="text-sm font-bold text-stone-950">{f.title}</h3>
+                      <span className="text-[10px] font-bold uppercase tracking-wide px-1.5 py-0.5 rounded-md bg-violet-200/80 border border-violet-300 text-violet-950">
                         {f.confidence}
                       </span>
                     </div>
-                    <p className="text-xs text-stone-600 mb-2 leading-relaxed">{f.explanation}</p>
-                    <p className="text-[11px] font-medium text-stone-700 mb-1">Next try</p>
+                    <p className="text-sm text-stone-800 mb-2 leading-relaxed">{f.explanation}</p>
+                    <p className="text-xs font-bold text-violet-900 mb-1">Next try</p>
                     <ul className="space-y-1 mb-2">
                       {f.suggestedChanges.map((c, i) => (
-                        <li key={i} className="text-xs text-stone-800 flex gap-1.5">
-                          <span className="text-stone-500 font-semibold shrink-0">
+                        <li key={i} className="text-sm text-stone-900 flex gap-1.5">
+                          <span className="text-violet-700 font-bold shrink-0">
                             {c.deltaPct === 0 ? '→' : `${c.direction === 'increase' ? '+' : '−'}${Math.abs(c.deltaPct)}%`}
                           </span>
                           <span>
-                            <span className="font-medium">{c.ingredient}:</span> {c.rationale}
+                            <span className="font-semibold text-stone-950">{c.ingredient}:</span>{' '}
+                            <span className="text-stone-800">{c.rationale}</span>
                           </span>
                         </li>
                       ))}
                     </ul>
-                    <p className="text-xs text-stone-700 border-t border-stone-200/80 pt-2 leading-snug">
-                      <span className="font-semibold">Effect:</span> {f.predictedEffect}
+                    <p className="text-sm text-stone-900 border-t border-violet-200/60 pt-2 leading-snug">
+                      <span className="font-bold text-violet-900">Effect:</span> {f.predictedEffect}
                     </p>
                     {f.relatedArticlePath ? (
                       <Link
                         to={f.relatedArticlePath}
-                        className="inline-flex mt-2 text-xs font-medium text-teal-800 hover:underline"
+                        className="inline-flex mt-2 text-sm font-semibold text-violet-800 hover:text-violet-950 hover:underline"
                         onClick={() => trackCTAClick('fix_recipe_finding', f.relatedArticlePath ?? '')}
                       >
                         Article →
@@ -564,13 +556,13 @@ export default function FixRecipe() {
             </section>
 
             {category === 'cookie' ? (
-              <section className="rounded-xl border border-amber-200/80 bg-amber-50/50 p-4 text-center">
-                <p className="text-xs text-stone-700 mb-2">Want spread and texture numbers?</p>
+              <section className="rounded-xl border border-amber-300/90 bg-amber-50 p-4 text-center">
+                <p className="text-sm font-semibold text-amber-950 mb-2">Want spread and texture numbers?</p>
                 <a
                   href="https://cookiesensei.senseifood.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center rounded-lg bg-white text-amber-900 text-xs font-semibold px-4 py-2 border border-amber-200 hover:bg-amber-50 transition-colors"
+                  className="inline-flex items-center justify-center rounded-lg bg-amber-100 text-amber-950 text-sm font-bold px-4 py-2 border-2 border-amber-400 hover:bg-amber-200 transition-colors"
                   onClick={() => trackCTAClick('fix_recipe', 'open_cookie_sensei')}
                 >
                   CookieSensei →
