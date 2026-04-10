@@ -1,5 +1,5 @@
 import { Link } from 'react-router';
-import { Cookie, Cake, Coffee, IceCream, PieChart, ArrowRight } from 'lucide-react';
+import { Cookie, Cake, Coffee, IceCream, PieChart, Wheat, ArrowRight } from 'lucide-react';
 import { Hero } from '../components/Hero';
 import { ToolCard } from '../components/ToolCard';
 import { HowItWorks } from '../components/HowItWorks';
@@ -36,6 +36,14 @@ export default function Home() {
       description: 'Layer cakes, doming, dryness — turn guesses into adjustments you can bake.',
       url: 'https://cakesensei.senseifood.com',
       color: 'from-pink-500 to-rose-600'
+    },
+    {
+      outcome: 'Shape lean-to-enriched dough with targets & nutrition',
+      name: 'Bread Sensei',
+      icon: Wheat,
+      description: 'Ten bread families, baker’s %, per-slice nutrition, and bake steps — on SenseiFood.',
+      url: '/bread-sensei',
+      color: 'from-amber-600 to-yellow-700'
     },
     {
       outcome: 'Nail flaky crusts and fillings that set clean',
@@ -124,9 +132,16 @@ export default function Home() {
           >
             <h3 className="text-lg font-bold text-amber-900 mb-1">Baking?</h3>
             <p className="text-sm text-muted-foreground mb-4 max-w-2xl">
-              Cookies, cake, or brownies — jump straight to the builder that matches what you’re fixing.
+              Cookies, cake, bread, or brownies — jump straight to the builder that matches what you’re fixing.
             </p>
             <div className="flex flex-wrap gap-3">
+              <Link
+                to="/bread-sensei"
+                onClick={() => handleBakeQuickLink('bread', 'BreadSensei')}
+                className="inline-flex items-center gap-2 rounded-xl bg-white border-2 border-yellow-300 px-4 py-2.5 text-sm font-semibold text-yellow-950 hover:shadow-md transition-all"
+              >
+                Bread → Bread Sensei
+              </Link>
               <a
                 href="https://cookiesensei.senseifood.com"
                 target="_blank"
@@ -164,7 +179,7 @@ export default function Home() {
           </div>
 
           <p className="text-center text-sm text-muted-foreground max-w-2xl mx-auto">
-            More specialties are on the way — bread, sauces, pickling, and beyond. For now, these five tools are ready to use.
+            More specialties are on the way — sauces, pickling, and beyond. For now, these six tools are ready to use.
           </p>
         </div>
       </section>

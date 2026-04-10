@@ -28,6 +28,7 @@ const TOOL_LINKS = {
   PieSensei: 'https://piesensei.senseifood.com',
   IceCreamSensei: 'https://icecreamsensei.senseifood.com',
   BeanSensei: 'https://beansensei.senseifood.com',
+  BreadSensei: '/bread-sensei',
 } as const;
 
 type Suggestion =
@@ -105,11 +106,11 @@ function buildSuggestions(selected: Set<PantryId>): Suggestion[] {
 
   if (has('flour', 'yeast')) {
     out.push({
-      kind: 'article',
+      kind: 'tool',
       title: 'Bread & yeast dough',
-      blurb:
-        'BreadSensei isn’t on the homepage yet — start with the science of rise and fermentation, then use your pantry in any baking tool.',
-      to: '/bread-science/why-bread-rises',
+      blurb: 'Hydration, enrichment, baker’s %, nutrition, and bake steps for ten classic bread families.',
+      href: TOOL_LINKS.BreadSensei,
+      toolName: 'BreadSensei',
     });
   }
 
@@ -215,16 +216,27 @@ export function WhatCanIMake() {
                           <div className="text-sm font-semibold">{s.title}</div>
                           <p className="text-xs text-white/85 mt-0.5 mb-2">{s.blurb}</p>
                           {s.kind === 'tool' ? (
-                            <a
-                              href={s.href}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              onClick={() => trackSelectionAndTool(s, 'what_can_i_make_suggestion')}
-                              className="inline-flex items-center gap-1 text-xs font-bold bg-white/20 hover:bg-white/30 px-3 py-1.5 rounded-lg"
-                            >
-                              Open {s.toolName.replace('Sensei', '')} Sensei
-                              <ArrowRight className="w-3 h-3" />
-                            </a>
+                            s.href.startsWith('http') ? (
+                              <a
+                                href={s.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={() => trackSelectionAndTool(s, 'what_can_i_make_suggestion')}
+                                className="inline-flex items-center gap-1 text-xs font-bold bg-white/20 hover:bg-white/30 px-3 py-1.5 rounded-lg"
+                              >
+                                Open {s.toolName.replace('Sensei', '')} Sensei
+                                <ArrowRight className="w-3 h-3" />
+                              </a>
+                            ) : (
+                              <Link
+                                to={s.href}
+                                onClick={() => trackSelectionAndTool(s, 'what_can_i_make_suggestion')}
+                                className="inline-flex items-center gap-1 text-xs font-bold bg-white/20 hover:bg-white/30 px-3 py-1.5 rounded-lg"
+                              >
+                                Open {s.toolName.replace('Sensei', '')} Sensei
+                                <ArrowRight className="w-3 h-3" />
+                              </Link>
+                            )
                           ) : (
                             <Link
                               to={s.to}

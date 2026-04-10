@@ -89,6 +89,7 @@ import WhyEggsMatterInBaking from "./pages/WhyEggsMatterInBaking";
 import WhySaltMakesFoodTasteBetter from "./pages/WhySaltMakesFoodTasteBetter";
 import WhyRecipesFail from "./pages/WhyRecipesFail";
 import FixRecipe from "./pages/FixRecipe";
+import BreadSensei from "./pages/BreadSensei";
 import HowToUseFixMyRecipe from "./pages/HowToUseFixMyRecipe";
 import FixRecipesOneVariableAtATime from "./pages/FixRecipesOneVariableAtATime";
 import HowToDebugCookieBatchIssues from "./pages/HowToDebugCookieBatchIssues";
@@ -204,6 +205,7 @@ export const appRouteChildren = [
   { index: true, Component: Home },
   { path: "articles", Component: Articles },
   { path: "fix-recipe", Component: FixRecipe },
+  { path: "bread-sensei", Component: BreadSensei },
   ...cookieScienceRoutes,
   ...breadScienceRoutes,
   ...cakeScienceRoutes,

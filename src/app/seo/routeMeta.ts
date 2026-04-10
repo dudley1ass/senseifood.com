@@ -269,6 +269,18 @@ function computeRouteSeo(path: string): RouteSeo {
     };
   }
 
+  if (path === '/bread-sensei') {
+    const title = ensureTitleBand(`Bread Sensei — dough formulas & baker's % | ${SITE_NAME}`);
+    const description = ensureDescriptionBand(
+      'Free bread builder: pick a style (lean to enriched), edit ingredients, see hydration and enrichment vs classic targets, nutrition per slice, and bake steps. Part of SenseiFood — also at breadsensei.com.'
+    );
+    return {
+      title,
+      description,
+      canonical: `${SITE_URL}/bread-sensei`,
+    };
+  }
+
   const segments = path.split('/').filter(Boolean);
   if (segments.length === 2) {
     const [segment, slug] = segments;

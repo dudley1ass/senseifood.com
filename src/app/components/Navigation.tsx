@@ -36,6 +36,9 @@ export function Navigation() {
             >
               Fix My Recipe
             </Link>
+            <Link to="/bread-sensei" className="text-foreground/80 hover:text-purple-600 transition-colors">
+              Bread Sensei
+            </Link>
             <a href="/#how-it-works" className="text-foreground/80 hover:text-purple-600 transition-colors">
               How It Works
             </a>
@@ -80,6 +83,13 @@ export function Navigation() {
               }}
             >
               Fix My Recipe
+            </Link>
+            <Link
+              to="/bread-sensei"
+              className="text-foreground/80 hover:text-foreground transition-colors py-2"
+              onClick={() => setIsOpen(false)}
+            >
+              Bread Sensei
             </Link>
             <a 
               href="/#how-it-works" 

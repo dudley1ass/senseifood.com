@@ -33,10 +33,10 @@ export function FeaturedExperiments() {
       readTime: '6 min read',
       color: 'from-amber-500 to-yellow-600',
       url: '/bread-science/why-bread-rises',
-      applyHref: '/articles',
-      applyLabel: 'Browse bread & baking science',
+      applyHref: '/bread-sensei',
+      applyLabel: 'Open Bread Sensei',
       applyExternal: false,
-      toolName: undefined
+      toolName: 'BreadSensei' as const
     },
     {
       title: 'Why Ice Cream Gets Icy',
@@ -118,7 +118,9 @@ export function FeaturedExperiments() {
                 ) : (
                   <Link
                     to={experiment.applyHref}
-                    onClick={() => handleApplyClick(experiment.title, experiment.applyLabel)}
+                    onClick={() =>
+                      handleApplyClick(experiment.title, experiment.applyLabel, experiment.toolName)
+                    }
                     className={`inline-flex items-center justify-center gap-2 w-full rounded-xl px-4 py-3 text-sm font-semibold text-white bg-gradient-to-r ${experiment.color} hover:opacity-95 shadow-md hover:shadow-lg transition-all`}
                   >
                     {experiment.applyLabel}

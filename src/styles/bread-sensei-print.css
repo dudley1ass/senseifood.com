@@ -1,0 +1,94 @@
+/* Print styles for Bread Sensei — scoped so other SenseiFood pages are unaffected */
+
+@media print {
+  @page {
+    margin: 12mm;
+  }
+
+  body:has(.bread-sensei-tool) {
+    background: white !important;
+  }
+
+  .bread-sensei-tool.print-start-page-2 {
+    break-before: page;
+    page-break-before: always;
+  }
+
+  .bread-sensei-tool.app-print-root {
+    background: white !important;
+    background-image: none !important;
+    min-height: unset !important;
+  }
+
+  .bread-sensei-tool .app-print-header {
+    display: none !important;
+  }
+
+  .bread-sensei-tool header button,
+  .bread-sensei-tool .print\:hidden {
+    display: none !important;
+  }
+
+  .bread-sensei-tool * {
+    box-shadow: none !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .bread-sensei-tool main.container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .bread-sensei-tool .print-clean-panel {
+    border: 1px solid #333 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: white !important;
+  }
+
+  .bread-sensei-tool .print-nutrition-label {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .bread-sensei-tool h1,
+  .bread-sensei-tool h2,
+  .bread-sensei-tool h3,
+  .bread-sensei-tool h4 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .bread-sensei-tool p {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .bread-sensei-tool thead {
+    display: table-header-group;
+  }
+
+  .bread-sensei-tool tfoot {
+    display: table-footer-group;
+  }
+
+  .bread-sensei-tool tr {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .bread-sensei-tool li {
+    orphans: 3;
+    widows: 3;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .bread-sensei-tool .print-avoid-split {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
