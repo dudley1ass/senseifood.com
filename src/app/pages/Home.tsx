@@ -77,7 +77,7 @@ export default function Home() {
 
       <Hero />
 
-      <section className="px-6 py-10 bg-gradient-to-r from-violet-100/90 via-purple-50 to-pink-100/80 border-b border-purple-200/50">
+      <section className="px-4 sm:px-6 py-5 sm:py-6 bg-gradient-to-r from-violet-100/90 via-purple-50 to-pink-100/80 border-b border-purple-200/50">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           <div>
             <h2 className="text-2xl font-bold text-purple-950 mb-2">Something turned out weird?</h2>
