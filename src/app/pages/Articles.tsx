@@ -3,7 +3,32 @@ import { Link, useSearchParams } from 'react-router';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
 import { useMemo, useState } from 'react';
-import { trackArticleClick, trackCTAClick, trackToolStart } from '../utils/analytics';
+import { trackArticleClick, trackCTAClick, trackClicksToFixRecipe, trackToolStart } from '../utils/analytics';
+import { ALL_NEW_SCIENCE_ARTICLES } from '../data/newScienceArticles';
+import type { ScienceArticleSpec } from '../data/scienceArticleTypes';
+
+const NEW_ARTICLE_CARD_COLORS: Record<ScienceArticleSpec['categoryLabel'], [string, string, string]> = {
+  'Bread Science': ['from-amber-500 to-yellow-600', 'from-yellow-600 to-orange-500', 'from-orange-500 to-amber-700'],
+  'Cookie Science': ['from-amber-500 to-orange-600', 'from-orange-500 to-red-500', 'from-yellow-500 to-amber-600'],
+  'Cake Science': ['from-pink-500 to-purple-600', 'from-purple-500 to-rose-600', 'from-rose-500 to-pink-600'],
+  'Pie Science': ['from-orange-500 to-amber-600', 'from-amber-600 to-yellow-700', 'from-yellow-600 to-orange-600'],
+  'Ice Cream Science': ['from-cyan-500 to-blue-600', 'from-blue-400 to-cyan-500', 'from-sky-500 to-blue-600'],
+  'Coffee Science': ['from-stone-600 to-amber-800', 'from-amber-600 to-yellow-800', 'from-stone-700 to-amber-900'],
+};
+
+function cardsFromNewSpecs() {
+  return ALL_NEW_SCIENCE_ARTICLES.map((spec, i) => {
+    const palette = NEW_ARTICLE_CARD_COLORS[spec.categoryLabel];
+    return {
+      title: spec.title,
+      description: spec.subtitle,
+      category: spec.categoryLabel,
+      readTime: spec.readTime,
+      color: palette[i % palette.length],
+      url: `/${spec.segment}/${spec.slug}`,
+    };
+  });
+}
 
 const FIX_IT_URLS = new Set<string>([
   '/baking-science/how-to-use-fix-my-recipe',
@@ -708,6 +733,7 @@ export default function Articles() {
       color: 'from-rose-500 to-orange-600',
       url: '/baking-science/why-recipes-fail'
     },
+    ...cardsFromNewSpecs(),
   ];
 
   const visibleArticles = useMemo(() => {
@@ -730,6 +756,7 @@ export default function Articles() {
   }, [activeTab, searchQuery]);
 
   const handleFixRecipeOpen = () => {
+    trackClicksToFixRecipe('articles_header');
     trackCTAClick('articles_header', 'fix_my_recipe');
   };
 
@@ -936,7 +963,10 @@ export default function Articles() {
           <div className="flex flex-wrap gap-4">
             <Link
               to="/fix-recipe"
-              onClick={() => trackCTAClick('articles_footer', 'fix_my_recipe')}
+              onClick={() => {
+                trackClicksToFixRecipe('articles_footer');
+                trackCTAClick('articles_footer', 'fix_my_recipe');
+              }}
               className="inline-block bg-white text-purple-700 px-8 py-4 rounded-xl font-bold hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-2 border-white/80"
             >
               Fix My Recipe →

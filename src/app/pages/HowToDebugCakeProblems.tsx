@@ -2,6 +2,7 @@ import { ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
+import { trackClicksToFixRecipe } from '../utils/analytics';
 
 export default function HowToDebugCakeProblems() {
   return (
@@ -104,7 +105,11 @@ export default function HowToDebugCakeProblems() {
 
           <div className="bg-gradient-to-r from-pink-500 to-rose-600 text-white rounded-2xl p-8 my-12 text-center">
             <p className="mb-4 text-white/95">Run cake mode in the debugger</p>
-            <Link to="/fix-recipe?category=cake" className="inline-flex rounded-xl bg-white text-rose-900 font-semibold px-8 py-3">
+            <Link
+              to="/fix-recipe?category=cake"
+              onClick={() => trackClicksToFixRecipe('article_how_to_debug_cake_cta')}
+              className="inline-flex rounded-xl bg-white text-rose-900 font-semibold px-8 py-3"
+            >
               Open Fix My Recipe — Cake →
             </Link>
           </div>

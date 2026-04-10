@@ -94,6 +94,10 @@ import FixRecipesOneVariableAtATime from "./pages/FixRecipesOneVariableAtATime";
 import HowToDebugCookieBatchIssues from "./pages/HowToDebugCookieBatchIssues";
 import HowToDebugCakeProblems from "./pages/HowToDebugCakeProblems";
 import HowToDebugYourCoffee from "./pages/HowToDebugYourCoffee";
+import { createScienceArticleRoutes } from "./components/ScienceArticlePage";
+import { ALL_NEW_SCIENCE_ARTICLES } from "./data/newScienceArticles";
+
+const newScienceArticleRoutes = createScienceArticleRoutes(ALL_NEW_SCIENCE_ARTICLES);
 
 const cookieScienceRoutes = [
   { path: "cookie-science/how-to-debug-cookie-batch-issues", Component: HowToDebugCookieBatchIssues },
@@ -207,4 +211,5 @@ export const appRouteChildren = [
   ...iceCreamScienceRoutes,
   ...coffeeScienceRoutes,
   ...bakingScienceRoutes,
+  ...newScienceArticleRoutes,
 ];

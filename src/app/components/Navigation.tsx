@@ -1,6 +1,7 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-router';
+import { trackClicksToFixRecipe } from '../utils/analytics';
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +29,11 @@ export function Navigation() {
             <Link to="/articles?tab=fix-it" className="text-foreground/80 hover:text-purple-600 transition-colors">
               Articles
             </Link>
-            <Link to="/fix-recipe" className="text-foreground/80 hover:text-purple-600 transition-colors">
+            <Link
+              to="/fix-recipe"
+              className="text-foreground/80 hover:text-purple-600 transition-colors"
+              onClick={() => trackClicksToFixRecipe('navigation_desktop')}
+            >
               Fix My Recipe
             </Link>
             <a href="/#how-it-works" className="text-foreground/80 hover:text-purple-600 transition-colors">
@@ -69,7 +74,10 @@ export function Navigation() {
             <Link
               to="/fix-recipe"
               className="text-foreground/80 hover:text-foreground transition-colors py-2"
-              onClick={() => setIsOpen(false)}
+              onClick={() => {
+                trackClicksToFixRecipe('navigation_mobile');
+                setIsOpen(false);
+              }}
             >
               Fix My Recipe
             </Link>

@@ -1,6 +1,6 @@
 import { Sparkles, ArrowRight, FlaskConical } from 'lucide-react';
 import { Link } from 'react-router';
-import { trackCTAClick, trackHomePath, trackToolStart } from '../utils/analytics';
+import { trackCTAClick, trackClicksToFixRecipe, trackHomePath, trackToolStart } from '../utils/analytics';
 
 const BEANSENSEI = 'https://beansensei.senseifood.com';
 const ICECREAM_URL = 'https://icecreamsensei.senseifood.com';
@@ -29,6 +29,7 @@ export function Hero() {
   };
 
   const handleFixRecipeClick = () => {
+    trackClicksToFixRecipe('home_hero');
     trackCTAClick('home_hero', 'fix_my_recipe');
   };
 

@@ -7,7 +7,7 @@ import { WhatCanIMake } from '../components/WhatCanIMake';
 import { FeaturedExperiments } from '../components/FeaturedExperiments';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
-import { trackCTAClick, trackToolStart } from '../utils/analytics';
+import { trackCTAClick, trackClicksToFixRecipe, trackToolStart } from '../utils/analytics';
 
 export default function Home() {
   const handleFooterCtaClick = () => {
@@ -86,7 +86,10 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 shrink-0">
             <Link
               to="/fix-recipe"
-              onClick={() => trackCTAClick('home_fix_strip', 'fix_my_recipe')}
+              onClick={() => {
+                trackClicksToFixRecipe('home_fix_strip');
+                trackCTAClick('home_fix_strip', 'fix_my_recipe');
+              }}
               className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold px-6 py-3 text-sm shadow-md hover:opacity-95 transition-opacity text-center"
             >
               Open Fix My Recipe
@@ -183,7 +186,10 @@ export default function Home() {
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               to="/fix-recipe"
-              onClick={() => trackCTAClick('home_purple_cta', 'fix_my_recipe')}
+              onClick={() => {
+                trackClicksToFixRecipe('home_purple_cta');
+                trackCTAClick('home_purple_cta', 'fix_my_recipe');
+              }}
               className="inline-flex items-center gap-2 bg-white text-purple-600 px-8 py-4 rounded-lg hover:shadow-2xl transition-all hover:scale-105 font-bold"
             >
               Fix My Recipe

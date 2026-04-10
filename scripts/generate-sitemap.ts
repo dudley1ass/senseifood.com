@@ -1,40 +1,32 @@
 /**
- * SenseiFood — sitemap.xml generator
- * Derives article URLs from src/app/routes.tsx so it stays in sync with the router.
+ * SenseiFood — sitemap.xml generator (TS so we can import the new-article path registry).
  * Run: npm run generate-sitemap
  */
-
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+
+import { NEW_SCIENCE_ARTICLE_PATHS } from '../src/app/data/newScienceArticles/index.ts';
+import { extractArticlePathsFromRoutesFile } from './prerender-paths';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const BASE_URL = 'https://senseifood.com';
-const ROUTES_FILE = path.join(__dirname, 'src', 'app', 'appRouteChildren.tsx');
-const OUTPUT_FILE = path.join(__dirname, 'public', 'sitemap.xml');
+const ROUTES_FILE = path.join(__dirname, '..', 'src', 'app', 'appRouteChildren.tsx');
+const OUTPUT_FILE = path.join(__dirname, '..', 'public', 'sitemap.xml');
 
 const currentDate = new Date().toISOString().split('T')[0];
 
-/** Slightly higher priority for historically strong URLs (edit as you learn from GSC). */
 const HIGH_PRIORITY_LOCS = new Set([
   '/cake-science/why-cakes-sink',
   '/coffee-science/why-coffee-tastes-sour',
   '/cookie-science/why-cookies-spread',
 ]);
 
-function extractArticlePathsFromRoutes() {
-  const content = fs.readFileSync(ROUTES_FILE, 'utf8');
-  const re = /\{\s*path:\s*"([^"]+)",\s*Component:/g;
-  const out = [];
-  let m;
-  while ((m = re.exec(content)) !== null) {
-    const p = m[1];
-    if (p === '/' || !p.includes('/')) continue;
-    out.push(p);
-  }
-  return [...new Set(out)].sort();
+function extractArticlePathsFromRoutes(): string[] {
+  const fromFile = extractArticlePathsFromRoutesFile(ROUTES_FILE);
+  return [...new Set([...fromFile, ...NEW_SCIENCE_ARTICLE_PATHS])].sort();
 }
 
 function writeSitemap() {
@@ -69,7 +61,7 @@ function writeSitemap() {
 
   xml += '</urlset>';
 
-  const publicDir = path.join(__dirname, 'public');
+  const publicDir = path.join(__dirname, '..', 'public');
   if (!fs.existsSync(publicDir)) {
     fs.mkdirSync(publicDir, { recursive: true });
   }

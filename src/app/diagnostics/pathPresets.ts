@@ -16,7 +16,10 @@ function cookieSlugToProblem(slug: string): string {
     slug.includes('spread-too-much') ||
     slug === 'why-cookies-spread' ||
     slug.includes('flatten') ||
-    slug.includes('spread-unevenly')
+    slug.includes('spread-unevenly') ||
+    slug.includes('spread-in-oven') ||
+    slug.includes('chilling-cookie') ||
+    slug.includes('stick-together')
   ) {
     return 'spreads-too-much';
   }
@@ -29,43 +32,81 @@ function cookieSlugToProblem(slug: string): string {
   if (slug.includes('rise-then-fall')) return 'rise-then-fall';
   if (slug.includes('oily')) return 'general';
   if (slug.includes('bitter') || slug.includes('bland')) return 'general';
+  if (slug.includes('too-sweet') || slug.includes('different-each-batch')) return 'general';
   return 'general';
 }
 
 function cakeSlugToProblem(slug: string): string {
   if (slug.includes('how-to-debug')) return 'general';
   if (slug.includes('collapse') || slug.includes('fall-after')) return 'collapse';
-  if (slug.includes('sink')) return 'sink';
-  if (slug.includes('dense')) return 'too-dense';
-  if (slug.includes('dry')) return 'dry';
+  if (slug.includes('sink') || slug.includes('sink-around')) return 'sink';
+  if (slug.includes('dense') || slug.includes('turn-out-flat')) return 'too-dense';
+  if (slug.includes('wet-layer')) return 'general';
+  if (slug.includes('dry') || slug.includes('crumble') || slug.includes('dry-out-after')) {
+    return 'dry';
+  }
   if (slug.includes('dome') || slug.includes('crack')) return 'general';
+  if (
+    slug.includes('stick-to-pans-even') ||
+    slug.includes('bake-unevenly') ||
+    slug.includes('taste-eggy') ||
+    slug.includes('too-sweet') ||
+    slug.includes('stick-to-knife')
+  ) {
+    return 'general';
+  }
   return 'general';
 }
 
 function coffeeSlugToProblem(slug: string): string {
   if (slug.includes('how-to-debug')) return 'extraction-balance';
   if (slug.includes('bitter') || slug.includes('burnt')) return 'bitter';
+  if (slug.includes('over-extracted')) return 'bitter';
   if (slug.includes('sour') || slug.includes('acidic')) return 'sour';
-  if (slug.includes('weak') || slug.includes('watery')) return 'weak';
+  if (slug.includes('under-extracted')) return 'sour';
+  if (slug.includes('weak') || slug.includes('watery') || slug.includes('hollow')) return 'weak';
   if (slug.includes('extraction')) return 'extraction-balance';
+  if (slug.includes('strength-vs-extraction')) return 'extraction-balance';
+  if (slug.includes('different-every-brew')) return 'general';
   return 'general';
 }
 
-function breadSlugToProblem(_slug: string): string {
-  return 'wont-rise';
+function breadSlugToProblem(slug: string): string {
+  if (
+    slug.includes('doesnt-rise') ||
+    slug.includes('rises-too-slow') ||
+    slug.includes('oven-spring') ||
+    slug.includes('needs-steam') ||
+    slug.includes('needs-scoring')
+  ) {
+    return 'wont-rise';
+  }
+  if (
+    slug.includes('dense') ||
+    slug.includes('too-chewy') ||
+    slug.includes('gummy') ||
+    slug.includes('wont-hold-shape') ||
+    slug.includes('springs-back')
+  ) {
+    return 'dense';
+  }
+  return 'general';
 }
 
 function pieSlugToProblem(slug: string): string {
   if (slug.includes('tough')) return 'tough-crust';
   if (slug.includes('soggy')) return 'soggy-crust';
+  if (slug.includes('cracks') || slug.includes('falls-apart')) return 'tough-crust';
   if (slug.includes('shrink')) return 'general';
   if (slug.includes('runny') && slug.includes('filling')) return 'general';
+  if (slug.includes('bubbles-over') || slug.includes('too-pale') || slug.includes('burns-before')) return 'general';
   return 'general';
 }
 
 function iceCreamSlugToProblem(slug: string): string {
   if (slug.includes('icy') || slug.includes('freezer-burn')) return 'icy';
-  if (slug.includes('melt')) return 'melts-fast';
+  if (slug.includes('melt') || slug.includes('too-soft')) return 'melts-fast';
+  if (slug.includes('too-hard') || slug.includes('lacks-flavor') || slug.includes('separates')) return 'general';
   return 'general';
 }
 

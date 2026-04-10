@@ -1,8 +1,10 @@
 /**
- * Single source for “which URLs get static HTML” — keep in sync with generate-sitemap.js regex.
+ * Single source for “which URLs get static HTML” — keep in sync with scripts/generate-sitemap.ts.
  */
 import fs from 'fs';
 import path from 'path';
+
+import { NEW_SCIENCE_ARTICLE_PATHS } from '../src/app/data/newScienceArticles/index.ts';
 
 export function extractArticlePathsFromRoutesFile(routesFile: string): string[] {
   const content = fs.readFileSync(routesFile, 'utf8');
@@ -19,6 +21,7 @@ export function extractArticlePathsFromRoutesFile(routesFile: string): string[] 
 
 export function getAllPrerenderPaths(projectRoot: string): string[] {
   const routesFile = path.join(projectRoot, 'src', 'app', 'appRouteChildren.tsx');
-  const articles = extractArticlePathsFromRoutesFile(routesFile);
+  const fromRoutesFile = extractArticlePathsFromRoutesFile(routesFile);
+  const articles = [...new Set([...fromRoutesFile, ...NEW_SCIENCE_ARTICLE_PATHS])].sort();
   return ['/', '/articles', '/fix-recipe', ...articles.map((p) => `/${p}`)];
 }

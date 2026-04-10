@@ -17,7 +17,15 @@ import {
   type MetricUnit,
   type UsUnit,
 } from '../diagnostics/recipeIngredientModel';
-import { trackCTAClick, trackEvent } from '../utils/analytics';
+import {
+  trackCTAClick,
+  trackEvent,
+  consumeFixRecipeEntryPoint,
+  trackFixRecipeOpen,
+  trackRecipeFixedDiagnosed,
+  trackTimeInTool,
+  trackToolUsedFixRecipe,
+} from '../utils/analytics';
 
 const CATEGORIES: { id: RecipeCategory; label: string; description: string }[] = [
   { id: 'cookie', label: 'Cookies & bars', description: 'Spread, texture, browning' },
@@ -160,6 +168,51 @@ export default function FixRecipe() {
 
   const findingsRef = useRef<HTMLDivElement>(null);
   const [diagnoseBanner, setDiagnoseBanner] = useState(false);
+  const fixRecipeOpenLogged = useRef(false);
+  const sliderUseLogged = useRef(false);
+  const addRowUseLogged = useRef(false);
+  const categoryRef = useRef(category);
+  const problemIdRef = useRef(problemId);
+  categoryRef.current = category;
+  problemIdRef.current = problemId;
+
+  useEffect(() => {
+    if (fixRecipeOpenLogged.current) return;
+    fixRecipeOpenLogged.current = true;
+    const entry = consumeFixRecipeEntryPoint();
+    trackFixRecipeOpen({
+      entry_point: entry,
+      category: initialCategory,
+      problem_id: searchParams.get('problem') ?? PROBLEM_OPTIONS[initialCategory][0]?.id ?? 'general',
+    });
+  }, [initialCategory, searchParams]);
+
+  useEffect(() => {
+    const t0 = Date.now();
+    let sent = false;
+    const flushTime = () => {
+      if (sent) return;
+      sent = true;
+      const sec = Math.round((Date.now() - t0) / 1000);
+      trackTimeInTool('fix_recipe', sec, {
+        category: categoryRef.current,
+        problem_id: problemIdRef.current,
+      });
+    };
+
+    const onHide = () => {
+      if (document.visibilityState === 'hidden') flushTime();
+    };
+
+    window.addEventListener('pagehide', flushTime);
+    document.addEventListener('visibilitychange', onHide);
+
+    return () => {
+      window.removeEventListener('pagehide', flushTime);
+      document.removeEventListener('visibilitychange', onHide);
+      flushTime();
+    };
+  }, []);
 
   useEffect(() => {
     const c = searchParams.get('category');
@@ -243,14 +296,26 @@ export default function FixRecipe() {
 
   const runDiagnose = () => {
     const r = evaluateDiagnostic(evalInput);
+    const rowsFilled = rows.filter((x) => x.amount.trim() !== '').length;
     trackEvent('fix_recipe_diagnose', {
       category,
       problem: problemId,
       signals: r.signals.join(','),
       measurement: measurementSystem,
-      ingredient_rows: rows.filter((x) => x.amount.trim() !== '').length,
+      ingredient_rows: rowsFilled,
       has_recipe_notes: recipeNotes.trim().length > 0,
     });
+    trackToolUsedFixRecipe({ action: 'diagnose', category, problem_id: problemId });
+    if (r.findings.length > 0) {
+      trackRecipeFixedDiagnosed({
+        category,
+        problem_id: problemId,
+        finding_count: r.findings.length,
+        primary_finding_id: r.findings[0]?.id ?? 'none',
+        signal_count: r.signals.length,
+        ingredient_rows_filled: rowsFilled,
+      });
+    }
     setSearchParams({ category, problem: problemId }, { replace: true });
     setDiagnoseBanner(true);
     window.setTimeout(() => setDiagnoseBanner(false), 5000);
@@ -331,7 +396,17 @@ export default function FixRecipe() {
                   <label className="text-xs font-semibold text-stone-800">Ingredients</label>
                   <button
                     type="button"
-                    onClick={() => setRows((r) => [...r, createRecipeRow(measurementSystem)])}
+                    onClick={() => {
+                      setRows((r) => [...r, createRecipeRow(measurementSystem)]);
+                      if (!addRowUseLogged.current) {
+                        addRowUseLogged.current = true;
+                        trackToolUsedFixRecipe({
+                          action: 'add_ingredient_row',
+                          category: categoryRef.current,
+                          problem_id: problemIdRef.current,
+                        });
+                      }
+                    }}
                     className="inline-flex items-center gap-1 text-xs font-semibold text-violet-800 hover:text-violet-950"
                   >
                     <Plus className="w-3.5 h-3.5" />
@@ -612,7 +687,17 @@ export default function FixRecipe() {
                       max={15}
                       step={1}
                       value={val}
-                      onChange={(e) => setVal(Number(e.target.value))}
+                      onChange={(e) => {
+                        setVal(Number(e.target.value));
+                        if (!sliderUseLogged.current) {
+                          sliderUseLogged.current = true;
+                          trackToolUsedFixRecipe({
+                            action: 'what_if_slider',
+                            category: categoryRef.current,
+                            problem_id: problemIdRef.current,
+                          });
+                        }
+                      }}
                       className="w-full accent-violet-600"
                     />
                   </div>

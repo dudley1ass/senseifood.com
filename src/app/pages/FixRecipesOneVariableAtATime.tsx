@@ -2,6 +2,7 @@ import { ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
+import { trackClicksToFixRecipe } from '../utils/analytics';
 
 export default function FixRecipesOneVariableAtATime() {
   return (
@@ -102,6 +103,7 @@ export default function FixRecipesOneVariableAtATime() {
             <p className="text-lg mb-4">Put the habit into practice</p>
             <Link
               to="/fix-recipe"
+              onClick={() => trackClicksToFixRecipe('article_fix_one_variable_at_a_time')}
               className="inline-flex rounded-xl bg-white text-teal-800 font-semibold px-8 py-3 hover:shadow-lg transition-shadow"
             >
               Open Fix My Recipe →

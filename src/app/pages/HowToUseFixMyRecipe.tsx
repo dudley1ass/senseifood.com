@@ -2,6 +2,7 @@ import { ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
+import { trackClicksToFixRecipe } from '../utils/analytics';
 
 export default function HowToUseFixMyRecipe() {
   return (
@@ -119,6 +120,7 @@ export default function HowToUseFixMyRecipe() {
             </p>
             <Link
               to="/fix-recipe"
+              onClick={() => trackClicksToFixRecipe('article_how_to_use_fix_my_recipe')}
               className="inline-flex items-center justify-center rounded-xl bg-white text-purple-800 font-semibold px-8 py-3 hover:shadow-lg transition-shadow"
             >
               Go to Fix My Recipe →

@@ -2,6 +2,7 @@ import { ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
+import { trackClicksToFixRecipe } from '../utils/analytics';
 
 export default function HowToDebugCookieBatchIssues() {
   return (
@@ -47,7 +48,15 @@ export default function HowToDebugCookieBatchIssues() {
               <p className="text-foreground/80 leading-relaxed">
                 Split cookie failures into <strong>spread</strong>, <strong>structure</strong>, <strong>browning</strong>, and{' '}
                 <strong>mouthfeel</strong>. Note butter temp, chill, and whether the whole sheet failed the same way. Then
-                open <Link to="/fix-recipe" className="text-amber-800 font-medium underline">Fix My Recipe</Link> on
+                open{' '}
+                <Link
+                  to="/fix-recipe"
+                  onClick={() => trackClicksToFixRecipe('article_how_to_debug_cookie_inline')}
+                  className="text-amber-800 font-medium underline"
+                >
+                  Fix My Recipe
+                </Link>{' '}
+                on
                 Cookie + the closest problem and add grams if you can.
               </p>
             </div>
@@ -98,7 +107,11 @@ export default function HowToDebugCookieBatchIssues() {
 
           <div className="bg-gradient-to-r from-amber-500 to-orange-600 text-white rounded-2xl p-8 my-12 text-center">
             <p className="mb-4 text-white/95">Debug this batch in the app</p>
-            <Link to="/fix-recipe?category=cookie" className="inline-flex rounded-xl bg-white text-amber-900 font-semibold px-8 py-3">
+            <Link
+              to="/fix-recipe?category=cookie"
+              onClick={() => trackClicksToFixRecipe('article_how_to_debug_cookie_cta')}
+              className="inline-flex rounded-xl bg-white text-amber-900 font-semibold px-8 py-3"
+            >
               Open Fix My Recipe — Cookies →
             </Link>
           </div>

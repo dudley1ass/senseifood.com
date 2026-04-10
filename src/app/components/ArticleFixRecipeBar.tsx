@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { Link, useLocation } from 'react-router';
 import { getFixContextFromPath } from '../diagnostics/pathPresets';
-import { trackCTAClick } from '../utils/analytics';
+import { trackCTAClick, trackClicksToFixRecipe } from '../utils/analytics';
 
 export function ArticleFixRecipeBar() {
   const location = useLocation();
@@ -43,7 +43,10 @@ export function ArticleFixRecipeBar() {
         <Link
           to={href}
           className="shrink-0 inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 text-white text-sm font-semibold px-5 py-2.5 shadow-md hover:opacity-95 transition-opacity"
-          onClick={() => trackCTAClick('article_sticky_bar', 'fix_my_recipe')}
+          onClick={() => {
+            trackClicksToFixRecipe('article_sticky_bar');
+            trackCTAClick('article_sticky_bar', 'fix_my_recipe');
+          }}
         >
           Open Fix My Recipe →
         </Link>

@@ -8,7 +8,7 @@
     "build": "vite build && tsx scripts/prerender.tsx",
     "preview": "vite preview",
     "start": "vite preview",
-    "generate-sitemap": "node generate-sitemap.js"
+    "generate-sitemap": "tsx scripts/generate-sitemap.ts"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
