@@ -141,17 +141,17 @@ export function WhatCanIMake() {
   const trackSelectionAndTool = (s: Extract<Suggestion, { kind: 'tool' }>, source: string) => {
     const labels = PANTRY_ITEMS.filter((i) => selected.has(i.id)).map((i) => i.label);
     trackIngredientSelection(labels);
-    trackCTAClick(source, `open_${s.toolName}`);
+    trackCTAClick(source, `open_${s.toolName}`, s.href);
     trackToolStart(s.toolName, source);
   };
 
   const handleBrowseTools = () => {
-    trackCTAClick('what_can_i_make', 'browse_all_tools');
+    trackCTAClick('what_can_i_make', 'browse_all_tools', '#pick-starting-point');
   };
 
   const handleScrollToPicker = () => {
     trackHomePath('ingredients', 'what_can_i_make_section');
-    trackCTAClick('what_can_i_make', 'jump_to_ingredient_picker');
+    trackCTAClick('what_can_i_make', 'jump_to_ingredient_picker', '#ingredient-picker');
   };
 
   return (
@@ -242,7 +242,7 @@ export function WhatCanIMake() {
                               to={s.to}
                               onClick={() => {
                                 trackIngredientSelection(selectedLabels);
-                                trackCTAClick('what_can_i_make_suggestion', 'read_bread_science');
+                                trackCTAClick('what_can_i_make_suggestion', 'read_bread_science', s.to);
                               }}
                               className="inline-flex items-center gap-1 text-xs font-bold bg-white/20 hover:bg-white/30 px-3 py-1.5 rounded-lg"
                             >

@@ -57,13 +57,21 @@ export function trackIngredientSelection(ingredients: string[]) {
 }
 
 /**
- * Track CTA button clicks
+ * Track CTA button clicks.
+ * Always sends `page_path` (SPA path when the click fires). Pass `linkTarget` for the navigation
+ * destination (path, hash, or absolute URL) so GA4 Explorations can split homepage vs article CTAs
+ * and compare destinations.
  */
-export function trackCTAClick(ctaLocation: string, ctaText: string) {
-  trackEvent('cta_click', {
+export function trackCTAClick(ctaLocation: string, ctaText: string, linkTarget?: string) {
+  const params: Record<string, string> = {
     location: ctaLocation,
     text: ctaText,
-  });
+    page_path: typeof window !== 'undefined' ? window.location.pathname : '',
+  };
+  if (linkTarget) {
+    params.link_target = linkTarget;
+  }
+  trackEvent('cta_click', params);
 }
 
 /**

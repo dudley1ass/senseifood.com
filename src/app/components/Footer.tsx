@@ -27,7 +27,7 @@ export function Footer() {
 
             {/* Tools */}
             <div>
-              <h4 className="mb-4 text-white/90">Tools</h4>
+              <h4 className="mb-4 text-purple-200/95 font-semibold text-sm tracking-wide uppercase">Tools</h4>
               <ul className="space-y-3">
                 <li>
                   <a href="https://cookiesensei.senseifood.com" target="_blank" rel="noopener noreferrer" className="text-sm text-white/70 hover:text-white transition-colors">
@@ -64,26 +64,26 @@ export function Footer() {
 
             {/* Learn */}
             <div>
-              <h4 className="mb-4 text-white/90">Learn</h4>
+              <h4 className="mb-4 text-purple-200/95 font-semibold text-sm tracking-wide uppercase">Learn</h4>
               <ul className="space-y-3">
                 <li>
-                  <a href="#experiments" className="text-sm text-white/70 hover:text-white transition-colors">
-                    Experiments
+                  <a href="#experiments" className="text-sm text-white/75 hover:text-white transition-colors">
+                    Featured Articles
                   </a>
                 </li>
                 <li>
-                  <a href="#how-it-works" className="text-sm text-white/70 hover:text-white transition-colors">
+                  <Link to="/articles" className="text-sm text-white/75 hover:text-white transition-colors">
+                    Science library
+                  </Link>
+                </li>
+                <li>
+                  <a href="#how-it-works" className="text-sm text-white/75 hover:text-white transition-colors">
                     How It Works
                   </a>
                 </li>
                 <li>
-                  <a href="/#pick-starting-point" className="text-sm text-white/70 hover:text-white transition-colors">
+                  <a href="/#pick-starting-point" className="text-sm text-white/75 hover:text-white transition-colors">
                     Our Tools
-                  </a>
-                </li>
-                <li>
-                  <a href="#what-can-i-make" className="text-sm text-white/70 hover:text-white transition-colors">
-                    What Can I Make?
                   </a>
                 </li>
               </ul>
@@ -91,7 +91,7 @@ export function Footer() {
 
             {/* Connect */}
             <div>
-              <h4 className="mb-4 text-white/90">Connect</h4>
+              <h4 className="mb-4 text-purple-200/95 font-semibold text-sm tracking-wide uppercase">Connect</h4>
               <ul className="space-y-3 mb-6">
                 <li>
                   <a href="#about" className="text-sm text-white/70 hover:text-white transition-colors">

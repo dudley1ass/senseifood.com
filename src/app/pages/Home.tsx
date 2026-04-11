@@ -1,5 +1,5 @@
 import { Link } from 'react-router';
-import { Cookie, Cake, Coffee, IceCream, PieChart, Wheat, ArrowRight } from 'lucide-react';
+import { Cookie, Cake, Coffee, IceCream, PieChart, Wheat } from 'lucide-react';
 import { Hero } from '../components/Hero';
 import { ToolCard } from '../components/ToolCard';
 import { HowItWorks } from '../components/HowItWorks';
@@ -11,12 +11,12 @@ import { trackCTAClick, trackClicksToFixRecipe, trackToolStart } from '../utils/
 
 export default function Home() {
   const handleFooterCtaClick = () => {
-    trackCTAClick('home_footer', 'try_cookie_sensei');
+    trackCTAClick('home_footer', 'try_cookie_sensei', 'https://cookiesensei.senseifood.com');
     trackToolStart('CookieSensei', 'home_footer');
   };
 
-  const handleBakeQuickLink = (label: string, toolName: string) => {
-    trackCTAClick('home_bake_quick', label);
+  const handleBakeQuickLink = (label: string, toolName: string, linkTarget: string) => {
+    trackCTAClick('home_bake_quick', label, linkTarget);
     trackToolStart(toolName, 'home_bake_quick');
   };
 
@@ -72,12 +72,12 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-orange-50">
+    <div className="min-h-screen bg-[#F8F7FF]">
       <Navigation />
 
       <Hero />
 
-      <section className="px-4 sm:px-6 py-5 sm:py-6 bg-gradient-to-r from-violet-100/90 via-purple-50 to-pink-100/80 border-b border-purple-200/50">
+      <section className="px-4 sm:px-6 py-6 sm:py-8 bg-gradient-to-r from-violet-100/95 via-fuchsia-50/80 to-pink-100/90 border-y border-purple-200/40">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           <div>
             <h2 className="text-2xl font-bold text-purple-950 mb-2">Something turned out weird?</h2>
@@ -96,7 +96,7 @@ export default function Home() {
               to="/fix-recipe"
               onClick={() => {
                 trackClicksToFixRecipe('home_fix_strip');
-                trackCTAClick('home_fix_strip', 'fix_my_recipe');
+                trackCTAClick('home_fix_strip', 'fix_my_recipe', '/fix-recipe');
               }}
               className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold px-6 py-3 text-sm shadow-md hover:opacity-95 transition-opacity text-center"
             >
@@ -104,7 +104,7 @@ export default function Home() {
             </Link>
             <Link
               to="/articles?tab=fix-it"
-              onClick={() => trackCTAClick('home_fix_strip', 'fix_it_articles_tab')}
+              onClick={() => trackCTAClick('home_fix_strip', 'fix_it_articles_tab', '/articles?tab=fix-it')}
               className="inline-flex items-center justify-center rounded-xl border-2 border-purple-400 bg-white text-purple-900 font-semibold px-6 py-3 text-sm hover:bg-purple-50 transition-colors text-center"
             >
               Fix it articles →
@@ -115,7 +115,10 @@ export default function Home() {
 
       <WhatCanIMake />
 
-      <section id="pick-starting-point" className="py-24 px-6 bg-gradient-to-br from-cyan-50 via-blue-50 to-purple-50 scroll-mt-24">
+      <section
+        id="pick-starting-point"
+        className="py-20 md:py-24 px-4 sm:px-6 bg-gradient-to-b from-slate-50/90 via-sky-50/40 to-purple-50/30 scroll-mt-24"
+      >
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl mb-4 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
@@ -137,7 +140,7 @@ export default function Home() {
             <div className="flex flex-wrap gap-3">
               <Link
                 to="/bread-sensei"
-                onClick={() => handleBakeQuickLink('bread', 'BreadSensei')}
+                onClick={() => handleBakeQuickLink('bread', 'BreadSensei', '/bread-sensei')}
                 className="inline-flex items-center gap-2 rounded-xl bg-white border-2 border-yellow-300 px-4 py-2.5 text-sm font-semibold text-yellow-950 hover:shadow-md transition-all"
               >
                 Bread → Bread Sensei
@@ -146,7 +149,7 @@ export default function Home() {
                 href="https://cookiesensei.senseifood.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => handleBakeQuickLink('cookies', 'CookieSensei')}
+                onClick={() => handleBakeQuickLink('cookies', 'CookieSensei', 'https://cookiesensei.senseifood.com')}
                 className="inline-flex items-center gap-2 rounded-xl bg-white border-2 border-amber-300 px-4 py-2.5 text-sm font-semibold text-amber-900 hover:shadow-md transition-all"
               >
                 Cookies → CookieSensei
@@ -155,7 +158,7 @@ export default function Home() {
                 href="https://cakesensei.senseifood.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => handleBakeQuickLink('cakes', 'CakeSensei')}
+                onClick={() => handleBakeQuickLink('cakes', 'CakeSensei', 'https://cakesensei.senseifood.com')}
                 className="inline-flex items-center gap-2 rounded-xl bg-white border-2 border-pink-200 px-4 py-2.5 text-sm font-semibold text-pink-900 hover:shadow-md transition-all"
               >
                 Cakes → CakeSensei
@@ -164,7 +167,7 @@ export default function Home() {
                 href="https://cookiesensei.senseifood.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => handleBakeQuickLink('brownies', 'CookieSensei')}
+                onClick={() => handleBakeQuickLink('brownies', 'CookieSensei', 'https://cookiesensei.senseifood.com')}
                 className="inline-flex items-center gap-2 rounded-xl bg-white border-2 border-stone-300 px-4 py-2.5 text-sm font-semibold text-stone-900 hover:shadow-md transition-all"
               >
                 Brownies → CookieSensei
@@ -188,37 +191,42 @@ export default function Home() {
 
       <FeaturedExperiments />
 
-      <section className="py-24 px-6 bg-gradient-to-br from-purple-600 via-pink-600 to-orange-600 text-white relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
+      <section
+        className="py-20 md:py-28 px-4 sm:px-6 text-white relative overflow-hidden"
+        style={{
+          background: 'linear-gradient(105deg, #6d28d9 0%, #db2777 45%, #ea580c 100%)',
+        }}
+      >
+        <div className="absolute top-0 right-0 w-[min(100%,28rem)] h-96 bg-white/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-[min(100%,28rem)] h-96 bg-white/10 rounded-full blur-3xl pointer-events-none" />
 
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <h2 className="text-4xl mb-6">Solve the next recipe problem</h2>
-          <p className="text-xl text-white/90 mb-8">
-            Fix a failed batch with <strong className="text-white">Fix My Recipe</strong>, go deep in the library, or open
-            a Sensei tool when you want sliders and numbers.
+          <h2 className="text-3xl sm:text-4xl md:text-[2.5rem] font-bold tracking-tight mb-5 drop-shadow-sm">
+            Solve the next recipe problem
+          </h2>
+          <p className="text-lg sm:text-xl text-white/95 mb-10 max-w-2xl mx-auto leading-relaxed">
+            Fix a failed batch with <strong className="text-white font-semibold">Fix My Recipe</strong>, go deep in the
+            library, or open a Sensei tool when you want sliders and numbers.
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4">
             <Link
               to="/fix-recipe"
               onClick={() => {
                 trackClicksToFixRecipe('home_purple_cta');
-                trackCTAClick('home_purple_cta', 'fix_my_recipe');
+                trackCTAClick('home_purple_cta', 'fix_my_recipe', '/fix-recipe');
               }}
-              className="inline-flex items-center gap-2 bg-white text-purple-600 px-8 py-4 rounded-lg hover:shadow-2xl transition-all hover:scale-105 font-bold"
+              className="inline-flex items-center justify-center gap-2 bg-white text-violet-700 px-8 py-4 rounded-xl hover:shadow-2xl transition-all hover:scale-[1.02] font-bold text-base shadow-lg"
             >
-              Fix My Recipe
-              <ArrowRight className="w-5 h-5" />
+              Fix My Recipe →
             </Link>
             <a
               href="https://cookiesensei.senseifood.com"
               target="_blank"
               rel="noopener noreferrer"
               onClick={handleFooterCtaClick}
-              className="inline-flex items-center gap-2 bg-white/15 text-white border-2 border-white/50 px-8 py-4 rounded-lg hover:bg-white/25 transition-all hover:scale-105 font-bold"
+              className="inline-flex items-center justify-center gap-2 bg-transparent text-white border-2 border-white/85 px-8 py-4 rounded-xl hover:bg-white/15 transition-all font-bold text-base"
             >
-              Try CookieSensei
-              <ArrowRight className="w-5 h-5" />
+              Try CookieSensei →
             </a>
           </div>
         </div>

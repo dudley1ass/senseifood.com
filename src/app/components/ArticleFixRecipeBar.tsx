@@ -45,7 +45,7 @@ export function ArticleFixRecipeBar() {
           className="shrink-0 inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 text-white text-sm font-semibold px-5 py-2.5 shadow-md hover:opacity-95 transition-opacity"
           onClick={() => {
             trackClicksToFixRecipe('article_sticky_bar');
-            trackCTAClick('article_sticky_bar', 'fix_my_recipe');
+            trackCTAClick('article_sticky_bar', 'fix_my_recipe', href);
           }}
         >
           Open Fix My Recipe →

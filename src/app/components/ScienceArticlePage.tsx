@@ -154,7 +154,7 @@ export function ScienceArticlePage({ spec }: Props) {
               to={fixHref}
               onClick={() => {
                 trackClicksToFixRecipe('science_article_inline');
-                trackCTAClick('science_article_inline', 'fix_my_recipe');
+                trackCTAClick('science_article_inline', 'fix_my_recipe', fixHref);
               }}
               className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 text-white text-sm font-semibold px-5 py-2.5 shadow-md hover:opacity-95 transition-opacity"
             >
@@ -251,7 +251,7 @@ export function ScienceArticlePage({ spec }: Props) {
                 to={fixHref}
                 onClick={() => {
                   trackClicksToFixRecipe('science_article_footer');
-                  trackCTAClick('science_article_footer', 'fix_my_recipe');
+                  trackCTAClick('science_article_footer', 'fix_my_recipe', fixHref);
                 }}
                 className="inline-block bg-white text-stone-900 px-8 py-4 rounded-xl font-bold hover:shadow-xl transition-all text-center"
               >

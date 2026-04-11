@@ -1,8 +1,6 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-router';
-import { trackClicksToFixRecipe } from '../utils/analytics';
-
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -21,28 +19,18 @@ export function Navigation() {
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
-            <a href="/#pick-starting-point" className="text-foreground/80 hover:text-purple-600 transition-colors">
+          {/* Desktop Navigation — matches marketing layout */}
+          <div className="hidden md:flex items-center gap-8 text-[15px]">
+            <a href="/#pick-starting-point" className="text-stone-700 hover:text-purple-600 transition-colors font-medium">
               Tools
             </a>
-            <Link to="/articles?tab=fix-it" className="text-foreground/80 hover:text-purple-600 transition-colors">
+            <Link to="/articles" className="text-stone-700 hover:text-purple-600 transition-colors font-medium">
               Articles
             </Link>
-            <Link
-              to="/fix-recipe"
-              className="text-foreground/80 hover:text-purple-600 transition-colors"
-              onClick={() => trackClicksToFixRecipe('navigation_desktop')}
-            >
-              Fix My Recipe
-            </Link>
-            <Link to="/bread-sensei" className="text-foreground/80 hover:text-purple-600 transition-colors">
-              Bread Sensei
-            </Link>
-            <a href="/#how-it-works" className="text-foreground/80 hover:text-purple-600 transition-colors">
+            <a href="/#how-it-works" className="text-stone-700 hover:text-purple-600 transition-colors font-medium">
               How It Works
             </a>
-            <a href="/#about" className="text-foreground/80 hover:text-purple-600 transition-colors">
+            <a href="/#about" className="text-stone-700 hover:text-purple-600 transition-colors font-medium">
               About
             </a>
           </div>
@@ -59,48 +47,31 @@ export function Navigation() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden mt-4 pb-4 flex flex-col gap-4">
-            <a 
-              href="/#pick-starting-point" 
-              className="text-foreground/80 hover:text-foreground transition-colors py-2"
+          <div className="md:hidden mt-4 pb-4 flex flex-col gap-1 border-t border-purple-100 pt-4">
+            <a
+              href="/#pick-starting-point"
+              className="text-stone-800 hover:text-purple-600 transition-colors py-2.5 font-medium"
               onClick={() => setIsOpen(false)}
             >
               Tools
             </a>
-            <Link 
-              to="/articles?tab=fix-it" 
-              className="text-foreground/80 hover:text-foreground transition-colors py-2"
+            <Link
+              to="/articles"
+              className="text-stone-800 hover:text-purple-600 transition-colors py-2.5 font-medium"
               onClick={() => setIsOpen(false)}
             >
               Articles
             </Link>
-            <Link
-              to="/fix-recipe"
-              className="text-foreground/80 hover:text-foreground transition-colors py-2"
-              onClick={() => {
-                trackClicksToFixRecipe('navigation_mobile');
-                setIsOpen(false);
-              }}
-            >
-              Fix My Recipe
-            </Link>
-            <Link
-              to="/bread-sensei"
-              className="text-foreground/80 hover:text-foreground transition-colors py-2"
-              onClick={() => setIsOpen(false)}
-            >
-              Bread Sensei
-            </Link>
-            <a 
-              href="/#how-it-works" 
-              className="text-foreground/80 hover:text-foreground transition-colors py-2"
+            <a
+              href="/#how-it-works"
+              className="text-stone-800 hover:text-purple-600 transition-colors py-2.5 font-medium"
               onClick={() => setIsOpen(false)}
             >
               How It Works
             </a>
-            <a 
-              href="/#about" 
-              className="text-foreground/80 hover:text-foreground transition-colors py-2"
+            <a
+              href="/#about"
+              className="text-stone-800 hover:text-purple-600 transition-colors py-2.5 font-medium"
               onClick={() => setIsOpen(false)}
             >
               About

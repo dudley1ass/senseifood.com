@@ -67,16 +67,16 @@ export default function Articles() {
 
   const setActiveTab = (id: TabId) => {
     setSearchParams({ tab: id }, { replace: true });
-    trackCTAClick('articles_tab', id);
+    trackCTAClick('articles_tab', id, `/articles?tab=${id}`);
   };
 
-  const handleArticleClick = (articleTitle: string, source: string) => {
+  const handleArticleClick = (articleTitle: string, source: string, articleUrl: string) => {
     trackArticleClick(articleTitle);
-    trackCTAClick(source, 'read_article');
+    trackCTAClick(source, 'read_article', articleUrl);
   };
 
   const handleToolCtaClick = (location: string) => {
-    trackCTAClick(location, 'try_cookie_sensei');
+    trackCTAClick(location, 'try_cookie_sensei', 'https://cookiesensei.senseifood.com');
     trackToolStart('CookieSensei', location);
   };
 
@@ -757,7 +757,7 @@ export default function Articles() {
 
   const handleFixRecipeOpen = () => {
     trackClicksToFixRecipe('articles_header');
-    trackCTAClick('articles_header', 'fix_my_recipe');
+    trackCTAClick('articles_header', 'fix_my_recipe', '/fix-recipe');
   };
 
   return (
@@ -912,7 +912,8 @@ export default function Articles() {
                 onClick={() =>
                   handleArticleClick(
                     article.title,
-                    searchQuery.trim() ? 'articles_search_grid' : 'articles_tab_grid'
+                    searchQuery.trim() ? 'articles_search_grid' : 'articles_tab_grid',
+                    article.url
                   )
                 }
                 className="bg-white border-2 border-transparent rounded-2xl p-6 md:p-8 hover:shadow-2xl hover:border-purple-200 transition-all group cursor-pointer hover:scale-[1.02] flex flex-col h-full min-h-[200px]"
@@ -965,7 +966,7 @@ export default function Articles() {
               to="/fix-recipe"
               onClick={() => {
                 trackClicksToFixRecipe('articles_footer');
-                trackCTAClick('articles_footer', 'fix_my_recipe');
+                trackCTAClick('articles_footer', 'fix_my_recipe', '/fix-recipe');
               }}
               className="inline-block bg-white text-purple-700 px-8 py-4 rounded-xl font-bold hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-2 border-white/80"
             >

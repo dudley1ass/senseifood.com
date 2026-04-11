@@ -650,7 +650,9 @@ export default function FixRecipe() {
                       <Link
                         to={f.relatedArticlePath}
                         className="inline-flex mt-2 text-sm font-semibold text-violet-800 hover:text-violet-950 hover:underline"
-                        onClick={() => trackCTAClick('fix_recipe_finding', f.relatedArticlePath ?? '')}
+                        onClick={() =>
+                          trackCTAClick('fix_recipe_finding', 'related_article', f.relatedArticlePath ?? '')
+                        }
                       >
                         Article →
                       </Link>
@@ -716,7 +718,9 @@ export default function FixRecipe() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center rounded-lg bg-amber-100 text-amber-950 text-sm font-bold px-4 py-2 border-2 border-amber-400 hover:bg-amber-200 transition-colors"
-                  onClick={() => trackCTAClick('fix_recipe', 'open_cookie_sensei')}
+                  onClick={() =>
+                    trackCTAClick('fix_recipe', 'open_cookie_sensei', 'https://cookiesensei.senseifood.com')
+                  }
                 >
                   CookieSensei →
                 </a>

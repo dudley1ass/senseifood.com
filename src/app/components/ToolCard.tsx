@@ -14,7 +14,7 @@ interface ToolCardProps {
 
 export function ToolCard({ name, icon: Icon, description, url, color, outcome }: ToolCardProps) {
   const handleToolLaunch = () => {
-    trackCTAClick('home_pick_starting_point', `launch_${name.toLowerCase()}`);
+    trackCTAClick('home_pick_starting_point', `launch_${name.toLowerCase()}`, url);
     trackToolStart(name, 'home_pick_starting_point');
   };
 
