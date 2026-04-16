@@ -1,8 +1,9 @@
 import { ArrowLeft, BookOpen, Search, Wrench } from 'lucide-react';
-import { Link, useNavigate, useSearchParams } from 'react-router';
+import { Link, useSearchParams } from 'react-router';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
 import { useMemo, useState } from 'react';
+import { SAUCE_SENSEI_APP_URL } from '../config/publicUrls';
 import { trackArticleClick, trackCTAClick, trackClicksToFixRecipe, trackToolStart } from '../utils/analytics';
 import { ALL_NEW_SCIENCE_ARTICLES } from '../data/newScienceArticles';
 import type { ScienceArticleSpec } from '../data/scienceArticleTypes';
@@ -62,7 +63,6 @@ const ARTICLE_TABS: { id: TabId; label: string; category: 'FIX_IT' | 'ALL' | str
 ];
 
 export default function Articles() {
-  const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -70,9 +70,9 @@ export default function Articles() {
 
   const setActiveTab = (id: TabId) => {
     if (id === 'sauces') {
-      trackCTAClick('articles_tab', id, '/sauce-sensei');
+      trackCTAClick('articles_tab', id, SAUCE_SENSEI_APP_URL);
       trackToolStart('SauceSensei', 'articles_tab');
-      navigate('/sauce-sensei');
+      window.location.assign(SAUCE_SENSEI_APP_URL);
       return;
     }
     setSearchParams({ tab: id }, { replace: true });

@@ -7,6 +7,7 @@ import { WhatCanIMake } from '../components/WhatCanIMake';
 import { FeaturedExperiments } from '../components/FeaturedExperiments';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
+import { SAUCE_SENSEI_APP_URL } from '../config/publicUrls';
 import { trackCTAClick, trackClicksToFixRecipe, trackToolStart } from '../utils/analytics';
 
 export default function Home() {
@@ -66,7 +67,7 @@ export default function Home() {
       name: 'Sauce Sensei',
       icon: Soup,
       description: 'Balance wheel + practical recovery rules for split, thin, or flat sauces.',
-      url: '/sauce-sensei',
+      url: SAUCE_SENSEI_APP_URL,
       color: 'from-rose-600 to-orange-600'
     },
     {
@@ -153,13 +154,15 @@ export default function Home() {
               >
                 Bread → Bread Sensei
               </Link>
-              <Link
-                to="/sauce-sensei"
-                onClick={() => handleBakeQuickLink('sauces', 'SauceSensei', '/sauce-sensei')}
+              <a
+                href={SAUCE_SENSEI_APP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => handleBakeQuickLink('sauces', 'SauceSensei', SAUCE_SENSEI_APP_URL)}
                 className="inline-flex items-center gap-2 rounded-xl bg-white border-2 border-rose-300 px-4 py-2.5 text-sm font-semibold text-rose-900 hover:shadow-md transition-all"
               >
                 Sauces → Sauce Sensei
-              </Link>
+              </a>
               <a
                 href="https://cookiesensei.senseifood.com"
                 target="_blank"

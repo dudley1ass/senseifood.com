@@ -1,6 +1,7 @@
 import { Github, Twitter, Mail } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-router';
+import { SAUCE_SENSEI_APP_URL } from '../config/publicUrls';
 import { ContactFormModal } from './ContactFormModal';
 
 export function Footer() {
@@ -60,9 +61,14 @@ export function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/sauce-sensei" className="text-sm text-white/70 hover:text-white transition-colors">
+                  <a
+                    href={SAUCE_SENSEI_APP_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-white/70 hover:text-white transition-colors"
+                  >
                     Sauce Sensei
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>

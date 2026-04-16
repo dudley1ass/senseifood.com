@@ -1,9 +1,8 @@
 import { ArrowRight, ExternalLink, FlaskConical } from 'lucide-react';
 import { Link } from 'react-router';
+import { SAUCE_SENSEI_APP_URL } from '../config/publicUrls';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
-
-const SAUCE_SENSEI_APP_URL = 'https://saucesensei.senseifood.com';
 
 export default function SauceSensei() {
   return (
@@ -28,8 +27,8 @@ export default function SauceSensei() {
           <div className="max-w-xl mx-auto text-center">
             <p className="text-stone-600 text-sm leading-relaxed mb-8">
               The interactive builder runs on{' '}
-              <span className="font-medium text-stone-800">saucesensei.senseifood.com</span>. It cannot be embedded here
-              (the app blocks iframes for security), so open it in your browser using one of the options below.
+              <span className="font-medium text-stone-800">saucesensei.com</span>. It cannot be embedded here (the app
+              blocks iframes for security), so open it in your browser using one of the options below.
             </p>
             <div className="flex flex-col sm:flex-row flex-wrap items-stretch justify-center gap-3">
               <a
