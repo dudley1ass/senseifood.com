@@ -4,11 +4,12 @@
 import fs from 'fs';
 import path from 'path';
 
-import { NEW_SCIENCE_ARTICLE_PATHS } from '../src/app/data/newScienceArticles/index.ts';
+import { ARTICLE_CONTENT_PATHS } from '../src/app/articleContentRoutes.tsx';
+import { INLINE_GAP_ARTICLE_PATHS } from '../src/app/inlineGapArticleRoutes.tsx';
 
 export function extractArticlePathsFromRoutesFile(routesFile: string): string[] {
   const content = fs.readFileSync(routesFile, 'utf8');
-  const re = /\{\s*path:\s*"([^"]+)",\s*Component:/g;
+  const re = /\{\s*path:\s*["']([^"']+)["'],\s*Component:/g;
   const out: string[] = [];
   let m: RegExpExecArray | null;
   while ((m = re.exec(content)) !== null) {
@@ -19,9 +20,14 @@ export function extractArticlePathsFromRoutesFile(routesFile: string): string[] 
   return [...new Set(out)].sort();
 }
 
-export function getAllPrerenderPaths(projectRoot: string): string[] {
+/** Relative article paths (no leading slash), deduped — same set the sitemap uses for article URLs. */
+export function getAllArticleRelativePaths(projectRoot: string): string[] {
   const routesFile = path.join(projectRoot, 'src', 'app', 'appRouteChildren.tsx');
   const fromRoutesFile = extractArticlePathsFromRoutesFile(routesFile);
-  const articles = [...new Set([...fromRoutesFile, ...NEW_SCIENCE_ARTICLE_PATHS])].sort();
+  return [...new Set([...fromRoutesFile, ...ARTICLE_CONTENT_PATHS, ...INLINE_GAP_ARTICLE_PATHS])].sort();
+}
+
+export function getAllPrerenderPaths(projectRoot: string): string[] {
+  const articles = getAllArticleRelativePaths(projectRoot);
   return ['/', '/articles', '/fix-recipe', '/bread-sensei', '/sauce-sensei', ...articles.map((p) => `/${p}`)];
 }

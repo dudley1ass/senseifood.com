@@ -64,7 +64,7 @@ export function Hero() {
   };
 
   return (
-    <section className="relative overflow-hidden py-6 sm:py-8 md:py-10 px-4 sm:px-6">
+    <section className="relative overflow-hidden py-4 sm:py-6 md:py-7 px-4 sm:px-6">
       <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 via-pink-500/10 to-orange-500/10 -z-10" />
 
       <div className="absolute top-12 left-6 w-56 h-56 sm:w-72 sm:h-72 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-full blur-3xl -z-10" />
@@ -73,8 +73,8 @@ export function Hero() {
 
       <div className="max-w-4xl mx-auto text-center">
         {/* Opening beat: rotating word + your line (same idea, cleaned grammar). */}
-        <div className="mb-8 sm:mb-10 md:mb-12">
-          <h1 className="text-[1.65rem] leading-snug sm:text-4xl md:text-5xl font-semibold tracking-tight text-purple-950 mb-4 sm:mb-5">
+        <div className="mb-5 sm:mb-6 md:mb-7">
+          <h1 className="text-[1.65rem] leading-snug sm:text-4xl md:text-5xl font-semibold tracking-tight text-purple-950 mb-3 sm:mb-4">
             What did you{' '}
             <span
               className="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 bg-clip-text text-transparent inline-block min-h-[1.2em]"
@@ -91,18 +91,14 @@ export function Hero() {
           </p>
         </div>
 
-        <div className="h-px max-w-md mx-auto bg-gradient-to-r from-transparent via-purple-200 to-transparent mb-8 sm:mb-10" aria-hidden />
+        <div className="h-px max-w-md mx-auto bg-gradient-to-r from-transparent via-purple-200 to-transparent mb-4 sm:mb-5" aria-hidden />
 
-        <div className="inline-flex items-center gap-1.5 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-3.5 py-1.5 sm:px-5 sm:py-2 rounded-full mb-3 sm:mb-4 shadow-md shadow-purple-500/20">
+        <div className="inline-flex items-center gap-1.5 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-3.5 py-1.5 sm:px-5 sm:py-2 rounded-full mb-2 sm:mb-3 shadow-md shadow-purple-500/20">
           <Sparkles className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" aria-hidden />
           <span className="text-xs sm:text-sm leading-tight">Food science tools—free, no account</span>
         </div>
 
-        <h2 className="text-[1.5rem] leading-tight sm:text-3xl md:text-4xl lg:text-5xl mb-3 sm:mb-4 font-semibold tracking-tight bg-gradient-to-r from-purple-600 via-pink-600 to-orange-600 bg-clip-text text-transparent">
-          What do you want to make today?
-        </h2>
-
-        <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4 max-w-lg mx-auto px-2">
+        <div className="flex items-center gap-3 sm:gap-4 mb-2 sm:mb-3 max-w-lg mx-auto px-2">
           <div
             className="h-px flex-1 bg-gradient-to-r from-transparent via-purple-300/70 to-purple-200/40"
             aria-hidden
@@ -119,7 +115,7 @@ export function Hero() {
         <Link
           to="/fix-recipe"
           onClick={handleFixRecipeClick}
-          className="group mx-auto mb-3 sm:mb-4 flex max-w-md flex-col items-center gap-1 rounded-xl border border-purple-200/90 bg-white/70 px-4 py-2.5 sm:px-5 sm:py-3 shadow-sm backdrop-blur-sm transition-all hover:border-purple-300 hover:bg-white/95 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-500"
+          className="group mx-auto mb-2 sm:mb-3 flex max-w-md flex-col items-center gap-1 rounded-xl border border-purple-200/90 bg-white/70 px-4 py-2.5 sm:px-5 sm:py-3 shadow-sm backdrop-blur-sm transition-all hover:border-purple-300 hover:bg-white/95 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-500"
         >
           <span className="flex items-center gap-2 text-sm font-semibold text-purple-900">
             <FlaskConical
@@ -139,11 +135,11 @@ export function Hero() {
           </span>
         </Link>
 
-        <p className="text-sm md:text-base text-muted-foreground mb-3 sm:mb-4 max-w-2xl mx-auto leading-snug">
+        <p className="text-sm md:text-base text-muted-foreground mb-2 sm:mb-3 max-w-2xl mx-auto leading-snug">
           Pick a path—we&apos;ll send you to the right tool, with science you can actually use.
         </p>
 
-        <div className="grid sm:grid-cols-3 gap-2 sm:gap-3 max-w-3xl mx-auto mb-3 sm:mb-4">
+        <div className="grid sm:grid-cols-3 gap-2 sm:gap-3 max-w-3xl mx-auto mb-2 sm:mb-3">
           <a
             href="#home-bake"
             onClick={handleBakeClick}
@@ -211,7 +207,7 @@ export function Hero() {
           </a>
         </div>
 
-        <p className="text-xs sm:text-sm text-muted-foreground mt-3 sm:mt-4 font-medium">
+        <p className="text-xs sm:text-sm text-muted-foreground mt-2 sm:mt-3 font-medium">
           All tools are free. No signup required.
         </p>
       </div>

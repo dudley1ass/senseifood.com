@@ -1,19 +1,18 @@
 /**
- * SenseiFood — sitemap.xml generator (TS so we can import the new-article path registry).
+ * SenseiFood — sitemap.xml generator.
  * Run: npm run generate-sitemap
  */
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-import { NEW_SCIENCE_ARTICLE_PATHS } from '../src/app/data/newScienceArticles/index.ts';
-import { extractArticlePathsFromRoutesFile } from './prerender-paths';
+import { getAllArticleRelativePaths } from './prerender-paths';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const BASE_URL = 'https://senseifood.com';
-const ROUTES_FILE = path.join(__dirname, '..', 'src', 'app', 'appRouteChildren.tsx');
+const PROJECT_ROOT = path.join(__dirname, '..');
 const OUTPUT_FILE = path.join(__dirname, '..', 'public', 'sitemap.xml');
 
 const currentDate = new Date().toISOString().split('T')[0];
@@ -24,13 +23,8 @@ const HIGH_PRIORITY_LOCS = new Set([
   '/cookie-science/why-cookies-spread',
 ]);
 
-function extractArticlePathsFromRoutes(): string[] {
-  const fromFile = extractArticlePathsFromRoutesFile(ROUTES_FILE);
-  return [...new Set([...fromFile, ...NEW_SCIENCE_ARTICLE_PATHS])].sort();
-}
-
 function writeSitemap() {
-  const articlePaths = extractArticlePathsFromRoutes();
+  const articlePaths = getAllArticleRelativePaths(PROJECT_ROOT);
 
   const urls = [
     { loc: '/', priority: '1.0', changefreq: 'daily', lastmod: currentDate },

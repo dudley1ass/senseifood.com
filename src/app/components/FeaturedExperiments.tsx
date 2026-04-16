@@ -73,7 +73,7 @@ export function FeaturedExperiments() {
   ];
 
   return (
-    <section id="experiments" className="py-20 md:py-24 px-4 sm:px-6 bg-gradient-to-b from-[#fff7f5] via-purple-50/40 to-pink-50/50">
+    <section id="experiments" className="pt-12 pb-20 md:pt-14 md:pb-24 px-4 sm:px-6 bg-gradient-to-b from-[#fff7f5] via-purple-50/40 to-pink-50/50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12 md:mb-16">
           <p className="text-sm md:text-base text-purple-600/90 font-medium mb-3 max-w-2xl mx-auto">

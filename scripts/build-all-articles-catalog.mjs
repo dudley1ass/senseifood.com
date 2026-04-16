@@ -16,7 +16,7 @@ if (start === -1) {
 }
 const arrStart = start + marker.length;
 /** After foundational `];` comes this comment, then the science block (not `];` + const on adjacent lines). */
-const closeMarkerFoundational = '\n];\n\n/** Topic-gap and sauce library cards';
+const closeMarkerFoundational = '\n];\n\n/** Topic-gap and sauce-library articles';
 let end = current.indexOf(closeMarkerFoundational, arrStart);
 if (end === -1) {
   const closeLegacy = '\n];\n\nfunction withSensei';
@@ -35,7 +35,7 @@ if (fs.existsSync(scienceFragmentPath)) {
   const sciMarker = 'const SCIENCE_GAP_AND_SAUCE_ARTICLE_ROWS: ArticleCardBase[] = [';
   const sStart = current.indexOf(sciMarker);
   if (sStart === -1) {
-    console.error('Missing', scienceFragmentPath, '— run: npx tsx scripts/dump-inline-science-cards.ts');
+    console.error('Missing', scienceFragmentPath, '— edit allArticlesCatalog.ts directly or add the fragment file.');
     process.exit(1);
   }
   const sArrStart = sStart + sciMarker.length;
@@ -84,7 +84,7 @@ const FOUNDATIONAL_ARTICLE_ROWS: ArticleCardBase[] = [
 ${foundational}
 ];
 
-/** Topic-gap and sauce library cards (same titles/URLs as long-form specs under \`src/app/data/newScienceArticles/\`). */
+/** Topic-gap and sauce-library articles (one TSX per article; routes in articleContentRoutes / inlineGapArticleRoutes). */
 const SCIENCE_GAP_AND_SAUCE_ARTICLE_ROWS: ArticleCardBase[] = [
 ${scienceRows}
 ];
