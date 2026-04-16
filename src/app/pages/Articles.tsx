@@ -3,7 +3,6 @@ import { Link, useSearchParams } from 'react-router';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
 import { useMemo, useState } from 'react';
-import { SAUCE_SENSEI_APP_URL } from '../config/publicUrls';
 import { trackArticleClick, trackCTAClick, trackClicksToFixRecipe, trackToolStart } from '../utils/analytics';
 import { ALL_NEW_SCIENCE_ARTICLES } from '../data/newScienceArticles';
 import type { ScienceArticleSpec } from '../data/scienceArticleTypes';
@@ -69,14 +68,11 @@ export default function Articles() {
   const activeTab = parseTabParam(searchParams.get('tab'));
 
   const setActiveTab = (id: TabId) => {
-    if (id === 'sauces') {
-      trackCTAClick('articles_tab', id, SAUCE_SENSEI_APP_URL);
-      trackToolStart('SauceSensei', 'articles_tab');
-      window.location.assign(SAUCE_SENSEI_APP_URL);
-      return;
-    }
     setSearchParams({ tab: id }, { replace: true });
     trackCTAClick('articles_tab', id, `/articles?tab=${id}`);
+    if (id === 'sauces') {
+      trackToolStart('SauceSensei', 'articles_tab');
+    }
   };
 
   const handleArticleClick = (articleTitle: string, source: string, articleUrl: string) => {
@@ -797,7 +793,7 @@ export default function Articles() {
             open the rule-based debugger to see what to try next.
           </p>
 
-          <div className="grid gap-4 md:grid-cols-2 max-w-4xl">
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 max-w-6xl">
             <div className="rounded-2xl border-2 border-purple-300 bg-gradient-to-br from-purple-600 via-purple-600 to-pink-600 p-6 text-white shadow-lg">
               <div className="flex items-center gap-2 text-white/90 text-sm font-semibold uppercase tracking-wide mb-2">
                 <Wrench className="w-4 h-4" aria-hidden />
@@ -827,6 +823,28 @@ export default function Articles() {
               >
                 Try CookieSensei
               </a>
+            </div>
+            <div className="rounded-2xl border-2 border-rose-200 bg-gradient-to-br from-rose-50 via-amber-50 to-orange-50 p-6 shadow-md md:col-span-2 lg:col-span-1">
+              <div className="text-xs font-semibold uppercase tracking-wide text-rose-800 mb-2">Sauces</div>
+              <p className="text-sm text-stone-700 leading-relaxed mb-4">
+                Sauce science deep-dives and per-recipe guides live here too — same card style as other topics. Open the
+                interactive wheel on Sauce Sensei when you are ready to dial in grams.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-2">
+                <Link
+                  to="/sauce-sensei"
+                  onClick={() => trackCTAClick('articles_header', 'sauce_sensei_hub', '/sauce-sensei')}
+                  className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-rose-600 to-orange-600 text-white px-5 py-2.5 rounded-xl font-bold text-sm hover:opacity-95 transition-opacity"
+                >
+                  Sauce Sensei hub
+                </Link>
+                <Link
+                  to="/articles?tab=sauces"
+                  className="inline-flex items-center justify-center border-2 border-rose-300 bg-white text-rose-900 px-5 py-2.5 rounded-xl font-semibold text-sm hover:bg-rose-50"
+                >
+                  Browse sauce articles
+                </Link>
+              </div>
             </div>
           </div>
         </header>

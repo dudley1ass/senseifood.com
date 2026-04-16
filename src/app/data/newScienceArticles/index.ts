@@ -7,6 +7,7 @@ import { cookieGapScienceArticles, pieGapScienceArticles } from './cookiesAndPie
 import { cakeGapScienceArticles } from './cakesGaps';
 import { coffeeGapScienceArticles, iceCreamGapScienceArticles } from './coffeeAndIceCream';
 import { sauceScienceArticles } from './sauceScience';
+import { sauceRecipeGuideArticles } from './sauceRecipeGuides';
 
 const RAW_NEW_SCIENCE_ARTICLES: ScienceArticleSpec[] = [
   ...breadNewScienceArticlesPart1,
@@ -17,6 +18,7 @@ const RAW_NEW_SCIENCE_ARTICLES: ScienceArticleSpec[] = [
   ...coffeeGapScienceArticles,
   ...iceCreamGapScienceArticles,
   ...sauceScienceArticles,
+  ...sauceRecipeGuideArticles,
 ];
 
 export const ALL_NEW_SCIENCE_ARTICLES: ScienceArticleSpec[] = applyEnrichments(RAW_NEW_SCIENCE_ARTICLES).map(

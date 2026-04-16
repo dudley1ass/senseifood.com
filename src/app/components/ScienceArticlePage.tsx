@@ -1,9 +1,10 @@
-import { ArrowLeft, FlaskConical } from 'lucide-react';
+import { ArrowLeft, ChefHat, ExternalLink, FlaskConical } from 'lucide-react';
 import { Link } from 'react-router';
 import { Navigation } from './Navigation';
 import { Footer } from './Footer';
 import type { ScienceArticleSpec } from '../data/scienceArticleTypes';
-import { trackCTAClick, trackClicksToFixRecipe } from '../utils/analytics';
+import { SAUCE_SENSEI_APP_URL } from '../config/publicUrls';
+import { trackCTAClick, trackClicksToFixRecipe, trackToolStart } from '../utils/analytics';
 
 const THEME: Record<
   ScienceArticleSpec['categoryLabel'],
@@ -119,6 +120,10 @@ type Props = { spec: ScienceArticleSpec };
 export function ScienceArticlePage({ spec }: Props) {
   const t = THEME[spec.categoryLabel];
   const fixHref = `/fix-recipe?category=${spec.fixRecipe.category}&problem=${encodeURIComponent(spec.fixRecipe.problem)}`;
+  const sauceInteractiveUrl = spec.sauceSensei
+    ? `${SAUCE_SENSEI_APP_URL}/sauce/${spec.sauceSensei.sauceId}`
+    : null;
+  const sauceMirrorArticleUrl = spec.sauceSensei ? `${SAUCE_SENSEI_APP_URL}/article/${spec.slug}` : null;
 
   return (
     <div className={`min-h-screen bg-gradient-to-br ${t.pageBg}`}>
@@ -137,7 +142,7 @@ export function ScienceArticlePage({ spec }: Props) {
           <div
             className={`inline-flex items-center gap-2 bg-gradient-to-r ${t.pill} text-white px-4 py-2 rounded-full text-sm mb-6`}
           >
-            {spec.categoryLabel}
+            {spec.sauceSensei ? `${spec.categoryLabel} · Recipe guide` : spec.categoryLabel}
           </div>
           <h1 className={`text-5xl md:text-6xl mb-6 bg-gradient-to-r ${t.h1} bg-clip-text text-transparent`}>
             {spec.title}
@@ -154,38 +159,85 @@ export function ScienceArticlePage({ spec }: Props) {
           <span className="text-8xl">{spec.emoji}</span>
         </div>
 
-        <div className="bg-white/80 border border-stone-200 rounded-2xl p-6 shadow-md mb-10 flex gap-4 items-start">
-          <FlaskConical className="w-8 h-8 text-purple-600 shrink-0 mt-1" />
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-wide text-purple-800 mb-1">Apply this in your kitchen</p>
-            <p className="text-foreground/80 text-sm leading-relaxed mb-4">
-              SenseiFood’s rule-based <strong>Fix My Recipe</strong> debugger walks through ratios and process using the same
-              category you’re reading about—no signup, no black-box AI. Add optional gram weights to see how your formula
-              compares to reference patterns.
-            </p>
-            <Link
-              to={fixHref}
-              onClick={() => {
-                trackClicksToFixRecipe('science_article_inline');
-                trackCTAClick('science_article_inline', 'fix_my_recipe', fixHref);
-              }}
-              className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 text-white text-sm font-semibold px-5 py-2.5 shadow-md hover:opacity-95 transition-opacity"
-            >
-              Open Fix My Recipe for this topic →
-            </Link>
-            <p className="text-xs text-muted-foreground mt-3">
-              New to the tool? Read{' '}
-              <Link to="/baking-science/how-to-use-fix-my-recipe" className="underline font-medium text-purple-700">
-                How to Use Fix My Recipe
-              </Link>{' '}
-              and{' '}
-              <Link to="/baking-science/fix-recipes-one-variable-at-a-time" className="underline font-medium text-purple-700">
-                Fix Recipes One Variable at a Time
-              </Link>
-              .
-            </p>
+        {spec.sauceSensei ? (
+          <div
+            className={`bg-white/90 border-2 border-rose-200 rounded-2xl p-6 shadow-md mb-10 bg-gradient-to-br ${t.heroFrom} ${t.heroTo}`}
+          >
+            <div className="flex flex-col sm:flex-row sm:items-start gap-4">
+              <ChefHat className="w-10 h-10 text-rose-700 shrink-0" aria-hidden />
+              <div className="flex-1">
+                <p className="text-xs font-semibold uppercase tracking-wide text-rose-900 mb-1">Sauce Sensei (interactive)</p>
+                <p className="text-foreground/90 text-sm leading-relaxed mb-4">
+                  Build this sauce with live grams, the flavor wheel, and structure guardrails on{' '}
+                  <strong className="text-foreground">saucesensei.com</strong>. This hub article is indexed here; the app
+                  mirrors the same guide under <code className="text-xs bg-white/60 px-1 rounded">/article/{spec.slug}</code>{' '}
+                  for sharing.
+                </p>
+                <div className="flex flex-col sm:flex-row flex-wrap gap-3">
+                  <a
+                    href={sauceInteractiveUrl!}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => {
+                      trackCTAClick('science_article_inline', 'sauce_sensei_interactive', sauceInteractiveUrl!);
+                      trackToolStart('SauceSensei', 'science_article_inline');
+                    }}
+                    className={`inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r ${t.ctaFrom} ${t.ctaTo} text-white text-sm font-bold px-5 py-3 shadow-md hover:opacity-95 transition-opacity`}
+                  >
+                    Open interactive recipe
+                    <ExternalLink className="w-4 h-4" aria-hidden />
+                  </a>
+                  <a
+                    href={sauceMirrorArticleUrl!}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => trackCTAClick('science_article_inline', 'sauce_sensei_article_mirror', sauceMirrorArticleUrl!)}
+                    className="inline-flex items-center justify-center gap-2 rounded-xl border-2 border-rose-400 bg-white/90 text-rose-900 text-sm font-semibold px-5 py-3 hover:bg-white"
+                  >
+                    Same article in Sauce Sensei
+                    <ExternalLink className="w-4 h-4" aria-hidden />
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+        ) : (
+          <div className="bg-white/80 border border-stone-200 rounded-2xl p-6 shadow-md mb-10 flex gap-4 items-start">
+            <FlaskConical className="w-8 h-8 text-purple-600 shrink-0 mt-1" />
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-wide text-purple-800 mb-1">Apply this in your kitchen</p>
+              <p className="text-foreground/80 text-sm leading-relaxed mb-4">
+                SenseiFood’s rule-based <strong>Fix My Recipe</strong> debugger walks through ratios and process using the same
+                category you’re reading about—no signup, no black-box AI. Add optional gram weights to see how your formula
+                compares to reference patterns.
+              </p>
+              <Link
+                to={fixHref}
+                onClick={() => {
+                  trackClicksToFixRecipe('science_article_inline');
+                  trackCTAClick('science_article_inline', 'fix_my_recipe', fixHref);
+                }}
+                className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 text-white text-sm font-semibold px-5 py-2.5 shadow-md hover:opacity-95 transition-opacity"
+              >
+                Open Fix My Recipe for this topic →
+              </Link>
+              <p className="text-xs text-muted-foreground mt-3">
+                New to the tool? Read{' '}
+                <Link to="/baking-science/how-to-use-fix-my-recipe" className="underline font-medium text-purple-700">
+                  How to Use Fix My Recipe
+                </Link>{' '}
+                and{' '}
+                <Link
+                  to="/baking-science/fix-recipes-one-variable-at-a-time"
+                  className="underline font-medium text-purple-700"
+                >
+                  Fix Recipes One Variable at a Time
+                </Link>
+                .
+              </p>
+            </div>
+          </div>
+        )}
 
         <div className="prose prose-lg max-w-none">
           <div className={`bg-white border-l-4 ${t.quickBorder} p-5 rounded-xl mb-8 flex items-start gap-4`}>
@@ -254,29 +306,62 @@ export function ScienceArticlePage({ spec }: Props) {
           </div>
 
           <div className={`bg-gradient-to-br ${t.ctaFrom} ${t.ctaTo} rounded-3xl p-10 text-white my-16 shadow-2xl not-prose`}>
-            <h3 className="text-3xl mb-4">Turn diagnosis into a testable next bake</h3>
-            <p className="text-white/90 mb-6 text-lg leading-relaxed">
-              Use Fix My Recipe to match your symptom to common ratio and process causes, then change <em>one</em> variable and
-              rebake—exactly how professional kitchens debug formulas.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <Link
-                to={fixHref}
-                onClick={() => {
-                  trackClicksToFixRecipe('science_article_footer');
-                  trackCTAClick('science_article_footer', 'fix_my_recipe', fixHref);
-                }}
-                className="inline-block bg-white text-stone-900 px-8 py-4 rounded-xl font-bold hover:shadow-xl transition-all text-center"
-              >
-                Open Fix My Recipe →
-              </Link>
-              <Link
-                to="/articles"
-                className="inline-block border-2 border-white/80 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition-colors text-center"
-              >
-                Browse all articles
-              </Link>
-            </div>
+            {spec.sauceSensei ? (
+              <>
+                <h3 className="text-3xl mb-4">Turn this guide into a live build</h3>
+                <p className="text-white/90 mb-6 text-lg leading-relaxed">
+                  Sauce Sensei runs the interactive wheel and guardrails for this exact recipe. Use it to scale amounts, then
+                  come back here for the long-form read anytime — both URLs are indexed for search.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <a
+                    href={sauceInteractiveUrl!}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => {
+                      trackCTAClick('science_article_footer', 'sauce_sensei_interactive', sauceInteractiveUrl!);
+                      trackToolStart('SauceSensei', 'science_article_footer');
+                    }}
+                    className="inline-flex items-center justify-center gap-2 bg-white text-rose-900 px-8 py-4 rounded-xl font-bold hover:shadow-xl transition-all text-center"
+                  >
+                    Open Sauce Sensei
+                    <ExternalLink className="w-5 h-5" aria-hidden />
+                  </a>
+                  <Link
+                    to="/articles?tab=sauces"
+                    className="inline-block border-2 border-white/80 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition-colors text-center"
+                  >
+                    More sauce articles
+                  </Link>
+                </div>
+              </>
+            ) : (
+              <>
+                <h3 className="text-3xl mb-4">Turn diagnosis into a testable next bake</h3>
+                <p className="text-white/90 mb-6 text-lg leading-relaxed">
+                  Use Fix My Recipe to match your symptom to common ratio and process causes, then change <em>one</em> variable
+                  and rebake—exactly how professional kitchens debug formulas.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <Link
+                    to={fixHref}
+                    onClick={() => {
+                      trackClicksToFixRecipe('science_article_footer');
+                      trackCTAClick('science_article_footer', 'fix_my_recipe', fixHref);
+                    }}
+                    className="inline-block bg-white text-stone-900 px-8 py-4 rounded-xl font-bold hover:shadow-xl transition-all text-center"
+                  >
+                    Open Fix My Recipe →
+                  </Link>
+                  <Link
+                    to="/articles"
+                    className="inline-block border-2 border-white/80 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition-colors text-center"
+                  >
+                    Browse all articles
+                  </Link>
+                </div>
+              </>
+            )}
           </div>
         </div>
       </article>

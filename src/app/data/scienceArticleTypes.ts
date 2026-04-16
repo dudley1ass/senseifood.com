@@ -30,6 +30,13 @@ export type ScienceArticleSpec = {
   related: { title: string; path: string }[];
   /** Deep link for in-page CTAs (must match FixRecipe PROBLEM_OPTIONS). */
   fixRecipe: { category: RecipeCategory; problem: string };
+  /**
+   * Recipe guides: links to the Sauce Sensei interactive builder (`/sauce/:id`) and mirrored in-app article on
+   * saucesensei.com. When set, the article template prioritizes Sauce Sensei CTAs over baking Fix My Recipe copy.
+   */
+  sauceSensei?: {
+    sauceId: string;
+  };
 };
 
 export function articlePath(spec: ScienceArticleSpec): string {
