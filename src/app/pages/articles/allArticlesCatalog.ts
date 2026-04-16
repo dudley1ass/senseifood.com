@@ -1,6 +1,16 @@
-import { ALL_NEW_SCIENCE_ARTICLES } from '../../data/newScienceArticles';
-import type { ScienceArticleSpec } from '../../data/scienceArticleTypes';
-import type { ArticleLibraryCard } from './articleCardTypes';
+import { ARTICLE_LIBRARY_TAB_IDS, type ArticleLibraryTabId } from '../../constants/articleLibraryNav';
+import { PHASE2_GAP_ARTICLE_CATALOG_ROWS } from './phase2GapArticleCatalog';
+
+/** One card on the /articles grid — full roster is `ALL_ARTICLES_CATALOG` in this file only. */
+export type ArticleLibraryCard = {
+  title: string;
+  description: string;
+  category: string;
+  readTime: string;
+  color: string;
+  url: string;
+  senseiPei: string;
+};
 
 /** Which Sensei or in-app hub this library article pairs with. */
 export function senseiPeiForArticle(category: string, url: string): string {
@@ -20,30 +30,6 @@ export function senseiPeiForArticle(category: string, url: string): string {
 }
 
 type ArticleCardBase = Omit<ArticleLibraryCard, 'senseiPei'>;
-
-const NEW_ARTICLE_CARD_COLORS: Record<ScienceArticleSpec['categoryLabel'], [string, string, string]> = {
-  'Bread Science': ['from-amber-500 to-yellow-600', 'from-yellow-600 to-orange-500', 'from-orange-500 to-amber-700'],
-  'Cookie Science': ['from-amber-500 to-orange-600', 'from-orange-500 to-red-500', 'from-yellow-500 to-amber-600'],
-  'Cake Science': ['from-pink-500 to-purple-600', 'from-purple-500 to-rose-600', 'from-rose-500 to-pink-600'],
-  'Pie Science': ['from-orange-500 to-amber-600', 'from-amber-600 to-yellow-700', 'from-yellow-600 to-orange-600'],
-  'Ice Cream Science': ['from-cyan-500 to-blue-600', 'from-blue-400 to-cyan-500', 'from-sky-500 to-blue-600'],
-  'Coffee Science': ['from-stone-600 to-amber-800', 'from-amber-600 to-yellow-800', 'from-stone-700 to-amber-900'],
-  'Sauce Science': ['from-rose-600 to-orange-600', 'from-amber-600 to-rose-600', 'from-orange-600 to-red-600'],
-};
-
-function cardsFromScienceSpecs(): ArticleCardBase[] {
-  return ALL_NEW_SCIENCE_ARTICLES.map((spec, i) => {
-    const palette = NEW_ARTICLE_CARD_COLORS[spec.categoryLabel];
-    return {
-      title: spec.title,
-      description: spec.subtitle,
-      category: spec.categoryLabel,
-      readTime: spec.readTime,
-      color: palette[i % palette.length],
-      url: `/${spec.segment}/${spec.slug}`,
-    };
-  });
-}
 
 /** Original hub cards (cookies through baking-science). */
 const FOUNDATIONAL_ARTICLE_ROWS: ArticleCardBase[] = [
@@ -701,15 +687,627 @@ const FOUNDATIONAL_ARTICLE_ROWS: ArticleCardBase[] = [
     },
 ];
 
+/** Topic-gap and sauce library cards (same titles/URLs as long-form specs under `src/app/data/newScienceArticles/`). */
+const SCIENCE_GAP_AND_SAUCE_ARTICLE_ROWS: ArticleCardBase[] = [
+{
+      title: "Why Bread Doesn't Rise",
+      description: "Dead yeast, cold dough, salt clashes, weak gluten, and timing mistakes—ranked by how often they show up in home kitchens.",
+      category: "Bread Science",
+      readTime: "8 min read",
+      color: "from-amber-500 to-yellow-600",
+      url: "/bread-science/why-bread-doesnt-rise",
+    },
+    {
+      title: "Why Bread Is Dense",
+      description: "Dense crumb usually means under-development, under-proofing, too much flour, or a collapsed structure—not “bad luck.”",
+      category: "Bread Science",
+      readTime: "8 min read",
+      color: "from-yellow-600 to-orange-500",
+      url: "/bread-science/why-bread-is-dense",
+    },
+    {
+      title: "Why Bread Is Gummy Inside",
+      description: "Gelatinized starch needs heat and time to set; under-baking and cutting too soon are classic culprits.",
+      category: "Bread Science",
+      readTime: "7 min read",
+      color: "from-orange-500 to-amber-700",
+      url: "/bread-science/why-bread-is-gummy-inside",
+    },
+    {
+      title: "Why Bread Collapses After Baking",
+      description: "Structure buckles when gluten is over-extended, proofing overshoots, or the crust cannot hold internal pressure.",
+      category: "Bread Science",
+      readTime: "8 min read",
+      color: "from-amber-500 to-yellow-600",
+      url: "/bread-science/why-bread-collapses-after-baking",
+    },
+    {
+      title: "Why Bread Is Dry",
+      description: "Bake time, flour absorption, storage, and enrichment levels all steal moisture from crumb.",
+      category: "Bread Science",
+      readTime: "7 min read",
+      color: "from-yellow-600 to-orange-500",
+      url: "/bread-science/why-bread-is-dry",
+    },
+    {
+      title: "Why Bread Is Too Chewy",
+      description: "Chew comes from gluten network density, low moisture, and long mixing—dial each back for a softer bite.",
+      category: "Bread Science",
+      readTime: "7 min read",
+      color: "from-orange-500 to-amber-700",
+      url: "/bread-science/why-bread-is-too-chewy",
+    },
+    {
+      title: "Why Bread Crust Is Too Hard",
+      description: "Steam, sugar, oven heat, and bake time build crust thickness and hardness.",
+      category: "Bread Science",
+      readTime: "7 min read",
+      color: "from-amber-500 to-yellow-600",
+      url: "/bread-science/why-bread-crust-is-too-hard",
+    },
+    {
+      title: "Why Bread Crust Is Too Soft",
+      description: "Soft crust means the surface never dried and browned enough—or steam never left the microclimate.",
+      category: "Bread Science",
+      readTime: "7 min read",
+      color: "from-yellow-600 to-orange-500",
+      url: "/bread-science/why-bread-crust-is-too-soft",
+    },
+    {
+      title: "Why Bread Burns on the Bottom",
+      description: "Conductive heat from stone, thin pans, and oven floor hot spots chars the base first.",
+      category: "Bread Science",
+      readTime: "7 min read",
+      color: "from-orange-500 to-amber-700",
+      url: "/bread-science/why-bread-burns-on-the-bottom",
+    },
+    {
+      title: "Why Bread Is Pale",
+      description: "Maillard needs surface dryness, heat, and reducing sugars; steam and low sugar slow color.",
+      category: "Bread Science",
+      readTime: "7 min read",
+      color: "from-amber-500 to-yellow-600",
+      url: "/bread-science/why-bread-is-pale",
+    },
+    {
+      title: "Why Dough Is Too Sticky",
+      description: "Stickiness is usually hydration, weak gluten early in mixing, or flour absorption—not necessarily “too much water.”",
+      category: "Bread Science",
+      readTime: "7 min read",
+      color: "from-yellow-600 to-orange-500",
+      url: "/bread-science/why-dough-is-too-sticky",
+    },
+    {
+      title: "Why Dough Won't Hold Shape",
+      description: "Slack dough is about strength, proof state, and hydration relative to protein—not “bad yeast.”",
+      category: "Bread Science",
+      readTime: "8 min read",
+      color: "from-orange-500 to-amber-700",
+      url: "/bread-science/why-dough-wont-hold-shape",
+    },
+    {
+      title: "Why Dough Springs Back When Shaping",
+      description: "Elastic snap means gluten is tight—often under-relaxed or too strong for immediate shaping.",
+      category: "Bread Science",
+      readTime: "7 min read",
+      color: "from-amber-500 to-yellow-600",
+      url: "/bread-science/why-dough-springs-back-when-shaping",
+    },
+    {
+      title: "Why Dough Rises Too Fast",
+      description: "Heat, high yeast, sugar, and small dough mass accelerate fermentation—sometimes past flavor and structure.",
+      category: "Bread Science",
+      readTime: "7 min read",
+      color: "from-yellow-600 to-orange-500",
+      url: "/bread-science/why-dough-rises-too-fast",
+    },
+    {
+      title: "Why Dough Rises Too Slow",
+      description: "Cold, tired yeast, salt errors, and extreme sweet or rich doughs stretch timelines.",
+      category: "Bread Science",
+      readTime: "7 min read",
+      color: "from-orange-500 to-amber-700",
+      url: "/bread-science/why-dough-rises-too-slow",
+    },
+    {
+      title: "Why Bread Needs Steam",
+      description: "Steam delays crust set, improves oven spring, and influences gloss and ear formation.",
+      category: "Bread Science",
+      readTime: "8 min read",
+      color: "from-amber-500 to-yellow-600",
+      url: "/bread-science/why-bread-needs-steam",
+    },
+    {
+      title: "Why Oven Spring Happens",
+      description: "Gas expands, yeast races until heat kills it, and steam pressure inflates cells before the crumb sets.",
+      category: "Bread Science",
+      readTime: "8 min read",
+      color: "from-yellow-600 to-orange-500",
+      url: "/bread-science/why-oven-spring-happens",
+    },
+    {
+      title: "Why Bread Needs Scoring",
+      description: "Scores channel expansion so the crust tears predictably instead of randomly.",
+      category: "Bread Science",
+      readTime: "7 min read",
+      color: "from-orange-500 to-amber-700",
+      url: "/bread-science/why-bread-needs-scoring",
+    },
+    {
+      title: "Bread Flour vs All-Purpose Flour",
+      description: "Protein drives gluten potential; choose flour for the structure your bread needs.",
+      category: "Bread Science",
+      readTime: "8 min read",
+      color: "from-amber-500 to-yellow-600",
+      url: "/bread-science/bread-flour-vs-all-purpose-flour",
+    },
+    {
+      title: "Why Hydration Matters in Bread",
+      description: "Water enables gluten, dissolves salts and sugars, and sets the crumb openness you can achieve.",
+      category: "Bread Science",
+      readTime: "8 min read",
+      color: "from-yellow-600 to-orange-500",
+      url: "/bread-science/why-hydration-matters-in-bread",
+    },
+    {
+      title: "Why Cookies Taste Too Sweet",
+      description: "Sugar load, salt balance, browning, and acid all set perceived sweetness—not just cup measurements.",
+      category: "Cookie Science",
+      readTime: "7 min read",
+      color: "from-yellow-500 to-amber-600",
+      url: "/cookie-science/why-cookies-taste-too-sweet",
+    },
+    {
+      title: "Why Cookies Spread in the Oven But Not Before",
+      description: "Cold fat, flour hydration, and delayed structure set explain the oven-only spread phase.",
+      category: "Cookie Science",
+      readTime: "7 min read",
+      color: "from-amber-500 to-orange-600",
+      url: "/cookie-science/why-cookies-spread-in-oven-but-not-before",
+    },
+    {
+      title: "Why Cookies Turn Out Different Each Batch",
+      description: "Temperature paths, measurement error, and mixer variance swamp tiny “feel” differences.",
+      category: "Cookie Science",
+      readTime: "8 min read",
+      color: "from-orange-500 to-red-500",
+      url: "/cookie-science/why-cookies-turn-out-different-each-batch",
+    },
+    {
+      title: "Why Chilling Cookie Dough Matters",
+      description: "Solid fat, hydrated flour, and relaxed gluten change spread, thickness, and flavor.",
+      category: "Cookie Science",
+      readTime: "8 min read",
+      color: "from-yellow-500 to-amber-600",
+      url: "/cookie-science/why-chilling-cookie-dough-matters",
+    },
+    {
+      title: "Why Cookies Stick Together",
+      description: "Thermal mass, steam, and cooling phase fuse edges when spacing or timing fails.",
+      category: "Cookie Science",
+      readTime: "6 min read",
+      color: "from-amber-500 to-orange-600",
+      url: "/cookie-science/why-cookies-stick-together",
+    },
+    {
+      title: "Why Pie Crust Cracks When Rolling",
+      description: "Temperature, hydration, and gluten brittleness make dough chip instead of stretch.",
+      category: "Pie Science",
+      readTime: "7 min read",
+      color: "from-amber-600 to-yellow-700",
+      url: "/pie-science/why-pie-crust-cracks-when-rolling",
+    },
+    {
+      title: "Why Pie Crust Falls Apart",
+      description: "Not enough water, not enough cohesion, or too much fat weakens the matrix.",
+      category: "Pie Science",
+      readTime: "7 min read",
+      color: "from-yellow-600 to-orange-600",
+      url: "/pie-science/why-pie-crust-falls-apart",
+    },
+    {
+      title: "Why Pie Filling Bubbles Over",
+      description: "Steam, expansion, and under-set starch send filling over the rim during bake.",
+      category: "Pie Science",
+      readTime: "7 min read",
+      color: "from-orange-500 to-amber-600",
+      url: "/pie-science/why-pie-filling-bubbles-over",
+    },
+    {
+      title: "Why Pie Crust Is Too Pale",
+      description: "Egg wash, sugar, time, and temperature finish color; pale means one of them is missing.",
+      category: "Pie Science",
+      readTime: "7 min read",
+      color: "from-amber-600 to-yellow-700",
+      url: "/pie-science/why-pie-crust-is-too-pale",
+    },
+    {
+      title: "Why Pie Crust Burns Before Filling Cooks",
+      description: "Edges see more heat than centers; shield, lower temperature, and set filling faster.",
+      category: "Pie Science",
+      readTime: "7 min read",
+      color: "from-yellow-600 to-orange-600",
+      url: "/pie-science/why-pie-crust-burns-before-filling-cooks",
+    },
+    {
+      title: "Why Cakes Stick to Pans Even When Greased",
+      description: "Sugar caramelization, timing, pan material, and cooling bonds beat a thin grease film.",
+      category: "Cake Science",
+      readTime: "8 min read",
+      color: "from-pink-500 to-purple-600",
+      url: "/cake-science/why-cakes-stick-to-pans-even-when-greased",
+    },
+    {
+      title: "Why Cakes Bake Unevenly",
+      description: "Oven airflow, pan color, rack position, and batter depth create hot and cold zones.",
+      category: "Cake Science",
+      readTime: "7 min read",
+      color: "from-purple-500 to-rose-600",
+      url: "/cake-science/why-cakes-bake-unevenly",
+    },
+    {
+      title: "Why Cakes Have a Wet Layer at the Bottom",
+      description: "Sinking emulsions, sugar syrup pockets, and under-baked bases leave a gummy band.",
+      category: "Cake Science",
+      readTime: "8 min read",
+      color: "from-rose-500 to-pink-600",
+      url: "/cake-science/why-cakes-have-a-wet-layer-at-the-bottom",
+    },
+    {
+      title: "Why Cakes Turn Out Flat",
+      description: "Lost leavening, collapsed foam, or heavy batter limits vertical rise.",
+      category: "Cake Science",
+      readTime: "7 min read",
+      color: "from-pink-500 to-purple-600",
+      url: "/cake-science/why-cakes-turn-out-flat",
+    },
+    {
+      title: "Why Cakes Taste Eggy",
+      description: "Sulfur notes, imbalance, and under-browning read as “too much egg” even at correct counts.",
+      category: "Cake Science",
+      readTime: "7 min read",
+      color: "from-purple-500 to-rose-600",
+      url: "/cake-science/why-cakes-taste-eggy",
+    },
+    {
+      title: "Why Cakes Are Too Sweet",
+      description: "Frosting stacks on sweet crumb; salt and acid shrink perceived sweetness.",
+      category: "Cake Science",
+      readTime: "7 min read",
+      color: "from-rose-500 to-pink-600",
+      url: "/cake-science/why-cakes-are-too-sweet",
+    },
+    {
+      title: "Why Cakes Crumble When Cut",
+      description: "Dry crumb, weak structure, or wrong knife technique shreds instead of slicing.",
+      category: "Cake Science",
+      readTime: "7 min read",
+      color: "from-pink-500 to-purple-600",
+      url: "/cake-science/why-cakes-crumble-when-cut",
+    },
+    {
+      title: "Why Cakes Stick to Knife When Cutting",
+      description: "Gummy starch, tacky crumb, and frosting suction grab blades.",
+      category: "Cake Science",
+      readTime: "6 min read",
+      color: "from-purple-500 to-rose-600",
+      url: "/cake-science/why-cakes-stick-to-knife-when-cutting",
+    },
+    {
+      title: "Why Cakes Dry Out After One Day",
+      description: "Starch retrogradation and moisture migration to air or frosting steal tenderness.",
+      category: "Cake Science",
+      readTime: "8 min read",
+      color: "from-rose-500 to-pink-600",
+      url: "/cake-science/why-cakes-dry-out-after-one-day",
+    },
+    {
+      title: "Why Cakes Sink Around the Edges",
+      description: "Edges set fast while centers still move, or structural collapse follows uneven gas coalescence.",
+      category: "Cake Science",
+      readTime: "8 min read",
+      color: "from-pink-500 to-purple-600",
+      url: "/cake-science/why-cakes-sink-around-the-edges",
+    },
+    {
+      title: "Why Coffee Tastes Hollow",
+      description: "Low solubles, channeling, and stale beans produce empty mid-palate cups.",
+      category: "Coffee Science",
+      readTime: "8 min read",
+      color: "from-amber-600 to-yellow-800",
+      url: "/coffee-science/why-coffee-tastes-hollow",
+    },
+    {
+      title: "Why Coffee Tastes Over-Extracted",
+      description: "Dry bitterness, astringency, and hollow finish when too much solid dissolves.",
+      category: "Coffee Science",
+      readTime: "8 min read",
+      color: "from-stone-700 to-amber-900",
+      url: "/coffee-science/why-coffee-tastes-over-extracted",
+    },
+    {
+      title: "Why Coffee Tastes Under-Extracted",
+      description: "Sour, salty, and thin cups when the brew stops too early on the curve.",
+      category: "Coffee Science",
+      readTime: "8 min read",
+      color: "from-stone-600 to-amber-800",
+      url: "/coffee-science/why-coffee-tastes-under-extracted",
+    },
+    {
+      title: "Why Coffee Strength vs Extraction Matters",
+      description: "TDS and yield describe different axes; confusing them sends fixes in wrong directions.",
+      category: "Coffee Science",
+      readTime: "9 min read",
+      color: "from-amber-600 to-yellow-800",
+      url: "/coffee-science/why-coffee-strength-vs-extraction-matters",
+    },
+    {
+      title: "Why Coffee Tastes Different Every Brew",
+      description: "Grinder retention, water, bloom, and human variance swamp “the same recipe.”",
+      category: "Coffee Science",
+      readTime: "8 min read",
+      color: "from-stone-700 to-amber-900",
+      url: "/coffee-science/why-coffee-tastes-different-every-brew",
+    },
+    {
+      title: "Why Ice Cream Is Too Hard",
+      description: "Low sugar, low alcohol, high water, and deep-freeze temps drive rock-solid scoops.",
+      category: "Ice Cream Science",
+      readTime: "7 min read",
+      color: "from-cyan-500 to-blue-600",
+      url: "/ice-cream-science/why-ice-cream-is-too-hard",
+    },
+    {
+      title: "Why Ice Cream Is Too Soft",
+      description: "Too much sugar, alcohol, or warm freezers prevent proper firming.",
+      category: "Ice Cream Science",
+      readTime: "7 min read",
+      color: "from-blue-400 to-cyan-500",
+      url: "/ice-cream-science/why-ice-cream-is-too-soft",
+    },
+    {
+      title: "Why Ice Cream Tastes Icy",
+      description: "Large crystals and wet air pockets read as crunch and cold water on the tongue.",
+      category: "Ice Cream Science",
+      readTime: "8 min read",
+      color: "from-sky-500 to-blue-600",
+      url: "/ice-cream-science/why-ice-cream-tastes-icy",
+    },
+    {
+      title: "Why Ice Cream Lacks Flavor",
+      description: "Cold suppresses sweetness and aroma; fat mutes; dilution hides extracts.",
+      category: "Ice Cream Science",
+      readTime: "7 min read",
+      color: "from-cyan-500 to-blue-600",
+      url: "/ice-cream-science/why-ice-cream-lacks-flavor",
+    },
+    {
+      title: "Why Ice Cream Separates",
+      description: "Butterfat churn-out, unstable emulsions, and thaw-refreeze break smoothness.",
+      category: "Ice Cream Science",
+      readTime: "8 min read",
+      color: "from-blue-400 to-cyan-500",
+      url: "/ice-cream-science/why-ice-cream-separates",
+    },
+    {
+      title: "Temperature: The Silent Killer of Sauces",
+      description: "Why heat control matters more than ingredient lists for stable, glossy sauces.",
+      category: "Sauce Science",
+      readTime: "9 min read",
+      color: "from-orange-600 to-red-600",
+      url: "/sauce-science/temperature-silent-killer-sauces",
+    },
+    {
+      title: "Order of Operations: Timing Changes Everything",
+      description: "Same ingredients, different sequence, completely different sauce.",
+      category: "Sauce Science",
+      readTime: "8 min read",
+      color: "from-rose-600 to-orange-600",
+      url: "/sauce-science/order-of-operations-sauce-timing",
+    },
+    {
+      title: "Salt Is an Amplifier, Not Just “Salty”",
+      description: "Why under-salted sauces read flat even when acid and fat are present.",
+      category: "Sauce Science",
+      readTime: "8 min read",
+      color: "from-amber-600 to-rose-600",
+      url: "/sauce-science/salt-as-amplifier-not-only-salty",
+    },
+    {
+      title: "Hidden Water Content: The Dilution Variable",
+      description: "Why sauces go thin when proteins and vegetables release unexpected moisture.",
+      category: "Sauce Science",
+      readTime: "8 min read",
+      color: "from-orange-600 to-red-600",
+      url: "/sauce-science/water-content-hidden-dilution",
+    },
+    {
+      title: "Emulsion vs Non-Emulsion: Two Sauce Worlds",
+      description: "How to diagnose oily separation vs normal concentration behavior.",
+      category: "Sauce Science",
+      readTime: "9 min read",
+      color: "from-rose-600 to-orange-600",
+      url: "/sauce-science/emulsion-vs-non-emulsion-sauces",
+    },
+    {
+      title: "Reduction Curve: Flavor Is Not Linear",
+      description: "Why late-stage reduction can rapidly overshoot saltiness and bitterness.",
+      category: "Sauce Science",
+      readTime: "8 min read",
+      color: "from-amber-600 to-rose-600",
+      url: "/sauce-science/reduction-curve-nonlinear-flavor",
+    },
+    {
+      title: "The One Change Rule for Sauce Debugging",
+      description: "How to stop over-correcting and make repeatable improvements.",
+      category: "Sauce Science",
+      readTime: "7 min read",
+      color: "from-orange-600 to-red-600",
+      url: "/sauce-science/one-change-rule-sauce-debugging",
+    },
+    {
+      title: "Umami: The Missing Fifth Axis",
+      description: "Balanced sauces can still feel empty without savory depth compounds.",
+      category: "Sauce Science",
+      readTime: "8 min read",
+      color: "from-rose-600 to-orange-600",
+      url: "/sauce-science/umami-axis-beyond-salt-acid-fat-sweet",
+    },
+    {
+      title: "Brown Gravy (Stock-Based Roux): Recipe & Balance Guide",
+      description: "Roux-thickened gravy from drippings or butter + flour + stock — how to read salt vs fat and avoid a thin finish.",
+      category: "Sauce Science",
+      readTime: "8 min read",
+      color: "from-amber-600 to-rose-600",
+      url: "/sauce-science/brown-gravy-stock-based",
+    },
+    {
+      title: "White Gravy (Southern Cream Gravy): Recipe & Balance Guide",
+      description: "Roux + milk, aggressive pepper — dairy-forward comfort sauce for biscuits and fried chicken.",
+      category: "Sauce Science",
+      readTime: "8 min read",
+      color: "from-orange-600 to-red-600",
+      url: "/sauce-science/white-gravy-southern",
+    },
+    {
+      title: "Lemon Pan Sauce: Recipe & Balance Guide",
+      description: "Stock + lemon + butter finish — bright acid with emulsified fat.",
+      category: "Sauce Science",
+      readTime: "8 min read",
+      color: "from-rose-600 to-orange-600",
+      url: "/sauce-science/lemon-pan-sauce",
+    },
+    {
+      title: "Mustard Pan Sauce: Recipe & Balance Guide",
+      description: "Dijon + cream + stock + butter — emulsifier-assisted pan sauce with savory depth.",
+      category: "Sauce Science",
+      readTime: "8 min read",
+      color: "from-amber-600 to-rose-600",
+      url: "/sauce-science/mustard-pan-sauce",
+    },
+    {
+      title: "Mushroom Cream Sauce: Recipe & Balance Guide",
+      description: "Cream + butter + mushrooms — umami-forward cream sauce for pasta and chicken.",
+      category: "Sauce Science",
+      readTime: "8 min read",
+      color: "from-orange-600 to-red-600",
+      url: "/sauce-science/mushroom-cream-sauce",
+    },
+    {
+      title: "Sweet Tomato Sauce: Recipe & Balance Guide",
+      description: "Tomato + butter + extra sugar balance — kid-friendly marinara-style sauce.",
+      category: "Sauce Science",
+      readTime: "8 min read",
+      color: "from-rose-600 to-orange-600",
+      url: "/sauce-science/sweet-tomato-sauce",
+    },
+    {
+      title: "Spicy Tomato Sauce: Recipe & Balance Guide",
+      description: "Tomato + chili + vinegar — heat and acid in the same build.",
+      category: "Sauce Science",
+      readTime: "8 min read",
+      color: "from-amber-600 to-rose-600",
+      url: "/sauce-science/spicy-tomato-sauce",
+    },
+    {
+      title: "Balsamic Glaze: Recipe & Balance Guide",
+      description: "Vinegar-forward reduction — intense, syrupy, easy to overshoot.",
+      category: "Sauce Science",
+      readTime: "8 min read",
+      color: "from-orange-600 to-red-600",
+      url: "/sauce-science/balsamic-glaze",
+    },
+    {
+      title: "Stock Reduction (Demi-Style): Recipe & Balance Guide",
+      description: "Long-simmered stock until glossy — foundation sauce, not a quick weeknight splash.",
+      category: "Sauce Science",
+      readTime: "8 min read",
+      color: "from-rose-600 to-orange-600",
+      url: "/sauce-science/stock-reduction-demi",
+    },
+    {
+      title: "Teriyaki Glaze: Recipe & Balance Guide",
+      description: "Soy + sugar + mirin — high-umami, sweet-salty glaze.",
+      category: "Sauce Science",
+      readTime: "8 min read",
+      color: "from-amber-600 to-rose-600",
+      url: "/sauce-science/teriyaki-glaze",
+    },
+    {
+      title: "Garlic Soy Sauce: Recipe & Balance Guide",
+      description: "Soy + garlic + oil — fast umami condiment and finishing drizzle.",
+      category: "Sauce Science",
+      readTime: "8 min read",
+      color: "from-orange-600 to-red-600",
+      url: "/sauce-science/garlic-soy-sauce",
+    },
+    {
+      title: "Nacho Cheese Sauce: Recipe & Balance Guide",
+      description: "Cheddar + milk + spices — starch-stabilized cheese systems for dip and pour.",
+      category: "Sauce Science",
+      readTime: "8 min read",
+      color: "from-rose-600 to-orange-600",
+      url: "/sauce-science/nacho-cheese-sauce",
+    },
+    {
+      title: "Mornay Sauce: Recipe & Balance Guide",
+      description: "Béchamel + Gruyère + mustard — classic cheese sauce for vegetables and gratins.",
+      category: "Sauce Science",
+      readTime: "8 min read",
+      color: "from-amber-600 to-rose-600",
+      url: "/sauce-science/mornay-sauce",
+    },
+    {
+      title: "Basil Pesto: Recipe & Balance Guide",
+      description: "Oil + basil + nuts + cheese — emulsion-like herb sauce with salt from cheese.",
+      category: "Sauce Science",
+      readTime: "8 min read",
+      color: "from-orange-600 to-red-600",
+      url: "/sauce-science/basil-pesto",
+    },
+];
+
 function withSensei(row: ArticleCardBase): ArticleLibraryCard {
   return { ...row, senseiPei: senseiPeiForArticle(row.category, row.url) };
 }
 
-/**
- * Single roster of every /articles card: foundational SenseiFood articles plus every topic-gap and sauce article.
- * Long-form body text for gap/sauce URLs remains in `src/app/data/newScienceArticles/`; titles, blurbs, URLs, and Sensei pairing are defined or derived here for the library grid.
- */
+/** Every /articles card in one array. */
 export const ALL_ARTICLES_CATALOG: ArticleLibraryCard[] = [
   ...FOUNDATIONAL_ARTICLE_ROWS.map(withSensei),
-  ...cardsFromScienceSpecs().map(withSensei),
+  ...SCIENCE_GAP_AND_SAUCE_ARTICLE_ROWS.map(withSensei),
+  ...PHASE2_GAP_ARTICLE_CATALOG_ROWS.map(withSensei),
 ];
+
+export const FIX_IT_URLS = new Set<string>([
+  '/baking-science/how-to-use-fix-my-recipe',
+  '/baking-science/fix-recipes-one-variable-at-a-time',
+  '/baking-science/why-recipes-fail',
+  '/cookie-science/how-to-debug-cookie-batch-issues',
+  '/cake-science/how-to-debug-cake-problems',
+  '/coffee-science/how-to-debug-your-coffee',
+]);
+
+export const TAB_IDS = ARTICLE_LIBRARY_TAB_IDS;
+export type TabId = ArticleLibraryTabId;
+
+export function parseTabParam(value: string | null): TabId {
+  if (value && (TAB_IDS as readonly string[]).includes(value)) return value as TabId;
+  return 'fix-it';
+}
+
+export const ARTICLE_TABS: { id: TabId; label: string; category: 'FIX_IT' | 'ALL' | string }[] = [
+  { id: 'fix-it', label: 'Fix it', category: 'FIX_IT' },
+  { id: 'cookies', label: 'Cookies', category: 'Cookie Science' },
+  { id: 'cakes', label: 'Cakes', category: 'Cake Science' },
+  { id: 'bread', label: 'Bread', category: 'Bread Science' },
+  { id: 'pies', label: 'Pies', category: 'Pie Science' },
+  { id: 'ice-cream', label: 'Ice cream', category: 'Ice Cream Science' },
+  { id: 'coffee', label: 'Coffee', category: 'Coffee Science' },
+  { id: 'sauces', label: 'Sauces', category: 'Sauce Science' },
+  { id: 'baking', label: 'Baking science', category: 'Baking Science' },
+  { id: 'all', label: 'All', category: 'ALL' },
+];
+
+export function getAllArticleCards(): ArticleLibraryCard[] {
+  return ALL_ARTICLES_CATALOG;
+}

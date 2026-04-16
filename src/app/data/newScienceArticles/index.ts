@@ -12,6 +12,10 @@ import { cakeGapScienceArticles } from './cakesGaps';
 import { coffeeGapScienceArticles, iceCreamGapScienceArticles } from './coffeeAndIceCream';
 import { sauceScienceArticles } from './sauceScience';
 import { sauceRecipeGuideArticles } from './sauceRecipeGuides';
+import { phase2GapArticlesPart1 } from './phase2GapArticlesPart1';
+import { phase2GapArticlesPart2 } from './phase2GapArticlesPart2';
+import { phase2GapArticlesPart3 } from './phase2GapArticlesPart3';
+import { phase2GapArticlesPart4 } from './phase2GapArticlesPart4';
 
 const RAW_NEW_SCIENCE_ARTICLES: ScienceArticleSpec[] = [
   ...breadNewScienceArticlesPart1,
@@ -23,6 +27,10 @@ const RAW_NEW_SCIENCE_ARTICLES: ScienceArticleSpec[] = [
   ...iceCreamGapScienceArticles,
   ...sauceScienceArticles,
   ...sauceRecipeGuideArticles,
+  ...phase2GapArticlesPart1,
+  ...phase2GapArticlesPart2,
+  ...phase2GapArticlesPart3,
+  ...phase2GapArticlesPart4,
 ];
 
 export const ALL_NEW_SCIENCE_ARTICLES: ScienceArticleSpec[] = applyEnrichments(RAW_NEW_SCIENCE_ARTICLES).map(

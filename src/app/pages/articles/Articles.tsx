@@ -10,7 +10,7 @@ import {
   getAllArticleCards,
   parseTabParam,
   type TabId,
-} from './articleLibrary';
+} from './allArticlesCatalog';
 
 export default function Articles() {
   const [searchParams, setSearchParams] = useSearchParams();

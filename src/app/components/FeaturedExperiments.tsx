@@ -1,14 +1,16 @@
 import { BookOpen, ArrowRight, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router';
+import { SAUCE_SENSEI_APP_URL } from '../config/publicUrls';
 import { trackArticleClick, trackCTAClick, trackToolStart } from '../utils/analytics';
 
 const EXPERIMENT_IMAGES = {
-  cookies:
-    'https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=900&q=80',
-  bread:
-    'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80',
+  /** Placeholder — swap when you have final art */
+  cake:
+    'https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80',
   icecream:
     'https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=900&q=80',
+  sauce:
+    'https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=900&q=80',
 } as const;
 
 export function FeaturedExperiments() {
@@ -24,48 +26,49 @@ export function FeaturedExperiments() {
 
   const experiments = [
     {
-      title: 'Why Cookies Spread',
+      title: 'Why Cakes Oil Out (Fat Separation in Batter)',
       description:
-        'Discover how butter temperature, sugar ratios, and leavening agents control cookie spread and texture.',
-      category: 'Cookie Science',
-      readTime: '5 min read',
-      color: 'from-amber-500 to-orange-600',
-      titleClass: 'from-amber-600 to-orange-600',
-      url: '/cookie-science/why-cookies-spread',
-      applyHref: 'https://cookiesensei.senseifood.com',
-      applyLabel: 'Try this in CookieSensei',
+        'Emulsion timing, fat temperature, and mixing sequence—plus bake set—decide whether fat stays suspended or weeps from the crumb.',
+      category: 'Cake Science',
+      readTime: '8 min read',
+      color: 'from-pink-500 to-purple-600',
+      titleClass: 'from-pink-600 to-purple-600',
+      url: '/cake-science/why-cakes-oil-out',
+      applyHref: 'https://cakesensei.senseifood.com',
+      applyLabel: 'Open CakeSensei',
       applyExternal: true,
-      toolName: 'CookieSensei' as const,
-      image: EXPERIMENT_IMAGES.cookies,
+      toolName: 'CakeSensei' as const,
+      image: EXPERIMENT_IMAGES.cake,
     },
     {
-      title: 'Why Bread Rises',
+      title: 'Why Ice Cream Develops Ice Layers Over Time',
       description:
-        'Understand the biological and chemical processes that turn dense dough into light, airy bread.',
-      category: 'Bread Science',
-      readTime: '6 min read',
-      color: 'from-amber-500 to-yellow-600',
-      titleClass: 'from-amber-700 to-yellow-700',
-      url: '/bread-science/why-bread-rises',
-      applyHref: '/bread-sensei',
-      applyLabel: 'Open Bread Sensei',
-      applyExternal: false,
-      toolName: 'BreadSensei' as const,
-      image: EXPERIMENT_IMAGES.bread,
-    },
-    {
-      title: 'Why Ice Cream Gets Icy',
-      description: 'Learn about ice crystal formation, fat content, and stabilizers that prevent icy texture.',
+        'Temperature swings in the freezer drive moisture to plate out as visible ice. Steady cold, headspace, and surface cover change the timeline.',
       category: 'Ice Cream Science',
-      readTime: '6 min read',
+      readTime: '8 min read',
       color: 'from-cyan-500 to-blue-600',
       titleClass: 'from-cyan-600 to-blue-700',
-      url: '/ice-cream-science/why-ice-cream-gets-icy',
+      url: '/ice-cream-science/why-ice-cream-develops-ice-layers-over-time',
       applyHref: 'https://icecreamsensei.senseifood.com',
       applyLabel: 'Try this in IceCreamSensei',
       applyExternal: true,
       toolName: 'IceCreamSensei' as const,
       image: EXPERIMENT_IMAGES.icecream,
+    },
+    {
+      title: 'Why Sauces Break When Reheated',
+      description:
+        'Reheating is a second thermal pass: emulsions need gentle heat, motion, and often a splash of liquid—microwave hotspots are a common culprit.',
+      category: 'Sauce Science',
+      readTime: '8 min read',
+      color: 'from-rose-600 to-orange-600',
+      titleClass: 'from-rose-700 to-orange-600',
+      url: '/sauce-science/why-sauces-break-when-reheated',
+      applyHref: SAUCE_SENSEI_APP_URL,
+      applyLabel: 'Open Sauce Sensei',
+      applyExternal: true,
+      toolName: 'SauceSensei' as const,
+      image: EXPERIMENT_IMAGES.sauce,
     },
   ];
 
