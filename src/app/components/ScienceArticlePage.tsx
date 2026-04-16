@@ -1,9 +1,10 @@
 import { ArrowLeft, ChefHat, ExternalLink, FlaskConical } from 'lucide-react';
-import { Link } from 'react-router';
+import { Link, useLocation } from 'react-router';
 import { Navigation } from './Navigation';
 import { Footer } from './Footer';
 import type { ScienceArticleSpec } from '../data/scienceArticleTypes';
 import { SAUCE_SENSEI_APP_URL } from '../config/publicUrls';
+import { articlesIndexHref, isArticleLibraryTabId } from '../constants/articleLibraryNav';
 import { trackCTAClick, trackClicksToFixRecipe, trackToolStart } from '../utils/analytics';
 
 const THEME: Record<
@@ -118,6 +119,12 @@ const THEME: Record<
 type Props = { spec: ScienceArticleSpec };
 
 export function ScienceArticlePage({ spec }: Props) {
+  const location = useLocation();
+  const rawTab = (location.state as { articlesTab?: string } | null | undefined)?.articlesTab;
+  const preservedTab = isArticleLibraryTabId(rawTab) ? rawTab : null;
+  const articlesListHref = articlesIndexHref(preservedTab);
+  const articlesListState = preservedTab ? ({ articlesTab: preservedTab } as const) : undefined;
+
   const t = THEME[spec.categoryLabel];
   const fixHref = `/fix-recipe?category=${spec.fixRecipe.category}&problem=${encodeURIComponent(spec.fixRecipe.problem)}`;
   const sauceInteractiveUrl = spec.sauceSensei
@@ -131,7 +138,8 @@ export function ScienceArticlePage({ spec }: Props) {
 
       <article className="max-w-4xl mx-auto px-6 py-16">
         <Link
-          to="/articles"
+          to={articlesListHref}
+          state={articlesListState}
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
@@ -298,7 +306,12 @@ export function ScienceArticlePage({ spec }: Props) {
             <h3 className="text-2xl mb-4">Related articles</h3>
             <div className="space-y-3">
               {spec.related.map((r) => (
-                <Link key={r.path} to={r.path} className={`block ${t.linkClass} hover:underline text-sm font-medium`}>
+                <Link
+                  key={r.path}
+                  to={r.path}
+                  state={articlesListState}
+                  className={`block ${t.linkClass} hover:underline text-sm font-medium`}
+                >
                   → {r.title}
                 </Link>
               ))}
@@ -328,7 +341,8 @@ export function ScienceArticlePage({ spec }: Props) {
                     <ExternalLink className="w-5 h-5" aria-hidden />
                   </a>
                   <Link
-                    to="/articles?tab=sauces"
+                    to={articlesIndexHref('sauces')}
+                    state={{ articlesTab: 'sauces' as const }}
                     className="inline-block border-2 border-white/80 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition-colors text-center"
                   >
                     More sauce articles
@@ -354,7 +368,8 @@ export function ScienceArticlePage({ spec }: Props) {
                     Open Fix My Recipe →
                   </Link>
                   <Link
-                    to="/articles"
+                    to={articlesListHref}
+                    state={articlesListState}
                     className="inline-block border-2 border-white/80 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition-colors text-center"
                   >
                     Browse all articles

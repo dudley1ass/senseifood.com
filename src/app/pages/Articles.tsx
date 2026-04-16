@@ -6,6 +6,7 @@ import { useMemo, useState } from 'react';
 import { trackArticleClick, trackCTAClick, trackClicksToFixRecipe, trackToolStart } from '../utils/analytics';
 import { ALL_NEW_SCIENCE_ARTICLES } from '../data/newScienceArticles';
 import type { ScienceArticleSpec } from '../data/scienceArticleTypes';
+import { ARTICLE_LIBRARY_TAB_IDS, type ArticleLibraryTabId } from '../constants/articleLibraryNav';
 
 const NEW_ARTICLE_CARD_COLORS: Record<ScienceArticleSpec['categoryLabel'], [string, string, string]> = {
   'Bread Science': ['from-amber-500 to-yellow-600', 'from-yellow-600 to-orange-500', 'from-orange-500 to-amber-700'],
@@ -40,8 +41,8 @@ const FIX_IT_URLS = new Set<string>([
   '/coffee-science/how-to-debug-your-coffee',
 ]);
 
-const TAB_IDS = ['fix-it', 'cookies', 'bread', 'cakes', 'pies', 'ice-cream', 'coffee', 'sauces', 'baking', 'all'] as const;
-type TabId = (typeof TAB_IDS)[number];
+const TAB_IDS = ARTICLE_LIBRARY_TAB_IDS;
+type TabId = ArticleLibraryTabId;
 
 function parseTabParam(value: string | null): TabId {
   if (value && (TAB_IDS as readonly string[]).includes(value)) return value as TabId;
@@ -936,6 +937,11 @@ export default function Articles() {
               <Link
                 key={article.url}
                 to={article.url}
+                state={
+                  searchQuery.trim()
+                    ? undefined
+                    : ({ articlesTab: activeTab } satisfies { articlesTab: TabId })
+                }
                 onClick={() =>
                   handleArticleClick(
                     article.title,
