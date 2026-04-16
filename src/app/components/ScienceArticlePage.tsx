@@ -385,18 +385,3 @@ export function ScienceArticlePage({ spec }: Props) {
     </div>
   );
 }
-
-function createArticlePageComponent(spec: ScienceArticleSpec) {
-  function Page() {
-    return <ScienceArticlePage spec={spec} />;
-  }
-  Page.displayName = `ScienceArticle(${spec.slug})`;
-  return Page;
-}
-
-export function createScienceArticleRoutes(specs: ScienceArticleSpec[]) {
-  return specs.map((spec) => ({
-    path: `${spec.segment}/${spec.slug}`,
-    Component: createArticlePageComponent(spec),
-  }));
-}

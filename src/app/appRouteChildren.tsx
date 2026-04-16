@@ -3,7 +3,7 @@
  * prerender never loads Root/DocumentMeta/react-helmet-async.
  */
 import Home from "./pages/Home";
-import Articles from "./pages/Articles";
+import Articles from "./pages/articles/Articles";
 import WhyCookiesSpread from "./pages/WhyCookiesSpread";
 import WhyIceCreamGetsIcy from "./pages/WhyIceCreamGetsIcy";
 import CoffeeExtractionScience from "./pages/CoffeeExtractionScience";
@@ -96,10 +96,7 @@ import FixRecipesOneVariableAtATime from "./pages/FixRecipesOneVariableAtATime";
 import HowToDebugCookieBatchIssues from "./pages/HowToDebugCookieBatchIssues";
 import HowToDebugCakeProblems from "./pages/HowToDebugCakeProblems";
 import HowToDebugYourCoffee from "./pages/HowToDebugYourCoffee";
-import { createScienceArticleRoutes } from "./components/ScienceArticlePage";
-import { ALL_NEW_SCIENCE_ARTICLES } from "./data/newScienceArticles";
-
-const newScienceArticleRoutes = createScienceArticleRoutes(ALL_NEW_SCIENCE_ARTICLES);
+import { generatedNewScienceArticleRoutes } from "./generatedNewScienceArticleRoutes";
 
 const cookieScienceRoutes = [
   { path: "cookie-science/how-to-debug-cookie-batch-issues", Component: HowToDebugCookieBatchIssues },
@@ -215,5 +212,5 @@ export const appRouteChildren = [
   ...iceCreamScienceRoutes,
   ...coffeeScienceRoutes,
   ...bakingScienceRoutes,
-  ...newScienceArticleRoutes,
+  ...generatedNewScienceArticleRoutes,
 ];

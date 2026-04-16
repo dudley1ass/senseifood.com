@@ -1,3 +1,7 @@
+/**
+ * Specs for topic-gap and sauce articles (long-form body). The /articles grid roster lives in
+ * `src/app/pages/articles/allArticlesCatalog.ts` (titles, blurbs, URLs, Sensei pairing).
+ */
 import { articlePath, type ScienceArticleSpec } from '../scienceArticleTypes';
 import { applyEnrichments } from './applyEnrichments';
 import { appendDynamicSectionIfShort } from './dynamicArticleExtension';
@@ -24,6 +28,19 @@ const RAW_NEW_SCIENCE_ARTICLES: ScienceArticleSpec[] = [
 export const ALL_NEW_SCIENCE_ARTICLES: ScienceArticleSpec[] = applyEnrichments(RAW_NEW_SCIENCE_ARTICLES).map(
   appendDynamicSectionIfShort
 );
+
+const SPEC_BY_PATH: Map<string, ScienceArticleSpec> = (() => {
+  const m = new Map<string, ScienceArticleSpec>();
+  for (const s of ALL_NEW_SCIENCE_ARTICLES) {
+    m.set(articlePath(s), s);
+  }
+  return m;
+})();
+
+/** Lookup for page components that resolve content from the central new-science article specs. */
+export function getScienceArticleByPath(path: string): ScienceArticleSpec | undefined {
+  return SPEC_BY_PATH.get(path);
+}
 
 /** Route paths without leading slash — used by prerender and sitemap. */
 export const NEW_SCIENCE_ARTICLE_PATHS: string[] = ALL_NEW_SCIENCE_ARTICLES.map((s) => articlePath(s));
