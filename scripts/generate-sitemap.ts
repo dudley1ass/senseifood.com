@@ -37,6 +37,7 @@ function writeSitemap() {
     { loc: '/articles', priority: '0.9', changefreq: 'weekly', lastmod: currentDate },
     { loc: '/fix-recipe', priority: '0.85', changefreq: 'weekly', lastmod: currentDate },
     { loc: '/bread-sensei', priority: '0.85', changefreq: 'weekly', lastmod: currentDate },
+    { loc: '/sauce-sensei', priority: '0.85', changefreq: 'weekly', lastmod: currentDate },
     ...articlePaths.map((p) => {
       const loc = `/${p}`;
       return {

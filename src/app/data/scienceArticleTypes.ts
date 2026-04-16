@@ -15,7 +15,8 @@ export type ScienceArticleSpec = {
     | 'cake-science'
     | 'pie-science'
     | 'ice-cream-science'
-    | 'coffee-science';
+    | 'coffee-science'
+    | 'sauce-science';
   categoryLabel: string;
   title: string;
   subtitle: string;

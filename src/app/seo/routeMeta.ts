@@ -51,6 +51,7 @@ const CATEGORY_SEGMENT: Record<string, { label: string; keyword: string }> = {
   'ice-cream-science': { label: 'Ice Cream Science', keyword: 'ice cream' },
   'coffee-science': { label: 'Coffee Science', keyword: 'coffee' },
   'baking-science': { label: 'Baking Science', keyword: 'baking' },
+  'sauce-science': { label: 'Sauce Science', keyword: 'sauces' },
 };
 
 export type RouteSeo = {
@@ -278,6 +279,18 @@ function computeRouteSeo(path: string): RouteSeo {
       title,
       description,
       canonical: `${SITE_URL}/bread-sensei`,
+    };
+  }
+
+  if (path === '/sauce-sensei') {
+    const title = ensureTitleBand(`Sauce Sensei — sauce builder & balance tool | ${SITE_NAME}`);
+    const description = ensureDescriptionBand(
+      'Build sauces with a practical balance workflow: temperature, reduction, emulsion, umami, and recovery steps. Includes links to SEO-indexed sauce science articles.'
+    );
+    return {
+      title,
+      description,
+      canonical: `${SITE_URL}/sauce-sensei`,
     };
   }
 

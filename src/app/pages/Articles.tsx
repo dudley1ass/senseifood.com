@@ -14,6 +14,7 @@ const NEW_ARTICLE_CARD_COLORS: Record<ScienceArticleSpec['categoryLabel'], [stri
   'Pie Science': ['from-orange-500 to-amber-600', 'from-amber-600 to-yellow-700', 'from-yellow-600 to-orange-600'],
   'Ice Cream Science': ['from-cyan-500 to-blue-600', 'from-blue-400 to-cyan-500', 'from-sky-500 to-blue-600'],
   'Coffee Science': ['from-stone-600 to-amber-800', 'from-amber-600 to-yellow-800', 'from-stone-700 to-amber-900'],
+  'Sauce Science': ['from-rose-600 to-orange-600', 'from-amber-600 to-rose-600', 'from-orange-600 to-red-600'],
 };
 
 function cardsFromNewSpecs() {
@@ -39,7 +40,7 @@ const FIX_IT_URLS = new Set<string>([
   '/coffee-science/how-to-debug-your-coffee',
 ]);
 
-const TAB_IDS = ['fix-it', 'cookies', 'bread', 'cakes', 'pies', 'ice-cream', 'coffee', 'baking', 'all'] as const;
+const TAB_IDS = ['fix-it', 'cookies', 'bread', 'cakes', 'pies', 'ice-cream', 'coffee', 'sauces', 'baking', 'all'] as const;
 type TabId = (typeof TAB_IDS)[number];
 
 function parseTabParam(value: string | null): TabId {
@@ -55,6 +56,7 @@ const ARTICLE_TABS: { id: TabId; label: string; category: 'FIX_IT' | 'ALL' | str
   { id: 'pies', label: 'Pies', category: 'Pie Science' },
   { id: 'ice-cream', label: 'Ice cream', category: 'Ice Cream Science' },
   { id: 'coffee', label: 'Coffee', category: 'Coffee Science' },
+  { id: 'sauces', label: 'Sauces', category: 'Sauce Science' },
   { id: 'baking', label: 'Baking science', category: 'Baking Science' },
   { id: 'all', label: 'All', category: 'ALL' },
 ];

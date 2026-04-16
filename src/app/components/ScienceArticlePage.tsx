@@ -99,6 +99,19 @@ const THEME: Record<
     ctaTo: 'to-amber-700',
     linkClass: 'text-amber-900',
   },
+  'Sauce Science': {
+    pageBg: 'from-amber-50 via-rose-50 to-orange-50',
+    pill: 'from-rose-600 to-orange-600',
+    h1: 'from-rose-700 to-orange-600',
+    h2: 'from-rose-700 to-orange-600',
+    heroFrom: 'from-rose-200',
+    heroTo: 'to-orange-300',
+    quickBorder: 'border-rose-400',
+    quickLabel: 'text-rose-900',
+    ctaFrom: 'from-rose-700',
+    ctaTo: 'to-orange-600',
+    linkClass: 'text-rose-800',
+  },
 };
 
 type Props = { spec: ScienceArticleSpec };

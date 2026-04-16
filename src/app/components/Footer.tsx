@@ -59,6 +59,11 @@ export function Footer() {
                     Bread Sensei
                   </Link>
                 </li>
+                <li>
+                  <Link to="/sauce-sensei" className="text-sm text-white/70 hover:text-white transition-colors">
+                    Sauce Sensei
+                  </Link>
+                </li>
               </ul>
             </div>
 

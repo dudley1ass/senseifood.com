@@ -23,5 +23,5 @@ export function getAllPrerenderPaths(projectRoot: string): string[] {
   const routesFile = path.join(projectRoot, 'src', 'app', 'appRouteChildren.tsx');
   const fromRoutesFile = extractArticlePathsFromRoutesFile(routesFile);
   const articles = [...new Set([...fromRoutesFile, ...NEW_SCIENCE_ARTICLE_PATHS])].sort();
-  return ['/', '/articles', '/fix-recipe', '/bread-sensei', ...articles.map((p) => `/${p}`)];
+  return ['/', '/articles', '/fix-recipe', '/bread-sensei', '/sauce-sensei', ...articles.map((p) => `/${p}`)];
 }

@@ -1,5 +1,5 @@
 import { Link } from 'react-router';
-import { Cookie, Cake, Coffee, IceCream, PieChart, Wheat } from 'lucide-react';
+import { Cookie, Cake, Coffee, IceCream, PieChart, Wheat, Soup } from 'lucide-react';
 import { Hero } from '../components/Hero';
 import { ToolCard } from '../components/ToolCard';
 import { HowItWorks } from '../components/HowItWorks';
@@ -60,6 +60,14 @@ export default function Home() {
       description: 'Formulation, overrun, and stabilizers — scoopable, not icy.',
       url: 'https://icecreamsensei.senseifood.com',
       color: 'from-cyan-500 to-blue-600'
+    },
+    {
+      outcome: 'Build sauces, gravies, and pan finishes with confidence',
+      name: 'Sauce Sensei',
+      icon: Soup,
+      description: 'Balance wheel + practical recovery rules for split, thin, or flat sauces.',
+      url: '/sauce-sensei',
+      color: 'from-rose-600 to-orange-600'
     },
     {
       outcome: 'Fix bitter, sour, weak, or watery coffee',
@@ -145,6 +153,13 @@ export default function Home() {
               >
                 Bread → Bread Sensei
               </Link>
+              <Link
+                to="/sauce-sensei"
+                onClick={() => handleBakeQuickLink('sauces', 'SauceSensei', '/sauce-sensei')}
+                className="inline-flex items-center gap-2 rounded-xl bg-white border-2 border-rose-300 px-4 py-2.5 text-sm font-semibold text-rose-900 hover:shadow-md transition-all"
+              >
+                Sauces → Sauce Sensei
+              </Link>
               <a
                 href="https://cookiesensei.senseifood.com"
                 target="_blank"
@@ -182,7 +197,7 @@ export default function Home() {
           </div>
 
           <p className="text-center text-sm text-muted-foreground max-w-2xl mx-auto">
-            More specialties are on the way — sauces, pickling, and beyond. For now, these six tools are ready to use.
+            More specialties are on the way — pickling, fermentation, and beyond. Sauce Sensei is now live in the hub.
           </p>
         </div>
       </section>
