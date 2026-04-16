@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { Sparkles, ArrowRight, FlaskConical } from 'lucide-react';
 import { Link } from 'react-router';
 import { trackCTAClick, trackClicksToFixRecipe, trackHomePath, trackToolStart } from '../utils/analytics';
@@ -5,7 +6,36 @@ import { trackCTAClick, trackClicksToFixRecipe, trackHomePath, trackToolStart } 
 const BEANSENSEI = 'https://beansensei.senseifood.com';
 const ICECREAM_URL = 'https://icecreamsensei.senseifood.com';
 
+const ROTATING_WORDS = [
+  'Burn',
+  'Overcook',
+  'Undercook',
+  'Dry out',
+  'Ruin',
+  'Mess up',
+  'Screw up',
+  'Curdle',
+  'Over-salt',
+  'Under-season',
+  'Scorch',
+  'Over-reduce',
+  'Water down',
+  'Toughen',
+  'Flatten',
+] as const;
+
 export function Hero() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const id = window.setInterval(() => {
+      setIndex((i) => (i + 1) % ROTATING_WORDS.length);
+    }, 3000);
+    return () => window.clearInterval(id);
+  }, []);
+
+  const word = ROTATING_WORDS[index];
+
   const handleBakeClick = () => {
     trackHomePath('bake', 'home_hero');
     trackCTAClick('home_hero', 'path_bake', '#home-bake');
@@ -42,14 +72,35 @@ export function Hero() {
       <div className="absolute top-1/2 left-1/2 w-48 h-48 sm:w-64 sm:h-64 bg-gradient-to-br from-purple-500/10 to-indigo-500/10 rounded-full blur-3xl -z-10" />
 
       <div className="max-w-4xl mx-auto text-center">
+        {/* Opening beat: rotating word + your line (same idea, cleaned grammar). */}
+        <div className="mb-8 sm:mb-10 md:mb-12">
+          <h1 className="text-[1.65rem] leading-snug sm:text-4xl md:text-5xl font-semibold tracking-tight text-purple-950 mb-4 sm:mb-5">
+            What did you{' '}
+            <span
+              className="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 bg-clip-text text-transparent inline-block min-h-[1.2em]"
+              aria-live="polite"
+              aria-atomic="true"
+            >
+              {word}
+            </span>{' '}
+            today?
+          </h1>
+          <p className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+            We are here to help. We have more than 70 science-based articles to explain what went wrong, and a recipe
+            builder to help you prevent it in the future. Where do you want to start?
+          </p>
+        </div>
+
+        <div className="h-px max-w-md mx-auto bg-gradient-to-r from-transparent via-purple-200 to-transparent mb-8 sm:mb-10" aria-hidden />
+
         <div className="inline-flex items-center gap-1.5 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-3.5 py-1.5 sm:px-5 sm:py-2 rounded-full mb-3 sm:mb-4 shadow-md shadow-purple-500/20">
           <Sparkles className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" aria-hidden />
           <span className="text-xs sm:text-sm leading-tight">Food science tools—free, no account</span>
         </div>
 
-        <h1 className="text-[1.65rem] leading-tight sm:text-4xl md:text-5xl lg:text-6xl mb-3 sm:mb-4 font-semibold tracking-tight bg-gradient-to-r from-purple-600 via-pink-600 to-orange-600 bg-clip-text text-transparent">
+        <h2 className="text-[1.5rem] leading-tight sm:text-3xl md:text-4xl lg:text-5xl mb-3 sm:mb-4 font-semibold tracking-tight bg-gradient-to-r from-purple-600 via-pink-600 to-orange-600 bg-clip-text text-transparent">
           What do you want to make today?
-        </h1>
+        </h2>
 
         <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4 max-w-lg mx-auto px-2">
           <div
