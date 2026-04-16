@@ -1,5 +1,5 @@
 import { ArrowLeft, BookOpen, Search, Wrench } from 'lucide-react';
-import { Link, useSearchParams } from 'react-router';
+import { Link, useNavigate, useSearchParams } from 'react-router';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
 import { useMemo, useState } from 'react';
@@ -62,12 +62,19 @@ const ARTICLE_TABS: { id: TabId; label: string; category: 'FIX_IT' | 'ALL' | str
 ];
 
 export default function Articles() {
+  const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
   const [searchQuery, setSearchQuery] = useState('');
 
   const activeTab = parseTabParam(searchParams.get('tab'));
 
   const setActiveTab = (id: TabId) => {
+    if (id === 'sauces') {
+      trackCTAClick('articles_tab', id, '/sauce-sensei');
+      trackToolStart('SauceSensei', 'articles_tab');
+      navigate('/sauce-sensei');
+      return;
+    }
     setSearchParams({ tab: id }, { replace: true });
     trackCTAClick('articles_tab', id, `/articles?tab=${id}`);
   };
