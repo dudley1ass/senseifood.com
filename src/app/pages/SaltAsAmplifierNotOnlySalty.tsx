@@ -10,36 +10,64 @@ const SPEC: ScienceArticleSpec = {
   "subtitle": "Why under-salted sauces read flat even when acid and fat are present.",
   "readTime": "8 min read",
   "emoji": "🧂",
-  "quickAnswer": "Before adding acid or sugar, verify salt threshold—salt multiplies total flavor expression.",
-  "intro": "Salt does more than add saltiness. It can suppress bitterness, increase flavor contrast, and make umami more legible. Many “needs acid” sauces are actually under-salted.",
+  "quickAnswer": "Before adding acid or sugar, verify salt threshold—salt multiplies total flavor expression and can suppress harsh bitterness at culinary doses.",
+  "intro": "Salt does more than add saltiness. It can suppress bitterness, increase flavor contrast, and make umami more legible. Many “needs acid” sauces are actually under-salted: the taster reaches for brightness because nothing else is punching through. SenseiFood puts salt early in the debug sequence not because salt fixes everything, but because under-salt masquerades as many other problems. Once salt reaches a sensible threshold, acid moves read cleaner, fat reads rounder, and sweet stops feeling hollow. This article is about perception mechanics, not sodium ideology—adjust to your health context with knowledge of what you trade off. When you compare two trials, dissolve salt the same way each time so crystal size does not confound your conclusions. Even a pinch deserves attention: distribution beats dumping.",
   "sections": [
     {
       "heading": "Salt as a perception multiplier",
       "paragraphs": [
-        "At culinary concentrations, salt can increase apparent sweetness and savory depth while reducing harshness. This changes the whole profile, not one axis.",
-        "A sauce can be compositionally balanced but perceptually muted until salt reaches threshold."
+        "At culinary concentrations, salt can increase apparent sweetness and savory depth while reducing harshness. This changes the whole profile, not one axis—like turning up contrast on a photo instead of only saturation.",
+        "A sauce can be compositionally balanced on paper yet perceptually muted until salt reaches threshold. Threshold differs by diner and by temperature; cold sauces often need careful salt tasting."
       ]
     },
     {
-      "heading": "Debug order",
+      "heading": "Debug order: salt before acid spirals",
       "paragraphs": [
-        "Taste, add a small dissolved salt increment, taste again. If flavor “wakes up,” keep salt correction as the primary move and avoid over-acidifying."
+        "Taste, add a small dissolved salt increment, taste again. If flavor “wakes up,” keep salt correction as the primary move and avoid over-acidifying to chase brightness.",
+        "Dissolve salt in a little water or sauce liquid before adding if you fear hotspots; flakes help in delicate emulsions."
       ],
       "tip": "Before fixing anything—check salt."
     },
     {
-      "heading": "Benchmark temperatures and a repeatable test protocol",
+      "heading": "Sources beyond the shaker",
       "paragraphs": [
-        "This guide on salt is an amplifier, not just “salty” is easier to act on when you anchor numbers instead of vibes. Ice cream hardness depends on ice phase fraction, sugar depression of freezing point, fat network, and air (overrun). Typical home freezers sit near 0°F (-18°C); serving slightly warmer—around 6–10°F (-14 to -12°C) for hard-pack—improves scoopability. Pasteurizing custard bases to roughly 175–180°F (79–82°C) without boiling sets proteins safely; boiling risks curdling emulsions. Rapid freezing forms smaller ice crystals; slow freezing and partial thaw cycles grow crystals and feel icy. Total solids (fat + MSNF + sugar + stabilizers) set body; water-only bases freeze harder. Write down ambient kitchen temperature (°F), the set point on your oven or machine, and—when relevant—an internal probe reading or brew time. Change one input per trial: flour brand, hydration percentage, grind setting, chill time, or rack position. Photograph crumb or cup side-by-side after each change. SenseiFood’s Fix My Recipe debugger pairs these observations with ratio checks for your category so the next bake or brew is a measured step, not a guess.",
-        "If you use °C in the kitchen, convert critical bands once and tape them inside a cabinet: 200°F ≈ 93°C (cake/bread finish neighborhood), 350°F ≈ 177°C (common cake/cookie air set point), 212°F = 100°C (sea-level water boil), and espresso extraction times often discussed in the 25–35 second range for classic 9-bar shots—always taste-adjusted to your machine. Altitude lowers water’s boiling point, which shifts extraction and evaporation; bakers at elevation should rely more on internal temperature and visual set than on clock alone.",
-        "Humidity changes how dough skins, how icing behaves, and how staling feels the next day—note outdoor weather when results swing for no obvious reason. For anything oven-based, log preheat completion time: many ovens continue drifting 10–20°F after the beep. For frozen desserts, log freezer display temp if available; a chest freezer near −10°F (−23°C) behaves differently than a frost-free kitchen freezer with defrost cycles. Small environmental logs turn one-off failures into solvable patterns."
+        "Soy, fish sauce, capers, hard cheese, cured meats, and miso all bring salt with other flavors. When you add them, you are moving multiple axes—track net salinity, not ingredient count.",
+        "If you are already salty from soy but still flat, see the umami article: you may need savoriness, not more sodium."
+      ],
+      "bullets": [
+        {
+          "title": "Finishing salt",
+          "text": "Flaky finishes add texture and burst; they do not fix an under-seasoned liquid base alone."
+        }
       ]
     },
     {
-      "heading": "Extra variables that swing results",
+      "heading": "Salt, reduction, and late-stage risk",
       "paragraphs": [
-        "When a symptom persists, compare two batches on consecutive days with the same flour bag and yeast lot—raw ingredient drift is real. Keep a kitchen thermometer calibrated yearly if you bake weekly; five degrees at the oven cavity is enough to change set time materially."
+        "Reducing concentrates salt along with everything else. If you salted aggressively early in a long reduction, finish can land harsh. Under-salting early and finishing late is often safer for demi-style work.",
+        "If a sauce tastes salty but still hollow, you are past the salt lever—look to umami, aroma, or dilution."
       ]
+    },
+    {
+      "heading": "Dietary constraints without losing craft",
+      "paragraphs": [
+        "Lower-sodium cooking can lean on acids, herbs, and umami carriers that add less sodium—but they do not perfectly substitute salt’s contrast effects. Be honest about the trade and compensate with technique: deeper browning, better stocks, and precise finishing.",
+        "Measure salt by weight in development batches so you can scale reductions predictably."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "I added salt and it still tastes flat—now what?",
+      "a": "Check dilution and umami next. Hidden water, weak stock, or missing savory depth can masquerade as salt issues. Also taste at service temperature."
+    },
+    {
+      "q": "Why does my sauce taste salty but bland?",
+      "a": "Salt crossed threshold without supporting flavor density—often dilute liquid or missing aromatics. Reduce, build stock quality, or add umami rather than more salt."
+    },
+    {
+      "q": "Kosher versus table salt—does it matter?",
+      "a": "Weight matters, not volume. Different crystal shapes pack differently; grams remove guesswork."
     }
   ],
   "related": [

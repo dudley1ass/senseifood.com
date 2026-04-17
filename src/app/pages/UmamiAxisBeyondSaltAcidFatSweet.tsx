@@ -10,36 +10,68 @@ const SPEC: ScienceArticleSpec = {
   "subtitle": "Balanced sauces can still feel empty without savory depth compounds.",
   "readTime": "8 min read",
   "emoji": "🍄",
-  "quickAnswer": "If sauce is balanced but hollow, add umami (soy, mushroom, parmesan, tomato paste, Worcestershire).",
-  "intro": "Salt, acid, fat, and sweet explain a lot, but not everything. Umami adds persistent savory depth that makes sauces taste complete rather than merely balanced.",
+  "quickAnswer": "If a sauce is balanced but hollow, add umami sources—soy, mushroom, parmesan, tomato paste, Worcestershire—in small doses and retaste. Depth is not the same as saltiness.",
+  "intro": "Salt, acid, fat, and sweet explain a lot, but not everything. Umami adds persistent savory depth that makes sauces taste complete rather than merely balanced. You can tick every box on a flavor wheel and still feel unsatisfied if glutamates and nucleotides are thin: the sauce reads clean, polite, and forgettable. SenseiFood treats umami as its own axis because the fixes differ from “more salt” or “more butter.” Umami lengthens flavor, supports aroma, and helps bridge acid and sweet so neither reads sharp or cloying. When in doubt, add one umami source, taste, then decide whether salt still needs to move.",
   "sections": [
     {
       "heading": "Why balanced can still feel empty",
       "paragraphs": [
-        "A sauce can hit structural balance yet lack glutamate and nucleotide-driven savoriness. The result is clean but unsatisfying flavor.",
-        "Umami sources increase perceived depth and length without necessarily increasing acidity or sweetness."
+        "A sauce can hit structural balance yet lack glutamate- and nucleotide-driven savoriness. The result is clean but unsatisfying flavor—like a well-lit room with no furniture.",
+        "Umami sources increase perceived depth and length without necessarily increasing acidity or sweetness. That matters when you are out of safe moves on the other axes."
       ]
     },
     {
-      "heading": "Practical umami additions",
+      "heading": "Practical umami additions (and discipline)",
       "paragraphs": [
-        "Use small doses and retaste: soy sauce, mushroom concentrates, parmesan, tomato paste, anchovy, or Worcestershire can all add backbone."
+        "Use small doses and retaste: soy sauce, mushroom concentrates, parmesan rind simmered and removed, tomato paste browned briefly, anchovy melted into aromatics, Worcestershire, fish sauce in unexpected places. Each brings a different vector—fermented depth, roasted depth, marine depth.",
+        "Layer rather than dump. Umami can read muddy if you add every pantry bottle; pick a story and commit."
       ],
-      "tip": "Still missing something? Add UMAMI."
+      "tip": "Still missing something? Add UMAMI—after salt threshold is plausible."
     },
     {
-      "heading": "Benchmark temperatures and a repeatable test protocol",
+      "heading": "Umami versus salt: related but not identical",
       "paragraphs": [
-        "This guide on umami: the missing fifth axis is easier to act on when you anchor numbers instead of vibes. Ice cream hardness depends on ice phase fraction, sugar depression of freezing point, fat network, and air (overrun). Typical home freezers sit near 0°F (-18°C); serving slightly warmer—around 6–10°F (-14 to -12°C) for hard-pack—improves scoopability. Pasteurizing custard bases to roughly 175–180°F (79–82°C) without boiling sets proteins safely; boiling risks curdling emulsions. Rapid freezing forms smaller ice crystals; slow freezing and partial thaw cycles grow crystals and feel icy. Total solids (fat + MSNF + sugar + stabilizers) set body; water-only bases freeze harder. Write down ambient kitchen temperature (°F), the set point on your oven or machine, and—when relevant—an internal probe reading or brew time. Change one input per trial: flour brand, hydration percentage, grind setting, chill time, or rack position. Photograph crumb or cup side-by-side after each change. SenseiFood’s Fix My Recipe debugger pairs these observations with ratio checks for your category so the next bake or brew is a measured step, not a guess.",
-        "If you use °C in the kitchen, convert critical bands once and tape them inside a cabinet: 200°F ≈ 93°C (cake/bread finish neighborhood), 350°F ≈ 177°C (common cake/cookie air set point), 212°F = 100°C (sea-level water boil), and espresso extraction times often discussed in the 25–35 second range for classic 9-bar shots—always taste-adjusted to your machine. Altitude lowers water’s boiling point, which shifts extraction and evaporation; bakers at elevation should rely more on internal temperature and visual set than on clock alone.",
-        "Humidity changes how dough skins, how icing behaves, and how staling feels the next day—note outdoor weather when results swing for no obvious reason. For anything oven-based, log preheat completion time: many ovens continue drifting 10–20°F after the beep. For frozen desserts, log freezer display temp if available; a chest freezer near −10°F (−23°C) behaves differently than a frost-free kitchen freezer with defrost cycles. Small environmental logs turn one-off failures into solvable patterns."
+        "Soy sauce adds both; parmesan adds both. If you fix hollow flavor only with salty umami carriers, you may overshoot salinity. Sometimes mushroom tea or a splash of glutamate-rich stock increases savoriness with less sodium load than another shake of soy.",
+        "Taste for salt and umami as separate questions: “Is it loud?” versus “Does it linger and feel mouth-filling?”"
+      ],
+      "bullets": [
+        {
+          "title": "Tomato paste",
+          "text": "Brown it in fat briefly to shift raw-acid character toward roasted savoriness before liquids join."
+        },
+        {
+          "title": "Mushroom",
+          "text": "Dried mushrooms, rehydrated with the soaking liquid strained, add both body and nucleotides."
+        }
       ]
     },
     {
-      "heading": "Extra variables that swing results",
+      "heading": "Pairing umami with fat and acid",
       "paragraphs": [
-        "When a symptom persists, compare two batches on consecutive days with the same flour bag and yeast lot—raw ingredient drift is real. Keep a kitchen thermometer calibrated yearly if you bake weekly; five degrees at the oven cavity is enough to change set time materially."
+        "Fat carries aroma; umami adds mid-palate weight. Without acid, rich umami sauces can feel heavy—lemon, vinegar, or tomato acid still matter for lift.",
+        "Sweet can round ferocious edges—think tamarind or a pinch of sugar with soy—but sweet alone cannot replace savoriness."
       ]
+    },
+    {
+      "heading": "When not to chase umami",
+      "paragraphs": [
+        "Delicate butter sauces and some seafood builds want restraint; heavy umami can dominate subtle aromas. Match intensity to the protein and garnish.",
+        "If the dish already includes aged cheese, cured meat, or long-roasted stocks, the hollow feeling may be texture or temperature—not missing glutamate."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is MSG cheating?",
+      "a": "It is a tool like salt—use thoughtfully in tiny amounts if you choose. Many natural ingredients are rich in glutamate. Label comfort varies by kitchen; technique does not."
+    },
+    {
+      "q": "Why does my vegan sauce still feel flat with plenty of salt?",
+      "a": "Salt amplifies what is there; if savory nucleotides are low, you get loud salt without depth. Add mushroom, tomato, koji, miso, or nutritional yeast in measured doses."
+    },
+    {
+      "q": "Can you have too much umami?",
+      "a": "Yes—muddy, monotonic savoriness is real. Dilute, brighten with acid, or reduce the heaviest contributor and rebuild."
     }
   ],
   "related": [

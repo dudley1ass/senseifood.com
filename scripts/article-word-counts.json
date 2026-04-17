@@ -1,0 +1,434 @@
+{
+  "generated": "2026-04-17T20:17:55.203Z",
+  "rows": [
+    {
+      "f": "src/app/pages/MustardPanSauce.tsx",
+      "wc": 600
+    },
+    {
+      "f": "src/app/pages/SweetTomatoSauce.tsx",
+      "wc": 600
+    },
+    {
+      "f": "src/app/pages/BalsamicGlaze.tsx",
+      "wc": 600
+    },
+    {
+      "f": "src/app/pages/BasilPesto.tsx",
+      "wc": 601
+    },
+    {
+      "f": "src/app/pages/MushroomCreamSauce.tsx",
+      "wc": 602
+    },
+    {
+      "f": "src/app/pages/OrderOfOperationsSauceTiming.tsx",
+      "wc": 603
+    },
+    {
+      "f": "src/app/pages/EmulsionVsNonEmulsionSauces.tsx",
+      "wc": 603
+    },
+    {
+      "f": "src/app/pages/WhyCakesLoseHeightAfterFrosting.tsx",
+      "wc": 605
+    },
+    {
+      "f": "src/app/pages/SaltAsAmplifierNotOnlySalty.tsx",
+      "wc": 606
+    },
+    {
+      "f": "src/app/pages/WhyCoffeeTastesThinButBitter.tsx",
+      "wc": 607
+    },
+    {
+      "f": "src/app/pages/SpicyTomatoSauce.tsx",
+      "wc": 608
+    },
+    {
+      "f": "src/app/pages/WhyCakesStickToThemselvesWhenLayering.tsx",
+      "wc": 608
+    },
+    {
+      "f": "src/app/pages/ReductionCurveNonlinearFlavor.tsx",
+      "wc": 609
+    },
+    {
+      "f": "src/app/pages/NachoCheeseSauce.tsx",
+      "wc": 609
+    },
+    {
+      "f": "src/app/pages/GarlicSoySauce.tsx",
+      "wc": 611
+    },
+    {
+      "f": "src/app/pages/WaterContentHiddenDilution.tsx",
+      "wc": 612
+    },
+    {
+      "f": "src/app/pages/UmamiAxisBeyondSaltAcidFatSweet.tsx",
+      "wc": 615
+    },
+    {
+      "f": "src/app/pages/StockReductionDemi.tsx",
+      "wc": 615
+    },
+    {
+      "f": "src/app/pages/TeriyakiGlaze.tsx",
+      "wc": 617
+    },
+    {
+      "f": "src/app/pages/LemonPanSauce.tsx",
+      "wc": 622
+    },
+    {
+      "f": "src/app/pages/WhyDoubleCrustPiesTrapSteam.tsx",
+      "wc": 635
+    },
+    {
+      "f": "src/app/pages/WhiteGravySouthern.tsx",
+      "wc": 644
+    },
+    {
+      "f": "src/app/pages/WhyCustardPiesCrack.tsx",
+      "wc": 648
+    },
+    {
+      "f": "src/app/pages/WhyIceCreamTastesTooSweet.tsx",
+      "wc": 648
+    },
+    {
+      "f": "src/app/pages/WhyIceCreamDevelopsIceLayersOverTime.tsx",
+      "wc": 658
+    },
+    {
+      "f": "src/app/pages/WhySaucesTasteGoodHotButFlatCold.tsx",
+      "wc": 659
+    },
+    {
+      "f": "src/app/pages/WhyChillingCookieDoughMatters.tsx",
+      "wc": 666
+    },
+    {
+      "f": "src/app/pages/WhySaucesBreakWhenReheated.tsx",
+      "wc": 666
+    },
+    {
+      "f": "src/app/pages/WhyDoughSpringsBackWhenShaping.tsx",
+      "wc": 670
+    },
+    {
+      "f": "src/app/pages/WhyCoffeeTastesDifferentEveryBrew.tsx",
+      "wc": 672
+    },
+    {
+      "f": "src/app/pages/WhyCoffeeTastesUnderExtracted.tsx",
+      "wc": 673
+    },
+    {
+      "f": "src/app/pages/WhyBreadNeedsScoring.tsx",
+      "wc": 678
+    },
+    {
+      "f": "src/app/pages/WhyDoughRisesTooSlow.tsx",
+      "wc": 682
+    },
+    {
+      "f": "src/app/pages/WhyBreadCrustIsTooSoft.tsx",
+      "wc": 683
+    },
+    {
+      "f": "src/app/pages/BrownGravyStockBased.tsx",
+      "wc": 683
+    },
+    {
+      "f": "src/app/pages/WhyPieCrustIsTooPale.tsx",
+      "wc": 685
+    },
+    {
+      "f": "src/app/pages/WhySaucesSeparateOnThePlate.tsx",
+      "wc": 686
+    },
+    {
+      "f": "src/app/pages/WhyPieFillingBubblesOver.tsx",
+      "wc": 691
+    },
+    {
+      "f": "src/app/pages/WhyDoughRisesTooFast.tsx",
+      "wc": 692
+    },
+    {
+      "f": "src/app/pages/WhyOvenSpringHappens.tsx",
+      "wc": 692
+    },
+    {
+      "f": "src/app/pages/MornaySauce.tsx",
+      "wc": 692
+    },
+    {
+      "f": "src/app/pages/WhyCookiesStickTogether.tsx",
+      "wc": 693
+    },
+    {
+      "f": "src/app/pages/BreadFlourVsAllPurposeFlour.tsx",
+      "wc": 694
+    },
+    {
+      "f": "src/app/pages/WhyDoughWontHoldShape.tsx",
+      "wc": 695
+    },
+    {
+      "f": "src/app/pages/WhyCoffeeAromaDoesntMatchTaste.tsx",
+      "wc": 695
+    },
+    {
+      "f": "src/app/pages/WhyIceCreamBaseCurdlesBeforeChurning.tsx",
+      "wc": 696
+    },
+    {
+      "f": "src/app/pages/WhyBreadIsPale.tsx",
+      "wc": 697
+    },
+    {
+      "f": "src/app/pages/WhyCookiesTurnOutDifferentEachBatch.tsx",
+      "wc": 698
+    },
+    {
+      "f": "src/app/pages/WhyCakesStickToKnifeWhenCutting.tsx",
+      "wc": 700
+    },
+    {
+      "f": "src/app/pages/TemperatureSilentKillerSauces.tsx",
+      "wc": 700
+    },
+    {
+      "f": "src/app/pages/WhyCakesCrumbleWhenCut.tsx",
+      "wc": 703
+    },
+    {
+      "f": "src/app/pages/WhyPieCrustFallsApart.tsx",
+      "wc": 707
+    },
+    {
+      "f": "src/app/pages/WhyBreadSmellsYeasty.tsx",
+      "wc": 707
+    },
+    {
+      "f": "src/app/pages/WhyCakesDryOutAfterOneDay.tsx",
+      "wc": 710
+    },
+    {
+      "f": "src/app/pages/WhyPieCrustBurnsBeforeFillingCooks.tsx",
+      "wc": 711
+    },
+    {
+      "f": "src/app/pages/WhyPieCrustCracksWhenRolling.tsx",
+      "wc": 712
+    },
+    {
+      "f": "src/app/pages/WhyIceCreamIsTooSoft.tsx",
+      "wc": 712
+    },
+    {
+      "f": "src/app/pages/OneChangeRuleSauceDebugging.tsx",
+      "wc": 712
+    },
+    {
+      "f": "src/app/pages/WhyCoffeeTastesOverExtracted.tsx",
+      "wc": 713
+    },
+    {
+      "f": "src/app/pages/WhyIceCreamDoesntScoopSmoothly.tsx",
+      "wc": 714
+    },
+    {
+      "f": "src/app/pages/WhySaucesClashWithProtein.tsx",
+      "wc": 714
+    },
+    {
+      "f": "src/app/pages/WhyBreadCrumbIsTooTight.tsx",
+      "wc": 714
+    },
+    {
+      "f": "src/app/pages/WhyCoffeeStrengthVsExtractionMatters.tsx",
+      "wc": 716
+    },
+    {
+      "f": "src/app/pages/WhyBreadNeedsSteam.tsx",
+      "wc": 717
+    },
+    {
+      "f": "src/app/pages/WhyIceCreamLacksFlavor.tsx",
+      "wc": 717
+    },
+    {
+      "f": "src/app/pages/WhyCookiesSpreadInOvenButNotBefore.tsx",
+      "wc": 718
+    },
+    {
+      "f": "src/app/pages/WhyHydrationMattersInBread.tsx",
+      "wc": 720
+    },
+    {
+      "f": "src/app/pages/WhyIceCreamTastesIcy.tsx",
+      "wc": 720
+    },
+    {
+      "f": "src/app/pages/WhyCakesSinkAroundTheEdges.tsx",
+      "wc": 723
+    },
+    {
+      "f": "src/app/pages/WhyIceCreamSeparates.tsx",
+      "wc": 724
+    },
+    {
+      "f": "src/app/pages/WhyCakesAreTooSweet.tsx",
+      "wc": 727
+    },
+    {
+      "f": "src/app/pages/WhyIceCreamIsTooHard.tsx",
+      "wc": 728
+    },
+    {
+      "f": "src/app/pages/WhyCoffeeTastesHollow.tsx",
+      "wc": 730
+    },
+    {
+      "f": "src/app/pages/WhyCakesTasteEggy.tsx",
+      "wc": 736
+    },
+    {
+      "f": "src/app/pages/WhyCookiesStickToEachOtherAfterBaking.tsx",
+      "wc": 739
+    },
+    {
+      "f": "src/app/pages/WhyCakesTurnOutFlat.tsx",
+      "wc": 748
+    },
+    {
+      "f": "src/app/pages/WhyBreadBurnsOnTheBottom.tsx",
+      "wc": 750
+    },
+    {
+      "f": "src/app/pages/WhyBreadDoesntRise.tsx",
+      "wc": 755
+    },
+    {
+      "f": "src/app/pages/WhyBreadCrustIsTooHard.tsx",
+      "wc": 759
+    },
+    {
+      "f": "src/app/pages/WhyCookiesPuffInsteadOfSpread.tsx",
+      "wc": 759
+    },
+    {
+      "f": "src/app/pages/WhyBreadHasNoFlavor.tsx",
+      "wc": 761
+    },
+    {
+      "f": "src/app/pages/WhyEspressoChannels.tsx",
+      "wc": 764
+    },
+    {
+      "f": "src/app/pages/WhyBreadIsTooChewy.tsx",
+      "wc": 765
+    },
+    {
+      "f": "src/app/pages/WhyIceCreamLosesAirOverrunCollapse.tsx",
+      "wc": 778
+    },
+    {
+      "f": "src/app/pages/WhyBreadIsDense.tsx",
+      "wc": 780
+    },
+    {
+      "f": "src/app/pages/WhyBreadHasLargeHoles.tsx",
+      "wc": 790
+    },
+    {
+      "f": "src/app/pages/WhyCoffeeWaterChemistryMatters.tsx",
+      "wc": 791
+    },
+    {
+      "f": "src/app/pages/WhyCakesBakeUnevenly.tsx",
+      "wc": 804
+    },
+    {
+      "f": "src/app/pages/WhyBreadIsDry.tsx",
+      "wc": 805
+    },
+    {
+      "f": "src/app/pages/WhyDoughIsTooSticky.tsx",
+      "wc": 805
+    },
+    {
+      "f": "src/app/pages/WhyCookiesTasteFloury.tsx",
+      "wc": 812
+    },
+    {
+      "f": "src/app/pages/WhySaucesTasteMetallic.tsx",
+      "wc": 813
+    },
+    {
+      "f": "src/app/pages/WhyFruitPiesTurnGrainy.tsx",
+      "wc": 821
+    },
+    {
+      "f": "src/app/pages/WhyCakesOilOut.tsx",
+      "wc": 824
+    },
+    {
+      "f": "src/app/pages/WhyCookiesTasteTooSweet.tsx",
+      "wc": 829
+    },
+    {
+      "f": "src/app/pages/WhyCakesHaveAWetLayerAtTheBottom.tsx",
+      "wc": 839
+    },
+    {
+      "f": "src/app/pages/WhyPieCrustBlisters.tsx",
+      "wc": 840
+    },
+    {
+      "f": "src/app/pages/WhyBreadDoughTearsInsteadOfStretching.tsx",
+      "wc": 852
+    },
+    {
+      "f": "src/app/pages/WhyCakesTasteFlat.tsx",
+      "wc": 881
+    },
+    {
+      "f": "src/app/pages/WhyBreadCollapsesAfterBaking.tsx",
+      "wc": 898
+    },
+    {
+      "f": "src/app/pages/WhyCookiesHaveNoDepthOfFlavor.tsx",
+      "wc": 912
+    },
+    {
+      "f": "src/app/pages/WhyCoffeeTastesBetterAtCertainTemperatures.tsx",
+      "wc": 916
+    },
+    {
+      "f": "src/app/pages/WhyCakesStickToPansEvenWhenGreased.tsx",
+      "wc": 917
+    },
+    {
+      "f": "src/app/pages/WhyBreadIsGummyInside.tsx",
+      "wc": 949
+    },
+    {
+      "f": "src/app/pages/WhyCakesFormAThickCrust.tsx",
+      "wc": 950
+    },
+    {
+      "f": "src/app/pages/WhyCookiesTasteBetterTheNextDay.tsx",
+      "wc": 1031
+    },
+    {
+      "f": "src/app/pages/WhyPieFillingsTasteBland.tsx",
+      "wc": 1058
+    }
+  ],
+  "under600": []
+}

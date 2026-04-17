@@ -11,34 +11,64 @@ const SPEC: ScienceArticleSpec = {
   "readTime": "8 min read",
   "level": "Recipe guide",
   "emoji": "🫕",
-  "quickAnswer": "Mustard and cheese both bring acid load — add mustard gradually and taste as Gruyère melts in.",
-  "intro": "Mornay is a cheese sauce built on a white sauce backbone. The flour stabilizes and thickens; cheese introduces fat, protein, and savoriness. Finish consistency before chasing salt, because cheese carries its own salinity.",
+  "quickAnswer": "Mustard and cheese both bring acid load — add mustard gradually and taste as Gruyère melts in. Finish consistency before chasing salt, because cheese carries its own salinity.",
+  "intro": "Mornay is a cheese sauce built on a white sauce backbone. The flour stabilizes and thickens; cheese introduces fat, protein, and savoriness. The Sauce Sensei wheel still applies: salt, acid, fat, sweet, and umami all shift as cheese melts in and as the base tightens. Finish body before you chase seasoning, because cheese carries salinity and mustard adds sharpness that reads louder as the sauce thickens. Your goal is smooth flow without graininess—low, patient heat beats heroic boiling once dairy proteins are in play.",
   "sections": [
     {
-      "heading": "Texture first",
+      "heading": "Texture first: a smooth béchamel foundation",
       "paragraphs": [
-        "Smooth béchamel makes smooth mornay. Strain if needed, especially for fine dining finishes."
+        "Smooth béchamel makes smooth mornay. Cook the roux enough to lose raw flour flavor, hydrate fully, and whisk out lumps before cheese ever arrives. If the base is gritty, cheese cannot fix it—only hide it briefly.",
+        "Strain if needed, especially for fine dining finishes or when feeding a crowd where visual uniformity matters. A quick pass catches rogue clumps that would nucleate graininess later."
       ]
     },
     {
-      "heading": "Cheese incorporation",
+      "heading": "Cheese incorporation: heat, motion, and patience",
       "paragraphs": [
-        "Add cheese off heat or at gentle heat, stirring until melted. Boiling after cheese is in invites graininess."
+        "Add cheese off heat or at gentle heat, stirring until melted. Boiling after cheese is in invites graininess because dairy proteins tighten and can separate. Think of cheese as a sensitive guest: invite it in calmly.",
+        "Gruyère melts with body and a nutty savor; pre-grated bags often include anti-caking starch that changes behavior—grate from the block when you care about texture."
+      ],
+      "tip": "If the sauce tightens too much as cheese goes in, thin with warm milk in small splashes rather than turning the burner up."
+    },
+    {
+      "heading": "Mustard, acid balance, and salt sequencing",
+      "paragraphs": [
+        "Mustard brightens mornay and cuts richness, but it is an acid load. Add in small increments, taste after each, and remember cheese already brings acid and salt. Dijon behaves differently than dry mustard; start with less than you think.",
+        "Salt last in spirit even if you salt the béchamel early: cheese will move the needle. Taste after the full cheese load is incorporated and the sauce has rested a minute."
+      ],
+      "bullets": [
+        {
+          "title": "Nutmeg and white pepper",
+          "text": "Traditional background notes—tiny amounts; they should read as warmth, not spice rack."
+        }
       ]
     },
     {
-      "heading": "Benchmark temperatures and a repeatable test protocol",
+      "heading": "Holding, skinning, and service recovery",
       "paragraphs": [
-        "This guide on mornay sauce: recipe & balance guide is easier to act on when you anchor numbers instead of vibes. Ice cream hardness depends on ice phase fraction, sugar depression of freezing point, fat network, and air (overrun). Typical home freezers sit near 0°F (-18°C); serving slightly warmer—around 6–10°F (-14 to -12°C) for hard-pack—improves scoopability. Pasteurizing custard bases to roughly 175–180°F (79–82°C) without boiling sets proteins safely; boiling risks curdling emulsions. Rapid freezing forms smaller ice crystals; slow freezing and partial thaw cycles grow crystals and feel icy. Total solids (fat + MSNF + sugar + stabilizers) set body; water-only bases freeze harder. Write down ambient kitchen temperature (°F), the set point on your oven or machine, and—when relevant—an internal probe reading or brew time. Change one input per trial: flour brand, hydration percentage, grind setting, chill time, or rack position. Photograph crumb or cup side-by-side after each change. SenseiFood’s Fix My Recipe debugger pairs these observations with ratio checks for your category so the next bake or brew is a measured step, not a guess.",
-        "If you use °C in the kitchen, convert critical bands once and tape them inside a cabinet: 200°F ≈ 93°C (cake/bread finish neighborhood), 350°F ≈ 177°C (common cake/cookie air set point), 212°F = 100°C (sea-level water boil), and espresso extraction times often discussed in the 25–35 second range for classic 9-bar shots—always taste-adjusted to your machine. Altitude lowers water’s boiling point, which shifts extraction and evaporation; bakers at elevation should rely more on internal temperature and visual set than on clock alone.",
-        "Humidity changes how dough skins, how icing behaves, and how staling feels the next day—note outdoor weather when results swing for no obvious reason. For anything oven-based, log preheat completion time: many ovens continue drifting 10–20°F after the beep. For frozen desserts, log freezer display temp if available; a chest freezer near −10°F (−23°C) behaves differently than a frost-free kitchen freezer with defrost cycles. Small environmental logs turn one-off failures into solvable patterns."
+        "Cheese sauces skin on top and can stiffen in the steam table. Press parchment or plastic to the surface for short holds, or hold in a narrow bain-marie with gentle stirring. Re-thin with warm milk while whisking; do not blast heat to loosen.",
+        "If the sauce breaks on hold, lower heat, add a splash of warm milk, and whisk. Sometimes a teaspoon of cold butter off heat helps re-emulsify the shine—still one change at a time."
       ]
     },
     {
-      "heading": "Extra variables that swing results",
+      "heading": "Pairing and portion discipline",
       "paragraphs": [
-        "When a symptom persists, compare two batches on consecutive days with the same flour bag and yeast lot—raw ingredient drift is real. Keep a kitchen thermometer calibrated yearly if you bake weekly; five degrees at the oven cavity is enough to change set time materially."
+        "Mornay loves vegetables with structure—cauliflower, broccoli, chard—and starch anchors like gratins. If the dish underneath is wet, your sauce reads thinner and blander because dilution steals impact.",
+        "Finish under a broiler only when the sauce layer is even; uneven spots scorch while neighbors look pale."
       ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why did my mornay turn grainy after I added cheese?",
+      "a": "High heat after cheese, acidic shock, or low-quality pre-grated cheese are common culprits. Lower heat, add warm milk gradually, and whisk. Prevention: melt cheese gently and avoid boiling the finished sauce."
+    },
+    {
+      "q": "Can I make mornay without mustard?",
+      "a": "Yes—mustard is optional balance, not structural. Replace the acid lift with a smaller amount of lemon or a mild vinegar reduction, or rely on cheese alone if you prefer."
+    },
+    {
+      "q": "How do I thin mornay for a soupier mac-and-cheese style?",
+      "a": "Increase warm milk before adding extra cheese; thinning after cheese is possible but changes salt perception. Adjust salt after the final consistency is set."
     }
   ],
   "related": [

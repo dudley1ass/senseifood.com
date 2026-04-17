@@ -11,34 +11,58 @@ const SPEC: ScienceArticleSpec = {
   "readTime": "8 min read",
   "level": "Recipe guide",
   "emoji": "🍇",
-  "quickAnswer": "Reduction concentrates sugar and acid together; the last third moves fastest — taste often.",
-  "intro": "Balsamic glaze is a concentration game. As water leaves, sweetness and acidity both rise, and bitter notes can appear. The Sauce Sensei reduction control is there to remind you that nonlinear concentration is real — not just a metaphor.",
+  "quickAnswer": "Reduction concentrates sugar and acid together; the last third moves fastest — taste often, lower heat early, and remember the Sauce Sensei reduction curve is nonlinear.",
+  "intro": "Balsamic glaze is a concentration game. As water leaves, sweetness and acidity both rise, and bitter or caramel-bitter notes can appear depending on quality and heat. Cheap “balsamic” behaves differently than traditional aged vinegar; both can glaze, but the margin between glossy and acrid changes with starting material. The Sauce Sensei reduction control exists because this process is not a straight line: late bubbling changes flavor aggressively. Your job is to steer heat and time so the glaze stays pourable, balanced, and useful in tiny amounts—finishing strength, not chuggable syrup. If you need the same flavor impact on a salad as on roasted meat, remember fat and salt on the plate change how sharp the drizzle reads—taste in context, not only from a spoon.",
   "sections": [
     {
-      "heading": "Watch the tail",
+      "heading": "Watch the tail of reduction",
       "paragraphs": [
-        "Early bubbling removes water; late bubbling changes flavor aggressively. If it becomes tacky and harsh, you have gone too far — dilute carefully and rebuild."
+        "Early bubbling removes mostly water; late bubbling changes dissolved solids fast. If the liquid becomes tacky, smells sharp in an unpleasant way, or sticks to the spoon like tar, you have gone too far for a clean finish—dilute carefully with a little water or mild stock and rebuild gently.",
+        "Use a wider pan for more even evaporation; a tall narrow pot can hide hot spots that scorch corners."
       ]
     },
     {
-      "heading": "Uses",
+      "heading": "Heat discipline and stirring",
       "paragraphs": [
-        "Drizzle finishes reward tiny amounts. Make more than you need only if you enjoy reheating chemistry experiments."
+        "Medium-low heat with occasional stirring beats a rolling boil that throws sugars against hot metal. Scraping the pan keeps solids from becoming bitter nodules.",
+        "If you add sweetener to assist glazing, add in small pinches and taste—balsamic already carries sugar; duplication is how people land on candy-vinegar."
+      ],
+      "tip": "When in doubt, pull early; you can always reduce more—you cannot un-burn."
+    },
+    {
+      "heading": "Balance: acid, sweetness, and bitter edge",
+      "paragraphs": [
+        "Balancing a balsamic glaze is not the same as balancing tomato sauce. You may need a tiny touch of sugar to round harsh acid, or a drop of water to reopen aroma if it feels “closed.” Fat is rarely the hero here; this is vinegar-led.",
+        "Salt can help integration in savory applications—a trace makes sweet-sour feel intentional rather than sticky."
       ]
     },
     {
-      "heading": "Benchmark temperatures and a repeatable test protocol",
+      "heading": "Uses and portioning",
       "paragraphs": [
-        "This guide on balsamic glaze: recipe & balance guide is easier to act on when you anchor numbers instead of vibes. Ice cream hardness depends on ice phase fraction, sugar depression of freezing point, fat network, and air (overrun). Typical home freezers sit near 0°F (-18°C); serving slightly warmer—around 6–10°F (-14 to -12°C) for hard-pack—improves scoopability. Pasteurizing custard bases to roughly 175–180°F (79–82°C) without boiling sets proteins safely; boiling risks curdling emulsions. Rapid freezing forms smaller ice crystals; slow freezing and partial thaw cycles grow crystals and feel icy. Total solids (fat + MSNF + sugar + stabilizers) set body; water-only bases freeze harder. Write down ambient kitchen temperature (°F), the set point on your oven or machine, and—when relevant—an internal probe reading or brew time. Change one input per trial: flour brand, hydration percentage, grind setting, chill time, or rack position. Photograph crumb or cup side-by-side after each change. SenseiFood’s Fix My Recipe debugger pairs these observations with ratio checks for your category so the next bake or brew is a measured step, not a guess.",
-        "If you use °C in the kitchen, convert critical bands once and tape them inside a cabinet: 200°F ≈ 93°C (cake/bread finish neighborhood), 350°F ≈ 177°C (common cake/cookie air set point), 212°F = 100°C (sea-level water boil), and espresso extraction times often discussed in the 25–35 second range for classic 9-bar shots—always taste-adjusted to your machine. Altitude lowers water’s boiling point, which shifts extraction and evaporation; bakers at elevation should rely more on internal temperature and visual set than on clock alone.",
-        "Humidity changes how dough skins, how icing behaves, and how staling feels the next day—note outdoor weather when results swing for no obvious reason. For anything oven-based, log preheat completion time: many ovens continue drifting 10–20°F after the beep. For frozen desserts, log freezer display temp if available; a chest freezer near −10°F (−23°C) behaves differently than a frost-free kitchen freezer with defrost cycles. Small environmental logs turn one-off failures into solvable patterns."
+        "Drizzle finishes reward tiny amounts: caprese, roasted vegetables, grilled meat. Make more than you need only if you enjoy reheating chemistry experiments—each reheat drives further concentration.",
+        "Store in a squeeze bottle for controlled plating; wide-mouth jars invite over-pouring."
       ]
     },
     {
-      "heading": "Extra variables that swing results",
+      "heading": "Storage, thickness drift, and rescue",
       "paragraphs": [
-        "When a symptom persists, compare two batches on consecutive days with the same flour bag and yeast lot—raw ingredient drift is real. Keep a kitchen thermometer calibrated yearly if you bake weekly; five degrees at the oven cavity is enough to change set time materially."
+        "Fridge storage thickens glazes; warm gently before judging flavor. If it becomes candy-hard, warm with a splash of water and stir back to pourable.",
+        "If mold or off aromas appear, discard—high sugar does not make a sauce immortal."
       ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I glaze without reducing for an hour?",
+      "a": "Yes—buy a decent pre-reduced product or thicken a smaller amount quickly with controlled heat. Quality in equals quality out; reduction cannot fix industrial sourness."
+    },
+    {
+      "q": "Why does my glaze taste bitter?",
+      "a": "Over-reduction, scorching, or low-grade vinegar with aggressive caramel color. Dilute, lower heat next time, and consider a different starting bottle."
+    },
+    {
+      "q": "Is balsamic glaze the same as balsamic vinegar?",
+      "a": "Glaze is concentrated vinegar (sometimes with added sweetener). Flavor density and sugar-acid balance differ; substitute carefully in vinaigrettes."
     }
   ],
   "related": [

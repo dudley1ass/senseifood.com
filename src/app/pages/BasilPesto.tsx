@@ -11,34 +11,64 @@ const SPEC: ScienceArticleSpec = {
   "readTime": "8 min read",
   "level": "Recipe guide",
   "emoji": "🌿",
-  "quickAnswer": "Pulse, don’t obliterate — heat from over-processing bruises basil and dulls aroma.",
-  "intro": "Pesto is oil-forward with herb solids and cheese providing salt and umami. Acid is usually subtle (sometimes lemon). The “wheel” framing still helps when you adjust cheese or nuts — those moves change salt and fat dominance quickly.",
+  "quickAnswer": "Pulse, don’t obliterate — heat from over-processing bruises basil and dulls aroma. Stream oil to partially emulsify; a little ice water can help emulsion without more oil.",
+  "intro": "Pesto is oil-forward with herb solids and cheese providing salt and umami. Acid is usually subtle—sometimes lemon brightens without reading like salad dressing. The Sauce Sensei wheel still helps when you adjust cheese or nuts: those moves change salt, fat dominance, and texture fast. Your enemies are excess heat from the blade, oxidation, and over-cheesing that turns a fresh sauce into a salty paste. Think partial emulsion: small stable droplets suspended enough to cling to pasta without separating into oily pools. Nut toast level and cheese brand both move salt—when you change either, reset your mental salt budget before adding pinch after pinch.",
   "sections": [
     {
-      "heading": "Technique",
+      "heading": "Technique: mortar versus machine",
       "paragraphs": [
-        "Traditional mortar or careful food-processor pulses preserve brighter green flavor. Stream oil to emulsify partially; a little water can help emulsion without adding more oil."
+        "Traditional mortar work bruises less and yields a more varied texture; careful food-processor pulses preserve brighter green flavor when you refuse to run continuously. Stream oil slowly so water and oil phases meet in controlled films; dumping oil invites separation.",
+        "Scrape the bowl often—unmixed corners hide coarse bits that later read gritty on the tooth."
       ]
     },
     {
-      "heading": "Storage",
+      "heading": "Cheese, nuts, and salt balance",
       "paragraphs": [
-        "Surface oil limits oxidation; pesto darkens with air contact — press plastic to the surface if holding overnight."
+        "Parmesan brings salinity; adding more cheese is not the same as adding salt thoughtfully. Toast nuts for depth but watch bitterness—burnt nuts make bitter pesto fast.",
+        "Pine nuts are classic; walnuts or almonds change fat profile and mouth-coating. Taste nuts before committing a batch."
+      ],
+      "bullets": [
+        {
+          "title": "Garlic",
+          "text": "Raw garlic intensifies overnight—start with less if you hold pesto for service tomorrow."
+        }
       ]
     },
     {
-      "heading": "Benchmark temperatures and a repeatable test protocol",
+      "heading": "Acid, water, and emulsion help",
       "paragraphs": [
-        "This guide on basil pesto: recipe & balance guide is easier to act on when you anchor numbers instead of vibes. Ice cream hardness depends on ice phase fraction, sugar depression of freezing point, fat network, and air (overrun). Typical home freezers sit near 0°F (-18°C); serving slightly warmer—around 6–10°F (-14 to -12°C) for hard-pack—improves scoopability. Pasteurizing custard bases to roughly 175–180°F (79–82°C) without boiling sets proteins safely; boiling risks curdling emulsions. Rapid freezing forms smaller ice crystals; slow freezing and partial thaw cycles grow crystals and feel icy. Total solids (fat + MSNF + sugar + stabilizers) set body; water-only bases freeze harder. Write down ambient kitchen temperature (°F), the set point on your oven or machine, and—when relevant—an internal probe reading or brew time. Change one input per trial: flour brand, hydration percentage, grind setting, chill time, or rack position. Photograph crumb or cup side-by-side after each change. SenseiFood’s Fix My Recipe debugger pairs these observations with ratio checks for your category so the next bake or brew is a measured step, not a guess.",
-        "If you use °C in the kitchen, convert critical bands once and tape them inside a cabinet: 200°F ≈ 93°C (cake/bread finish neighborhood), 350°F ≈ 177°C (common cake/cookie air set point), 212°F = 100°C (sea-level water boil), and espresso extraction times often discussed in the 25–35 second range for classic 9-bar shots—always taste-adjusted to your machine. Altitude lowers water’s boiling point, which shifts extraction and evaporation; bakers at elevation should rely more on internal temperature and visual set than on clock alone.",
-        "Humidity changes how dough skins, how icing behaves, and how staling feels the next day—note outdoor weather when results swing for no obvious reason. For anything oven-based, log preheat completion time: many ovens continue drifting 10–20°F after the beep. For frozen desserts, log freezer display temp if available; a chest freezer near −10°F (−23°C) behaves differently than a frost-free kitchen freezer with defrost cycles. Small environmental logs turn one-off failures into solvable patterns."
+        "A small splash of lemon can lift without turning the sauce sharp—add after cheese so you judge salt correctly. A tablespoon of ice water can help emulsion stability in processors without increasing oil load.",
+        "If pesto is oily on the plate, you may have added oil too fast or overheated the mix—reprocess with a touch of water or another pinch of solids to re-anchor."
+      ],
+      "tip": "Taste pasta water salinity before thinning pesto with it—sometimes pasta water is the bridge; sometimes it is too salty."
+    },
+    {
+      "heading": "Storage and color",
+      "paragraphs": [
+        "Surface oil limits oxidation; pesto darkens with air contact—press plastic directly to the surface if holding overnight. A thin oil cap is traditional for a reason.",
+        "Blanching basil is optional trade: greener color versus a slight cooked note—pick your aesthetic."
       ]
     },
     {
-      "heading": "Extra variables that swing results",
+      "heading": "Service and pairing",
       "paragraphs": [
-        "When a symptom persists, compare two batches on consecutive days with the same flour bag and yeast lot—raw ingredient drift is real. Keep a kitchen thermometer calibrated yearly if you bake weekly; five degrees at the oven cavity is enough to change set time materially."
+        "Toss with hot pasta off heat; residual heat can dull aroma if you cook pesto like a tomato sauce. Reserve pasta water to adjust viscosity in the bowl.",
+        "Beyond pasta: spoon over vegetables, thin for drizzle, or layer under proteins—adjust salt when context changes."
       ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why did my pesto turn brown overnight?",
+      "a": "Enzymatic browning and oxidation at air contact. Press film to the surface, top with oil, and minimize blade heat during prep."
+    },
+    {
+      "q": "Can I make pesto without cheese?",
+      "a": "Yes—replace savoriness with toasted nuts, miso (watch salt), or nutritional yeast. You will need explicit salt and umami tuning."
+    },
+    {
+      "q": "Is extra-virgin olive oil mandatory?",
+      "a": "Traditional and delicious, but peppery oils can dominate delicate basil. Some cooks blend mild oil for body and a finish of fragrant EVOO."
     }
   ],
   "related": [

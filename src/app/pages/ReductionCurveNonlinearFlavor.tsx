@@ -10,36 +10,58 @@ const SPEC: ScienceArticleSpec = {
   "subtitle": "Why late-stage reduction can rapidly overshoot saltiness and bitterness.",
   "readTime": "8 min read",
   "emoji": "📉",
-  "quickAnswer": "Flavor concentration accelerates late in reduction; if too intense, add liquid and rebuild.",
-  "intro": "Early reduction often improves flavor. Late reduction can quickly push sauces from rich to harsh because concentration effects are nonlinear.",
+  "quickAnswer": "Flavor concentration accelerates late in reduction; each boil-off step removes a larger fraction of the remaining water. If too intense, add liquid and rebuild—do not fight harshness with only sugar.",
+  "intro": "Early reduction often improves flavor: aromas integrate, proteins and sugars mingle, and water that carried nothing useful leaves. Late reduction can push a sauce from rich to harsh in minutes because concentration effects are nonlinear. Salt does not rise in a straight line with time; perceptual bitterness and astringency can spike once certain thresholds cross. The Sauce Sensei mental model is a curve, not a slider: small changes in volume late produce big changes in taste. Respect the tail of the curve and you stop treating reduction like a countdown timer.",
   "sections": [
     {
       "heading": "The late-stage acceleration effect",
       "paragraphs": [
-        "At lower remaining volume, each additional boil-off step creates bigger jumps in concentration. Salt and bitter compounds cross thresholds quickly.",
-        "This explains why a sauce can go from perfect to overdone in a short window."
+        "At lower remaining volume, each additional boil-off step creates bigger jumps in dissolved solids. Salt and bitter compounds cross perceptual thresholds quickly—not because you added more, but because the solvent left.",
+        "This explains why a sauce can go from perfect to overdone in a short window. The pan is not being dramatic; the math of shrinking denominator is."
       ]
     },
     {
-      "heading": "Recovering over-reduction",
+      "heading": "Reading the pan: bubbles, sound, and sheen",
       "paragraphs": [
-        "Dilute with stock or water, then retune seasoning gradually. Avoid masking with sugar alone, which can produce imbalance."
+        "Early simmer sounds wet; late simmer sounds thicker, pops smaller, and leaves trails on a spoon that hold longer. Learn those cues so you reduce heat before harshness arrives, not after.",
+        "Color darkens faster at the end too—Maillard and caramel notes concentrate alongside salt. Visual brown is not automatically delicious brown."
       ],
       "tip": "If flavor is too strong, you reduced too far — add liquid."
     },
     {
-      "heading": "Benchmark temperatures and a repeatable test protocol",
+      "heading": "Recovering over-reduction",
       "paragraphs": [
-        "This guide on reduction curve: flavor is not linear is easier to act on when you anchor numbers instead of vibes. Ice cream hardness depends on ice phase fraction, sugar depression of freezing point, fat network, and air (overrun). Typical home freezers sit near 0°F (-18°C); serving slightly warmer—around 6–10°F (-14 to -12°C) for hard-pack—improves scoopability. Pasteurizing custard bases to roughly 175–180°F (79–82°C) without boiling sets proteins safely; boiling risks curdling emulsions. Rapid freezing forms smaller ice crystals; slow freezing and partial thaw cycles grow crystals and feel icy. Total solids (fat + MSNF + sugar + stabilizers) set body; water-only bases freeze harder. Write down ambient kitchen temperature (°F), the set point on your oven or machine, and—when relevant—an internal probe reading or brew time. Change one input per trial: flour brand, hydration percentage, grind setting, chill time, or rack position. Photograph crumb or cup side-by-side after each change. SenseiFood’s Fix My Recipe debugger pairs these observations with ratio checks for your category so the next bake or brew is a measured step, not a guess.",
-        "If you use °C in the kitchen, convert critical bands once and tape them inside a cabinet: 200°F ≈ 93°C (cake/bread finish neighborhood), 350°F ≈ 177°C (common cake/cookie air set point), 212°F = 100°C (sea-level water boil), and espresso extraction times often discussed in the 25–35 second range for classic 9-bar shots—always taste-adjusted to your machine. Altitude lowers water’s boiling point, which shifts extraction and evaporation; bakers at elevation should rely more on internal temperature and visual set than on clock alone.",
-        "Humidity changes how dough skins, how icing behaves, and how staling feels the next day—note outdoor weather when results swing for no obvious reason. For anything oven-based, log preheat completion time: many ovens continue drifting 10–20°F after the beep. For frozen desserts, log freezer display temp if available; a chest freezer near −10°F (−23°C) behaves differently than a frost-free kitchen freezer with defrost cycles. Small environmental logs turn one-off failures into solvable patterns."
+        "Dilute with stock or water, then retune seasoning gradually. You are rebuilding a curve, not erasing a mistake—expect to re-reduce slightly if you overshot dilution.",
+        "Avoid masking harshness with sugar alone, which can produce cloying imbalance. Fat, gentle acid, or a small amount of dairy sometimes rounds more honestly than sweetness, depending on the build."
       ]
     },
     {
-      "heading": "Extra variables that swing results",
+      "heading": "Salt timing versus reduction goals",
       "paragraphs": [
-        "When a symptom persists, compare two batches on consecutive days with the same flour bag and yeast lot—raw ingredient drift is real. Keep a kitchen thermometer calibrated yearly if you bake weekly; five degrees at the oven cavity is enough to change set time materially."
+        "Highly reduced finishes often taste best when significant salt arrives late, after you know the final volume. Early salting a long reduction is how people discover their demi tastes like a salt lick at the end.",
+        "If you must salt early for ingredient osmosis reasons, under-target deliberately and finish at the end."
       ]
+    },
+    {
+      "heading": "Heat control on the home stove",
+      "paragraphs": [
+        "Wide pans reduce faster with more surface evaporation; tall pots protect you a little. Matching vessel to goal prevents accidental sprint finishes on a powerful burner.",
+        "Stir and scrape corners where solids concentrate and burn. Those dark bits can add complexity in deglazing; in long reduction they can become bitter anchors."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does my sauce taste great mid-reduction but harsh at the end?",
+      "a": "You crossed the nonlinear part of the curve: bitter and salt signals amplified as water left. Dilute back to a mid-point and reduce more gently, salting later."
+    },
+    {
+      "q": "Is there a target percent reduction?",
+      "a": "Professional kitchens sometimes track by weight or volume, but home cooks should track by taste and sheen. If you want numbers, weigh your starting liquid once to learn how far you usually go before harshness."
+    },
+    {
+      "q": "Does a lid change the reduction curve?",
+      "a": "A lid traps steam and slows reduction; partial lid or tilted lid gives a middle path. For predictable reduction rate, control heat and surface area more than guessing time."
     }
   ],
   "related": [

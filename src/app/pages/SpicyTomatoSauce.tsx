@@ -11,34 +11,64 @@ const SPEC: ScienceArticleSpec = {
   "readTime": "8 min read",
   "level": "Recipe guide",
   "emoji": "🌶️",
-  "quickAnswer": "Capsaicin heat and vinegar acid stack — balance with fat, a touch of sweet, and careful salt.",
-  "intro": "Spicy tomato sauces walk a tightrope: chili adds heat, vinegar adds brightness, and tomatoes bring acid and body. Fat helps carry flavor and round heat; sugar is sometimes the bridge between sharp and pleasant.",
+  "quickAnswer": "Capsaicin heat and vinegar acid stack — balance with fat, a touch of sweet, and careful salt. Add vinegar in doses you can walk back.",
+  "intro": "Spicy tomato sauces walk a tightrope: chili adds heat, vinegar adds brightness, and tomatoes bring acid and body. Fat helps carry flavor and round heat; sugar is sometimes the bridge between sharp and pleasant. The Sauce Sensei wheel keeps you from fixing the wrong axis—more salt will not cure brutal acid if the real issue is unbalanced vinegar, and more sugar will not fix missing savoriness if umami is thin. Layer chiles for flavor, not only Scoville; bloom dried chiles, toast spices, and add acids late enough to keep top notes. Resting overnight often melds heat and acid, but volatile top notes fade—plan a fresh herb or citrus finish at service if brightness matters as much as burn. Taste with your protein: heat reads hotter on delicate fish than on fatty pork.",
   "sections": [
     {
-      "heading": "Layer heat",
+      "heading": "Layer heat: flavor burn versus dumb burn",
       "paragraphs": [
-        "Bloom dried chiles or cook fresh chiles to develop flavor, not just raw burn. Add vinegar in controlled doses — you can always add more, but you cannot easily subtract."
+        "Bloom dried chiles or cook fresh chiles to develop flavor, not only raw burn. Toasted chile notes read complex; raw powder dumped late reads harsh and one-dimensional.",
+        "Capsaicin heat and acid both climb with reduction—taste often as water leaves, especially if you started with aggressive vinegar."
       ]
     },
     {
-      "heading": "Serving",
+      "heading": "Vinegar discipline",
       "paragraphs": [
-        "This profile pairs with rich proteins; if the sauce reads too sharp on the wheel, consider a little fat or sweet before more salt."
+        "Add vinegar in controlled doses—you can always add more, but dilution costs time and dilutes everything else. Different vinegars carry different aromatics; match vinegar to cuisine context.",
+        "If the sauce is already tomato-acid forward, total acid budget may be tight—lemon versus vinegar behaves differently with tomato’s own malic and citric notes."
+      ],
+      "tip": "If heat and acid both feel loud, try fat and a small sweet touch before more salt."
+    },
+    {
+      "heading": "Tomato product choice",
+      "paragraphs": [
+        "Canned tomatoes vary in acidity, salt, and texture; whole peeled versus puree changes cook time and body. Taste your can before building the whole plan around one brand.",
+        "Paste browning in fat before liquids can add savory depth; raw paste can read tinny if not cooked through."
+      ],
+      "bullets": [
+        {
+          "title": "Sugar",
+          "text": "A pinch rounds harsh acid; tablespoons turn the profile sweet-hot—decide intentionally."
+        }
       ]
     },
     {
-      "heading": "Benchmark temperatures and a repeatable test protocol",
+      "heading": "Fat, protein pairing, and service",
       "paragraphs": [
-        "This guide on spicy tomato sauce: recipe & balance guide is easier to act on when you anchor numbers instead of vibes. Ice cream hardness depends on ice phase fraction, sugar depression of freezing point, fat network, and air (overrun). Typical home freezers sit near 0°F (-18°C); serving slightly warmer—around 6–10°F (-14 to -12°C) for hard-pack—improves scoopability. Pasteurizing custard bases to roughly 175–180°F (79–82°C) without boiling sets proteins safely; boiling risks curdling emulsions. Rapid freezing forms smaller ice crystals; slow freezing and partial thaw cycles grow crystals and feel icy. Total solids (fat + MSNF + sugar + stabilizers) set body; water-only bases freeze harder. Write down ambient kitchen temperature (°F), the set point on your oven or machine, and—when relevant—an internal probe reading or brew time. Change one input per trial: flour brand, hydration percentage, grind setting, chill time, or rack position. Photograph crumb or cup side-by-side after each change. SenseiFood’s Fix My Recipe debugger pairs these observations with ratio checks for your category so the next bake or brew is a measured step, not a guess.",
-        "If you use °C in the kitchen, convert critical bands once and tape them inside a cabinet: 200°F ≈ 93°C (cake/bread finish neighborhood), 350°F ≈ 177°C (common cake/cookie air set point), 212°F = 100°C (sea-level water boil), and espresso extraction times often discussed in the 25–35 second range for classic 9-bar shots—always taste-adjusted to your machine. Altitude lowers water’s boiling point, which shifts extraction and evaporation; bakers at elevation should rely more on internal temperature and visual set than on clock alone.",
-        "Humidity changes how dough skins, how icing behaves, and how staling feels the next day—note outdoor weather when results swing for no obvious reason. For anything oven-based, log preheat completion time: many ovens continue drifting 10–20°F after the beep. For frozen desserts, log freezer display temp if available; a chest freezer near −10°F (−23°C) behaves differently than a frost-free kitchen freezer with defrost cycles. Small environmental logs turn one-off failures into solvable patterns."
+        "This profile pairs with rich proteins; if the sauce reads too sharp on the wheel, fat at finish (olive oil, butter) or sweet in tiny increments often lands better than extra salt.",
+        "Serve with cooling contrasts—crema, cheese, herbs—when heat is intentionally high."
       ]
     },
     {
-      "heading": "Extra variables that swing results",
+      "heading": "Simmer time, body, and finishing",
       "paragraphs": [
-        "When a symptom persists, compare two batches on consecutive days with the same flour bag and yeast lot—raw ingredient drift is real. Keep a kitchen thermometer calibrated yearly if you bake weekly; five degrees at the oven cavity is enough to change set time materially."
+        "Long simmer integrates aromatics and concentrates solids; thin sauce plus raw heat reads like hot vinegar. Reduce to a spoon-coating body before final acid adjustments.",
+        "Finish herbs that are delicate at the end; oregano-like herbs tolerate more simmer than basil."
       ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is my spicy tomato sauce more hot than tasty?",
+      "a": "Heat without supporting aromatics—add toasted chile, alliums, or umami (anchovy, fish sauce, parmesan rind) in small amounts, and build depth before raising Scoville again."
+    },
+    {
+      "q": "Can I cut acidity without sugar?",
+      "a": "Sometimes—fat, dairy, or a pinch of baking soda (carefully, tasting) shifts perception. Dilution with good stock also helps if body allows."
+    },
+    {
+      "q": "How do I reheat without losing freshness?",
+      "a": "Gently; long microwave boils can volatilize aromatics. Refresh with a tiny vinegar or herbs at the end."
     }
   ],
   "related": [

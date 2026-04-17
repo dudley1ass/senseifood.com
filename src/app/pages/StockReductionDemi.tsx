@@ -11,34 +11,58 @@ const SPEC: ScienceArticleSpec = {
   "readTime": "8 min read",
   "level": "Recipe guide",
   "emoji": "🥘",
-  "quickAnswer": "Skim, strain, and reduce patiently — solids that burn on the pot walls become bitter notes in the final gloss.",
-  "intro": "A serious stock reduction is kitchen time converted into flavor density. The wheel’s salt and acid pulls climb as water leaves, which is why large-batch reductions are seasoned late and tasted constantly.",
+  "quickAnswer": "Skim, strain, and reduce patiently — solids that burn on the pot walls become bitter notes in the final gloss. Season late; salt concentrates nonlinearly.",
+  "intro": "A serious stock reduction is kitchen time converted into flavor density. As water leaves, gelatin, salts, and aromatic compounds concentrate—and so do impurities if you carry them along. The Sauce Sensei salt and acid pulls climb with reduction, which is why large-batch reductions are seasoned late and tasted constantly. Demi-style gloss is not only viscosity; it is integrated savoriness that clings without tasting harsh. Respect the pot edges: protein films and caramelized specks that look harmless can teach bitterness to the whole batch. When you taste, ask three questions in order: Is the body right for how it will cling to food? Is the savoriness deep without harsh salt or burnt edge? Does the finish linger cleanly instead of grabbing the throat? Writing a one-line answer after a good batch trains your eye for the next reduction curve. If the surface looks still but steam rises steadily, you are still reducing—do not confuse quiet liquid with finished flavor.",
   "sections": [
     {
-      "heading": "Clarity and patience",
+      "heading": "Clarity, skimming, and patience",
       "paragraphs": [
-        "Impurities concentrate too. Clarifying steps and gentle simmering reduce off flavors. If the surface looks muddy, strain and continue with clean equipment."
+        "Impurities concentrate too. Skim foam and fat thoughtfully—fat can protect from evaporation but also hide boiling behavior; clarify goals for your use case. Restaurant demi often chases clarity and sheen; rustic home jus may tolerate more texture.",
+        "Gentle simmering reduces harsh volatile notes compared with violent boiling that throws solids against hot metal."
       ]
     },
     {
-      "heading": "Finishing",
+      "heading": "Straining and clean equipment",
       "paragraphs": [
-        "Optional mounts (butter, cream) change the final emulsion — add them when the base is where you want it volumetrically."
+        "If the surface looks muddy or you see specks sticking and darkening on the walls, strain and continue in clean gear. One scorched corner can dominate a small remaining volume.",
+        "Fine mesh for service-grade finishes; cheesecloth if you demand polish."
       ]
     },
     {
-      "heading": "Benchmark temperatures and a repeatable test protocol",
+      "heading": "Body: gelatin, reduction, and mouthfeel",
       "paragraphs": [
-        "This guide on stock reduction (demi-style): recipe & balance guide is easier to act on when you anchor numbers instead of vibes. Ice cream hardness depends on ice phase fraction, sugar depression of freezing point, fat network, and air (overrun). Typical home freezers sit near 0°F (-18°C); serving slightly warmer—around 6–10°F (-14 to -12°C) for hard-pack—improves scoopability. Pasteurizing custard bases to roughly 175–180°F (79–82°C) without boiling sets proteins safely; boiling risks curdling emulsions. Rapid freezing forms smaller ice crystals; slow freezing and partial thaw cycles grow crystals and feel icy. Total solids (fat + MSNF + sugar + stabilizers) set body; water-only bases freeze harder. Write down ambient kitchen temperature (°F), the set point on your oven or machine, and—when relevant—an internal probe reading or brew time. Change one input per trial: flour brand, hydration percentage, grind setting, chill time, or rack position. Photograph crumb or cup side-by-side after each change. SenseiFood’s Fix My Recipe debugger pairs these observations with ratio checks for your category so the next bake or brew is a measured step, not a guess.",
-        "If you use °C in the kitchen, convert critical bands once and tape them inside a cabinet: 200°F ≈ 93°C (cake/bread finish neighborhood), 350°F ≈ 177°C (common cake/cookie air set point), 212°F = 100°C (sea-level water boil), and espresso extraction times often discussed in the 25–35 second range for classic 9-bar shots—always taste-adjusted to your machine. Altitude lowers water’s boiling point, which shifts extraction and evaporation; bakers at elevation should rely more on internal temperature and visual set than on clock alone.",
-        "Humidity changes how dough skins, how icing behaves, and how staling feels the next day—note outdoor weather when results swing for no obvious reason. For anything oven-based, log preheat completion time: many ovens continue drifting 10–20°F after the beep. For frozen desserts, log freezer display temp if available; a chest freezer near −10°F (−23°C) behaves differently than a frost-free kitchen freezer with defrost cycles. Small environmental logs turn one-off failures into solvable patterns."
+        "Gelatin from bones gives richness that viscosity alone cannot fake. If your reduction is thick but thin-tasting, stock quality—not more boil—may be the issue.",
+        "Watch the nonlinear curve: late reduction jumps in intensity faster than early reduction. Taste more often as volume shrinks."
+      ],
+      "tip": "If edge film darkens, wipe the rim down and reduce heat slightly—prevention beats rescue."
+    },
+    {
+      "heading": "Finishing mounts and liaison choices",
+      "paragraphs": [
+        "Optional mounts—butter, cream—change emulsion and sheen. Add them when the base is volumetrically where you want it; mounting can mask slight harshness but will not fix burnt notes.",
+        "Arrowroot versus cornstarch versus pure reduction: pick based on clarity needs and holding conditions."
       ]
     },
     {
-      "heading": "Extra variables that swing results",
+      "heading": "Storage, gel set, and reuse",
       "paragraphs": [
-        "When a symptom persists, compare two batches on consecutive days with the same flour bag and yeast lot—raw ingredient drift is real. Keep a kitchen thermometer calibrated yearly if you bake weekly; five degrees at the oven cavity is enough to change set time materially."
+        "Gelatin-rich reductions set in the fridge; reheat gently to avoid breaking fat. Slice off solid fat cap if you want leaner sauce flavor in the reheated batch.",
+        "Label date—reduced bases are not immortal; off aromas mean discard."
       ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does my reduced stock taste bitter at the end?",
+      "a": "Over-reduction, scorched solids on the pot, or poor initial stock with bitter vegetable notes (overcooked brassicas). Dilute, strain, and rebuild on lower heat; fix the pot, not only the liquid."
+    },
+    {
+      "q": "Can I reduce straight from cloudy stock?",
+      "a": "You can, but cloudiness often concentrates too. For pristine sauces, clarify earlier or accept rustic flavor with humbler presentation."
+    },
+    {
+      "q": "How salty should stock be before reduction?",
+      "a": "Usually lightly seasoned or unsalted until near final volume—unless you use salt for extraction in specific traditions and account for it mathematically."
     }
   ],
   "related": [
