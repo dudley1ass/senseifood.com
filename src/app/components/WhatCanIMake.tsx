@@ -310,9 +310,22 @@ export function WhatCanIMake() {
 
   const startScanner = useCallback(async () => {
     if (typeof window === 'undefined') return;
+    const mediaDevicesSupported = !!navigator.mediaDevices?.getUserMedia;
+    if (!mediaDevicesSupported) {
+      setScannerStatus('Camera access is not available in this browser. Use manual barcode entry.');
+      return;
+    }
+
+    if (!window.isSecureContext) {
+      setScannerStatus('Camera scanning needs HTTPS (or localhost). Use manual barcode entry for now.');
+      return;
+    }
+
     const hasBarcodeDetector = 'BarcodeDetector' in window;
     if (!hasBarcodeDetector) {
-      setScannerStatus('Camera barcode scanning is not supported in this browser. Use manual barcode entry.');
+      setScannerStatus(
+        'Camera barcode scanning is not supported in this browser yet. Try latest Chrome/Edge, or enter code manually.'
+      );
       return;
     }
     try {
@@ -320,14 +333,21 @@ export function WhatCanIMake() {
         video: { facingMode: { ideal: 'environment' } },
       });
       streamRef.current = stream;
-      if (videoRef.current) videoRef.current.srcObject = stream;
+      if (videoRef.current) {
+        videoRef.current.srcObject = stream;
+        await videoRef.current.play().catch(() => undefined);
+      }
       setIsScanning(true);
       setScannerStatus('Point your camera at a barcode.');
 
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      const detector = new (window as any).BarcodeDetector({
-        formats: ['ean_13', 'ean_8', 'upc_a', 'upc_e'],
-      });
+      const BarcodeDetectorCtor = (window as any).BarcodeDetector;
+      let formats = ['ean_13', 'ean_8', 'upc_a', 'upc_e', 'code_128'];
+      if (typeof BarcodeDetectorCtor.getSupportedFormats === 'function') {
+        const supported = (await BarcodeDetectorCtor.getSupportedFormats()) as string[];
+        formats = formats.filter((f) => supported.includes(f));
+      }
+      const detector = new BarcodeDetectorCtor({ formats });
 
       const scanFrame = async () => {
         if (!videoRef.current || !streamRef.current) return;
@@ -341,7 +361,7 @@ export function WhatCanIMake() {
             }
           }
         } catch {
-          setScannerStatus('Scanner had trouble reading that frame. Try better lighting.');
+          // Keep scanning; transient frame failures are common in low light or motion.
         }
         if (streamRef.current) requestAnimationFrame(scanFrame);
       };
@@ -400,9 +420,16 @@ export function WhatCanIMake() {
           `Detected ${inferredItems.length} ingredient(s) from photo. You can still quick-tag missing items below.`
         );
       } else {
-        setPhotoStatus(
-          'Photo added. No automatic matches found yet, so use quick tags below to finish your pantry.'
-        );
+        const endpoint = import.meta.env.VITE_INGREDIENT_VISION_ENDPOINT as string | undefined;
+        if (!endpoint) {
+          setPhotoStatus(
+            'Photo added. Auto-detection is not configured yet (missing VITE_INGREDIENT_VISION_ENDPOINT), so use quick tags below.'
+          );
+        } else {
+          setPhotoStatus(
+            'Photo added. No automatic matches found yet, so use quick tags below to finish your pantry.'
+          );
+        }
       }
     } finally {
       setIsVisionLoading(false);
@@ -470,6 +497,10 @@ export function WhatCanIMake() {
                       </button>
                     )}
                   </div>
+                  <p className="mt-2 text-xs text-green-800">
+                    Note: Safari may not support in-browser barcode camera scanning yet. If you are on Safari,
+                    use manual barcode entry.
+                  </p>
                   {isScanning ? (
                     <video
                       ref={videoRef}
