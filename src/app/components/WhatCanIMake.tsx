@@ -56,6 +56,8 @@ const FRIDGE_QUICK_TAGS: { id: PantryId; label: string }[] = [
   { id: 'flour', label: 'Flour bag' },
 ];
 
+const DEFAULT_VISION_ENDPOINT = 'https://senseifoodbackend.com/ingredient-vision';
+
 const PRODUCT_NAME_KEYWORDS: Array<{ id: PantryId; keywords: string[] }> = [
   { id: 'flour', keywords: ['flour'] },
   { id: 'butter', keywords: ['butter', 'ghee'] },
@@ -243,6 +245,11 @@ export function WhatCanIMake() {
     return null;
   }, []);
 
+  const getVisionEndpoint = useCallback(() => {
+    const configured = (import.meta.env.VITE_INGREDIENT_VISION_ENDPOINT as string | undefined)?.trim();
+    return configured || DEFAULT_VISION_ENDPOINT;
+  }, []);
+
   const lookupBarcodeWithApi = useCallback(
     async (code: string): Promise<{ item: PantryId; productName: string } | null> => {
       try {
@@ -382,8 +389,7 @@ export function WhatCanIMake() {
 
   const detectPhotoIngredients = useCallback(
     async (file: File): Promise<PantryId[]> => {
-      const endpoint = import.meta.env.VITE_INGREDIENT_VISION_ENDPOINT as string | undefined;
-      if (!endpoint) return [];
+      const endpoint = getVisionEndpoint();
 
       try {
         const body = new FormData();
@@ -399,7 +405,7 @@ export function WhatCanIMake() {
         return [];
       }
     },
-    [inferPantryIdFromText]
+    [getVisionEndpoint, inferPantryIdFromText]
   );
 
   const handlePhotoUpload = async (file: File | null) => {
@@ -420,16 +426,9 @@ export function WhatCanIMake() {
           `Detected ${inferredItems.length} ingredient(s) from photo. You can still quick-tag missing items below.`
         );
       } else {
-        const endpoint = import.meta.env.VITE_INGREDIENT_VISION_ENDPOINT as string | undefined;
-        if (!endpoint) {
-          setPhotoStatus(
-            'Photo added. Auto-detection is not configured yet (missing VITE_INGREDIENT_VISION_ENDPOINT), so use quick tags below.'
-          );
-        } else {
-          setPhotoStatus(
-            'Photo added. No automatic matches found yet, so use quick tags below to finish your pantry.'
-          );
-        }
+        setPhotoStatus(
+          'Photo added. No automatic matches found yet, so use quick tags below to finish your pantry.'
+        );
       }
     } finally {
       setIsVisionLoading(false);
