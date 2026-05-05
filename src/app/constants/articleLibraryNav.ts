@@ -9,6 +9,7 @@ export const ARTICLE_LIBRARY_TAB_IDS = [
   'coffee',
   'sauces',
   'baking',
+  'nutrition',
   'all',
 ] as const;
 

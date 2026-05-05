@@ -88,6 +88,16 @@ import WhyButterTemperatureMatters from "./pages/WhyButterTemperatureMatters";
 import WhyEggsMatterInBaking from "./pages/WhyEggsMatterInBaking";
 import WhySaltMakesFoodTasteBetter from "./pages/WhySaltMakesFoodTasteBetter";
 import WhyRecipesFail from "./pages/WhyRecipesFail";
+import WhyGlutenMattersAndWhatYoureReplacing from "./pages/WhyGlutenMattersAndWhatYoureReplacing";
+import GlutenFreeFlourMatrixWhyOneFlourNeverWorks from "./pages/GlutenFreeFlourMatrixWhyOneFlourNeverWorks";
+import HydrocolloidsSecretWeaponXanthanGuarGum from "./pages/HydrocolloidsSecretWeaponXanthanGuarGum";
+import MoistureManagementWhyGlutenFreeFoodDriesOutFaster from "./pages/MoistureManagementWhyGlutenFreeFoodDriesOutFaster";
+import LeaveningWithoutGlutenWhyRiseIsHarder from "./pages/LeaveningWithoutGlutenWhyRiseIsHarder";
+import HowMuchProteinDoYouActuallyNeed from "./pages/HowMuchProteinDoYouActuallyNeed";
+import PowerOfVegetablesWhyQuantityMatters from "./pages/PowerOfVegetablesWhyQuantityMatters";
+import BalancedPlatesWithoutCountingCalories from "./pages/BalancedPlatesWithoutCountingCalories";
+import WhyYoureStillHungryScienceOfSatiety from "./pages/WhyYoureStillHungryScienceOfSatiety";
+import ProteinPlusFiberForHealthAndWeightControl from "./pages/ProteinPlusFiberForHealthAndWeightControl";
 import FixRecipe from "./pages/FixRecipe";
 import BreadSensei from "./pages/BreadSensei";
 import SauceSensei from "./pages/SauceSensei";
@@ -198,6 +208,19 @@ const bakingScienceRoutes = [
   { path: "baking-science/why-eggs-matter-in-baking", Component: WhyEggsMatterInBaking },
   { path: "baking-science/why-salt-makes-food-taste-better", Component: WhySaltMakesFoodTasteBetter },
   { path: "baking-science/why-recipes-fail", Component: WhyRecipesFail },
+  { path: "baking-science/why-gluten-matters-and-what-youre-replacing", Component: WhyGlutenMattersAndWhatYoureReplacing },
+  { path: "baking-science/gluten-free-flour-matrix-why-one-flour-never-works", Component: GlutenFreeFlourMatrixWhyOneFlourNeverWorks },
+  { path: "baking-science/hydrocolloids-secret-weapon-xanthan-guar-gum", Component: HydrocolloidsSecretWeaponXanthanGuarGum },
+  { path: "baking-science/moisture-management-why-gluten-free-food-dries-out-faster", Component: MoistureManagementWhyGlutenFreeFoodDriesOutFaster },
+  { path: "baking-science/leavening-without-gluten-why-rise-is-harder", Component: LeaveningWithoutGlutenWhyRiseIsHarder },
+];
+
+const nutritionScienceRoutes = [
+  { path: "nutrition-science/how-much-protein-do-you-actually-need", Component: HowMuchProteinDoYouActuallyNeed },
+  { path: "nutrition-science/power-of-vegetables-why-quantity-matters", Component: PowerOfVegetablesWhyQuantityMatters },
+  { path: "nutrition-science/balanced-plates-without-counting-calories", Component: BalancedPlatesWithoutCountingCalories },
+  { path: "nutrition-science/why-youre-still-hungry-science-of-satiety", Component: WhyYoureStillHungryScienceOfSatiety },
+  { path: "nutrition-science/protein-plus-fiber-for-health-and-weight-control", Component: ProteinPlusFiberForHealthAndWeightControl },
 ];
 
 export const appRouteChildren = [
@@ -213,6 +236,7 @@ export const appRouteChildren = [
   ...iceCreamScienceRoutes,
   ...coffeeScienceRoutes,
   ...bakingScienceRoutes,
+  ...nutritionScienceRoutes,
   ...articleContentRoutes,
   ...inlineGapArticleRoutes,
 ];

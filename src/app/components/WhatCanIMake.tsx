@@ -1,5 +1,5 @@
-import { ChefHat, Package, ArrowRight, Sparkles } from 'lucide-react';
-import { useCallback, useMemo, useState } from 'react';
+import { ChefHat, Package, ArrowRight, Sparkles, Camera, ScanLine, Upload } from 'lucide-react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Link } from 'react-router';
 import { trackCTAClick, trackHomePath, trackIngredientSelection, trackToolStart } from '../utils/analytics';
 
@@ -21,6 +21,57 @@ const PANTRY_ITEMS = [
 ] as const;
 
 type PantryId = (typeof PANTRY_ITEMS)[number]['id'];
+
+type BarcodeEntry = {
+  code: string;
+  item: PantryId;
+  label: string;
+};
+
+const BARCODE_TO_ITEM: BarcodeEntry[] = [
+  { code: '041196910058', item: 'flour', label: 'All-purpose flour (barcode match)' },
+  { code: '041196910355', item: 'sugar', label: 'Granulated sugar (barcode match)' },
+  { code: '041196910652', item: 'salt', label: 'Salt (barcode match)' },
+  { code: '041196910959', item: 'cornstarch', label: 'Cornstarch (barcode match)' },
+  { code: '041196911055', item: 'yeast', label: 'Yeast (barcode match)' },
+  { code: '036800291452', item: 'eggs', label: 'Eggs (barcode match)' },
+  { code: '036800146776', item: 'milk', label: 'Milk (barcode match)' },
+  { code: '036800146783', item: 'cream', label: 'Heavy cream (barcode match)' },
+  { code: '028000125992', item: 'butter', label: 'Butter (barcode match)' },
+  { code: '041497155024', item: 'oil', label: 'Oil (barcode match)' },
+  { code: '041497155413', item: 'vanilla', label: 'Vanilla (barcode match)' },
+  { code: '041497155901', item: 'coffee', label: 'Coffee (barcode match)' },
+] as const;
+
+const FRIDGE_QUICK_TAGS: { id: PantryId; label: string }[] = [
+  { id: 'eggs', label: 'Egg carton' },
+  { id: 'milk', label: 'Milk carton' },
+  { id: 'cream', label: 'Cream' },
+  { id: 'butter', label: 'Butter sticks' },
+  { id: 'chocolate', label: 'Chocolate' },
+  { id: 'oil', label: 'Cooking oil' },
+  { id: 'yeast', label: 'Yeast jar' },
+  { id: 'vanilla', label: 'Vanilla extract' },
+  { id: 'sugar', label: 'Sugar container' },
+  { id: 'flour', label: 'Flour bag' },
+];
+
+const PRODUCT_NAME_KEYWORDS: Array<{ id: PantryId; keywords: string[] }> = [
+  { id: 'flour', keywords: ['flour'] },
+  { id: 'butter', keywords: ['butter', 'ghee'] },
+  { id: 'sugar', keywords: ['sugar', 'brown sugar'] },
+  { id: 'eggs', keywords: ['egg'] },
+  { id: 'baking_powder', keywords: ['baking powder', 'baking soda'] },
+  { id: 'salt', keywords: ['salt'] },
+  { id: 'milk', keywords: ['milk'] },
+  { id: 'cream', keywords: ['cream', 'half and half'] },
+  { id: 'chocolate', keywords: ['chocolate', 'cocoa'] },
+  { id: 'yeast', keywords: ['yeast'] },
+  { id: 'coffee', keywords: ['coffee', 'espresso'] },
+  { id: 'vanilla', keywords: ['vanilla'] },
+  { id: 'oil', keywords: ['olive oil', 'canola oil', 'vegetable oil', 'oil'] },
+  { id: 'cornstarch', keywords: ['cornstarch', 'corn starch', 'starch'] },
+];
 
 const TOOL_LINKS = {
   CookieSensei: 'https://cookiesensei.senseifood.com',
@@ -119,6 +170,23 @@ function buildSuggestions(selected: Set<PantryId>): Suggestion[] {
 
 export function WhatCanIMake() {
   const [selected, setSelected] = useState<Set<PantryId>>(() => new Set());
+  const [barcodeInput, setBarcodeInput] = useState('');
+  const [barcodeStatus, setBarcodeStatus] = useState<string | null>(null);
+  const [photoPreview, setPhotoPreview] = useState<string | null>(null);
+  const [photoStatus, setPhotoStatus] = useState<string | null>(null);
+  const [scannerStatus, setScannerStatus] = useState<string | null>(null);
+  const [isBarcodeLoading, setIsBarcodeLoading] = useState(false);
+  const [isVisionLoading, setIsVisionLoading] = useState(false);
+  const [isScanning, setIsScanning] = useState(false);
+  const [lastBarcode, setLastBarcode] = useState<string | null>(null);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const streamRef = useRef<MediaStream | null>(null);
+
+  const barcodeMap = useMemo(() => new Map(BARCODE_TO_ITEM.map((e) => [e.code, e])), []);
+  const pantryLabelMap = useMemo(
+    () => new Map(PANTRY_ITEMS.map((item) => [item.id, item.label])),
+    []
+  );
 
   const toggle = useCallback((id: PantryId) => {
     setSelected((prev) => {
@@ -154,6 +222,193 @@ export function WhatCanIMake() {
     trackCTAClick('what_can_i_make', 'jump_to_ingredient_picker', '#ingredient-picker');
   };
 
+  const applyItem = useCallback(
+    (id: PantryId, source: string, label: string) => {
+      setSelected((prev) => {
+        if (prev.has(id)) return prev;
+        const next = new Set(prev);
+        next.add(id);
+        return next;
+      });
+      trackCTAClick('what_can_i_make', `add_item_${source}`, label);
+    },
+    []
+  );
+
+  const inferPantryIdFromText = useCallback((text: string): PantryId | null => {
+    const lower = text.toLowerCase();
+    for (const row of PRODUCT_NAME_KEYWORDS) {
+      if (row.keywords.some((k) => lower.includes(k))) return row.id;
+    }
+    return null;
+  }, []);
+
+  const lookupBarcodeWithApi = useCallback(
+    async (code: string): Promise<{ item: PantryId; productName: string } | null> => {
+      try {
+        const res = await fetch(`https://world.openfoodfacts.org/api/v2/product/${encodeURIComponent(code)}.json`);
+        if (!res.ok) return null;
+        const data = (await res.json()) as {
+          product?: { product_name?: string; product_name_en?: string };
+        };
+        const productName = data.product?.product_name_en ?? data.product?.product_name ?? '';
+        if (!productName) return null;
+        const inferred = inferPantryIdFromText(productName);
+        if (!inferred) return null;
+        return { item: inferred, productName };
+      } catch {
+        return null;
+      }
+    },
+    [inferPantryIdFromText]
+  );
+
+  const handleBarcodeLookup = useCallback(
+    async (rawCode: string, source: 'manual' | 'camera') => {
+      const normalized = rawCode.replace(/[^\d]/g, '');
+      if (!normalized) {
+        setBarcodeStatus('Enter a barcode to scan.');
+        return;
+      }
+      setIsBarcodeLoading(true);
+      try {
+        const localHit = barcodeMap.get(normalized);
+        if (localHit) {
+          applyItem(localHit.item, `barcode_${source}`, localHit.label);
+          setBarcodeStatus(`Added: ${localHit.label}`);
+          setLastBarcode(normalized);
+          trackIngredientSelection(
+            PANTRY_ITEMS.filter((i) => selected.has(i.id) || i.id === localHit.item).map((i) => i.label)
+          );
+          return;
+        }
+
+        const apiHit = await lookupBarcodeWithApi(normalized);
+        if (apiHit) {
+          const label = `${apiHit.productName} (barcode API match)`;
+          applyItem(apiHit.item, `barcode_api_${source}`, label);
+          setBarcodeStatus(`Added from API: ${pantryLabelMap.get(apiHit.item) ?? apiHit.item}`);
+          setLastBarcode(normalized);
+          return;
+        }
+
+        setBarcodeStatus(`No pantry match for ${normalized} yet. You can still check items manually below.`);
+        trackCTAClick('what_can_i_make', `barcode_no_match_${source}`, normalized);
+      } finally {
+        setIsBarcodeLoading(false);
+      }
+    },
+    [applyItem, barcodeMap, lookupBarcodeWithApi, pantryLabelMap, selected]
+  );
+
+  const stopScanner = useCallback(() => {
+    streamRef.current?.getTracks().forEach((track) => track.stop());
+    streamRef.current = null;
+    setIsScanning(false);
+    setScannerStatus('Scanner stopped.');
+  }, []);
+
+  const startScanner = useCallback(async () => {
+    if (typeof window === 'undefined') return;
+    const hasBarcodeDetector = 'BarcodeDetector' in window;
+    if (!hasBarcodeDetector) {
+      setScannerStatus('Camera barcode scanning is not supported in this browser. Use manual barcode entry.');
+      return;
+    }
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({
+        video: { facingMode: { ideal: 'environment' } },
+      });
+      streamRef.current = stream;
+      if (videoRef.current) videoRef.current.srcObject = stream;
+      setIsScanning(true);
+      setScannerStatus('Point your camera at a barcode.');
+
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const detector = new (window as any).BarcodeDetector({
+        formats: ['ean_13', 'ean_8', 'upc_a', 'upc_e'],
+      });
+
+      const scanFrame = async () => {
+        if (!videoRef.current || !streamRef.current) return;
+        try {
+          const codes = await detector.detect(videoRef.current);
+          if (codes?.length) {
+            const code = String(codes[0].rawValue ?? '');
+            if (code && code !== lastBarcode) {
+              setBarcodeInput(code);
+              void handleBarcodeLookup(code, 'camera');
+            }
+          }
+        } catch {
+          setScannerStatus('Scanner had trouble reading that frame. Try better lighting.');
+        }
+        if (streamRef.current) requestAnimationFrame(scanFrame);
+      };
+      requestAnimationFrame(scanFrame);
+      trackCTAClick('what_can_i_make', 'start_barcode_camera_scanner', 'camera_barcode');
+    } catch {
+      setScannerStatus('Could not access camera. Check browser permissions.');
+    }
+  }, [handleBarcodeLookup, lastBarcode]);
+
+  useEffect(() => () => stopScanner(), [stopScanner]);
+  useEffect(
+    () => () => {
+      if (photoPreview) URL.revokeObjectURL(photoPreview);
+    },
+    [photoPreview]
+  );
+
+  const detectPhotoIngredients = useCallback(
+    async (file: File): Promise<PantryId[]> => {
+      const endpoint = import.meta.env.VITE_INGREDIENT_VISION_ENDPOINT as string | undefined;
+      if (!endpoint) return [];
+
+      try {
+        const body = new FormData();
+        body.append('image', file);
+        const res = await fetch(endpoint, { method: 'POST', body });
+        if (!res.ok) return [];
+        const data = (await res.json()) as { ingredients?: string[] };
+        const inferred = (data.ingredients ?? [])
+          .map((name) => inferPantryIdFromText(name))
+          .filter((id): id is PantryId => id !== null);
+        return [...new Set(inferred)];
+      } catch {
+        return [];
+      }
+    },
+    [inferPantryIdFromText]
+  );
+
+  const handlePhotoUpload = async (file: File | null) => {
+    if (!file) return;
+    if (photoPreview) URL.revokeObjectURL(photoPreview);
+    const objectUrl = URL.createObjectURL(file);
+    setPhotoPreview(objectUrl);
+    setPhotoStatus('Photo added. Running ingredient detection...');
+    trackCTAClick('what_can_i_make', 'upload_fridge_photo', file.name);
+    setIsVisionLoading(true);
+    try {
+      const inferredItems = await detectPhotoIngredients(file);
+      if (inferredItems.length) {
+        inferredItems.forEach((item) => {
+          applyItem(item, 'fridge_photo_api', pantryLabelMap.get(item) ?? item);
+        });
+        setPhotoStatus(
+          `Detected ${inferredItems.length} ingredient(s) from photo. You can still quick-tag missing items below.`
+        );
+      } else {
+        setPhotoStatus(
+          'Photo added. No automatic matches found yet, so use quick tags below to finish your pantry.'
+        );
+      }
+    } finally {
+      setIsVisionLoading(false);
+    }
+  };
+
   return (
     <section id="what-can-i-make" className="py-24 px-6 bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 scroll-mt-24">
       <div className="max-w-7xl mx-auto">
@@ -171,6 +426,100 @@ export function WhatCanIMake() {
                   <div>
                     <h3 className="text-xl font-semibold">What’s in your kitchen?</h3>
                     <p className="text-sm text-muted-foreground">Tap everything you have on hand.</p>
+                  </div>
+                </div>
+
+                <div className="mb-6 rounded-xl border border-green-200 bg-green-50 p-4">
+                  <div className="flex items-center gap-2 mb-3">
+                    <ScanLine className="w-4 h-4 text-green-700" />
+                    <p className="text-sm font-semibold text-green-900">Scan barcode</p>
+                  </div>
+                  <div className="flex flex-col sm:flex-row gap-2">
+                    <input
+                      type="text"
+                      value={barcodeInput}
+                      onChange={(e) => setBarcodeInput(e.target.value)}
+                      placeholder="Enter barcode digits"
+                      className="flex-1 rounded-lg border border-green-300 bg-white px-3 py-2 text-sm"
+                    />
+                    <button
+                      type="button"
+                      onClick={() => void handleBarcodeLookup(barcodeInput, 'manual')}
+                      className="rounded-lg bg-green-600 text-white px-3 py-2 text-sm font-medium hover:bg-green-700"
+                    >
+                      {isBarcodeLoading ? 'Looking up...' : 'Add from code'}
+                    </button>
+                  </div>
+                  <div className="mt-2 flex flex-wrap gap-2">
+                    {!isScanning ? (
+                      <button
+                        type="button"
+                        onClick={startScanner}
+                        className="inline-flex items-center gap-1 rounded-md border border-green-300 bg-white px-2.5 py-1.5 text-xs font-medium text-green-800"
+                      >
+                        <Camera className="w-3.5 h-3.5" />
+                        Scan with camera
+                      </button>
+                    ) : (
+                      <button
+                        type="button"
+                        onClick={stopScanner}
+                        className="inline-flex items-center gap-1 rounded-md border border-green-300 bg-white px-2.5 py-1.5 text-xs font-medium text-green-800"
+                      >
+                        Stop scanner
+                      </button>
+                    )}
+                  </div>
+                  {isScanning ? (
+                    <video
+                      ref={videoRef}
+                      autoPlay
+                      playsInline
+                      muted
+                      className="mt-3 w-full rounded-lg border border-green-200 bg-black/80 aspect-video object-cover"
+                    />
+                  ) : null}
+                  {scannerStatus ? <p className="mt-2 text-xs text-green-800">{scannerStatus}</p> : null}
+                  {barcodeStatus ? <p className="mt-1 text-xs text-green-800">{barcodeStatus}</p> : null}
+                </div>
+
+                <div className="mb-6 rounded-xl border border-green-200 bg-green-50 p-4">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Upload className="w-4 h-4 text-green-700" />
+                    <p className="text-sm font-semibold text-green-900">Show us your fridge</p>
+                  </div>
+                  <label className="inline-flex items-center gap-2 rounded-lg bg-white border border-green-300 px-3 py-2 text-sm font-medium text-green-800 cursor-pointer">
+                    <Camera className="w-4 h-4" />
+                    Upload fridge photo
+                    <input
+                      type="file"
+                      accept="image/*"
+                      capture="environment"
+                      className="hidden"
+                      onChange={(e) => handlePhotoUpload(e.target.files?.[0] ?? null)}
+                    />
+                  </label>
+                  {photoPreview ? (
+                    <img src={photoPreview} alt="Fridge upload preview" className="mt-3 w-full rounded-lg border border-green-200" />
+                  ) : null}
+                  {photoStatus ? <p className="mt-2 text-xs text-green-800">{photoStatus}</p> : null}
+                  {isVisionLoading ? <p className="mt-1 text-xs text-green-800">Detecting ingredients from your photo...</p> : null}
+                  <div className="mt-3">
+                    <p className="text-xs font-medium text-green-900 mb-2">
+                      Quick-tag what you can see in the photo:
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {FRIDGE_QUICK_TAGS.map((tag) => (
+                        <button
+                          key={tag.id}
+                          type="button"
+                          onClick={() => applyItem(tag.id, 'fridge_photo_tag', tag.label)}
+                          className="rounded-full border border-green-300 bg-white px-3 py-1.5 text-xs font-medium text-green-800 hover:bg-green-100"
+                        >
+                          + {tag.label}
+                        </button>
+                      ))}
+                    </div>
                   </div>
                 </div>
 
@@ -273,8 +622,8 @@ export function WhatCanIMake() {
             </h2>
 
             <p className="text-xl text-muted-foreground mb-6 leading-relaxed">
-              Check off your pantry on the left. We’ll point you to the Sensei that fits — not a generic
-              list that sends you somewhere else first.
+              Scan barcodes, upload a fridge photo, or check your pantry manually. We’ll map what you have
+              into the best Sensei path for what you can make right now.
             </p>
 
             <div className="space-y-4 mb-8">
@@ -285,7 +634,7 @@ export function WhatCanIMake() {
                 <div>
                   <h3 className="font-medium text-lg mb-1">Select ingredients</h3>
                   <p className="text-muted-foreground text-sm">
-                    Use the checklist — it’s interactive, not a mock screenshot.
+                    Use barcode scan, fridge-photo tagging, or the checklist.
                   </p>
                 </div>
               </div>
@@ -339,15 +688,15 @@ export function WhatCanIMake() {
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
               <div className="text-3xl mb-2 bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
-                {PANTRY_ITEMS.length}
+                {PANTRY_ITEMS.length}+
               </div>
-              <p className="text-sm text-muted-foreground">Pantry items to pick from</p>
+              <p className="text-sm text-muted-foreground">Pantry items + quick photo tags</p>
             </div>
             <div>
               <div className="text-3xl mb-2 bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
-                Live
+                Barcode
               </div>
-              <p className="text-sm text-muted-foreground">Suggestions as you select</p>
+              <p className="text-sm text-muted-foreground">Manual entry or camera scan</p>
             </div>
             <div>
               <div className="text-3xl mb-2 bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">

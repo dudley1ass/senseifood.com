@@ -18,6 +18,7 @@ export function senseiPeiForArticle(category: string, url: string): string {
   if (category === 'Bread Science') return 'Bread Sensei';
   if (
     category === 'Baking Science' ||
+    category === 'Nutrition' ||
     category === 'Cake Science' ||
     category === 'Pie Science' ||
     category === 'Ice Cream Science' ||
@@ -683,6 +684,86 @@ const FOUNDATIONAL_ARTICLE_ROWS: ArticleCardBase[] = [
       readTime: '10 min read',
       color: 'from-rose-500 to-orange-600',
       url: '/baking-science/why-recipes-fail'
+    },
+    {
+      title: "Why Gluten Matters (and What You're Replacing)",
+      description: 'Gluten-free success starts with structure science: why gluten matters and what functional systems replace it.',
+      category: 'Baking Science',
+      readTime: '9 min read',
+      color: 'from-emerald-500 to-teal-600',
+      url: '/baking-science/why-gluten-matters-and-what-youre-replacing',
+    },
+    {
+      title: 'The Gluten-Free Flour Matrix',
+      description: 'Why single gluten-free flours fail, and how to build blends that balance structure, tenderness, elasticity, and binding.',
+      category: 'Baking Science',
+      readTime: '9 min read',
+      color: 'from-cyan-500 to-blue-600',
+      url: '/baking-science/gluten-free-flour-matrix-why-one-flour-never-works',
+    },
+    {
+      title: 'Hydrocolloids: Xanthan and Guar Gum',
+      description: 'How hydrocolloids improve gluten-free texture, plus practical usage ranges to avoid gummy results.',
+      category: 'Baking Science',
+      readTime: '8 min read',
+      color: 'from-violet-500 to-fuchsia-600',
+      url: '/baking-science/hydrocolloids-secret-weapon-xanthan-guar-gum',
+    },
+    {
+      title: 'Moisture Management in Gluten-Free Baking',
+      description: 'Understand starch retrogradation and moisture loss, then apply formula and storage fixes that keep bakes soft longer.',
+      category: 'Baking Science',
+      readTime: '8 min read',
+      color: 'from-amber-500 to-orange-600',
+      url: '/baking-science/moisture-management-why-gluten-free-food-dries-out-faster',
+    },
+    {
+      title: 'Leavening Without Gluten: Why Rise Is Harder',
+      description: 'Gas production is easy; gas retention is hard. Learn how eggs, psyllium, and hydrocolloids stabilize gluten-free rise.',
+      category: 'Baking Science',
+      readTime: '8 min read',
+      color: 'from-rose-500 to-orange-600',
+      url: '/baking-science/leavening-without-gluten-why-rise-is-harder',
+    },
+    {
+      title: 'How Much Protein Do You Actually Need?',
+      description: 'Most people under-eat protein for health and recovery. Learn evidence-based daily ranges and why meal-by-meal distribution matters.',
+      category: 'Nutrition',
+      readTime: '9 min read',
+      color: 'from-emerald-500 to-green-600',
+      url: '/nutrition-science/how-much-protein-do-you-actually-need',
+    },
+    {
+      title: 'The Power of Vegetables: Why Quantity Matters',
+      description: 'Vegetables are fiber and phytochemical systems that influence satiety, inflammation, and microbiome health far beyond calorie count.',
+      category: 'Nutrition',
+      readTime: '8 min read',
+      color: 'from-green-500 to-lime-600',
+      url: '/nutrition-science/power-of-vegetables-why-quantity-matters',
+    },
+    {
+      title: 'Balanced Plates Without Counting Calories',
+      description: 'Use a visual plate method to stabilize blood sugar, improve satiety, and eat well without tracking every macro.',
+      category: 'Nutrition',
+      readTime: '8 min read',
+      color: 'from-teal-500 to-cyan-600',
+      url: '/nutrition-science/balanced-plates-without-counting-calories',
+    },
+    {
+      title: "Why You're Still Hungry: The Science of Satiety",
+      description: 'If you are always hungry, it is often meal construction, not discipline. Learn hormone and food-structure drivers of fullness.',
+      category: 'Nutrition',
+      readTime: '8 min read',
+      color: 'from-orange-500 to-amber-600',
+      url: '/nutrition-science/why-youre-still-hungry-science-of-satiety',
+    },
+    {
+      title: 'Protein + Fiber for Health and Weight Control',
+      description: 'Pairing protein and fiber improves fullness, reduces cravings, and supports metabolic health with practical per-meal target ranges.',
+      category: 'Nutrition',
+      readTime: '8 min read',
+      color: 'from-indigo-500 to-blue-600',
+      url: '/nutrition-science/protein-plus-fiber-for-health-and-weight-control',
     },
 ];
 
@@ -1588,6 +1669,7 @@ export const ARTICLE_TABS: { id: TabId; label: string; category: 'FIX_IT' | 'ALL
   { id: 'coffee', label: 'Coffee', category: 'Coffee Science' },
   { id: 'sauces', label: 'Sauces', category: 'Sauce Science' },
   { id: 'baking', label: 'Baking science', category: 'Baking Science' },
+  { id: 'nutrition', label: 'Nutrition', category: 'Nutrition' },
   { id: 'all', label: 'All', category: 'ALL' },
 ];
 

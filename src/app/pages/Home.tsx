@@ -2,6 +2,7 @@ import { FeaturedExperiments } from '../components/FeaturedExperiments';
 import { Hero } from '../components/Hero';
 import { Navigation } from '../components/Navigation';
 import { SenseiMiniHeroes } from '../components/SenseiMiniHeroes';
+import { WhatCanIMake } from '../components/WhatCanIMake';
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Navigation />
       <Hero />
       <SenseiMiniHeroes />
+      <WhatCanIMake />
       <FeaturedExperiments />
     </div>
   );

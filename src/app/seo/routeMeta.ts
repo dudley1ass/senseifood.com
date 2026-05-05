@@ -51,6 +51,7 @@ const CATEGORY_SEGMENT: Record<string, { label: string; keyword: string }> = {
   'ice-cream-science': { label: 'Ice Cream Science', keyword: 'ice cream' },
   'coffee-science': { label: 'Coffee Science', keyword: 'coffee' },
   'baking-science': { label: 'Baking Science', keyword: 'baking' },
+  'nutrition-science': { label: 'Nutrition', keyword: 'nutrition' },
   'sauce-science': { label: 'Sauce Science', keyword: 'sauces' },
 };
 
@@ -99,6 +100,56 @@ const SEO_OVERRIDES: Record<string, SeoOverride> = {
     title: 'Coffee extraction: balance strength & yield | SenseiFood',
     description:
       'How grind, dose, time, and temperature control extraction and flavor. Learn under- vs over-extracted coffee and how to adjust your brew for balance.',
+  },
+  '/baking-science/why-gluten-matters-and-what-youre-replacing': {
+    title: "Why gluten matters in baking | SenseiFood",
+    description:
+      'Gluten is a structure system, not just an ingredient. Learn how gluten-free baking replaces elasticity, gas retention, and crumb stability.',
+  },
+  '/baking-science/gluten-free-flour-matrix-why-one-flour-never-works': {
+    title: 'Gluten-free flour matrix: why blends win',
+    description:
+      'Why one gluten-free flour rarely works alone. Build better texture by balancing structure flours, starches, and binders.',
+  },
+  '/baking-science/hydrocolloids-secret-weapon-xanthan-guar-gum': {
+    title: 'Xanthan vs guar gum in gluten-free baking',
+    description:
+      'How xanthan and guar gum improve gluten-free structure, with practical usage ranges to avoid gummy or slimy texture.',
+  },
+  '/baking-science/moisture-management-why-gluten-free-food-dries-out-faster': {
+    title: 'Why gluten-free baking dries out faster',
+    description:
+      'Gluten-free foods stale quickly from moisture loss and starch retrogradation. Learn formula and storage fixes that keep texture softer longer.',
+  },
+  '/baking-science/leavening-without-gluten-why-rise-is-harder': {
+    title: 'Leavening without gluten: rise and retention',
+    description:
+      'Gas production is only half of rise. Learn why gluten-free products collapse and how eggs, psyllium, and binders improve retention.',
+  },
+  '/nutrition-science/how-much-protein-do-you-actually-need': {
+    title: 'How much protein do you need daily?',
+    description:
+      'Most people under-target protein for health, recovery, and aging. Learn practical gram targets and why protein distribution across meals matters.',
+  },
+  '/nutrition-science/power-of-vegetables-why-quantity-matters': {
+    title: 'Why vegetables matter more than calories',
+    description:
+      'Vegetables are fiber and phytochemical systems that support gut health, inflammation control, and appetite regulation.',
+  },
+  '/nutrition-science/balanced-plates-without-counting-calories': {
+    title: 'Balanced plate method: eat right simply',
+    description:
+      'Build better meals without macro tracking using the simple plate method: vegetables, protein, carbs, and healthy fats.',
+  },
+  '/nutrition-science/why-youre-still-hungry-science-of-satiety': {
+    title: "Why you're still hungry after meals",
+    description:
+      'Hunger is biology, not willpower. Learn ghrelin, leptin, and how protein plus fiber improves fullness and reduces cravings.',
+  },
+  '/nutrition-science/protein-plus-fiber-for-health-and-weight-control': {
+    title: 'Protein + fiber: best combo for satiety',
+    description:
+      'Protein and fiber together improve fullness, blood sugar stability, and adherence. Practical target ranges for better daily meals.',
   },
   '/coffee-science/why-coffee-tastes-bitter': {
     title: 'Why coffee tastes bitter: extraction and roast',
