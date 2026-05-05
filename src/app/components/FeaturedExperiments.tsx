@@ -1,16 +1,15 @@
 import { BookOpen, ArrowRight, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router';
-import { SAUCE_SENSEI_APP_URL } from '../config/publicUrls';
 import { trackArticleClick, trackCTAClick, trackToolStart } from '../utils/analytics';
 
 const EXPERIMENT_IMAGES = {
-  /** Placeholder — swap when you have final art */
-  cake:
-    'https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80',
-  icecream:
-    'https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=900&q=80',
-  sauce:
-    'https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=900&q=80',
+  /** Placeholder stock images — swap anytime for branded art */
+  glutenBlend:
+    'https://images.unsplash.com/photo-1610725664285-7c57e6eeac3f?auto=format&fit=crop&w=900&q=80',
+  xanthan:
+    'https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=900&q=80',
+  nutritionPlate:
+    'https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=900&q=80',
 } as const;
 
 export function FeaturedExperiments() {
@@ -26,49 +25,48 @@ export function FeaturedExperiments() {
 
   const experiments = [
     {
-      title: 'Why Cakes Oil Out (Fat Separation in Batter)',
+      title: 'Gluten-Free Flour Matrix: Why One Flour Never Works',
       description:
-        'Emulsion timing, fat temperature, and mixing sequence—plus bake set—decide whether fat stays suspended or weeps from the crumb.',
-      category: 'Cake Science',
-      readTime: '8 min read',
-      color: 'from-pink-500 to-purple-600',
-      titleClass: 'from-pink-600 to-purple-600',
-      url: '/cake-science/why-cakes-oil-out',
+        'Learn why single gluten-free flours fail alone, and how starch + structure blends produce better crumb, rise, and consistency.',
+      category: 'Gluten-Free Baking',
+      readTime: '7 min read',
+      color: 'from-emerald-500 to-green-600',
+      titleClass: 'from-emerald-600 to-green-700',
+      url: '/baking-science/gluten-free-flour-matrix-why-one-flour-never-works',
       applyHref: 'https://cakesensei.senseifood.com',
-      applyLabel: 'Open CakeSensei',
+      applyLabel: 'Apply in CakeSensei',
       applyExternal: true,
       toolName: 'CakeSensei' as const,
-      image: EXPERIMENT_IMAGES.cake,
+      image: EXPERIMENT_IMAGES.glutenBlend,
     },
     {
-      title: 'Why Ice Cream Develops Ice Layers Over Time',
+      title: 'Hydrocolloids: Xanthan vs Guar in Gluten-Free Baking',
       description:
-        'Temperature swings in the freezer drive moisture to plate out as visible ice. Steady cold, headspace, and surface cover change the timeline.',
-      category: 'Ice Cream Science',
-      readTime: '8 min read',
-      color: 'from-cyan-500 to-blue-600',
-      titleClass: 'from-cyan-600 to-blue-700',
-      url: '/ice-cream-science/why-ice-cream-develops-ice-layers-over-time',
-      applyHref: 'https://icecreamsensei.senseifood.com',
-      applyLabel: 'Try this in IceCreamSensei',
+        'Xanthan and guar solve different texture problems. Use the right gum and dose to avoid gummy, slimy, or brittle gluten-free results.',
+      category: 'Gluten-Free Baking',
+      readTime: '6 min read',
+      color: 'from-teal-500 to-emerald-600',
+      titleClass: 'from-teal-600 to-emerald-700',
+      url: '/baking-science/hydrocolloids-secret-weapon-xanthan-guar-gum',
+      applyHref: 'https://cookiesensei.senseifood.com',
+      applyLabel: 'Apply in CookieSensei',
       applyExternal: true,
-      toolName: 'IceCreamSensei' as const,
-      image: EXPERIMENT_IMAGES.icecream,
+      toolName: 'CookieSensei' as const,
+      image: EXPERIMENT_IMAGES.xanthan,
     },
     {
-      title: 'Why Sauces Break When Reheated',
+      title: 'Protein + Fiber for Health and Weight Control',
       description:
-        'Reheating is a second thermal pass: emulsions need gentle heat, motion, and often a splash of liquid—microwave hotspots are a common culprit.',
-      category: 'Sauce Science',
-      readTime: '8 min read',
-      color: 'from-rose-600 to-orange-600',
-      titleClass: 'from-rose-700 to-orange-600',
-      url: '/sauce-science/why-sauces-break-when-reheated',
-      applyHref: SAUCE_SENSEI_APP_URL,
-      applyLabel: 'Open Sauce Sensei',
-      applyExternal: true,
-      toolName: 'SauceSensei' as const,
-      image: EXPERIMENT_IMAGES.sauce,
+        'Satiety, blood sugar stability, and better adherence all improve when protein and fiber targets are paired in daily meals.',
+      category: 'Nutrition Science',
+      readTime: '7 min read',
+      color: 'from-sky-500 to-blue-600',
+      titleClass: 'from-sky-600 to-blue-700',
+      url: '/nutrition-science/protein-plus-fiber-for-health-and-weight-control',
+      applyHref: '/articles?tab=nutrition',
+      applyLabel: 'More Nutrition Articles',
+      applyExternal: false,
+      image: EXPERIMENT_IMAGES.nutritionPlate,
     },
   ];
 

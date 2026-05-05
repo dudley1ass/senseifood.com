@@ -6,6 +6,39 @@ import multer from 'multer';
 const app = express();
 const port = Number(process.env.PORT || 8787);
 const openAiApiKey = process.env.OPENAI_API_KEY;
+const PANTRY_TARGETS = [
+  'flour',
+  'butter',
+  'sugar',
+  'eggs',
+  'baking powder',
+  'baking soda',
+  'salt',
+  'milk',
+  'cream',
+  'chocolate',
+  'yeast',
+  'coffee',
+  'vanilla',
+  'oil',
+  'cornstarch',
+];
+
+function extractTextOutput(payload) {
+  if (typeof payload?.output_text === 'string' && payload.output_text.trim()) {
+    return payload.output_text;
+  }
+
+  const chunks = payload?.output ?? [];
+  for (const chunk of chunks) {
+    const content = chunk?.content ?? [];
+    for (const item of content) {
+      if (typeof item?.text === 'string' && item.text.trim()) return item.text;
+    }
+  }
+
+  return '{}';
+}
 
 app.use(cors());
 app.use(express.json({ limit: '10mb' }));
@@ -67,7 +100,7 @@ app.post('/ingredient-vision', upload.single('image'), async (req, res) => {
               {
                 type: 'input_text',
                 text:
-                  'Identify visible food ingredients in this kitchen/fridge photo. Return short ingredient names only (e.g. "milk", "eggs", "butter", "flour"). Exclude brands, packaging text, utensils, and non-food items.',
+                  `Identify visible ingredients from this kitchen/fridge photo. Only return ingredients that match this pantry list when possible: ${PANTRY_TARGETS.join(', ')}. Exclude brands, packaging text, utensils, and non-food items.`,
               },
               {
                 type: 'input_image',
@@ -88,10 +121,7 @@ app.post('/ingredient-vision', upload.single('image'), async (req, res) => {
     }
 
     const payload = await response.json();
-    const rawText =
-      payload?.output_text ||
-      payload?.output?.[0]?.content?.find?.((c) => c.type === 'output_text')?.text ||
-      '{}';
+    const rawText = extractTextOutput(payload);
 
     let parsed;
     try {
@@ -101,7 +131,13 @@ app.post('/ingredient-vision', upload.single('image'), async (req, res) => {
     }
 
     const ingredients = Array.isArray(parsed.ingredients)
-      ? [...new Set(parsed.ingredients.map((x) => String(x).trim().toLowerCase()).filter(Boolean))]
+      ? [
+          ...new Set(
+            parsed.ingredients
+              .map((x) => String(x).trim().toLowerCase())
+              .filter((name) => name && PANTRY_TARGETS.some((target) => name.includes(target)))
+          ),
+        ]
       : [];
 
     return res.json({ ingredients });
