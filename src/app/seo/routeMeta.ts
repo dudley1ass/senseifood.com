@@ -76,30 +76,106 @@ const SEO_OVERRIDES: Record<string, SeoOverride> = {
     description:
       'Readable deep dives on spread, extraction, rise, texture, and common failures. Read the science on SenseiFood, then use our free tools to apply it in your kitchen.',
   },
+  /** CTR sprint: answer-first meta, exact-query phrasing, ≤60 char titles after ensureTitleBand */
   '/cookie-science/why-cookies-spread': {
-    title: 'Why cookies spread — butter, sugar, chill | SenseiFood',
+    title: 'Why cookies spread too much: butter, sugar & fixes',
     description:
-      'Fat melts before the dough structure sets, so cookies spread—sugar, leavening, and flour still matter. Chill dough, tweak sugars, control butter temp.',
+      'Cookie spreading explained: fat melts before structure sets. Fix spread with chilled dough, butter temperature, flour and sugar tweaks—science-backed steps.',
   },
   '/cookie-science/brown-sugar-vs-white-sugar': {
-    title: 'Brown sugar vs white sugar in cookies | SenseiFood',
+    title: 'Brown vs white sugar in cookies: chew & spread',
     description:
-      'Brown vs white sugar in cookies: moisture, spread, chew, browning, and flavor differences. Choose ratios based on the texture and structure you want.',
+      'Brown sugar vs white sugar in cookies: moisture, spread, chew, Maillard browning, and flavor. Pick ratios for the texture you want—no guesswork.',
+  },
+  '/cookie-science/why-cookies-are-chewy': {
+    title: 'What makes cookies chewy? Moisture, fat & sugar',
+    description:
+      'What makes cookies chewy: hydration, fat type, sugar, and bake time. Learn the levers for soft centers vs crisp edges and link fixes to spread and hardness.',
+  },
+  '/cookie-science/why-cookies-turn-hard': {
+    title: 'Why cookies get hard after baking (& how to fix)',
+    description:
+      'Why cookies harden: moisture loss, sugar crystallization, over-bake, and storage. Keep cookies softer longer with recipe and cooling fixes from food science.',
+  },
+  '/cookie-science/why-cookies-spread-too-much': {
+    title: 'Cookie spreading too much? Fixes that work',
+    description:
+      'Cookies spread too much when butter is too warm, flour is under-measured, or sugar drives flow. Chill dough, check ratios, pan temp—practical fix order.',
+  },
+  '/cookie-science/why-cookies-dont-spread': {
+    title: "Cookies won't spread: butter temp, flour & fixes",
+    description:
+      'Cookies do not spread when fat is too cold, flour is high, or leavening is off. Learn why cookies stay domed and how to unlock even spread without thinning.',
   },
   '/cake-science/why-cakes-collapse': {
-    title: 'Why cakes collapse: structure, steam, and timing',
+    title: 'Why cakes collapse: structure, steam & timing',
     description:
-      'Cakes collapse when structure sets too late or gas escapes too fast. Learn key causes—mixing, leavening, oven temp, and doneness checks—with practical fixes.',
+      'Why cakes collapse: weak structure, early oven open, under-bake, or too much leavening. Diagnose sinking and collapsing with fixes for mixing, temp, and timing.',
   },
-  '/ice-cream-science/why-ice-cream-gets-icy': {
-    title: 'Why ice cream gets icy: crystals, sugar, storage',
+  '/cake-science/why-cakes-sink': {
+    title: 'Why cakes sink in the middle: causes & fixes',
     description:
-      'Ice cream gets icy when water crystallizes from poor solids balance or warm storage cycles. Fix texture with sugar balance, stabilizers, and faster hardening.',
+      'Why cakes sink in the middle: underdone centers, leavening imbalance, or cooling too fast. Match symptoms to causes and stabilize rise with science-based tweaks.',
+  },
+  '/cake-science/why-cakes-are-dense': {
+    title: 'Dense cake: mixing, flour & leavening fixes',
+    description:
+      'Dense cake causes: over-mixing, cold butter, weak leavening, wrong flour. Connect density to rise and moisture—practical fixes for a lighter crumb.',
+  },
+  '/cake-science/why-cakes-rise': {
+    title: 'Why cakes rise: air, steam & leavening science',
+    description:
+      'Why cakes rise: trapped air, steam expansion, and chemical leaveners. See how structure sets so gas does not escape—pairs with collapse and dense cake guides.',
+  },
+  '/cake-science/why-cakes-dry-out': {
+    title: 'Why cakes dry out: bake time, sugar & moisture',
+    description:
+      'Why cakes dry out: over-bake, low fat, high oven, or storage. Fix crumb moisture with sugar, fat, and doneness cues—links to dense and dry-texture articles.',
+  },
+  '/coffee-science/why-coffee-tastes-bitter': {
+    title: 'Bitter coffee: over-extraction & quick fixes',
+    description:
+      'Bitter coffee fix: grind coarser, shorter brew, lower temp, or less agitation. Separate true bitterness from dark roast and channeling—actionable dial-in steps.',
+  },
+  '/coffee-science/why-coffee-tastes-sour': {
+    title: 'Sour coffee: under-extraction & how to fix it',
+    description:
+      'Sour coffee means under-extraction: hotter water, finer grind, longer time, or higher dose. Balance acidity with sweetness using a simple fix order for any brewer.',
   },
   '/coffee-science/coffee-extraction-science': {
-    title: 'Coffee extraction: balance strength & yield | SenseiFood',
+    title: 'Coffee extraction: strength vs flavor explained',
     description:
-      'How grind, dose, time, and temperature control extraction and flavor. Learn under- vs over-extracted coffee and how to adjust your brew for balance.',
+      'Coffee extraction science: TDS vs yield, grind, time, and temperature. Learn under vs over-extracted coffee and how to fix sour, bitter, or hollow cups fast.',
+  },
+  '/bread-science/why-bread-rises': {
+    title: 'Why bread rises: yeast, gluten & trapped gas',
+    description:
+      'Why bread rises: CO₂ from yeast, gluten trapping gas, and oven spring. Practical cues for proofing and structure—pairs with dense bread and hydration guides.',
+  },
+  '/bread-science/how-yeast-works': {
+    title: 'How yeast works: rise, fermentation & flavor',
+    description:
+      'How yeast works in baking: fermentation, gas, dough strength, and flavor. Understand rise limits vs gluten so dense or gummy loaves make sense and fix faster.',
+  },
+  '/pie-science/why-pie-crust-is-flaky': {
+    title: 'Flaky pie crust: fat, steam & layer science',
+    description:
+      'Flaky pie crust: solid fat layers, steam pockets, and gentle mixing. Fix tough or soggy crust with temperature and hydration—science for tender slices.',
+  },
+  '/ice-cream-science/why-ice-cream-gets-icy': {
+    title: 'Icy ice cream: crystals, sugar & storage fixes',
+    description:
+      'Icy ice cream: large ice crystals from sugar balance, overrun, or thaw-refreeze. Fix texture with solids, churn, and cold storage—science for smoother scoops.',
+  },
+  '/baking-science/why-butter-temperature-matters': {
+    title: 'Butter temp in baking: cold vs soft vs melted',
+    description:
+      'Butter temperature changes spread, aeration, and structure in cookies and cakes. Cold vs room temp vs melted—match fat state to the bake you want.',
+  },
+  '/baking-science/why-eggs-matter-in-baking': {
+    title: 'Eggs in baking: 5 jobs that control texture & rise',
+    description:
+      'Eggs in baking: structure, moisture, fat, emulsion, and leavening. Yolk vs white ratios change chew and dome—pairs with cake dense and cookie texture guides.',
   },
   '/baking-science/why-gluten-matters-and-what-youre-replacing': {
     title: "Why gluten matters in baking | SenseiFood",
@@ -150,21 +226,6 @@ const SEO_OVERRIDES: Record<string, SeoOverride> = {
     title: 'Protein + fiber: best combo for satiety',
     description:
       'Protein and fiber together improve fullness, blood sugar stability, and adherence. Practical target ranges for better daily meals.',
-  },
-  '/coffee-science/why-coffee-tastes-bitter': {
-    title: 'Why coffee tastes bitter: extraction and roast',
-    description:
-      'Bitter coffee usually means over-extraction, dark roast intensity, or high brew temp. Adjust grind, ratio, and contact time to bring back sweetness and balance.',
-  },
-  '/bread-science/why-bread-rises': {
-    title: 'Why bread rises: yeast, gluten & trapped gas | SenseiFood',
-    description:
-      'How yeast produces CO₂, how gluten traps gas, and what makes a good rise vs a dense loaf. Practical cues for proofing, temperature, and structure.',
-  },
-  '/pie-science/why-pie-crust-is-flaky': {
-    title: 'Why pie crust gets flaky: fat layers and steam',
-    description:
-      'Flaky crust comes from solid fat layers that melt into steam pockets in the oven. Learn mixing, lamination, and temperature control for tender, crisp layers.',
   },
 };
 
