@@ -45,8 +45,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Cooling control",
       "paragraphs": [
-        "Move dough to cooler space or use fridge retard. Reduce starter inoculation in sourdough for slower acid build.",
-        "Salt percentage within normal 1.8–2.2% flour weight regulates yeast speed slightly."
+        "Move dough to cooler space or use fridge retard. Reduce starter inoculation in sourdough for slower acid build. Salt percentage within normal 1.8–2.2% flour weight regulates yeast speed slightly."
       ]
     },
     {

@@ -21,8 +21,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Target temperature, not color alone",
       "paragraphs": [
-        "Custards tighten dramatically in a narrow band near fully set eggs. A few degrees can separate silky from curdy; the latter cracks as it cools because the protein matrix cannot shrink as one piece.",
-        "Use a thermometer near the geometric center for thick pies, and pair numbers with jiggle: the center should move as a thickened liquid, not slosh like milk and not bounce like rubber. If you only rely on surface browning, you may already be past ideal for some formulas."
+        "Custards tighten dramatically in a narrow band near fully set eggs. A few degrees can separate silky from curdy; the latter cracks as it cools because the protein matrix cannot shrink as one piece. Use a thermometer near the geometric center for thick pies, and pair numbers with jiggle: the center should move as a thickened liquid, not slosh like milk and not bounce like rubber. If you only rely on surface browning, you may already be past ideal for some formulas."
       ],
       "bullets": [
         {
@@ -38,15 +37,13 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Sequence: blind bake and hot filling",
       "paragraphs": [
-        "Pouring very hot custard into a hot shell starts set evenly and reduces the chance of a thick surface skin forming over an underheated interior. A cold shell plus hot filling can set the top prematurely while the middle continues to expand—classic crack recipe.",
-        "If your process requires cooler filling for safety, compensate with lower oven temperature and longer time so gradients stay gentle."
+        "Pouring very hot custard into a hot shell starts set evenly and reduces the chance of a thick surface skin forming over an underheated interior. A cold shell plus hot filling can set the top prematurely while the middle continues to expand—classic crack recipe. If your process requires cooler filling for safety, compensate with lower oven temperature and longer time so gradients stay gentle."
       ]
     },
     {
       "heading": "Cooling ramp",
       "paragraphs": [
-        "Abrupt chilling sets a rigid surface while the interior still moves. Cool gradually: oven door ajar, then counter, then refrigerator. Moving a steaming pie straight into cold air or the fridge can tension the surface enough to split.",
-        "Covering too early traps steam and softens crust; uncovering too long dries the top—find the balance for your environment."
+        "Abrupt chilling sets a rigid surface while the interior still moves. Cool gradually: oven door ajar, then counter, then refrigerator. Moving a steaming pie straight into cold air or the fridge can tension the surface enough to split. Covering too early traps steam and softens crust; uncovering too long dries the top—find the balance for your environment."
       ],
       "tip": "If cosmetic cracks appear but texture is good, a thin layer of lightly sweetened cream or a fruit glaze hides sins for guests; fix process next bake."
     },

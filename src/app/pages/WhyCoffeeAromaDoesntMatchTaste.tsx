@@ -21,8 +21,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Serve temperature and sensory pathways",
       "paragraphs": [
-        "Hot coffee throws more volatile aromatics toward your nose; as it cools, orthonasal intensity drops while sour and bitter non-volatiles can read louder relative to sweetness. That shift is why the same cup can feel fruity early and sour later, or roasty early and hollow once volatiles fade.",
-        "Retronasal perception still carries aroma while drinking, but the balance changes with temperature and with how much dissolved material is present to support mouthfeel. Serving too cold without adjusting extraction can leave aroma memory from the dry fragrance unmatched by palate structure."
+        "Hot coffee throws more volatile aromatics toward your nose; as it cools, orthonasal intensity drops while sour and bitter non-volatiles can read louder relative to sweetness. That shift is why the same cup can feel fruity early and sour later, or roasty early and hollow once volatiles fade. Retronasal perception still carries aroma while drinking, but the balance changes with temperature and with how much dissolved material is present to support mouthfeel. Serving too cold without adjusting extraction can leave aroma memory from the dry fragrance unmatched by palate structure."
       ],
       "bullets": [
         {
@@ -45,16 +44,14 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Holding, grinding, and freshness splits",
       "paragraphs": [
-        "Open carafes lose volatile aromatics to the air even when taste seems stable minute to minute. Cover between pours when evaluating quality. Stale whole bean can lose aroma faster than it loses extractable acids, producing smell–taste divergence of a different kind.",
-        "Grinder retention and uneven particle distribution create cups that smell like one setting and taste like another: some sips sweet, some sharp. Purge and maintain burrs; taste multiple sips before judging."
+        "Open carafes lose volatile aromatics to the air even when taste seems stable minute to minute. Cover between pours when evaluating quality. Stale whole bean can lose aroma faster than it loses extractable acids, producing smell–taste divergence of a different kind. Grinder retention and uneven particle distribution create cups that smell like one setting and taste like another: some sips sweet, some sharp. Purge and maintain burrs; taste multiple sips before judging."
       ],
       "tip": "If aroma and taste diverge right after a grinder change, finish the dial-in before attributing it to roast character."
     },
     {
       "heading": "Water, bypass, and sensory expectations",
       "paragraphs": [
-        "Hard or high-mineral water can flatten perceived acidity while aromatics still read lively from dry fragrance. Bypass and batch brewer spray issues create weak extraction with normal-looking color. Align your sensory expectations with the actual contact time and evenness of extraction.",
-        "Sometimes the mismatch is simply preference: intensely aromatic naturals can smell like berries while the cup remains winey-acidic. Learning to separate aroma hype from solubility balance is part of calibration."
+        "Hard or high-mineral water can flatten perceived acidity while aromatics still read lively from dry fragrance. Bypass and batch brewer spray issues create weak extraction with normal-looking color. Align your sensory expectations with the actual contact time and evenness of extraction. Sometimes the mismatch is simply preference: intensely aromatic naturals can smell like berries while the cup remains winey-acidic. Learning to separate aroma hype from solubility balance is part of calibration."
       ]
     }
   ],

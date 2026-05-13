@@ -21,8 +21,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Temperature control in bulk and proof",
       "paragraphs": [
-        "Microbial activity is highly temperature sensitive: small kitchen swings can change fermentation pace dramatically, especially in small dough masses that equilibrate quickly to room air. Warm corners near ovens, laptops, or sunlit counters create a fast lane where yeast outruns bacterial acid development.",
-        "Track dough temperature, not just room temperature. A few degrees in the mass changes the balance of congeners you will smell tomorrow morning. When in doubt, slow down: cooler bulk or a short cold retardation gives complexity time to catch up with gas production."
+        "Microbial activity is highly temperature sensitive: small kitchen swings can change fermentation pace dramatically, especially in small dough masses that equilibrate quickly to room air. Warm corners near ovens, laptops, or sunlit counters create a fast lane where yeast outruns bacterial acid development. Track dough temperature, not just room temperature. A few degrees in the mass changes the balance of congeners you will smell tomorrow morning. When in doubt, slow down: cooler bulk or a short cold retardation gives complexity time to catch up with gas production."
       ],
       "bullets": [
         {
@@ -38,22 +37,19 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Sequence: preferment vs straight dough",
       "paragraphs": [
-        "Preferments (poolish, biga, levain builds) shift flavor formation earlier in the process so the final proof can be shorter without smelling like a lab culture. Even a short autolyse can help hydration uniformity so yeast does not create localized hot spots of activity.",
-        "Straight doughs are not wrong—they simply need either cooler timelines or smaller yeast percentages if your kitchen runs warm. If you keep seeing yeasty loaves in summer, preferment or cold bulk is often the first lever, not a different brand of flour."
+        "Preferments (poolish, biga, levain builds) shift flavor formation earlier in the process so the final proof can be shorter without smelling like a lab culture. Even a short autolyse can help hydration uniformity so yeast does not create localized hot spots of activity. Straight doughs are not wrong—they simply need either cooler timelines or smaller yeast percentages if your kitchen runs warm. If you keep seeing yeasty loaves in summer, preferment or cold bulk is often the first lever, not a different brand of flour."
       ]
     },
     {
       "heading": "Holding shaped dough",
       "paragraphs": [
-        "Over-proofed dough can smell strongly yeasty after collapse because alcohols accumulate while structure fails—your nose notices the volatiles even if the loaf looks merely “relaxed.” Under-mixed dough can also ferment unevenly, with pockets that spike esters.",
-        "Final proof should end when the dough is aerated but still elastic; finger-poke tests are guides, not laws—learn your flour’s tell."
+        "Over-proofed dough can smell strongly yeasty after collapse because alcohols accumulate while structure fails—your nose notices the volatiles even if the loaf looks merely “relaxed.” Under-mixed dough can also ferment unevenly, with pockets that spike esters. Final proof should end when the dough is aerated but still elastic; finger-poke tests are guides, not laws—learn your flour’s tell."
       ]
     },
     {
       "heading": "Bake color as flavor finish",
       "paragraphs": [
-        "Crust color is not vanity. Adequate Maillard and caramelization produce aromatics that mask or transform aldehydic green notes from the crumb. Pale bread often smells more yeasty even when fermentation was acceptable because the crust did not complete the aromatic stack.",
-        "Steam early for expansion, then ensure drying and browning phases match your loaf size—large miches need time for inner moisture to stop steaming the crust soggy and pale."
+        "Crust color is not vanity. Adequate Maillard and caramelization produce aromatics that mask or transform aldehydic green notes from the crumb. Pale bread often smells more yeasty even when fermentation was acceptable because the crust did not complete the aromatic stack. Steam early for expansion, then ensure drying and browning phases match your loaf size—large miches need time for inner moisture to stop steaming the crust soggy and pale."
       ],
       "tip": "If aroma improves dramatically on toast, suspect incomplete crust finish more than bad yeast."
     }

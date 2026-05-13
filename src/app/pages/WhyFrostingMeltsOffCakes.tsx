@@ -20,57 +20,32 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Crumb temperature and thermal mass",
       "paragraphs": [
-        "A crumb above roughly 75–80°F can hold enough heat to melt butterfat in adjacent frosting even when the kitchen feels cool. Thick layers and insulated centers release heat for hours.",
-        "Freezer flash is not always better: a frozen exterior with a warm core still fails during the slow equalization window.",
-        "Simple syrup soak or wet fillings increase thermal conductivity and moisture injection at the interface, accelerating slip."
+        "A crumb above roughly 75–80°F can hold enough heat to melt butterfat in adjacent frosting even when the kitchen feels cool. Thick layers and insulated centers release heat for hours. Freezer flash is not always better: a frozen exterior with a warm core still fails during the slow equalization window. Simple syrup soak or wet fillings increase thermal conductivity and moisture injection at the interface, accelerating slip."
       ],
       "tip": "Probe the center; aim for true room temp through the whole tier before final coat."
     },
     {
       "heading": "Buttercream type and emulsion stability",
       "paragraphs": [
-        "Swiss and Italian buttercreams are water-in-fat emulsions; broken meringue or hot syrup yields greasy separation under shear.",
-        "American buttercream is mostly powdered sugar in fat; heat drives fat liquidity and syrup mobility simultaneously.",
-        "Cream cheese frostings tighten with acid and cool working; overheated cheese proteins will not rescue with extra sugar."
+        "Swiss and Italian buttercreams are water-in-fat emulsions; broken meringue or hot syrup yields greasy separation under shear. American buttercream is mostly powdered sugar in fat; heat drives fat liquidity and syrup mobility simultaneously. Cream cheese frostings tighten with acid and cool working; overheated cheese proteins will not rescue with extra sugar."
       ]
     },
     {
       "heading": "Humidity, fructose, and storage",
       "paragraphs": [
-        "Humid nights condense water onto chilled cakes, dissolving sugar crusts and lubricating slip planes.",
-        "Invert syrups and honey increase hygroscopicity; they taste stable but move water aggressively on the cut surface.",
-        "Transport vibration plus soft crumb is a mechanical slide even when temperature is perfect."
+        "Humid nights condense water onto chilled cakes, dissolving sugar crusts and lubricating slip planes. Invert syrups and honey increase hygroscopicity; they taste stable but move water aggressively on the cut surface. Transport vibration plus soft crumb is a mechanical slide even when temperature is perfect."
       ]
     },
     {
       "heading": "How Fix My Recipe helps",
       "paragraphs": [
-        "Cake mode compares fat, sugar, and liquid bands to structural targets. When melting pairs with dense crumb, you have two coupled issues—not only frosting.",
-        "Log crumb temp at crumb coat versus final coat; one data point ends many debates."
+        "Cake mode compares fat, sugar, and liquid bands to structural targets. When melting pairs with dense crumb, you have two coupled issues—not only frosting. Log crumb temp at crumb coat versus final coat; one data point ends many debates."
       ]
     },
     {
-      "heading": "Debugging field notes",
+      "heading": "Heat and timing, told simply",
       "paragraphs": [
-        "Tag \"why-frosting-melts-off-cakes\" at the top of your kitchen log for this project so PDF exports and screenshots stay searchable across seasons.",
-        "List equipment IDs that mattered that day: scale model, mixer speed used, oven rack height, and burr grinder zero point if coffee-adjacent—all drift over years.",
-        "State one falsifiable hypothesis before the run and record whether results supported or rejected it; negative evidence prevents repeating expensive guesses."
-      ]
-    },
-    {
-      "heading": "Photographic evidence checklist",
-      "paragraphs": [
-        "Photograph Why Frosting Melts Off Cakes under consistent lighting: one top-down frame and one cross-section whenever you change a variable tied to why-frosting-melts-off-cakes.",
-        "Include a reference object in frame—a ruler edge or coin—so zoom crops do not fool you about spread thickness or bubble size later.",
-        "Store images in a dated folder alongside gram weights; future comparisons become obvious instead of debated from memory."
-      ]
-    },
-    {
-      "heading": "Results vocabulary that travels",
-      "paragraphs": [
-        "When you write notes for why-frosting-melts-off-cakes, cap texture adjectives at three per bake—chewy, sandy, spongy—and flavor adjectives at three so comparisons week-to-week stay comparable.",
-        "Note finish temperature and resting minutes beside taste descriptors; many off-notes are phase-dependent especially for dairy, chocolate, and coffee oils.",
-        "If a friend tastes blind, record their words verbatim; fresh language catches patterns you normalized away."
+        "Buttercream is a fat-and-sugar emulsion waiting for an excuse to slide; a warm crumb or a sunny windowsill is enough drama. The story is usually temperature balance, not a missing industrial stabilizer. Note crumb cool-down, room temp, and whether the sun hit the cake—then adjust one of those before you rebake the whole formula from suspicion."
       ]
     }
   ],

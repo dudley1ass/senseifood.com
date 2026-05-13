@@ -20,8 +20,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Protein and mixing",
       "paragraphs": [
-        "Bread flour in a soft-roll formula is a common chew upgrade you did not ask for. Protein links into tighter chains that survive chewing longer.",
-        "Long machine mixing aligns gluten aggressively; hand mixing or short mix plus folds can yield a more relaxed crumb."
+        "Bread flour in a soft-roll formula is a common chew upgrade you did not ask for. Protein links into tighter chains that survive chewing longer. Long machine mixing aligns gluten aggressively; hand mixing or short mix plus folds can yield a more relaxed crumb."
       ]
     },
     {
@@ -45,8 +44,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Protein and hydration math",
       "paragraphs": [
-        "Bread flour at identical hydration feels chewier than AP because more gluten can form. Reducing mix time or adding autolyse softens perception without always lowering protein.",
-        "Whole wheat bran cuts gluten strands—can paradoxically feel gritty-chewy; different fix than white flour chew."
+        "Bread flour at identical hydration feels chewier than AP because more gluten can form. Reducing mix time or adding autolyse softens perception without always lowering protein. Whole wheat bran cuts gluten strands—can paradoxically feel gritty-chewy; different fix than white flour chew."
       ]
     },
     {

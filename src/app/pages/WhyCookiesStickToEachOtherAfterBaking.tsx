@@ -21,8 +21,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Cooling curve on the pan versus rack",
       "paragraphs": [
-        "A metal sheet holds sensible heat and limits air circulation around bottoms, so the undersides stay in a plastic regime longer than tops exposed to oven air. Thin, buttery cookies benefit from an early transfer to a wire rack so edges free-set instead of fusing to neighbors or the pan lip.",
-        "Crowding matters even without touching: radiant heat from adjacent cookies slows edge set on inward faces. If your recipe spreads aggressively, use two sheets or stagger scoops so each cookie has a microclimate instead of a wall of hot neighbors."
+        "A metal sheet holds sensible heat and limits air circulation around bottoms, so the undersides stay in a plastic regime longer than tops exposed to oven air. Thin, buttery cookies benefit from an early transfer to a wire rack so edges free-set instead of fusing to neighbors or the pan lip. Crowding matters even without touching: radiant heat from adjacent cookies slows edge set on inward faces. If your recipe spreads aggressively, use two sheets or stagger scoops so each cookie has a microclimate instead of a wall of hot neighbors."
       ],
       "bullets": [
         {
@@ -38,23 +37,20 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Sugar, fat, and weld strength",
       "paragraphs": [
-        "High sugar and butter formulas leave a thin lipid-sugar film on rims that is adhesive when warm. Pressing warm cookies together cold-welds that film into a shared ridge that later breaks as one piece—hence the fused mega-cookie.",
-        "Invert sugar, corn syrup, or honey increases tack and extends the thermoplastic window, so chewy recipes stick more readily than lean shortbreads if handled early."
+        "High sugar and butter formulas leave a thin lipid-sugar film on rims that is adhesive when warm. Pressing warm cookies together cold-welds that film into a shared ridge that later breaks as one piece—hence the fused mega-cookie. Invert sugar, corn syrup, or honey increases tack and extends the thermoplastic window, so chewy recipes stick more readily than lean shortbreads if handled early."
       ],
       "tip": "For packed lunchboxes, choose fully cooled cookies with cornstarch-dusted fingers or parchment dividers; warmth plus pressure is the stickiness trigger."
     },
     {
       "heading": "Stacking sequence for storage",
       "paragraphs": [
-        "Room-temperature cookies can still cold-flow under stack weight, especially chewy or chocolate-coated types. Parchment or wax paper between layers prevents micro-welds and cosmetic damage.",
-        "Decorated cookies with icing or jam need rigid separation so fillings do not bridge—treat storage like food packaging engineering, not Tetris."
+        "Room-temperature cookies can still cold-flow under stack weight, especially chewy or chocolate-coated types. Parchment or wax paper between layers prevents micro-welds and cosmetic damage. Decorated cookies with icing or jam need rigid separation so fillings do not bridge—treat storage like food packaging engineering, not Tetris."
       ]
     },
     {
       "heading": "Humidity and airtight timing",
       "paragraphs": [
-        "Sealing cookies while they breathe steam traps moisture on surfaces, raising water activity at interfaces and making them tacky to each other. Let trays come to room temperature with loose cover first, then move to airtight if you need long shelf life in dry climates.",
-        "In humid kitchens, even cooled cookies can pick up surface moisture overnight; a desiccant packet is rarely necessary, but avoiding refrigerator storage for crisp types prevents condensation cycles that revive stickiness."
+        "Sealing cookies while they breathe steam traps moisture on surfaces, raising water activity at interfaces and making them tacky to each other. Let trays come to room temperature with loose cover first, then move to airtight if you need long shelf life in dry climates. In humid kitchens, even cooled cookies can pick up surface moisture overnight; a desiccant packet is rarely necessary, but avoiding refrigerator storage for crisp types prevents condensation cycles that revive stickiness."
       ]
     }
   ],

@@ -45,8 +45,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Vitality checks",
       "paragraphs": [
-        "Bloom yeast in 100–110°F (38–43°C) water with pinch sugar—foam in 10 minutes or replace.",
-        "Sourdough starter should double predictably at room temp—refresh if flat after 8 hours."
+        "Bloom yeast in 100–110°F (38–43°C) water with pinch sugar—foam in 10 minutes or replace. Sourdough starter should double predictably at room temp—refresh if flat after 8 hours."
       ]
     },
     {

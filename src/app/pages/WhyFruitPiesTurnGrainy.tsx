@@ -38,23 +38,20 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Sequence: starch before acid extremes",
       "paragraphs": [
-        "Acid tightens starch granules and changes swelling kinetics. If you dump lemon juice or a very acidic fruit purée in before starch has fully hydrated and cleared, you can get clumps that never fully disperse; those clumps read as grain after bake and chill.",
-        "Slurry starch into warm liquid with steady agitation, bring to full viscosity, then introduce sharper acid loads—or add acid in a controlled stream while watching shear. Cornstarch, tapioca, and modified starches tolerate acid differently; if you swap thickeners, revisit order and hydration, not just gram weight."
+        "Acid tightens starch granules and changes swelling kinetics. If you dump lemon juice or a very acidic fruit purée in before starch has fully hydrated and cleared, you can get clumps that never fully disperse; those clumps read as grain after bake and chill. Slurry starch into warm liquid with steady agitation, bring to full viscosity, then introduce sharper acid loads—or add acid in a controlled stream while watching shear. Cornstarch, tapioca, and modified starches tolerate acid differently; if you swap thickeners, revisit order and hydration, not just gram weight."
       ],
       "tip": "If you see translucent gel lumps while the filling is still hot, fix them now—cooling locks that texture in."
     },
     {
       "heading": "Cooling curve and sugar",
       "paragraphs": [
-        "High sucrose concentration lowers water activity and can encourage crystallization on cooling, especially if the filling cools very quickly from the edges inward. The result can feel like faint sugar sand even when starch and pectin behaved.",
-        "Invert sugar, glucose syrup, or a modest amount of another monosaccharide source changes how sucrose behaves on cooling and can smooth perception, but balance against sweetness targets. Gentle cooling (stirring occasionally, avoiding ice-shock) also reduces odd gradients that nucleate crystals at the surface first."
+        "High sucrose concentration lowers water activity and can encourage crystallization on cooling, especially if the filling cools very quickly from the edges inward. The result can feel like faint sugar sand even when starch and pectin behaved. Invert sugar, glucose syrup, or a modest amount of another monosaccharide source changes how sucrose behaves on cooling and can smooth perception, but balance against sweetness targets. Gentle cooling (stirring occasionally, avoiding ice-shock) also reduces odd gradients that nucleate crystals at the surface first."
       ]
     },
     {
       "heading": "Reheats and storage",
       "paragraphs": [
-        "Grain can show up only after the fridge: starch retrogradation and moisture migration make a filling that seemed glossy yesterday feel sandy today. Gentle rewarm with a splash of liquid can help some formulas, but if the grit is from broken pectin or crystallized sugar, you are often masking, not reversing.",
-        "For service pieces, consider finishing with a little extra fruit zest or a thin jam gloss to distract the palate from minor texture flaws while you adjust the cook next time."
+        "Grain can show up only after the fridge: starch retrogradation and moisture migration make a filling that seemed glossy yesterday feel sandy today. Gentle rewarm with a splash of liquid can help some formulas, but if the grit is from broken pectin or crystallized sugar, you are often masking, not reversing. For service pieces, consider finishing with a little extra fruit zest or a thin jam gloss to distract the palate from minor texture flaws while you adjust the cook next time."
       ]
     }
   ],

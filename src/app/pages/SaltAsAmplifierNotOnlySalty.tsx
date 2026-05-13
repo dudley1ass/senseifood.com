@@ -16,23 +16,20 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Salt as a perception multiplier",
       "paragraphs": [
-        "At culinary concentrations, salt can increase apparent sweetness and savory depth while reducing harshness. This changes the whole profile, not one axis—like turning up contrast on a photo instead of only saturation.",
-        "A sauce can be compositionally balanced on paper yet perceptually muted until salt reaches threshold. Threshold differs by diner and by temperature; cold sauces often need careful salt tasting."
+        "At culinary concentrations, salt can increase apparent sweetness and savory depth while reducing harshness. This changes the whole profile, not one axis—like turning up contrast on a photo instead of only saturation. A sauce can be compositionally balanced on paper yet perceptually muted until salt reaches threshold. Threshold differs by diner and by temperature; cold sauces often need careful salt tasting."
       ]
     },
     {
       "heading": "Debug order: salt before acid spirals",
       "paragraphs": [
-        "Taste, add a small dissolved salt increment, taste again. If flavor “wakes up,” keep salt correction as the primary move and avoid over-acidifying to chase brightness.",
-        "Dissolve salt in a little water or sauce liquid before adding if you fear hotspots; flakes help in delicate emulsions."
+        "Taste, add a small dissolved salt increment, taste again. If flavor “wakes up,” keep salt correction as the primary move and avoid over-acidifying to chase brightness. Dissolve salt in a little water or sauce liquid before adding if you fear hotspots; flakes help in delicate emulsions."
       ],
       "tip": "Before fixing anything—check salt."
     },
     {
       "heading": "Sources beyond the shaker",
       "paragraphs": [
-        "Soy, fish sauce, capers, hard cheese, cured meats, and miso all bring salt with other flavors. When you add them, you are moving multiple axes—track net salinity, not ingredient count.",
-        "If you are already salty from soy but still flat, see the umami article: you may need savoriness, not more sodium."
+        "Soy, fish sauce, capers, hard cheese, cured meats, and miso all bring salt with other flavors. When you add them, you are moving multiple axes—track net salinity, not ingredient count. If you are already salty from soy but still flat, see the umami article: you may need savoriness, not more sodium."
       ],
       "bullets": [
         {
@@ -44,15 +41,13 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Salt, reduction, and late-stage risk",
       "paragraphs": [
-        "Reducing concentrates salt along with everything else. If you salted aggressively early in a long reduction, finish can land harsh. Under-salting early and finishing late is often safer for demi-style work.",
-        "If a sauce tastes salty but still hollow, you are past the salt lever—look to umami, aroma, or dilution."
+        "Reducing concentrates salt along with everything else. If you salted aggressively early in a long reduction, finish can land harsh. Under-salting early and finishing late is often safer for demi-style work. If a sauce tastes salty but still hollow, you are past the salt lever—look to umami, aroma, or dilution."
       ]
     },
     {
       "heading": "Dietary constraints without losing craft",
       "paragraphs": [
-        "Lower-sodium cooking can lean on acids, herbs, and umami carriers that add less sodium—but they do not perfectly substitute salt’s contrast effects. Be honest about the trade and compensate with technique: deeper browning, better stocks, and precise finishing.",
-        "Measure salt by weight in development batches so you can scale reductions predictably."
+        "Lower-sodium cooking can lean on acids, herbs, and umami carriers that add less sodium—but they do not perfectly substitute salt’s contrast effects. Be honest about the trade and compensate with technique: deeper browning, better stocks, and precise finishing. Measure salt by weight in development batches so you can scale reductions predictably."
       ]
     }
   ],

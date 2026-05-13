@@ -17,37 +17,32 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Clarity, skimming, and patience",
       "paragraphs": [
-        "Impurities concentrate too. Skim foam and fat thoughtfully—fat can protect from evaporation but also hide boiling behavior; clarify goals for your use case. Restaurant demi often chases clarity and sheen; rustic home jus may tolerate more texture.",
-        "Gentle simmering reduces harsh volatile notes compared with violent boiling that throws solids against hot metal."
+        "Impurities concentrate too. Skim foam and fat thoughtfully—fat can protect from evaporation but also hide boiling behavior; clarify goals for your use case. Restaurant demi often chases clarity and sheen; rustic home jus may tolerate more texture. Gentle simmering reduces harsh volatile notes compared with violent boiling that throws solids against hot metal."
       ]
     },
     {
       "heading": "Straining and clean equipment",
       "paragraphs": [
-        "If the surface looks muddy or you see specks sticking and darkening on the walls, strain and continue in clean gear. One scorched corner can dominate a small remaining volume.",
-        "Fine mesh for service-grade finishes; cheesecloth if you demand polish."
+        "If the surface looks muddy or you see specks sticking and darkening on the walls, strain and continue in clean gear. One scorched corner can dominate a small remaining volume. Fine mesh for service-grade finishes; cheesecloth if you demand polish."
       ]
     },
     {
       "heading": "Body: gelatin, reduction, and mouthfeel",
       "paragraphs": [
-        "Gelatin from bones gives richness that viscosity alone cannot fake. If your reduction is thick but thin-tasting, stock quality—not more boil—may be the issue.",
-        "Watch the nonlinear curve: late reduction jumps in intensity faster than early reduction. Taste more often as volume shrinks."
+        "Gelatin from bones gives richness that viscosity alone cannot fake. If your reduction is thick but thin-tasting, stock quality—not more boil—may be the issue. Watch the nonlinear curve: late reduction jumps in intensity faster than early reduction. Taste more often as volume shrinks."
       ],
       "tip": "If edge film darkens, wipe the rim down and reduce heat slightly—prevention beats rescue."
     },
     {
       "heading": "Finishing mounts and liaison choices",
       "paragraphs": [
-        "Optional mounts—butter, cream—change emulsion and sheen. Add them when the base is volumetrically where you want it; mounting can mask slight harshness but will not fix burnt notes.",
-        "Arrowroot versus cornstarch versus pure reduction: pick based on clarity needs and holding conditions."
+        "Optional mounts—butter, cream—change emulsion and sheen. Add them when the base is volumetrically where you want it; mounting can mask slight harshness but will not fix burnt notes. Arrowroot versus cornstarch versus pure reduction: pick based on clarity needs and holding conditions."
       ]
     },
     {
       "heading": "Storage, gel set, and reuse",
       "paragraphs": [
-        "Gelatin-rich reductions set in the fridge; reheat gently to avoid breaking fat. Slice off solid fat cap if you want leaner sauce flavor in the reheated batch.",
-        "Label date—reduced bases are not immortal; off aromas mean discard."
+        "Gelatin-rich reductions set in the fridge; reheat gently to avoid breaking fat. Slice off solid fat cap if you want leaner sauce flavor in the reheated batch. Label date—reduced bases are not immortal; off aromas mean discard."
       ]
     }
   ],

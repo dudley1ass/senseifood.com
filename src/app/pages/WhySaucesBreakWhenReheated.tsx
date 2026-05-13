@@ -38,23 +38,20 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Sequence: loosen, hydrate, then adjust",
       "paragraphs": [
-        "Tight refrigerated sauces are often rubbery from gelled starch or chilled fat, not permanently broken. Add a small splash of water, stock, or milk and warm gently while whisking to re-fluidize before judging salt or thickness. Adding dry thickeners to a seized mass without hydrating first compounds grain.",
-        "If solids separated in storage, re-blend or pass through a fine strainer after gentle recombination—texture memory can remain grainy if curds formed during the first break."
+        "Tight refrigerated sauces are often rubbery from gelled starch or chilled fat, not permanently broken. Add a small splash of water, stock, or milk and warm gently while whisking to re-fluidize before judging salt or thickness. Adding dry thickeners to a seized mass without hydrating first compounds grain. If solids separated in storage, re-blend or pass through a fine strainer after gentle recombination—texture memory can remain grainy if curds formed during the first break."
       ],
       "tip": "Taste after reheat, not only straight from the fridge; salt perception and acid brightness shift with temperature."
     },
     {
       "heading": "Holding for service after reheat",
       "paragraphs": [
-        "Bain-marie holding below simmer reduces scorch risk versus direct flame. Stir on pickup; skin formation is both water loss and fat migration—press film or use narrow surface area for long holds.",
-        "If the line requires long windows, choose sauces that tolerate hold—tomato-brown bases with stable emulsion anchors—or refresh in smaller batches rather than one steam-table marathon."
+        "Bain-marie holding below simmer reduces scorch risk versus direct flame. Stir on pickup; skin formation is both water loss and fat migration—press film or use narrow surface area for long holds. If the line requires long windows, choose sauces that tolerate hold—tomato-brown bases with stable emulsion anchors—or refresh in smaller batches rather than one steam-table marathon."
       ]
     },
     {
       "heading": "When to rebuild instead of whisk harder",
       "paragraphs": [
-        "If repeated gentle reheats never restore gloss and you see free oil after straining, you may need a clean emulsion rebuild: separate phases, clarify the lean liquid, re-mount with controlled fat. Continuing to heat broken dairy can toast proteins into off flavors.",
-        "Document whether break happened on storage, on first reheat, or only on second reheat—that pattern tells you if the issue is process or recipe solids loading."
+        "If repeated gentle reheats never restore gloss and you see free oil after straining, you may need a clean emulsion rebuild: separate phases, clarify the lean liquid, re-mount with controlled fat. Continuing to heat broken dairy can toast proteins into off flavors. Document whether break happened on storage, on first reheat, or only on second reheat—that pattern tells you if the issue is process or recipe solids loading."
       ]
     }
   ],

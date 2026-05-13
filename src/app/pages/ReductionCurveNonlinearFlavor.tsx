@@ -16,37 +16,32 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "The late-stage acceleration effect",
       "paragraphs": [
-        "At lower remaining volume, each additional boil-off step creates bigger jumps in dissolved solids. Salt and bitter compounds cross perceptual thresholds quickly—not because you added more, but because the solvent left.",
-        "This explains why a sauce can go from perfect to overdone in a short window. The pan is not being dramatic; the math of shrinking denominator is."
+        "At lower remaining volume, each additional boil-off step creates bigger jumps in dissolved solids. Salt and bitter compounds cross perceptual thresholds quickly—not because you added more, but because the solvent left. This explains why a sauce can go from perfect to overdone in a short window. The pan is not being dramatic; the math of shrinking denominator is."
       ]
     },
     {
       "heading": "Reading the pan: bubbles, sound, and sheen",
       "paragraphs": [
-        "Early simmer sounds wet; late simmer sounds thicker, pops smaller, and leaves trails on a spoon that hold longer. Learn those cues so you reduce heat before harshness arrives, not after.",
-        "Color darkens faster at the end too—Maillard and caramel notes concentrate alongside salt. Visual brown is not automatically delicious brown."
+        "Early simmer sounds wet; late simmer sounds thicker, pops smaller, and leaves trails on a spoon that hold longer. Learn those cues so you reduce heat before harshness arrives, not after. Color darkens faster at the end too—Maillard and caramel notes concentrate alongside salt. Visual brown is not automatically delicious brown."
       ],
       "tip": "If flavor is too strong, you reduced too far — add liquid."
     },
     {
       "heading": "Recovering over-reduction",
       "paragraphs": [
-        "Dilute with stock or water, then retune seasoning gradually. You are rebuilding a curve, not erasing a mistake—expect to re-reduce slightly if you overshot dilution.",
-        "Avoid masking harshness with sugar alone, which can produce cloying imbalance. Fat, gentle acid, or a small amount of dairy sometimes rounds more honestly than sweetness, depending on the build."
+        "Dilute with stock or water, then retune seasoning gradually. You are rebuilding a curve, not erasing a mistake—expect to re-reduce slightly if you overshot dilution. Avoid masking harshness with sugar alone, which can produce cloying imbalance. Fat, gentle acid, or a small amount of dairy sometimes rounds more honestly than sweetness, depending on the build."
       ]
     },
     {
       "heading": "Salt timing versus reduction goals",
       "paragraphs": [
-        "Highly reduced finishes often taste best when significant salt arrives late, after you know the final volume. Early salting a long reduction is how people discover their demi tastes like a salt lick at the end.",
-        "If you must salt early for ingredient osmosis reasons, under-target deliberately and finish at the end."
+        "Highly reduced finishes often taste best when significant salt arrives late, after you know the final volume. Early salting a long reduction is how people discover their demi tastes like a salt lick at the end. If you must salt early for ingredient osmosis reasons, under-target deliberately and finish at the end."
       ]
     },
     {
       "heading": "Heat control on the home stove",
       "paragraphs": [
-        "Wide pans reduce faster with more surface evaporation; tall pots protect you a little. Matching vessel to goal prevents accidental sprint finishes on a powerful burner.",
-        "Stir and scrape corners where solids concentrate and burn. Those dark bits can add complexity in deglazing; in long reduction they can become bitter anchors."
+        "Wide pans reduce faster with more surface evaporation; tall pots protect you a little. Matching vessel to goal prevents accidental sprint finishes on a powerful burner. Stir and scrape corners where solids concentrate and burn. Those dark bits can add complexity in deglazing; in long reduction they can become bitter anchors."
       ]
     }
   ],

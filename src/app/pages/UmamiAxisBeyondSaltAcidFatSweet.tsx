@@ -16,23 +16,20 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Why balanced can still feel empty",
       "paragraphs": [
-        "A sauce can hit structural balance yet lack glutamate- and nucleotide-driven savoriness. The result is clean but unsatisfying flavor—like a well-lit room with no furniture.",
-        "Umami sources increase perceived depth and length without necessarily increasing acidity or sweetness. That matters when you are out of safe moves on the other axes."
+        "A sauce can hit structural balance yet lack glutamate- and nucleotide-driven savoriness. The result is clean but unsatisfying flavor—like a well-lit room with no furniture. Umami sources increase perceived depth and length without necessarily increasing acidity or sweetness. That matters when you are out of safe moves on the other axes."
       ]
     },
     {
       "heading": "Practical umami additions (and discipline)",
       "paragraphs": [
-        "Use small doses and retaste: soy sauce, mushroom concentrates, parmesan rind simmered and removed, tomato paste browned briefly, anchovy melted into aromatics, Worcestershire, fish sauce in unexpected places. Each brings a different vector—fermented depth, roasted depth, marine depth.",
-        "Layer rather than dump. Umami can read muddy if you add every pantry bottle; pick a story and commit."
+        "Use small doses and retaste: soy sauce, mushroom concentrates, parmesan rind simmered and removed, tomato paste browned briefly, anchovy melted into aromatics, Worcestershire, fish sauce in unexpected places. Each brings a different vector—fermented depth, roasted depth, marine depth. Layer rather than dump. Umami can read muddy if you add every pantry bottle; pick a story and commit."
       ],
       "tip": "Still missing something? Add UMAMI—after salt threshold is plausible."
     },
     {
       "heading": "Umami versus salt: related but not identical",
       "paragraphs": [
-        "Soy sauce adds both; parmesan adds both. If you fix hollow flavor only with salty umami carriers, you may overshoot salinity. Sometimes mushroom tea or a splash of glutamate-rich stock increases savoriness with less sodium load than another shake of soy.",
-        "Taste for salt and umami as separate questions: “Is it loud?” versus “Does it linger and feel mouth-filling?”"
+        "Soy sauce adds both; parmesan adds both. If you fix hollow flavor only with salty umami carriers, you may overshoot salinity. Sometimes mushroom tea or a splash of glutamate-rich stock increases savoriness with less sodium load than another shake of soy. Taste for salt and umami as separate questions: “Is it loud?” versus “Does it linger and feel mouth-filling?”"
       ],
       "bullets": [
         {
@@ -48,15 +45,13 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Pairing umami with fat and acid",
       "paragraphs": [
-        "Fat carries aroma; umami adds mid-palate weight. Without acid, rich umami sauces can feel heavy—lemon, vinegar, or tomato acid still matter for lift.",
-        "Sweet can round ferocious edges—think tamarind or a pinch of sugar with soy—but sweet alone cannot replace savoriness."
+        "Fat carries aroma; umami adds mid-palate weight. Without acid, rich umami sauces can feel heavy—lemon, vinegar, or tomato acid still matter for lift. Sweet can round ferocious edges—think tamarind or a pinch of sugar with soy—but sweet alone cannot replace savoriness."
       ]
     },
     {
       "heading": "When not to chase umami",
       "paragraphs": [
-        "Delicate butter sauces and some seafood builds want restraint; heavy umami can dominate subtle aromas. Match intensity to the protein and garnish.",
-        "If the dish already includes aged cheese, cured meat, or long-roasted stocks, the hollow feeling may be texture or temperature—not missing glutamate."
+        "Delicate butter sauces and some seafood builds want restraint; heavy umami can dominate subtle aromas. Match intensity to the protein and garnish. If the dish already includes aged cheese, cured meat, or long-roasted stocks, the hollow feeling may be texture or temperature—not missing glutamate."
       ]
     }
   ],

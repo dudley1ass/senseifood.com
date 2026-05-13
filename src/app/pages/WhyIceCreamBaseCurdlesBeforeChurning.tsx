@@ -21,8 +21,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Temperature ramp for yolk set",
       "paragraphs": [
-        "Stay in the roughly 170–180°F band with gentle, even heat and constant agitation until the base coats the back of a spoon. Spikes past the mid-180s can seize proteins even when cream is present, because local hot spots at the pan bottom exceed the average reading on your thermometer.",
-        "Use a heavy pan or double boiler if your burner runs hot; scrape corners where laminar flow leaves stagnant hotter liquid. Temper yolks if you incorporate them into near-boiling dairy—adding a thin stream while whisking prevents shock-coagulation on contact."
+        "Stay in the roughly 170–180°F band with gentle, even heat and constant agitation until the base coats the back of a spoon. Spikes past the mid-180s can seize proteins even when cream is present, because local hot spots at the pan bottom exceed the average reading on your thermometer. Use a heavy pan or double boiler if your burner runs hot; scrape corners where laminar flow leaves stagnant hotter liquid. Temper yolks if you incorporate them into near-boiling dairy—adding a thin stream while whisking prevents shock-coagulation on contact."
       ],
       "bullets": [
         {
@@ -46,15 +45,13 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Holding hot bases and carryover cooking",
       "paragraphs": [
-        "Residual pan heat continues thickening after you kill the burner. Transfer to a bowl promptly when approaching nappe, or float the bowl on an ice bath to arrest cooking if you are at risk of overshoot.",
-        "Film on the surface can indicate overcooked edges; press plastic to the surface during chill if you need to prevent a skin that traps heat."
+        "Residual pan heat continues thickening after you kill the burner. Transfer to a bowl promptly when approaching nappe, or float the bowl on an ice bath to arrest cooking if you are at risk of overshoot. Film on the surface can indicate overcooked edges; press plastic to the surface during chill if you need to prevent a skin that traps heat."
       ]
     },
     {
       "heading": "Recovery, blending, and when to restart",
       "paragraphs": [
-        "Slight grain sometimes smooths with high-shear blending and then fine straining, if flavor is not burned. Severe curd is often a full redo: blended curds may still feel chalky after freeze. Document whether grain appeared before or after adding an ingredient—that drives the fix next batch.",
-        "Cornstarch or other stabilizers in Philadelphia-style bases change the failure mode; curdling is less common but scorching still is. Match troubleshooting to the family of recipe you actually use."
+        "Slight grain sometimes smooths with high-shear blending and then fine straining, if flavor is not burned. Severe curd is often a full redo: blended curds may still feel chalky after freeze. Document whether grain appeared before or after adding an ingredient—that drives the fix next batch. Cornstarch or other stabilizers in Philadelphia-style bases change the failure mode; curdling is less common but scorching still is. Match troubleshooting to the family of recipe you actually use."
       ]
     }
   ],

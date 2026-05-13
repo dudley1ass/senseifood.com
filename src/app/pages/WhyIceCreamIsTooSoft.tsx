@@ -44,8 +44,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Freezer and churn",
       "paragraphs": [
-        "Domestic machines may not reach commercial overrun—expect softer texture legitimately.",
-        "Cure in coldest part of freezer 4+ hours after churn for firmness."
+        "Domestic machines may not reach commercial overrun—expect softer texture legitimately. Cure in coldest part of freezer 4+ hours after churn for firmness."
       ]
     },
     {

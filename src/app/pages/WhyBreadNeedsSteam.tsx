@@ -45,8 +45,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "How much and when",
       "paragraphs": [
-        "First 5–15 minutes saturated surface; vent thereafter for color. Home methods: lidded Dutch oven, pan of lava rocks, or mist—each varies humidity.",
-        "Too much steam entire bake yields soft, thick crust—balance with dry finish."
+        "First 5–15 minutes saturated surface; vent thereafter for color. Home methods: lidded Dutch oven, pan of lava rocks, or mist—each varies humidity. Too much steam entire bake yields soft, thick crust—balance with dry finish."
       ]
     },
     {

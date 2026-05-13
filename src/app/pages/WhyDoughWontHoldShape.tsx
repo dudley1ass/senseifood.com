@@ -45,8 +45,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Strength building",
       "paragraphs": [
-        "Letter folds during bulk build structure without aggressive mixing. Final shaping should create surface tension—skin seals expansion.",
-        "Banneton flour supports wet dough; too little and dough sticks; too much and seam slides."
+        "Letter folds during bulk build structure without aggressive mixing. Final shaping should create surface tension—skin seals expansion. Banneton flour supports wet dough; too little and dough sticks; too much and seam slides."
       ]
     },
     {

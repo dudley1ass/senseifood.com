@@ -34,15 +34,13 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Sequence of volatile ingredients",
       "paragraphs": [
-        "Alcohols and citrus oils flash off quickly in a hot batter. Adding them only at the very end of mixing—or even brushing a cooled cake—preserves top notes that oven heat would erase. If your process boils off volatiles in the bowl, the label on the bottle stops mattering.",
-        "Water-soluble aromatics and emulsified flavors behave differently than neat oils. Match technique to compound: heat-tolerant brown butter notes survive differently than delicate floral extracts."
+        "Alcohols and citrus oils flash off quickly in a hot batter. Adding them only at the very end of mixing—or even brushing a cooled cake—preserves top notes that oven heat would erase. If your process boils off volatiles in the bowl, the label on the bottle stops mattering. Water-soluble aromatics and emulsified flavors behave differently than neat oils. Match technique to compound: heat-tolerant brown butter notes survive differently than delicate floral extracts."
       ]
     },
     {
       "heading": "Holding and cooling change perception",
       "paragraphs": [
-        "Trapping steam right after bake with an airtight lid can dull aroma perception; you smell hot moisture more than vanilla. Vent until just warm, then wrap for moisture retention if staling protection is the goal. The goal is aroma you notice when chewing, not only when opening a tub.",
-        "Cold cake reads less sweet and less aromatic than warm cake. If you serve chilled, bump salt and acid slightly at mixing or add a finishing layer that carries volatile aroma at the teeth—citrus, zest, ganache with contrast."
+        "Trapping steam right after bake with an airtight lid can dull aroma perception; you smell hot moisture more than vanilla. Vent until just warm, then wrap for moisture retention if staling protection is the goal. The goal is aroma you notice when chewing, not only when opening a tub. Cold cake reads less sweet and less aromatic than warm cake. If you serve chilled, bump salt and acid slightly at mixing or add a finishing layer that carries volatile aroma at the teeth—citrus, zest, ganache with contrast."
       ],
       "tip": "Smell the kitchen at the ten-minute mark after removing from the oven; if there is no browning aroma, flavor depth may be underbuilt."
     },

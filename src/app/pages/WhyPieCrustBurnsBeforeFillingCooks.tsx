@@ -45,8 +45,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Temperature strategy",
       "paragraphs": [
-        "Start high 425°F (218°C) for set then reduce to 350°F (177°C) for filling finish—classic double-temp approach.",
-        "Place pie on preheated stone for bottom set while covering rim with foil ring."
+        "Start high 425°F (218°C) for set then reduce to 350°F (177°C) for filling finish—classic double-temp approach. Place pie on preheated stone for bottom set while covering rim with foil ring."
       ]
     },
     {

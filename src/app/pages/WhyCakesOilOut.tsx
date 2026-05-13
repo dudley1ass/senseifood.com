@@ -21,15 +21,13 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Temperature path through creaming and eggs",
       "paragraphs": [
-        "Butter that is too warm creams faster but creates larger, less stable fat droplets. Cold eggs shock warm fat and encourage splitting. Aim for cool-room butter and eggs that are neither fridge-cold nor warm; the old “same temperature” advice is really about avoiding shock at the oil–water boundary.",
-        "If the bowl heats from a long mix, pause and scrape; surface heat is a silent emulsion killer. In warm kitchens, a slightly cooler fat starting point or a brief chill mid-process can save a borderline batter."
+        "Butter that is too warm creams faster but creates larger, less stable fat droplets. Cold eggs shock warm fat and encourage splitting. Aim for cool-room butter and eggs that are neither fridge-cold nor warm; the old “same temperature” advice is really about avoiding shock at the oil–water boundary. If the bowl heats from a long mix, pause and scrape; surface heat is a silent emulsion killer. In warm kitchens, a slightly cooler fat starting point or a brief chill mid-process can save a borderline batter."
       ]
     },
     {
       "heading": "Sequence: water and fat meet on your schedule",
       "paragraphs": [
-        "Dumping liquid before the fat phase is properly aerated and coated can wash out structure. Alternate dry and wet in stages so surfactants from yolk encounter fat in thin films, not floods. The goal is repeated small contacts, not one heroic pour.",
-        "Reverse-creaming and other methods change where gluten develops; pick a method and commit. Halfway hybrid technique is a common way to split emulsions because the fat phase never got the treatment it assumed."
+        "Dumping liquid before the fat phase is properly aerated and coated can wash out structure. Alternate dry and wet in stages so surfactants from yolk encounter fat in thin films, not floods. The goal is repeated small contacts, not one heroic pour. Reverse-creaming and other methods change where gluten develops; pick a method and commit. Halfway hybrid technique is a common way to split emulsions because the fat phase never got the treatment it assumed."
       ],
       "bullets": [
         {
@@ -41,23 +39,20 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Holding phase before the oven",
       "paragraphs": [
-        "Batters held hot (near a stove or in sun) can partially melt fat microstructure. If you must hold, keep covered and cool; rebalance by slightly chilling the pan before loading. Time is not neutral: emulsions age.",
-        "Pouring into a hot metal pan that sat on a warm burner can reliquefy fat at the contact layer. Use a trivet and a room-temperature pan when possible."
+        "Batters held hot (near a stove or in sun) can partially melt fat microstructure. If you must hold, keep covered and cool; rebalance by slightly chilling the pan before loading. Time is not neutral: emulsions age. Pouring into a hot metal pan that sat on a warm burner can reliquefy fat at the contact layer. Use a trivet and a room-temperature pan when possible."
       ]
     },
     {
       "heading": "Bake set locks fat in place",
       "paragraphs": [
-        "Until starch gelatinizes and proteins denature, fat can still move. Under-baked centers often release more free fat as they cool because the network never fully imprisoned droplets. If your crumb is oily but wet, finish concerns may overlap with emulsion concerns—address doneness honestly.",
-        "Over-baking can also squeeze fat from damaged protein networks, so the fix is not always “more time.” Look for the intersection of set structure and retained moisture your formula intends."
+        "Until starch gelatinizes and proteins denature, fat can still move. Under-baked centers often release more free fat as they cool because the network never fully imprisoned droplets. If your crumb is oily but wet, finish concerns may overlap with emulsion concerns—address doneness honestly. Over-baking can also squeeze fat from damaged protein networks, so the fix is not always “more time.” Look for the intersection of set structure and retained moisture your formula intends."
       ],
       "tip": "If you see oil pooling on raw batter, remix is rarely safe—portion into a fresh bowl, slightly warm yolk with a splash of milk, and whisk back in off heat, or restart that stage."
     },
     {
       "heading": "Oil after cooling: storage and slicing",
       "paragraphs": [
-        "Sometimes fat blooms on the surface after refrigeration because saturated fractions migrate and recrystallize. That can look like oil-out even when the batter was fine—taste and texture will differ from true separation.",
-        "If slices are greasy only when cold, warm a piece slightly and compare. True emulsion failure tends to show consistently across temperatures."
+        "Sometimes fat blooms on the surface after refrigeration because saturated fractions migrate and recrystallize. That can look like oil-out even when the batter was fine—taste and texture will differ from true separation. If slices are greasy only when cold, warm a piece slightly and compare. True emulsion failure tends to show consistently across temperatures."
       ]
     }
   ],

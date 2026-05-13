@@ -45,23 +45,20 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Sequence: doneness checks without punishing the edge",
       "paragraphs": [
-        "Repeated door openings change the heat rhythm and can overdry edges while you hunt for center doneness. Probe temperature once you see meaningful visual cues—spring, pull-away, color—instead of opening early out of anxiety. Early openings favor uneven set: the edges reheat faster on recovery than the deep center.",
-        "Rotate only if your oven has a known hot spot; random rotation can do more harm than good in an even cavity. Log one bake with minimal door time and compare."
+        "Repeated door openings change the heat rhythm and can overdry edges while you hunt for center doneness. Probe temperature once you see meaningful visual cues—spring, pull-away, color—instead of opening early out of anxiety. Early openings favor uneven set: the edges reheat faster on recovery than the deep center. Rotate only if your oven has a known hot spot; random rotation can do more harm than good in an even cavity. Log one bake with minimal door time and compare."
       ],
       "tip": "A thermometer is a kindness to the crust: fewer pokes, fewer “just checking” moments, less edge overcooking."
     },
     {
       "heading": "Holding after bake: carryover keeps cooking the shell",
       "paragraphs": [
-        "Leaving a cake in a switched-off but still-hot oven continues crust formation via retained heat and steam redistribution. If the crumb is already at target, the exterior can march into leathery territory. Remove to a rack when your internal temperature and spring targets are met, not when habit says so.",
-        "If you need hold time for scheduling, pull earlier by a small margin knowing carryover will finish the center—but do not park the pan in a heat trap that keeps browning the top."
+        "Leaving a cake in a switched-off but still-hot oven continues crust formation via retained heat and steam redistribution. If the crumb is already at target, the exterior can march into leathery territory. Remove to a rack when your internal temperature and spring targets are met, not when habit says so. If you need hold time for scheduling, pull earlier by a small margin knowing carryover will finish the center—but do not park the pan in a heat trap that keeps browning the top."
       ]
     },
     {
       "heading": "Pan volume, batter depth, and scaling",
       "paragraphs": [
-        "A recipe written for two eight-inch rounds may behave like a crust factory in a single deep nine-inch because the center takes longer while the exposed top and sidewalls keep receiving energy. Scaling up without lowering temperature or protecting edges is a classic thick-crust trigger.",
-        "Cupcakes and sheet cakes brown differently than thick layers; copy timings across shapes at your own risk. Match pan size, batter depth, and temperature as a set."
+        "A recipe written for two eight-inch rounds may behave like a crust factory in a single deep nine-inch because the center takes longer while the exposed top and sidewalls keep receiving energy. Scaling up without lowering temperature or protecting edges is a classic thick-crust trigger. Cupcakes and sheet cakes brown differently than thick layers; copy timings across shapes at your own risk. Match pan size, batter depth, and temperature as a set."
       ]
     }
   ],

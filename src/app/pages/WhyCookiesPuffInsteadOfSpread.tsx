@@ -38,23 +38,20 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Flour strength, hydration, and sugar type",
       "paragraphs": [
-        "Extra flour—whether from scoop packing or added bench flour—raises structural modulus, resisting outward flow. Strong bread flour can increase elastic snap compared to all-purpose, sometimes yielding taller, less spread-forward cookies unless balanced with fat and invert sugar.",
-        "Invert sugar from corn syrup, honey, or molasses increases flow and browning; white sugar–heavy doughs can be crisper and more expansion-dependent on creamed air."
+        "Extra flour—whether from scoop packing or added bench flour—raises structural modulus, resisting outward flow. Strong bread flour can increase elastic snap compared to all-purpose, sometimes yielding taller, less spread-forward cookies unless balanced with fat and invert sugar. Invert sugar from corn syrup, honey, or molasses increases flow and browning; white sugar–heavy doughs can be crisper and more expansion-dependent on creamed air."
       ],
       "tip": "If spread vanished after a flour brand change, test by weight and consider protein content before changing oven temperature."
     },
     {
       "heading": "Leavening sequence and creaming air",
       "paragraphs": [
-        "Double-acting baking powder releases early and late; a late burst after a top crust forms can dome the cookie like a mini-cake. Baking soda needs acid balance; mis-titration changes spread and color unpredictably.",
-        "Over-creaming incorporates excess air that expands before melt-flow links the dough into a sheet, producing puffy rounds. Match creaming time to the recipe’s fat and sugar style."
+        "Double-acting baking powder releases early and late; a late burst after a top crust forms can dome the cookie like a mini-cake. Baking soda needs acid balance; mis-titration changes spread and color unpredictably. Over-creaming incorporates excess air that expands before melt-flow links the dough into a sheet, producing puffy rounds. Match creaming time to the recipe’s fat and sugar style."
       ]
     },
     {
       "heading": "Oven heat, pans, and top skin formation",
       "paragraphs": [
-        "Dark metal and high rack positions increase radiant heat to tops and bottoms, accelerating crust set. If tops skin before edges relax outward, you lock a dome. Lighter pans, middle racks, or slightly lower temperature extend the flow window.",
-        "Convection can set surfaces faster; try reducing convection fan speed or temperature when puff replaces spread in fan modes."
+        "Dark metal and high rack positions increase radiant heat to tops and bottoms, accelerating crust set. If tops skin before edges relax outward, you lock a dome. Lighter pans, middle racks, or slightly lower temperature extend the flow window. Convection can set surfaces faster; try reducing convection fan speed or temperature when puff replaces spread in fan modes."
       ]
     }
   ],

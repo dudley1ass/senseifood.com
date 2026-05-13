@@ -44,8 +44,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Target air temperature vs. set temperature",
       "paragraphs": [
-        "Preheat until an oven thermometer on your actual rack reads stable—often 15–25 minutes after the beep. Convection modes typically run effective heat faster at the same set point; reduce 25°F (14°C) or time when switching modes mid-recipe testing.",
-        "Dark pans absorb infrared more aggressively than light pans; the same 350°F air produces faster edge set on dark metal. If one side of your kitchen faces a window of afternoon sun on the oven, even insulation quirks can matter on sensitive sponges."
+        "Preheat until an oven thermometer on your actual rack reads stable—often 15–25 minutes after the beep. Convection modes typically run effective heat faster at the same set point; reduce 25°F (14°C) or time when switching modes mid-recipe testing. Dark pans absorb infrared more aggressively than light pans; the same 350°F air produces faster edge set on dark metal. If one side of your kitchen faces a window of afternoon sun on the oven, even insulation quirks can matter on sensitive sponges."
       ]
     },
     {

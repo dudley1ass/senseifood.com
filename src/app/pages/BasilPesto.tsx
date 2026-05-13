@@ -17,15 +17,13 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Technique: mortar versus machine",
       "paragraphs": [
-        "Traditional mortar work bruises less and yields a more varied texture; careful food-processor pulses preserve brighter green flavor when you refuse to run continuously. Stream oil slowly so water and oil phases meet in controlled films; dumping oil invites separation.",
-        "Scrape the bowl often—unmixed corners hide coarse bits that later read gritty on the tooth."
+        "Traditional mortar work bruises less and yields a more varied texture; careful food-processor pulses preserve brighter green flavor when you refuse to run continuously. Stream oil slowly so water and oil phases meet in controlled films; dumping oil invites separation. Scrape the bowl often—unmixed corners hide coarse bits that later read gritty on the tooth."
       ]
     },
     {
       "heading": "Cheese, nuts, and salt balance",
       "paragraphs": [
-        "Parmesan brings salinity; adding more cheese is not the same as adding salt thoughtfully. Toast nuts for depth but watch bitterness—burnt nuts make bitter pesto fast.",
-        "Pine nuts are classic; walnuts or almonds change fat profile and mouth-coating. Taste nuts before committing a batch."
+        "Parmesan brings salinity; adding more cheese is not the same as adding salt thoughtfully. Toast nuts for depth but watch bitterness—burnt nuts make bitter pesto fast. Pine nuts are classic; walnuts or almonds change fat profile and mouth-coating. Taste nuts before committing a batch."
       ],
       "bullets": [
         {
@@ -37,23 +35,20 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Acid, water, and emulsion help",
       "paragraphs": [
-        "A small splash of lemon can lift without turning the sauce sharp—add after cheese so you judge salt correctly. A tablespoon of ice water can help emulsion stability in processors without increasing oil load.",
-        "If pesto is oily on the plate, you may have added oil too fast or overheated the mix—reprocess with a touch of water or another pinch of solids to re-anchor."
+        "A small splash of lemon can lift without turning the sauce sharp—add after cheese so you judge salt correctly. A tablespoon of ice water can help emulsion stability in processors without increasing oil load. If pesto is oily on the plate, you may have added oil too fast or overheated the mix—reprocess with a touch of water or another pinch of solids to re-anchor."
       ],
       "tip": "Taste pasta water salinity before thinning pesto with it—sometimes pasta water is the bridge; sometimes it is too salty."
     },
     {
       "heading": "Storage and color",
       "paragraphs": [
-        "Surface oil limits oxidation; pesto darkens with air contact—press plastic directly to the surface if holding overnight. A thin oil cap is traditional for a reason.",
-        "Blanching basil is optional trade: greener color versus a slight cooked note—pick your aesthetic."
+        "Surface oil limits oxidation; pesto darkens with air contact—press plastic directly to the surface if holding overnight. A thin oil cap is traditional for a reason. Blanching basil is optional trade: greener color versus a slight cooked note—pick your aesthetic."
       ]
     },
     {
       "heading": "Service and pairing",
       "paragraphs": [
-        "Toss with hot pasta off heat; residual heat can dull aroma if you cook pesto like a tomato sauce. Reserve pasta water to adjust viscosity in the bowl.",
-        "Beyond pasta: spoon over vegetables, thin for drizzle, or layer under proteins—adjust salt when context changes."
+        "Toss with hot pasta off heat; residual heat can dull aroma if you cook pesto like a tomato sauce. Reserve pasta water to adjust viscosity in the bowl. Beyond pasta: spoon over vegetables, thin for drizzle, or layer under proteins—adjust salt when context changes."
       ]
     }
   ],

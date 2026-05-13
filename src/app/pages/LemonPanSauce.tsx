@@ -17,8 +17,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Acid timing",
       "paragraphs": [
-        "If you need reduction, do it before the lemon goes in. Late acid gives you a clear “lift” that reads on the palate; early acid becomes part of the background chord.",
-        "Whisk cold butter off heat or at a bare simmer to reduce split risk while still emulsifying."
+        "If you need reduction, do it before the lemon goes in. Late acid gives you a clear “lift” that reads on the palate; early acid becomes part of the background chord. Whisk cold butter off heat or at a bare simmer to reduce split risk while still emulsifying."
       ]
     },
     {

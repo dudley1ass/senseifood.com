@@ -52,8 +52,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "How Fix My Recipe helps",
       "paragraphs": [
-        "When you are juggling hydration, yeast, salt, and enrichments, ratios reveal whether you are accidentally running a cold, salty, or under-yeasted dough relative to common successful bands. SenseiFood's bread mode is designed to highlight those mismatches with transparent rules—not a black-box answer.",
-        "After you adjust one variable, rebake and compare crumb shots side by side. Bread improves fastest when you treat each bake as an experiment with a written hypothesis: what single change are you testing, and what outcome would falsify your theory?"
+        "When you are juggling hydration, yeast, salt, and enrichments, ratios reveal whether you are accidentally running a cold, salty, or under-yeasted dough relative to common successful bands. SenseiFood's bread mode is designed to highlight those mismatches with transparent rules—not a black-box answer. After you adjust one variable, rebake and compare crumb shots side by side. Bread improves fastest when you treat each bake as an experiment with a written hypothesis: what single change are you testing, and what outcome would falsify your theory?"
       ]
     }
   ],

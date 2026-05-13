@@ -21,8 +21,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Time, temperature, and pressure across the bed",
       "paragraphs": [
-        "In pourover, channeling might be a accidental hole, a dry clump, or uneven agitation. In espresso, it is often least-resistance paths in a puck under pressure—tiny voids become high-velocity jets that strip bitter compounds while bypassing neighboring regions.",
-        "Grind uniformity matters because fines migrate and pack differently than boulders; wide particle spread makes simultaneous even extraction nearly impossible. Invest in grinder quality and maintenance before exotic water recipes."
+        "In pourover, channeling might be a accidental hole, a dry clump, or uneven agitation. In espresso, it is often least-resistance paths in a puck under pressure—tiny voids become high-velocity jets that strip bitter compounds while bypassing neighboring regions. Grind uniformity matters because fines migrate and pack differently than boulders; wide particle spread makes simultaneous even extraction nearly impossible. Invest in grinder quality and maintenance before exotic water recipes."
       ],
       "bullets": [
         {
@@ -38,15 +37,13 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Sequence: bloom and pulse pours",
       "paragraphs": [
-        "Bloom exists to wet all surfaces and release CO₂ so later pulses extract predictably. Skipping, under-wetting, or collapsing the bed with aggressive pours seeds dry pockets that extract only late—usually unevenly.",
-        "Pulse strategy should match grinder and filter: faster pours need more predictable beds; finer grinds need gentler insertion to avoid drilling holes. Agitation is a scalpel—sometimes helpful, sometimes a channel opener."
+        "Bloom exists to wet all surfaces and release CO₂ so later pulses extract predictably. Skipping, under-wetting, or collapsing the bed with aggressive pours seeds dry pockets that extract only late—usually unevenly. Pulse strategy should match grinder and filter: faster pours need more predictable beds; finer grinds need gentler insertion to avoid drilling holes. Agitation is a scalpel—sometimes helpful, sometimes a channel opener."
       ]
     },
     {
       "heading": "Holding after brew",
       "paragraphs": [
-        "Hot holding continues extraction in immersion-like zones inside a carafe if fines remain in contact, and heat keeps volatile aromatics evolving. Cooling can mask some bitterness while leaving thin body if TDS was never there—another split-extraction fingerprint.",
-        "Decanting off grounds or using an insulated server with minimal fines migration improves clarity when batching for groups."
+        "Hot holding continues extraction in immersion-like zones inside a carafe if fines remain in contact, and heat keeps volatile aromatics evolving. Cooling can mask some bitterness while leaving thin body if TDS was never there—another split-extraction fingerprint. Decanting off grounds or using an insulated server with minimal fines migration improves clarity when batching for groups."
       ]
     },
     {

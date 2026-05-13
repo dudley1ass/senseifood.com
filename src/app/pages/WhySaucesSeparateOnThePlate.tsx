@@ -21,8 +21,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Time under gravity and low shear",
       "paragraphs": [
-        "Emulsions are kinetic traps, not permanent suspensions. When whisking stops and the sauce pools, droplets can cream upward and aqueous phases can synerese downward. Even competent emulsions fail on the plate if viscosity is too low for the hold window you need.",
-        "A touch more reduction, a restrained starch slurry, or slightly higher solids from longer simmer increases continuous-phase viscosity and slows oil breakout—without necessarily changing flavor if you balance acid at the end."
+        "Emulsions are kinetic traps, not permanent suspensions. When whisking stops and the sauce pools, droplets can cream upward and aqueous phases can synerese downward. Even competent emulsions fail on the plate if viscosity is too low for the hold window you need. A touch more reduction, a restrained starch slurry, or slightly higher solids from longer simmer increases continuous-phase viscosity and slows oil breakout—without necessarily changing flavor if you balance acid at the end."
       ],
       "bullets": [
         {
@@ -38,15 +37,13 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Plate temperature and thermal shock",
       "paragraphs": [
-        "Scorching plates can flash-separate fat at the contact line; ice-cold plates can set fat into beads before the sauce flows. Aim for warm, not pizza-stone hot—especially for butter-finished emulsions.",
-        "Moisture on plates from stacking or steam also dilutes the film and encourages puddling at edges. Dry plates and consistent stacking temperature reduce surprise breaks."
+        "Scorching plates can flash-separate fat at the contact line; ice-cold plates can set fat into beads before the sauce flows. Aim for warm, not pizza-stone hot—especially for butter-finished emulsions. Moisture on plates from stacking or steam also dilutes the film and encourages puddling at edges. Dry plates and consistent stacking temperature reduce surprise breaks."
       ]
     },
     {
       "heading": "Pick-up timing and last-moment mounting",
       "paragraphs": [
-        "Sauce last is classic for a reason: every second on hot protein is time for fat to mobilize and water to migrate. At the window, a cold butter mount or a splash of hot stock under whisk can restore sheen if the base emulsion is still fundamentally sound.",
-        "If expo holds sauced plates under a heat lamp, you add another dehydration and fat-migration cycle. Train pickup so saucing happens after proteins are positioned unless the sauce is built to tolerate heat."
+        "Sauce last is classic for a reason: every second on hot protein is time for fat to mobilize and water to migrate. At the window, a cold butter mount or a splash of hot stock under whisk can restore sheen if the base emulsion is still fundamentally sound. If expo holds sauced plates under a heat lamp, you add another dehydration and fat-migration cycle. Train pickup so saucing happens after proteins are positioned unless the sauce is built to tolerate heat."
       ],
       "tip": "For finicky beurre montés, calculate pickup so the sauce never sits sauced longer than your test ramekin tolerated."
     },

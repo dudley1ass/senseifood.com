@@ -44,8 +44,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Time and temperature",
       "paragraphs": [
-        "30–60 minutes chills surface; 24–72 hours develops flavor via limited fermentation and full sugar equilibrium.",
-        "Resting also reduces sticky handling—easier scoop consistency."
+        "30–60 minutes chills surface; 24–72 hours develops flavor via limited fermentation and full sugar equilibrium. Resting also reduces sticky handling—easier scoop consistency."
       ]
     },
     {

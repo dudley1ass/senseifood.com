@@ -20,8 +20,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Oven environment",
       "paragraphs": [
-        "Steam keeps the surface flexible so the loaf can expand and delays excessive early browning. When steam is removed or exhausted, the crust dries and hardens.",
-        "A Dutch oven traps enough steam for many home bakers; open bakes need a lidded tray of water or careful spritzing."
+        "Steam keeps the surface flexible so the loaf can expand and delays excessive early browning. When steam is removed or exhausted, the crust dries and hardens. A Dutch oven traps enough steam for many home bakers; open bakes need a lidded tray of water or careful spritzing."
       ]
     },
     {
@@ -46,8 +45,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Temperature and time at surface",
       "paragraphs": [
-        "Convection accelerates crust formation—reduce temp or time. Dutch ovens trap steam then remove lid to brown—sequence controls crust thickness.",
-        "Egg washes and milk washes brown at different rates; egg proteins set firm."
+        "Convection accelerates crust formation—reduce temp or time. Dutch ovens trap steam then remove lid to brown—sequence controls crust thickness. Egg washes and milk washes brown at different rates; egg proteins set firm."
       ]
     },
     {

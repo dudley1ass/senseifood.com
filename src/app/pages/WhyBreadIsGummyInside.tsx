@@ -20,23 +20,20 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Under-baking and carry-over cooking",
       "paragraphs": [
-        "Bread sets from the outside in. A dark crust can form while the center is still below the temperature where starch fully gelatinizes and proteins set into a stable matrix. That semi-set center feels wet and dense even after cooling.",
-        "Use a thermometer in the thickest part. Lean wheat doughs often finish near 200–208°F; enriched breads may read a little lower but still need to cross the threshold where the crumb no longer looks glassy."
+        "Bread sets from the outside in. A dark crust can form while the center is still below the temperature where starch fully gelatinizes and proteins set into a stable matrix. That semi-set center feels wet and dense even after cooling. Use a thermometer in the thickest part. Lean wheat doughs often finish near 200–208°F; enriched breads may read a little lower but still need to cross the threshold where the crumb no longer looks glassy."
       ]
     },
     {
       "heading": "Cooling and starch retrogradation",
       "paragraphs": [
-        "Right out of the oven, starch holds trapped steam. Cutting immediately drives steam out of the crumb unevenly and leaves a tacky layer on the blade. Cooling on a rack for at least an hour (large loaves longer) lets moisture equilibrate.",
-        "If you need warm bread for guests, compromise with a smaller roll format where heat penetrates evenly, rather than hacking a hot boule."
+        "Right out of the oven, starch holds trapped steam. Cutting immediately drives steam out of the crumb unevenly and leaves a tacky layer on the blade. Cooling on a rack for at least an hour (large loaves longer) lets moisture equilibrate. If you need warm bread for guests, compromise with a smaller roll format where heat penetrates evenly, rather than hacking a hot boule."
       ],
       "tip": "If crust is dark but interior is gummy, lower the temperature 25°F and extend bake time next time—depth of heat matters more than surface color alone."
     },
     {
       "heading": "Formula factors",
       "paragraphs": [
-        "Extremely wet doughs are more forgiving for open crumb but easier to under-bake because the crumb looks open while still moist. Sugar and dairy increase browning, which again can mislead your eye.",
-        "Sourdough with very high acidity can interact with starch texture; if flavor is sharp and crumb is wet, verify fermentation balance and bake-through, not just “more flour.”"
+        "Extremely wet doughs are more forgiving for open crumb but easier to under-bake because the crumb looks open while still moist. Sugar and dairy increase browning, which again can mislead your eye. Sourdough with very high acidity can interact with starch texture; if flavor is sharp and crumb is wet, verify fermentation balance and bake-through, not just “more flour.”"
       ]
     },
     {
@@ -48,8 +45,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Carry-over and cooling",
       "paragraphs": [
-        "Loaves can rise 2–5°F after removal from residual heat; however, they cannot “finish baking” on the rack if pulled far under temp—carry-over is not a substitute for reaching set.",
-        "Cool at least to 90°F (32°C) internal before slicing large loaves if you want clean slices; warm bread smears and feels wet even when correctly baked."
+        "Loaves can rise 2–5°F after removal from residual heat; however, they cannot “finish baking” on the rack if pulled far under temp—carry-over is not a substitute for reaching set. Cool at least to 90°F (32°C) internal before slicing large loaves if you want clean slices; warm bread smears and feels wet even when correctly baked."
       ]
     },
     {

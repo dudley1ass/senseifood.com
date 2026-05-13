@@ -45,8 +45,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Probe placement and true doneness",
       "paragraphs": [
-        "Check internal temperature just above the pan floor, not only in the geometric center of tall layers. If the floor reads 195°F (91°C) but the mid-crumb reads 205°F (96°C), you may still have under-set starch at the interface—extend bake 3–5 minutes with foil if the top is dark enough.",
-        "Sugar concentration increases local boiling point depression; very sweet layers can remain syrupy until enough water has steamed off—another reason “wet” reads as gummy rather than merely moist."
+        "Check internal temperature just above the pan floor, not only in the geometric center of tall layers. If the floor reads 195°F (91°C) but the mid-crumb reads 205°F (96°C), you may still have under-set starch at the interface—extend bake 3–5 minutes with foil if the top is dark enough. Sugar concentration increases local boiling point depression; very sweet layers can remain syrupy until enough water has steamed off—another reason “wet” reads as gummy rather than merely moist."
       ]
     },
     {

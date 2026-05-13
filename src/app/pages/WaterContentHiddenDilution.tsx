@@ -16,23 +16,20 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Where extra water comes from",
       "paragraphs": [
-        "Protein purge shows up after salt contacts muscle; vegetables release osmotic water once heat damages cell structure; mushrooms shed surprising volume; thawed frozen items carry meltwater you forgot to pat away.",
-        "If you season before this release stabilizes, final sauce often lands underpowered—not because your palate is wrong, but because the flavor-per-spoonful ratio dropped."
+        "Protein purge shows up after salt contacts muscle; vegetables release osmotic water once heat damages cell structure; mushrooms shed surprising volume; thawed frozen items carry meltwater you forgot to pat away. If you season before this release stabilizes, final sauce often lands underpowered—not because your palate is wrong, but because the flavor-per-spoonful ratio dropped."
       ]
     },
     {
       "heading": "Corrective sequence: reduce, then reassess",
       "paragraphs": [
-        "Do not immediately add more salt, acid, and fat. First reduce to your target consistency, or remove excess liquid deliberately, then reassess seasoning. This avoids over-seasoning a sauce that only needed water removal.",
-        "If body is still wrong after concentration, switch tools: starch slurry, liaison, or mounting butter—match technique to the sauce family."
+        "Do not immediately add more salt, acid, and fat. First reduce to your target consistency, or remove excess liquid deliberately, then reassess seasoning. This avoids over-seasoning a sauce that only needed water removal. If body is still wrong after concentration, switch tools: starch slurry, liaison, or mounting butter—match technique to the sauce family."
       ],
       "tip": "Unexpected thin? Reduce first before adjusting."
     },
     {
       "heading": "Vegetable and mushroom loads",
       "paragraphs": [
-        "Water-heavy vegetables can flood a pan faster than evaporation keeps up on medium heat. Sometimes partial pre-cooking or salting-and-draining for a few minutes buys a drier start.",
-        "Mushrooms benefit from high initial heat to drive steam off before saucing; otherwise you simmer mushrooms in their own puddle longer than intended."
+        "Water-heavy vegetables can flood a pan faster than evaporation keeps up on medium heat. Sometimes partial pre-cooking or salting-and-draining for a few minutes buys a drier start. Mushrooms benefit from high initial heat to drive steam off before saucing; otherwise you simmer mushrooms in their own puddle longer than intended."
       ],
       "bullets": [
         {
@@ -44,15 +41,13 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Thawed proteins and brines",
       "paragraphs": [
-        "Brined or injected meats release different liquid than dry-cured pieces. Account for extra water when deglazing and reducing.",
-        "If you sear wet protein, you steam more and build fond differently—another hidden water pathway affecting sauce timing."
+        "Brined or injected meats release different liquid than dry-cured pieces. Account for extra water when deglazing and reducing. If you sear wet protein, you steam more and build fond differently—another hidden water pathway affecting sauce timing."
       ]
     },
     {
       "heading": "Reading “thin” versus “weak flavor”",
       "paragraphs": [
-        "Thin sauces can still taste salty if salt concentration rose in a small volume of free water—confusing to debug. Taste for both viscosity and intensity. Sometimes you need body without more reduction (starch), sometimes more reduction without more salt.",
-        "Document one success: note starting weights of wet ingredients once if you repeat a dish often—patterns emerge quickly."
+        "Thin sauces can still taste salty if salt concentration rose in a small volume of free water—confusing to debug. Taste for both viscosity and intensity. Sometimes you need body without more reduction (starch), sometimes more reduction without more salt. Document one success: note starting weights of wet ingredients once if you repeat a dish often—patterns emerge quickly."
       ]
     }
   ],

@@ -21,8 +21,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Prep sequence: distribute before compress",
       "paragraphs": [
-        "Tamping only compresses what is already there; it cannot erase vertical stripes of different density left by uneven settling. That is why baristas use stirring distribution (WDT), needle tools, or stockfleth-style grooming: the goal is uniform bulk density before the puck sees pressure.",
-        "Clumps from electrostatic fines or moist beans create local low-permeability lumps surrounded by faster flow paths. Breaking clumps and homogenizing particle arrangement reduces the odds that one sector becomes a preferred highway."
+        "Tamping only compresses what is already there; it cannot erase vertical stripes of different density left by uneven settling. That is why baristas use stirring distribution (WDT), needle tools, or stockfleth-style grooming: the goal is uniform bulk density before the puck sees pressure. Clumps from electrostatic fines or moist beans create local low-permeability lumps surrounded by faster flow paths. Breaking clumps and homogenizing particle arrangement reduces the odds that one sector becomes a preferred highway."
       ],
       "bullets": [
         {
@@ -38,23 +37,20 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Tamping, basket fit, and edge channeling",
       "paragraphs": [
-        "Basket diameter and dose interact: too little coffee leaves a wide gap where water can skirt the puck edge; too much risks touching the shower screen and cracking the puck when engaged. Match dose to your basket manufacturer’s intent and measure headspace if shots channel mysteriously.",
-        "Uneven tamps or pucks knocked on the rim while locking in can create micro-fissures. Smooth, perpendicular pressure and gentle portafilter insertion matter."
+        "Basket diameter and dose interact: too little coffee leaves a wide gap where water can skirt the puck edge; too much risks touching the shower screen and cracking the puck when engaged. Match dose to your basket manufacturer’s intent and measure headspace if shots channel mysteriously. Uneven tamps or pucks knocked on the rim while locking in can create micro-fissures. Smooth, perpendicular pressure and gentle portafilter insertion matter."
       ],
       "tip": "If you see blond jets early from one sector of the basket, think distribution and edge effects before grind—blonding localized to a sector is a geography problem."
     },
     {
       "heading": "Temperature, preinfusion, and viscosity",
       "paragraphs": [
-        "Soft, low-pressure preinfusion wets the puck before full nine-bar ramps, which can reduce early channel blowouts by allowing even saturation. Machines without preinfusion still benefit from consistent temperature stability so viscosity does not swing shot to shot.",
-        "Very dry pucks or extremely hot dry screens can change the first moments of flow; some users adjust flush routines to normalize head temperature before locking in."
+        "Soft, low-pressure preinfusion wets the puck before full nine-bar ramps, which can reduce early channel blowouts by allowing even saturation. Machines without preinfusion still benefit from consistent temperature stability so viscosity does not swing shot to shot. Very dry pucks or extremely hot dry screens can change the first moments of flow; some users adjust flush routines to normalize head temperature before locking in."
       ]
     },
     {
       "heading": "Puck integrity from prep to pull",
       "paragraphs": [
-        "Delayed shots after tamping can let the puck expand slightly or dry on top depending on environment—either may change flow. Conversely, rushing can leave unsettled fines. Develop a calm, repeatable timeline: dose, distribute, tamp, lock, pull—or know why you deviate.",
-        "Transport shocks—dropping the portafilter, banging it—can crack an otherwise fine puck. Treat the assembled portafilter like a precision instrument, not a pan."
+        "Delayed shots after tamping can let the puck expand slightly or dry on top depending on environment—either may change flow. Conversely, rushing can leave unsettled fines. Develop a calm, repeatable timeline: dose, distribute, tamp, lock, pull—or know why you deviate. Transport shocks—dropping the portafilter, banging it—can crack an otherwise fine puck. Treat the assembled portafilter like a precision instrument, not a pan."
       ]
     }
   ],

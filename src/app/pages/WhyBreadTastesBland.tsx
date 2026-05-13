@@ -20,57 +20,32 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Fermentation time and organic acids",
       "paragraphs": [
-        "Yeast and bacteria produce acids and alcohols that rearrange perception of sweetness and grain notes. A rush job at warm room temperature can fully inflate gas yet leave flavor chemistry thin.",
-        "Cold retardation slows yeast relative to bacteria in sourdough contexts and often deepens complexity with manageable scheduling.",
-        "Over-yeasted fast doughs can smell alcoholic yet taste hollow because aromatics blew off during aggressive proof."
+        "Yeast and bacteria produce acids and alcohols that rearrange perception of sweetness and grain notes. A rush job at warm room temperature can fully inflate gas yet leave flavor chemistry thin. Cold retardation slows yeast relative to bacteria in sourdough contexts and often deepens complexity with manageable scheduling. Over-yeasted fast doughs can smell alcoholic yet taste hollow because aromatics blew off during aggressive proof."
       ],
       "tip": "Log dough temperature and bulk volume, not only clock time—same clock at 62°F versus 78°F is not the same flavor path."
     },
     {
       "heading": "Salt as a flavor threshold",
       "paragraphs": [
-        "Salt suppresses bitterness and makes subtle caramel and grain notes legible. Under-salted bread reads sweet-flat or cardboard-flat depending on formula.",
-        "Weigh salt to the gram; teaspoon volume error is a common blandness driver in scaled-down home batches.",
-        "Toppings like seeds can hide under-salted crumb until you taste the center alone."
+        "Salt suppresses bitterness and makes subtle caramel and grain notes legible. Under-salted bread reads sweet-flat or cardboard-flat depending on formula. Weigh salt to the gram; teaspoon volume error is a common blandness driver in scaled-down home batches. Toppings like seeds can hide under-salted crumb until you taste the center alone."
       ]
     },
     {
       "heading": "Maillard crust and reducing sugars",
       "paragraphs": [
-        "Crust browning is flavor concentration: Strecker aldehydes and melanoidins carry roast and nut notes missing from pale interiors.",
-        "Excess steam without final dryness can keep crusts chewy-pale; conversely, burning edges with pale shoulders signals uneven heat, not moral failure.",
-        "Diastatic malt, small honey or malt extract additions, or longer cold proof increase reducing sugar availability for browning when flour alone is shy."
+        "Crust browning is flavor concentration: Strecker aldehydes and melanoidins carry roast and nut notes missing from pale interiors. Excess steam without final dryness can keep crusts chewy-pale; conversely, burning edges with pale shoulders signals uneven heat, not moral failure. Diastatic malt, small honey or malt extract additions, or longer cold proof increase reducing sugar availability for browning when flour alone is shy."
       ]
     },
     {
       "heading": "How Fix My Recipe helps",
       "paragraphs": [
-        "Bread mode highlights hydration and enrichment bands that interact with fermentation speed. Blandness paired with gummy crumb is a different diagnosis than blandness with open alveoli.",
-        "Change one axis per bake: salt percent, cold retard length, or final bake temperature curve."
+        "Bread mode highlights hydration and enrichment bands that interact with fermentation speed. Blandness paired with gummy crumb is a different diagnosis than blandness with open alveoli. Change one axis per bake: salt percent, cold retard length, or final bake temperature curve."
       ]
     },
     {
-      "heading": "Debugging field notes",
+      "heading": "Closing the loop on flavor",
       "paragraphs": [
-        "Tag \"why-bread-tastes-bland\" at the top of your kitchen log for this project so PDF exports and screenshots stay searchable across seasons.",
-        "List equipment IDs that mattered that day: scale model, mixer speed used, oven rack height, and burr grinder zero point if coffee-adjacent—all drift over years.",
-        "State one falsifiable hypothesis before the run and record whether results supported or rejected it; negative evidence prevents repeating expensive guesses."
-      ]
-    },
-    {
-      "heading": "Photographic evidence checklist",
-      "paragraphs": [
-        "Photograph Why Bread Tastes Bland under consistent lighting: one top-down frame and one cross-section whenever you change a variable tied to why-bread-tastes-bland.",
-        "Include a reference object in frame—a ruler edge or coin—so zoom crops do not fool you about spread thickness or bubble size later.",
-        "Store images in a dated folder alongside gram weights; future comparisons become obvious instead of debated from memory."
-      ]
-    },
-    {
-      "heading": "Results vocabulary that travels",
-      "paragraphs": [
-        "When you write notes for why-bread-tastes-bland, cap texture adjectives at three per bake—chewy, sandy, spongy—and flavor adjectives at three so comparisons week-to-week stay comparable.",
-        "Note finish temperature and resting minutes beside taste descriptors; many off-notes are phase-dependent especially for dairy, chocolate, and coffee oils.",
-        "If a friend tastes blind, record their words verbatim; fresh language catches patterns you normalized away."
+        "Bland bread is often a time problem dressed as a spice problem: the crumb looks fine because gas showed up to the party, while acids and esters from fermentation were stuck in traffic. Salt and a real crust are the scenes where quiet dough finally speaks. Change one timeline or salt step per bake and describe the loaf in plain language—nutty versus sweet-dough, crust snap versus chew. That story beats a photo checklist when you are chasing taste, not Instagram."
       ]
     }
   ],

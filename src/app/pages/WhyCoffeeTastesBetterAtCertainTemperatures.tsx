@@ -38,23 +38,20 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Sweetness, acidity, and bitterness on the curve",
       "paragraphs": [
-        "Human sweetness perception interacts with temperature, but coffee sweetness is also tied to aromatics and viscosity. Cooling can make sucrose-like impressions more obvious if acids relax relative to sugars, or can expose sourness if acids remain dominant and bitter compounds were low.",
-        "Bitter and astringent sensations from chlorogenic derivatives and tannins can become more noticeable in lukewarm coffee, especially if the shot or brew carried channeling or over-extraction. That is why “great hot, unpleasant cold” sometimes flags process issues, not preference."
+        "Human sweetness perception interacts with temperature, but coffee sweetness is also tied to aromatics and viscosity. Cooling can make sucrose-like impressions more obvious if acids relax relative to sugars, or can expose sourness if acids remain dominant and bitter compounds were low. Bitter and astringent sensations from chlorogenic derivatives and tannins can become more noticeable in lukewarm coffee, especially if the shot or brew carried channeling or over-extraction. That is why “great hot, unpleasant cold” sometimes flags process issues, not preference."
       ],
       "tip": "If coffee is harsh when cool, fix extraction and roast fit before chasing hotter serving—temperature only rearranges what is already in the cup."
     },
     {
       "heading": "Milk drinks shift the window",
       "paragraphs": [
-        "Cappuccinos and lattes integrate acidity against lactose sweetness and fat-mediated mouthfeel. The perceived peak sweetness for milk coffees often sits in a narrower band than black coffee because overheated milk tastes cooked and underheated milk tastes thin.",
-        "Foam insulation changes cooling rate: thick microfoam keeps the liquid hotter longer, delaying the window where acidity integrates. That can make the same espresso read brighter in a wet flat white timing versus a dry cappuccino timing even with identical shots."
+        "Cappuccinos and lattes integrate acidity against lactose sweetness and fat-mediated mouthfeel. The perceived peak sweetness for milk coffees often sits in a narrower band than black coffee because overheated milk tastes cooked and underheated milk tastes thin. Foam insulation changes cooling rate: thick microfoam keeps the liquid hotter longer, delaying the window where acidity integrates. That can make the same espresso read brighter in a wet flat white timing versus a dry cappuccino timing even with identical shots."
       ]
     },
     {
       "heading": "Holding, reheating, and service pitfalls",
       "paragraphs": [
-        "Burners and hot plates continue extraction and drive off volatiles; long-held coffee tastes stale even from a fresh grind because time and heat oxidize and evaporate desirable aromatics. Thermal carafes slow that path but do not freeze chemistry—drink within a reasonable window.",
-        "Microwave reheating can reintroduce uneven hot spots that spike volatility and bitterness perception; gentle swirling after microwaving helps. For iced transitions, rapid chilling changes which acids dominate—cold brew and flash-chilled coffee exist partly to engineer a different balance than slow-cooled hot coffee."
+        "Burners and hot plates continue extraction and drive off volatiles; long-held coffee tastes stale even from a fresh grind because time and heat oxidize and evaporate desirable aromatics. Thermal carafes slow that path but do not freeze chemistry—drink within a reasonable window. Microwave reheating can reintroduce uneven hot spots that spike volatility and bitterness perception; gentle swirling after microwaving helps. For iced transitions, rapid chilling changes which acids dominate—cold brew and flash-chilled coffee exist partly to engineer a different balance than slow-cooled hot coffee."
       ]
     }
   ],

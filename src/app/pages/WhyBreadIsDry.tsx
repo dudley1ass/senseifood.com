@@ -20,8 +20,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Over-baking beyond the crumb set point",
       "paragraphs": [
-        "Once internal temperature passes the set range, moisture loss accelerates. A loaf left “to be safe” can read tough and cottony even with a correct formula.",
-        "Match loaf size to time: small rolls finish quickly; large miche needs gentle heat longer."
+        "Once internal temperature passes the set range, moisture loss accelerates. A loaf left “to be safe” can read tough and cottony even with a correct formula. Match loaf size to time: small rolls finish quickly; large miche needs gentle heat longer."
       ]
     },
     {
@@ -46,8 +45,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Bake profile",
       "paragraphs": [
-        "Lower temperature longer bake evens heat for thick loaves; thin free-form loaves tolerate higher radiant heat. Tent foil when crust hits amber but interior lags 15°F behind target.",
-        "Steam early prevents premature crust that traps steam inside unevenly—dry crust, wet crumb paradox is possible."
+        "Lower temperature longer bake evens heat for thick loaves; thin free-form loaves tolerate higher radiant heat. Tent foil when crust hits amber but interior lags 15°F behind target. Steam early prevents premature crust that traps steam inside unevenly—dry crust, wet crumb paradox is possible."
       ]
     },
     {

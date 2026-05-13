@@ -44,8 +44,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Starch and gluten competition",
       "paragraphs": [
-        "Water hydrates starch for gelatinization and enables gluten network formation—too little and dough tears; too much and dough needs folds to align structure.",
-        "Temperature changes apparent hydration—warm water feels softer."
+        "Water hydrates starch for gelatinization and enables gluten network formation—too little and dough tears; too much and dough needs folds to align structure. Temperature changes apparent hydration—warm water feels softer."
       ]
     },
     {

@@ -15,61 +15,36 @@ const SPEC: ScienceArticleSpec = {
     "problem": "tough-crust"
   },
   "quickAnswer": "Flaky crust can turn leathery after cooling because steam redistributes into formerly dry layers, sugar syrups plasticize proteins, and amylopectin retrogrades in gelatinized zones. Blind-bake fruit pies enough, vent well, brush bottoms when needed, and cool on a rack so bottoms do not steam themselves.",
-  "intro": "Hot pie crust is a temporary texture: fat is fluid enough to separate layers, water is vapor, and your teeth feel shatter. Cold pie is a different material: fat firms, moisture equilibrates, and proteins reorganize. This article explains the moisture bridge from filling to shell, the role of hydration at mix time, and why resting and rolling discipline still matter after the bake. Slice timing experiments matter: cut at room temperature versus straight from the fridge and note chew separately from flavor. If you brush milk washes, log browning because protein browning changes hydration paths. For lattice pies, record weave tightness and vent count alongside humidity on bake day. When using thickeners, write brand and cook minutes at boil because identical names gel differently. SenseiFood pie debugging rewards photos of the filling-crust interface after chill; the hydrated band width is your scorecard for moisture migration fixes.",
+  "intro": "Hot pie crust is a temporary texture: fat is fluid enough to separate layers, water is vapor, and your teeth feel shatter. Cold pie is a different material: fat firms, moisture equilibrates, and proteins reorganize. This article explains the moisture bridge from filling to shell, the role of hydration at mix time, and why resting and rolling discipline still matter after the bake. Slice timing experiments matter: cut at room temperature versus straight from the fridge and note chew separately from flavor. If you brush milk washes, log browning because protein browning changes hydration paths. For lattice pies, record weave tightness and vent count alongside humidity on bake day. When using thickeners, write brand and cook minutes at boil because identical names gel differently. SenseiFood pie debugging rewards photos of the filling-crust interface after chill; the hydrated band width is your scorecard for moisture migration fixes. Toughness after cooling is usually gluten that kept working after the dough already said its lines—warm handling, thirsty rerolls, or restless rolling pin energy. Rest is not laziness; it is part of the recipe’s pacing. When you compare flake versus chew the next day, you learn whether the fix belongs to hydration, folding technique, or bake color—not to a mystery “bad day.”",
   "sections": [
     {
       "heading": "Moisture migration from filling to rim",
       "paragraphs": [
-        "Fruit and custard fillings are wet reservoirs. Over hours, water moves along concentration gradients into drier crust regions, especially bottom and seal lines.",
-        "Double crusts trap more steam at the center vent; under-vented pies hydrate the inner lid from the inside out.",
-        "Cooling in a deep pan without air under the base steams the bottom back into toughness."
+        "Fruit and custard fillings are wet reservoirs. Over hours, water moves along concentration gradients into drier crust regions, especially bottom and seal lines. Double crusts trap more steam at the center vent; under-vented pies hydrate the inner lid from the inside out. Cooling in a deep pan without air under the base steams the bottom back into toughness."
       ]
     },
     {
       "heading": "Gluten memory from mixing and rolling",
       "paragraphs": [
-        "Overworked dough carries more aligned gluten that tightens as it hydrates further post-bake.",
-        "Patching with heavy re-roll adds new stressed zones that read tough after cooling.",
-        "Bench rest reduces springback but cannot erase excessive development from the start."
+        "Overworked dough carries more aligned gluten that tightens as it hydrates further post-bake. Patching with heavy re-roll adds new stressed zones that read tough after cooling. Bench rest reduces springback but cannot erase excessive development from the start."
       ]
     },
     {
       "heading": "Sugar, starch, and mechanical set",
       "paragraphs": [
-        "Sugar competes for water and can keep crust tender when balanced; excess syrup layers can plasticize proteins into chew.",
-        "Thickeners that overset near the interface can create a gummy-tough band after refrigeration.",
-        "Refrigeration accelerates starch retrogradation in any gelatinized flour patches."
+        "Sugar competes for water and can keep crust tender when balanced; excess syrup layers can plasticize proteins into chew. Thickeners that overset near the interface can create a gummy-tough band after refrigeration. Refrigeration accelerates starch retrogradation in any gelatinized flour patches."
       ]
     },
     {
       "heading": "How Fix My Recipe helps",
       "paragraphs": [
-        "Pie mode compares hydration and fat levels to targets for your style. Tough-after-cool paired with soggy base is a different fix than tough rim only.",
-        "Slice and photograph the interface after chill; the hydrated band width tells the story."
+        "Pie mode compares hydration and fat levels to targets for your style. Tough-after-cool paired with soggy base is a different fix than tough rim only. Slice and photograph the interface after chill; the hydrated band width tells the story."
       ]
     },
     {
-      "heading": "Debugging field notes",
+      "heading": "Tough crust after the curtain falls",
       "paragraphs": [
-        "Tag \"why-pie-crust-gets-tough-after-cooling\" at the top of your kitchen log for this project so PDF exports and screenshots stay searchable across seasons.",
-        "List equipment IDs that mattered that day: scale model, mixer speed used, oven rack height, and burr grinder zero point if coffee-adjacent—all drift over years.",
-        "State one falsifiable hypothesis before the run and record whether results supported or rejected it; negative evidence prevents repeating expensive guesses."
-      ]
-    },
-    {
-      "heading": "Photographic evidence checklist",
-      "paragraphs": [
-        "Photograph Why Pie Crust Gets Tough After Cooling under consistent lighting: one top-down frame and one cross-section whenever you change a variable tied to why-pie-crust-gets-tough-after-cooling.",
-        "Include a reference object in frame—a ruler edge or coin—so zoom crops do not fool you about spread thickness or bubble size later.",
-        "Store images in a dated folder alongside gram weights; future comparisons become obvious instead of debated from memory."
-      ]
-    },
-    {
-      "heading": "Results vocabulary that travels",
-      "paragraphs": [
-        "When you write notes for why-pie-crust-gets-tough-after-cooling, cap texture adjectives at three per bake—chewy, sandy, spongy—and flavor adjectives at three so comparisons week-to-week stay comparable.",
-        "Note finish temperature and resting minutes beside taste descriptors; many off-notes are phase-dependent especially for dairy, chocolate, and coffee oils.",
-        "If a friend tastes blind, record their words verbatim; fresh language catches patterns you normalized away."
+        "Toughness is often gluten that kept working after the dough had already said its lines—warm handling, too much water, or aggressive rerolls. Rest helps the dough forget the stress. Describe flakes versus chew after a night in the fridge; that single contrast tells you whether to change hydration or handling next time."
       ]
     }
   ],

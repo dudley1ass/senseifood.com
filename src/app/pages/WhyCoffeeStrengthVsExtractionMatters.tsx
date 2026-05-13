@@ -45,8 +45,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Dialing metaphor",
       "paragraphs": [
-        "Grind/time mainly moves extraction; ratio mainly moves strength—first principles for troubleshooting.",
-        "Ideal cup often targets ~18–22% extraction and ~1.2–1.4% TDS for filter—ranges vary by preference."
+        "Grind/time mainly moves extraction; ratio mainly moves strength—first principles for troubleshooting. Ideal cup often targets ~18–22% extraction and ~1.2–1.4% TDS for filter—ranges vary by preference."
       ]
     },
     {

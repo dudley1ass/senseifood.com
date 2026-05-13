@@ -17,8 +17,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Why this sequence",
       "paragraphs": [
-        "Reducing stock before cream concentrates savory notes without flooding the sauce with dairy volume too early. Cream added to an already-flavorful base needs less reduction time, which protects texture.",
-        "Finish butter off heat to keep the emulsion silky rather than oily."
+        "Reducing stock before cream concentrates savory notes without flooding the sauce with dairy volume too early. Cream added to an already-flavorful base needs less reduction time, which protects texture. Finish butter off heat to keep the emulsion silky rather than oily."
       ]
     },
     {

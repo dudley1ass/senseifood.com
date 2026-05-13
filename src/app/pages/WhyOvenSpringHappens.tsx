@@ -44,8 +44,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Gas and vapor",
       "paragraphs": [
-        "CO₂ from yeast and air bubbles expand with heat; water vapor contributes pressure once localized boiling begins in crumb pores.",
-        "Scoring directs expansion—without it, weak points burst randomly."
+        "CO₂ from yeast and air bubbles expand with heat; water vapor contributes pressure once localized boiling begins in crumb pores. Scoring directs expansion—without it, weak points burst randomly."
       ]
     },
     {

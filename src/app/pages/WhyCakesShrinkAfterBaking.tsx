@@ -20,56 +20,31 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Cooling curve and steam loss",
       "paragraphs": [
-        "Hot cake interior is pressurized with water vapor. As temperature falls, internal pressure drops and the crumb contracts slightly; edges that were steam-stuck release.",
-        "Rapid cooling on a cold stone can set a skin while the center still moves, producing side wrinkles.",
-        "Drafts across a thin layer cake can over-dry the surface while the core shrinks, reading as a sunk belt."
+        "Hot cake interior is pressurized with water vapor. As temperature falls, internal pressure drops and the crumb contracts slightly; edges that were steam-stuck release. Rapid cooling on a cold stone can set a skin while the center still moves, producing side wrinkles. Drafts across a thin layer cake can over-dry the surface while the core shrinks, reading as a sunk belt."
       ]
     },
     {
       "heading": "Structure from eggs and gluten",
       "paragraphs": [
-        "Over-developed gluten in cake-style mixing tightens the network that later relaxes unevenly during cooling.",
-        "Under-baked centers finish collapsing outward as residual moisture redistributes.",
-        "Too much leavening can leave voids that mechanically collapse during cooling even when the oven spring looked fine."
+        "Over-developed gluten in cake-style mixing tightens the network that later relaxes unevenly during cooling. Under-baked centers finish collapsing outward as residual moisture redistributes. Too much leavening can leave voids that mechanically collapse during cooling even when the oven spring looked fine."
       ]
     },
     {
       "heading": "Pan, grease, and sugar caramelization",
       "paragraphs": [
-        "Sugar at the sidewall caramelizes and can lock early; uneven release makes one side shrink while another sticks.",
-        "Dark pans accelerate side set relative to centers, amplifying differential shrink.",
-        "Springform leaks can dry edges and change shrink symmetry."
+        "Sugar at the sidewall caramelizes and can lock early; uneven release makes one side shrink while another sticks. Dark pans accelerate side set relative to centers, amplifying differential shrink. Springform leaks can dry edges and change shrink symmetry."
       ]
     },
     {
       "heading": "How Fix My Recipe helps",
       "paragraphs": [
-        "Cake mode compares flour, fat, sugar, egg, and leavening to bands that predict doming, dryness, and collapse. Shrink paired with dryness points to bake curve; shrink paired with wet bands points to structure timing.",
-        "Cool one cake in the pan and one out on a rack next time—compare side gap photos."
+        "Cake mode compares flour, fat, sugar, egg, and leavening to bands that predict doming, dryness, and collapse. Shrink paired with dryness points to bake curve; shrink paired with wet bands points to structure timing. Cool one cake in the pan and one out on a rack next time—compare side gap photos."
       ]
     },
     {
-      "heading": "Debugging field notes",
+      "heading": "Shrinkage as the last chapter, not a twist ending",
       "paragraphs": [
-        "Tag \"why-cakes-shrink-after-baking\" at the top of your kitchen log for this project so PDF exports and screenshots stay searchable across seasons.",
-        "List equipment IDs that mattered that day: scale model, mixer speed used, oven rack height, and burr grinder zero point if coffee-adjacent—all drift over years.",
-        "State one falsifiable hypothesis before the run and record whether results supported or rejected it; negative evidence prevents repeating expensive guesses."
-      ]
-    },
-    {
-      "heading": "Photographic evidence checklist",
-      "paragraphs": [
-        "Photograph Why Cakes Shrink After Baking under consistent lighting: one top-down frame and one cross-section whenever you change a variable tied to why-cakes-shrink-after-baking.",
-        "Include a reference object in frame—a ruler edge or coin—so zoom crops do not fool you about spread thickness or bubble size later.",
-        "Store images in a dated folder alongside gram weights; future comparisons become obvious instead of debated from memory."
-      ]
-    },
-    {
-      "heading": "Results vocabulary that travels",
-      "paragraphs": [
-        "When you write notes for why-cakes-shrink-after-baking, cap texture adjectives at three per bake—chewy, sandy, spongy—and flavor adjectives at three so comparisons week-to-week stay comparable.",
-        "Note finish temperature and resting minutes beside taste descriptors; many off-notes are phase-dependent especially for dairy, chocolate, and coffee oils.",
-        "If a friend tastes blind, record their words verbatim; fresh language catches patterns you normalized away."
+        "A cake pulls away from the pan when the structure sets and steam stops pushing outward; too much shrink can mean over-baked sides, weak structure, or a formula that never had enough anchor for the rise it promised. Describe the sides—vertical, concave, dry rim—and whether the center sank after the door opened. That beats tagging photos for a slug you will never search."
       ]
     }
   ],

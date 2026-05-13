@@ -21,8 +21,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Temperature when frosting meets cake",
       "paragraphs": [
-        "Warm cake is mechanically weak and can also steam-condense against cooler frosting, creating a tacky band that squishes under later layers. Hot frosting can melt fat-set structure in the crumb’s cell walls, turning a firm layer into something that spreads sideways instead of holding height.",
-        "Pair temperatures: cool cakes to workable chill, bring buttercream to spreadable but not melty, and avoid microwaving fillings between steps. Think of assembly as warm-enough for plasticity, cold-enough for strength."
+        "Warm cake is mechanically weak and can also steam-condense against cooler frosting, creating a tacky band that squishes under later layers. Hot frosting can melt fat-set structure in the crumb’s cell walls, turning a firm layer into something that spreads sideways instead of holding height. Pair temperatures: cool cakes to workable chill, bring buttercream to spreadable but not melty, and avoid microwaving fillings between steps. Think of assembly as warm-enough for plasticity, cold-enough for strength."
       ],
       "bullets": [
         {
@@ -38,23 +37,20 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Sequence: syrup, soak, and wait",
       "paragraphs": [
-        "Soaks improve flavor but add water activity at cut surfaces. Heavy-handed brushing weakens the very planes that must bear the next tier. If using syrup, brush in thin passes and let surfaces equilibrate—often with a short chill—before stacking.",
-        "Jam or fruit layers release moisture over time; damming helps, but time-and-temperature still rule."
+        "Soaks improve flavor but add water activity at cut surfaces. Heavy-handed brushing weakens the very planes that must bear the next tier. If using syrup, brush in thin passes and let surfaces equilibrate—often with a short chill—before stacking. Jam or fruit layers release moisture over time; damming helps, but time-and-temperature still rule."
       ]
     },
     {
       "heading": "Holding under wrap",
       "paragraphs": [
-        "Plastic wrap pressed on a domed cake before the frosting crusts can imprint and squash. Tall chilled cakes need headspace in containers; otherwise the crown becomes a pancake overnight.",
-        "Cardboard rounds under each layer spread load across the crumb instead of focusing force at the center."
+        "Plastic wrap pressed on a domed cake before the frosting crusts can imprint and squash. Tall chilled cakes need headspace in containers; otherwise the crown becomes a pancake overnight. Cardboard rounds under each layer spread load across the crumb instead of focusing force at the center."
       ],
       "tip": "If height loss appears overnight rather than during frosting, suspect wrap pressure or a soft filling migrating—not your initial crumb coat technique alone."
     },
     {
       "heading": "Structural boards and dowels",
       "paragraphs": [
-        "Gravity is patient. Multi-layer cakes transfer weight through the weakest sponge. A board under each major tier and vertical dowels convert soft stacks into engineered columns; without them, even good recipes sag over hours.",
-        "For home tiers, scale expectations: three modest layers often survive without engineering; six with heavy buttercream may not."
+        "Gravity is patient. Multi-layer cakes transfer weight through the weakest sponge. A board under each major tier and vertical dowels convert soft stacks into engineered columns; without them, even good recipes sag over hours. For home tiers, scale expectations: three modest layers often survive without engineering; six with heavy buttercream may not."
       ]
     }
   ],

@@ -21,8 +21,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Time, temperature, and acid with reactive pans",
       "paragraphs": [
-        "A quick deglaze in an aluminum pan rarely causes trouble; a forty-five minute tomato simmer does. Acid plus heat dissolves the protective oxide layer repeatedly, exposing fresh metal to the sauce. The longer the contact, the more opportunity for ion migration and for off-aromas that people describe as metallic.",
-        "Copper is prized for heat control but unlined copper is not a long-simmer vessel for acidic sauces unless you accept traditional short-use patterns. Stainless steel and enameled cast iron are workhorses precisely because they resist this class of reaction."
+        "A quick deglaze in an aluminum pan rarely causes trouble; a forty-five minute tomato simmer does. Acid plus heat dissolves the protective oxide layer repeatedly, exposing fresh metal to the sauce. The longer the contact, the more opportunity for ion migration and for off-aromas that people describe as metallic. Copper is prized for heat control but unlined copper is not a long-simmer vessel for acidic sauces unless you accept traditional short-use patterns. Stainless steel and enameled cast iron are workhorses precisely because they resist this class of reaction."
       ],
       "bullets": [
         {
@@ -38,23 +37,20 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Wine reduction depth and trace mineral concentration",
       "paragraphs": [
-        "Reducing wine drives off ethanol and water but leaves behind acids, salts, and trace metals that were present at low levels in the bottle and in your water. Pushed too far, the concentrate can taste sharp, bitter, and metallic-adjacent even when technique is otherwise sound.",
-        "Stopping earlier, straining solids, and finishing with fresh butter or cream can polish harsh edges. If a sauce must be intensely reduced, build acidity with smaller additions across time rather than one heroic boil-down that concentrates everything at once."
+        "Reducing wine drives off ethanol and water but leaves behind acids, salts, and trace metals that were present at low levels in the bottle and in your water. Pushed too far, the concentrate can taste sharp, bitter, and metallic-adjacent even when technique is otherwise sound. Stopping earlier, straining solids, and finishing with fresh butter or cream can polish harsh edges. If a sauce must be intensely reduced, build acidity with smaller additions across time rather than one heroic boil-down that concentrates everything at once."
       ],
       "tip": "If metallic notes track with how far you reduce wine—but not with pan type—fix reduction strategy before buying new cookware."
     },
     {
       "heading": "Water, brine, and spice misreads",
       "paragraphs": [
-        "Iron-rich well water can add subtle metallic background to stocks and pan sauces, especially when reduced. Filtering or blending water for long simmers helps when geography is the culprit.",
-        "Certain spices and old herbs taste dusty or bitter and can be mis-labeled as metal. Freshly crack pepper; replace ancient bay and paprika; taste your salt source—though salt rarely adds metal notes, contamination stories exist with impure finishing salts if stored badly."
+        "Iron-rich well water can add subtle metallic background to stocks and pan sauces, especially when reduced. Filtering or blending water for long simmers helps when geography is the culprit. Certain spices and old herbs taste dusty or bitter and can be mis-labeled as metal. Freshly crack pepper; replace ancient bay and paprika; taste your salt source—though salt rarely adds metal notes, contamination stories exist with impure finishing salts if stored badly."
       ]
     },
     {
       "heading": "Holding, storage, and service metal contact",
       "paragraphs": [
-        "Hotel pans, chafers, and cheap metal bains in steam tables can contribute pickup over hours, especially with acidic tomato or wine sauces. Transfer finished sauces to inserts with stable liners or known stainless grades when holds exceed short service.",
-        "Overnight storage in reactive metal can continue slow reactions cold—less dramatic than boiling, but not zero. Glass or food-grade plastic for refrigerated storage removes that variable when debugging."
+        "Hotel pans, chafers, and cheap metal bains in steam tables can contribute pickup over hours, especially with acidic tomato or wine sauces. Transfer finished sauces to inserts with stable liners or known stainless grades when holds exceed short service. Overnight storage in reactive metal can continue slow reactions cold—less dramatic than boiling, but not zero. Glass or food-grade plastic for refrigerated storage removes that variable when debugging."
       ]
     }
   ],

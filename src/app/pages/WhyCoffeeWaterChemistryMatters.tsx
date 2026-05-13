@@ -38,23 +38,20 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Alkalinity, acidity, and perceived brightness",
       "paragraphs": [
-        "Bicarbonate buffers acids in brewed coffee, which can tame sharpness on light roasts but also flatten desirable malic and citric clarity if alkalinity is excessive. That reads in the cup as “dull” or “muddy” even when extraction metrics look fine.",
-        "Espresso magnifies water effects because short contact time and high pressure change dissolution kinetics; a water that cups okay as filter may still taste blunt as espresso if alkalinity is wrong for the roast."
+        "Bicarbonate buffers acids in brewed coffee, which can tame sharpness on light roasts but also flatten desirable malic and citric clarity if alkalinity is excessive. That reads in the cup as “dull” or “muddy” even when extraction metrics look fine. Espresso magnifies water effects because short contact time and high pressure change dissolution kinetics; a water that cups okay as filter may still taste blunt as espresso if alkalinity is wrong for the roast."
       ],
       "tip": "If acidity disappears when you change buildings or filters, suspect alkalinity before you chase finer grind—chasing solubility with grind while bicarbonate climbs is a recipe for uneven shots."
     },
     {
       "heading": "Chlorine, chloramine, and off-aromas",
       "paragraphs": [
-        "Chlorinated disinfectants can create medicinal or plastic-like notes, especially in low-TDS brews where coffee aromatics are exposed. Carbon filtration that is expired or bypassed fails silently—change cartridges on schedule.",
-        "Some regions use chloramine, which is harder to remove than free chlorine and may need catalytic carbon or longer contact time. If your water smells like a pool, your coffee will too."
+        "Chlorinated disinfectants can create medicinal or plastic-like notes, especially in low-TDS brews where coffee aromatics are exposed. Carbon filtration that is expired or bypassed fails silently—change cartridges on schedule. Some regions use chloramine, which is harder to remove than free chlorine and may need catalytic carbon or longer contact time. If your water smells like a pool, your coffee will too."
       ]
     },
     {
       "heading": "Equipment life, scale, and maintenance feedback loops",
       "paragraphs": [
-        "Hard water precipitates carbonate scale on boilers and restrictors, changing effective temperature and flow over months. A machine that “drifted” in taste may be telling you its physics changed, not that beans aged overnight.",
-        "Reverse osmosis systems that dump remineralization cartridges or produce stagnant tank water can swing TDS. Remineralize intentionally to a measured spec rather than chasing zero TDS forever, which often yields flat, aggressive cups that punish extraction errors visibly."
+        "Hard water precipitates carbonate scale on boilers and restrictors, changing effective temperature and flow over months. A machine that “drifted” in taste may be telling you its physics changed, not that beans aged overnight. Reverse osmosis systems that dump remineralization cartridges or produce stagnant tank water can swing TDS. Remineralize intentionally to a measured spec rather than chasing zero TDS forever, which often yields flat, aggressive cups that punish extraction errors visibly."
       ]
     }
   ],

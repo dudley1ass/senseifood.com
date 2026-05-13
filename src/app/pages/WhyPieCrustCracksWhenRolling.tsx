@@ -44,8 +44,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Water and gluten",
       "paragraphs": [
-        "Minimal water reduces gluten but risks brittleness—balance with vinegar or vodka tricks for tenderness without excess gluten.",
-        "Rest between rolls relaxes gluten elasticity—reduces springback tears."
+        "Minimal water reduces gluten but risks brittleness—balance with vinegar or vodka tricks for tenderness without excess gluten. Rest between rolls relaxes gluten elasticity—reduces springback tears."
       ]
     },
     {

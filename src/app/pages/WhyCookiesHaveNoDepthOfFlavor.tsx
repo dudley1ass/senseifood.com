@@ -38,8 +38,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Chill, hydration, and aromatic development",
       "paragraphs": [
-        "Resting dough hydrates flour proteins and fat-coated sugar more evenly, which changes spread and edge thickness—both of which change browning. Overnight cold rest also gives enzymatic and oxidative notes a little runway; the effect is subtle compared to bread, but it can round harsh leavening aromas.",
-        "Brown butter is a cheat code for depth because you pre-load thermal decomposition products into the fat phase before flour even enters. If you cannot brown butter, toasting nuts or milk powder borrows the same Maillard-forward idea without changing hydration as dramatically."
+        "Resting dough hydrates flour proteins and fat-coated sugar more evenly, which changes spread and edge thickness—both of which change browning. Overnight cold rest also gives enzymatic and oxidative notes a little runway; the effect is subtle compared to bread, but it can round harsh leavening aromas. Brown butter is a cheat code for depth because you pre-load thermal decomposition products into the fat phase before flour even enters. If you cannot brown butter, toasting nuts or milk powder borrows the same Maillard-forward idea without changing hydration as dramatically."
       ],
       "tip": "If your rested dough smells amazing but the baked cookie still tastes plain, suspect bake color, not rest time—you may simply need more exterior development or a touch more invert sugar to keep centers moist while you chase brown."
     },
@@ -53,8 +52,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Ingredient quality and single-note traps",
       "paragraphs": [
-        "Extracts vary; imitation vanilla can be one-note compared to a split bean with husk particulates carrying aroma. Spices oxidize; old cinnamon tastes dusty long before it looks wrong. Stale nuts contribute cardboard instead of roast depth. Depth problems are not always process—sometimes the pantry is the bottleneck.",
-        "Fat choice changes flavor architecture: all neutral oil yields tenderness with little aroma; cultured butter brings diacetyl-adjacent notes; shortening changes mouthfeel and can mute roast if you rely on creaming air alone. Matching fat to the flavor story you want prevents “sweet crumb, no story.”"
+        "Extracts vary; imitation vanilla can be one-note compared to a split bean with husk particulates carrying aroma. Spices oxidize; old cinnamon tastes dusty long before it looks wrong. Stale nuts contribute cardboard instead of roast depth. Depth problems are not always process—sometimes the pantry is the bottleneck. Fat choice changes flavor architecture: all neutral oil yields tenderness with little aroma; cultured butter brings diacetyl-adjacent notes; shortening changes mouthfeel and can mute roast if you rely on creaming air alone. Matching fat to the flavor story you want prevents “sweet crumb, no story.”"
       ]
     }
   ],

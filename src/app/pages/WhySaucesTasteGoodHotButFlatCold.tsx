@@ -21,8 +21,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Volatility and the first bite",
       "paragraphs": [
-        "Esters, aldehydes, and sulfur compounds that read bright or savory above roughly body temperature may read nearly silent straight from the fridge. That is not always under-seasoning; it is suppressed volatility plus retronasal differences as vapor pressure drops.",
-        "Build cold sauces with explicit acid architecture—vinegars, citrus, fermented products—rather than assuming the same herb load will carry. Add fragile aromatics at the last hot second if they will be served hot; infuse carriers if they will be served cold."
+        "Esters, aldehydes, and sulfur compounds that read bright or savory above roughly body temperature may read nearly silent straight from the fridge. That is not always under-seasoning; it is suppressed volatility plus retronasal differences as vapor pressure drops. Build cold sauces with explicit acid architecture—vinegars, citrus, fermented products—rather than assuming the same herb load will carry. Add fragile aromatics at the last hot second if they will be served hot; infuse carriers if they will be served cold."
       ],
       "bullets": [
         {
@@ -38,23 +37,20 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Fat phase change and mouthfeel masking",
       "paragraphs": [
-        "Butter and cream firm up, increasing coating and viscosity on the tongue. That rounds harsh edges but can also flatten perceived salt and sharpness into generic richness. Emulsified sauces may look stable yet eat heavier cold if fat crystals reorganize.",
-        "Olive oil and some nut oils stiffen or wax in the cold; what felt fruity when warm can taste mute or greasy when cool. Choose finishing oils with cold-service intent."
+        "Butter and cream firm up, increasing coating and viscosity on the tongue. That rounds harsh edges but can also flatten perceived salt and sharpness into generic richness. Emulsified sauces may look stable yet eat heavier cold if fat crystals reorganize. Olive oil and some nut oils stiffen or wax in the cold; what felt fruity when warm can taste mute or greasy when cool. Choose finishing oils with cold-service intent."
       ]
     },
     {
       "heading": "Holding window before plating",
       "paragraphs": [
-        "Long steam-table or bain-marie holds drive off top notes even when the sauce still looks fine. Taste after the hold window you actually use in service, not only at completion. Covered holding reduces evaporation but can also steam delicate herbs into gray flavor.",
-        "Reheats concentrate solids as water evaporates; cold leftovers may then taste salt-forward or unbalanced relative to memory of the first pass."
+        "Long steam-table or bain-marie holds drive off top notes even when the sauce still looks fine. Taste after the hold window you actually use in service, not only at completion. Covered holding reduces evaporation but can also steam delicate herbs into gray flavor. Reheats concentrate solids as water evaporates; cold leftovers may then taste salt-forward or unbalanced relative to memory of the first pass."
       ],
       "tip": "If a sauce must do both hot line and cold prep, split batches and finish each path with appropriate acid and herb timing."
     },
     {
       "heading": "Starch, gelatin, and texture-driven flavor release",
       "paragraphs": [
-        "Thickeners change how salt and acid distribute on the palate. A roux-thickened gravy that sings hot can taste pasty cold if starch retrogrades or sets tightly around flavor ions. Gelatin-rich reductions can jell, slowing flavor release until saliva warms the matrix.",
-        "Thin slightly for cold service, or shift thickener choice, and validate with a chilled spoon test rather than only visual viscosity in the pan."
+        "Thickeners change how salt and acid distribute on the palate. A roux-thickened gravy that sings hot can taste pasty cold if starch retrogrades or sets tightly around flavor ions. Gelatin-rich reductions can jell, slowing flavor release until saliva warms the matrix. Thin slightly for cold service, or shift thickener choice, and validate with a chilled spoon test rather than only visual viscosity in the pan."
       ]
     }
   ],

@@ -20,8 +20,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Salt as a frame",
       "paragraphs": [
-        "Salt suppresses perceived sweetness slightly while increasing overall flavor intensity. Many home recipes under-salt; a small bump (especially fine salt distributed evenly) can make the same sugar feel less aggressive.",
-        "Weigh salt. Volume measures of coarse vs fine salt scatter wildly."
+        "Salt suppresses perceived sweetness slightly while increasing overall flavor intensity. Many home recipes under-salt; a small bump (especially fine salt distributed evenly) can make the same sugar feel less aggressive. Weigh salt. Volume measures of coarse vs fine salt scatter wildly."
       ]
     },
     {
@@ -46,8 +45,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Sugar chemistry and bake color",
       "paragraphs": [
-        "Invert sugar from corn syrup or honey tastes sweeter at equal weight to some palates because fructose is perceived sweeter than sucrose—recipe swaps are not 1:1 sensory.",
-        "Salt at 0.3–0.5% flour weight often corrects cloying in test batches—measure grams."
+        "Invert sugar from corn syrup or honey tastes sweeter at equal weight to some palates because fructose is perceived sweeter than sucrose—recipe swaps are not 1:1 sensory. Salt at 0.3–0.5% flour weight often corrects cloying in test batches—measure grams."
       ]
     },
     {

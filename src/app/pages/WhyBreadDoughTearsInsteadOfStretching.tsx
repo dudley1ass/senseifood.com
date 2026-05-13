@@ -38,8 +38,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Hydration, autolyse, and mixing endpoints",
       "paragraphs": [
-        "Under-hydrated dough can be strong yet brittle: lots of elastic resistance, little plastic flow. A short autolyse (mixing flour and water alone) lets bran hydrate and gliadin and glutenin begin associating without immediate salt tightening, which often improves extensibility before you finish mixing.",
-        "Over-mixed lean dough can also tear because the network is too uniform and tight—less common in home mixers for wet doughs but worth remembering if you chase an ultra-smooth windowpane at any cost."
+        "Under-hydrated dough can be strong yet brittle: lots of elastic resistance, little plastic flow. A short autolyse (mixing flour and water alone) lets bran hydrate and gliadin and glutenin begin associating without immediate salt tightening, which often improves extensibility before you finish mixing. Over-mixed lean dough can also tear because the network is too uniform and tight—less common in home mixers for wet doughs but worth remembering if you chase an ultra-smooth windowpane at any cost."
       ],
       "tip": "If tears appear only at the same hydration that feels perfect after bulk, the issue may be timing: finish mixing, then allow a short covered rest before aggressive handling rather than chasing structure solely with more machine time."
     },
@@ -53,8 +52,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "High-hydration workflow: folds before free shaping",
       "paragraphs": [
-        "Wet doughs often tear on the bench not from dryness but from gravity: the skin slumps and overstretches locally. Building structure with periodic coil folds in the container creates a dough that holds tension when inverted, reducing rips during later shaping.",
-        "If you must stretch in open air, use a wet bench and confident, fewer strokes rather than many timid tugs—repeated micro-tears accumulate into a rough surface that tears even more."
+        "Wet doughs often tear on the bench not from dryness but from gravity: the skin slumps and overstretches locally. Building structure with periodic coil folds in the container creates a dough that holds tension when inverted, reducing rips during later shaping. If you must stretch in open air, use a wet bench and confident, fewer strokes rather than many timid tugs—repeated micro-tears accumulate into a rough surface that tears even more."
       ]
     }
   ],

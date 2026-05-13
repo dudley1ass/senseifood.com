@@ -21,8 +21,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Freezer temperature as part of the recipe",
       "paragraphs": [
-        "Home freezers often run colder than people assume, especially near the back wall or in frost-free cycles. A few degrees Fahrenheit can materially change scoop effort because hardness is not linear with temperature in this range.",
-        "If you can, store serve tubs in a slightly warmer zone or transfer to the refrigerator door for a short staging before guests arrive. For long storage, accept that you will temper—think of temper time as a required ingredient for service."
+        "Home freezers often run colder than people assume, especially near the back wall or in frost-free cycles. A few degrees Fahrenheit can materially change scoop effort because hardness is not linear with temperature in this range. If you can, store serve tubs in a slightly warmer zone or transfer to the refrigerator door for a short staging before guests arrive. For long storage, accept that you will temper—think of temper time as a required ingredient for service."
       ],
       "bullets": [
         {
@@ -38,23 +37,20 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Temper sequence before service",
       "paragraphs": [
-        "Tempering lets the surface yield so the scoop shears through lubricated, partially melted layers instead of crushing rigid ice. Going straight from deep cold to pressure generates fractures that read as dryness and powder even when fat content is adequate.",
-        "Five to ten minutes on the counter is a starting point; humid rooms and warm lights change the rate. For neat spheres, aim for a surface that yields to a thumb press without collapsing the whole pint."
+        "Tempering lets the surface yield so the scoop shears through lubricated, partially melted layers instead of crushing rigid ice. Going straight from deep cold to pressure generates fractures that read as dryness and powder even when fat content is adequate. Five to ten minutes on the counter is a starting point; humid rooms and warm lights change the rate. For neat spheres, aim for a surface that yields to a thumb press without collapsing the whole pint."
       ],
       "tip": "If you need multiple scoops, work in waves—return the container to the freezer between batches so melt does not progress unevenly."
     },
     {
       "heading": "Solids, sugar, and freezing point depression",
       "paragraphs": [
-        "Sugars and alcohol lower the freezing point of the unfrozen phase; dairy solids and other solutes change water availability. A formula that is lean on sugars or total solids can freeze harder than expected, especially if water inputs are high.",
-        "If tempering never helps, look at the balance sheet: MSNF, fat, egg yolk, stabilizers, and sweetener profile. Commercial bases also assume a target overrun; a dense, low-air home churn can feel firmer even when the mix is correct on paper."
+        "Sugars and alcohol lower the freezing point of the unfrozen phase; dairy solids and other solutes change water availability. A formula that is lean on sugars or total solids can freeze harder than expected, especially if water inputs are high. If tempering never helps, look at the balance sheet: MSNF, fat, egg yolk, stabilizers, and sweetener profile. Commercial bases also assume a target overrun; a dense, low-air home churn can feel firmer even when the mix is correct on paper."
       ]
     },
     {
       "heading": "Holding after scooping",
       "paragraphs": [
-        "Pre-scooped nests in a pan can sublimate and recrystallize at edges, especially uncovered in a cold blast. Cover, minimize airflow, and avoid refreezing partially melted scoops if you care about texture—each heat shock coarsens ice.",
-        "For service lines, slightly warmer holding cabinets are a different physics than home freezers; mimic the idea by letting scoops temper briefly before plating rather than fighting a −20°F core."
+        "Pre-scooped nests in a pan can sublimate and recrystallize at edges, especially uncovered in a cold blast. Cover, minimize airflow, and avoid refreezing partially melted scoops if you care about texture—each heat shock coarsens ice. For service lines, slightly warmer holding cabinets are a different physics than home freezers; mimic the idea by letting scoops temper briefly before plating rather than fighting a −20°F core."
       ]
     }
   ],

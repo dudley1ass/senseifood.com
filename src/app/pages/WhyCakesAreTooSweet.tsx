@@ -44,8 +44,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Solids, dissolved sugar, and “sweet hits”",
       "paragraphs": [
-        "Simple syrup soaks add dissolved sucrose directly to crumb surfaces—very high perceived sweetness per gram compared with sugar baked into structure. Brushing warm layers drives syrup deeper; chilling slows perception slightly but does not remove sugar.",
-        "Frostings near room temperature (65–72°F / 18–22°C) taste sweeter than ice-cold frosting because aroma volatiles move faster—temperature is a hidden variable in tastings."
+        "Simple syrup soaks add dissolved sucrose directly to crumb surfaces—very high perceived sweetness per gram compared with sugar baked into structure. Brushing warm layers drives syrup deeper; chilling slows perception slightly but does not remove sugar. Frostings near room temperature (65–72°F / 18–22°C) taste sweeter than ice-cold frosting because aroma volatiles move faster—temperature is a hidden variable in tastings."
       ]
     },
     {

@@ -44,8 +44,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Heat the blade, not the cake",
       "paragraphs": [
-        "Dip a thin blade in hot water (not boiling), wipe dry, slice in one long draw. The transient heat shears chocolate and buttercream cleanly without melting the whole wedge. Repeat every slice for show-quality portions.",
-        "For gummy under-baked interiors, no knife technique fixes incomplete set—reassess bake until probe temps align with your formula style."
+        "Dip a thin blade in hot water (not boiling), wipe dry, slice in one long draw. The transient heat shears chocolate and buttercream cleanly without melting the whole wedge. Repeat every slice for show-quality portions. For gummy under-baked interiors, no knife technique fixes incomplete set—reassess bake until probe temps align with your formula style."
       ]
     },
     {

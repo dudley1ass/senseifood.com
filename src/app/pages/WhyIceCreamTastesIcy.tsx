@@ -44,8 +44,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Heat shock",
       "paragraphs": [
-        "Melting even partially and refreezing coarsens texture—minimize warm trips from store.",
-        "Emulsifiers and stabilizers reduce crystal growth kinetics—home eggs/cornstarch play partial role."
+        "Melting even partially and refreezing coarsens texture—minimize warm trips from store. Emulsifiers and stabilizers reduce crystal growth kinetics—home eggs/cornstarch play partial role."
       ]
     },
     {

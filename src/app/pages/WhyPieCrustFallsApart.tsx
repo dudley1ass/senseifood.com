@@ -45,8 +45,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Fat size distribution",
       "paragraphs": [
-        "Pea-sized butter leaves voids; sand-texture shortens too much for transfer. Chill between steps.",
-        "Blind bake with weights until set—steam puff can shatter unweighted."
+        "Pea-sized butter leaves voids; sand-texture shortens too much for transfer. Chill between steps. Blind bake with weights until set—steam puff can shatter unweighted."
       ]
     },
     {

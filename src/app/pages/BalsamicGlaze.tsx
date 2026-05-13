@@ -17,37 +17,32 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Watch the tail of reduction",
       "paragraphs": [
-        "Early bubbling removes mostly water; late bubbling changes dissolved solids fast. If the liquid becomes tacky, smells sharp in an unpleasant way, or sticks to the spoon like tar, you have gone too far for a clean finish—dilute carefully with a little water or mild stock and rebuild gently.",
-        "Use a wider pan for more even evaporation; a tall narrow pot can hide hot spots that scorch corners."
+        "Early bubbling removes mostly water; late bubbling changes dissolved solids fast. If the liquid becomes tacky, smells sharp in an unpleasant way, or sticks to the spoon like tar, you have gone too far for a clean finish—dilute carefully with a little water or mild stock and rebuild gently. Use a wider pan for more even evaporation; a tall narrow pot can hide hot spots that scorch corners."
       ]
     },
     {
       "heading": "Heat discipline and stirring",
       "paragraphs": [
-        "Medium-low heat with occasional stirring beats a rolling boil that throws sugars against hot metal. Scraping the pan keeps solids from becoming bitter nodules.",
-        "If you add sweetener to assist glazing, add in small pinches and taste—balsamic already carries sugar; duplication is how people land on candy-vinegar."
+        "Medium-low heat with occasional stirring beats a rolling boil that throws sugars against hot metal. Scraping the pan keeps solids from becoming bitter nodules. If you add sweetener to assist glazing, add in small pinches and taste—balsamic already carries sugar; duplication is how people land on candy-vinegar."
       ],
       "tip": "When in doubt, pull early; you can always reduce more—you cannot un-burn."
     },
     {
       "heading": "Balance: acid, sweetness, and bitter edge",
       "paragraphs": [
-        "Balancing a balsamic glaze is not the same as balancing tomato sauce. You may need a tiny touch of sugar to round harsh acid, or a drop of water to reopen aroma if it feels “closed.” Fat is rarely the hero here; this is vinegar-led.",
-        "Salt can help integration in savory applications—a trace makes sweet-sour feel intentional rather than sticky."
+        "Balancing a balsamic glaze is not the same as balancing tomato sauce. You may need a tiny touch of sugar to round harsh acid, or a drop of water to reopen aroma if it feels “closed.” Fat is rarely the hero here; this is vinegar-led. Salt can help integration in savory applications—a trace makes sweet-sour feel intentional rather than sticky."
       ]
     },
     {
       "heading": "Uses and portioning",
       "paragraphs": [
-        "Drizzle finishes reward tiny amounts: caprese, roasted vegetables, grilled meat. Make more than you need only if you enjoy reheating chemistry experiments—each reheat drives further concentration.",
-        "Store in a squeeze bottle for controlled plating; wide-mouth jars invite over-pouring."
+        "Drizzle finishes reward tiny amounts: caprese, roasted vegetables, grilled meat. Make more than you need only if you enjoy reheating chemistry experiments—each reheat drives further concentration. Store in a squeeze bottle for controlled plating; wide-mouth jars invite over-pouring."
       ]
     },
     {
       "heading": "Storage, thickness drift, and rescue",
       "paragraphs": [
-        "Fridge storage thickens glazes; warm gently before judging flavor. If it becomes candy-hard, warm with a splash of water and stir back to pourable.",
-        "If mold or off aromas appear, discard—high sugar does not make a sauce immortal."
+        "Fridge storage thickens glazes; warm gently before judging flavor. If it becomes candy-hard, warm with a splash of water and stir back to pourable. If mold or off aromas appear, discard—high sugar does not make a sauce immortal."
       ]
     }
   ],

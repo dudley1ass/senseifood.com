@@ -20,8 +20,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Thermal mass and contact",
       "paragraphs": [
-        "Baking steel and stones excel at crisp bases but punish delicate sandwich loaves. A second sheet pan as a heat shield adds air gap insulation.",
-        "Dark, thin pans run hotter than light, thick ones."
+        "Baking steel and stones excel at crisp bases but punish delicate sandwich loaves. A second sheet pan as a heat shield adds air gap insulation. Dark, thin pans run hotter than light, thick ones."
       ]
     },
     {
@@ -46,8 +45,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Insulation tactics",
       "paragraphs": [
-        "Double pan, baking stone buffer, or parchment layer reduces heat flux to the bottom. Lower rack position away from lower element helps in some ovens.",
-        "Reduce oven 25°F (14°C) and extend time—depth of heat matters more than peak temperature for thick loaves."
+        "Double pan, baking stone buffer, or parchment layer reduces heat flux to the bottom. Lower rack position away from lower element helps in some ovens. Reduce oven 25°F (14°C) and extend time—depth of heat matters more than peak temperature for thick loaves."
       ]
     },
     {

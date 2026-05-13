@@ -44,8 +44,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Time, temperature, grind",
       "paragraphs": [
-        "Finer grind increases surface area—same time yields higher extraction. Raise temperature in 1°F steps or coarsen slightly to reduce harshness.",
-        "Brew ratio 1:15 vs 1:17 changes strength at same extraction—confusing diagnosis without scale."
+        "Finer grind increases surface area—same time yields higher extraction. Raise temperature in 1°F steps or coarsen slightly to reduce harshness. Brew ratio 1:15 vs 1:17 changes strength at same extraction—confusing diagnosis without scale."
       ]
     },
     {

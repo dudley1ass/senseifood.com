@@ -8,7 +8,10 @@
     "build": "vite build && tsx scripts/prerender.tsx",
     "preview": "vite preview",
     "start": "vite preview",
-    "generate-sitemap": "tsx scripts/generate-sitemap.ts"
+    "generate-sitemap": "tsx scripts/generate-sitemap.ts",
+    "article-catalog:gen-paths": "node scripts/generate-routed-article-paths.mjs",
+    "article-catalog:verify": "node scripts/verify-catalog-covers-routed-paths.mjs",
+    "article-catalog:diff": "node scripts/diff-article-catalog-routes.mjs"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",

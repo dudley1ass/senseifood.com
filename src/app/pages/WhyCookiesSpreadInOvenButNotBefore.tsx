@@ -44,8 +44,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Oven heat transfer",
       "paragraphs": [
-        "Edge cookies reach melt faster than center—differential spread in one tray is normal. Aluminum vs insulated sheets change bottom heat flux.",
-        "Sugar type changes melt curve—more dissolved sugar flows earlier."
+        "Edge cookies reach melt faster than center—differential spread in one tray is normal. Aluminum vs insulated sheets change bottom heat flux. Sugar type changes melt curve—more dissolved sugar flows earlier."
       ]
     },
     {

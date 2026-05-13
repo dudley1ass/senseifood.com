@@ -38,8 +38,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Viscosity before freeze",
       "paragraphs": [
-        "Ageing overnight hydrates milk proteins and lets stabilizers fully disperse; skipping rest yields weepy foam that cannot laminate air into stable films. Sugar and dissolved solids raise viscosity and depress freezing point, changing how early air incorporates and how quickly the matrix sets.",
-        "Emulsifiers and stabilizers shift bubble size distribution: too little and serum drains from films; too much and texture can feel gummy if you compensate with excessive churn time. Balance formulation changes with churn observation rather than only fixing numbers on paper."
+        "Ageing overnight hydrates milk proteins and lets stabilizers fully disperse; skipping rest yields weepy foam that cannot laminate air into stable films. Sugar and dissolved solids raise viscosity and depress freezing point, changing how early air incorporates and how quickly the matrix sets. Emulsifiers and stabilizers shift bubble size distribution: too little and serum drains from films; too much and texture can feel gummy if you compensate with excessive churn time. Balance formulation changes with churn observation rather than only fixing numbers on paper."
       ],
       "tip": "If the base pours like skim milk before churn, fix the base first—more air time rarely rescues a structurally thin continuous phase."
     },
@@ -53,8 +52,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Diagnosing collapse versus low overrun intent",
       "paragraphs": [
-        "Some styles intentionally target lower aeration; gelato tradition often carries less air than industrial ice cream. Collapse is different: you expected lightness and got blockiness, or the surface sank after scooping. Taste for ice and serum separation; look for a uniform color without a wet sheen on refreeze.",
-        "If collapse follows only certain flavors, suspect added acids, alcohol, or fruit water skewing freezing curves and foam stability. Adjust solids, pre-infuse, or compensate with a touch of stabilizer after you validate the base behaves in a neutral flavor."
+        "Some styles intentionally target lower aeration; gelato tradition often carries less air than industrial ice cream. Collapse is different: you expected lightness and got blockiness, or the surface sank after scooping. Taste for ice and serum separation; look for a uniform color without a wet sheen on refreeze. If collapse follows only certain flavors, suspect added acids, alcohol, or fruit water skewing freezing curves and foam stability. Adjust solids, pre-infuse, or compensate with a touch of stabilizer after you validate the base behaves in a neutral flavor."
       ]
     }
   ],

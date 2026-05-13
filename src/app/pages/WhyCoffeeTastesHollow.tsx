@@ -45,8 +45,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Strength vs extraction",
       "paragraphs": [
-        "Total dissolved solids (roughly related to strength) can be low while extraction percentage is high—bitter and weak simultaneously. Fix ratio before chasing finer grind.",
-        "Channeling in espresso creates local over-extraction and local under-extraction—hollow, confusing cups."
+        "Total dissolved solids (roughly related to strength) can be low while extraction percentage is high—bitter and weak simultaneously. Fix ratio before chasing finer grind. Channeling in espresso creates local over-extraction and local under-extraction—hollow, confusing cups."
       ]
     },
     {

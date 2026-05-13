@@ -45,8 +45,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Emulsion science",
       "paragraphs": [
-        "Lecithin in egg yolk and milk helps; commercial products add mono/diglycerides. Homogenization scale matters—blender re-emulsifies small batches.",
-        "Acid fruits need stabilized bases—otherwise dairy proteins precipitate."
+        "Lecithin in egg yolk and milk helps; commercial products add mono/diglycerides. Homogenization scale matters—blender re-emulsifies small batches. Acid fruits need stabilized bases—otherwise dairy proteins precipitate."
       ]
     },
     {

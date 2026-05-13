@@ -17,8 +17,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Build savor first",
       "paragraphs": [
-        "Give mushrooms room in the pan, avoid crowding on the first pass, and let moisture evaporate until fond forms. Only then does cream have a concentrated base to thicken against.",
-        "Garlic and butter are easy to burn at high heat; use the fat phase to extract flavor without charring."
+        "Give mushrooms room in the pan, avoid crowding on the first pass, and let moisture evaporate until fond forms. Only then does cream have a concentrated base to thicken against. Garlic and butter are easy to burn at high heat; use the fat phase to extract flavor without charring."
       ]
     },
     {

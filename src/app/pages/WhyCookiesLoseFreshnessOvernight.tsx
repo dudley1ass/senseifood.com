@@ -20,9 +20,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Moisture migration and water activity",
       "paragraphs": [
-        "A warm cookie is a humid object in drier room air. Vapor pressure gradients push water outward through the porous crumb and across any set crust. If the lid leaks, absolute moisture exits the batch and the crumb tightens measurably by morning.",
-        "Brown sugar formulas bind more plasticizing water than pale shortbreads; they can feel softer at hour six yet dense at hour thirty-six when syrups localize along chip surfaces or pan contact zones.",
-        "Frost-free refrigerators micro-dry edges through defrost cycles; uncovered plates in the fridge are a classic way to accelerate dry staling while mistakenly thinking “cold equals preserved.”"
+        "A warm cookie is a humid object in drier room air. Vapor pressure gradients push water outward through the porous crumb and across any set crust. If the lid leaks, absolute moisture exits the batch and the crumb tightens measurably by morning. Brown sugar formulas bind more plasticizing water than pale shortbreads; they can feel softer at hour six yet dense at hour thirty-six when syrups localize along chip surfaces or pan contact zones. Frost-free refrigerators micro-dry edges through defrost cycles; uncovered plates in the fridge are a classic way to accelerate dry staling while mistakenly thinking “cold equals preserved.”"
       ],
       "bullets": [
         {
@@ -35,48 +33,25 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Sugar crystallization and snap",
       "paragraphs": [
-        "Sucrose can renucleate when local water activity drops, producing interlocking crystals that read as sudden hardness or sandy break compared with tender day-one bite.",
-        "Glucose and fructose interfere with sucrose packing; modest syrup swaps often improve shelf more than extra bake time.",
-        "Chocolate bloom and nut oil migration change mouthfeel overnight even when the dough matrix is unchanged."
+        "Sucrose can renucleate when local water activity drops, producing interlocking crystals that read as sudden hardness or sandy break compared with tender day-one bite. Glucose and fructose interfere with sucrose packing; modest syrup swaps often improve shelf more than extra bake time. Chocolate bloom and nut oil migration change mouthfeel overnight even when the dough matrix is unchanged."
       ]
     },
     {
       "heading": "Starch retrogradation and aroma fade",
       "paragraphs": [
-        "Amylopectin reorders below gelatinization temperature, tightening crumb and slowing volatile release so sweetness feels flatter even when grams of sugar are unchanged.",
-        "Egg-rich cookies set more protein gel; when moisture leaves, chalkiness can arrive faster than in pure butter-sugar shortbreads.",
-        "Maillard products remain, but top notes tied to warm esters fade quickly; gentle rewarming can partially reopen aroma even when texture cannot fully reset."
+        "Amylopectin reorders below gelatinization temperature, tightening crumb and slowing volatile release so sweetness feels flatter even when grams of sugar are unchanged. Egg-rich cookies set more protein gel; when moisture leaves, chalkiness can arrive faster than in pure butter-sugar shortbreads. Maillard products remain, but top notes tied to warm esters fade quickly; gentle rewarming can partially reopen aroma even when texture cannot fully reset."
       ]
     },
     {
       "heading": "How Fix My Recipe helps",
       "paragraphs": [
-        "Cookie mode compares sugar, fat, and flour bands to reference patterns correlated with softer shelf outcomes. When overnight staling dominates your notes, log sugar type, bake color, and container strategy across three batches.",
-        "Photograph cross-sections at twenty-four hours for tin versus zip bag versus freezer splits—visual crumb density tells the truth faster than memory."
+        "Cookie mode compares sugar, fat, and flour bands to reference patterns correlated with softer shelf outcomes. When overnight staling dominates your notes, log sugar type, bake color, and container strategy across three batches. Photograph cross-sections at twenty-four hours for tin versus zip bag versus freezer splits—visual crumb density tells the truth faster than memory."
       ]
     },
     {
-      "heading": "Debugging field notes",
+      "heading": "Staling as a story you can see coming",
       "paragraphs": [
-        "Tag \"why-cookies-lose-freshness-overnight\" at the top of your kitchen log for this project so PDF exports and screenshots stay searchable across seasons.",
-        "List equipment IDs that mattered that day: scale model, mixer speed used, oven rack height, and burr grinder zero point if coffee-adjacent—all drift over years.",
-        "State one falsifiable hypothesis before the run and record whether results supported or rejected it; negative evidence prevents repeating expensive guesses."
-      ]
-    },
-    {
-      "heading": "Photographic evidence checklist",
-      "paragraphs": [
-        "Photograph Why Cookies Lose Freshness Overnight under consistent lighting: one top-down frame and one cross-section whenever you change a variable tied to why-cookies-lose-freshness-overnight.",
-        "Include a reference object in frame—a ruler edge or coin—so zoom crops do not fool you about spread thickness or bubble size later.",
-        "Store images in a dated folder alongside gram weights; future comparisons become obvious instead of debated from memory."
-      ]
-    },
-    {
-      "heading": "Results vocabulary that travels",
-      "paragraphs": [
-        "When you write notes for why-cookies-lose-freshness-overnight, cap texture adjectives at three per bake—chewy, sandy, spongy—and flavor adjectives at three so comparisons week-to-week stay comparable.",
-        "Note finish temperature and resting minutes beside taste descriptors; many off-notes are phase-dependent especially for dairy, chocolate, and coffee oils.",
-        "If a friend tastes blind, record their words verbatim; fresh language catches patterns you normalized away."
+        "Day-two cookies are the same formula with a different ending: moisture walks out the door, sugars find each other and crystallize, and the crumb tightens while aromas fade. The container and how long you waited before sealing are part of the plot, not footnotes. When you compare tins, bags, and freezer, write what changed in one sentence per batch—chew versus snap at breakfast, tacky edges or dry shoulders. That is enough for future you to trust the science instead of chasing random “mystery humectants.”"
       ]
     }
   ],

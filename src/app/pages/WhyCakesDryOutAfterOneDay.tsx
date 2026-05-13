@@ -45,8 +45,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Time and temperature storage map",
       "paragraphs": [
-        "Room temperature (68–72°F / 20–22°C) for butter cakes in airtight domes often beats fridge for texture for 1–2 days if food safety allows. High-sugar/high-acid items resist mold longer than dairy-heavy fillings alone.",
-        "Simple syrup (sugar–water brushed on layers) increases free moisture and can mask firming crumb—classic pastry trick without changing the bake itself."
+        "Room temperature (68–72°F / 20–22°C) for butter cakes in airtight domes often beats fridge for texture for 1–2 days if food safety allows. High-sugar/high-acid items resist mold longer than dairy-heavy fillings alone. Simple syrup (sugar–water brushed on layers) increases free moisture and can mask firming crumb—classic pastry trick without changing the bake itself."
       ]
     },
     {

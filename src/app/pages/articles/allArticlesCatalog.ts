@@ -1,6 +1,14 @@
 import { ARTICLE_LIBRARY_TAB_IDS, type ArticleLibraryTabId } from '../../constants/articleLibraryNav';
 
-/** One card on the /articles grid — full roster is `ALL_ARTICLES_CATALOG` in this file only. */
+/**
+ * One card per URL on the /articles grid. The full list is `ALL_ARTICLES_CATALOG`.
+ *
+ * ScienceArticleSpec / long-form routes live in `articleContentRoutes.tsx` and
+ * `inlineGapArticleRoutes.tsx`. Keep them in sync with this catalog:
+ * - Regenerate the path checklist: `node scripts/generate-routed-article-paths.mjs`
+ * - Every generated path must appear exactly once below as a card `url` (single- or double-quoted).
+ * - Verify coverage: `node scripts/verify-catalog-covers-routed-paths.mjs`
+ */
 export type ArticleLibraryCard = {
   title: string;
   description: string;
@@ -1879,3 +1887,6 @@ export const ARTICLE_TABS: { id: TabId; label: string; category: 'FIX_IT' | 'ALL
 export function getAllArticleCards(): ArticleLibraryCard[] {
   return ALL_ARTICLES_CATALOG;
 }
+
+/** Canonical list of routed long-form article URLs (synced via generate-routed-article-paths.mjs). */
+export { ROUTED_SPEC_ARTICLE_PATH_SET, ROUTED_SPEC_ARTICLE_PATHS } from './routedScienceArticlePaths';

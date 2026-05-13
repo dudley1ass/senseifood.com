@@ -15,22 +15,18 @@ const SPEC: ScienceArticleSpec = {
     "problem": "general"
   },
   "quickAnswer": "Ultra-processed foods combine refined carbs, fat, and salt with rapid oral processing and low fiber, so you ingest many calories before stretch receptors and hormones catch up. They are not evil chemistry; they are optimized for palatability and shelf life, which predictably raises ad libitum intake for many people.",
-  "intro": "Overeating here is not a moral failure; it is an expected response to foods engineered to disappear quickly on the tongue while lighting up reward pathways. This article unpacks energy density, emulsions that melt fast, crunch-salt-fat loops, and why soda is a different satiety category than beans. The goal is clarity for meal planning, not fear. Intake awareness improves with environment design: pre-portion snacks into labeled containers and log package grams consumed, not just opened bags. Record eating context—screens, car, social—because attention splits intake. When comparing similar calories, note fiber and protein on labels; low values predict faster return hunger for many people. If you cook often, compare ad libitum intake of home meals versus takeout nights with identical rough calories. SenseiFood encourages curiosity about engineering without shame because understanding reduces accidental overconsumption.",
+  "intro": "Overeating here is not a moral failure; it is an expected response to foods engineered to disappear quickly on the tongue while lighting up reward pathways. This article unpacks energy density, emulsions that melt fast, crunch-salt-fat loops, and why soda is a different satiety category than beans. The goal is clarity for meal planning, not fear. You do not need a laboratory notebook—just enough honesty about context to see where calories sneak in while your attention is elsewhere, and enough structure (protein, fiber, portioning) so whole-food meals still feel satisfying when you decide to lean on them more often.",
   "sections": [
     {
       "heading": "Vanishing caloric density and texture speed",
       "paragraphs": [
-        "Foods that melt or dissolve quickly reduce oral exposure time, lowering early satiety cues per calorie.",
-        "Air-puffed snacks deliver salt and starch with little mechanical work.",
-        "Smooth emulsions coat the mouth evenly, increasing perceived pleasure per bite."
+        "Foods that melt or dissolve quickly reduce oral exposure time, lowering early satiety cues per calorie. Air-puffed snacks deliver salt and starch with little mechanical work. Smooth emulsions coat the mouth evenly, increasing perceived pleasure per bite."
       ]
     },
     {
       "heading": "Salt, sugar, and umami synergy",
       "paragraphs": [
-        "Bliss point formulations balance salt, sugar, and fat where liking peaks without quick sensory fatigue.",
-        "Umami amplifiers extend savory persistence.",
-        "Sweet-fat combinations rarely exist at that intensity in whole foods."
+        "Bliss point formulations balance salt, sugar, and fat where liking peaks without quick sensory fatigue. Umami amplifiers extend savory persistence. Sweet-fat combinations rarely exist at that intensity in whole foods."
       ]
     },
     {
@@ -38,38 +34,22 @@ const SPEC: ScienceArticleSpec = {
       "paragraphs": [
         "Many packaged snacks are low in protein and fiber relative to calories, weakening ileal brake signals.",
         "Liquid calories skip chewing cues entirely.",
-        "Large packages and wide variety increase passive intake."
+        "Large packages and wide variety increase passive intake.",
+        "Variety packs and mixed-flavor boxes exploit sensory-specific satiety: when one note fatigues, another flavor still feels fresh, so pause cues arrive later than they would with a single boring starch."
       ]
     },
     {
       "heading": "How Fix My Recipe helps",
       "paragraphs": [
-        "Cooking from measured bases increases awareness even when you still enjoy treats.",
-        "Pair nutrition reads with practical plate templates from other SenseiFood articles."
+        "When you are cooking at home, measured bases still matter: SenseiFood’s Fix My Recipe debugger is built for baking and coffee ratios, but the same habit—grams on the scale, one change at a time—carries over to noticing how often ultraprocessed items replace meals you would otherwise assemble from simpler ingredients. Pair this article with practical plate templates in other SenseiFood nutrition reads so your defaults include enough protein and fiber to compete with engineered snacks on fullness, not just on willpower."
       ]
     },
     {
-      "heading": "Debugging field notes",
+      "heading": "What to notice without turning meals into a spreadsheet",
       "paragraphs": [
-        "Tag \"why-processed-foods-are-easy-to-overeat\" at the top of your kitchen log for this project so PDF exports and screenshots stay searchable across seasons.",
-        "List equipment IDs that mattered that day: scale model, mixer speed used, oven rack height, and burr grinder zero point if coffee-adjacent—all drift over years.",
-        "State one falsifiable hypothesis before the run and record whether results supported or rejected it; negative evidence prevents repeating expensive guesses."
-      ]
-    },
-    {
-      "heading": "Photographic evidence checklist",
-      "paragraphs": [
-        "Photograph Why Processed Foods Are Easy to Overeat under consistent lighting: one top-down frame and one cross-section whenever you change a variable tied to why-processed-foods-are-easy-to-overeat.",
-        "Include a reference object in frame—a ruler edge or coin—so zoom crops do not fool you about spread thickness or bubble size later.",
-        "Store images in a dated folder alongside gram weights; future comparisons become obvious instead of debated from memory."
-      ]
-    },
-    {
-      "heading": "Results vocabulary that travels",
-      "paragraphs": [
-        "When you write notes for why-processed-foods-are-easy-to-overeat, cap texture adjectives at three per bake—chewy, sandy, spongy—and flavor adjectives at three so comparisons week-to-week stay comparable.",
-        "Note finish temperature and resting minutes beside taste descriptors; many off-notes are phase-dependent especially for dairy, chocolate, and coffee oils.",
-        "If a friend tastes blind, record their words verbatim; fresh language catches patterns you normalized away."
+        "If you want a clearer picture of your own patterns, skip serial numbers and camera rigs; instead write a few plain sentences after meals you care about—where you were, whether a screen was on, and whether the food was crunchy, melty, or sipped from a cup. Those cues line up with the mechanisms above: distraction weakens interoception, and texture speed changes how many calories land before your brain registers slowing down.",
+        "Portion environment matters more than mixer brands: large bags, wide bowls, and eating straight from the package remove natural stopping points, so one practical experiment is to pre-portion snacks into small containers for a week and see whether total intake drifts down without any heroic restriction. You are not proving a thesis to a lab; you are checking whether your appetite behaves differently when the default path is slightly harder.",
+        "When you compare two days, look at fiber and protein across whole meals—not as moral scores, but as structural explanations for why one afternoon felt snack-stable and another felt like grazing. That is the kind of logging that actually matches this topic: context, package shape, and meal composition, not equipment model numbers that belong in a bakery maintenance log."
       ]
     }
   ],

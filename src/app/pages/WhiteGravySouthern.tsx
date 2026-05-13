@@ -17,15 +17,13 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Heat discipline",
       "paragraphs": [
-        "After the roux, add milk in stages while whisking. A vigorous boil can break emulsion and scorch dairy on the pan floor; you want a steady, gentle bubble while thickening.",
-        "Black pepper is traditional; add in layers so heat and aroma stay balanced with salt."
+        "After the roux, add milk in stages while whisking. A vigorous boil can break emulsion and scorch dairy on the pan floor; you want a steady, gentle bubble while thickening. Black pepper is traditional; add in layers so heat and aroma stay balanced with salt."
       ]
     },
     {
       "heading": "What “done” feels like",
       "paragraphs": [
-        "The sauce should coat a spoon and pool slowly on a plate — if it is runny, reduce a bit longer before adding more fat. If it is gluey, thin with a splash of milk and re-season.",
-        "Open the Sauce Sensei build for this variant to align grams with the wheel’s style target band for white gravy."
+        "The sauce should coat a spoon and pool slowly on a plate — if it is runny, reduce a bit longer before adding more fat. If it is gluey, thin with a splash of milk and re-season. Open the Sauce Sensei build for this variant to align grams with the wheel’s style target band for white gravy."
       ]
     },
     {

@@ -45,16 +45,14 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Salt timing and even distribution",
       "paragraphs": [
-        "Salt controls fermentation rate and tightens gluten. Sprinkled late onto a wet patch, it dissolves unevenly and can create locally slow fermentation next to hyperactive zones—patchy flavor development. Mixing technique that ensures even dispersion pays flavor dividends beyond structure.",
-        "Under-salted bread tastes flat even when fermentation is good because salt is a flavor amplifier. If acidity reads strong but everything else feels mute, check salt grams relative to flour, not only time and temperature."
+        "Salt controls fermentation rate and tightens gluten. Sprinkled late onto a wet patch, it dissolves unevenly and can create locally slow fermentation next to hyperactive zones—patchy flavor development. Mixing technique that ensures even dispersion pays flavor dividends beyond structure. Under-salted bread tastes flat even when fermentation is good because salt is a flavor amplifier. If acidity reads strong but everything else feels mute, check salt grams relative to flour, not only time and temperature."
       ],
       "tip": "If you change salt brand or grind size, weigh—volume measures drift and surprise you at scale."
     },
     {
       "heading": "Crust development and flour choice",
       "paragraphs": [
-        "Pale, soft crusts deliver fewer roasted notes. Adequate heat, steam management, and sometimes a touch of sugar or diastatic malt in formula influence crust chemistry. A loaf that never browns reads sweet and yeasty without the counterpoint of Maillard products.",
-        "Flour freshness and ash content change aromatic potential; aged white flour can taste milder than stone-milled whole grain. If your process is sound and flavor still disappoints, compare batches of flour or try a small percentage of whole grain or heritage wheat for complexity without rewriting your hydration model."
+        "Pale, soft crusts deliver fewer roasted notes. Adequate heat, steam management, and sometimes a touch of sugar or diastatic malt in formula influence crust chemistry. A loaf that never browns reads sweet and yeasty without the counterpoint of Maillard products. Flour freshness and ash content change aromatic potential; aged white flour can taste milder than stone-milled whole grain. If your process is sound and flavor still disappoints, compare batches of flour or try a small percentage of whole grain or heritage wheat for complexity without rewriting your hydration model."
       ]
     }
   ],

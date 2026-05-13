@@ -44,8 +44,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Oven temp and leavening balance",
       "paragraphs": [
-        "Try 325°F (163°C) instead of 350°F (177°C) for longer, gentler rise if your oven runs hot at the perimeter. Verify with a thermometer—many “325” bakes are actually 340°F at the cake zone.",
-        "Double-check baking powder freshness and measure by weight; an accidental double dose creates a bubble storm that outruns structure."
+        "Try 325°F (163°C) instead of 350°F (177°C) for longer, gentler rise if your oven runs hot at the perimeter. Verify with a thermometer—many “325” bakes are actually 340°F at the cake zone. Double-check baking powder freshness and measure by weight; an accidental double dose creates a bubble storm that outruns structure."
       ]
     },
     {

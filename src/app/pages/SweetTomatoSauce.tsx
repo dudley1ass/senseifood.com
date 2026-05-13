@@ -17,23 +17,20 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Simmer with a plan",
       "paragraphs": [
-        "Long simmer integrates aromatics and mellows harsh notes from canned tomatoes. Sugar should solve bitterness or sharpness, not turn the sauce into dessert—taste after each pinch and log what you add once you find the band you like.",
-        "If the sauce is thin, reduce before sweetening harder; concentration changes acid perception, salt perception, and sweetness perception together."
+        "Long simmer integrates aromatics and mellows harsh notes from canned tomatoes. Sugar should solve bitterness or sharpness, not turn the sauce into dessert—taste after each pinch and log what you add once you find the band you like. If the sauce is thin, reduce before sweetening harder; concentration changes acid perception, salt perception, and sweetness perception together."
       ]
     },
     {
       "heading": "Salt late and deliberately",
       "paragraphs": [
-        "Tomato products vary wildly in baseline salt and acid; season near the end of cooking for predictable results when possible. If you must salt early for sweating aromatics, under-target finishing salt.",
-        "Cheese finishes (parmesan) bring salt—account for them before final adjustment."
+        "Tomato products vary wildly in baseline salt and acid; season near the end of cooking for predictable results when possible. If you must salt early for sweating aromatics, under-target finishing salt. Cheese finishes (parmesan) bring salt—account for them before final adjustment."
       ],
       "tip": "Taste at service temperature; cold sauce reads less sweet and more acid than hot."
     },
     {
       "heading": "Fat choice and mouthfeel",
       "paragraphs": [
-        "Butter adds roundness and a soft finish; olive oil adds fruit and pepper notes. Blending both is common for complexity. Enough fat helps sugar feel integrated rather than granular on the palate.",
-        "If the sauce feels watery-sweet, you may need body from reduction or a small starch route—not more sugar."
+        "Butter adds roundness and a soft finish; olive oil adds fruit and pepper notes. Blending both is common for complexity. Enough fat helps sugar feel integrated rather than granular on the palate. If the sauce feels watery-sweet, you may need body from reduction or a small starch route—not more sugar."
       ],
       "bullets": [
         {
@@ -45,15 +42,13 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Acid without harshness",
       "paragraphs": [
-        "Sometimes a small lemon pinch or wine reduction adds depth without reading sharp—add after sugar and salt are close, because acid last moves the whole picture.",
-        "Baking soda pinches can mellow very acidic cans—use sparingly and taste; it can muddy flavor if overdone."
+        "Sometimes a small lemon pinch or wine reduction adds depth without reading sharp—add after sugar and salt are close, because acid last moves the whole picture. Baking soda pinches can mellow very acidic cans—use sparingly and taste; it can muddy flavor if overdone."
       ]
     },
     {
       "heading": "Herbs, alliums, and finishing",
       "paragraphs": [
-        "Basil and oregano behave differently with sweet profiles—basil reads pizza-friendly; too much dried herb can taste dusty against soft sugar.",
-        "Finish delicate herbs at the end; allow long-cooked alliums to sweeten the base honestly."
+        "Basil and oregano behave differently with sweet profiles—basil reads pizza-friendly; too much dried herb can taste dusty against soft sugar. Finish delicate herbs at the end; allow long-cooked alliums to sweeten the base honestly."
       ]
     }
   ],

@@ -45,8 +45,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Cooling protocol",
       "paragraphs": [
-        "Space 2 inches on sheet; move to wire rack before fully cool so bases do not steam-weld to pan neighbors.",
-        "Layer storage with parchment between when still slightly warm."
+        "Space 2 inches on sheet; move to wire rack before fully cool so bases do not steam-weld to pan neighbors. Layer storage with parchment between when still slightly warm."
       ]
     },
     {

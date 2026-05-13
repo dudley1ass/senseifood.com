@@ -21,8 +21,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Maillard load on protein vs acid in sauce",
       "paragraphs": [
-        "Deep sear and long reduction both push roasted, bitter-tending melanoidins. If your sauce also leans on reduced wine, charred allium, or aggressive caramel, you can stack two bitter anchors without a sweet or creamy bridge. The palate reads confusion: nothing feels like the “main note,” so each bite argues.",
-        "Fixes are reduction-of-intensity or addition-of-bridge: choose either less sear or a mellower sauce base; add a controlled sweet (fruit, mirin used thoughtfully) or dairy/emulsion fat to bind the edges; or lift umami with a small amount of glutamate-rich ingredients so salt does less heavy lifting."
+        "Deep sear and long reduction both push roasted, bitter-tending melanoidins. If your sauce also leans on reduced wine, charred allium, or aggressive caramel, you can stack two bitter anchors without a sweet or creamy bridge. The palate reads confusion: nothing feels like the “main note,” so each bite argues. Fixes are reduction-of-intensity or addition-of-bridge: choose either less sear or a mellower sauce base; add a controlled sweet (fruit, mirin used thoughtfully) or dairy/emulsion fat to bind the edges; or lift umami with a small amount of glutamate-rich ingredients so salt does less heavy lifting."
       ],
       "bullets": [
         {
@@ -38,15 +37,13 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Temperature at contact",
       "paragraphs": [
-        "Temperature changes volatility. A cold chimichurri on scorching steak can flash off aromatics before you taste them, leaving mainly acid and oil. Conversely, a butter-emulsion sauce that is too hot can feel thin and greasy on the tongue because fat separates perceptionally from the protein’s chew.",
-        "Temper toward closeness: warm the sauce to near service temperature of the meat for emulsions; for bright herb sauces, consider spooning onto rested slices so the meat surface is not still radiating enough heat to obliterate delicate top notes."
+        "Temperature changes volatility. A cold chimichurri on scorching steak can flash off aromatics before you taste them, leaving mainly acid and oil. Conversely, a butter-emulsion sauce that is too hot can feel thin and greasy on the tongue because fat separates perceptionally from the protein’s chew. Temper toward closeness: warm the sauce to near service temperature of the meat for emulsions; for bright herb sauces, consider spooning onto rested slices so the meat surface is not still radiating enough heat to obliterate delicate top notes."
       ]
     },
     {
       "heading": "Sequence in composed bites",
       "paragraphs": [
-        "Thickness changes where flavor lands. A thin jus pooled under slices integrates into every bite; a thick glaze painted on top can taste like dessert-on-meat unless sweetness and acid are balanced for that placement. Think about fork behavior: will diners drag through sauce, or lift meat through it?",
-        "Design one primary contrast per bite—acid *or* sweet spike *or* crunchy garnish—not all three unless you have fat and umami holding the center."
+        "Thickness changes where flavor lands. A thin jus pooled under slices integrates into every bite; a thick glaze painted on top can taste like dessert-on-meat unless sweetness and acid are balanced for that placement. Think about fork behavior: will diners drag through sauce, or lift meat through it? Design one primary contrast per bite—acid *or* sweet spike *or* crunchy garnish—not all three unless you have fat and umami holding the center."
       ]
     },
     {

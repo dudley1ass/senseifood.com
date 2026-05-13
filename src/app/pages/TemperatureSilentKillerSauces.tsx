@@ -17,23 +17,20 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Low heat and high heat fail differently",
       "paragraphs": [
-        "Low heat can leave aromatics under-extracted and emulsions under-formed, giving a flat, disconnected flavor. High heat does the opposite: it pushes proteins and fat droplets past stability limits, so butter, cream, and cheese sauces separate.",
-        "This is why two cooks using the same grams can get opposite outcomes. The process history matters more than static composition."
+        "Low heat can leave aromatics under-extracted and emulsions under-formed, giving a flat, disconnected flavor. High heat does the opposite: it pushes proteins and fat droplets past stability limits, so butter, cream, and cheese sauces separate. This is why two cooks using the same grams can get opposite outcomes. The process history matters more than static composition."
       ],
       "tip": "If a sauce breaks, LOWER HEAT before adding any fix ingredient."
     },
     {
       "heading": "State beats ratio",
       "paragraphs": [
-        "Flavor wheels describe balance dimensions like salt, fat, acid, and sweet. Temperature describes physical state. A sauce can be “balanced” on paper but unstable in the pan because the emulsion state has already failed.",
-        "Use visual cues: tiny active bubbles and glossy surface are usually safer than aggressive rolling boil when finishing with dairy fat."
+        "Flavor wheels describe balance dimensions like salt, fat, acid, and sweet. Temperature describes physical state. A sauce can be “balanced” on paper but unstable in the pan because the emulsion state has already failed. Use visual cues: tiny active bubbles and glossy surface are usually safer than aggressive rolling boil when finishing with dairy fat."
       ]
     },
     {
       "heading": "Practical thermal workflow",
       "paragraphs": [
-        "Build flavor at higher heat, then step down before finishing. Add butter, cream, or cheese at controlled sub-boil or off-heat carryover. Re-check texture before final seasoning.",
-        "Treat your stove like equipment with calibration variance. “Medium” is not universal; note your own dial positions that produce reliable sauce behavior."
+        "Build flavor at higher heat, then step down before finishing. Add butter, cream, or cheese at controlled sub-boil or off-heat carryover. Re-check texture before final seasoning. Treat your stove like equipment with calibration variance. “Medium” is not universal; note your own dial positions that produce reliable sauce behavior."
       ]
     },
     {

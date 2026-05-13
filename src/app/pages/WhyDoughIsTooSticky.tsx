@@ -20,8 +20,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Development timeline",
       "paragraphs": [
-        "In the first minutes after combining flour and water, the mass shreds and sticks. After rest and mechanical work, proteins align and the dough becomes smoother and less clingy. If you add flour during the ugly phase, you permanently change the formula.",
-        "Try a 20–30 minute autolyse (flour and water only) before adding salt and yeast on the next attempt; many sticky complaints vanish."
+        "In the first minutes after combining flour and water, the mass shreds and sticks. After rest and mechanical work, proteins align and the dough becomes smoother and less clingy. If you add flour during the ugly phase, you permanently change the formula. Try a 20–30 minute autolyse (flour and water only) before adding salt and yeast on the next attempt; many sticky complaints vanish."
       ]
     },
     {
@@ -46,8 +45,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Absorption and autolyse",
       "paragraphs": [
-        "Resting flour and water allows hydration without kneading—less sticky feel after 20–60 minutes. Salt added late in autolyse preserves enzyme control.",
-        "Different wheat crops absorb differently—same recipe, new bag of flour may need ±2% water."
+        "Resting flour and water allows hydration without kneading—less sticky feel after 20–60 minutes. Salt added late in autolyse preserves enzyme control. Different wheat crops absorb differently—same recipe, new bag of flour may need ±2% water."
       ]
     },
     {

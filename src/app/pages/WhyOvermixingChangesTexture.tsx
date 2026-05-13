@@ -14,62 +14,37 @@ const SPEC: ScienceArticleSpec = {
     "category": "baking",
     "problem": "general"
   },
-  "quickAnswer": "Overmixing after flour hydrates aligns gluten strands and can incorporate excess air that tunnels in cakes or toughens muffins, while in bread doughs more mixing increases strength by design. Match mixing intent to formula: muffin method wants minimal gluten; bread wants windowpane; cookies sit between depending on fat creaming stage.",
-  "intro": "“Do not overmix” is not superstition; it is shorthand for controlling gluten development, bubble population, and batter temperature. The same mixer speed is constructive for creaming butter and destructive for finishing delicate cake flour. This article separates stages, names visual cues, and connects overmixing symptoms to fixes without banning your stand mixer. Mixer forensics help: record speed, time after flour add, and bowl scraping frequency. Film top-down once; count revolutions until gluten window appears for bread versus cake. If you use hand mixers, note attachment type because beaters incorporate air differently than paddles. Temperature log the batter surface with an IR gun because friction heat is real. When teaching kids, show the same batter at ten versus sixty seconds after flour to make risk visible. SenseiFood encourages pairing these observations with ratio checks so you do not overcorrect chemistry when process was the bug.",
+  "quickAnswer": "Overmixing after flour hydrates aligns gluten strands and can incorporate excess air that tunnels in cakes or toughens muffins, while in bread doughs more mixing increases strength by design. Match mixing intent to formula: muffin method wants minimal gluten; bread wants windowpane; cookies sit between depending on fat creaming stage. When in doubt, finish folding dry ingredients by hand: you trade thirty seconds of convenience for a floor on gluten that the mixer cannot accidentally sprint through.",
+  "intro": "“Do not overmix” is not superstition; it is shorthand for controlling gluten development, bubble population, and batter temperature. The same mixer speed is constructive for creaming butter and destructive for finishing delicate cake flour. This article separates stages, names visual cues, and connects overmixing symptoms to fixes without banning your stand mixer. Mixer forensics help: record speed, time after flour add, and bowl scraping frequency. Film top-down once; count revolutions until gluten window appears for bread versus cake. If you use hand mixers, note attachment type because beaters incorporate air differently than paddles. Temperature log the batter surface with an IR gun because friction heat is real. When teaching kids, show the same batter at ten versus sixty seconds after flour to make risk visible. SenseiFood encourages pairing these observations with ratio checks so you do not overcorrect chemistry when process was the bug. Mixing is pacing. Creaming wants air; cake flour wants a light hand once hydrated gluten is on the table. The stand mixer is not evil, but the last thirty seconds after adding dry ingredients can rewrite a tender crumb into a chewy one. Treat “just combined” as a scene ending, not a suggestion, and your bakes stop punishing enthusiasm.",
   "sections": [
     {
       "heading": "Gluten development after hydration",
       "paragraphs": [
-        "Once water meets gliadin and glutenin, mechanical work aligns them into elastic networks.",
-        "Quick breads and cakes want limited alignment; bread wants extensive alignment.",
-        "Fold versus beat choices change crumb openness even when grams are identical."
+        "Once water meets gliadin and glutenin, mechanical work aligns them into elastic networks. Quick breads and cakes want limited alignment; bread wants extensive alignment. Fold versus beat choices change crumb openness even when grams are identical."
       ]
     },
     {
       "heading": "Air cell population and tunneling",
       "paragraphs": [
-        "Excess air nuclei coalesce into large voids that set as tunnels or peaks crack from uneven expansion.",
-        "Mixer introduces finer bubbles than chemical leaveners alone; timing matters for oven spring synergy.",
-        "Warm batter from long mixing accelerates chemical leavening prematurely."
+        "Excess air nuclei coalesce into large voids that set as tunnels or peaks crack from uneven expansion. Mixer introduces finer bubbles than chemical leaveners alone; timing matters for oven spring synergy. Warm batter from long mixing accelerates chemical leavening prematurely."
       ]
     },
     {
       "heading": "Temperature creep and fat smearing",
       "paragraphs": [
-        "Warm friction can smear solid fat in pie dough, killing flake.",
-        "In cookies, late-stage over-beating after flour can warm dough and increase spread unpredictably.",
-        "Scraping the bowl matters because unmixed pockets hide next to overworked zones."
+        "Warm friction can smear solid fat in pie dough, killing flake. In cookies, late-stage over-beating after flour can warm dough and increase spread unpredictably. Scraping the bowl matters because unmixed pockets hide next to overworked zones."
       ]
     },
     {
       "heading": "How Fix My Recipe helps",
       "paragraphs": [
-        "Baking mode highlights when ratios suggest tender textures but your process overdevelops gluten.",
-        "Film a top-down mix once; count seconds after flour add for repeatability."
+        "Baking mode highlights when ratios suggest tender textures but your process overdevelops gluten. Film a top-down mix once; count seconds after flour add for repeatability."
       ]
     },
     {
-      "heading": "Debugging field notes",
+      "heading": "Mixing as pacing, not power tools",
       "paragraphs": [
-        "Tag \"why-overmixing-changes-texture\" at the top of your kitchen log for this project so PDF exports and screenshots stay searchable across seasons.",
-        "List equipment IDs that mattered that day: scale model, mixer speed used, oven rack height, and burr grinder zero point if coffee-adjacent—all drift over years.",
-        "State one falsifiable hypothesis before the run and record whether results supported or rejected it; negative evidence prevents repeating expensive guesses."
-      ]
-    },
-    {
-      "heading": "Photographic evidence checklist",
-      "paragraphs": [
-        "Photograph Why Overmixing Changes Texture under consistent lighting: one top-down frame and one cross-section whenever you change a variable tied to why-overmixing-changes-texture.",
-        "Include a reference object in frame—a ruler edge or coin—so zoom crops do not fool you about spread thickness or bubble size later.",
-        "Store images in a dated folder alongside gram weights; future comparisons become obvious instead of debated from memory."
-      ]
-    },
-    {
-      "heading": "Results vocabulary that travels",
-      "paragraphs": [
-        "When you write notes for why-overmixing-changes-texture, cap texture adjectives at three per bake—chewy, sandy, spongy—and flavor adjectives at three so comparisons week-to-week stay comparable.",
-        "Note finish temperature and resting minutes beside taste descriptors; many off-notes are phase-dependent especially for dairy, chocolate, and coffee oils.",
-        "If a friend tastes blind, record their words verbatim; fresh language catches patterns you normalized away."
+        "Overmixing is the scene where gluten or bubbles steal the spotlight from tenderness: the batter looked fine until the last aggressive minute. Creaming and finishing ask for different energy; the ending texture is the moral. Watch the window after flour appears and finish folding by hand when the recipe is fragile. One line about “ten seconds too long” saves more batches than logging mixer SKUs."
       ]
     }
   ],

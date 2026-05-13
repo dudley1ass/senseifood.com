@@ -44,8 +44,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Maillard, sugar, and masking",
       "paragraphs": [
-        "Browning reactions produce hundreds of aroma compounds that compete with egg’s mild sulfury notes. Under-browned, pale sponges with high egg ratio read “eggy” faster than well-caramelized surfaces. A few grams of brown sugar or milk powder can increase Maillard without rewriting the formula.",
-        "Salt shifts flavor perception broadly; many “eggy” complaints disappear with ⅛–¼ tsp more salt in a test batch—measure by weight for repeatability."
+        "Browning reactions produce hundreds of aroma compounds that compete with egg’s mild sulfury notes. Under-browned, pale sponges with high egg ratio read “eggy” faster than well-caramelized surfaces. A few grams of brown sugar or milk powder can increase Maillard without rewriting the formula. Salt shifts flavor perception broadly; many “eggy” complaints disappear with ⅛–¼ tsp more salt in a test batch—measure by weight for repeatability."
       ]
     },
     {

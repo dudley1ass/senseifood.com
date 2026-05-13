@@ -44,8 +44,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Leavening chemistry and clock time",
       "paragraphs": [
-        "Double-acting baking powder releases at wet mix and again with heat; letting batter sit 30 minutes on the counter can exhaust the first reaction. Baking soda needs acid; if pH is wrong, CO₂ is weak or fast and uncontrolled.",
-        "Creaming aerates mechanically—under-creamed butter leaves less nucleation for oven spring, especially in recipes that lean on chemical leavening only lightly."
+        "Double-acting baking powder releases at wet mix and again with heat; letting batter sit 30 minutes on the counter can exhaust the first reaction. Baking soda needs acid; if pH is wrong, CO₂ is weak or fast and uncontrolled. Creaming aerates mechanically—under-creamed butter leaves less nucleation for oven spring, especially in recipes that lean on chemical leavening only lightly."
       ]
     },
     {

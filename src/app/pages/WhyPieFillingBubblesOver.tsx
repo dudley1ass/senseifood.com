@@ -44,8 +44,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Vents and lattice",
       "paragraphs": [
-        "Enough vent area prevents pressure build-up; egg wash sealing edges too well traps steam.",
-        "Foil ring on crust edge reduces over-brown while center finishes to safe 195–200°F (91–93°C) for thickened fruit."
+        "Enough vent area prevents pressure build-up; egg wash sealing edges too well traps steam. Foil ring on crust edge reduces over-brown while center finishes to safe 195–200°F (91–93°C) for thickened fruit."
       ]
     },
     {

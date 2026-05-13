@@ -21,8 +21,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Mixing sequence and fat coating",
       "paragraphs": [
-        "Classic creaming creates a fat phase that can partially coat starch before bulk hydration, reducing free-water channels that clump dry flour. Dumping liquid into loose flour, by contrast, risks uneven paste formation and tiny dry nodules that survive mixing visually intact until the bake exposes them.",
-        "Under-mixing after flour addition leaves visible streaks; even if streaks vanish, micro-layers of under-hydrated starch can remain. The fix is thorough but gentle incorporation—enough revolutions to homogenize, not so much that you breadify the dough unless the recipe intends it."
+        "Classic creaming creates a fat phase that can partially coat starch before bulk hydration, reducing free-water channels that clump dry flour. Dumping liquid into loose flour, by contrast, risks uneven paste formation and tiny dry nodules that survive mixing visually intact until the bake exposes them. Under-mixing after flour addition leaves visible streaks; even if streaks vanish, micro-layers of under-hydrated starch can remain. The fix is thorough but gentle incorporation—enough revolutions to homogenize, not so much that you breadify the dough unless the recipe intends it."
       ],
       "bullets": [
         {
@@ -38,8 +37,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Bake temperature, thickness, and spread",
       "paragraphs": [
-        "Thick mounds set tops fast while interiors lag in temperature. Lowering oven temperature slightly and extending time gives the center a chance to finish gelatinizing without scorching the rim. Pressing dough disks flatter increases heat penetration per bite depth—a practical lever for persistent floury centers.",
-        "Convection can help even heating but also accelerate surface set; rotate trays and watch color on both top and bottom because pale bottoms can correlate with undercooked cores on insulated mats."
+        "Thick mounds set tops fast while interiors lag in temperature. Lowering oven temperature slightly and extending time gives the center a chance to finish gelatinizing without scorching the rim. Pressing dough disks flatter increases heat penetration per bite depth—a practical lever for persistent floury centers. Convection can help even heating but also accelerate surface set; rotate trays and watch color on both top and bottom because pale bottoms can correlate with undercooked cores on insulated mats."
       ],
       "tip": "If edges are dark and centers still taste floury, thickness is the prime suspect—geometry beat your bake, not the clock alone."
     },
@@ -53,8 +51,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Differentiating floury from starchy-thick or dry",
       "paragraphs": [
-        "Cakey cookies can feel moist yet still carry cereal notes if structure set via egg foam rather than full starch cook in the thickest region—taste carefully. Dry cookies crumble and feel low moisture everywhere; floury cookies often feel oddly pasty in the middle while edges are fine.",
-        "Chocolate-heavy doughs can hide visual cues; break a cookie open and look at crumb color and sheen near the center. Uniform color and no gray raw streaks are good signs that starch reached gelatinization."
+        "Cakey cookies can feel moist yet still carry cereal notes if structure set via egg foam rather than full starch cook in the thickest region—taste carefully. Dry cookies crumble and feel low moisture everywhere; floury cookies often feel oddly pasty in the middle while edges are fine. Chocolate-heavy doughs can hide visual cues; break a cookie open and look at crumb color and sheen near the center. Uniform color and no gray raw streaks are good signs that starch reached gelatinization."
       ]
     }
   ],

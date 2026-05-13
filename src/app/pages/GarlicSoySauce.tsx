@@ -17,23 +17,20 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Aromatics: garlic color is flavor destiny",
       "paragraphs": [
-        "Infuse oil with garlic without hard browning unless you want the sharp, almost acrid note of intentionally toasted garlic. For most table sauces, pale-to-light-gold garlic gives sweetness; dark brown garlic in thin oil becomes bitter fast.",
-        "Slice versus mince changes burn rate—match cut to heat level. Microplaned garlic burns almost instantly on hot metal."
+        "Infuse oil with garlic without hard browning unless you want the sharp, almost acrid note of intentionally toasted garlic. For most table sauces, pale-to-light-gold garlic gives sweetness; dark brown garlic in thin oil becomes bitter fast. Slice versus mince changes burn rate—match cut to heat level. Microplaned garlic burns almost instantly on hot metal."
       ]
     },
     {
       "heading": "Soy timing and heat",
       "paragraphs": [
-        "Adding soy to a ripping-hot empty pan can flash harsh, almost burnt-caramel notes from sugars in the sauce. Lower heat before soy hits, or add soy off heat for a fresher profile.",
-        "If you want a light glaze, reduce a measured puddle; if you want a loose drizzle, stop before meaningful reduction—nonlinear salt concentration is real."
+        "Adding soy to a ripping-hot empty pan can flash harsh, almost burnt-caramel notes from sugars in the sauce. Lower heat before soy hits, or add soy off heat for a fresher profile. If you want a light glaze, reduce a measured puddle; if you want a loose drizzle, stop before meaningful reduction—nonlinear salt concentration is real."
       ],
       "tip": "Taste soy from the bottle occasionally—brands vary wildly in salinity and sweetness."
     },
     {
       "heading": "Dilution and rebalancing",
       "paragraphs": [
-        "If it is too salty for the dish, dilute with water or unsalted stock and re-reduce gently, or balance with a little sweet and fat at service without turning it into candy-soy.",
-        "Fat rounds salt perception; sweet bridges harsh edges—but verify salt threshold before stacking sugar."
+        "If it is too salty for the dish, dilute with water or unsalted stock and re-reduce gently, or balance with a little sweet and fat at service without turning it into candy-soy. Fat rounds salt perception; sweet bridges harsh edges—but verify salt threshold before stacking sugar."
       ],
       "bullets": [
         {
@@ -45,15 +42,13 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Optional acid and aroma finishes",
       "paragraphs": [
-        "A few drops of rice vinegar or lime can lift without dominating—add after salt makes sense. Sesame oil finishes should be last; heat destroys their top notes.",
-        "Scallions, ginger, or citrus zest add volatile aroma that soy alone cannot supply."
+        "A few drops of rice vinegar or lime can lift without dominating—add after salt makes sense. Sesame oil finishes should be last; heat destroys their top notes. Scallions, ginger, or citrus zest add volatile aroma that soy alone cannot supply."
       ]
     },
     {
       "heading": "Storage and safety notes",
       "paragraphs": [
-        "Garlic in oil at room temperature is a known botulism risk for long holds; refrigerate promptly and treat as short-lived unless following tested preservation methods.",
-        "For make-ahead, keep components separate until service when possible."
+        "Garlic in oil at room temperature is a known botulism risk for long holds; refrigerate promptly and treat as short-lived unless following tested preservation methods. For make-ahead, keep components separate until service when possible."
       ]
     }
   ],

@@ -45,8 +45,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Measurements and tools",
       "paragraphs": [
-        "Gram scales for flour and sugar remove the largest variance. Spooned cups vary 10–15% mass.",
-        "Same rack position and preheat stabilization (thermometer, not beep) matter."
+        "Gram scales for flour and sugar remove the largest variance. Spooned cups vary 10–15% mass. Same rack position and preheat stabilization (thermometer, not beep) matter."
       ]
     },
     {

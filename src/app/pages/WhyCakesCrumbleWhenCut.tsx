@@ -44,8 +44,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Temperature at slicing",
       "paragraphs": [
-        "Buttercream cakes slice cleaner at 65–70°F (18–21°C) than straight from the fridge at 38°F (3°C) where fat is rock-hard and starch is firm. For naked cakes, a brief sit reduces fracture.",
-        "Frozen-then-thawed layers can be extra fragile if ice crystals damaged cell walls—crumb coat to catch debris."
+        "Buttercream cakes slice cleaner at 65–70°F (18–21°C) than straight from the fridge at 38°F (3°C) where fat is rock-hard and starch is firm. For naked cakes, a brief sit reduces fracture. Frozen-then-thawed layers can be extra fragile if ice crystals damaged cell walls—crumb coat to catch debris."
       ]
     },
     {

@@ -44,8 +44,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Checklist",
       "paragraphs": [
-        "Same dose to 0.1g, same water temp measured at pour spout, same pour cadence—remove variables systematically.",
-        "Clean burrs—old fines change dose silently."
+        "Same dose to 0.1g, same water temp measured at pour spout, same pour cadence—remove variables systematically. Clean burrs—old fines change dose silently."
       ]
     },
     {

@@ -44,8 +44,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Relaxation temperature",
       "paragraphs": [
-        "Warmer dough relaxes faster; cold dough from fridge needs longer bench rest before final shape.",
-        "Over-strong mixing increases elastic memory—gentle handling after autolyse helps."
+        "Warmer dough relaxes faster; cold dough from fridge needs longer bench rest before final shape. Over-strong mixing increases elastic memory—gentle handling after autolyse helps."
       ]
     },
     {

@@ -20,22 +20,19 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Over-proofing and gluten fatigue",
       "paragraphs": [
-        "As fermentation continues, gluten stretches and eventually weakens. Gas bubbles merge into fewer, larger pockets that rupture easily during oven spring. The loaf may mushroom sideways or deflate when cooling.",
-        "Temperature swings amplify this: a long warm autolyse plus a hot kitchen can push a dough past its peak while you are not watching."
+        "As fermentation continues, gluten stretches and eventually weakens. Gas bubbles merge into fewer, larger pockets that rupture easily during oven spring. The loaf may mushroom sideways or deflate when cooling. Temperature swings amplify this: a long warm autolyse plus a hot kitchen can push a dough past its peak while you are not watching."
       ]
     },
     {
       "heading": "Insufficient surface tension",
       "paragraphs": [
-        "Shaping creates a taut skin that helps the loaf expand upward. Slack shaping yields sideways spread and uneven oven spring, which later settles into a collapsed silhouette.",
-        "Practice bench tension pulls without tearing the skin; if the dough tears, rest it five minutes and retry."
+        "Shaping creates a taut skin that helps the loaf expand upward. Slack shaping yields sideways spread and uneven oven spring, which later settles into a collapsed silhouette. Practice bench tension pulls without tearing the skin; if the dough tears, rest it five minutes and retry."
       ]
     },
     {
       "heading": "Scoring and steam",
       "paragraphs": [
-        "Steam delays crust hardening so the loaf can expand. Without steam, crust sets early and expansion tears happen in unpredictable places. With steam but no score, pressure bursts the weakest seam.",
-        "Scores are functional valves, not decoration. They should be deep enough for your dough strength—weak dough, shallower; strong dough, confident depth."
+        "Steam delays crust hardening so the loaf can expand. Without steam, crust sets early and expansion tears happen in unpredictable places. With steam but no score, pressure bursts the weakest seam. Scores are functional valves, not decoration. They should be deep enough for your dough strength—weak dough, shallower; strong dough, confident depth."
       ]
     },
     {
@@ -47,8 +44,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Oven spring window",
       "paragraphs": [
-        "Maximum expansion often occurs in the first 5–10 minutes when crust is still flexible; too low oven temperature delays crust set and can yield lateral spread instead of upward spring.",
-        "Steam in the first minutes keeps crust extensible; removing steam too late can trap excess moisture in the crumb."
+        "Maximum expansion often occurs in the first 5–10 minutes when crust is still flexible; too low oven temperature delays crust set and can yield lateral spread instead of upward spring. Steam in the first minutes keeps crust extensible; removing steam too late can trap excess moisture in the crumb."
       ]
     },
     {

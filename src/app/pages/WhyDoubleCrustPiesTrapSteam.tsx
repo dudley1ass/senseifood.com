@@ -21,8 +21,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Venting as engineered mass flow",
       "paragraphs": [
-        "One decorative slash is often insufficient for high-moisture fillings; several modest openings distribute pressure relief so the center does not balloon. Think about area and placement: fruit near the middle releases plenty of vapor that needs a path before the top skin sets into a rigid shell.",
-        "Lattice designs vent by definition but still need edge integrity—gaps help only if steam can reach them before the matrix seals with starch and sugar."
+        "One decorative slash is often insufficient for high-moisture fillings; several modest openings distribute pressure relief so the center does not balloon. Think about area and placement: fruit near the middle releases plenty of vapor that needs a path before the top skin sets into a rigid shell. Lattice designs vent by definition but still need edge integrity—gaps help only if steam can reach them before the matrix seals with starch and sugar."
       ],
       "bullets": [
         {
@@ -38,15 +37,13 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Temperature: start hot vs steady moderate",
       "paragraphs": [
-        "A hot start can set edge structure before the filling drives maximum steam, reducing lid lift; too aggressive without relief tears the top. Staged baking—blasting early then moderating—matches recipes with different fruit water loads and dough thickness.",
-        "Glass and metal pans change edge heat flux; darker metal accelerates bottom set, which shifts internal steam timing relative to the lid."
+        "A hot start can set edge structure before the filling drives maximum steam, reducing lid lift; too aggressive without relief tears the top. Staged baking—blasting early then moderating—matches recipes with different fruit water loads and dough thickness. Glass and metal pans change edge heat flux; darker metal accelerates bottom set, which shifts internal steam timing relative to the lid."
       ]
     },
     {
       "heading": "Holding after bake",
       "paragraphs": [
-        "Cooling continues internal movement: vapor condenses, filling thickens, and juices redistribute. Cutting too soon releases under-set liquid that looks like trapped steam escaped all at once—resting lets internal pressure equalize gently.",
-        "Covering while hot can return steam to the crust; vent the space if you tent foil to protect color."
+        "Cooling continues internal movement: vapor condenses, filling thickens, and juices redistribute. Cutting too soon releases under-set liquid that looks like trapped steam escaped all at once—resting lets internal pressure equalize gently. Covering while hot can return steam to the crust; vent the space if you tent foil to protect color."
       ],
       "tip": "If you always see lift at one compass point, suspect uneven fruit mound or oven hot spot—not random bad luck."
     },

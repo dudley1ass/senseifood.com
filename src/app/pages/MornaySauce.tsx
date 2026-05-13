@@ -17,23 +17,20 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Texture first: a smooth béchamel foundation",
       "paragraphs": [
-        "Smooth béchamel makes smooth mornay. Cook the roux enough to lose raw flour flavor, hydrate fully, and whisk out lumps before cheese ever arrives. If the base is gritty, cheese cannot fix it—only hide it briefly.",
-        "Strain if needed, especially for fine dining finishes or when feeding a crowd where visual uniformity matters. A quick pass catches rogue clumps that would nucleate graininess later."
+        "Smooth béchamel makes smooth mornay. Cook the roux enough to lose raw flour flavor, hydrate fully, and whisk out lumps before cheese ever arrives. If the base is gritty, cheese cannot fix it—only hide it briefly. Strain if needed, especially for fine dining finishes or when feeding a crowd where visual uniformity matters. A quick pass catches rogue clumps that would nucleate graininess later."
       ]
     },
     {
       "heading": "Cheese incorporation: heat, motion, and patience",
       "paragraphs": [
-        "Add cheese off heat or at gentle heat, stirring until melted. Boiling after cheese is in invites graininess because dairy proteins tighten and can separate. Think of cheese as a sensitive guest: invite it in calmly.",
-        "Gruyère melts with body and a nutty savor; pre-grated bags often include anti-caking starch that changes behavior—grate from the block when you care about texture."
+        "Add cheese off heat or at gentle heat, stirring until melted. Boiling after cheese is in invites graininess because dairy proteins tighten and can separate. Think of cheese as a sensitive guest: invite it in calmly. Gruyère melts with body and a nutty savor; pre-grated bags often include anti-caking starch that changes behavior—grate from the block when you care about texture."
       ],
       "tip": "If the sauce tightens too much as cheese goes in, thin with warm milk in small splashes rather than turning the burner up."
     },
     {
       "heading": "Mustard, acid balance, and salt sequencing",
       "paragraphs": [
-        "Mustard brightens mornay and cuts richness, but it is an acid load. Add in small increments, taste after each, and remember cheese already brings acid and salt. Dijon behaves differently than dry mustard; start with less than you think.",
-        "Salt last in spirit even if you salt the béchamel early: cheese will move the needle. Taste after the full cheese load is incorporated and the sauce has rested a minute."
+        "Mustard brightens mornay and cuts richness, but it is an acid load. Add in small increments, taste after each, and remember cheese already brings acid and salt. Dijon behaves differently than dry mustard; start with less than you think. Salt last in spirit even if you salt the béchamel early: cheese will move the needle. Taste after the full cheese load is incorporated and the sauce has rested a minute."
       ],
       "bullets": [
         {
@@ -45,15 +42,13 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Holding, skinning, and service recovery",
       "paragraphs": [
-        "Cheese sauces skin on top and can stiffen in the steam table. Press parchment or plastic to the surface for short holds, or hold in a narrow bain-marie with gentle stirring. Re-thin with warm milk while whisking; do not blast heat to loosen.",
-        "If the sauce breaks on hold, lower heat, add a splash of warm milk, and whisk. Sometimes a teaspoon of cold butter off heat helps re-emulsify the shine—still one change at a time."
+        "Cheese sauces skin on top and can stiffen in the steam table. Press parchment or plastic to the surface for short holds, or hold in a narrow bain-marie with gentle stirring. Re-thin with warm milk while whisking; do not blast heat to loosen. If the sauce breaks on hold, lower heat, add a splash of warm milk, and whisk. Sometimes a teaspoon of cold butter off heat helps re-emulsify the shine—still one change at a time."
       ]
     },
     {
       "heading": "Pairing and portion discipline",
       "paragraphs": [
-        "Mornay loves vegetables with structure—cauliflower, broccoli, chard—and starch anchors like gratins. If the dish underneath is wet, your sauce reads thinner and blander because dilution steals impact.",
-        "Finish under a broiler only when the sauce layer is even; uneven spots scorch while neighbors look pale."
+        "Mornay loves vegetables with structure—cauliflower, broccoli, chard—and starch anchors like gratins. If the dish underneath is wet, your sauce reads thinner and blander because dilution steals impact. Finish under a broiler only when the sauce layer is even; uneven spots scorch while neighbors look pale."
       ]
     }
   ],

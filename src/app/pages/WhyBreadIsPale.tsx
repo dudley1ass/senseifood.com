@@ -44,8 +44,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Finish temperature and environment",
       "paragraphs": [
-        "Remove steam, raise temp last minutes, or use convection to dry and brown. Milk, egg, or malt syrup washes add sugars for color without sweetness spike.",
-        "Diastatic malt in tiny amounts helps crust color in lean doughs—measure carefully."
+        "Remove steam, raise temp last minutes, or use convection to dry and brown. Milk, egg, or malt syrup washes add sugars for color without sweetness spike. Diastatic malt in tiny amounts helps crust color in lean doughs—measure carefully."
       ]
     },
     {

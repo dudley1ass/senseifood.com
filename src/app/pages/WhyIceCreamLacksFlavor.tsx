@@ -44,8 +44,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Bloom and volatiles",
       "paragraphs": [
-        "Let pint warm slightly on counter—volatiles release. Same ice cream reads sweeter and more aromatic at 10°F than at -5°F.",
-        "Extracts and infusions need concentration to survive dilution by cream."
+        "Let pint warm slightly on counter—volatiles release. Same ice cream reads sweeter and more aromatic at 10°F than at -5°F. Extracts and infusions need concentration to survive dilution by cream."
       ]
     },
     {

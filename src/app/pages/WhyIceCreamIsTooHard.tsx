@@ -44,8 +44,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Sugar, alcohol, and solids",
       "paragraphs": [
-        "More sugar lowers freezing point—softer at freezer temp but can melt faster when eaten. Fat and MSNF add body.",
-        "Alcohol in mix depresses freezing further—balance for texture."
+        "More sugar lowers freezing point—softer at freezer temp but can melt faster when eaten. Fat and MSNF add body. Alcohol in mix depresses freezing further—balance for texture."
       ]
     },
     {

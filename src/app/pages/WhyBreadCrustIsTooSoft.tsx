@@ -44,8 +44,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Finish dry",
       "paragraphs": [
-        "Last 5–10 minutes without steam, optionally convection, drives off surface moisture for caramelization. Internal temp should already be near done before this phase.",
-        "Oil-brushed crusts stay softer—choose finish for style."
+        "Last 5–10 minutes without steam, optionally convection, drives off surface moisture for caramelization. Internal temp should already be near done before this phase. Oil-brushed crusts stay softer—choose finish for style."
       ]
     },
     {

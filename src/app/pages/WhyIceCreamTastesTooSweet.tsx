@@ -21,8 +21,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Temperature vs perceived sweetness",
       "paragraphs": [
-        "Formulators often taste bases warm for safety and sensory speed, but the eating experience happens near 0°F to 10°F depending on storage and temper. That gap means sugar must be judged in the context of cold, not just hot cookery.",
-        "A practical fix for evaluation is to taste at multiple temperatures: spoon warm for fault finding, semi-frozen for approximate service, and fully tempered to mimic the last half of a bite when aromatics return as the matrix melts on the tongue."
+        "Formulators often taste bases warm for safety and sensory speed, but the eating experience happens near 0°F to 10°F depending on storage and temper. That gap means sugar must be judged in the context of cold, not just hot cookery. A practical fix for evaluation is to taste at multiple temperatures: spoon warm for fault finding, semi-frozen for approximate service, and fully tempered to mimic the last half of a bite when aromatics return as the matrix melts on the tongue."
       ],
       "bullets": [
         {
@@ -38,15 +37,13 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Solids and water activity sequence",
       "paragraphs": [
-        "MSNF, proteins, and fat add mouth-coating and savory depth that compete with sugar’s simplicity. Egg yolk brings cooked custard notes; cocoa brings bitterness; coffee extracts add roast. Building these elements before locking final sweetness helps avoid chasing a single dominant peak.",
-        "Salt is not cheating—it is contrast. Tiny increments reduce the need for heroic sugar cuts that break texture."
+        "MSNF, proteins, and fat add mouth-coating and savory depth that compete with sugar’s simplicity. Egg yolk brings cooked custard notes; cocoa brings bitterness; coffee extracts add roast. Building these elements before locking final sweetness helps avoid chasing a single dominant peak. Salt is not cheating—it is contrast. Tiny increments reduce the need for heroic sugar cuts that break texture."
       ]
     },
     {
       "heading": "Holding in the mouth",
       "paragraphs": [
-        "A bite’s story unfolds: first cold shock, then melting, then late aromatics. Many people judge sweetness only on the first second. Train yourself to notice the finish—sometimes sugar reads quieter after melt when volatiles arrive.",
-        "For kids’ palates vs adults’, expectations differ; label “too sweet” complaints alongside age and serving temperature when iterating recipes."
+        "A bite’s story unfolds: first cold shock, then melting, then late aromatics. Many people judge sweetness only on the first second. Train yourself to notice the finish—sometimes sugar reads quieter after melt when volatiles arrive. For kids’ palates vs adults’, expectations differ; label “too sweet” complaints alongside age and serving temperature when iterating recipes."
       ],
       "tip": "If tastings happen straight from the churn, remember overrun and warmth temporarily soften sweetness—freeze overnight before final judgments."
     },

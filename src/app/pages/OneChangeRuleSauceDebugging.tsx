@@ -16,23 +16,20 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Why one-variable iteration wins",
       "paragraphs": [
-        "Single-step adjustments preserve feedback quality. You can identify which action fixed texture, balance, or aroma when only one thing changed between spoonfuls. If you add salt, vinegar, butter, and sugar in the same minute, the sauce may taste better—and you will have learned nothing about your starting point.",
-        "This discipline matters most at the end of cooking, when concentration is high and errors are expensive. Late-stage fixes are where people panic-stir the whole pantry into the pan."
+        "Single-step adjustments preserve feedback quality. You can identify which action fixed texture, balance, or aroma when only one thing changed between spoonfuls. If you add salt, vinegar, butter, and sugar in the same minute, the sauce may taste better—and you will have learned nothing about your starting point. This discipline matters most at the end of cooking, when concentration is high and errors are expensive. Late-stage fixes are where people panic-stir the whole pantry into the pan."
       ]
     },
     {
       "heading": "Operational loop: define, change, taste, record",
       "paragraphs": [
-        "Define one problem in plain language: “thin,” “harsh,” “flat,” “oily,” not “weird.” Choose one correction that maps to that symptom. Taste. If you did not move the symptom, undo mentally—do not stack—and try the next hypothesis.",
-        "Keep a one-line note when you are chasing a stubborn batch: time, heat level, what you added, and result. Phones make fine lab notebooks; voice memos work when hands are sticky."
+        "Define one problem in plain language: “thin,” “harsh,” “flat,” “oily,” not “weird.” Choose one correction that maps to that symptom. Taste. If you did not move the symptom, undo mentally—do not stack—and try the next hypothesis. Keep a one-line note when you are chasing a stubborn batch: time, heat level, what you added, and result. Phones make fine lab notebooks; voice memos work when hands are sticky."
       ],
       "tip": "Make ONE adjustment → taste → repeat."
     },
     {
       "heading": "Order of operations still applies inside the rule",
       "paragraphs": [
-        "One change does not mean random order. If the sauce is thin because of hidden water from vegetables, fix concentration before you fix salt, or you will chase seasoning through a moving target. The One Change Rule cooperates with reduction-first logic—it does not replace it.",
-        "Similarly, if an emulsion is broken, stabilize structure before you tune acid. Fixing taste on a split sauce is like tuning a guitar with a loose tuning peg."
+        "One change does not mean random order. If the sauce is thin because of hidden water from vegetables, fix concentration before you fix salt, or you will chase seasoning through a moving target. The One Change Rule cooperates with reduction-first logic—it does not replace it. Similarly, if an emulsion is broken, stabilize structure before you tune acid. Fixing taste on a split sauce is like tuning a guitar with a loose tuning peg."
       ],
       "bullets": [
         {
@@ -48,15 +45,13 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Benchmarks that make comparisons fair",
       "paragraphs": [
-        "Taste at service temperature when possible. Hot sauce hides some acids; cold sauce can read sharper. If you compare two trials, match temperature and resting time—otherwise you are judging two different dishes.",
-        "For reheated sauces, reheat the same way between trials. Microwave bursts and gentle stovetop recovery change emulsion and volatile perception."
+        "Taste at service temperature when possible. Hot sauce hides some acids; cold sauce can read sharper. If you compare two trials, match temperature and resting time—otherwise you are judging two different dishes. For reheated sauces, reheat the same way between trials. Microwave bursts and gentle stovetop recovery change emulsion and volatile perception."
       ]
     },
     {
       "heading": "When to break the rule (rarely)",
       "paragraphs": [
-        "Emergency rescue sometimes needs two moves: for example, cutting heat and adding warm stock to stop a scorching reduction. Even then, treat it as one intervention—“stop thermal damage”—then return to single-variable seasoning.",
-        "If you are teaching someone, still narrate one primary lever so the lesson lands. Helpers learn faster when they can trace cause."
+        "Emergency rescue sometimes needs two moves: for example, cutting heat and adding warm stock to stop a scorching reduction. Even then, treat it as one intervention—“stop thermal damage”—then return to single-variable seasoning. If you are teaching someone, still narrate one primary lever so the lesson lands. Helpers learn faster when they can trace cause."
       ]
     }
   ],

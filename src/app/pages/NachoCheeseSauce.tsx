@@ -17,23 +17,20 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Process: starch base before cheese load",
       "paragraphs": [
-        "Melt cheese into a stabilized base—often roux or slurry-thickened dairy—rather than dumping cheese into plain boiling milk. The starch network helps prevent protein clumping and gives viscosity headroom before cheese tightens the system.",
-        "Whisk continuously through the danger zone where milk approaches simmer; scorching the pan invites burnt notes that no spice cover will hide."
+        "Melt cheese into a stabilized base—often roux or slurry-thickened dairy—rather than dumping cheese into plain boiling milk. The starch network helps prevent protein clumping and gives viscosity headroom before cheese tightens the system. Whisk continuously through the danger zone where milk approaches simmer; scorching the pan invites burnt notes that no spice cover will hide."
       ]
     },
     {
       "heading": "Cheese choice and prep",
       "paragraphs": [
-        "Young cheddar melts differently than aged sharp; pre-shredded bags include anti-caking starch that can help or hinder depending on formula—know your ingredient. Grate fresh when possible for predictable behavior.",
-        "Evaporated milk or processed cheese products behave differently than natural cheddar-only builds; pick a lane and tune ratios accordingly."
+        "Young cheddar melts differently than aged sharp; pre-shredded bags include anti-caking starch that can help or hinder depending on formula—know your ingredient. Grate fresh when possible for predictable behavior. Evaporated milk or processed cheese products behave differently than natural cheddar-only builds; pick a lane and tune ratios accordingly."
       ],
       "tip": "If oil pools, lower heat immediately—high heat finished the emulsion, not the recipe card."
     },
     {
       "heading": "Acid, tomato, and pickle brine",
       "paragraphs": [
-        "Tomato paste or salsa adds acid and water—both move the cheese protein needle. Add acidic components after the matrix is stable and often off the hottest burner moment.",
-        "Pickle brine brightens; add in small amounts and taste—salt hides in brine."
+        "Tomato paste or salsa adds acid and water—both move the cheese protein needle. Add acidic components after the matrix is stable and often off the hottest burner moment. Pickle brine brightens; add in small amounts and taste—salt hides in brine."
       ],
       "bullets": [
         {
@@ -45,15 +42,13 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Fixes when the sauce breaks",
       "paragraphs": [
-        "Lower heat, add a splash of warm milk, whisk vigorously. Sometimes a pinch of additional starch slurry helps if the system is thin; sometimes you need less heat more than more starch.",
-        "If grainy beyond repair, strain through fine mesh for service texture, then learn heat for next time—straining is triage, not philosophy."
+        "Lower heat, add a splash of warm milk, whisk vigorously. Sometimes a pinch of additional starch slurry helps if the system is thin; sometimes you need less heat more than more starch. If grainy beyond repair, strain through fine mesh for service texture, then learn heat for next time—straining is triage, not philosophy."
       ]
     },
     {
       "heading": "Holding, queso service, and reheating",
       "paragraphs": [
-        "Steam tables and slow cookers demand gentleness; surface skin forms fast—press film or use a thin layer of neutral oil if holding briefly.",
-        "Reheat with milk loosening and patient whisking; microwaves work in bursts if you stir between—uneven superheating breaks dairy."
+        "Steam tables and slow cookers demand gentleness; surface skin forms fast—press film or use a thin layer of neutral oil if holding briefly. Reheat with milk loosening and patient whisking; microwaves work in bursts if you stir between—uneven superheating breaks dairy."
       ]
     }
   ],

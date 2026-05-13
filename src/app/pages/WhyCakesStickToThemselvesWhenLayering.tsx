@@ -21,8 +21,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Cooling sequence before the knife",
       "paragraphs": [
-        "Depan and cool until the center no longer radiates heat through the bottom—warm centers continue to steam through trimmed faces during torting. If you must trim early, return layers to the fridge between cuts so shear happens in a firmer matrix.",
-        "Cold layers fracture more cleanly; warm layers smear, leaving smeared starch-sugar films that glue."
+        "Depan and cool until the center no longer radiates heat through the bottom—warm centers continue to steam through trimmed faces during torting. If you must trim early, return layers to the fridge between cuts so shear happens in a firmer matrix. Cold layers fracture more cleanly; warm layers smear, leaving smeared starch-sugar films that glue."
       ],
       "bullets": [
         {
@@ -38,23 +37,20 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Holding frostings and fillings",
       "paragraphs": [
-        "Warm jam or loose ganache pumps water into the cut face faster than buttercream alone. Bring fillings to workable coolness; ganache should be pipeable, not pourable, unless the design expects absorption.",
-        "Fruit macerations release juice under weight—drain before interior layers or accept slide risk."
+        "Warm jam or loose ganache pumps water into the cut face faster than buttercream alone. Bring fillings to workable coolness; ganache should be pipeable, not pourable, unless the design expects absorption. Fruit macerations release juice under weight—drain before interior layers or accept slide risk."
       ]
     },
     {
       "heading": "Pressure and flatness",
       "paragraphs": [
-        "Aggressive bench scrapers and palm presses extrude syrup from filling and collapse crumb. Use light, even pressure when applying coats; rotate the stand rather than wrestling one stuck side.",
-        "Overfilled layers squish outward, increasing contact area and tack between tiers—level and thickness matter."
+        "Aggressive bench scrapers and palm presses extrude syrup from filling and collapse crumb. Use light, even pressure when applying coats; rotate the stand rather than wrestling one stuck side. Overfilled layers squish outward, increasing contact area and tack between tiers—level and thickness matter."
       ],
       "tip": "If layers skate but then lock solid in the fridge, you likely had warm-soft interfaces that refirmed—chill between operations."
     },
     {
       "heading": "Time between crumb coat and final coat",
       "paragraphs": [
-        "Crumb coats exist partly to seal faces so the next coat does not re-wet the sponge. Rushing skips that benefit: the final pass drags moisture back into the crumb and can tear surfaces that then stick to tools and neighbors.",
-        "Hands transfer heat even through gloves; handle chilled cakes briefly or use a turntable and offset spatula to minimize palm contact."
+        "Crumb coats exist partly to seal faces so the next coat does not re-wet the sponge. Rushing skips that benefit: the final pass drags moisture back into the crumb and can tear surfaces that then stick to tools and neighbors. Hands transfer heat even through gloves; handle chilled cakes briefly or use a turntable and offset spatula to minimize palm contact."
       ]
     }
   ],

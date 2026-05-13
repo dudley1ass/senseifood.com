@@ -44,8 +44,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Yield window",
       "paragraphs": [
-        "Aim for balanced cup by adjusting grind first in small steps, then temperature ±2°F, then ratio.",
-        "Bloom phase matters in pour-over—insufficient wetting leaves dry pockets."
+        "Aim for balanced cup by adjusting grind first in small steps, then temperature ±2°F, then ratio. Bloom phase matters in pour-over—insufficient wetting leaves dry pockets."
       ]
     },
     {

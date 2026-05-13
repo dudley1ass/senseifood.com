@@ -20,23 +20,20 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Under-proofing vs true “tight mixing”",
       "paragraphs": [
-        "An under-proofed loaf bakes with a tight, shiny crumb and a seam of denser dough near the center. The oven spring is weak because there was not enough total gas inflation before the crust set. The fix is longer bulk or final proof next time, sometimes with a slightly warmer environment.",
-        "True tight mixing is rarer in hand mixing but common when a stand mixer runs too long on high speed for a lean dough, shredding extensibility. The loaf rises oddly and the crumb looks fine-grained everywhere, not just at the center."
+        "An under-proofed loaf bakes with a tight, shiny crumb and a seam of denser dough near the center. The oven spring is weak because there was not enough total gas inflation before the crust set. The fix is longer bulk or final proof next time, sometimes with a slightly warmer environment. True tight mixing is rarer in hand mixing but common when a stand mixer runs too long on high speed for a lean dough, shredding extensibility. The loaf rises oddly and the crumb looks fine-grained everywhere, not just at the center."
       ]
     },
     {
       "heading": "Hydration and flour measurement",
       "paragraphs": [
-        "Hydration changes how far gluten can stretch. A drier dough than the formula intended feels stiff, tears when stretched, and traps fewer bubbles. Measuring flour by scoop almost always adds extra mass and lowers effective hydration.",
-        "If you must use cups, fluff the flour, spoon into the cup without packing, and level. Prefer grams: write your successful hydration percentage on the recipe card once you find the sweet spot for your flour brand."
+        "Hydration changes how far gluten can stretch. A drier dough than the formula intended feels stiff, tears when stretched, and traps fewer bubbles. Measuring flour by scoop almost always adds extra mass and lowers effective hydration. If you must use cups, fluff the flour, spoon into the cup without packing, and level. Prefer grams: write your successful hydration percentage on the recipe card once you find the sweet spot for your flour brand."
       ],
       "tip": "For one diagnostic bake, drop hydration by 2–3% if the dough is impossible to shape; raise it if the dough spreads and refuses to hold tension."
     },
     {
       "heading": "Collapsed alveoli from over-proofing",
       "paragraphs": [
-        "Over-proofed dough can fool you: it looks huge, then collapses in the oven and bakes into a dense, gummy layer under a thick crust. The gluten network exhausted its elasticity and cannot hold gas during oven spring.",
-        "If your loaf spreads sideways, smells very alcoholic, and the poke test leaves a deep dent that does not spring back, shorten proof next time or cold-retard to slow fermentation."
+        "Over-proofed dough can fool you: it looks huge, then collapses in the oven and bakes into a dense, gummy layer under a thick crust. The gluten network exhausted its elasticity and cannot hold gas during oven spring. If your loaf spreads sideways, smells very alcoholic, and the poke test leaves a deep dent that does not spring back, shorten proof next time or cold-retard to slow fermentation."
       ]
     },
     {

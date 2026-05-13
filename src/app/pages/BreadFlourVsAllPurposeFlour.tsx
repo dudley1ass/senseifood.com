@@ -45,8 +45,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "When to choose which",
       "paragraphs": [
-        "High hydration artisan: bread flour or blended. Tender sandwich: AP or blend. Cake and pastry need low protein—wrong flour entirely.",
-        "Measure protein from label when possible; brands vary."
+        "High hydration artisan: bread flour or blended. Tender sandwich: AP or blend. Cake and pastry need low protein—wrong flour entirely. Measure protein from label when possible; brands vary."
       ]
     },
     {

@@ -38,23 +38,20 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Headspace, surface area, and packaging",
       "paragraphs": [
-        "Air above the product exchanges moisture through the headspace; wide surface area increases evaporation–condensation cycles at the top. Fill containers, press parchment or freezer paper to the surface, and avoid tall skinny voids that amplify frost on walls.",
-        "Factory packaging often minimizes headspace; repacking into wide bowls without surface cover invites top crust and side crystallization."
+        "Air above the product exchanges moisture through the headspace; wide surface area increases evaporation–condensation cycles at the top. Fill containers, press parchment or freezer paper to the surface, and avoid tall skinny voids that amplify frost on walls. Factory packaging often minimizes headspace; repacking into wide bowls without surface cover invites top crust and side crystallization."
       ]
     },
     {
       "heading": "Partial serve and refreeze habits",
       "paragraphs": [
-        "The softened rim where you scooped refreezes as a distinct ring because that region experienced the largest heat input and the fastest recrystallization front. Smoothing the surface before returning reduces jagged thermal peaks and odd voids that frost preferentially.",
-        "Microwave-softening corners for quick servings creates extreme local heating relative to the core—another recipe for uneven layers next freeze."
+        "The softened rim where you scooped refreezes as a distinct ring because that region experienced the largest heat input and the fastest recrystallization front. Smoothing the surface before returning reduces jagged thermal peaks and odd voids that frost preferentially. Microwave-softening corners for quick servings creates extreme local heating relative to the core—another recipe for uneven layers next freeze."
       ],
       "tip": "Temper in the fridge for a few minutes instead of ambient counter when you want softer scoop without melting one face of the pint."
     },
     {
       "heading": "Stabilizers, solids, and realistic expectations",
       "paragraphs": [
-        "Stabilizers and emulsifiers slow but do not defeat thermodynamics. Low-solids fruit sorbets and home bases without commercial cryoprotection may show layers sooner than premium pints. Increasing total solids or modest stabilizer use buys time, not infinite immunity.",
-        "Ice layers differ from uniform iciness from poor churn; layers track interfaces and history, while general iciness often tracks ice crystal size from slow freeze or heat shock. Diagnose which you see before changing churn strategy alone."
+        "Stabilizers and emulsifiers slow but do not defeat thermodynamics. Low-solids fruit sorbets and home bases without commercial cryoprotection may show layers sooner than premium pints. Increasing total solids or modest stabilizer use buys time, not infinite immunity. Ice layers differ from uniform iciness from poor churn; layers track interfaces and history, while general iciness often tracks ice crystal size from slow freeze or heat shock. Diagnose which you see before changing churn strategy alone."
       ]
     }
   ],

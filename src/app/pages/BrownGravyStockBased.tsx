@@ -17,16 +17,14 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Roux first, liquid second",
       "paragraphs": [
-        "Cook the roux until it smells toasty and the raw flour note is gone — usually a few minutes at gentle heat. Pale roux thickens; deeply browned roux adds flavor but reduces thickening power, so pick your toast level for the dish.",
-        "Add stock warm and in increments, whisking out lumps before more liquid goes in. If the gravy is thin, simmer to reduce; if it is tight, thin with more stock before you chase salt."
+        "Cook the roux until it smells toasty and the raw flour note is gone — usually a few minutes at gentle heat. Pale roux thickens; deeply browned roux adds flavor but reduces thickening power, so pick your toast level for the dish. Add stock warm and in increments, whisking out lumps before more liquid goes in. If the gravy is thin, simmer to reduce; if it is tight, thin with more stock before you chase salt."
       ],
       "tip": "Season after the gravy is close to final thickness — reduction concentrates salt."
     },
     {
       "heading": "Balance on the wheel",
       "paragraphs": [
-        "Stock-forward gravies dilute perceived salt until they reduce; fat from roux rounds mouthfeel. If the dot on the wheel reads very fat-heavy, a touch more salt or a splash of acid (wine, vinegar) can restore contrast without turning the sauce sharp.",
-        "Use the interactive builder to scale the batch and watch how butter + flour + stock grams move the modeled pulls — then trust your spoon at the stove."
+        "Stock-forward gravies dilute perceived salt until they reduce; fat from roux rounds mouthfeel. If the dot on the wheel reads very fat-heavy, a touch more salt or a splash of acid (wine, vinegar) can restore contrast without turning the sauce sharp. Use the interactive builder to scale the batch and watch how butter + flour + stock grams move the modeled pulls — then trust your spoon at the stove."
       ]
     },
     {

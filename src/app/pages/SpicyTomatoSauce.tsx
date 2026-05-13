@@ -17,23 +17,20 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Layer heat: flavor burn versus dumb burn",
       "paragraphs": [
-        "Bloom dried chiles or cook fresh chiles to develop flavor, not only raw burn. Toasted chile notes read complex; raw powder dumped late reads harsh and one-dimensional.",
-        "Capsaicin heat and acid both climb with reduction—taste often as water leaves, especially if you started with aggressive vinegar."
+        "Bloom dried chiles or cook fresh chiles to develop flavor, not only raw burn. Toasted chile notes read complex; raw powder dumped late reads harsh and one-dimensional. Capsaicin heat and acid both climb with reduction—taste often as water leaves, especially if you started with aggressive vinegar."
       ]
     },
     {
       "heading": "Vinegar discipline",
       "paragraphs": [
-        "Add vinegar in controlled doses—you can always add more, but dilution costs time and dilutes everything else. Different vinegars carry different aromatics; match vinegar to cuisine context.",
-        "If the sauce is already tomato-acid forward, total acid budget may be tight—lemon versus vinegar behaves differently with tomato’s own malic and citric notes."
+        "Add vinegar in controlled doses—you can always add more, but dilution costs time and dilutes everything else. Different vinegars carry different aromatics; match vinegar to cuisine context. If the sauce is already tomato-acid forward, total acid budget may be tight—lemon versus vinegar behaves differently with tomato’s own malic and citric notes."
       ],
       "tip": "If heat and acid both feel loud, try fat and a small sweet touch before more salt."
     },
     {
       "heading": "Tomato product choice",
       "paragraphs": [
-        "Canned tomatoes vary in acidity, salt, and texture; whole peeled versus puree changes cook time and body. Taste your can before building the whole plan around one brand.",
-        "Paste browning in fat before liquids can add savory depth; raw paste can read tinny if not cooked through."
+        "Canned tomatoes vary in acidity, salt, and texture; whole peeled versus puree changes cook time and body. Taste your can before building the whole plan around one brand. Paste browning in fat before liquids can add savory depth; raw paste can read tinny if not cooked through."
       ],
       "bullets": [
         {
@@ -45,15 +42,13 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Fat, protein pairing, and service",
       "paragraphs": [
-        "This profile pairs with rich proteins; if the sauce reads too sharp on the wheel, fat at finish (olive oil, butter) or sweet in tiny increments often lands better than extra salt.",
-        "Serve with cooling contrasts—crema, cheese, herbs—when heat is intentionally high."
+        "This profile pairs with rich proteins; if the sauce reads too sharp on the wheel, fat at finish (olive oil, butter) or sweet in tiny increments often lands better than extra salt. Serve with cooling contrasts—crema, cheese, herbs—when heat is intentionally high."
       ]
     },
     {
       "heading": "Simmer time, body, and finishing",
       "paragraphs": [
-        "Long simmer integrates aromatics and concentrates solids; thin sauce plus raw heat reads like hot vinegar. Reduce to a spoon-coating body before final acid adjustments.",
-        "Finish herbs that are delicate at the end; oregano-like herbs tolerate more simmer than basil."
+        "Long simmer integrates aromatics and concentrates solids; thin sauce plus raw heat reads like hot vinegar. Reduce to a spoon-coating body before final acid adjustments. Finish herbs that are delicate at the end; oregano-like herbs tolerate more simmer than basil."
       ]
     }
   ],

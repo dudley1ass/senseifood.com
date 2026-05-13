@@ -45,8 +45,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Depth and angle",
       "paragraphs": [
-        "Shallow scores for batards open ears; grigne forms where lip peels. Depth ~¼–½ inch depending on hydration.",
-        "Cold retarded dough scores cleaner than warm sticky dough—chill briefly if needed."
+        "Shallow scores for batards open ears; grigne forms where lip peels. Depth ~¼–½ inch depending on hydration. Cold retarded dough scores cleaner than warm sticky dough—chill briefly if needed."
       ]
     },
     {

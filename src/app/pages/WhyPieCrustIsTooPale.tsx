@@ -44,8 +44,7 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Bake sequence",
       "paragraphs": [
-        "Blind bake bottom until golden before wet filling, or use bottom heat strategies (stone, lower rack).",
-        "Brush milk vs egg vs sugar—each shifts browning rate."
+        "Blind bake bottom until golden before wet filling, or use bottom heat strategies (stone, lower rack). Brush milk vs egg vs sugar—each shifts browning rate."
       ]
     },
     {
