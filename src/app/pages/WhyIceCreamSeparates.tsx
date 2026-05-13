@@ -3,95 +3,76 @@ import type { ScienceArticleSpec } from '../data/scienceArticleTypes';
 
 /** Article content for this route — lives in this file only. */
 const SPEC: ScienceArticleSpec = {
-  "slug": "why-ice-cream-separates",
-  "segment": "ice-cream-science",
-  "categoryLabel": "Ice Cream Science",
-  "title": "Why Ice Cream Separates",
-  "subtitle": "Butterfat clumping during churn, a fragile emulsion, and melt-refreeze cycles all break the smooth, even texture that holds ice cream together.",
-  "readTime": "8 min read",
-  "emoji": "💧",
-  "fixRecipe": {
-    "category": "iceCream",
-    "problem": "general"
+  slug: 'why-ice-cream-separates',
+  segment: 'ice-cream-science',
+  categoryLabel: 'Ice Cream Science',
+  title: 'Why Ice Cream Separates',
+  subtitle:
+    'Separated ice cream looks like wet pockets, oily streaks, or curd—usually fat and water stopped holding hands because something whipped them apart, shocked them with acid, or let them melt and refreeze out of step.',
+  readTime: '8 min read',
+  emoji: '💧',
+  fixRecipe: {
+    category: 'iceCream',
+    problem: 'general',
   },
-  "quickAnswer": "Separation usually means your emulsion has broken or your fat has actually started turning into butter inside the machine. The usual culprits are overwhipping, a base that warmed up and refroze (called heat shock), acidic fruit added without anything to protect the dairy proteins, or fat globules that clumped together because the recipe didn't have enough emulsifier. The fix is some combination of emulsifiers (egg yolk or commercial blends), a small amount of cornstarch or other stabilizer, and a gentler churn.",
-  "intro": "Ice cream is a frozen emulsion (a mix of fat droplets evenly suspended in water) that's also a foam (held open by trapped air). When the fat droplets inside that emulsion clump together for good—what dairy science calls coalescence—you start seeing oily slicks on the surface, a curdled-looking texture, or watery pockets of clear liquid called whey. Heat shock from a partial thaw and refreeze, not enough emulsifier in the base, or fruit acids that curdle the milk proteins are the usual causes. If you build a custard base, pasteurizing gently around 175–180°F (79–82°C) sets the egg proteins safely without pushing them past the boil, which is where they'd start to seize up and break.",
-  "sections": [
+  quickAnswer:
+    'Separation is almost always a broken emulsion: fat globules clumped into butter, acid cooked milk proteins into grains, or a thaw-refreeze cycle let fat float and freeze in layers. Yolks, a little starch, gentle heat, and stopping the churn before the mix turns grainy are the home fixes.',
+  intro:
+    'Ice cream is fat droplets suspended in sweetened water, with air folded in for good measure. While everything stays finely divided, the spoon feels smooth. When fat starts to stick to itself—literally turning toward butter—or acid makes milk proteins seize, you see the split: whey puddles, greasy smears, or a curdled look before you even freeze. Heat shock after churning does similar damage more slowly. The good news is these failures usually point to a clear habit change, not a mystery curse.',
+  sections: [
     {
-      "heading": "Churned butter",
-      "paragraphs": [
-        "If you run the dasher too long, too fast, or in a bowl that's running warm, the fat globules in cream get smashed into each other repeatedly until they actually start to combine into solid butter on the dasher walls and blades. You'll see yellow streaks, greasy patches, or a butter-like coating that won't reincorporate. That's not a flaw in the recipe—it's literally the same physical process you'd use on purpose to make butter, happening inside your ice cream maker."
-      ]
-    },
-    {
-      "heading": "Acid and dairy",
-      "paragraphs": [
-        "Fruit purées and juices carry organic acids (citric in citrus, malic in stone fruit, and so on) that can curdle milk proteins on contact, especially in warm or unstabilized bases. Either fold the fruit in late once the base is already cold and partially set, or use a small amount of cornstarch or another starch to coat the proteins and buffer the acid. Tossing fresh raspberry purée into a warm custard base is a reliable way to watch your ice cream split before it even hits the machine."
-      ]
-    },
-    {
-      "heading": "Thaw abuse",
-      "paragraphs": [
-        "When a pint partially melts—on a counter, during a freezer-door cycle, or in transit from the store—the fat globules float upward and start clumping near the surface as the cold structure relaxes. When you refreeze it, those clumps don't separate back into a smooth emulsion. They get locked in place, and the carton scoops with a grainy, slightly greasy texture from then on."
+      heading: 'When the machine accidentally makes butter',
+      paragraphs: [
+        'Over-churning or churning in a warm bowl smashes fat globules together until they behave like butter on the dasher. You will see yellow streaks or a greasy film that will not stir back in. Stop when the body looks like thick soft-serve; let the freezer finish the job.',
       ],
-      "tip": "Temper mix completely smooth before churn if you heated yolks or chocolate."
     },
     {
-      "heading": "Debugger",
-      "paragraphs": [
-        "Compare the fat and sugar levels in your recipe against the reference ranges in Fix My Recipe's ice cream mode. Bases at the high or low end of either band stress the emulsion: too much fat with not enough emulsifier means more droplets than the base can keep apart, and too much sugar without enough proteins or stabilizers makes the unfrozen syrup too soupy to support the emulsion through freezing."
-      ]
+      heading: 'Acid and fruit need manners',
+      paragraphs: [
+        'Bright purées can curdle a hot yolk base the same way lemon does to milk. Add acidic fruit cooler, in smaller amounts, or thicken the base lightly with starch so proteins meet acid more gently. Chocolate and wine reductions count as acid players too.',
+      ],
+      tip: 'If the base looks split but not burned, a careful strain and a buzz with the blender sometimes saves the batch before churn—taste after, not before.',
     },
     {
-      "heading": "Emulsion science",
-      "paragraphs": [
-        "An emulsifier is a molecule that has one end that likes fat and one end that likes water—it sits at the boundary between droplets of one and the other and keeps them from clumping. Lecithin, the natural emulsifier in egg yolks (and in smaller amounts in milk), is the home cook's standard tool. Commercial products use mono- and diglycerides, which are basically split-up fats engineered to do the same job. The other big factor is homogenization—the mechanical breaking of fat droplets into very small, even sizes—and even a household blender can partially homogenize a small batch back into a stable emulsion if you act before the base sets. Acidic fruits really do need either a stabilized, starch-thickened base or a careful late incorporation; without that, milk proteins precipitate out and you get a grainy, broken texture."
-      ]
+      heading: 'Thaw and refreeze tells on you',
+      paragraphs: [
+        'A pint that softened in the car and went back into the freezer rarely returns to the same silk. Fat rises, water sinks, and the next scoop carries that story in streaky layers.',
+      ],
     },
     {
-      "heading": "Churn and storage",
-      "paragraphs": [
-        "Pushing the dasher past the proper draw point is the single fastest way to butter the fat in your base. You'll feel it as a heavy, grainy mouthfeel and you'll often see physically separated pieces of fat on the dasher when you pull it out. Stop earlier than you think you should the first time you try a new machine, and you can always finish hardening in the freezer."
-      ]
+      heading: 'Emulsifiers in plain language',
+      paragraphs: [
+        'Egg yolk lecithin is the home cook’s bridge between fat and water. Some recipes lean on a spoon of starch or a tiny amount of gum for the same handshake. Without enough bridge, high-fat mixes are more likely to break under shear.',
+      ],
     },
     {
-      "heading": "What to log on the next batch",
-      "paragraphs": [
-        "Ice cream is a contest between sugar, dairy, air, and cold: sugar and alcohol lower the freezing point, fat and milk solids carry flavor and body, and overrun is the air you folded in during churn. Home freezers vary, so the same formula can feel rock-hard in one house and soft in another—note your churn finish, hardening time, and where the pint sat in the box.",
-        "Change one lever at a time—base sweetness, milk fat level, churn time, or hardening temp—and taste a spoonful after five minutes on the counter when you compare batches. SenseiFood’s Fix My Recipe ice cream checks help when you need a second opinion on solids and sugar balance."
-      ]
+      heading: 'Custard heat without drama',
+      paragraphs: [
+        'Cook yolk bases gently until they coat a spoon, keep scraping the corners, and move the pan off heat early—heavy metal keeps cooking after the burner stops. A double boiler is a friend on fierce stoves.',
+      ],
     },
     {
-      "heading": "Extra variables that swing results",
-      "paragraphs": [
-        "Overrun (the air whipped in during churning) changes both how flavors release and how stable the foam feels—home machines vary, so note your churn time and the visual finish (looks like soft-serve, barely holding ribbons) before transferring. Emulsifiers and eggs shift the freezing curve by a few degrees, which can be enough to change scoop feel, so document any brand changes. If you temper before service, track how long the carton sat above 0°F (−18°C); small windows of warm-up change mouthfeel dramatically. Total solids—not just fat—include milk solids non-fat (the lactose-and-protein dry portion of dairy), and a higher MSNF can bind water in its own way and change firmness at the same sugar level. Alcohol and invert syrups both depress the freezing point too; a couple of percent of ethanol can keep a base softer at 0°F than the sugar math alone would suggest."
-      ]
-    }
+      heading: 'What Fix My Recipe is looking at',
+      paragraphs: [
+        'Ice cream mode compares fat, sugar, and water bands to reference shapes. Wildly high fat with little emulsifier support, or very loose sugar relative to solids, often lines up with split textures—grams make that conversation concrete.',
+      ],
+    },
   ],
-  "related": [
-    {
-      "title": "Why Ice Cream Gets Freezer Burn",
-      "path": "/ice-cream-science/why-ice-cream-gets-freezer-burn"
-    },
-    {
-      "title": "Why Ice Cream Gets Icy",
-      "path": "/ice-cream-science/why-ice-cream-gets-icy"
-    },
-    {
-      "title": "Why Ice Cream Is Creamy",
-      "path": "/ice-cream-science/why-ice-cream-is-creamy"
-    }
+  related: [
+    { title: 'Why Ice Cream Base Curdles Before Churning', path: '/ice-cream-science/why-ice-cream-base-curdles-before-churning' },
+    { title: 'Why Ice Cream Loses Air (Overrun Collapse)', path: '/ice-cream-science/why-ice-cream-loses-air-overrun-collapse' },
+    { title: 'Why Ice Cream Is Creamy', path: '/ice-cream-science/why-ice-cream-is-creamy' },
   ],
-  "faqs": [
+  faqs: [
     {
-      "q": "Can I rescue a split base before churning?",
-      "a": "Sometimes—if the base hasn't fully curdled into hard chunks of protein, blending it smooth, straining through a fine sieve, and rechilling can get you most of the way back to a churnable mix. If you can see solid white flecks of cooked protein, it's gone too far and you're better off starting over."
+      q: 'Can I blend a split base and rechurn?',
+      a: 'Sometimes, if nothing tastes burned and proteins are not rubbery. Strain, chill completely, and accept that texture may be humbler than a perfect first pass.',
     },
     {
-      "q": "Why do vegan ice creams separate?",
-      "a": "Plant-based bases don't have milk proteins or natural lecithin to hold fat and water together, so they rely on other emulsifiers—soy lecithin, gums like xanthan or guar, or oils that have been pre-emulsified during processing. When those aren't dosed correctly, the base splits in the same ways a dairy base would, just for different chemical reasons."
-    }
-  ]
+      q: 'Why do plant bases split differently?',
+      a: 'They lack milk’s natural protein-and-lecithin toolkit, so gums and chosen fats have to carry the emulsion. Wrong doses show up the same way—oil on top, water below.',
+    },
+  ],
 };
 
 export default function WhyIceCreamSeparates() {

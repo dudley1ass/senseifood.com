@@ -3,90 +3,70 @@ import type { ScienceArticleSpec } from '../data/scienceArticleTypes';
 
 /** Article content for this route — lives in this file only. */
 const SPEC: ScienceArticleSpec = {
-  "slug": "why-ice-cream-lacks-flavor",
-  "segment": "ice-cream-science",
-  "categoryLabel": "Ice Cream Science",
-  "title": "Why Ice Cream Lacks Flavor",
-  "subtitle": "Cold makes your taste buds less sensitive to sweetness and aroma, fat coats the tongue and mutes delicate notes, and the air and water in the mix dilute any extract you add—so a base that tastes vivid warm can read flat once it's frozen.",
-  "readTime": "7 min read",
-  "emoji": "😐",
-  "fixRecipe": {
-    "category": "iceCream",
-    "problem": "general"
+  slug: 'why-ice-cream-lacks-flavor',
+  segment: 'ice-cream-science',
+  categoryLabel: 'Ice Cream Science',
+  title: 'Why Ice Cream Lacks Flavor',
+  subtitle:
+    'Cold dulls aroma and sweetness on the tongue, cream wraps flavors in a heavy coat, and every cup of milk dilutes what you stirred in—so a base that sings in the pot can whisper in the pint.',
+  readTime: '7 min read',
+  emoji: '😐',
+  fixRecipe: {
+    category: 'iceCream',
+    problem: 'general',
   },
-  "quickAnswer": "Flavor almost always reads weaker once a base is frozen, so you have to overbuild it on purpose. Punch up the base before churning—use cooked-down concentrates, a small pinch of salt, a squeeze of acid, or a splash of alcohol to carry aromatics—and taste the warm mix knowing it will taste several notches milder in the carton. If a warm spoonful seems just slightly too strong, the frozen scoop will land right.",
-  "intro": "Frozen dessert work is part chemistry and part compensation for the way your senses change at low temperatures. What tastes balanced and lively in a warm pot can feel timid and washed out at 0°F (−18°C), because your taste buds are simply less responsive in that range—aroma molecules are less volatile, sweetness perception drops, and the trigeminal nerves that handle cold sensations crowd out finer flavor signals. Fat in the base coats your tongue, which helps carry fat-soluble flavors like vanilla and chocolate but can also smother the more delicate top notes unless salt and a touch of acid bring them back. Overrun (the air whipped into the base during churning) is another silent thief—every spoonful contains less flavor-bearing mass once it's stretched out with air.",
-  "sections": [
+  quickAnswer:
+    'Build flavor louder than you think you need while the base is warm, then taste cold. Salt, a squeeze of lemon, concentrated coffee or cocoa, and good vanilla all give sugar something to lean on. If the warm base tastes merely “pleasant,” the frozen scoop will taste shy.',
+  intro:
+    'Eating ice cream is a cold, quiet room for your nose. Aromas that jumped out of a warm pot barely rise from a frozen spoon, and your brain registers less sweetness at the same sugar level. Fat carries rich notes beautifully but can blanket delicate ones unless you add contrast. Air from churning stretches the mix so there is literally less flavor material per bite. None of that means you failed—it means frozen dessert always asks for a little theater in the pot so the freezer does not steal the show.',
+  sections: [
     {
-      "heading": "Temperature and perception",
-      "paragraphs": [
-        "Cold blunts the sense of taste in a couple of ways at once. Volatile aroma molecules are less likely to leap off the spoon into your nose at freezer temperatures, and the trigeminal nerves—the same nerves that register the cold itself—dominate the signal, masking finer notes. On top of that, your perception of sweetness drops measurably in the 0–20°F (−18 to −7°C) range, which is exactly why a base that tasted perfectly sweet in the pot can feel oddly under-sweetened once frozen."
-      ]
+      heading: 'Why the pot lies to you—kindly',
+      paragraphs: [
+        'Warm tasting is still useful for catching scorch or salt spikes, but it will overpromise on how loud the flavor will read at zero degrees. Taste cool, too: chill a spoonful in the fridge before you commit.',
+      ],
     },
     {
-      "heading": "Dilution math",
-      "paragraphs": [
-        "Every gram of cream, milk, sugar syrup, and whipped-in air is something your infused flavor has to compete with. Once you account for the water in the dairy and the air added during churning, a tea or coffee infusion can end up at maybe half the strength you tasted before it hit the machine. The fix is to either steep your infusion noticeably stronger than you'd want to drink it, or pull water back somewhere else in the recipe (less milk, more cream and reduced concentrate) so the flavor isn't drowning when you take the first cold bite."
-      ]
+      heading: 'Dilution is the quiet thief',
+      paragraphs: [
+        'Cream, milk, water from fruit, and the air folded in during churn all spread the main character thin. Steep teas and coffees stronger than you would drink, reduce fruit to a paste with less free water, or bump cacao and vanilla where those carry the story.',
+      ],
     },
     {
-      "heading": "Fat and vanilla",
-      "paragraphs": [
-        "Cream is good at carrying fat-soluble aromatics—vanilla, brown butter, cocoa, nuts—because those molecules dissolve into the milkfat and ride it through the bite. The trade-off is that fat also physically coats the inside of your mouth, which can blanket the brighter, more delicate notes (citrus zest, fresh herbs, floral teas) if there's nothing balancing them. A small pinch of salt and a careful dose of vanilla together act like contrast knobs, lifting subtler flavors back into view rather than burying them under richness."
-      ]
+      heading: 'Salt, acid, and bitter notes as frame',
+      paragraphs: [
+        'A small pinch of salt wakes sweetness without making dessert savory. A little citrus or coffee gives sugar an edge to push against. Chocolate bases often need more cocoa than instinct suggests because cold mutes roast notes.',
+      ],
+      tip: 'Let a scoop warm on the spoon for a few seconds before judging—you will often “find” flavor that was there all along.',
     },
     {
-      "heading": "Ratios",
-      "paragraphs": [
-        "Ice cream mode in Fix My Recipe will quickly show you whether you've maxed out the sugar and dairy ranges while shortchanging your flavor carriers (the cocoa, fruit concentrate, extract, or infusion that's actually supposed to define the pint). Bland scoops often have textbook-correct sugar and fat numbers but only token amounts of the thing the label says it is. Fix it holistically: bump the flavor mass, then nudge sugar to compensate, rather than pouring in another tablespoon of extract on top of an already-saturated base."
-      ]
+      heading: 'Fat level changes the spotlight',
+      paragraphs: [
+        'Very heavy cream coats the tongue and slows aroma release. For delicate flavors like herbs or tea, a slightly lighter dairy line can paradoxically taste more vivid once frozen.',
+      ],
     },
     {
-      "heading": "Bloom and volatiles",
-      "paragraphs": [
-        "Let a scoop sit on the counter for a minute or two and you'll often taste a pint differently—warmer surface temperature lets aroma molecules volatilize and reach your nose more easily, so the same ice cream reads sweeter and more aromatic at 10°F (−12°C) than at −5°F (−21°C). Extracts and infusions also need to be concentrated enough to survive being diluted by cream, milk, and air; what looks like 'plenty of vanilla' in a measuring spoon can vanish into a four-pint batch."
-      ]
+      heading: 'Using Fix My Recipe as a second set of eyes',
+      paragraphs: [
+        'When sugar and fat look textbook but the pint still tastes anonymous, the tool can highlight that flavor carriers are thin relative to dairy volume—nudging you toward concentrate before you chase another teaspoon of extract.',
+      ],
     },
-    {
-      "heading": "Fat and sugar",
-      "paragraphs": [
-        "More fat in a base sometimes flattens perceived flavor intensity rather than boosting it, which feels counterintuitive but shows up reliably in side-by-side tastings. A heavier cream coat on the tongue slows aroma release and dulls fast-moving top notes; for delicate flavors—tea, herb, citrus—pulling fat down a notch and pushing milk solids non-fat up can actually deliver a more vivid scoop."
-      ]
-    },
-    {
-      "heading": "What to log on the next batch",
-      "paragraphs": [
-        "Ice cream is a contest between sugar, dairy, air, and cold: sugar and alcohol lower the freezing point, fat and milk solids carry flavor and body, and overrun is the air you folded in during churn. Home freezers vary, so the same formula can feel rock-hard in one house and soft in another—note your churn finish, hardening time, and where the pint sat in the box.",
-        "Change one lever at a time—base sweetness, milk fat level, churn time, or hardening temp—and taste a spoonful after five minutes on the counter when you compare batches. SenseiFood’s Fix My Recipe ice cream checks help when you need a second opinion on solids and sugar balance."
-      ]
-    },
-    {
-      "heading": "Extra variables that swing results",
-      "paragraphs": [
-        "Overrun (air volume) changes both how flavors release on the tongue and how hardness reads—home machines vary widely, so note your churn time and the visual finish (looks like soft-serve, barely holding ribbons) before transferring. Emulsifiers and eggs shift the freezing curve by a few degrees, which can be enough to change flavor release, so document any brand changes. If you temper for service, track how long the carton sat above 0°F (−18°C); even small windows of warm-up change both mouthfeel and aroma intensity. Total solids—not just fat—include milk solids non-fat (the lactose-and-protein dry portion of dairy), and a higher MSNF can bind water in its own way, which changes how flavors carry. Alcohol and invert syrups both depress freezing point and act as flavor carriers; even a couple of percent of ethanol can keep a base softer at 0°F and pull aromatics forward."
-      ]
-    }
   ],
-  "related": [
-    {
-      "title": "Why Ice Cream Gets Icy",
-      "path": "/ice-cream-science/why-ice-cream-gets-icy"
-    },
-    {
-      "title": "Why Ice Cream Is Creamy",
-      "path": "/ice-cream-science/why-ice-cream-is-creamy"
-    }
+  related: [
+    { title: 'Why Ice Cream Tastes Too Sweet', path: '/ice-cream-science/why-ice-cream-tastes-too-sweet' },
+    { title: 'Why Ice Cream Tastes Better After Resting Overnight', path: '/ice-cream-science/why-ice-cream-tastes-better-after-resting-overnight' },
+    { title: 'Why Ice Cream Is Creamy', path: '/ice-cream-science/why-ice-cream-is-creamy' },
   ],
-  "faqs": [
+  faqs: [
     {
-      "q": "Does adding salt to something sweet really help?",
-      "a": "Yes—just a small pinch of salt sharpens your perception of sweetness and rounds out other flavors, so a vanilla or chocolate base reads more complete and complex without actually tasting salty. It's one of the most reliable tricks for fixing a 'flat' frozen dessert."
+      q: 'Does more vanilla fix everything?',
+      a: 'Only if vanilla was the missing piece. Often the answer is salt, concentration, or a complementary flavor—not a higher bill for the same note.',
     },
     {
-      "q": "What about freezer odors from older ice cream?",
-      "a": "Fat is excellent at absorbing odors, which is why an open pint next to last week's onions ends up tasting like the rest of the freezer. Pack into airtight containers, press plastic film against the surface, and don't share shelves with strong-smelling foods."
-    }
-  ]
+      q: 'Why does my ice cream taste like the freezer?',
+      a: 'Fat picks up odors. Use airtight containers, film on the surface, and do not store next to fish night leftovers.',
+    },
+  ],
 };
 
 export default function WhyIceCreamLacksFlavor() {

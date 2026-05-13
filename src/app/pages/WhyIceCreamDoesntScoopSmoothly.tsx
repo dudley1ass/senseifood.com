@@ -1,91 +1,72 @@
 import { ScienceArticlePage } from '../components/ScienceArticlePage';
 import type { ScienceArticleSpec } from '../data/scienceArticleTypes';
 
-/** Full article content for this route — lives in this file only. */
+/** Article content for this route — lives in this file only. */
 const SPEC: ScienceArticleSpec = {
-  "slug": "why-ice-cream-doesnt-scoop-smoothly",
-  "segment": "ice-cream-science",
-  "categoryLabel": "Ice Cream Science",
-  "title": "Why Ice Cream Doesn't Scoop Smoothly",
-  "subtitle": "Hard pints come down to freezing point depression (how dissolved sugar, salts, and dairy solids lower the temperature where ice locks up), ice fraction, and whether you gave the surface a few minutes to temper before attacking it.",
-  "readTime": "7 min read",
-  "level": "Freezing & temper",
-  "emoji": "🍨",
-  "fixRecipe": {
-    "category": "iceCream",
-    "problem": "general"
+  slug: 'why-ice-cream-doesnt-scoop-smoothly',
+  segment: 'ice-cream-science',
+  categoryLabel: 'Ice Cream Science',
+  title: "Why Ice Cream Doesn't Scoop Smoothly",
+  subtitle:
+    'Rough scoops are usually a mix of “too cold,” “too lean on sugar and solids,” and “not tempered”—arm strength is rarely the real hero.',
+  readTime: '7 min read',
+  emoji: '🍨',
+  fixRecipe: {
+    category: 'iceCream',
+    problem: 'general',
   },
-  "quickAnswer": "Brick-hard ice cream usually means too little of the dissolved stuff that keeps a liquid phase alive at freezer temps—sugar, dairy solids, sometimes alcohol—or a freezer that is colder than you think. Let the pint temper five to ten minutes; if it still shatters, look at total solids and water, not biceps.",
-  "intro": "Scooping is rheology, not arm wrestling: ice cream is ice, air, fat, and unfrozen syrup holding hands. Freezing point depression is the chemistry name for why sugar and dissolved solids make it harder for water to freeze solid—more syrup phase usually means easier scooping. Skip tempering and you shatter ice sheets into powdery chips even when the recipe is fine. Freezer placement, overrun from churn, and MSNF (milk solids-not-fat—the protein plus mineral \"dry stuff\" in dairy besides butterfat) all nudge the same spoon feel. Below we split \"too cold\" from \"wrong balance\" so you know whether to wait or reformulate.",
-  "sections": [
+  quickAnswer:
+    'Let the pint warm slightly so the surface yields; if it still shatters, look at sugar, dairy solids, and water balance, then at how cold your freezer really is. Dense, low-air home churns also feel firmer than grocery pints—that is normal, not a defect.',
+  intro:
+    'Scooping should feel like shearing through something that yields—not shattering a windshield. When the surface is rock and the center is softer, you are fighting geometry and temperature, not the recipe alone. Narrow pints hide a cold core; a warm scoop only masks the problem on the rim. Temper, measure your cold, and only then adjust the mix.',
+  sections: [
     {
-      "heading": "Freezer temperature as part of the recipe",
-      "paragraphs": [
-        "Home freezers often run colder than people assume, especially near the back wall or in frost-free cycles. A few degrees Fahrenheit can materially change scoop effort because hardness is not linear with temperature in this range. If you can, store serve tubs in a slightly warmer zone or transfer to the refrigerator door for a short staging before guests arrive. For long storage, accept that you will temper—think of temper time as a required ingredient for service."
+      heading: 'Temper like it is part of the recipe',
+      paragraphs: [
+        'Five to ten minutes on the counter (more in a hot kitchen, less under bright lights) lets the edge soften so the scoop can roll a ball instead of chipping shards. That is how many shops work around very cold storage.',
       ],
-      "bullets": [
-        {
-          "title": "Measure once",
-          "text": "An inexpensive fridge thermometer in the ice cream zone ends debates about whether “it used to scoop easier.”"
-        },
-        {
-          "title": "Pint geometry",
-          "text": "Narrow deep pints insulate the center; the surface may temper while the core stays rock hard—stir expectations accordingly."
-        }
-      ]
     },
     {
-      "heading": "Temper sequence before service",
-      "paragraphs": [
-        "Tempering lets the surface yield so the scoop shears through lubricated, partially melted layers instead of crushing rigid ice. Going straight from deep cold to pressure generates fractures that read as dryness and powder even when fat content is adequate. Five to ten minutes on the counter is a starting point; humid rooms and warm lights change the rate. For neat spheres, aim for a surface that yields to a thumb press without collapsing the whole pint."
+      heading: 'Know your freezer’s personality',
+      paragraphs: [
+        'Back corners and chest freezers often run colder than the number in your head. A simple thermometer ends debates about why last month felt easier.',
       ],
-      "tip": "If you need multiple scoops, work in waves—return the container to the freezer between batches so melt does not progress unevenly."
+      tip: 'For party service, stage in the fridge door briefly—not so long that it melts—then scoop in waves.',
     },
     {
-      "heading": "Solids, sugar, and freezing point depression",
-      "paragraphs": [
-        "Sugars and alcohol lower the freezing point of the unfrozen phase; dairy solids and other solutes change water availability. A formula that is lean on sugars or total solids can freeze harder than expected, especially if water inputs are high. If tempering never helps, look at the balance sheet: MSNF, fat, egg yolk, stabilizers, and sweetener profile. Commercial bases also assume a target overrun; a dense, low-air home churn can feel firmer even when the mix is correct on paper."
-      ]
+      heading: 'Balance still matters',
+      paragraphs: [
+        'Very lean on sugar and total solids, a pint freezes harder even at the “right” freezer temp. If tempering never helps, nudge sweetness or dairy strength rather than buying a bigger biceps.',
+      ],
     },
     {
-      "heading": "Holding after scooping",
-      "paragraphs": [
-        "Pre-scooped nests in a pan can sublimate and recrystallize at edges, especially uncovered in a cold blast. Cover, minimize airflow, and avoid refreezing partially melted scoops if you care about texture—each heat shock coarsens ice. For service lines, slightly warmer holding cabinets are a different physics than home freezers; mimic the idea by letting scoops temper briefly before plating rather than fighting a −20°F core."
-      ]
-    }
+      heading: 'Shape of the container',
+      paragraphs: [
+        'Deep tubs hide a frozen core under a soft lid. Shallow wide tubs temper more evenly. Choose packaging that matches how you serve.',
+      ],
+    },
+    {
+      heading: 'Warm scoop, cool head',
+      paragraphs: [
+        'A hot scoop melts a ragged trench while the middle stays brick. Temper first; use warm metal as a polish, not a crutch.',
+      ],
+    },
   ],
-  "faqs": [
+  faqs: [
     {
-      "q": "Why was last week’s batch easier to scoop?",
-      "a": "Freezer cycling, door openings, and position in the stack change temperature. Also, freshly churned ice cream often has slightly different ice crystal size until it ripens—texture can shift after a few days."
+      q: 'Why was last week easier?',
+      a: 'Freezer position, how full the freezer was, and crystal ripening all shift firmness. Note conditions when you win.',
     },
     {
-      "q": "Does a hot scoop help?",
-      "a": "A warm metal scoop cuts mechanical effort but does not replace tempering; it can over-melt surfaces while the center stays hard, yielding messy shapes."
+      q: 'Is rock-hard “premium”?',
+      a: 'Not necessarily—sometimes it is just cold storage or a lean base. Gelato-style desserts are softer on purpose.',
     },
-    {
-      "q": "Is hard ice cream “more premium”?",
-      "a": "Not inherently. Some gelato-style servings are softer by design; rock-hard pints often indicate storage temperature or water-to-solids balance, not luxury."
-    }
   ],
-  "related": [
-    {
-      "title": "Why Ice Cream Is Too Hard",
-      "path": "/ice-cream-science/why-ice-cream-is-too-hard"
-    },
-    {
-      "title": "Why Ice Cream Melts Fast",
-      "path": "/ice-cream-science/why-ice-cream-melts-fast"
-    },
-    {
-      "title": "Why Ice Cream Is Creamy",
-      "path": "/ice-cream-science/why-ice-cream-is-creamy"
-    },
-    {
-      "title": "Why Ice Cream Gets Icy",
-      "path": "/ice-cream-science/why-ice-cream-gets-icy"
-    }
-  ]
+  related: [
+    { title: 'Why Ice Cream Is Too Hard', path: '/ice-cream-science/why-ice-cream-is-too-hard' },
+    { title: 'Why Ice Cream Melts Fast', path: '/ice-cream-science/why-ice-cream-melts-fast' },
+    { title: 'Why Ice Cream Is Creamy', path: '/ice-cream-science/why-ice-cream-is-creamy' },
+  ],
 };
 
 export default function WhyIceCreamDoesntScoopSmoothly() {

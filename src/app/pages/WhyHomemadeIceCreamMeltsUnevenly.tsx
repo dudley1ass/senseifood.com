@@ -3,71 +3,64 @@ import type { ScienceArticleSpec } from '../data/scienceArticleTypes';
 
 /** Article content for this route — lives in this file only. */
 const SPEC: ScienceArticleSpec = {
-  "slug": "why-homemade-ice-cream-melts-unevenly",
-  "segment": "ice-cream-science",
-  "categoryLabel": "Ice Cream Science",
-  "title": "Why Homemade Ice Cream Melts Unevenly",
-  "subtitle": "Poor overrun, weak emulsions, and ice phase gradients create puddles while solids still feel cold.",
-  "readTime": "8 min read",
-  "emoji": "🍨",
-  "fixRecipe": {
-    "category": "iceCream",
-    "problem": "melts-fast"
+  slug: 'why-homemade-ice-cream-melts-unevenly',
+  segment: 'ice-cream-science',
+  categoryLabel: 'Ice Cream Science',
+  title: 'Why Homemade Ice Cream Melts Unevenly',
+  subtitle:
+    'One spoonful is soup while another is icy because the pint is not one uniform thing—air, ice, fat, and syrup landed in patches, and heat finds the easy paths first.',
+  readTime: '7 min read',
+  emoji: '🍨',
+  fixRecipe: {
+    category: 'iceCream',
+    problem: 'melts-fast',
   },
-  "quickAnswer": "Uneven melt comes from inconsistent air distribution, localized low solids, broken emulsions that let butterfat churn out, and heat-shocked crystals that melt faster in pockets. Aim smooth viscous base before churn, proper hardening, and minimize thaw-refreeze; small glucose solids can even out meltdown.",
-  "intro": "Uneven melting means your pint is not one smooth solid—it is air cells, ice, fat, and unfrozen syrup in patches. Commercial makers design for meltdown; home churns often discover it first on the cone. Overrun (the air whipped in), emulsion strength, draw temperature, hardening, and thaw-refreeze cycles all change whether melt looks like an even puddle or a weird river map. You do not need time-lapse cameras—just connect \"puddle here, ice there\" to base viscosity, churn time, and freezer behavior, then change one variable next batch.",
-  "sections": [
+  quickAnswer:
+    'Uneven melt usually means air was folded in unevenly, the emulsion wobbled so butterfat pooled in places, or heat shock left bands of different crystal size and sugar concentration. Smooth, viscous bases, consistent churn, a real hardening step, and gentle storage keep the melt map calmer.',
+  intro:
+    'Commercial makers chase even meltdown on purpose; home churns often meet it for the first time at the cone. Think of the pint as neighborhoods: dense spots with little air melt slowly next to watery channels that rush to puddle. Your job is fewer neighborhoods—more even air, fewer broken emulsions, less thaw-and-refreeze drama.',
+  sections: [
     {
-      "heading": "Overrun and air channeling",
-      "paragraphs": [
-        "Air is an ingredient; uneven incorporation leaves dense bands that melt at different rates. High water, low solids bases melt aggressively where air is absent. Warm draw temperatures leave unfrozen water to collapse unevenly on first contact with heat."
-      ]
+      heading: 'Air that shows up in clumps',
+      paragraphs: [
+        'If some regions never got their share of churned-in air, they behave like a different dessert than the airy ribbon beside them. Finish churn at a consistent thickness and scrape the bowl so the last pint is the same story as the first.',
+      ],
     },
     {
-      "heading": "Emulsion stability and fat churn",
-      "paragraphs": [
-        "Lecithin and proteins keep fat dispersed; when emulsions fail, oil pools appear while ice lingers. Over-churning separates butter particles that melt instantly in hot spots. Alcohol and sugar shift freezing curves; random slugs of high-proof liqueur create local soft zones."
-      ]
+      heading: 'Broken emulsions make rivers',
+      paragraphs: [
+        'When fat separates, it melts fast in warm lines while ice lingers nearby. Over-churning, warm bowls, or too much booze in one corner of the base all invite that map.',
+      ],
     },
     {
-      "heading": "Heat shock and refreeze bands",
-      "paragraphs": [
-        "Partial melts create layers that refreeze into different crystal sizes and solute concentrations. Door openings in frost-free freezers create micro bands of heat shock visible as ripples in pints. Serving from a warm scoop rewets surface microstructure for the next scoop session."
-      ]
+      heading: 'Heat shock leaves stripes',
+      paragraphs: [
+        'Softened rims and half-melted cores refreeze into visible bands with different crystal sizes. The melt looks like a weather front crossing the scoop. Keep the cold chain steady and smooth the surface before the lid goes back on.',
+      ],
+      tip: 'Try a “warm plate drip test”: note where the first puddle forms and how fast the center follows— that tells you whether the issue is air, emulsion, or storage bands.',
     },
     {
-      "heading": "How Fix My Recipe helps",
-      "paragraphs": [
-        "Ice cream mode compares sugar, dairy, and water bands to smooth meltdown references. Record draw temp, hardening temp, and time-to-first-drip on a warm plate test."
-      ]
+      heading: 'What to log on the next batch',
+      paragraphs: [
+        'Draw texture, harden time, freezer zone, and any fruit or alcohol spikes. Fix My Recipe can compare sugar, dairy, and water bands to smoother references so you are not guessing in the dark.',
+      ],
     },
-    {
-      "heading": "Reading melt like a narrative, not a spec sheet",
-      "paragraphs": [
-        "Uneven melt is often the epilogue of air, sugar, and fat not agreeing: some zones were never as frozen, or overrun collapsed so water pooled beside butterfat rivers. The spoon feels the subplot before your eyes see it. Note base style, churn time, and how hard the freezer was working that week—plain language, not equipment IDs. Two batches with one intentional change tell the story faster than a folder of identical top-down photos."
-      ]
-    }
   ],
-  "faqs": [
-    {
-      "q": "Is uneven melt the same as icy?",
-      "a": "Related but distinct; icy is crystal sensation, uneven melt is phase layout and air defects."
-    },
-    {
-      "q": "Does more fat fix it?",
-      "a": "Sometimes, but broken emulsion high fat still pools; fix state before chasing grams."
-    }
+  related: [
+    { title: 'Why Ice Cream Melts Fast', path: '/ice-cream-science/why-ice-cream-melts-fast' },
+    { title: 'Why Ice Cream Separates', path: '/ice-cream-science/why-ice-cream-separates' },
+    { title: 'Why Ice Cream Loses Air (Overrun Collapse)', path: '/ice-cream-science/why-ice-cream-loses-air-overrun-collapse' },
   ],
-  "related": [
+  faqs: [
     {
-      "title": "Why Ice Cream Is Too Soft",
-      "path": "/ice-cream-science/why-ice-cream-is-too-soft"
+      q: 'Is uneven melt the same as icy?',
+      a: 'Icy is crystal feel on the teeth; uneven melt is puddles next to cold solids. Related storage issues sometimes, different fixes.',
     },
     {
-      "title": "Why Ice Cream Separates",
-      "path": "/ice-cream-science/why-ice-cream-separates"
-    }
-  ]
+      q: 'Will more fat fix it?',
+      a: 'Only if the emulsion is healthy. Extra cream in a split base still pools.',
+    },
+  ],
 };
 
 export default function WhyHomemadeIceCreamMeltsUnevenly() {

@@ -1,190 +1,74 @@
-import { ArrowLeft } from 'lucide-react';
-import { Link } from 'react-router';
-import { Navigation } from '../components/Navigation';
-import { Footer } from '../components/Footer';
+import { ScienceArticlePage } from '../components/ScienceArticlePage';
+import type { ScienceArticleSpec } from '../data/scienceArticleTypes';
+
+/** Article content for this route — lives in this file only. */
+const SPEC: ScienceArticleSpec = {
+  slug: 'why-ice-cream-melts-fast',
+  segment: 'ice-cream-science',
+  categoryLabel: 'Ice Cream Science',
+  title: 'Why Ice Cream Melts Fast',
+  subtitle:
+    'A scoop that turns into a puddle before you reach the couch is telling a story about air, fat, sugar, and how densely the mix was built—not about whether you “deserved” a slower melt.',
+  readTime: '6 min read',
+  emoji: '🍦',
+  fixRecipe: {
+    category: 'iceCream',
+    problem: 'melts-fast',
+  },
+  quickAnswer:
+    'Melting speed comes down to how much structure is holding cold in place: fat, dissolved sugars, proteins, and the tiny air bubbles you churned in all slow collapse. Very airy, low-fat, or low-sugar mixes have less scaffolding, so heat walks through them quickly. Serving temperature matters too—warmer scoops melt faster on the plate even when the formula is fine.',
+  intro:
+    'Ice cream is a frozen foam: ice, air, fat, and sweetened water sharing one spoon. Each part does real work. Fat and proteins wrap bubbles and crystals; air breaks up continuity so heat cannot march in a straight line; sugar ties up water so less of it freezes into rigid blocks. When any of those roles are missing—especially in budget pints with lots of overrun—melting looks dramatic. Homemade bases can melt oddly too if they are warm when served or low on total solids. Thinking in “structure per bite” usually explains what you are seeing faster than blaming the brand.',
+  sections: [
+    {
+      heading: 'Air content and melt',
+      paragraphs: [
+        'Churning whips in air (overrun). A little air makes texture pleasant; a lot of air makes the pint feel light in the hand and fast to puddle, because bubbles collapse and release their water in a rush. Premium styles often sit in a moderate air band so the scoop holds a shape long enough to enjoy.',
+      ],
+    },
+    {
+      heading: 'Fat and solids buy time',
+      paragraphs: [
+        'Fat carries flavor, but it also insulates and networks around bubbles. Dairy solids and eggs add proteins that help emulsions hold. Skim the fat or skip the eggs without adjusting anything else, and you should expect a quicker melt even if the flavor still tastes good.',
+      ],
+    },
+    {
+      heading: 'Sugar, sorbet, and the no-fat case',
+      paragraphs: [
+        'Sugar lowers the freezing point, which changes how firm the pint is in the freezer and how fast it slackens in the bowl. Sorbet has no cream shield, so it often races toward liquid—sugar and fruit solids are doing almost all the structural work.',
+      ],
+    },
+    {
+      heading: 'Stabilizers and home tradeoffs',
+      paragraphs: [
+        'Small amounts of gums or starches slow water movement when crystals start melting, which buys seconds on the plate that feel like miles in dessert time. Gelato traditions lean more on eggs and lower air instead of a long gum list. Either path is valid; the goal is the same: keep water from sprinting away the moment the scoop warms.',
+      ],
+      tip: 'If homemade melts instantly, check draw temperature, hardening time, and sugar—not only fat. A base that is warm when it hits the pint will keep behaving badly even with extra cream.',
+    },
+    {
+      heading: 'How Fix My Recipe helps',
+      paragraphs: [
+        'Run the ice cream pathway with your grams when you can. It highlights lean solids patterns that correlate with fast melt and icy texture together, so you can adjust sugar or dairy strength with a target instead of a shrug.',
+      ],
+    },
+  ],
+  faqs: [
+    {
+      q: 'Why does cheap ice cream melt faster?',
+      a: 'It is often higher in air and lower in fat and egg than premium lines. The scoop feels fluffy in the carton but has less material resisting heat on the plate.',
+    },
+    {
+      q: 'Does gelato melt slower?',
+      a: 'Often yes, because it is denser (less air) and may carry more egg yolk emulsion. Density and emulsion both slow the collapse compared with an airy, low-fat ice cream.',
+    },
+  ],
+  related: [
+    { title: 'Why Ice Cream Gets Icy', path: '/ice-cream-science/why-ice-cream-gets-icy' },
+    { title: 'Why Ice Cream Is Creamy', path: '/ice-cream-science/why-ice-cream-is-creamy' },
+    { title: 'Why Ice Cream Is Too Soft', path: '/ice-cream-science/why-ice-cream-is-too-soft' },
+  ],
+};
 
 export default function WhyIceCreamMeltsFast() {
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-cyan-50 to-sky-50">
-      <Navigation />
-
-      <article className="max-w-4xl mx-auto px-6 py-16">
-        <Link
-          to="/articles"
-          className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"
-        >
-          <ArrowLeft className="w-4 h-4" />
-          Back to Articles
-        </Link>
-
-        <header className="mb-12">
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-4 py-2 rounded-full text-sm mb-6">
-            Ice Cream Science
-          </div>
-          <h1 className="text-5xl md:text-6xl mb-6 bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
-            Why Ice Cream Melts Fast
-          </h1>
-          <p className="text-xl text-muted-foreground">
-            Discover the science behind ice cream melting rate and how fat content, overrun, and stabilizers affect how long your scoop holds its shape.
-          </p>
-          <div className="flex items-center gap-4 mt-6 text-sm text-muted-foreground">
-            <span>6 min read</span>
-            <span>•</span>
-            <span>Beginner Friendly</span>
-          </div>
-        </header>
-
-        <div className="w-full h-80 bg-gradient-to-br from-blue-200 to-cyan-300 rounded-3xl mb-12 flex items-center justify-center shadow-2xl">
-          <span className="text-8xl">🍦</span>
-        </div>
-
-        <div className="prose prose-lg max-w-none">
-
-          {/* Quick Answer */}
-          <div className="bg-blue-50 border-l-4 border-blue-400 p-5 rounded-xl mb-8 flex items-start gap-4">
-            <span className="text-3xl flex-shrink-0">🍦</span>
-            <div>
-              <p className="font-bold text-blue-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
-              <p className="text-foreground/80 leading-relaxed">Fast-melting ice cream has too much air (high overrun) and too little fat. Premium ice cream (14–18% fat, 20–30% overrun) melts noticeably slower than cheap brands pumped full of air.</p>
-            </div>
-          </div>
-
-          <p className="text-xl leading-relaxed text-foreground/80 mb-8">
-            Ice cream that becomes a puddle before you finish your cone is both a physics problem and a recipe quality indicator. How fast ice cream melts is determined by its structure — specifically how much fat, air, and stabilizer it contains.
-          </p>
-
-          <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
-            What Is Ice Cream Made Of?
-          </h2>
-          <p className="text-foreground/80 leading-relaxed mb-6">
-            Ice cream is a frozen foam — a complex emulsion of ice crystals, fat globules, air bubbles, and sugar-water solution, all held in a semi-stable matrix. Its melt rate is determined by how well this matrix resists heat transfer and maintains structure as ice crystals warm and melt.
-          </p>
-
-          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-blue-200 my-10">
-            <h3 className="text-xl mb-6">Ice Cream Structure at a Glance</h3>
-            <div className="grid md:grid-cols-2 gap-4 text-sm">
-              <div className="p-4 bg-blue-50 rounded-xl">
-                <h4 className="font-medium text-blue-800 mb-2">🧊 Ice Crystals (30–70%)</h4>
-                <p className="text-muted-foreground text-xs">Provide firmness. Smaller crystals = creamier texture. Melt first when heat is applied.</p>
-              </div>
-              <div className="p-4 bg-cyan-50 rounded-xl">
-                <h4 className="font-medium text-cyan-800 mb-2">🌬️ Air (Overrun, 20–50%)</h4>
-                <p className="text-muted-foreground text-xs">Whipped in during churning. More air = lighter texture, faster melting.</p>
-              </div>
-              <div className="p-4 bg-sky-50 rounded-xl">
-                <h4 className="font-medium text-sky-800 mb-2">🧈 Fat Globules (10–18%)</h4>
-                <p className="text-muted-foreground text-xs">Stabilize air bubbles, slow melt rate, add richness and body.</p>
-              </div>
-              <div className="p-4 bg-blue-50 rounded-xl">
-                <h4 className="font-medium text-blue-800 mb-2">🍬 Sugar Solution</h4>
-                <p className="text-muted-foreground text-xs">Lowers freezing point, adds sweetness, affects scoopability and melt speed.</p>
-              </div>
-            </div>
-          </div>
-
-          <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
-            Why Some Ice Cream Melts Faster
-          </h2>
-
-          <div className="space-y-6">
-            <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-blue-200">
-              <h3 className="text-xl mb-3">🌬️ High Overrun (Too Much Air)</h3>
-              <p className="text-sm text-muted-foreground mb-3">
-                "Overrun" is the percentage of air whipped into ice cream. Cheap commercial ice cream can have up to 100% overrun — meaning it's half air by volume. High overrun ice cream melts extremely fast because the air bubbles collapse instantly and the remaining liquid has little structure to hold together.
-              </p>
-              <div className="bg-blue-50 rounded-lg p-3 text-xs">
-                <strong>Quality indicator:</strong> Premium ice creams have 20–30% overrun. They're denser, heavier per volume, and melt noticeably slower.
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-cyan-200">
-              <h3 className="text-xl mb-3">🧈 Low Fat Content</h3>
-              <p className="text-sm text-muted-foreground mb-3">
-                Fat does double duty: it carries flavor and it acts as a structural scaffold that slows melting. Fat globules cluster around air bubbles and ice crystals, forming a network that resists collapse. Low-fat or non-dairy ice creams lack this network and puddle much faster.
-              </p>
-              <div className="bg-cyan-50 rounded-lg p-3 text-xs">
-                <strong>Standard:</strong> Ice cream must contain ≥10% milkfat by law (US). Premium brands use 16–18% for slower melt and richer texture.
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-sky-200">
-              <h3 className="text-xl mb-3">🧪 No Stabilizers</h3>
-              <p className="text-sm text-muted-foreground mb-3">
-                Stabilizers (guar gum, locust bean gum, carrageenan) bind water and slow its movement when ice crystals melt. Without them, liquid from melting ice flows freely and the scoop loses shape immediately.
-              </p>
-              <div className="bg-sky-50 rounded-lg p-3 text-xs">
-                <strong>Note:</strong> High-quality gelato achieves slow melting with higher egg yolk content (which acts as a natural emulsifier and stabilizer) rather than gums.
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-blue-200">
-              <h3 className="text-xl mb-3">🍬 High Sugar Concentration</h3>
-              <p className="text-sm text-muted-foreground mb-3">
-                Sugar lowers the freezing point of ice cream. Very sweet ice cream stays softer at lower temperatures and begins melting faster when exposed to ambient air because its freeze point is already depressed.
-              </p>
-              <div className="bg-blue-50 rounded-lg p-3 text-xs">
-                <strong>Effect:</strong> This is also why sorbet (no fat) melts incredibly fast — it relies entirely on sugar concentration and stabilizers.
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl p-6 my-8 border-l-4 border-cyan-500">
-            <h4 className="text-lg mb-2 text-cyan-800">🔬 Science Note: The Slow Melt Test</h4>
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              Leave a scoop of premium ice cream and a scoop of cheap store brand side by side at room temperature. The cheap brand will puddle first — its high overrun collapses immediately. Premium ice cream maintains its shape significantly longer thanks to denser fat networks and lower air content. This test is the clearest quality signal in ice cream.
-            </p>
-          </div>
-
-
-          {/* FAQ Section */}
-          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
-            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-xl mb-2">Why does cheap ice cream melt faster?</h3>
-                <p className="text-muted-foreground text-sm">Cheap ice cream has high overrun (up to 100% air by volume) and less fat. The air bubble structure collapses instantly when warmed, and without fat to form a stabilizing scaffold, the liquid spreads immediately.</p>
-              </div>
-              <div className="border-t border-stone-100 pt-6">
-                <h3 className="text-xl mb-2">Does fat content affect how fast ice cream melts?</h3>
-                <p className="text-muted-foreground text-sm">Significantly. Fat globules cluster around air bubbles and ice crystals, forming a network that resists collapse. Premium ice cream with 14–18% fat melts noticeably slower than regular ice cream at 10%.</p>
-              </div>
-              <div className="border-t border-stone-100 pt-6">
-                <h3 className="text-xl mb-2">What makes gelato melt slower than ice cream?</h3>
-                <p className="text-muted-foreground text-sm">Gelato has lower overrun (less air) and higher egg yolk content, which acts as a natural emulsifier and stabilizer. The denser structure and stabilized emulsion hold together longer when warmed.</p>
-              </div>
-              <div className="border-t border-stone-100 pt-6">
-                <h3 className="text-xl mb-2">Can you make ice cream that doesn't melt?</h3>
-                <p className="text-muted-foreground text-sm">You can slow melting significantly with higher fat content, lower overrun, and more stabilizers, but all ice cream eventually melts at room temperature. Some research has explored cellulose-based stabilizers that dramatically extend melt resistance.</p>
-              </div>
-            </div>
-          </div>
-          {/* Related Articles */}
-          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
-            <h3 className="text-2xl mb-4">Related Articles</h3>
-            <div className="space-y-3">
-              <Link to="/ice-cream-science/why-ice-cream-gets-icy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Ice Cream Gets Icy</Link>
-              <Link to="/ice-cream-science/why-ice-cream-is-creamy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Ice Cream Is Creamy</Link>
-              <Link to="/ice-cream-science/why-ice-cream-gets-freezer-burn" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Ice Cream Gets Freezer Burn</Link>
-            </div>
-          </div>
-
-          <div className="bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-2xl p-8 my-12">
-            <h2 className="text-3xl mb-4">More Ice Cream Science</h2>
-            <p className="text-lg text-white/90 mb-6">
-              Explore the chemistry behind ice crystals, creaminess, and freezer burn.
-            </p>
-            <Link
-              to="/articles"
-              className="inline-flex items-center gap-2 bg-white text-blue-600 px-6 py-3 rounded-lg hover:shadow-xl transition-all hover:scale-105"
-            >
-              Browse Ice Cream Science
-              <ArrowLeft className="w-4 h-4 rotate-180" />
-            </Link>
-          </div>
-        </div>
-      </article>
-
-      <Footer />
-    </div>
-  );
+  return <ScienceArticlePage spec={SPEC} />;
 }

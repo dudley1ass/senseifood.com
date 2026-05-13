@@ -1,118 +1,57 @@
-import { ArrowLeft } from 'lucide-react';
-import { Link } from 'react-router';
-import { Navigation } from '../components/Navigation';
-import { Footer } from '../components/Footer';
+import { ScienceArticlePage } from '../components/ScienceArticlePage';
+import type { ScienceArticleSpec } from '../data/scienceArticleTypes';
+
+const SPEC: ScienceArticleSpec = {
+  slug: 'why-coffee-tastes-different-cold',
+  segment: 'coffee-science',
+  categoryLabel: 'Coffee Science',
+  title: 'Why Coffee Tastes Different Cold',
+  subtitle:
+    'Temperature changes what your nose catches, how acids read, and which aromatics stay dissolved—so the same brew can feel bright hot and dull or sharp when chilled.',
+  readTime: '6 min read',
+  emoji: '🧊',
+  fixRecipe: { category: 'coffee', problem: 'general' },
+  quickAnswer:
+    'Volatile aromatics hide when cold; bitterness can linger while sweetness feels quieter—brew a touch sweeter or brighter on purpose for iced, cool concentrate before diluting, and drink soon after chilling to avoid oxidation flatness.',
+  intro:
+    'Iced coffee is not hot coffee with ice hiding in the corner of the glass. Cooling shifts solubility and volatility; chlorogenic relatives and caffeine still register while floral top notes ghost away. Design the recipe for the temperature you will actually serve.',
+  sections: [
+    {
+      heading: 'What temperature does to perception',
+      paragraphs: [
+        'Warm liquid lifts aromatics to your nose; cold keeps them in the cup. Acidity can read sharper when sweetness is muted, even if the chemistry set is unchanged.',
+      ],
+    },
+    {
+      heading: 'Brewing for ice',
+      paragraphs: [
+        'Account for melt: either stronger concentrate, less ice as “water,” or ice as a measured part of the recipe. Flash-chill (ice bath) preserves more aromatics than slow fridge oxidizing.',
+      ],
+    },
+    {
+      heading: 'Staling accelerates once diluted',
+      paragraphs: [
+        'More oxygen contact in a tall iced drink plus time on the bar counter pushes cardboard notes. Same story as staling—just faster drama.',
+      ],
+    },
+  ],
+  faqs: [
+    {
+      q: 'Why does cold brew taste less sour?',
+      a: 'Cold extraction pulls a different mix of compounds; lower temperature softens some acids while oils still carry body.',
+    },
+    {
+      q: 'Milk behaves oddly in iced lattes?',
+      a: 'Acid plus cold can highlight curdling risk with some milks; dial shot extraction and milk freshness.',
+    },
+  ],
+  related: [
+    { title: 'Why Coffee Tastes Better at Certain Temperatures', path: '/coffee-science/why-coffee-tastes-better-at-certain-temperatures' },
+    { title: 'Why Coffee Oxidizes', path: '/coffee-science/why-coffee-oxidizes' },
+    { title: 'Coffee Extraction Science', path: '/coffee-science/coffee-extraction-science' },
+  ],
+};
 
 export default function WhyCoffeeTastesDifferentCold() {
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-cyan-50 to-amber-50">
-      <Navigation />
-      <article className="max-w-4xl mx-auto px-6 py-16">
-        <Link to="/articles" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"><ArrowLeft className="w-4 h-4" />Back to Articles</Link>
-        <header className="mb-12">
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-cyan-600 text-white px-4 py-2 rounded-full text-sm mb-6">Coffee Science</div>
-          <h1 className="text-5xl md:text-6xl mb-6 bg-gradient-to-r from-blue-600 to-cyan-700 bg-clip-text text-transparent">Why Coffee Tastes Different Cold</h1>
-          <p className="text-xl text-muted-foreground">Discover the sensory science behind why coffee flavor changes as it cools — and why cold brew tastes nothing like hot-brewed coffee left to chill.</p>
-          <div className="flex items-center gap-4 mt-6 text-sm text-muted-foreground"><span>6 min read</span><span>•</span><span>Intermediate</span></div>
-        </header>
-        <div className="w-full h-80 bg-gradient-to-br from-blue-200 to-cyan-300 rounded-3xl mb-12 flex items-center justify-center shadow-2xl"><span className="text-8xl">🧊</span></div>
-        <div className="prose prose-lg max-w-none">
-
-          {/* Quick Answer */}
-          <div className="bg-blue-50 border-l-4 border-blue-400 p-5 rounded-xl mb-8 flex items-start gap-4">
-            <span className="text-3xl flex-shrink-0">🧊</span>
-            <div>
-              <p className="font-bold text-blue-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
-              <p className="text-foreground/80 leading-relaxed">Cold suppresses sweetness and amplifies bitterness. Cold brew (brewed cold from start) has 60% less acid than iced hot coffee. For best cold coffee, use cold brew method, not chilled hot brew.</p>
-            </div>
-          </div>
-
-          <p className="text-xl leading-relaxed text-foreground/80 mb-8">Cold coffee tastes fundamentally different from the same coffee served hot — and it's not just temperature. Temperature affects aroma volatility, taste receptor sensitivity, and the chemical balance of flavor compounds in ways that completely transform the experience.</p>
-
-          <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-blue-600 to-cyan-700 bg-clip-text text-transparent">Why Temperature Changes Flavor</h2>
-          <div className="space-y-6 my-8">
-            <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-blue-200">
-              <h3 className="text-xl mb-3">💨 Aroma Volatility Drops</h3>
-              <p className="text-sm text-muted-foreground mb-3">Aroma compounds evaporate at higher temperatures, reaching your nose easily. Cold coffee releases far fewer volatiles — aroma stays dissolved in the liquid rather than rising to your nose. Since 70–80% of "flavor" is actually aroma, cold coffee tastes significantly less complex and aromatic than the same cup served hot.</p>
-            </div>
-            <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-cyan-200">
-              <h3 className="text-xl mb-3">👅 Taste Receptor Sensitivity Changes</h3>
-              <p className="text-sm text-muted-foreground mb-3">Cold temperatures suppress sweetness perception and amplify bitterness. Your tongue's sweet receptors (TRPM5 ion channels) function optimally near body temperature. At cold temperatures, they're less responsive — so the same coffee tastes less sweet and more bitter when cold than when hot.</p>
-            </div>
-            <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-blue-200">
-              <h3 className="text-xl mb-3">🔬 Acid Perception Increases</h3>
-              <p className="text-sm text-muted-foreground mb-3">Cold temperature makes organic acids in coffee taste more pronounced. A coffee that's pleasantly bright when hot can taste sharply acidic when cold. This is why light roast coffees often taste more aggressively sour when cooled.</p>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-blue-200 my-8">
-            <h3 className="text-xl mb-6">Hot Brew Chilled vs. Cold Brew: What's Different</h3>
-            <div className="grid md:grid-cols-2 gap-6 text-sm">
-              <div>
-                <h4 className="font-medium text-blue-700 mb-3">🌡️ Hot Brew, Then Chilled</h4>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>• Higher acidity (hot extraction efficient)</li>
-                  <li>• More bitter compounds extracted</li>
-                  <li>• Tastes sharper and less sweet cold</li>
-                  <li>• Volatile aroma lost to air during cooling</li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="font-medium text-cyan-700 mb-3">🧊 True Cold Brew</h4>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>• Lower acidity (cold extracts fewer acids)</li>
-                  <li>• Fewer bitter compounds</li>
-                  <li>• Naturally sweeter tasting</li>
-                  <li>• Smoother, chocolate/caramel notes</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-
-          {/* FAQ Section */}
-          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
-            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-xl mb-2">Why does iced coffee taste more bitter than hot coffee?</h3>
-                <p className="text-muted-foreground text-sm">Cold temperatures suppress sweetness perception and amplify bitterness. The same compounds taste more bitter and less sweet at cold temperatures due to reduced sweet receptor sensitivity.</p>
-              </div>
-              <div className="border-t border-stone-100 pt-6">
-                <h3 className="text-xl mb-2">Is cold brew the same as iced coffee?</h3>
-                <p className="text-muted-foreground text-sm">No. Iced coffee is hot-brewed then chilled. Cold brew is brewed cold from the start (12–18 hours). Cold brew has lower acidity, less bitterness, and naturally sweeter flavor because cold water extracts fewer acidic compounds.</p>
-              </div>
-              <div className="border-t border-stone-100 pt-6">
-                <h3 className="text-xl mb-2">Why does leftover morning coffee taste bad cold?</h3>
-                <p className="text-muted-foreground text-sm">Hot coffee that cools undergoes continued oxidation and further chemical reactions. The aroma compounds that made it pleasant hot have largely evaporated. Cold brew, by contrast, was never hot so it doesn't undergo this degradation.</p>
-              </div>
-              <div className="border-t border-stone-100 pt-6">
-                <h3 className="text-xl mb-2">What roast works best for cold coffee?</h3>
-                <p className="text-muted-foreground text-sm">Medium to medium-dark roasts work well cold — they have enough body and sweetness to be enjoyable without the heat-activated aromatics. Very light roasts can taste sharp and overly acidic when cold.</p>
-              </div>
-            </div>
-          </div>
-          {/* Related Articles */}
-          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
-            <h3 className="text-2xl mb-4">Related Articles</h3>
-            <div className="space-y-3">
-              <Link to="/coffee-science/coffee-extraction-science" className="block text-amber-700 hover:underline text-sm font-medium">→ Coffee Extraction Science</Link>
-              <Link to="/coffee-science/why-coffee-tastes-bitter" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Tastes Bitter</Link>
-              <Link to="/coffee-science/why-coffee-tastes-sour" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Tastes Sour</Link>
-              <Link to="/coffee-science/why-coffee-grind-size-matters" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Grind Size Matters</Link>
-              <Link to="/coffee-science/why-coffee-brewing-time-matters" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Brewing Time Matters</Link>
-              <Link to="/coffee-science/why-coffee-stales" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Coffee Stales</Link>
-            </div>
-          </div>
-
-          <div className="bg-gradient-to-r from-blue-500 to-cyan-600 text-white rounded-2xl p-8 my-12">
-            <h2 className="text-3xl mb-4">Brew for Temperature</h2>
-            <p className="text-lg text-white/90 mb-6">Use BeanSensei to choose the right method for how you'll serve your coffee.</p>
-            <a href="https://beansensei.senseifood.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-white text-blue-700 px-6 py-3 rounded-lg hover:shadow-xl transition-all hover:scale-105">Try BeanSensei →<ArrowLeft className="w-4 h-4 rotate-180" /></a>
-          </div>
-        </div>
-      </article>
-      <Footer />
-    </div>
-  );
+  return <ScienceArticlePage spec={SPEC} />;
 }

@@ -3,12 +3,11 @@ import { Link } from 'react-router';
 import { trackArticleClick, trackCTAClick, trackToolStart } from '../utils/analytics';
 
 const NEW_ARTICLE_IMAGES = {
-  cookiePuff:
-    'https://images.unsplash.com/photo-1499636136210-6f4ee815f8c0?auto=format&fit=crop&w=900&q=80',
+  /** Custom art (Pinterest batch) — keep files under `public/images/new-articles/`. */
+  cookiePuff: '/images/new-articles/why-cookies-puff-up-too-much.png',
   breadSplit:
     'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80',
-  nutritionProcessed:
-    'https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=900&q=80',
+  nutritionProcessed: '/images/new-articles/why-processed-foods-easy-to-overeat.png',
 } as const;
 
 /** Landing page spotlight — keep in sync with newest long-form science drops. */
