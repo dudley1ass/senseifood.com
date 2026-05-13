@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-17T20:17:55.203Z",
+  "generated": "2026-05-13T17:12:38.498Z",
   "rows": [
     {
       "f": "src/app/pages/MustardPanSauce.tsx",
@@ -86,7 +86,27 @@
       "wc": 635
     },
     {
+      "f": "src/app/pages/WhyCreamSaucesCurdle.tsx",
+      "wc": 637
+    },
+    {
+      "f": "src/app/pages/WhyOvenCalibrationMatters.tsx",
+      "wc": 638
+    },
+    {
+      "f": "src/app/pages/WhySaucesTasteBetterTheNextDay.tsx",
+      "wc": 641
+    },
+    {
+      "f": "src/app/pages/WhyButterSaucesSeparate.tsx",
+      "wc": 641
+    },
+    {
       "f": "src/app/pages/WhiteGravySouthern.tsx",
+      "wc": 644
+    },
+    {
+      "f": "src/app/pages/WhyProcessedFoodsAreEasyToOvereat.tsx",
       "wc": 644
     },
     {
@@ -98,6 +118,10 @@
       "wc": 648
     },
     {
+      "f": "src/app/pages/WhyMeasuringByWeightMatters.tsx",
+      "wc": 656
+    },
+    {
       "f": "src/app/pages/WhyIceCreamDevelopsIceLayersOverTime.tsx",
       "wc": 658
     },
@@ -106,12 +130,24 @@
       "wc": 659
     },
     {
+      "f": "src/app/pages/WhyFiberMattersForBloodSugar.tsx",
+      "wc": 665
+    },
+    {
       "f": "src/app/pages/WhyChillingCookieDoughMatters.tsx",
       "wc": 666
     },
     {
       "f": "src/app/pages/WhySaucesBreakWhenReheated.tsx",
       "wc": 666
+    },
+    {
+      "f": "src/app/pages/WhyOvermixingChangesTexture.tsx",
+      "wc": 668
+    },
+    {
+      "f": "src/app/pages/WhyProteinKeepsYouFullLonger.tsx",
+      "wc": 669
     },
     {
       "f": "src/app/pages/WhyDoughSpringsBackWhenShaping.tsx",
@@ -126,8 +162,20 @@
       "wc": 673
     },
     {
+      "f": "src/app/pages/WhyCoffeeTastesMuddy.tsx",
+      "wc": 674
+    },
+    {
       "f": "src/app/pages/WhyBreadNeedsScoring.tsx",
       "wc": 678
+    },
+    {
+      "f": "src/app/pages/WhyHomemadeIceCreamMeltsUnevenly.tsx",
+      "wc": 678
+    },
+    {
+      "f": "src/app/pages/WhyPumpkinPieWeeps.tsx",
+      "wc": 679
     },
     {
       "f": "src/app/pages/WhyDoughRisesTooSlow.tsx",
@@ -148,6 +196,10 @@
     {
       "f": "src/app/pages/WhySaucesSeparateOnThePlate.tsx",
       "wc": 686
+    },
+    {
+      "f": "src/app/pages/WhyIceCreamTastesBetterAfterRestingOvernight.tsx",
+      "wc": 690
     },
     {
       "f": "src/app/pages/WhyPieFillingBubblesOver.tsx",
@@ -222,6 +274,10 @@
       "wc": 711
     },
     {
+      "f": "src/app/pages/WhyFruitPiesLeakJuice.tsx",
+      "wc": 711
+    },
+    {
       "f": "src/app/pages/WhyPieCrustCracksWhenRolling.tsx",
       "wc": 712
     },
@@ -231,6 +287,10 @@
     },
     {
       "f": "src/app/pages/OneChangeRuleSauceDebugging.tsx",
+      "wc": 712
+    },
+    {
+      "f": "src/app/pages/WhyPieCrustGetsToughAfterCooling.tsx",
       "wc": 712
     },
     {
@@ -298,8 +358,16 @@
       "wc": 736
     },
     {
+      "f": "src/app/pages/WhyIceCreamGetsSandy.tsx",
+      "wc": 737
+    },
+    {
       "f": "src/app/pages/WhyCookiesStickToEachOtherAfterBaking.tsx",
       "wc": 739
+    },
+    {
+      "f": "src/app/pages/WhyCakesShrinkAfterBaking.tsx",
+      "wc": 746
     },
     {
       "f": "src/app/pages/WhyCakesTurnOutFlat.tsx",
@@ -342,12 +410,20 @@
       "wc": 780
     },
     {
+      "f": "src/app/pages/WhyFrostingMeltsOffCakes.tsx",
+      "wc": 780
+    },
+    {
       "f": "src/app/pages/WhyBreadHasLargeHoles.tsx",
       "wc": 790
     },
     {
       "f": "src/app/pages/WhyCoffeeWaterChemistryMatters.tsx",
       "wc": 791
+    },
+    {
+      "f": "src/app/pages/WhyBreadTastesBland.tsx",
+      "wc": 803
     },
     {
       "f": "src/app/pages/WhyCakesBakeUnevenly.tsx",
@@ -382,6 +458,10 @@
       "wc": 829
     },
     {
+      "f": "src/app/pages/WhyBreadSplitsOnTheSide.tsx",
+      "wc": 829
+    },
+    {
       "f": "src/app/pages/WhyCakesHaveAWetLayerAtTheBottom.tsx",
       "wc": 839
     },
@@ -412,6 +492,14 @@
     {
       "f": "src/app/pages/WhyCakesStickToPansEvenWhenGreased.tsx",
       "wc": 917
+    },
+    {
+      "f": "src/app/pages/WhyCookiesLoseFreshnessOvernight.tsx",
+      "wc": 930
+    },
+    {
+      "f": "src/app/pages/WhyCookiesPuffUpTooMuch.tsx",
+      "wc": 947
     },
     {
       "f": "src/app/pages/WhyBreadIsGummyInside.tsx",

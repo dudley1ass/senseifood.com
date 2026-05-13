@@ -40,6 +40,7 @@ import WhyEspressoChannels from './pages/WhyEspressoChannels';
 
 export const INLINE_GAP_ARTICLE_PATHS: string[] = [
   'cake-science/why-cakes-oil-out',
+  'cake-science/why-cakes-taste-oily',
   'cake-science/why-cakes-taste-flat',
   'cake-science/why-cakes-form-a-thick-crust',
   'cake-science/why-cakes-stick-to-themselves-when-layering',
@@ -63,6 +64,7 @@ export const INLINE_GAP_ARTICLE_PATHS: string[] = [
   'bread-science/why-bread-has-no-flavor',
   'bread-science/why-bread-crumb-is-too-tight',
   'bread-science/why-bread-has-large-holes',
+  'bread-science/why-bread-has-huge-holes',
   'bread-science/why-bread-dough-tears-instead-of-stretching',
   'cookie-science/why-cookies-taste-floury',
   'cookie-science/why-cookies-have-no-depth-of-flavor',
@@ -73,11 +75,13 @@ export const INLINE_GAP_ARTICLE_PATHS: string[] = [
   'coffee-science/why-coffee-aroma-doesnt-match-taste',
   'coffee-science/why-coffee-tastes-better-at-certain-temperatures',
   'coffee-science/why-coffee-water-chemistry-matters',
+  'coffee-science/why-coffee-water-quality-matters',
   'coffee-science/why-espresso-channels',
 ];
 
 export const inlineGapArticleRoutes = [
   { path: 'cake-science/why-cakes-oil-out', Component: WhyCakesOilOut },
+  { path: 'cake-science/why-cakes-taste-oily', Component: WhyCakesOilOut },
   { path: 'cake-science/why-cakes-taste-flat', Component: WhyCakesTasteFlat },
   { path: 'cake-science/why-cakes-form-a-thick-crust', Component: WhyCakesFormAThickCrust },
   { path: 'cake-science/why-cakes-stick-to-themselves-when-layering', Component: WhyCakesStickToThemselvesWhenLayering },
@@ -101,6 +105,7 @@ export const inlineGapArticleRoutes = [
   { path: 'bread-science/why-bread-has-no-flavor', Component: WhyBreadHasNoFlavor },
   { path: 'bread-science/why-bread-crumb-is-too-tight', Component: WhyBreadCrumbIsTooTight },
   { path: 'bread-science/why-bread-has-large-holes', Component: WhyBreadHasLargeHoles },
+  { path: 'bread-science/why-bread-has-huge-holes', Component: WhyBreadHasLargeHoles },
   { path: 'bread-science/why-bread-dough-tears-instead-of-stretching', Component: WhyBreadDoughTearsInsteadOfStretching },
   { path: 'cookie-science/why-cookies-taste-floury', Component: WhyCookiesTasteFloury },
   { path: 'cookie-science/why-cookies-have-no-depth-of-flavor', Component: WhyCookiesHaveNoDepthOfFlavor },
@@ -111,5 +116,6 @@ export const inlineGapArticleRoutes = [
   { path: 'coffee-science/why-coffee-aroma-doesnt-match-taste', Component: WhyCoffeeAromaDoesntMatchTaste },
   { path: 'coffee-science/why-coffee-tastes-better-at-certain-temperatures', Component: WhyCoffeeTastesBetterAtCertainTemperatures },
   { path: 'coffee-science/why-coffee-water-chemistry-matters', Component: WhyCoffeeWaterChemistryMatters },
+  { path: 'coffee-science/why-coffee-water-quality-matters', Component: WhyCoffeeWaterChemistryMatters },
   { path: 'coffee-science/why-espresso-channels', Component: WhyEspressoChannels },
 ] as const;

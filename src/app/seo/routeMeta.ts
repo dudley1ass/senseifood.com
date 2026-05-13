@@ -107,6 +107,11 @@ const SEO_OVERRIDES: Record<string, SeoOverride> = {
     description:
       'Cookies do not spread when fat is too cold, flour is high, or leavening is off. Learn why cookies stay domed and how to unlock even spread without thinning.',
   },
+  '/cookie-science/why-cookies-puff-up-too-much': {
+    title: 'Why cookies puff up: steam, leavening & oven fixes',
+    description:
+      'Cookies balloon when steam and gas expand before spread finishes—warm butter, extra leavening, or fast crust set. Chill dough, verify grams, and tune oven for even cookies.',
+  },
   '/cake-science/why-cakes-collapse': {
     title: 'Why cakes collapse: structure, steam & timing',
     description:
@@ -157,6 +162,11 @@ const SEO_OVERRIDES: Record<string, SeoOverride> = {
     description:
       'How yeast works in baking: fermentation, gas, dough strength, and flavor. Understand rise limits vs gluten so dense or gummy loaves make sense and fix faster.',
   },
+  '/bread-science/why-bread-splits-on-the-side': {
+    title: 'Bread splits on the side: scoring & oven spring',
+    description:
+      'Side blowouts mean gas found a weak seam—shallow scores, tight shaping, or dry crust. Fix bread splitting with steam, depth, and even surface tension.',
+  },
   '/pie-science/why-pie-crust-is-flaky': {
     title: 'Flaky pie crust: fat, steam & layer science',
     description:
@@ -166,6 +176,121 @@ const SEO_OVERRIDES: Record<string, SeoOverride> = {
     title: 'Icy ice cream: crystals, sugar & storage fixes',
     description:
       'Icy ice cream: large ice crystals from sugar balance, overrun, or thaw-refreeze. Fix texture with solids, churn, and cold storage—science for smoother scoops.',
+  },
+  '/ice-cream-science/why-ice-cream-gets-sandy': {
+    title: 'Sandy ice cream: lactose crystals & dairy balance',
+    description:
+      'Sandy grit in ice cream is often lactose sand from concentrated milk solids and freezer cycling—not the same as icy chunks. Fix with sugar spectrum, MSNF, and hardening temp.',
+  },
+  '/cookie-science/why-cookies-lose-freshness-overnight': {
+    title: 'Cookies stale overnight: moisture, sugar & starch',
+    description:
+      'Freshness loss is moisture migration, sucrose crystallization, and starch retrogradation. Fix storage, sugar spectrum, and freezing strategy—science for softer day-two cookies.',
+  },
+  '/bread-science/why-bread-tastes-bland': {
+    title: 'Bread tastes bland: fermentation, salt & browning',
+    description:
+      'Bland bread comes from short ferments, low salt, and pale crusts. Extend time, weigh salt, and improve heat and steam for depth—pairs with yeast and hydration guides.',
+  },
+  '/bread-science/why-bread-has-huge-holes': {
+    title: 'Bread huge holes: shaping, proof & hydration',
+    description:
+      'Irregular caverns come from uneven gas, shaping tension, or hydration past dough strength—same levers as large-hole troubleshooting for open crumb styles.',
+  },
+  '/cake-science/why-frosting-melts-off-cakes': {
+    title: 'Frosting melts off cakes: crumb temp & emulsions',
+    description:
+      'Melting frosting is warm crumb, broken buttercream emulsions, and unstable sugar phases. Chill layers, temper acids, and finish fat off-heat—practical fix order.',
+  },
+  '/cake-science/why-cakes-taste-oily': {
+    title: 'Cakes taste oily: emulsion & fat balance',
+    description:
+      'Oily crumb signals broken emulsions or fat overload versus structure. Fix with mixing order, temperature, and ratio checks—pairs with oil-out and dense cake guides.',
+  },
+  '/cake-science/why-cakes-shrink-after-baking': {
+    title: 'Cakes shrink after baking: cooling & pan release',
+    description:
+      'Shrink ties to steam loss, protein contraction, and pan adhesion. Log internal temp, pan type, and cooling path—science for even sidewalls.',
+  },
+  '/pie-science/why-pie-crust-gets-tough-after-cooling': {
+    title: 'Pie crust tough after cooling: moisture migration',
+    description:
+      'Tough cold crust is hydrated gluten and retrograded starch from filling transfer. Vent, set thickeners, and cool on a rack—science for tender slices next day.',
+  },
+  '/pie-science/why-fruit-pies-leak-juice': {
+    title: 'Fruit pies leak juice: thickeners & boil control',
+    description:
+      'Leaking pies mean free juice beat your gel network. Macerate, drain, hit starch gel temps, and vent steam—practical troubleshooting for clean slices.',
+  },
+  '/pie-science/why-pumpkin-pie-weeps': {
+    title: 'Pumpkin pie weeps: custard set & syneresis',
+    description:
+      'Weeping pumpkin pie is over-tight proteins and stressed gels squeezing serum. Gentle bake, sugar balance, and slow cooling reduce surface beads.',
+  },
+  '/ice-cream-science/why-homemade-ice-cream-melts-unevenly': {
+    title: 'Ice cream melts unevenly: overrun & emulsions',
+    description:
+      'Uneven melt is microstructure heterogeneity—air, fat churn, and heat shock bands. Fix draw temp, emulsifiers, and hardening—science for clean meltdown.',
+  },
+  '/ice-cream-science/why-ice-cream-tastes-better-after-resting-overnight': {
+    title: 'Ice cream better after resting: aging & crystals',
+    description:
+      'Overnight base rest hydrates proteins and stabilizers; hardened pints temper for smoother flavor release—why aging is not chef myth.',
+  },
+  '/coffee-science/why-coffee-tastes-muddy': {
+    title: 'Coffee tastes muddy: fines, channels & filters',
+    description:
+      'Muddy cups combine ultrafines, uneven extraction, and weak filtration. Coarsen carefully, improve evenness, and clean grinders—clarity checklist.',
+  },
+  '/coffee-science/why-coffee-water-quality-matters': {
+    title: 'Coffee water quality: hardness, alkalinity & taste',
+    description:
+      'Water minerals change extraction and mouthfeel more than many recipes admit—dial filtration and remineralization with practical targets.',
+  },
+  '/baking-science/why-measuring-by-weight-matters': {
+    title: 'Measure baking by weight: flour, salt & scale wins',
+    description:
+      'Grams beat cups for flour packing, leavening precision, and scaling. Learn why weight is the fastest quality upgrade in home baking.',
+  },
+  '/baking-science/why-oven-calibration-matters': {
+    title: 'Oven calibration: true temp, racks & convection',
+    description:
+      'Dial vs cavity temperature diverges; probes and logs fix browning and set timing. Calibrate for repeatable cookies, cakes, and bread.',
+  },
+  '/baking-science/why-overmixing-changes-texture': {
+    title: 'Overmixing changes texture: gluten, air & heat',
+    description:
+      'Mixing stage controls gluten, bubble size, and batter temperature—different rules for cakes, cookies, and bread. Match technique to formula intent.',
+  },
+  '/sauce-science/why-cream-sauces-curdle': {
+    title: 'Cream sauces curdle: heat, acid & dairy proteins',
+    description:
+      'Curdled cream sauces break when proteins aggregate faster than emulsions recover. Lower heat, temper acids, use starch support—science for silky finishes.',
+  },
+  '/sauce-science/why-sauces-taste-better-the-next-day': {
+    title: 'Sauces taste better next day: diffusion & rest',
+    description:
+      'Overnight, salt equilibrates, aromatics integrate, and emulsions relax for rounder flavor—reheat gently to keep the win.',
+  },
+  '/sauce-science/why-butter-sauces-separate': {
+    title: 'Butter sauces separate: emulsion & temperature',
+    description:
+      'Separated butter sauces need controlled mounting heat and stable water phases. Whisk, finish off-heat, and respect pH—practical recovery steps.',
+  },
+  '/nutrition-science/why-protein-keeps-you-full-longer': {
+    title: 'Protein and fullness: hormones & meal timing',
+    description:
+      'Protein shifts satiety hormones and slows gastric emptying. Learn practical meal patterns without hype—pairs with fiber and plate method guides.',
+  },
+  '/nutrition-science/why-processed-foods-are-easy-to-overeat': {
+    title: 'Processed foods easy to overeat: energy density',
+    description:
+      'Texture, salt-sugar-fat loops, and low fiber increase ad libitum intake. Understand engineering cues to design better defaults.',
+  },
+  '/nutrition-science/why-fiber-matters-for-blood-sugar': {
+    title: 'Fiber and blood sugar: viscosity & fermentation',
+    description:
+      'Fiber slows glucose absorption and supports fermentation metabolites—whole-food patterns beyond supplement shortcuts.',
   },
   '/baking-science/why-butter-temperature-matters': {
     title: 'Butter temp in baking: cold vs soft vs melted',

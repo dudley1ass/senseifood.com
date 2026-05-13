@@ -20,6 +20,7 @@ import WhyDoughRisesTooSlow from './pages/WhyDoughRisesTooSlow';
 import WhyBreadNeedsSteam from './pages/WhyBreadNeedsSteam';
 import WhyOvenSpringHappens from './pages/WhyOvenSpringHappens';
 import WhyBreadNeedsScoring from './pages/WhyBreadNeedsScoring';
+import WhyBreadSplitsOnTheSide from './pages/WhyBreadSplitsOnTheSide';
 import BreadFlourVsAllPurposeFlour from './pages/BreadFlourVsAllPurposeFlour';
 import WhyHydrationMattersInBread from './pages/WhyHydrationMattersInBread';
 import WhyCookiesTasteTooSweet from './pages/WhyCookiesTasteTooSweet';
@@ -27,6 +28,7 @@ import WhyCookiesSpreadInOvenButNotBefore from './pages/WhyCookiesSpreadInOvenBu
 import WhyCookiesTurnOutDifferentEachBatch from './pages/WhyCookiesTurnOutDifferentEachBatch';
 import WhyChillingCookieDoughMatters from './pages/WhyChillingCookieDoughMatters';
 import WhyCookiesStickTogether from './pages/WhyCookiesStickTogether';
+import WhyCookiesPuffUpTooMuch from './pages/WhyCookiesPuffUpTooMuch';
 import WhyPieCrustCracksWhenRolling from './pages/WhyPieCrustCracksWhenRolling';
 import WhyPieCrustFallsApart from './pages/WhyPieCrustFallsApart';
 import WhyPieFillingBubblesOver from './pages/WhyPieFillingBubblesOver';
@@ -52,6 +54,7 @@ import WhyIceCreamIsTooSoft from './pages/WhyIceCreamIsTooSoft';
 import WhyIceCreamTastesIcy from './pages/WhyIceCreamTastesIcy';
 import WhyIceCreamLacksFlavor from './pages/WhyIceCreamLacksFlavor';
 import WhyIceCreamSeparates from './pages/WhyIceCreamSeparates';
+import WhyIceCreamGetsSandy from './pages/WhyIceCreamGetsSandy';
 import TemperatureSilentKillerSauces from './pages/TemperatureSilentKillerSauces';
 import OrderOfOperationsSauceTiming from './pages/OrderOfOperationsSauceTiming';
 import SaltAsAmplifierNotOnlySalty from './pages/SaltAsAmplifierNotOnlySalty';
@@ -73,6 +76,25 @@ import TeriyakiGlaze from './pages/TeriyakiGlaze';
 import GarlicSoySauce from './pages/GarlicSoySauce';
 import NachoCheeseSauce from './pages/NachoCheeseSauce';
 import MornaySauce from './pages/MornaySauce';
+import WhyBreadTastesBland from './pages/WhyBreadTastesBland';
+import WhyButterSaucesSeparate from './pages/WhyButterSaucesSeparate';
+import WhyCakesShrinkAfterBaking from './pages/WhyCakesShrinkAfterBaking';
+import WhyCoffeeTastesMuddy from './pages/WhyCoffeeTastesMuddy';
+import WhyCookiesLoseFreshnessOvernight from './pages/WhyCookiesLoseFreshnessOvernight';
+import WhyCreamSaucesCurdle from './pages/WhyCreamSaucesCurdle';
+import WhyFiberMattersForBloodSugar from './pages/WhyFiberMattersForBloodSugar';
+import WhyFrostingMeltsOffCakes from './pages/WhyFrostingMeltsOffCakes';
+import WhyFruitPiesLeakJuice from './pages/WhyFruitPiesLeakJuice';
+import WhyHomemadeIceCreamMeltsUnevenly from './pages/WhyHomemadeIceCreamMeltsUnevenly';
+import WhyIceCreamTastesBetterAfterRestingOvernight from './pages/WhyIceCreamTastesBetterAfterRestingOvernight';
+import WhyMeasuringByWeightMatters from './pages/WhyMeasuringByWeightMatters';
+import WhyOvenCalibrationMatters from './pages/WhyOvenCalibrationMatters';
+import WhyOvermixingChangesTexture from './pages/WhyOvermixingChangesTexture';
+import WhyPieCrustGetsToughAfterCooling from './pages/WhyPieCrustGetsToughAfterCooling';
+import WhyProcessedFoodsAreEasyToOvereat from './pages/WhyProcessedFoodsAreEasyToOvereat';
+import WhyProteinKeepsYouFullLonger from './pages/WhyProteinKeepsYouFullLonger';
+import WhyPumpkinPieWeeps from './pages/WhyPumpkinPieWeeps';
+import WhySaucesTasteBetterTheNextDay from './pages/WhySaucesTasteBetterTheNextDay';
 import BasilPesto from './pages/BasilPesto';
 
 export const articleContentRoutes = [
@@ -94,18 +116,25 @@ export const articleContentRoutes = [
   { path: 'bread-science/why-bread-needs-steam', Component: WhyBreadNeedsSteam },
   { path: 'bread-science/why-oven-spring-happens', Component: WhyOvenSpringHappens },
   { path: 'bread-science/why-bread-needs-scoring', Component: WhyBreadNeedsScoring },
+  { path: 'bread-science/why-bread-splits-on-the-side', Component: WhyBreadSplitsOnTheSide },
   { path: 'bread-science/bread-flour-vs-all-purpose-flour', Component: BreadFlourVsAllPurposeFlour },
+  { path: 'bread-science/why-bread-tastes-bland', Component: WhyBreadTastesBland },
   { path: 'bread-science/why-hydration-matters-in-bread', Component: WhyHydrationMattersInBread },
   { path: 'cookie-science/why-cookies-taste-too-sweet', Component: WhyCookiesTasteTooSweet },
   { path: 'cookie-science/why-cookies-spread-in-oven-but-not-before', Component: WhyCookiesSpreadInOvenButNotBefore },
   { path: 'cookie-science/why-cookies-turn-out-different-each-batch', Component: WhyCookiesTurnOutDifferentEachBatch },
   { path: 'cookie-science/why-chilling-cookie-dough-matters', Component: WhyChillingCookieDoughMatters },
   { path: 'cookie-science/why-cookies-stick-together', Component: WhyCookiesStickTogether },
+  { path: 'cookie-science/why-cookies-puff-up-too-much', Component: WhyCookiesPuffUpTooMuch },
+  { path: 'cookie-science/why-cookies-lose-freshness-overnight', Component: WhyCookiesLoseFreshnessOvernight },
   { path: 'pie-science/why-pie-crust-cracks-when-rolling', Component: WhyPieCrustCracksWhenRolling },
   { path: 'pie-science/why-pie-crust-falls-apart', Component: WhyPieCrustFallsApart },
   { path: 'pie-science/why-pie-filling-bubbles-over', Component: WhyPieFillingBubblesOver },
   { path: 'pie-science/why-pie-crust-is-too-pale', Component: WhyPieCrustIsTooPale },
   { path: 'pie-science/why-pie-crust-burns-before-filling-cooks', Component: WhyPieCrustBurnsBeforeFillingCooks },
+  { path: 'pie-science/why-pie-crust-gets-tough-after-cooling', Component: WhyPieCrustGetsToughAfterCooling },
+  { path: 'pie-science/why-fruit-pies-leak-juice', Component: WhyFruitPiesLeakJuice },
+  { path: 'pie-science/why-pumpkin-pie-weeps', Component: WhyPumpkinPieWeeps },
   { path: 'cake-science/why-cakes-stick-to-pans-even-when-greased', Component: WhyCakesStickToPansEvenWhenGreased },
   { path: 'cake-science/why-cakes-bake-unevenly', Component: WhyCakesBakeUnevenly },
   { path: 'cake-science/why-cakes-have-a-wet-layer-at-the-bottom', Component: WhyCakesHaveAWetLayerAtTheBottom },
@@ -116,16 +145,31 @@ export const articleContentRoutes = [
   { path: 'cake-science/why-cakes-stick-to-knife-when-cutting', Component: WhyCakesStickToKnifeWhenCutting },
   { path: 'cake-science/why-cakes-dry-out-after-one-day', Component: WhyCakesDryOutAfterOneDay },
   { path: 'cake-science/why-cakes-sink-around-the-edges', Component: WhyCakesSinkAroundTheEdges },
+  { path: 'cake-science/why-frosting-melts-off-cakes', Component: WhyFrostingMeltsOffCakes },
+  { path: 'cake-science/why-cakes-shrink-after-baking', Component: WhyCakesShrinkAfterBaking },
   { path: 'coffee-science/why-coffee-tastes-hollow', Component: WhyCoffeeTastesHollow },
   { path: 'coffee-science/why-coffee-tastes-over-extracted', Component: WhyCoffeeTastesOverExtracted },
   { path: 'coffee-science/why-coffee-tastes-under-extracted', Component: WhyCoffeeTastesUnderExtracted },
   { path: 'coffee-science/why-coffee-strength-vs-extraction-matters', Component: WhyCoffeeStrengthVsExtractionMatters },
   { path: 'coffee-science/why-coffee-tastes-different-every-brew', Component: WhyCoffeeTastesDifferentEveryBrew },
+  { path: 'coffee-science/why-coffee-tastes-muddy', Component: WhyCoffeeTastesMuddy },
   { path: 'ice-cream-science/why-ice-cream-is-too-hard', Component: WhyIceCreamIsTooHard },
   { path: 'ice-cream-science/why-ice-cream-is-too-soft', Component: WhyIceCreamIsTooSoft },
   { path: 'ice-cream-science/why-ice-cream-tastes-icy', Component: WhyIceCreamTastesIcy },
   { path: 'ice-cream-science/why-ice-cream-lacks-flavor', Component: WhyIceCreamLacksFlavor },
   { path: 'ice-cream-science/why-ice-cream-separates', Component: WhyIceCreamSeparates },
+  { path: 'ice-cream-science/why-ice-cream-gets-sandy', Component: WhyIceCreamGetsSandy },
+  { path: 'ice-cream-science/why-homemade-ice-cream-melts-unevenly', Component: WhyHomemadeIceCreamMeltsUnevenly },
+  { path: 'ice-cream-science/why-ice-cream-tastes-better-after-resting-overnight', Component: WhyIceCreamTastesBetterAfterRestingOvernight },
+  { path: 'baking-science/why-measuring-by-weight-matters', Component: WhyMeasuringByWeightMatters },
+  { path: 'baking-science/why-oven-calibration-matters', Component: WhyOvenCalibrationMatters },
+  { path: 'baking-science/why-overmixing-changes-texture', Component: WhyOvermixingChangesTexture },
+  { path: 'nutrition-science/why-protein-keeps-you-full-longer', Component: WhyProteinKeepsYouFullLonger },
+  { path: 'nutrition-science/why-processed-foods-are-easy-to-overeat', Component: WhyProcessedFoodsAreEasyToOvereat },
+  { path: 'nutrition-science/why-fiber-matters-for-blood-sugar', Component: WhyFiberMattersForBloodSugar },
+  { path: 'sauce-science/why-cream-sauces-curdle', Component: WhyCreamSaucesCurdle },
+  { path: 'sauce-science/why-sauces-taste-better-the-next-day', Component: WhySaucesTasteBetterTheNextDay },
+  { path: 'sauce-science/why-butter-sauces-separate', Component: WhyButterSaucesSeparate },
   { path: 'sauce-science/temperature-silent-killer-sauces', Component: TemperatureSilentKillerSauces },
   { path: 'sauce-science/order-of-operations-sauce-timing', Component: OrderOfOperationsSauceTiming },
   { path: 'sauce-science/salt-as-amplifier-not-only-salty', Component: SaltAsAmplifierNotOnlySalty },

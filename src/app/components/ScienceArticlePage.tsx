@@ -114,6 +114,32 @@ const THEME: Record<
     ctaTo: 'to-orange-600',
     linkClass: 'text-rose-800',
   },
+  'Baking Science': {
+    pageBg: 'from-violet-50 via-fuchsia-50 to-rose-50',
+    pill: 'from-violet-600 to-fuchsia-600',
+    h1: 'from-violet-700 to-fuchsia-700',
+    h2: 'from-violet-700 to-fuchsia-700',
+    heroFrom: 'from-violet-200',
+    heroTo: 'to-fuchsia-200',
+    quickBorder: 'border-violet-400',
+    quickLabel: 'text-violet-900',
+    ctaFrom: 'from-violet-700',
+    ctaTo: 'to-fuchsia-600',
+    linkClass: 'text-violet-800',
+  },
+  'Nutrition': {
+    pageBg: 'from-emerald-50 via-green-50 to-teal-50',
+    pill: 'from-emerald-600 to-teal-600',
+    h1: 'from-emerald-700 to-teal-700',
+    h2: 'from-emerald-700 to-teal-700',
+    heroFrom: 'from-emerald-200',
+    heroTo: 'to-teal-200',
+    quickBorder: 'border-emerald-400',
+    quickLabel: 'text-emerald-900',
+    ctaFrom: 'from-emerald-700',
+    ctaTo: 'to-teal-600',
+    linkClass: 'text-emerald-800',
+  },
 };
 
 type Props = { spec: ScienceArticleSpec };
