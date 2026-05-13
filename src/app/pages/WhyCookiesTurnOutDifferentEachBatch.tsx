@@ -7,59 +7,59 @@ const SPEC: ScienceArticleSpec = {
   "segment": "cookie-science",
   "categoryLabel": "Cookie Science",
   "title": "Why Cookies Turn Out Different Each Batch",
-  "subtitle": "Temperature paths, measurement error, and mixer variance swamp tiny “feel” differences.",
+  "subtitle": "Tiny shifts in butter temperature, flour measurement, oven recovery, and pan heat swamp the recipe card that \"looked identical\" in your head.",
   "readTime": "8 min read",
   "emoji": "🎲",
   "fixRecipe": {
     "category": "cookie",
     "problem": "general"
   },
-  "quickAnswer": "Batch variance is usually butter temperature, flour measurement, oven preheat quality, and pan temperature—not fate. Weigh everything, sheet pan temperature, and log oven thermometer + time-to-set.",
-  "intro": "Humans underestimate noise in home baking. Two batches that “felt the same” can diverge because butter was 58°F once and 68°F another time, or because the second sheet went onto a hot pan. Reliability is a systems problem: grams, thermometers, and written notes. Repeatability needs controlled dough temperature (ideally 65–70°F / 18–21°C when scooping), consistent scoop size, and oven verification—many home ovens cycle ±25°F around setpoint affecting spread and browning.",
+  "quickAnswer": "Batch variance is usually invisible noise: butter a few degrees warmer, flour scooped heavier, the second tray going onto a still-hot pan, or the oven lying about \"preheated.\" Weigh ingredients, match dough temperature scoop to scoop, and verify the oven with a thermometer instead of the beep alone.",
+  "intro": "Human memory smooths rough edges; two batches that \"felt the same\" can diverge because butter was 58°F once and 68°F another time, or because the second sheet started on a pan that was still warm from batch one. Reliability is boring systems: grams, a thermometer, and a one-line note. Aim for consistent dough temperature at scoop time when a recipe is sensitive—many drop cookies behave around room temperature—and remember that many home ovens swing above and below the setpoint, which changes spread and browning even when your timer is perfect.",
   "sections": [
     {
       "heading": "Ingredient state",
       "paragraphs": [
-        "Butter and egg temperature change emulsion behavior and spread. Flour packs in cups. Even “the same” brand can vary seasonally."
+        "Butter and egg temperature change how creaming emulsifies and how fast dough spreads; flour packs in cups even when you swear you spoon-and-level the same way. Even the same brand can mill slightly differently season to season—grams reveal what cups hide.",
       ]
     },
     {
       "heading": "Equipment state",
       "paragraphs": [
-        "Dark pans vs light pans, convection on/off, rack height, and whether the oven fully recovered between sheets all move outcomes."
+        "Dark versus light pans, convection on or off, rack height, and whether the oven truly recovered between trays all move heat into the cookie. If batch two always looks different, batch two might be starting hotter.",
       ],
       "tip": "Cool pans between batches with a cold-water rinse and towel dry for consistent starting temperature."
     },
     {
       "heading": "Mixing variance",
       "paragraphs": [
-        "Creaming for three vs six minutes changes aeration. Use timer and visual cues (pale, fluffy) every time."
+        "Three minutes versus six minutes of creaming changes how much air you trap; timers and consistent visual cues beat \"I mixed until it felt right\" when you are chasing repeatability.",
       ]
     },
     {
       "heading": "Fix My Recipe as a batch log",
       "paragraphs": [
-        "Enter grams each bake. When something drifts, you have a frozen record instead of memory. Pair with photos of dough balls pre-bake."
+        "Entering weights into Fix My Recipe gives you a frozen snapshot when something drifts—better than trusting Tuesday-you’s memory. Pair numbers with one photo of dough balls pre-bake; spread starts before the oven if butter and hydration differ.",
       ]
     },
     {
       "heading": "Measurements and tools",
       "paragraphs": [
-        "Gram scales for flour and sugar remove the largest variance. Spooned cups vary 10–15% mass. Same rack position and preheat stabilization (thermometer, not beep) matter."
+        "A scale for flour and sugar removes the biggest cup error; spooned cups can swing double-digit percentages in mass. Same rack height and a thermometer check after preheat—not the beep—matter more than superstition about foil.",
       ]
     },
     {
       "heading": "Butter and mixing",
       "paragraphs": [
-        "Creaming time changes air cell count—timer helps. Butter temp affects emulsion before flour."
+        "Creaming time changes air cell count; butter temperature changes emulsion before flour ever arrives. If those drift, the rest of the recipe is not the same recipe.",
       ]
     },
     {
-      "heading": "Benchmark temperatures and a repeatable test protocol",
+      "heading": "What to write down so variance stops feeling personal",
       "paragraphs": [
-        "This guide on why cookies turn out different each batch is easier to act on when you anchor numbers instead of vibes. Cookie spread begins as butter phases soften near body temperature and fully mobilizes in the oven—edges often see higher heat first, so tray position and rotation matter. For chewy vs crisp targets, final internal moisture and surface dehydration differ: lower final moisture and more edge browning read “crisp,” while higher moisture and less Maillard read “chewy.” Chill dough near 38°F (3°C) to delay fat flow and reduce spread if needed. Sheet color changes bottom heat flux; light aluminum often gentler than dark nonstick for the same set temperature. Write down ambient kitchen temperature (°F), the set point on your oven or machine, and—when relevant—an internal probe reading or brew time. Change one input per trial: flour brand, hydration percentage, grind setting, chill time, or rack position. Photograph crumb or cup side-by-side after each change. SenseiFood’s Fix My Recipe debugger pairs these observations with ratio checks for your category so the next bake or brew is a measured step, not a guess.",
-        "If you use °C in the kitchen, convert critical bands once and tape them inside a cabinet: 200°F ≈ 93°C (cake/bread finish neighborhood), 350°F ≈ 177°C (common cake/cookie air set point), 212°F = 100°C (sea-level water boil), and espresso extraction times often discussed in the 25–35 second range for classic 9-bar shots—always taste-adjusted to your machine. Altitude lowers water’s boiling point, which shifts extraction and evaporation; bakers at elevation should rely more on internal temperature and visual set than on clock alone.",
-        "Humidity changes how dough skins, how icing behaves, and how staling feels the next day—note outdoor weather when results swing for no obvious reason. For anything oven-based, log preheat completion time: many ovens continue drifting 10–20°F after the beep. For frozen desserts, log freezer display temp if available; a chest freezer near −10°F (−23°C) behaves differently than a frost-free kitchen freezer with defrost cycles. Small environmental logs turn one-off failures into solvable patterns."
+        "Cookie spread is fat softening, sugar dissolving, and structure setting—edges often run hotter than centers, so tray position and rotation are real variables. Chewy versus crisp is mostly final moisture and edge Maillard, not moral fiber. Chilling near refrigerator cold slows early fat flow when you need less spread; pan color changes bottom heat even at the same dial.",
+        "If you keep a note, keep it human: dough temp, scoop size, pan type, rack, set temp, and whether the oven had recovered between trays. A single photo at eight minutes tells you more than a rant in the family group chat.",
+        "SenseiFood’s Fix My Recipe debugger pairs those observations with ratio checks so you are not debugging blind."
       ]
     }
   ],
@@ -75,12 +75,12 @@ const SPEC: ScienceArticleSpec = {
   ],
   "faqs": [
     {
-      "q": "Humidity day difference?",
-      "a": "Flour absorbs moisture—slightly less flour or shorter bake sometimes."
+      "q": "Why do humid days change my cookies?",
+      "a": "Flour can pick up ambient moisture and behave like a slightly wetter dough without you adding a visible splash—sometimes that means a touch less flour or a shorter bake, but test one change because humidity is rarely the only variable in the kitchen that day."
     },
     {
-      "q": "Dark sheet variance?",
-      "a": "Swap to light or reduce temp 25°F for same timing."
+      "q": "Why does my dark sheet behave differently?",
+      "a": "Dark metal absorbs and radiates heat differently than light aluminum, so edges set faster and bottoms brown sooner—often worth dropping the oven about 25°F or shortening the bake slightly when switching pans, then retesting."
     }
   ]
 };

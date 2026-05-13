@@ -7,59 +7,59 @@ const SPEC: ScienceArticleSpec = {
   "segment": "bread-science",
   "categoryLabel": "Bread Science",
   "title": "Why Dough Rises Too Slow",
-  "subtitle": "Cold, tired yeast, salt errors, and extreme sweet or rich doughs stretch timelines.",
+  "subtitle": "Slow can be patient flavor-building—or it can be a cold room, sleepy yeast, a salt slip, or a rich dough that always needs more time than your brain scheduled.",
   "readTime": "7 min read",
   "emoji": "🐢",
   "fixRecipe": {
     "category": "bread",
     "problem": "wont-rise"
   },
-  "quickAnswer": "Slow rise is often cold dough, weak yeast, or too much salt. Warm the environment gently, verify yeast, and weigh salt. Enriched doughs legitimately take longer—plan for it.",
-  "intro": "Impatience makes every minute feel like failure, but slow is not automatically wrong. The skill is distinguishing healthy slow from broken slow: the first yields flavor; the second yields lunch plans ruined. Slow rise below 65°F (18°C) for sourdough or cold kitchen can stretch bulk past 6 hours without being “wrong”—but dead yeast or salt errors mimic slowness. Target 76–78°F (24–26°C) for predictable 2–3 hour bulk in many recipes.",
+  "quickAnswer": "Before you panic, separate cozy-cold from broken: a chilly bulk can crawl for hours and still be fine, while dead yeast or double salt masquerades as \"slow.\" Warm the dough gently, bloom yeast if you doubt it, weigh salt like you mean it, and remember brioche-style doughs crawl by design.",
+  "intro": "Impatience makes every minute feel like failure, but slow is not automatically wrong. Healthy slow gives acids and esters time to develop; broken slow ruins dinner because nothing is alive. Below about 65°F (18°C), many straight dough timelines stretch—sometimes past six hours—without being \"incorrect,\" especially for cold sourdough schedules. Dead yeast, too much salt, or icy water are the usual impersonators. Many lean doughs feel predictable in the mid-70s°F (about 24–26°C) bulk range when other variables behave.",
   "sections": [
     {
       "heading": "Temperature floor",
       "paragraphs": [
-        "Below roughly 50°F, yeast activity is minimal for many strains; dough sits. Use a proofer, oven with light on, or longer timeline."
+        "Below roughly 50°F (10°C), many commercial yeast strains barely tick; the dough looks lazy because chemistry is genuinely slow. A proofer, an oven with only the light on (know your model), or simply accepting a longer timeline are all valid. If you need speed, warmth has to be real, not symbolic."
       ]
     },
     {
       "heading": "Yeast and salt",
       "paragraphs": [
-        "Old yeast and salt slips are the classic duo. Always verify with a foam test when in doubt."
+        "Old yeast and mis-weighed salt are the classic comedy duo: one too weak to party, the other canceling the party. When in doubt, bloom active dry yeast in pleasantly warm water with a pinch of sugar—foam in ten minutes or buy fresh. Salt should be weighed; volume teaspoons lie."
       ]
     },
     {
       "heading": "Heavy enrichments",
       "paragraphs": [
-        "Eggs, butter, and sugar change osmolarity and structure; fermentation crawls. This is expected, not a sign to dump in more yeast mid-bulk without thinking."
+        "Eggs, butter, and sugar change both structure and osmotic pressure—fermentation crawls because yeast and bacteria are working inside a richer soup. That is often expected, not a sign to dump extra yeast mid-bulk without thinking through the next rise window.",
       ],
-      "tip": "Preferment or autolyse can jump-start sluggish doughs."
+      "tip": "Preferment or autolyse can wake sluggish doughs without turning the yeast knob to eleven."
     },
     {
       "heading": "Sanity check ratios",
       "paragraphs": [
-        "Bread mode in Fix My Recipe highlights unusually high salt or low yeast for your style. Use it before you randomly double yeast and overshoot the next bake."
+        "Bread mode in Fix My Recipe will yell politely if salt is wild or yeast is vanishingly small for the style. Use that screen before you double yeast and create a rocket you cannot steer."
       ]
     },
     {
       "heading": "Vitality checks",
       "paragraphs": [
-        "Bloom yeast in 100–110°F (38–43°C) water with pinch sugar—foam in 10 minutes or replace. Sourdough starter should double predictably at room temp—refresh if flat after 8 hours."
+        "Bloom yeast in 100–110°F (38–43°C) water with a pinch of sugar—foam in about ten minutes or replace the packet. Sourdough starters should double on a predictable schedule at room temperature; if yours lies flat after eight hours, refresh and simplify flour before blaming the recipe."
       ]
     },
     {
       "heading": "Inhibition",
       "paragraphs": [
-        "Too much salt or spice (clove, cinnamon) can slow yeast—check weights."
+        "Heavy spice loads—lots of cinnamon or clove—can slow fermentation alongside salt effects. If a holiday loaf suddenly crawls, check weights, not vibes."
       ]
     },
     {
-      "heading": "Benchmark temperatures and a repeatable test protocol",
+      "heading": "Warmth checks when the dough will not wake up",
       "paragraphs": [
-        "This guide on why dough rises too slow is easier to act on when you anchor numbers instead of vibes. For lean wheat doughs, internal doneness often lands near 200–208°F (93–97°C) in the thickest part; enriched doughs may finish a few degrees lower while still safe. Bulk fermentation is most predictable around 75–80°F (24–27°C) for many straight doughs—colder slows yeast exponentially; warmer accelerates alcohol and acid production. If you shape cold, allow bench rest until the dough yields when pressed—typically 10–20 minutes at room temperature—before final tension. Steam in the first minutes of baking keeps crust extensible for oven spring; venting later drives Maillard browning. Write down ambient kitchen temperature (°F), the set point on your oven or machine, and—when relevant—an internal probe reading or brew time. Change one input per trial: flour brand, hydration percentage, grind setting, chill time, or rack position. Photograph crumb or cup side-by-side after each change. SenseiFood’s Fix My Recipe debugger pairs these observations with ratio checks for your category so the next bake or brew is a measured step, not a guess.",
-        "If you use °C in the kitchen, convert critical bands once and tape them inside a cabinet: 200°F ≈ 93°C (cake/bread finish neighborhood), 350°F ≈ 177°C (common cake/cookie air set point), 212°F = 100°C (sea-level water boil), and espresso extraction times often discussed in the 25–35 second range for classic 9-bar shots—always taste-adjusted to your machine. Altitude lowers water’s boiling point, which shifts extraction and evaporation; bakers at elevation should rely more on internal temperature and visual set than on clock alone.",
-        "Humidity changes how dough skins, how icing behaves, and how staling feels the next day—note outdoor weather when results swing for no obvious reason. For anything oven-based, log preheat completion time: many ovens continue drifting 10–20°F after the beep. For frozen desserts, log freezer display temp if available; a chest freezer near −10°F (−23°C) behaves differently than a frost-free kitchen freezer with defrost cycles. Small environmental logs turn one-off failures into solvable patterns."
+        "This guide on why dough rises too slow is easier to act on when you separate \"cold\" from \"dead.\" Below roughly 50°F (10°C), many yeast schedules crawl; a proofer, a slightly warmed oven with the light on, or simply more time are legitimate answers. For finished lean bread, internal doneness still often lands near 200–208°F (93–97°C) when bake day finally arrives—slow bulk does not change that finish target.",
+        "If you use Celsius day to day, tape a few anchors inside a cabinet: 24–26°C is a common comfortable bulk zone for many straight doughs; 38–43°C is a typical yeast bloom water range when you doubt vitality. Altitude mainly nudges boil-off and crust behavior; it does not excuse salt mis-measures.",
+        "Humidity changes how flour hydrates from the bag; dry winter flour can feel slower or faster depending on absorption. Preheat drift still matters—put a thermometer in the oven and ignore the chirp as gospel."
       ]
     }
   ],

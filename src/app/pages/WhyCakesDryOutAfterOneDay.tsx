@@ -7,59 +7,59 @@ const SPEC: ScienceArticleSpec = {
   "segment": "cake-science",
   "categoryLabel": "Cake Science",
   "title": "Why Cakes Dry Out After One Day",
-  "subtitle": "Starch retrogradation and moisture migration to air or frosting steal tenderness.",
+  "subtitle": "Cooked starch rearranges itself overnight and quietly pushes water out, while the rest of the moisture migrates into the air or into the frosting—both of which steal the tenderness you had on day one.",
   "readTime": "8 min read",
   "emoji": "📅",
   "fixRecipe": {
     "category": "cake",
     "problem": "dry"
   },
-  "quickAnswer": "Next-day dryness is mostly staling: amylopectin reorganizes and frees water that then evaporates. Simple syrup, fat choice, airtight storage, and freezing slow it.",
-  "intro": "Cakes do not only “lose moisture”; they reorganize how water is bound. Understanding staling separates hopeless recipes from normal physics you can manage. Staling is fastest between roughly 32–50°F (0–10°C)—refrigerator territory—because starch retrogrades quickly while water mobility is still meaningful. Freezing near 0°F (-18°C) slows both retrogradation and microbial growth, though ice crystals can damage cells if thawed carelessly.",
+  "quickAnswer": "Next-day dryness in a cake is mostly staling, not lost water. The cooked starch (specifically a starch molecule called amylopectin) reorganizes itself into more crystalline patterns and squeezes its bound water back out into the crumb, where it then evaporates. The way to slow it down is brushing the layers with simple syrup before assembly, using oil instead of (or alongside) butter, storing the cake airtight, and freezing whole cakes you will not eat soon.",
+  "intro": "Cakes do not just “lose moisture”; they reorganize how the water inside the crumb is bound. Once you understand staling, the cake you swore was hopeless on day two becomes just normal physics that you can plan around. Staling is fastest somewhere between roughly 32–50°F (0–10°C)—which is exactly fridge temperature—because the starch is happy to retrograde (the technical word for that recrystallization), and the water still has enough mobility at that temperature to keep moving around the crumb. Down at freezer temperatures, near 0°F (-18°C), both the retrogradation and any microbial growth slow way down. Ice crystals can damage some of the crumb’s cell walls if you thaw it carelessly, though, so wrap things well and thaw slowly.",
   "sections": [
     {
       "heading": "Retrogradation",
       "paragraphs": [
-        "Cooked starch crystals slowly reorder; texture feels firmer even at same total water."
+        "After baking, the swollen starch in the crumb is in a sort of jellied, disordered state. Over the next 24 hours it slowly reorders into more crystalline patterns, which makes the crumb feel firmer and more brittle even when the total amount of water in the cake has barely changed. That is what staling is, at a molecular level."
       ]
     },
     {
       "heading": "Storage",
       "paragraphs": [
-        "Cut faces expose crumb; refrigerator accelerates perceived staling for many cakes though mold risk drops."
+        "Cut faces of a cake expose the crumb directly to dry air, which is why a half-eaten cake gets dry along the cut edge first. The fridge does cut down on mold growth, but it actually accelerates the staling reaction for most cakes—the cake comes out of the fridge feeling drier than it really should, even when sealed."
       ],
-      "tip": "Press plastic directly to cut surfaces; room temp for butter cakes when safe."
+      "tip": "Press plastic wrap directly onto cut surfaces of the cake instead of just covering the plate; keep butter cakes at room temperature when food safety allows (no fresh-cream filling, no fresh fruit)."
     },
     {
       "heading": "Formulation",
       "paragraphs": [
-        "Sugar and fat retain moisture; oil cakes often stale slower than pure butter cakes."
+        "Sugar and fat both bind moisture and slow staling at the molecular level. Oil-based cakes generally stay softer on day two than pure butter cakes because oil stays liquid at room temperature; butter is firm and waxy when cool, which makes the same cake feel drier even when the actual moisture is similar."
       ]
     },
     {
       "heading": "Debugger",
       "paragraphs": [
-        "Compare sugar–fat–liquid bands; if you are lean, staling wins fast."
+        "Pull the cake’s ratio of sugar, fat, and liquid into Fix My Recipe. If you are on the lean side of the typical bands, staling is going to win fast no matter how careful your storage is."
       ]
     },
     {
       "heading": "Time and temperature storage map",
       "paragraphs": [
-        "Room temperature (68–72°F / 20–22°C) for butter cakes in airtight domes often beats fridge for texture for 1–2 days if food safety allows. High-sugar/high-acid items resist mold longer than dairy-heavy fillings alone. Simple syrup (sugar–water brushed on layers) increases free moisture and can mask firming crumb—classic pastry trick without changing the bake itself."
+        "For a butter cake kept under an airtight dome at room temperature (68–72°F / 20–22°C), the texture often beats the fridge version for 1–2 days as long as food safety allows (no fresh-cream filling, no fresh fruit, no eggy custard). High-sugar and high-acid components resist mold longer than dairy-heavy fillings, which is why a lemon curd layer keeps better at room temperature than a fresh whipped cream layer. Brushing the layers with simple syrup (a quick stovetop blend of sugar and water) increases the free moisture on each layer and can mask the firming crumb for a couple of days—this is a classic pastry trick that does not require changing the bake itself."
       ]
     },
     {
       "heading": "Fat type and staling rate",
       "paragraphs": [
-        "Oil interferes less with starch crystallization long-term than solid butter crystals—oil cakes often taste softer day two. Emulsifiers in commercial mixes play the same role at micro scale."
+        "Liquid oil interferes less with starch crystallization over the long run than solid butter crystals do—so oil cakes often feel softer the next day than butter cakes with otherwise identical ingredients. Commercial cake mixes use food-grade emulsifiers (molecules that help fat and water hang out together) to do the same job at a microscopic scale, which is partly why a box mix can stay tender for several days."
       ]
     },
     {
-      "heading": "Benchmark temperatures and a repeatable test protocol",
+      "heading": "Benchmark temperatures and a simple repeatable test",
       "paragraphs": [
-        "This guide on why cakes dry out after one day is easier to act on when you anchor numbers instead of vibes. Butter cakes commonly finish between 200–210°F (93–99°C) at the geometric center, though chocolate and very moist formulas can mislead thermometers—pair probe results with spring-back and clean skewer. Edge-to-center gradients matter: a reading “done” only at the top center can still leave wet bands near the pan floor—check an inch above the bottom in thick layers. Convection and dark pans shift effective heat; if edges race, lower the set temperature about 25°F (14°C) and extend time. Cooling until crumb structure stabilizes—often below 100°F (38°C) internally for large layers—reduces tearing and sticky knife drag. Write down ambient kitchen temperature (°F), the set point on your oven or machine, and—when relevant—an internal probe reading or brew time. Change one input per trial: flour brand, hydration percentage, grind setting, chill time, or rack position. Photograph crumb or cup side-by-side after each change. SenseiFood’s Fix My Recipe debugger pairs these observations with ratio checks for your category so the next bake or brew is a measured step, not a guess.",
-        "If you use °C in the kitchen, convert critical bands once and tape them inside a cabinet: 200°F ≈ 93°C (cake/bread finish neighborhood), 350°F ≈ 177°C (common cake/cookie air set point), 212°F = 100°C (sea-level water boil), and espresso extraction times often discussed in the 25–35 second range for classic 9-bar shots—always taste-adjusted to your machine. Altitude lowers water’s boiling point, which shifts extraction and evaporation; bakers at elevation should rely more on internal temperature and visual set than on clock alone.",
-        "Humidity changes how dough skins, how icing behaves, and how staling feels the next day—note outdoor weather when results swing for no obvious reason. For anything oven-based, log preheat completion time: many ovens continue drifting 10–20°F after the beep. For frozen desserts, log freezer display temp if available; a chest freezer near −10°F (−23°C) behaves differently than a frost-free kitchen freezer with defrost cycles. Small environmental logs turn one-off failures into solvable patterns."
+        "Butter cakes usually finish between 200–210°F (93–99°C) at the center. Chocolate and very moist formulas can fool a thermometer—pair the probe with a spring-back test (press the center gently; if it bounces back, it is set) and a clean skewer test. Edge-to-center heat gradients matter: a reading “done” only at the top center can still leave a wet band near the floor of the pan, so check about an inch above the bottom in thick layers. Convection and dark pans both speed up heating, so if your edges race ahead, lower the set temperature by about 25°F (14°C) and extend the time. Let big layers cool to below about 100°F (38°C) internally before slicing or stacking—the crumb structure keeps stabilizing as it cools.",
+        "Write down your kitchen’s ambient temperature, the oven set point, and your probe reading. Change one input per attempt: flour brand, sugar percentage, fat type, chill time, or rack position. Photograph the crumb side-by-side every time. SenseiFood’s Fix My Recipe debugger pairs those observations with ratio checks for your category, so the next bake is a measured step, not a guess.",
+        "If you cook in Celsius, write a small cheat sheet and tape it inside a cabinet: 200°F is about 93°C (the cake and bread finish zone), 350°F is about 177°C (a common cake and cookie air temperature), and 212°F is 100°C (where water boils at sea level). Humidity in your kitchen changes how icings dry and how a cake stales overnight—note the weather when results swing for no obvious reason. A chest freezer running near 0°F (−18°C) holds cakes much better than a self-defrosting kitchen freezer, which cycles temperatures up and down and accelerates ice crystal damage."
       ]
     }
   ],
@@ -79,12 +79,12 @@ const SPEC: ScienceArticleSpec = {
   ],
   "faqs": [
     {
-      "q": "Does bread staling science equal cake staling?",
-      "a": "Same starch retrogradation theme; cakes have more sugar and fat modifying the curve."
+      "q": "Is bread staling the same science as cake staling?",
+      "a": "The underlying starch retrogradation is the same theme in both. Cakes have more sugar and fat in them, which slows the curve—so a cake usually stales more gently and stays softer longer than an equivalently-stored loaf of lean bread."
     },
     {
-      "q": "Microwave to revive?",
-      "a": "Brief warming gelatinizes starch temporarily—good for a slice, not a long fix."
+      "q": "Can I microwave a slice to revive it?",
+      "a": "Yes, but only briefly. Heat temporarily un-does some of the starch retrogradation and re-softens the crumb, which is great for one slice you are about to eat. The effect is temporary—the slice will firm back up within minutes after cooling—so the microwave is a serving trick, not a storage strategy."
     }
   ]
 };

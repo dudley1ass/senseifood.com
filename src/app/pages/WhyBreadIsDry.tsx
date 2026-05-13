@@ -7,59 +7,58 @@ const SPEC: ScienceArticleSpec = {
   "segment": "bread-science",
   "categoryLabel": "Bread Science",
   "title": "Why Bread Is Dry",
-  "subtitle": "Bake time, flour absorption, storage, and enrichment levels all steal moisture from crumb.",
+  "subtitle": "How long it bakes, how thirsty the flour is, how you store it, and how much fat is in the dough all quietly pull water out of the crumb.",
   "readTime": "7 min read",
   "emoji": "🏜️",
   "fixRecipe": {
     "category": "bread",
     "problem": "general"
   },
-  "quickAnswer": "Dry bread usually means over-baked crumb, flour that absorbed more water than the recipe assumed, or storage that let moisture equilibrate into the air. Pull earlier if crust is thick and crumb chalky; store cut sides covered.",
-  "intro": "Dryness is both a sensory label and a physical reality: less free water in the crumb, firmer starch retrogradation, and faster staling. Home bakers often curse “the recipe” when the oven environment and storage habits moved more water than a tablespoon tweak ever could. Perceived dryness rises when crumb loses plasticizing water—both from over-baking past 210°F (99°C) in spots and from staling retrogradation over hours to days. Fat-enriched breads lose free moisture differently than lean loaves.",
+  "quickAnswer": "Dry bread almost always comes from one of three things: you baked it past the point where the inside was set, the flour drank up more water than the recipe expected, or the bread sat around losing moisture to the air. If the crust is thick and the crumb feels chalky in your mouth, pull the loaf a touch earlier next time. And once you cut into a loaf, keep the cut face covered—an exposed cut edge dries out shockingly fast.",
+  "intro": "“Dry” is a word your mouth uses for something specific in the science: there is not enough free water left in the crumb, the starches have rearranged into stiffer, more crystalline structures (a process bakers call retrogradation—basically staling at the molecular level), and the loaf has lost its plasticizing water that normally keeps bread soft. Home bakers often blame the recipe and start tweaking tablespoons of water, when in reality the oven and the bread box are usually moving far more water than any small ingredient change ever could. Two things make crumb feel dry: baking past about 210°F (99°C) in spots, which drives off extra moisture, and the slow staling that happens over hours and days as those starches reorganize. Breads enriched with fat and eggs lose their free moisture on a different schedule than lean, flour-water-salt-yeast loaves, so the same storage habit can give very different next-day results.",
   "sections": [
     {
-      "heading": "Over-baking beyond the crumb set point",
+      "heading": "Over-baking past the point the crumb has set",
       "paragraphs": [
-        "Once internal temperature passes the set range, moisture loss accelerates. A loaf left “to be safe” can read tough and cottony even with a correct formula. Match loaf size to time: small rolls finish quickly; large miche needs gentle heat longer."
+        "Once the inside of a loaf crosses the temperature range where the crumb is properly set, every extra minute in the oven is mostly just driving water out. A loaf you leave in a little longer “to be safe” can come out tough, cottony, and noticeably drier even though the recipe itself was fine. The fix is matching the loaf size to the bake time and heat: small rolls finish in a flash, while a big country loaf (a miche) wants a gentler heat for longer so the heat can creep all the way to the center without overcooking the outer crumb."
       ]
     },
     {
-      "heading": "Hydration and brand variance",
+      "heading": "Hydration and the flour you actually bought",
       "paragraphs": [
-        "Flour is a crop; protein and ash change seasonally. A hydration that felt perfect in January can feel dry in July with a new bag. Autolyse reveals how thirsty your flour really is."
+        "Flour is a crop, not a chemistry standard. The protein and mineral content (bakers call the mineral content “ash”) drifts with the seasons and from one bag to the next. A hydration that felt perfect in January can feel dry in July because the new bag is simply thirstier. An autolyse—just mixing the flour and water and letting it rest for 20–60 minutes before adding salt and yeast—is a great low-effort way to see how thirsty this particular flour really is before you commit to a final dough."
       ],
-      "tip": "Add water in two stages: hold back 3–5% until you feel the dough after rest."
+      "tip": "Add water in two stages: hold back about 3–5% of the water until you have felt the dough after its rest, then trickle the rest in only if it still feels stiff."
     },
     {
       "heading": "Staling and storage",
       "paragraphs": [
-        "Staling is starch reorganizing, not only water leaving. Refrigeration speeds perceived staling for many breads. Freeze sliced portions you will not eat in a day or two; keep crusty bread in a paper bag and accept that the crust will soften when wrapped."
+        "Staling is not only water sneaking out of the loaf—it is also the starch granules reorganizing into stiffer crystalline patterns after baking, which is exactly the retrogradation we mentioned earlier. The crumb can still hold plenty of water and yet feel dry and crumbly because of that structural shuffle. The fridge is the worst place for most breads because cold temperatures actually speed this reorganization up. If you will not finish the loaf in a day or two, slice it and freeze the slices; you can pull them straight to a toaster. For a crusty loaf you are eating today, a paper bag on the counter is fine—just accept that the crust will soften the moment you wrap it in plastic."
       ]
     },
     {
       "heading": "Using the debugger",
       "paragraphs": [
-        "Compare your dough’s hydration percentage to reference bands in bread mode. If you are low for an artisan open crumb but the bread feels dry, the bake or storage story is the prime suspect, not the recipe’s headline hydration."
+        "Pull up your dough’s hydration percentage and compare it to the reference bands shown in bread mode. If you are sitting low for an artisan open-crumb loaf but the bread still feels dry, then the bake itself or the storage habits are almost certainly the main suspect, not the hydration written at the top of the recipe."
       ]
     },
     {
       "heading": "Bake profile",
       "paragraphs": [
-        "Lower temperature longer bake evens heat for thick loaves; thin free-form loaves tolerate higher radiant heat. Tent foil when crust hits amber but interior lags 15°F behind target. Steam early prevents premature crust that traps steam inside unevenly—dry crust, wet crumb paradox is possible."
+        "Lower temperature for a longer time evens out the heat for thick, dense loaves; thin free-form loaves can take more direct, radiant heat from above. If the crust hits a deep amber color but your probe says the inside is still 15°F shy of the target, tent loose foil over the top so the crust stops darkening while the middle catches up. Steam early in the bake matters too: a moist surface stays stretchy enough for the loaf to do its “oven spring” jump. If you skip steam, the crust seals too fast and traps steam inside unevenly—you can end up with the strange paradox of a dry-looking crust hiding a wet, undercooked crumb."
       ]
     },
     {
-      "heading": "Storage RH",
+      "heading": "Storage humidity",
       "paragraphs": [
-        "Bread boxes around 70–80% relative humidity slow staling compared with paper bags on a dry counter—without encouraging mold in warm kitchens."
+        "A bread box that sits around 70–80% relative humidity slows staling noticeably compared with a paper bag sitting on a dry kitchen counter, and it is still dry enough not to grow mold in a warm kitchen. You do not need a fancy humidity-controlled box—a roomy ceramic or wooden bread box does most of the work, because it traps just enough of the bread’s own evaporated moisture to keep the crust and crumb in friendlier balance."
       ]
     },
     {
-      "heading": "Benchmark temperatures and a repeatable test protocol",
+      "heading": "Dryness is usually a ratio, a bake, or the clock after baking",
       "paragraphs": [
-        "This guide on why bread is dry is easier to act on when you anchor numbers instead of vibes. For lean wheat doughs, internal doneness often lands near 200–208°F (93–97°C) in the thickest part; enriched doughs may finish a few degrees lower while still safe. Bulk fermentation is most predictable around 75–80°F (24–27°C) for many straight doughs—colder slows yeast exponentially; warmer accelerates alcohol and acid production. If you shape cold, allow bench rest until the dough yields when pressed—typically 10–20 minutes at room temperature—before final tension. Steam in the first minutes of baking keeps crust extensible for oven spring; venting later drives Maillard browning. Write down ambient kitchen temperature (°F), the set point on your oven or machine, and—when relevant—an internal probe reading or brew time. Change one input per trial: flour brand, hydration percentage, grind setting, chill time, or rack position. Photograph crumb or cup side-by-side after each change. SenseiFood’s Fix My Recipe debugger pairs these observations with ratio checks for your category so the next bake or brew is a measured step, not a guess.",
-        "If you use °C in the kitchen, convert critical bands once and tape them inside a cabinet: 200°F ≈ 93°C (cake/bread finish neighborhood), 350°F ≈ 177°C (common cake/cookie air set point), 212°F = 100°C (sea-level water boil), and espresso extraction times often discussed in the 25–35 second range for classic 9-bar shots—always taste-adjusted to your machine. Altitude lowers water’s boiling point, which shifts extraction and evaporation; bakers at elevation should rely more on internal temperature and visual set than on clock alone.",
-        "Humidity changes how dough skins, how icing behaves, and how staling feels the next day—note outdoor weather when results swing for no obvious reason. For anything oven-based, log preheat completion time: many ovens continue drifting 10–20°F after the beep. For frozen desserts, log freezer display temp if available; a chest freezer near −10°F (−23°C) behaves differently than a frost-free kitchen freezer with defrost cycles. Small environmental logs turn one-off failures into solvable patterns."
+        "If the crumb feels chalky and tight, look first at how much flour actually went into the bowl—packed cups and humid bags quietly steal water from the formula. If the crumb is open but the loaf still eats dry, you may have baked past the sweet spot or cooled it in a hot, breezy spot that pulled moisture out fast.",
+        "For the next bake, change one kindness at a time: weigh flour and water, shorten bake slightly if the crust is already dark, tent with a towel while cooling if the crust set rock-hard early, or move toward a touch more fat or milk in enriched breads. SenseiFood’s Fix My Recipe bread mode still helps when you suspect the hydration percentage and enrichment are out of balance for the loaf style you want."
       ]
     }
   ],
@@ -75,12 +74,12 @@ const SPEC: ScienceArticleSpec = {
   ],
   "faqs": [
     {
-      "q": "Oil vs butter dryness?",
-      "a": "Oil often feels softer next-day; butter firms when cold."
+      "q": "Is oil or butter better for keeping bread soft?",
+      "a": "Oil-enriched breads usually feel softer the next day because oil stays liquid at room temperature, while butter firms up as it cools and makes the crumb feel stiffer—even though the actual water content is similar."
     },
     {
-      "q": "Freeze drying?",
-      "a": "Freezer burn is sublimation—airtight wrap prevents it."
+      "q": "What is freezer burn, and how do I avoid it on bread?",
+      "a": "Freezer burn is sublimation—ice in the bread turning straight into vapor and escaping—so the crumb dries out in the freezer instead of staying frozen-fresh. Wrap slices tightly in plastic and then in foil or a freezer bag with the air pressed out, and they keep their moisture for weeks."
     }
   ]
 };

@@ -7,74 +7,74 @@ const SPEC: ScienceArticleSpec = {
   "segment": "cookie-science",
   "categoryLabel": "Cookie Science",
   "title": "Why Cookies Taste Too Sweet",
-  "subtitle": "Sugar load, salt balance, browning, and acid all set perceived sweetness—not just cup measurements.",
+  "subtitle": "Cloying sweetness is often a balance problem—salt, acid, and browning frame sugar so it tastes like dessert instead of syrup, even when the cup measure looks \"normal.\"",
   "readTime": "7 min read",
   "emoji": "🍬",
   "fixRecipe": {
     "category": "cookie",
     "problem": "general"
   },
-  "quickAnswer": "Cookies taste cloying when sucrose dominates without salt, acid, or bitter notes from browning to frame it. Reduce sugar slightly, add salt, brown butter, or a trace of acid; verify bake for real Maillard, not pale sugar.",
-  "intro": "Sweetness is contrast. A cookie that reads “too sweet” on paper may actually be under-salted, under-baked for browning, or missing the tiny bitter and caramel compounds that make sugar taste like dessert instead of syrup. This guide walks the sensory stack so you adjust the right lever. Perceived sweetness spikes when sucrose concentration on the tongue is high and bitter/salt balance is low—typical around 68–72°F (20–22°C) serving temp for dough. Browned cookies show less “raw sugar” perception than pale ones because Maillard products add complexity.",
+  "quickAnswer": "Perceived sweetness is not the same as sugar grams. A cookie can taste syrupy when sucrose dominates without enough salt, acid, or Maillard browning to give the brain contrast. Trim sugar a little, add salt thoughtfully, chase real oven color, or add a tiny acid note; verify you are not under-baking into pale sugar territory.",
+  "intro": "Sweetness is context. A cookie that reads \"too sweet\" on paper may actually be under-salted, shy on browning, or missing the small bitter and caramel notes that make sugar feel finished instead of loud. Serving temperature matters too: very cold buttercream reads less sweet than the same buttercream warm. This guide walks the sensory stack so you adjust the right lever instead of swinging wildly on sugar alone.",
   "sections": [
     {
       "heading": "Salt as a frame",
       "paragraphs": [
-        "Salt suppresses perceived sweetness slightly while increasing overall flavor intensity. Many home recipes under-salt; a small bump (especially fine salt distributed evenly) can make the same sugar feel less aggressive. Weigh salt. Volume measures of coarse vs fine salt scatter wildly."
+        "Salt does not only add savor; it makes sweetness feel intentional by giving your palate another note to chew on. Many home recipes are timid with salt relative to modern palates. Weigh it—volume measures bounce around between table salt, kosher salt, and flaky finishing salt.",
       ]
     },
     {
       "heading": "Browning and bitterness (the good kind)",
       "paragraphs": [
-        "Maillard products add complexity that balances sucrose. Pale, thick cookies with white sugar can taste one-note. A longer bake at moderate heat, brown sugar, or milk powder can deepen flavor without adding sucrose."
+        "Maillard browning (amino acids + sugars reacting under heat) and true caramelization add complexity that balances naked sucrose. Pale, thick white-sugar cookies can taste one-note because the only story is sweet. A slightly longer bake at moderate heat, more brown sugar, or a little milk powder can deepen flavor without simply dumping more sucrose on the problem.",
       ],
       "tip": "Try 5–10% sugar reduction paired with one extra minute of bake for color—often sweeter on paper, less cloying in the mouth."
     },
     {
       "heading": "Acid and dairy",
       "paragraphs": [
-        "A touch of cream of tartar, a little yogurt, or cultured butter can brighten perception. Fat coats the tongue and rounds harsh edges."
+        "A touch of acid—cream of tartar in snickerdoodles, a little yogurt, cultured butter—brightens perception the way lemon lifts jam. Fat rounds harsh edges by coating the tongue and carrying aroma. You are not trying to make a sour cookie; you are giving sugar a backdrop.",
       ]
     },
     {
       "heading": "Use Fix My Recipe on the ratio",
       "paragraphs": [
-        "Cookie mode compares sugar, flour, fat, and salt bands. If you are above typical sugar for your target texture, the debugger suggests where to trade sugar for brown sugar, or how salt sits relative to sugar."
+        "Cookie mode compares sugar, flour, fat, and salt bands so you can see when you are living above typical sugar for the texture you want. Use it as a map, then change one ingredient on the next tray so you know what moved.",
       ]
     },
     {
       "heading": "Sugar chemistry and bake color",
       "paragraphs": [
-        "Invert sugar from corn syrup or honey tastes sweeter at equal weight to some palates because fructose is perceived sweeter than sucrose—recipe swaps are not 1:1 sensory. Salt at 0.3–0.5% flour weight often corrects cloying in test batches—measure grams."
+        "Fructose reads sweeter to many palates than sucrose at equal weight, so swapping honey or corn syrup is not a 1:1 sensory swap even when the scale matches. A modest salt band around 0.3–0.5% of flour weight often fixes cloying in test batches—measure grams, not vibes.",
       ]
     },
     {
       "heading": "Chilling and sugar dissolution",
       "paragraphs": [
-        "Chilled dough dissolves sugar less before bake, changing spread and surface caramelization—sweetness perception interacts with texture."
+        "Chilled dough dissolves sugar less before the bake, which changes spread and surface caramelization—sweetness perception rides along with texture and color, not sugar alone.",
       ]
     },
     {
-      "heading": "Benchmark temperatures and a repeatable test protocol",
+      "heading": "What to change when sweetness feels stuck",
       "paragraphs": [
-        "This guide on why cookies taste too sweet is easier to act on when you anchor numbers instead of vibes. Cookie spread begins as butter phases soften near body temperature and fully mobilizes in the oven—edges often see higher heat first, so tray position and rotation matter. For chewy vs crisp targets, final internal moisture and surface dehydration differ: lower final moisture and more edge browning read “crisp,” while higher moisture and less Maillard read “chewy.” Chill dough near 38°F (3°C) to delay fat flow and reduce spread if needed. Sheet color changes bottom heat flux; light aluminum often gentler than dark nonstick for the same set temperature. Write down ambient kitchen temperature (°F), the set point on your oven or machine, and—when relevant—an internal probe reading or brew time. Change one input per trial: flour brand, hydration percentage, grind setting, chill time, or rack position. Photograph crumb or cup side-by-side after each change. SenseiFood’s Fix My Recipe debugger pairs these observations with ratio checks for your category so the next bake or brew is a measured step, not a guess.",
-        "If you use °C in the kitchen, convert critical bands once and tape them inside a cabinet: 200°F ≈ 93°C (cake/bread finish neighborhood), 350°F ≈ 177°C (common cake/cookie air set point), 212°F = 100°C (sea-level water boil), and espresso extraction times often discussed in the 25–35 second range for classic 9-bar shots—always taste-adjusted to your machine. Altitude lowers water’s boiling point, which shifts extraction and evaporation; bakers at elevation should rely more on internal temperature and visual set than on clock alone.",
-        "Humidity changes how dough skins, how icing behaves, and how staling feels the next day—note outdoor weather when results swing for no obvious reason. For anything oven-based, log preheat completion time: many ovens continue drifting 10–20°F after the beep. For frozen desserts, log freezer display temp if available; a chest freezer near −10°F (−23°C) behaves differently than a frost-free kitchen freezer with defrost cycles. Small environmental logs turn one-off failures into solvable patterns."
+        "If the cookie is pale and reads syrupy, start with bake color and salt before you slash sugar: Maillard and salt are the cheap contrast tools. If it is dark yet still cloying, look at acid and sugar type—invert syrups and high fructose loads can push perceived sweetness even when brown looks right.",
+        "When you test fixes, change one knob per tray—salt percent, sugar percent, or oven temperature—and take the same photo at the same minute mark. Your eye catches color shifts your tongue will later thank you for.",
+        "SenseiFood’s Fix My Recipe debugger helps keep those tests honest by comparing your ratios to typical successful bands instead of letting Instagram hydration numbers live rent-free in your head."
       ]
     }
   ],
   "faqs": [
     {
       "q": "Will cutting sugar ruin spread?",
-      "a": "Often slightly; compensate with a bit more brown sugar or tweak butter temp and chill, testing one variable at a time."
+      "a": "A small sugar trim plus a touch more brown sugar or a tiny hydration tweak often preserves spread better than a dramatic sugar chop. Still change one variable at a time so you know what worked.",
     },
     {
-      "q": "European butter cookies sweeter?",
-      "a": "Higher butterfat can carry sweetness differently—compare by weight."
+      "q": "Do European-style high-fat butters make cookies taste sweeter?",
+      "a": "More butterfat changes how sugar and aroma dissolve in the mouth; compare formulas by weight rather than by cultural myth. Sometimes the fix is salt and bake color, not butter nationality."
     },
     {
       "q": "Stevia swap?",
-      "a": "Bulking and browning differ—expect texture change."
+      "a": "Non-sugar sweeteners change bulking, browning, and set—expect texture shifts, not a free lunch. Treat swaps as new recipes with a small test batch.",
     }
   ],
   "related": [

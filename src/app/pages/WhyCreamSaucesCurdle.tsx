@@ -7,55 +7,55 @@ const SPEC: ScienceArticleSpec = {
   "segment": "sauce-science",
   "categoryLabel": "Sauce Science",
   "title": "Why Cream Sauces Curdle",
-  "subtitle": "Protein tightening, acid shock, and overheating destabilize dairy emulsions into grainy curds.",
+  "subtitle": "A silky cream sauce is a temporary peace treaty between water, milk proteins, and fat. Curdling is the treaty breaking: proteins tighten into little grains faster than the emulsion can keep them suspended—usually because of too much heat, acid added at the wrong moment, or not enough stabilizing starch.",
   "readTime": "8 min read",
   "emoji": "🥛",
   "fixRecipe": {
     "category": "baking",
     "problem": "general"
   },
-  "quickAnswer": "Cream sauces curdle when dairy proteins denature and aggregate faster than fat and emulsifiers can keep them suspended—often from boiling, acidic additions at high heat, or insufficient starch or lecithin support. Use gentle sub-simmer heat, temper acids, add starch slurry early enough to hydrate, and finish fat off-heat when possible. If the surface already films, pull off heat before the boil returns: carryover heat in heavy pans is a common silent accomplice. Low-fat dairy tightens faster than heavy cream, so expect a narrower heat window.",
-  "intro": "Curdled cream is not mysterious spoilage mid-pan; it is a race between protein aggregation and emulsion repair capacity. Wine reductions, tomato acidity, and lemon can be gorgeous if introduced with thermal respect. This article walks pH, heat flux, starch roles, and recovery options that actually work when you catch the break early enough. Sauce logs should capture pan metal, burner setting, and time-to-first-bubble after dairy addition. If you use wine, record reduction volume visually because syrup thickness predicts shock. When recovering breaks, note whether heat was lowered first—order matters. For cheese additions, log moisture and age because aged cheeses behave differently in emulsions. Photograph surface sheen versus oil slicks; they imply different failure stages. Pair reads with Sauce Sensei timing articles so heat paths become repeatable craft instead of hope. Most curdle stories start the same way: the pan was louder than the cook, acid arrived like a plot twist during a boil, or skim dairy was asked to behave like heavy cream. When you narrate the failure in plain heat-and-timing language, the fix path stops feeling random. Gentle sub-simmer, tempered acid, and starch that had time to hydrate are the boring heroes that keep dinner creamy instead of grainy.",
+  "quickAnswer": "Cream sauces curdle when dairy proteins denature (unfold) and then clump together faster than fat droplets and emulsifiers can keep them smoothly dispersed—think tiny curds instead of silk. Boiling is the classic trigger; lemon, wine, or tomato added while the pan is screaming hot can do it too. Gentle sub-simmer heat, tempering acid (adding it slowly while whisking off the boil), and a starch slurry that has time to hydrate give you guardrails. If a skin starts forming on the surface, pull the pan off heat before a full boil returns: thick pans keep cooking from stored heat (carryover), which is a sneaky repeat offender. Low-fat dairy has less fat to buffer proteins, so it often curdles faster than heavy cream—same recipe, narrower safety lane.",
+  "intro": "Curdled cream is not mysterious spoilage mid-pan; it is a race between protein clumping and your ability to keep everything emulsified—fat and water mixed into one glossy phase. Wine reductions, tomato acidity, and lemon can be gorgeous if they meet dairy with thermal respect. This article walks pH (acidity), heat flux, starch’s bodyguard role, and recovery moves that work when you catch the split early. In plain terms: if you would not sprint a marathon in dress shoes, do not boil cream like it owes you money. Most curdle stories start the same way: the pan was louder than the cook, acid arrived like a plot twist during a boil, or skim milk was asked to behave like heavy cream. When you narrate the failure in heat-and-timing language, the fix path stops feeling random. Gentle sub-simmer, tempered acid, and starch that had time to hydrate are the boring heroes that keep dinner creamy instead of grainy.",
   "sections": [
     {
       "heading": "Heat and protein denaturation kinetics",
       "paragraphs": [
-        "Boiling cream crosses stability thresholds quickly; the surface film is the early warning. Carryover heat in thick pans continues cooking off-flame. Reheating yesterday’s sauce repeats the risk window."
+        "“Kinetics” here just means speed: boiling cream crosses a stability line quickly, and the first warning is often a skin on the surface or a grainy streak when you drag a spoon. Carryover heat in heavy pans keeps cooking even after you turn the burner off, which is why moving the pan aside a beat earlier matters. Reheating yesterday’s sauce repeats the same risk window—gentle rewarming with a splash of liquid and constant whisking is the home-cook version of damage control."
       ]
     },
     {
       "heading": "Acid, salt, and alcohol timing",
       "paragraphs": [
-        "Acid tightens proteins; add in tempered streams while whisking on lowered heat. Alcohol can thin phases temporarily then spike boil intensity as ethanol leaves. Salt concentration shifts protein isoelectric behavior subtly but meaningfully."
+        "Acid tightens dairy proteins—useful in cheese making, scary in a cream sauce if the acid hits while heat is high. Add acidic ingredients in a thin stream while whisking, and do it when the dairy is warm but not at a rolling boil. Alcohol can loosen the sauce briefly, then leave as steam, which can suddenly spike bubbling—so treat wine like a guest who needs a seat before you introduce the cream. Salt matters in small chemistry ways (it shifts how proteins pack), but the big practical lesson is balance: seasoned sauce still needs gentle heat."
       ]
     },
     {
       "heading": "Starch, lecithin, and fat phase help",
       "paragraphs": [
-        "Roux or slurry starch catches free water and reduces aggregation collisions. Egg yolk lecithin and commercial lecithin add interfacial area for fat droplets to protect proteins. Butter finish adds cooled fat crystals that can help re-suspend if heat is controlled."
+        "A roux or cornstarch slurry does two helpful jobs: it thickens slightly and ties up free water so protein molecules bump each other less often—fewer bumps means fewer curds. Egg yolk lecithin (and commercial lecithin) acts like a matchmaker between fat and water, increasing the surface area where fat droplets can shield proteins. Finishing with cold butter off heat can help re-suspend fat and smooth mouthfeel, but only if you stop adding energy at the right moment—butter cannot fix a sauce that is already fully split into oil slicks and gritty water."
       ]
     },
     {
       "heading": "How Fix My Recipe helps",
       "paragraphs": [
-        "General baking mode still rewards logging dairy-to-acid ratios when your sauces pair with doughs. Treat sauce batches like experiments: one variable per pan."
+        "When sauces pair with baking projects, ratios still matter: SenseiFood’s tools reward writing down what you actually did—cream volume, acid amount, and whether you thickened before dairy—so the next batch is a tweak, not a guess. Treat each pan as one variable at a time: heat first, acid second, starch timing third."
       ]
     },
     {
       "heading": "Curdle as a cautionary tale",
       "paragraphs": [
-        "A smooth cream sauce wants gentle heat and respect for dairy proteins; boil is the villain, acid timing is the tricky supporting actor, and cold butter off heat is often the redemption beat. When it splits, write heat level, when acid joined, and whether the dairy was low-fat. Those three beats replay in almost every kitchen tragedy."
+        "A smooth cream sauce wants gentle heat and respect for dairy proteins; boil is the villain, acid timing is the tricky supporting actor, and cold butter off heat is often the redemption beat. When it splits, remember three plain facts: how hot the pan was, when acid joined, and whether you used low-fat dairy. Those three beats replay in almost every kitchen tragedy—and they also replay in almost every rescue story."
       ]
     }
   ],
   "faqs": [
     {
       "q": "Can I blend a broken sauce?",
-      "a": "Sometimes with immersion blender if fat has not fully separated; strain if gritty proteins dominate."
+      "a": "Sometimes, yes—an immersion blender can re-suspend proteins if the fat has not fully separated into a slick on top. If it is gritty with big curds, strain first, then blend; texture may be softer, but dinner is saved."
     },
     {
       "q": "Is low-fat cream safer?",
-      "a": "Often more prone; fat helps buffer proteins—choose cook technique before trimming fat."
+      "a": "Usually the opposite: less fat means less buffering for proteins, so low-fat dairy curdles faster. If you need a lighter sauce, adjust technique before you strip all the fat out."
     }
   ],
   "related": [

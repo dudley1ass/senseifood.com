@@ -3,85 +3,80 @@ import type { ScienceArticleSpec } from '../data/scienceArticleTypes';
 
 /** Article content for this route — lives in this file only. */
 const SPEC: ScienceArticleSpec = {
-  "slug": "why-oven-spring-happens",
-  "segment": "bread-science",
-  "categoryLabel": "Bread Science",
-  "title": "Why Oven Spring Happens",
-  "subtitle": "Gas expands, yeast races until heat kills it, and steam pressure inflates cells before the crumb sets.",
-  "readTime": "8 min read",
-  "emoji": "🎈",
-  "fixRecipe": {
-    "category": "bread",
-    "problem": "wont-rise"
+  slug: 'why-oven-spring-happens',
+  segment: 'bread-science',
+  categoryLabel: 'Bread Science',
+  title: 'Why Oven Spring Happens',
+  subtitle:
+    'That first-minute puff in the oven is mostly hot gas and steam stretching the dough while the crust is still soft—yeast gives one last push, then heat sets the shape before the loaf can change its mind.',
+  readTime: '8 min read',
+  emoji: '🎈',
+  fixRecipe: {
+    category: 'bread',
+    problem: 'wont-rise',
   },
-  "quickAnswer": "Oven spring is rapid expansion from hot gas and steam inside a still-soft dough, amplified by last gasp yeast activity, until proteins set. Strong gluten, proper proof, steam, and heat transfer make it visible.",
-  "intro": "Oven spring is the theatrical moment bread bakers chase: the loaf surges, scores peel back, and the silhouette transforms. Under the drama is straightforward thermodynamics plus biology stopping at a precise death temperature for yeast. Oven spring is rapid expansion when yeast and trapped water vapor pressure inflate the dough before the crust sets—mostly in the first third of bake while internal temp climbs from 140°F (60°C) toward starch set.",
-  "sections": [
+  quickAnswer:
+    'Oven spring is the loaf’s early surge: bubbles of air and CO₂ from fermentation expand when they get hot, water turns to steam and adds pressure, and yeast works a little faster until the inside gets hot enough to shut the yeast down. If gluten is strong enough and the crust stays flexible for the first few minutes—steam helps—you see a visible jump before the crumb “locks.”',
+  intro:
+    'Home bakers call it oven spring; physicists would say you are watching a wet foam inflate under heat while the outer shell is still stretchy. In plain terms, the loaf is allowed to grow in the one window when the inside is racing ahead and the outside has not hardened into a lid yet. This piece walks through what is actually stretching (gas laws, steam, gluten), where yeast still matters, and why proofing and scoring decide whether spring looks glorious or turns into random rips. You do not need a degree—just a mental picture of pressure meeting a soft crust, then a firm one.',
+  sections: [
     {
-      "heading": "Gas laws in the crumb",
-      "paragraphs": [
-        "Charles’s law is the intuitive part: gases expand when heated. The less intuitive part is how many separate bubbles do this at once inside a viscoelastic foam."
-      ]
+      heading: 'Hot air and steam do the heavy lifting',
+      paragraphs: [
+        'When dough hits a hot oven, the gas already trapped in little pockets warms up fast. Warm gas takes up more space—that is the intuitive part everyone remembers from school. Water in the dough also starts turning to steam inside those pockets, which adds extra outward push. Thousands of tiny pockets doing that at once look like the whole loaf swelled overnight, but it is really many small balloons inflating together inside a stretchy gluten net.',
+        'That net has to be elastic enough to grow without tearing. Under-mixed or very weak dough can still rise a bit, then rip in odd places because the “bag material” was never uniform. Strong dough with even gluten development gives you a smoother, more predictable spring.',
+      ],
     },
     {
-      "heading": "Yeast sprint",
-      "paragraphs": [
-        "Warmth accelerates fermentation until thermal death around 140°F for yeast. That final burst overlaps with expansion."
-      ]
+      heading: 'Yeast’s last busy minutes',
+      paragraphs: [
+        'Yeast does not instantly die the second the oven turns on. For a short overlap, warmer dough means faster fermentation—more CO₂—until the interior climbs past the range where yeast is comfortable. Think of it as a final sprint, not the whole marathon. After that, expansion is mostly heat and steam, not new yeast burps.',
+        'If the dough was already exhausted from sitting too long at room temperature, there is little sprint left. That is why over-proofed loaves often look sad in the oven: the bubbles were already big and fragile before heat arrived, so the loaf cannot hold a dramatic spring.',
+      ],
     },
     {
-      "heading": "Structure setting",
-      "paragraphs": [
-        "Spring ends when gluten coagulates and starch gelatinizes enough to lock shape. Under-proofed dough can spring then tear; over-proofed dough has little left to give."
-      ]
+      heading: 'When the loaf “sets” and spring stops',
+      paragraphs: [
+        'Spring ends when the crumb structure firms up enough to hold its shape. Starch absorbs water and swells with heat; proteins in gluten tighten and eventually lock. Once that happens, the loaf might still brown, but it is not going to balloon much more—outer layers turn into crust instead of stretchy skin.',
+        'Under-proofed dough can spring hard, then tear if pressure builds faster than the gluten can stretch. Over-proofed dough barely springs. The sweet spot feels alive when you poke it: some give, some spring-back, not a floppy pillow and not a tight rubber ball.',
+      ],
     },
     {
-      "heading": "Practice loop",
-      "paragraphs": [
-        "Photograph each loaf at 2, 5, and 10 minutes in the oven. Pair visuals with Fix My Recipe ratio notes to learn whether problems are fermentation-first or heat-first."
-      ]
+      heading: 'Steam, scores, and where expansion goes',
+      paragraphs: [
+        'A little surface moisture early in the bake keeps the outer dough flexible so expansion can show up as height and ear instead of early cracking. When the surface dries and firms, expansion slows and browning picks up—that is the handoff from “grow” to “color.”',
+        'A score is a planned weak line. Without one, pressure still finds a way out, often as a blowout on the side or a ragged crack. With a good score, you choose where the loaf opens, which also changes how tall versus wide the spring reads on the counter.',
+      ],
     },
     {
-      "heading": "Gas and vapor",
-      "paragraphs": [
-        "CO₂ from yeast and air bubbles expand with heat; water vapor contributes pressure once localized boiling begins in crumb pores. Scoring directs expansion—without it, weak points burst randomly."
-      ]
+      heading: 'Heat transfer: why the first minutes feel make-or-break',
+      paragraphs: [
+        'Stone, steel, Dutch oven, or a hot deck all change how fast heat reaches the bottom and sides of the loaf. A cold oven or a loaf loaded before the oven truly recovers can delay spring and let the crust set early on one face—then the loaf grows unevenly or tears where you did not plan.',
+        'If spring is inconsistent batch to batch, suspect oven recovery and loading order before rewriting the recipe. The first five to ten minutes are when the silhouette is decided; the rest of the bake is mostly finish, color, and drying the crumb to a pleasant chew.',
+      ],
     },
     {
-      "heading": "Limits",
-      "paragraphs": [
-        "Over-proofed dough cannot spring—bubble walls already thinned. Under-powered ovens may set crust before expansion completes."
-      ]
+      heading: 'What to watch on your next bake',
+      paragraphs: [
+        'You learn oven spring faster from a few honest notes than from chasing perfect numbers: room temperature, dough temperature when you shaped, how much volume changed during proof, how the poke test felt, whether you used steam and for how long, and a quick photo at two minutes and again at eight minutes in the oven.',
+        'Change one thing at a time—proof time, steam method, score depth, or rack height—and compare photos. SenseiFood’s Fix My Recipe bread checks still help with ratios, but spring is where timing and heat meet dough state; your eyes on the first minutes beat any single thermometer reading.',
+      ],
     },
-    {
-      "heading": "Benchmark temperatures and a repeatable test protocol",
-      "paragraphs": [
-        "This guide on why oven spring happens is easier to act on when you anchor numbers instead of vibes. For lean wheat doughs, internal doneness often lands near 200–208°F (93–97°C) in the thickest part; enriched doughs may finish a few degrees lower while still safe. Bulk fermentation is most predictable around 75–80°F (24–27°C) for many straight doughs—colder slows yeast exponentially; warmer accelerates alcohol and acid production. If you shape cold, allow bench rest until the dough yields when pressed—typically 10–20 minutes at room temperature—before final tension. Steam in the first minutes of baking keeps crust extensible for oven spring; venting later drives Maillard browning. Write down ambient kitchen temperature (°F), the set point on your oven or machine, and—when relevant—an internal probe reading or brew time. Change one input per trial: flour brand, hydration percentage, grind setting, chill time, or rack position. Photograph crumb or cup side-by-side after each change. SenseiFood’s Fix My Recipe debugger pairs these observations with ratio checks for your category so the next bake or brew is a measured step, not a guess.",
-        "If you use °C in the kitchen, convert critical bands once and tape them inside a cabinet: 200°F ≈ 93°C (cake/bread finish neighborhood), 350°F ≈ 177°C (common cake/cookie air set point), 212°F = 100°C (sea-level water boil), and espresso extraction times often discussed in the 25–35 second range for classic 9-bar shots—always taste-adjusted to your machine. Altitude lowers water’s boiling point, which shifts extraction and evaporation; bakers at elevation should rely more on internal temperature and visual set than on clock alone.",
-        "Humidity changes how dough skins, how icing behaves, and how staling feels the next day—note outdoor weather when results swing for no obvious reason. For anything oven-based, log preheat completion time: many ovens continue drifting 10–20°F after the beep. For frozen desserts, log freezer display temp if available; a chest freezer near −10°F (−23°C) behaves differently than a frost-free kitchen freezer with defrost cycles. Small environmental logs turn one-off failures into solvable patterns."
-      ]
-    }
   ],
-  "related": [
-    {
-      "title": "Why Bread Rises",
-      "path": "/bread-science/why-bread-rises"
-    },
-    {
-      "title": "How Yeast Works in Baking",
-      "path": "/bread-science/how-yeast-works"
-    }
+  related: [
+    { title: 'Why Bread Rises', path: '/bread-science/why-bread-rises' },
+    { title: 'Why Bread Needs Scoring', path: '/bread-science/why-bread-needs-scoring' },
   ],
-  "faqs": [
+  faqs: [
     {
-      "q": "No spring sourdough?",
-      "a": "Check proof state and steam; both dominate."
+      q: 'My sourdough barely springs—what should I check first?',
+      a: 'Proof state and steam are the usual kings. An over-proofed dough has little structural snap left; a dry oven sets the crust before expansion can show. Fix those before you rearrange hydration.',
     },
     {
-      "q": "Pizza spring?",
-      "a": "Same physics—hot stone, fast set."
-    }
-  ]
+      q: 'Does pizza “spring” the same way?',
+      a: 'Same idea on a faster clock: a very hot surface sets the bottom while the top can still bubble. Heat, hydration, and gluten strength still decide how much lift you see before the crumb sets.',
+    },
+  ],
 };
 
 export default function WhyOvenSpringHappens() {

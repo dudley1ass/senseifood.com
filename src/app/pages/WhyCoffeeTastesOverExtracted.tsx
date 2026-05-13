@@ -7,64 +7,64 @@ const SPEC: ScienceArticleSpec = {
   "segment": "coffee-science",
   "categoryLabel": "Coffee Science",
   "title": "Why Coffee Tastes Over-Extracted",
-  "subtitle": "Dry bitterness, astringency, and hollow finish when too much solid dissolves.",
+  "subtitle": "When the cup goes dry-bitter and almost \"hollow,\" you have usually pushed too many solids out of the grounds—especially the late-arriving harsh stuff, not just \"more coffee flavor.\"",
   "readTime": "8 min read",
   "emoji": "⚗️",
   "fixRecipe": {
     "category": "coffee",
     "problem": "bitter"
   },
-  "quickAnswer": "Over-extraction pulls more bitter, woody, and astringent compounds. Coarsen grind, shorten time, lower temperature slightly, or reduce agitation—pick the variable that matches your brew method.",
-  "intro": "Extraction is a curve: acids and sugars come early; heavier bitters later. Pushing too far along that curve is over-extraction in the cup, even if your TDS meter says something else. Over-extraction pulls late compounds—tannins, bitter alkaloids—past pleasant balance, often when water contact time is too long or temperature too high. Espresso shots past ~35–40s for same dose often trend woody; filter past ~4:30 can gain dryness.",
+  "quickAnswer": "Over-extraction means you kept dissolving stuff from the grounds after the nice acids and sugars had already shown up, and you invited the woody, drying crowd—think tannins (those mouth-drying polyphenols you know from strong tea) and bitter alkaloids alongside other heavy solubles. In plain terms: you squeezed the bean harder than your recipe wanted. Coarsen the grind a touch, shorten contact time, nudge temperature down a little, or calm the sloshing and turbulence—pick the lever that matches how you actually brew, then change one thing and taste again.",
+  "intro": "Think of extraction as a story with an order, not a single switch. Early in the brew, water pulls bright acids and simple sugars; later, it starts hauling bigger, rougher molecules that read as bitterness, dryness, and that papery finish people call astringent. \"Over-extracted\" is what your tongue calls it when that late chapter runs too long—whether or not a refractometer would label the total dissolved solids (TDS) as \"high\" in the spreadsheet sense. Long contact, too-hot water, too fine a grind, or aggressive agitation all extend the late chapter. Espresso that runs very long on the same dose often picks up a woody tail; filter brews that wander past a gentle window can start to feel thin in the middle yet harsh at the end. The goal here is not lab precision for its own sake; it is enough causal language that you can adjust tomorrow morning without guessing.",
   "sections": [
     {
       "heading": "The flavor curve",
       "paragraphs": [
-        "Espresso and pourover differ in mechanics but share the idea of contact time × surface area × temperature."
+        "Espresso slams hot water through a tight puck in seconds; pourover or immersion bathes a bed for minutes. Different stagecraft, same math idea: how long water meets coffee, how much surface area you exposed by grinding, and how hot that water is. When any leg of that tripod gets aggressive, you slide farther along the flavor curve toward the bitter, drying side. You do not need to pretend you are designing jet engines—just notice that \"more of everything\" rarely fixes a cup that already tastes cooked."
       ]
     },
     {
       "heading": "Grind as the main dial",
       "paragraphs": [
-        "Finer grind increases surface area and usually pushes extraction upward. Coarsening is the first fix for harsh, dry cups when time is fixed."
+        "Grinding finer cuts the beans into smaller pieces, which exposes more surface area to water and—everything else equal—tends to bump extraction up. That is why a harsh, drying cup with a fixed recipe and timer often gets kinder when you coarsen slightly: you shorten the late chapter without always needing a dramatic temperature swing. If you coarsen and the cup goes sour or weak, you have moved the other direction; that is useful information, not failure."
       ]
     },
     {
       "heading": "Temperature and roast",
       "paragraphs": [
-        "Hotter water extracts faster; dark roasts have more soluble ash and can taste harsh sooner."
+        "Hotter water moves the chemistry faster, so the same grind and time can land farther along the curve. Darker roasts are more brittle and more soluble in practice—there is more roasted \"ash\" and broken-down cell material ready to jump into the cup—so they can cross from cozy-roasty into ashy-harsh sooner than a light roast at the same recipe. If your dark roast suddenly tastes like licking a charcoal pencil, temperature and time are prime suspects before you blame the bag."
       ]
     },
     {
       "heading": "Debugger alignment",
       "paragraphs": [
-        "Coffee mode links bitter and burnt-taste clusters to practical levers. Use it after you log grind setting, time, and ratio."
+        "SenseiFood’s coffee debugger is built to connect \"this tastes bitter / burnt / hollow\" to the handful of knobs people actually own: grind step, brew time, ratio, and whether the problem shows up in one method but not another. You do not need a wall of charts—just one honest line after each cup: grind setting, water in, coffee out (for espresso), total brew time, and one taste phrase. Patterns show up fast when the notes match the real recipe, not the recipe you remember from last month."
       ]
     },
     {
       "heading": "Time, temperature, grind",
       "paragraphs": [
-        "Finer grind increases surface area—same time yields higher extraction. Raise temperature in 1°F steps or coarsen slightly to reduce harshness. Brew ratio 1:15 vs 1:17 changes strength at same extraction—confusing diagnosis without scale."
+        "If you change two things at once—say, finer grind and hotter water—you can absolutely land on a harsh cup and have no idea which variable did the crime. Finer grind raises extraction at the same clock time; a tiny temperature bump does the same in a different way. Brew ratio (for example 1:15 versus 1:17 coffee-to-water) changes how concentrated the cup is even when extraction behaves similarly, which is why \"strong\" and \"over-extracted\" get conflated. A kitchen scale is the cheap therapist here: dose, water, and output in grams turn arguments into adjustments."
       ]
     },
     {
       "heading": "Dark roast sensitivity",
       "paragraphs": [
-        "Soluble mass is higher—easier to over-extract quickly; shorter ratios help."
+        "Dark roasts give up solubles quickly because roasting has already done a lot of cellular breakdown. That means the window between \"sweet and round\" and \"harsh and ashy\" can be short, especially if you keep the same habits you use for a dense, light-roasted bean. Shorter ratios, gentler temperatures, or slightly coarser grind often preserve the roast character you actually bought instead of turning it into a punishment."
       ]
     },
     {
-      "heading": "Benchmark temperatures and a repeatable test protocol",
+      "heading": "Numbers that help without turning breakfast into a lab",
       "paragraphs": [
-        "This guide on why coffee tastes over-extracted is easier to act on when you anchor numbers instead of vibes. Water temperature for manual filter brewing is often discussed around 195–205°F (90–96°C) off boil, adjusting for roast and altitude—cooler water can under-extract acids while hotter water can over-extract bitter compounds. Espresso puck temperature interacts with pressure and flow: channeling produces mixed under/over pockets in one cup. Grind size changes surface area exponentially in practice—small grind steps move extraction more than large temperature jumps. Record dose, yield, time, and taste notes together; changing only one variable per session isolates cause. Write down ambient kitchen temperature (°F), the set point on your oven or machine, and—when relevant—an internal probe reading or brew time. Change one input per trial: flour brand, hydration percentage, grind setting, chill time, or rack position. Photograph crumb or cup side-by-side after each change. SenseiFood’s Fix My Recipe debugger pairs these observations with ratio checks for your category so the next bake or brew is a measured step, not a guess.",
-        "If you use °C in the kitchen, convert critical bands once and tape them inside a cabinet: 200°F ≈ 93°C (cake/bread finish neighborhood), 350°F ≈ 177°C (common cake/cookie air set point), 212°F = 100°C (sea-level water boil), and espresso extraction times often discussed in the 25–35 second range for classic 9-bar shots—always taste-adjusted to your machine. Altitude lowers water’s boiling point, which shifts extraction and evaporation; bakers at elevation should rely more on internal temperature and visual set than on clock alone.",
-        "Humidity changes how dough skins, how icing behaves, and how staling feels the next day—note outdoor weather when results swing for no obvious reason. For anything oven-based, log preheat completion time: many ovens continue drifting 10–20°F after the beep. For frozen desserts, log freezer display temp if available; a chest freezer near −10°F (−23°C) behaves differently than a frost-free kitchen freezer with defrost cycles. Small environmental logs turn one-off failures into solvable patterns."
+        "For manual filter brewing, many recipes live somewhere around 195–205°F (about 90–96°C) off the kettle, then taste-tune for roast and altitude. Cooler water tends to leave more of the bright, under-developed story on the table; hotter water can push you into harshness faster, especially if grind is already fine. Espresso adds pressure and puck physics: channeling (water sneaking through cracks or weak spots) can give you sour, thin pockets and bitter, over-worked pockets in the same shot, which feels confusing until you treat it as uneven extraction, not \"mysteriously bad beans.\"",
+        "Small grind adjustments usually move the cup more than heroic 10°F temperature swings, because surface area is the rude lever. Pick one variable per morning—grind, time, or temperature—and write a single sentence about the cup. If you prefer Celsius, translate your usual kettle band once and tape it inside a cupboard so you are not doing mental math before caffeine.",
+        "Altitude matters because water boils cooler high in the mountains, which changes how hot \"just off boil\" actually is. Room humidity shifts how fast your bed loses heat and how pour behavior feels day to day. None of this needs a spreadsheet fetish; it needs enough anchoring that \"I changed something\" is a real sentence instead of a vibe."
       ]
     },
     {
       "heading": "Extra variables that swing results",
       "paragraphs": [
-        "Grinder retention can silently change dose: purge stale grounds after idle. Water TDS around 75–150 ppm is a common specialty-coffee starting band; extremely soft or hard municipal water shifts extraction without you touching grind. For espresso, track yield in grams alongside time—ratio changes strength independent of extraction."
+        "Grinder retention means yesterday’s grounds can hide in the chute and become part of today’s dose unless you purge a bit—quiet recipe drift, loud flavor effects. Water hardness (roughly, how much calcium and magnesium you have) and overall mineral content (often discussed as TDS, total dissolved solids) change how aggressively water strips flavor; the specialty world often uses a moderate band as a starting place, but your tap might already be softer or harder than you assume. For espresso, always track yield in grams alongside time: a longer shot with more water out is a different drink than a short shot at the same seconds, because strength and extraction are not the same story."
       ]
     }
   ],
@@ -84,12 +84,12 @@ const SPEC: ScienceArticleSpec = {
   ],
   "faqs": [
     {
-      "q": "Bitter vs over-extracted?",
-      "a": "Overlap; TDS measurement clarifies."
+      "q": "Is \"bitter\" the same thing as over-extracted?",
+      "a": "They overlap a lot in everyday language. Bitterness can also come from roast level, bean defects, or even your grinder burrs heating up. Over-extraction specifically points at too much of the late, harsh solubles for the style you wanted. Measuring strength (TDS) with a refractometer can separate \"strong\" from \"over-worked,\" but your tongue plus a simple brew log already gets you surprisingly far."
     },
     {
-      "q": "Stirring pour-over?",
-      "a": "Can even extraction or cause fines migration—technique dependent."
+      "q": "Does stirring a pour-over help or hurt?",
+      "a": "It depends what problem you actually have. Gentle, purposeful agitation can even out a crusty dry pocket; wild swirling can knock fine particles downward and create clogging or channeling that reads as harshness. If you stir, do it the same way every time so the experiment is fair."
     }
   ]
 };

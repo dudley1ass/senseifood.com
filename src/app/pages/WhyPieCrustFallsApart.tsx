@@ -7,65 +7,65 @@ const SPEC: ScienceArticleSpec = {
   "segment": "pie-science",
   "categoryLabel": "Pie Science",
   "title": "Why Pie Crust Falls Apart",
-  "subtitle": "Not enough water, not enough cohesion, or too much fat weakens the matrix.",
+  "subtitle": "When there's not quite enough water, not enough cohesion between layers, or so much fat that the dough never knits together, the crust crumbles instead of holding a slice.",
   "readTime": "7 min read",
   "emoji": "🍂",
   "fixRecipe": {
     "category": "pie",
     "problem": "general"
   },
-  "quickAnswer": "Short, crumbly dough that will not transfer to the pan needs slightly more water, gentler mixing, or a rest so moisture distributes. Extreme fat ratios can prevent any gluten continuity.",
-  "intro": "Tender and fragile share a border. You want tender flakes, not sand. Falling apart signals insufficient continuous gluten network for handling—even if baked texture would have been fine. Structural integrity needs enough hydrated gluten to hold shape but not so much that toughness dominates—often 3–6% water by flour weight in very short doughs, highly sensitive. Overworking raises gluten and can paradoxically shrink or slough in layers.",
+  "quickAnswer": "A short, crumbly dough that breaks in pieces when you try to transfer it usually needs a touch more water, gentler mixing, or a longer rest to let the moisture distribute evenly through the dough. Push the fat ratio too far above what the flour can support and you end up with no continuous network at all—just rich, fragile sand. Patch it back together with cold water added a teaspoon at a time, and resist the urge to keep working it.",
+  "intro": "Tender and fragile share a border that's easier to cross than most pie books admit. You want tender flakes, not sand that falls apart in the pan. When a crust falls apart on you, the dough is telling you there isn't enough continuous gluten network to handle being lifted and shaped—even if the baked texture would have been beautiful. Structural integrity needs enough hydrated gluten (the stretchy protein network that flour develops when it meets water) to hold a shape, without so much that the crust turns tough instead. For very short doughs (high in fat, low in water), that target often sits around 3–6% water by flour weight, which is a very sensitive range. Overworking the dough raises gluten in the wrong direction and can paradoxically cause the crust to shrink or slough in layers in the oven even though it felt sturdy on the bench.",
   "sections": [
     {
       "heading": "Hydration for cohesion",
       "paragraphs": [
-        "Pie dough should come together with a squeeze but still look marbled. Totally dry crumb cannot sheet."
+        "Pie dough should come together with a firm squeeze in your hand but still look marbled—you should see streaks of butter against the flour, not a smooth, uniform paste. A totally dry, crumbly mix can't sheet out under a rolling pin no matter how cold or rested it is. If a squeezed handful crumbles apart on its own when you open your fingers, that's the dough asking for a few more drops of water."
       ]
     },
     {
       "heading": "Fat pieces too small",
       "paragraphs": [
-        "Over-processing butter removes discrete fat pockets needed for flakes and can yield mealy dough that fractures."
+        "Over-processing the butter—usually with a food processor running a few seconds too long—chops the fat into pieces so small that they no longer create the discrete pockets you need for flaky layers in the oven. The result is a mealy, sandy dough that fractures when you try to roll it. You want pea- to almond-sized chunks of butter at the very least, distributed visibly through the flour."
       ]
     },
     {
       "heading": "Handling",
       "paragraphs": [
-        "Fold dough, do not knead like bread. Use bench scraper to fraisage if needed."
+        "Folding is the right verb, not kneading. After the dough comes together, treat it like puff pastry rather than bread: a few gentle pats and folds, not a workout. If you need to consolidate a dry, broken dough, use a technique called fraisage—smearing small portions across the counter with the heel of your hand and gathering them back together. It binds the dough with minimal gluten development."
       ],
       "tip": "Roll between parchment for transfer instead of forcing a fragile round."
     },
     {
       "heading": "Tool support",
       "paragraphs": [
-        "Pie problems in Fix My Recipe map to crust texture categories; compare your fat–flour ratio to norms while you adjust water by teaspoons."
+        "Pie problems in Fix My Recipe map to specific crust texture categories—'falls apart' shows up differently from 'tough' or 'soggy.' Compare your fat-to-flour ratio against the typical range for your style of crust before you start adjusting water by teaspoons, so you know which knob to turn first."
       ]
     },
     {
       "heading": "Fat size distribution",
       "paragraphs": [
-        "Pea-sized butter leaves voids; sand-texture shortens too much for transfer. Chill between steps. Blind bake with weights until set—steam puff can shatter unweighted."
+        "Pea-sized butter leaves bigger voids when it melts, which gives you dramatic flake but a more fragile bench feel. Sand-textured fat shortens the dough so much that it can't transfer without falling apart. Either way, keep chilling between major steps—after mixing, after the first roll, after shaping—because warm fat smears into the flour and removes the layer structure entirely. Blind-baking with weights until the shell is structurally set is also important, because steam puff can shatter an unweighted, fragile shell during the first minutes in the oven."
       ]
     },
     {
       "heading": "Pan release",
       "paragraphs": [
-        "Glass vs metal bend differently—support sides when moving."
+        "Glass and metal pans flex differently when you slide a slice out, which can make a fragile crust fall apart even when it baked fine. Support the sides of the pan when you're moving a finished pie, and let the bottom cool completely before cutting, so the fat firms up and the crust can carry its own weight on the spatula."
       ]
     },
     {
       "heading": "Benchmark temperatures and a repeatable test protocol",
       "paragraphs": [
-        "This guide on why pie crust falls apart is easier to act on when you anchor numbers instead of vibes. Pie dough stays workable around 50–60°F (10–16°C); warmer butter smears, colder dough cracks. Blind-bake until the shell reaches golden where it contacts filling—pale bottoms often mean soggy interfaces even when fruit reads hot. Fruit fillings commonly need to exceed roughly 200°F (93°C) in the bubbling center for starch thickeners to fully activate, but edges can scorch above 350°F (177°C) local surface—foil shields help. Glass and ceramic pans change bottom heat paths versus metal; adjust rack and time, not only temperature. Write down ambient kitchen temperature (°F), the set point on your oven or machine, and—when relevant—an internal probe reading or brew time. Change one input per trial: flour brand, hydration percentage, grind setting, chill time, or rack position. Photograph crumb or cup side-by-side after each change. SenseiFood’s Fix My Recipe debugger pairs these observations with ratio checks for your category so the next bake or brew is a measured step, not a guess.",
-        "If you use °C in the kitchen, convert critical bands once and tape them inside a cabinet: 200°F ≈ 93°C (cake/bread finish neighborhood), 350°F ≈ 177°C (common cake/cookie air set point), 212°F = 100°C (sea-level water boil), and espresso extraction times often discussed in the 25–35 second range for classic 9-bar shots—always taste-adjusted to your machine. Altitude lowers water’s boiling point, which shifts extraction and evaporation; bakers at elevation should rely more on internal temperature and visual set than on clock alone.",
-        "Humidity changes how dough skins, how icing behaves, and how staling feels the next day—note outdoor weather when results swing for no obvious reason. For anything oven-based, log preheat completion time: many ovens continue drifting 10–20°F after the beep. For frozen desserts, log freezer display temp if available; a chest freezer near −10°F (−23°C) behaves differently than a frost-free kitchen freezer with defrost cycles. Small environmental logs turn one-off failures into solvable patterns."
+        "This is easier to act on when you anchor real numbers instead of vibes. Pie dough rolls most cleanly around 50–60°F (10–16°C); warmer than that and the butter starts smearing, colder and the dough cracks. Blind-bake any shell until it reaches a real golden color where it meets the filling—pale bottoms almost always mean soggy interfaces, even when the fruit on top reads piping hot. Fruit fillings commonly need to exceed about 200°F (93°C) at the bubbling center for the starch thickeners to fully activate, but edges can scorch above 350°F (177°C) at the local surface, so foil shields help. Glass and ceramic pans change the bottom heat path compared to metal; adjust rack height and bake time, not only temperature, when you switch pan types. Write down the ambient kitchen temperature, your oven set point, and any probe readings during the bake. Change one input per trial: flour brand, hydration percentage, chill time, sugar amount, or rack position. Photograph the cut cross-section side by side after each change. SenseiFood's Fix My Recipe pairs those notes with category ratio checks so the next pie is a measured step, not a guess.",
+        "If you usually cook in Celsius, tape a few key bands inside a cabinet: 200°F ≈ 93°C (the neighborhood where cakes and breads finish), 350°F ≈ 177°C (a common cake-and-cookie set point), 212°F = 100°C (sea-level boiling water), and—for espresso fans—classic 9-bar shots are usually discussed in the 25–35 second range, always adjusted by taste. Altitude lowers water's boiling point, which shifts both evaporation and extraction; bakers at elevation should rely on internal temperature and visual set more than on the clock.",
+        "Humidity quietly changes how dough skins on the bench, how icing crusts, and how staling reads the next day—jot down outdoor weather when results swing for no obvious reason. For oven work, log preheat completion: many home ovens drift another 10–20°F after the beep. For frozen desserts, log the freezer display temperature when available; a deep chest freezer near −10°F (−23°C) behaves differently than a frost-free kitchen freezer running auto-defrost cycles. Small environmental logs are how baffling one-off failures become patterns you can solve."
       ]
     },
     {
       "heading": "Extra variables that swing results",
       "paragraphs": [
-        "Egg washes brown at different rates: whole egg vs yolk vs milk—pick one per series of tests. Docking and pie weights change steam escape during blind bake; note weight amount and bake minutes. Fruit pH affects starch set; very acid fillings may need adjusted thickener percentages from generic charts."
+        "Egg washes brown at different rates: whole egg goes moderately, yolk-only goes deep and shiny, milk wash stays gentle—pick one and stick with it for a series of test bakes. Docking and pie weights change how steam escapes during a blind bake; note the weight amount and the minutes you baked weighted. Fruit acidity (pH) affects how starch sets—very acidic fillings like cherry or rhubarb often need a slightly higher thickener percentage than the generic charts suggest, because acid weakens the starch network as it tries to form."
       ]
     }
   ],
@@ -81,12 +81,12 @@ const SPEC: ScienceArticleSpec = {
   ],
   "faqs": [
     {
-      "q": "Gluten-free crust?",
-      "a": "Binders like xanthan replace gluten—different handling."
+      "q": "Does gluten-free crust fall apart for the same reasons?",
+      "a": "Not exactly—gluten-free flours don't form the same protein network, so you have to lean on binders like xanthan gum, psyllium husk, or a careful blend of starches to do the structural job that gluten would otherwise handle. Handling is genuinely different: gluten-free doughs need more rest for the binder to fully hydrate, and they're best rolled between sheets of parchment because they don't tolerate much rework."
     },
     {
-      "q": "Cracks when folding?",
-      "a": "Dough too dry—spritz water sparingly."
+      "q": "What about cracks that appear when I try to fold the dough into quarters for transfer?",
+      "a": "Those cracks almost always mean the dough is too dry on the surface. Spritz the surface very lightly with cold water before folding, or work in another teaspoon or two of water before chilling. Resist the urge to flour the bench heavily—you'll dry the dough out further and make the cracking worse."
     }
   ]
 };

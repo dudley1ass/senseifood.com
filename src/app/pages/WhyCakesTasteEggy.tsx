@@ -7,58 +7,58 @@ const SPEC: ScienceArticleSpec = {
   "segment": "cake-science",
   "categoryLabel": "Cake Science",
   "title": "Why Cakes Taste Eggy",
-  "subtitle": "Sulfur notes, imbalance, and under-browning read as “too much egg” even at correct counts.",
+  "subtitle": "Sulfur-y notes from overcooked egg, a recipe that does not have enough flavor to balance the eggs, and a pale, under-browned crust can all add up to a cake that tastes “eggy” even with the right number of eggs.",
   "readTime": "7 min read",
   "emoji": "🥚",
   "fixRecipe": {
     "category": "cake",
     "problem": "general"
   },
-  "quickAnswer": "Eggy flavor often comes from overcooked egg proteins, high egg-to-sugar ratio without balancing flavors, or insufficient Maillard masking. Add salt, vanilla, brown sugar, or avoid over-bake.",
-  "intro": "Eggs are mild but sulfur compounds amplify when proteins over-coagulate. Sometimes the recipe simply lacks contrast ingredients that hide egg’s clean but animal note. Egg white proteins denature across a wide band starting near 140°F (60°C) and finishing firming well past 180°F (82°C); yolk sets more gradually. Prolonged heat drives sulfur volatiles (hydrogen sulfide family) more than brief gentle sets—sheet cakes with thin edges often overexpose egg to browning heat relative to the interior.",
+  "quickAnswer": "An eggy flavor usually comes from overcooked egg proteins releasing their sulfur compounds, an egg-to-sugar ratio that tips heavy without enough other flavors to balance it, or a pale crust that does not have the toasty browned aromas to mask the egg note. Add a small pinch more salt, more vanilla, a touch of brown sugar, or stop the bake before the edges over-set.",
+  "intro": "Eggs themselves taste pretty mild, but eggs contain sulfur-bearing amino acids, and when the proteins are overcooked, those sulfur compounds (like hydrogen sulfide and related molecules—the same family that gives boiled eggs their distinctive smell) start to amplify. Sometimes the recipe simply lacks the contrast ingredients that would otherwise hide egg’s clean but animal-y note. Egg white proteins denature (unfold and link up into a set network) across a wide temperature band starting near 140°F (60°C) and continuing to firm up well past 180°F (82°C); yolk sets more gradually. Prolonged heat drives more of those sulfur volatiles into the cake than a brief, gentle set would—sheet cakes with thin edges often over-expose the egg to high heat at the rim, even when the middle is set perfectly.",
   "sections": [
     {
       "heading": "Heat and sulfur",
       "paragraphs": [
-        "Long bakes at high heat for thin batters can over-set egg films at edges and tops."
+        "A long bake at a high temperature in a thin batter can over-set the egg films right at the edges and along the top of the cake. Those over-set edges are where eggy notes concentrate, especially in sheet cakes and any batter that spreads thin and bakes fast at the perimeter."
       ]
     },
     {
       "heading": "Balance",
       "paragraphs": [
-        "Sugar, salt, vanilla, citrus zest, and brown butter notes counteract plain egg."
+        "Sugar, salt, vanilla, citrus zest, and the warm notes of brown butter all counteract plain egg flavor. A cake without much aromatic load (almost no vanilla, no citrus, no spice, no salt) has no other voices to balance the egg—the egg ends up doing the talking by default."
       ]
     },
     {
       "heading": "Yolk-heavy formulas",
       "paragraphs": [
-        "Extra yolks enrich but increase egg flavor load; compensate with aroma and browning."
+        "Extra yolks enrich the cake (more fat, more emulsifier from the yolk’s lecithin), but they also add more egg flavor for your tongue to register. If you are using a yolk-heavy recipe like a chiffon or a high-ratio cake, compensate with more aroma (vanilla, citrus) and a better browned surface."
       ]
     },
     {
       "heading": "Ratios",
       "paragraphs": [
-        "Cake mode highlights egg weight relative to flour and sugar—use it before randomly removing an egg."
+        "Cake mode in Fix My Recipe highlights the weight of egg in your recipe relative to the flour and sugar. Use it as a sanity check before randomly removing an egg, since pulling an egg out also affects the structure of the cake, not just the flavor."
       ]
     },
     {
-      "heading": "Maillard, sugar, and masking",
+      "heading": "Maillard, sugar, and how browning masks egg",
       "paragraphs": [
-        "Browning reactions produce hundreds of aroma compounds that compete with egg’s mild sulfury notes. Under-browned, pale sponges with high egg ratio read “eggy” faster than well-caramelized surfaces. A few grams of brown sugar or milk powder can increase Maillard without rewriting the formula. Salt shifts flavor perception broadly; many “eggy” complaints disappear with ⅛–¼ tsp more salt in a test batch—measure by weight for repeatability."
+        "Browning reactions produce hundreds of aromatic compounds (the toasty, nutty, caramelized smells of a well-baked cake) that compete with egg’s mild sulfur notes. A pale, under-browned sponge with a high egg ratio will read as eggy much faster than a cake whose top has caramelized properly. A few grams of brown sugar or milk powder added to the batter increases Maillard browning without rewriting the recipe. Salt also shifts flavor perception broadly; many “eggy” complaints disappear with another ⅛–¼ teaspoon of salt in a test batch—measure salt by weight for repeatability, because teaspoons of different salts vary a lot."
       ]
     },
     {
       "heading": "Yolk-heavy and custard-style layers",
       "paragraphs": [
-        "Yolks bring lipids and emulsifiers (lecithin) but also more egg flavor mass. Balancing with vanilla, citrus zest, or coffee in chocolate cakes keeps the profile complex rather than one-note."
+        "Yolks bring lipids and emulsifiers (especially lecithin, a phospholipid that emulsifies fat into water-based liquids), but they also bring more egg flavor mass. Balancing with vanilla, citrus zest, almond extract, or a teaspoon of coffee in chocolate cakes keeps the flavor profile complex and interesting rather than one-note egg."
       ]
     },
     {
-      "heading": "Benchmark temperatures and a repeatable test protocol",
+      "heading": "Benchmark temperatures and a simple repeatable test",
       "paragraphs": [
-        "This guide on why cakes taste eggy is easier to act on when you anchor numbers instead of vibes. Butter cakes commonly finish between 200–210°F (93–99°C) at the geometric center, though chocolate and very moist formulas can mislead thermometers—pair probe results with spring-back and clean skewer. Edge-to-center gradients matter: a reading “done” only at the top center can still leave wet bands near the pan floor—check an inch above the bottom in thick layers. Convection and dark pans shift effective heat; if edges race, lower the set temperature about 25°F (14°C) and extend time. Cooling until crumb structure stabilizes—often below 100°F (38°C) internally for large layers—reduces tearing and sticky knife drag. Write down ambient kitchen temperature (°F), the set point on your oven or machine, and—when relevant—an internal probe reading or brew time. Change one input per trial: flour brand, hydration percentage, grind setting, chill time, or rack position. Photograph crumb or cup side-by-side after each change. SenseiFood’s Fix My Recipe debugger pairs these observations with ratio checks for your category so the next bake or brew is a measured step, not a guess.",
-        "If you use °C in the kitchen, convert critical bands once and tape them inside a cabinet: 200°F ≈ 93°C (cake/bread finish neighborhood), 350°F ≈ 177°C (common cake/cookie air set point), 212°F = 100°C (sea-level water boil), and espresso extraction times often discussed in the 25–35 second range for classic 9-bar shots—always taste-adjusted to your machine. Altitude lowers water’s boiling point, which shifts extraction and evaporation; bakers at elevation should rely more on internal temperature and visual set than on clock alone.",
-        "Humidity changes how dough skins, how icing behaves, and how staling feels the next day—note outdoor weather when results swing for no obvious reason. For anything oven-based, log preheat completion time: many ovens continue drifting 10–20°F after the beep. For frozen desserts, log freezer display temp if available; a chest freezer near −10°F (−23°C) behaves differently than a frost-free kitchen freezer with defrost cycles. Small environmental logs turn one-off failures into solvable patterns."
+        "Butter cakes usually finish between 200–210°F (93–99°C) at the center. Chocolate and very moist formulas can fool a thermometer, so pair the probe with a spring-back test (press the center gently; if it springs back, it is set) and a clean skewer test. A “done” reading only at the top center can still leave wet bands near the floor of the pan, so check about an inch above the bottom on thick layers. Convection and dark pans both speed up heating, so if your edges race ahead, lower the set temperature by about 25°F (14°C) and extend the time.",
+        "Write down your kitchen’s ambient temperature, the oven set point, and the probe reading. Change one input per trial: oven temperature, salt percentage, vanilla quantity, or pan size—and photograph the cooked crumb side-by-side. SenseiFood’s Fix My Recipe debugger pairs those observations with ratio checks for your category so the next bake is a measured step, not a guess.",
+        "If you cook in Celsius, write a small cheat sheet and tape it inside a cabinet: 200°F is about 93°C (the cake and bread finish zone), 350°F is about 177°C (a common cake and cookie air temperature), and 212°F is 100°C (sea-level water boiling). Humidity changes how a cake stales overnight—jot the weather when results swing for no obvious reason. Many ovens keep drifting 10–20°F after they beep done preheating, so an extra few minutes of preheat saves a lot of guessing."
       ]
     }
   ],
@@ -78,12 +78,12 @@ const SPEC: ScienceArticleSpec = {
   ],
   "faqs": [
     {
-      "q": "Are farm eggs eggier tasting?",
-      "a": "Often slightly richer; if it bothers you, use balanced recipes with enough sugar and aroma to mask."
+      "q": "Do fresh farm eggs taste eggier than supermarket eggs?",
+      "a": "They often taste slightly richer because of their fattier, more orange yolks. If that depth bothers you in a cake, lean on balanced recipes that have enough sugar and aromatics to mask it; the answer is rarely to switch eggs."
     },
     {
-      "q": "Does egg temperature matter for flavor?",
-      "a": "Room-temp eggs emulsify better, reducing streaky overbaked pockets that concentrate sulfur notes."
+      "q": "Does the temperature of the eggs matter for flavor?",
+      "a": "Yes, indirectly. Eggs at room temperature emulsify into the batter better than fridge-cold eggs, which means the cake bakes with fewer streaky over-baked pockets where the egg has concentrated. Those streaky pockets are exactly where sulfur notes are loudest."
     }
   ]
 };

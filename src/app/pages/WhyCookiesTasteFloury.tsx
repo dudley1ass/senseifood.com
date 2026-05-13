@@ -7,7 +7,7 @@ const SPEC: ScienceArticleSpec = {
   "segment": "cookie-science",
   "categoryLabel": "Cookie Science",
   "title": "Why Cookies Taste Floury",
-  "subtitle": "Raw starch perception when hydration, bake time, or mixing order leaves flour ungelatinized.",
+  "subtitle": "That chalky cereal note usually means starch never fully hydrated and cooked through—dry pockets, pale thick centers, or flour that never got evenly fat-coated before liquids arrived.",
   "readTime": "7 min read",
   "level": "Hydration & bake",
   "emoji": "🌾",
@@ -15,13 +15,13 @@ const SPEC: ScienceArticleSpec = {
     "category": "cookie",
     "problem": "general"
   },
-  "quickAnswer": "Floury taste means starch granules never fully hydrated or gelatinized—under-mixed dry pockets, very thick dough baked too pale, or flour not coated by fat/sugar before liquids. Your tongue is detecting intact granules or undercooked starch gel in localized spots, not imaginary dryness.",
-  "intro": "Wheat flour brings starch packed in granules that must hydrate and heat through before they lose their chalky, cereal edge. In cookies, sugar and fat compete with water for access to those granules; if water never reaches some pockets, or heat never holds long enough at the center, you get the sensory signature people call “raw flour” even when the dough was technically safe to eat. Mixing order matters because creamed fat and sugar can disperse flour more evenly, delaying excessive gluten formation while still allowing hydration. Bake profile matters because a golden rim can mislead you: the edge may be fully set while a thick dome’s core never crossed gelatinization long enough. Fixing floury cookies is almost always about water path, thermal path, or both—not about adding more vanilla on top.",
+  "quickAnswer": "\"Floury\" is your mouth noticing starch granules that never finished the cook-and-swell story called gelatinization—often from dry nodules in the dough, a thick dome that browns on the rim while the core stays cool, or mixing order that left streaks of loose flour. Fix the water path and the heat path before you double the vanilla.",
+  "intro": "Wheat flour is mostly starch packed in granules; heat and water together turn that chalky potential into a tender gel. In cookies, sugar and fat compete with water for access to those granules, so uneven mixing or a bake profile that sets the top before the center heats through leaves little pockets that still read raw. Mixing order matters because creamed fat and sugar can coat starch and slow clumping, while dumping liquid into loose flour risks paste on the outside and dry islands inside. A golden edge can lie to you: the rim can look \"done\" while a fat scoop’s core never held heat long enough. This is almost always hydration and thermal delivery, not a mystery shortage of brown sugar.",
   "sections": [
     {
       "heading": "Mixing sequence and fat coating",
       "paragraphs": [
-        "Classic creaming creates a fat phase that can partially coat starch before bulk hydration, reducing free-water channels that clump dry flour. Dumping liquid into loose flour, by contrast, risks uneven paste formation and tiny dry nodules that survive mixing visually intact until the bake exposes them. Under-mixing after flour addition leaves visible streaks; even if streaks vanish, micro-layers of under-hydrated starch can remain. The fix is thorough but gentle incorporation—enough revolutions to homogenize, not so much that you breadify the dough unless the recipe intends it."
+        "Classic creaming partially coats starch in fat before bulk hydration, which reduces the free-water channels that create flour clumps. Dumping liquid straight into loose flour can make pasty outer layers with dry centers that look mixed but are not. Under-mixing after flour leaves visible streaks; over-mixing can toughen gluten in some formulas, so the goal is thorough but gentle: enough revolutions to homogenize, not so much that you accidentally make bread dough unless the recipe wants that.",
       ],
       "bullets": [
         {
@@ -37,21 +37,21 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Bake temperature, thickness, and spread",
       "paragraphs": [
-        "Thick mounds set tops fast while interiors lag in temperature. Lowering oven temperature slightly and extending time gives the center a chance to finish gelatinizing without scorching the rim. Pressing dough disks flatter increases heat penetration per bite depth—a practical lever for persistent floury centers. Convection can help even heating but also accelerate surface set; rotate trays and watch color on both top and bottom because pale bottoms can correlate with undercooked cores on insulated mats."
+        "Thick mounds set tops fast while interiors lag in temperature. Dropping the oven temperature slightly and giving a few more minutes lets the center catch up without scorching the rim. Gently flattening dough into disks increases heat penetration per bite depth—a practical lever when the center stays gray-pasty. Convection can even heating but also accelerates surface set; rotate and watch bottom color, because pale bottoms can pair with undercooked cores on insulated mats.",
       ],
       "tip": "If edges are dark and centers still taste floury, thickness is the prime suspect—geometry beat your bake, not the clock alone."
     },
     {
       "heading": "Chilling, hydration time, and flour age",
       "paragraphs": [
-        "Cold rest allows moisture to migrate into starch more evenly; baking too soon after mixing can leave dry cores in high-sugar doughs where osmotic competition held water back from flour. Overnight rests are not mandatory for every recipe, but they are a reliable fix when flavor development and hydration evenness both help.",
-        "Old flour can taste stale or musty and be misread as “floury,” but true raw-starch perception still tracks cook-through. If the problem is musty pantry notes, replace flour; if chalky paste in the center, fix thermal delivery."
+        "Cold rest gives water time to migrate into starch more evenly; baking too soon after mixing can leave dry cores in high-sugar doughs where osmotic competition held water back from flour. Overnight rests are not mandatory for every recipe, but they are a reliable lever when hydration evenness and spread both help.",
+        "Old flour can taste musty and be misread as \"floury,\" but true raw-starch perception still tracks cook-through. If the note is dusty pantry, replace the flour; if it is chalky paste in the center, fix heat delivery."
       ]
     },
     {
       "heading": "Differentiating floury from starchy-thick or dry",
       "paragraphs": [
-        "Cakey cookies can feel moist yet still carry cereal notes if structure set via egg foam rather than full starch cook in the thickest region—taste carefully. Dry cookies crumble and feel low moisture everywhere; floury cookies often feel oddly pasty in the middle while edges are fine. Chocolate-heavy doughs can hide visual cues; break a cookie open and look at crumb color and sheen near the center. Uniform color and no gray raw streaks are good signs that starch reached gelatinization."
+        "Cakey cookies can feel moist yet still carry cereal notes if the structure set through egg foam before the thickest region fully cooked—taste carefully. Dry cookies feel low-moisture everywhere; floury cookies often feel pasty in the middle while edges are fine. Chocolate-heavy doughs hide visuals; break one open and look for uniform color without gray streaks—that is the honest scoreboard for gelatinization."
       ]
     }
   ],

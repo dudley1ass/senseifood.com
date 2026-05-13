@@ -7,37 +7,36 @@ const SPEC: ScienceArticleSpec = {
   "segment": "sauce-science",
   "categoryLabel": "Sauce Science",
   "title": "Mushroom Cream Sauce: Recipe & Balance Guide",
-  "subtitle": "Cream + butter + mushrooms — umami-forward cream sauce for pasta and chicken.",
+  "subtitle": "Cream, butter, and mushrooms — an umami-forward cream sauce for pasta and chicken whose success or failure is decided in the mushroom sauté.",
   "readTime": "8 min read",
   "level": "Recipe guide",
   "emoji": "🍄",
-  "quickAnswer": "Brown mushrooms properly first; watery mushrooms dilute the sauce and steal Maillard flavor.",
-  "intro": "Mushroom cream sauce succeeds when mushrooms are cooked to color and the cream simmers gently. Mushrooms release water early — that water is flavor-diluting until it cooks off, so patience in the sauté step pays off in the finished sauce body.",
+  "quickAnswer": "Brown the mushrooms properly first, before anything else hits the pan. Mushrooms are around 90 percent water, and that water steals heat and flavor from the rest of the sauce until it cooks off. Patience in the sauté step shows up as deep savory body in the finished sauce.",
+  "intro": "Mushroom cream sauce succeeds when the mushrooms are cooked to real color and the cream simmers gently around them. Mushrooms are mostly water — their cell walls hold so much that when you crowd them in a pan, they release a watery pool faster than the heat can evaporate it, and they end up steaming in their own juice rather than browning. Steamed mushrooms are pale, soft, and flavorless next to browned mushrooms, where the high dry heat lets Maillard chemistry happen (the same reaction that makes seared meat smell so good — amino acids and sugars on a hot surface rearranging into hundreds of new aroma compounds). That browning is also where the fond — the dark, caramelized residue that sticks to the pan — comes from, and the fond is one of the biggest contributors to the savor of the finished cream sauce. Give the mushrooms space, accept that the first batch in a small pan takes time, and you will taste the difference in every bite.",
   "sections": [
     {
       "heading": "Build savor first",
       "paragraphs": [
-        "Give mushrooms room in the pan, avoid crowding on the first pass, and let moisture evaporate until fond forms. Only then does cream have a concentrated base to thicken against. Garlic and butter are easy to burn at high heat; use the fat phase to extract flavor without charring."
+        "Spread the mushrooms in a single layer with real space between them — avoid crowding on the first pass even if it means cooking in batches. Let the moisture evaporate, listen for the sound of the pan moving from a wet sizzle to a sharper, drier sizzle, and watch until real golden-brown color builds on the cut faces and a thin layer of fond starts to form on the pan bottom. Only then does the cream have a concentrated base to thicken against. Garlic and butter join later, but be careful: garlic burns easily once the pan is dry and hot, going from sweet to bitter in seconds, and butter goes from glossy nut-brown to acrid brown-black almost as fast. Use the fat phase to gently extract aromatic compounds from the garlic, not to char it."
       ]
     },
     {
       "heading": "Cream behavior",
       "paragraphs": [
-        "Heavy cream tolerates simmering better than lower-fat dairy, but aggressive boiling still risks breaking. Reduce until the sauce coats a spoon; parmesan (if used) tightens and adds umami."
+        "Heavy cream — the high-fat version, around 36 to 40 percent fat — tolerates simmering much better than lower-fat dairy. The extra fat protects the milk proteins (mostly casein and whey) from clumping when the sauce reduces, because each fat droplet acts as a buffer between proteins and the high temperature of the pan. Lower-fat dairy like half-and-half will curdle and break much more readily under reduction. Even with heavy cream, aggressive boiling still risks splitting — the rough bubble action shears the emulsion apart. Reduce at a gentle bubble until the sauce coats the back of a spoon and pulls a clean line when you drag a finger through it. If you finish with parmesan cheese, expect the sauce to tighten further and the umami to deepen, because parmesan brings free glutamates (the amino acids responsible for the savory taste) that build on top of the mushroom umami already in the pan."
       ]
     },
     {
-      "heading": "Benchmark temperatures and a repeatable test protocol",
+      "heading": "Building flavor layers and the right moment for liquid",
       "paragraphs": [
-        "This guide on mushroom cream sauce: recipe & balance guide is easier to act on when you anchor numbers instead of vibes. Ice cream hardness depends on ice phase fraction, sugar depression of freezing point, fat network, and air (overrun). Typical home freezers sit near 0°F (-18°C); serving slightly warmer—around 6–10°F (-14 to -12°C) for hard-pack—improves scoopability. Pasteurizing custard bases to roughly 175–180°F (79–82°C) without boiling sets proteins safely; boiling risks curdling emulsions. Rapid freezing forms smaller ice crystals; slow freezing and partial thaw cycles grow crystals and feel icy. Total solids (fat + MSNF + sugar + stabilizers) set body; water-only bases freeze harder. Write down ambient kitchen temperature (°F), the set point on your oven or machine, and—when relevant—an internal probe reading or brew time. Change one input per trial: flour brand, hydration percentage, grind setting, chill time, or rack position. Photograph crumb or cup side-by-side after each change. SenseiFood’s Fix My Recipe debugger pairs these observations with ratio checks for your category so the next bake or brew is a measured step, not a guess.",
-        "If you use °C in the kitchen, convert critical bands once and tape them inside a cabinet: 200°F ≈ 93°C (cake/bread finish neighborhood), 350°F ≈ 177°C (common cake/cookie air set point), 212°F = 100°C (sea-level water boil), and espresso extraction times often discussed in the 25–35 second range for classic 9-bar shots—always taste-adjusted to your machine. Altitude lowers water’s boiling point, which shifts extraction and evaporation; bakers at elevation should rely more on internal temperature and visual set than on clock alone.",
-        "Humidity changes how dough skins, how icing behaves, and how staling feels the next day—note outdoor weather when results swing for no obvious reason. For anything oven-based, log preheat completion time: many ovens continue drifting 10–20°F after the beep. For frozen desserts, log freezer display temp if available; a chest freezer near −10°F (−23°C) behaves differently than a frost-free kitchen freezer with defrost cycles. Small environmental logs turn one-off failures into solvable patterns."
+        "Once the mushrooms are deeply browned, deglaze the pan with a splash of dry white wine or sherry — the alcohol vaporizes off in seconds while the bright acid in the wine dissolves the fond stuck to the pan bottom. That fond is concentrated flavor, and you want every speck of it in the sauce. Let the wine reduce nearly dry before adding cream, so the sauce does not get watered down by a layer of liquid that has not had time to integrate. Then cream goes in, simmers gently, and reduces to coating consistency. Salt last, after all the reductions have happened — earlier salting on a sauce that you intend to reduce by a third or more leads to an over-salty final result, because the salt does not evaporate but the water does, so concentration climbs.",
+        "Fresh herbs — thyme, tarragon, parsley — add green volatile aromas (the kind that quickly evaporate, which is why fresh herbs smell so different from dried ones) and should go in at the end so heat does not flash them off. Dried thyme works fine if you put it in earlier; it has already lost most of its volatile fraction during drying and contributes a steadier woody background note instead. Pick whichever fits the cooking timeline."
       ]
     },
     {
-      "heading": "Extra variables that swing results",
+      "heading": "Pairings and finishing",
       "paragraphs": [
-        "When a symptom persists, compare two batches on consecutive days with the same flour bag and yeast lot—raw ingredient drift is real. Keep a kitchen thermometer calibrated yearly if you bake weekly; five degrees at the oven cavity is enough to change set time materially."
+        "Mushroom cream sauces pair naturally with chicken, pork, and rich pastas like pappardelle or gnocchi — anything that can stand up to the savory weight without being overpowered. They are less natural with delicate white fish, which gets buried. If the sauce ends up too rich on the plate (everything tasting heavy and slightly numbed after a few bites), a tiny squeeze of lemon at service can cut through the fat and reset the palate. Try a single drop on a spoonful before adding any to the whole pan, since lemon can also tip a cream sauce toward curdling if you add too much too fast."
       ]
     }
   ],

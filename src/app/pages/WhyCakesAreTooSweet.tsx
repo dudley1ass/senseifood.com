@@ -7,58 +7,58 @@ const SPEC: ScienceArticleSpec = {
   "segment": "cake-science",
   "categoryLabel": "Cake Science",
   "title": "Why Cakes Are Too Sweet",
-  "subtitle": "Frosting stacks on sweet crumb; salt and acid shrink perceived sweetness.",
+  "subtitle": "Sweetness stacks across layers, so a frosting piled on a sweet crumb adds up fast; salt and acidity make the same amount of sugar read as less sweet.",
   "readTime": "7 min read",
   "emoji": "🍯",
   "fixRecipe": {
     "category": "cake",
     "problem": "general"
   },
-  "quickAnswer": "Reduce sugar slightly in crumb or frosting—not both at once—add salt, coffee or cocoa bitterness, citrus, or yogurt tang. Ensure adequate browning for complexity.",
-  "intro": "Sweetness sums across layers. A balanced crumb under cloying buttercream still reads “too sweet.” Debug the stack, not only the sponge. Human sweetness perception drops when bitter, salty, and sour receptors activate—classic taste interaction. A cake at 20% sugar by baker’s percentage can taste sweeter next to unsweetened whipped cream than next to espresso buttercream because context changes the brain’s integration, not only the sugar grams.",
+  "quickAnswer": "Pull a little sugar out of either the crumb or the frosting—just one at a time, so you can taste the difference—and add a pinch of salt, a hit of bitterness (coffee, cocoa), or a touch of acidity (citrus, yogurt, sour cream). Also make sure the cake actually browned enough to develop complex flavor; a pale cake reads sweeter because there is nothing else going on.",
+  "intro": "Sweetness adds up across every layer of a finished cake. A perfectly balanced sponge sitting under cloying buttercream still reads as “too sweet,” because your tongue is summing the whole stack, not grading the crumb on its own. So when you debug a too-sweet dessert, look at the entire build: simple syrup brushed on the layers, fillings, frosting, glaze, and any garnish. Your perception of sweetness actually drops when bitter, salty, or sour receptors on your tongue light up at the same time—this is a well-studied taste interaction, not a vibe. A cake at 20% sugar by baker’s percentage (where 100% is the weight of flour) can taste much sweeter sitting next to unsweetened whipped cream than it does next to an espresso-laced buttercream, because the context changes how your brain integrates the bites, not just the gram count of sugar.",
   "sections": [
     {
       "heading": "Layer accounting",
       "paragraphs": [
-        "Tally sugar from simple syrup brushes, fillings, and frosting before blaming the cake."
+        "Before you blame the cake itself, write down the sugar from every component: the granulated sugar in the batter, plus any simple syrup brush, plus the filling, plus the frosting. A modest crumb with three layers of sweet frosting and a sugar glaze is going to taste like a sugar bomb no matter what tweaks you make to the sponge."
       ]
     },
     {
-      "heading": "Contrast",
+      "heading": "Contrast as a cheaper fix than removing sugar",
       "paragraphs": [
-        "Salt is the cheapest flavor fix. Acid from fruit curd cuts sugar perception."
+        "Salt is the cheapest, fastest flavor fix in the kitchen—a small pinch in frosting alone often does more than cutting 10% of the sugar. Acidity from a fruit curd, a yogurt-based filling, or a citrus zest in the buttercream cuts the perceived sweetness without changing the structure of the cake at all."
       ]
     },
     {
       "heading": "Style goals",
       "paragraphs": [
-        "American buttercream is sucrose-forward; consider meringue styles if you need less cloying finish."
+        "American buttercream is essentially powdered sugar held together with butter, and it is sucrose-forward by design (sucrose is the chemical name for table sugar). If you want something less cloying, look at meringue-based buttercreams—Swiss meringue or Italian meringue buttercream both whip up cooked egg whites with sugar before adding butter, which gives you a much lower sweetness perception even at similar gram totals."
       ]
     },
     {
       "heading": "Debugger",
       "paragraphs": [
-        "Enter components separately if you test half batches; Fix My Recipe helps keep sugar changes structurally safe."
+        "If you are testing half batches, enter the crumb, filling, and frosting separately—Fix My Recipe will keep your sugar changes within ranges that still bake and frost cleanly, so you can drop sweetness without accidentally dropping the structure too."
       ]
     },
     {
-      "heading": "Solids, dissolved sugar, and “sweet hits”",
+      "heading": "Solids, dissolved sugar, and where the sweetness really hits",
       "paragraphs": [
-        "Simple syrup soaks add dissolved sucrose directly to crumb surfaces—very high perceived sweetness per gram compared with sugar baked into structure. Brushing warm layers drives syrup deeper; chilling slows perception slightly but does not remove sugar. Frostings near room temperature (65–72°F / 18–22°C) taste sweeter than ice-cold frosting because aroma volatiles move faster—temperature is a hidden variable in tastings."
+        "A simple syrup brush adds dissolved sucrose directly onto the surfaces of the crumb, where your tongue contacts it immediately—that delivers a much higher perceived sweetness per gram than the same sugar baked into the cake’s structure. Brushing warm layers drives syrup deeper into the crumb than brushing cool layers. Chilling the cake slows your perception of sweetness slightly because cold mutes the aroma molecules that ride alongside, but it does not actually remove any sugar. Frostings tasted near room temperature (65–72°F / 18–22°C) read as sweeter than the same frosting straight out of the fridge—volatiles move faster when warm, so aroma layers in and the brain registers more flavor. Temperature is a hidden variable any time you do a tasting."
       ]
     },
     {
-      "heading": "Structural limits when cutting sugar",
+      "heading": "What happens to texture when you cut sugar",
       "paragraphs": [
-        "Sugar holds moisture and interferes with gluten; aggressive cuts change texture. Reduce frosting first, or swap part granulated for glucose or trimoline where recipes allow—small % changes with less perceived sweetness sometimes."
+        "Sugar is not just sweetness; it is structure. Sugar holds moisture and interferes with gluten formation (the elastic protein network that forms when wheat flour meets water), which is part of what makes a cake tender. If you cut sugar aggressively in the batter, you can suddenly find yourself with a tough, dry crumb. Reduce the frosting first—much more forgiving—or swap part of the granulated sugar for glucose or trimoline (an invert sugar syrup that is roughly equal parts glucose and fructose), both of which give you sweetness with slightly different perception and slightly different effects on texture."
       ]
     },
     {
-      "heading": "Benchmark temperatures and a repeatable test protocol",
+      "heading": "Benchmark temperatures and a simple repeatable test",
       "paragraphs": [
-        "This guide on why cakes are too sweet is easier to act on when you anchor numbers instead of vibes. Butter cakes commonly finish between 200–210°F (93–99°C) at the geometric center, though chocolate and very moist formulas can mislead thermometers—pair probe results with spring-back and clean skewer. Edge-to-center gradients matter: a reading “done” only at the top center can still leave wet bands near the pan floor—check an inch above the bottom in thick layers. Convection and dark pans shift effective heat; if edges race, lower the set temperature about 25°F (14°C) and extend time. Cooling until crumb structure stabilizes—often below 100°F (38°C) internally for large layers—reduces tearing and sticky knife drag. Write down ambient kitchen temperature (°F), the set point on your oven or machine, and—when relevant—an internal probe reading or brew time. Change one input per trial: flour brand, hydration percentage, grind setting, chill time, or rack position. Photograph crumb or cup side-by-side after each change. SenseiFood’s Fix My Recipe debugger pairs these observations with ratio checks for your category so the next bake or brew is a measured step, not a guess.",
-        "If you use °C in the kitchen, convert critical bands once and tape them inside a cabinet: 200°F ≈ 93°C (cake/bread finish neighborhood), 350°F ≈ 177°C (common cake/cookie air set point), 212°F = 100°C (sea-level water boil), and espresso extraction times often discussed in the 25–35 second range for classic 9-bar shots—always taste-adjusted to your machine. Altitude lowers water’s boiling point, which shifts extraction and evaporation; bakers at elevation should rely more on internal temperature and visual set than on clock alone.",
-        "Humidity changes how dough skins, how icing behaves, and how staling feels the next day—note outdoor weather when results swing for no obvious reason. For anything oven-based, log preheat completion time: many ovens continue drifting 10–20°F after the beep. For frozen desserts, log freezer display temp if available; a chest freezer near −10°F (−23°C) behaves differently than a frost-free kitchen freezer with defrost cycles. Small environmental logs turn one-off failures into solvable patterns."
+        "This guide is easier to act on when you anchor a few numbers instead of going by vibes. Butter cakes usually finish baking between 200–210°F (93–99°C) at the geometric center, though chocolate and very moist formulas can fool a thermometer—pair the probe reading with the spring-back test (press the center gently; if it springs back, it is set) and a clean skewer. Edge-to-center heat gradients matter too: a reading that says “done” only at the top center can still leave a wet band near the bottom of the pan, so check about an inch above the floor of a thick layer. Convection ovens and dark pans both transfer heat faster; if your edges race ahead of the center, drop the set temperature by about 25°F (14°C) and extend the time. Letting big layers cool until the crumb structure has stabilized—often below 100°F (38°C) internally—keeps them from tearing or sticking to the knife.",
+        "Write down your kitchen’s ambient temperature, the oven set point, and your probe reading. Change one input at a time—flour brand, sugar percentage, chill time, pan size, or rack position—and photograph crumb cross-sections side by side. SenseiFood’s Fix My Recipe debugger pairs those observations with ratio checks for your category so the next bake is a measured step instead of a guess.",
+        "If you cook in Celsius, write a small cheat sheet and tape it inside a cabinet: 200°F is about 93°C (the cake and bread finish neighborhood), 350°F is about 177°C (a common cake and cookie air temperature), and 212°F is 100°C (sea-level boiling water). Humidity changes how icings behave and how a cake stales the next day—jot down the weather when results swing for no obvious reason. Many ovens keep drifting 10–20°F after they beep done preheating, so an extra few minutes of preheat saves a lot of guessing later."
       ]
     }
   ],
@@ -78,12 +78,12 @@ const SPEC: ScienceArticleSpec = {
   ],
   "faqs": [
     {
-      "q": "Why does my cake taste sweeter the second day?",
-      "a": "Moisture equilibrates and aromas meld; sometimes sugar perception increases as dryness is less distracting—store airtight."
+      "q": "Why does my cake taste sweeter on the second day?",
+      "a": "Moisture redistributes through the crumb and the aromas have time to meld, so the dryness that distracted your tongue on day one fades and the sweetness suddenly stands out more. Storing the cake airtight slows this, but does not stop it entirely."
     },
     {
-      "q": "Coffee in chocolate cake—how much helps?",
-      "a": "Even a teaspoon of instant coffee deepens bitterness enough to balance sweetness for many palates."
+      "q": "How much coffee should I put in a chocolate cake to balance the sweetness?",
+      "a": "Even a single teaspoon of instant coffee or espresso powder per batch deepens the bitter and roasted notes enough to balance the sweetness for most palates, without making the cake taste like coffee. Start there and scale up if you want a more pronounced edge."
     }
   ]
 };

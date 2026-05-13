@@ -7,58 +7,58 @@ const SPEC: ScienceArticleSpec = {
   "segment": "cake-science",
   "categoryLabel": "Cake Science",
   "title": "Why Cakes Turn Out Flat",
-  "subtitle": "Lost leavening, collapsed foam, or heavy batter limits vertical rise.",
+  "subtitle": "When the chemical leavening has lost its punch, when the egg foam collapses, or when the batter is just too heavy for the gas inside it, the cake never gets the height it should.",
   "readTime": "7 min read",
   "emoji": "🥞",
   "fixRecipe": {
     "category": "cake",
     "problem": "too-dense"
   },
-  "quickAnswer": "Flat cakes usually lack aeration (under-cream, under-beat eggs), dead leavening, or oven too cool so gas escapes before set. Verify creaming time, fresh baking powder, and accurate temperature.",
-  "intro": "Height is trapped gas in a setting matrix. Anything that reduces gas, releases it early, or fails to set in time yields short cakes. Oven spring depends on gas expanding while the batter viscosity is still dropping—roughly between room temperature and the point where the crumb sets, often starting meaningful structure around 140°F (60°C) for eggs and much later for starch firmness. If your oven is 25°F cool, that window lasts longer and bubbles coalesce and escape instead of staying trapped.",
+  "quickAnswer": "A flat cake almost always means there was not enough air or gas trapped inside the batter—from under-creaming the butter and sugar, under-whipping the eggs, dead (expired) baking powder, or an oven so cool that the gas had time to escape before the structure could set around it. Check your creaming time, test that the baking powder is still alive, and verify that the oven is actually at the temperature you set.",
+  "intro": "A cake’s height is just trapped gas held in a setting matrix. Anything that reduces the amount of gas, lets it escape too early, or fails to set the structure in time produces a short cake. The oven spring (the rise that happens once the cake hits the oven) depends on the gas inside the batter expanding while the batter’s viscosity is still dropping (it gets thinner before it sets). That window typically runs from room temperature up to the point where the structure firms—egg proteins start meaningfully setting around 140°F (60°C), and starch firming happens much later as the temperature climbs higher. If your oven is running 25°F cooler than it should be, that window stays open longer than designed, and your gas bubbles coalesce and escape instead of getting trapped in the crumb.",
   "sections": [
     {
       "heading": "Mechanical leavening",
       "paragraphs": [
-        "Creaming and egg aeration are not optional decorative steps; they are volume sources."
+        "Creaming butter and sugar together until light and fluffy is not a decorative step—it is a real source of volume. Same for whipping eggs into a foam. Both physically beat air bubbles into the batter, and those bubbles are the seeds that the chemical leavening later expands. Skip or shortchange creaming and you have less to work with."
       ]
     },
     {
       "heading": "Chemical leavening",
       "paragraphs": [
-        "Old baking powder, wrong acidity for soda, or massive batter sitting pre-bake depletes CO₂."
+        "Old baking powder loses its punch—it really does have a shelf life. Baking soda needs an acidic ingredient in the recipe to react with; if the recipe has been tweaked away from its original acid balance, the soda either fizzes too fast or barely fizzes at all. And a heavy batter that sits on the counter for half an hour before going into the oven loses most of the initial carbon dioxide burst from double-acting baking powder before it ever sees heat."
       ]
     },
     {
       "heading": "Thermal",
       "paragraphs": [
-        "Low oven temperature extends time to set, allowing bubbles to coalesce and escape."
+        "A cool oven keeps the batter liquid for longer, which lets the gas bubbles meet up, merge into bigger bubbles, rise to the surface, and pop—so they escape instead of being locked into the crumb. A simple thermometer on the rack tells you the truth about whether your dial reading and your actual air temperature agree."
       ]
     },
     {
       "heading": "Tooling",
       "paragraphs": [
-        "Fix My Recipe compares your leavening-friendly ratios to norms and nudges you toward one change per bake."
+        "Fix My Recipe compares your leavening-friendly ratios to typical ranges and gently nudges you toward one change at a time per bake, so you can actually tell which lever moved the result."
       ]
     },
     {
       "heading": "Leavening chemistry and clock time",
       "paragraphs": [
-        "Double-acting baking powder releases at wet mix and again with heat; letting batter sit 30 minutes on the counter can exhaust the first reaction. Baking soda needs acid; if pH is wrong, CO₂ is weak or fast and uncontrolled. Creaming aerates mechanically—under-creamed butter leaves less nucleation for oven spring, especially in recipes that lean on chemical leavening only lightly."
+        "Most baking powder sold in stores is double-acting—it releases some carbon dioxide when it gets wet and a second batch when it gets hot. If you let the mixed batter sit on the counter for 30 minutes, the first reaction has mostly exhausted itself before the cake hits the oven. Baking soda needs an acidic partner (buttermilk, yogurt, vinegar, lemon juice, brown sugar); if the pH is wrong, the carbon dioxide release is either weak or comes out in one fast, uncontrollable burst. Creaming aerates mechanically, building tiny bubble nuclei in the batter; an under-creamed butter has fewer of those nucleation sites for the gas to expand into during oven spring, which especially hurts recipes that rely only lightly on chemical leavening."
       ]
     },
     {
       "heading": "Altitude and temperature",
       "paragraphs": [
-        "At elevation, water boils lower and rises evaporate faster; you may need slightly higher bake temp or more liquid retention strategies. Document your oven’s actual temperature with a thermometer; “350°F” on the dial is often 330°F or 370°F in reality."
+        "At elevation, water boils at a lower temperature and evaporation happens faster, so your rises evaporate the leavening gases faster than they would at sea level. You may need a slightly higher bake temperature or strategies to retain more moisture in the batter. Document your oven’s actual temperature with a separate thermometer; “350°F” on the dial is often 330°F or 370°F in reality, and that difference shows up as a flat cake."
       ]
     },
     {
-      "heading": "Benchmark temperatures and a repeatable test protocol",
+      "heading": "Benchmark temperatures and a simple repeatable test",
       "paragraphs": [
-        "This guide on why cakes turn out flat is easier to act on when you anchor numbers instead of vibes. Butter cakes commonly finish between 200–210°F (93–99°C) at the geometric center, though chocolate and very moist formulas can mislead thermometers—pair probe results with spring-back and clean skewer. Edge-to-center gradients matter: a reading “done” only at the top center can still leave wet bands near the pan floor—check an inch above the bottom in thick layers. Convection and dark pans shift effective heat; if edges race, lower the set temperature about 25°F (14°C) and extend time. Cooling until crumb structure stabilizes—often below 100°F (38°C) internally for large layers—reduces tearing and sticky knife drag. Write down ambient kitchen temperature (°F), the set point on your oven or machine, and—when relevant—an internal probe reading or brew time. Change one input per trial: flour brand, hydration percentage, grind setting, chill time, or rack position. Photograph crumb or cup side-by-side after each change. SenseiFood’s Fix My Recipe debugger pairs these observations with ratio checks for your category so the next bake or brew is a measured step, not a guess.",
-        "If you use °C in the kitchen, convert critical bands once and tape them inside a cabinet: 200°F ≈ 93°C (cake/bread finish neighborhood), 350°F ≈ 177°C (common cake/cookie air set point), 212°F = 100°C (sea-level water boil), and espresso extraction times often discussed in the 25–35 second range for classic 9-bar shots—always taste-adjusted to your machine. Altitude lowers water’s boiling point, which shifts extraction and evaporation; bakers at elevation should rely more on internal temperature and visual set than on clock alone.",
-        "Humidity changes how dough skins, how icing behaves, and how staling feels the next day—note outdoor weather when results swing for no obvious reason. For anything oven-based, log preheat completion time: many ovens continue drifting 10–20°F after the beep. For frozen desserts, log freezer display temp if available; a chest freezer near −10°F (−23°C) behaves differently than a frost-free kitchen freezer with defrost cycles. Small environmental logs turn one-off failures into solvable patterns."
+        "Butter cakes usually finish between 200–210°F (93–99°C) at the center. Chocolate and very moist formulas can fool a thermometer, so pair the probe with a spring-back test (press the center gently; if it springs back, it is set) and a clean skewer test. Edge-to-center gradients matter: a “done” reading at the top center can still leave wet bands near the floor of the pan, so check about an inch above the bottom on thick layers. Convection and dark pans both speed up heating, so if your edges race ahead, lower the set temperature by about 25°F (14°C) and extend the time. Let big layers cool to below about 100°F (38°C) internally before slicing.",
+        "Write down your kitchen’s ambient temperature, the oven set point, and the probe reading. Change one input per attempt—creaming time, leavening freshness, oven temperature, pan size—and photograph the cake’s rise side-by-side. SenseiFood’s Fix My Recipe debugger pairs those observations with ratio checks for your category so the next bake is a measured step, not a guess.",
+        "If you cook in Celsius, write a small cheat sheet and tape it inside a cabinet: 200°F is about 93°C (the cake and bread finish zone), 350°F is about 177°C (a common cake and cookie air temperature), and 212°F is 100°C (sea-level water boiling). Many ovens keep drifting 10–20°F after they beep done preheating, so an extra few minutes of preheat saves a lot of guessing."
       ]
     }
   ],
@@ -78,12 +78,12 @@ const SPEC: ScienceArticleSpec = {
   ],
   "faqs": [
     {
-      "q": "Does overmixing make flat cakes?",
-      "a": "It can deflate foam or build excess gluten in egg-leavened styles—mix until just combined unless the recipe wants strong structure."
+      "q": "Does overmixing make a cake flat?",
+      "a": "Yes, it can. Overmixing can deflate a foam, especially in egg-leavened cakes like chiffons and sponges, and it can also build up excess gluten that traps air in tough, dense strands instead of light pockets. Mix only until combined unless the recipe specifically wants strong structure."
     },
     {
-      "q": "Old baking powder—how to test?",
-      "a": "Stir a teaspoon into hot water; vigorous bubbling means viable; flat means replace."
+      "q": "How can I tell if my baking powder is still good?",
+      "a": "Stir about a teaspoon of baking powder into a half cup of hot water. If it bubbles vigorously right away, it is still active. If you get only a weak fizz or nothing at all, it is time to replace the can."
     }
   ]
 };

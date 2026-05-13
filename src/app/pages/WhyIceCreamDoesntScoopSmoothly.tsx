@@ -7,7 +7,7 @@ const SPEC: ScienceArticleSpec = {
   "segment": "ice-cream-science",
   "categoryLabel": "Ice Cream Science",
   "title": "Why Ice Cream Doesn't Scoop Smoothly",
-  "subtitle": "Hardness is tied to freezing point depression, ice fraction, and temper time—not “bad luck.”",
+  "subtitle": "Hard pints come down to freezing point depression (how dissolved sugar, salts, and dairy solids lower the temperature where ice locks up), ice fraction, and whether you gave the surface a few minutes to temper before attacking it.",
   "readTime": "7 min read",
   "level": "Freezing & temper",
   "emoji": "🍨",
@@ -15,8 +15,8 @@ const SPEC: ScienceArticleSpec = {
     "category": "iceCream",
     "problem": "general"
   },
-  "quickAnswer": "Rock-hard pints usually mean low sugar/alcohol, very low freezer temp, or high water fraction. Let temper 5–10 minutes; if still chippy, adjust solids and freezing curve.",
-  "intro": "Scooping is not a strength sport—it is rheology in a narrow temperature window. Ice cream is a partially frozen foam: ice crystals, fat globules, air cells, and unfrozen syrup phase work together so the matrix bends instead of shattering. When the unfrozen phase is too small or the ice fraction too high, the pint reads as brick-hard; when tempering is skipped, you fracture ice lamellae into powdery shards that feel “chippy” even if the formula is fine. Freezer temperature, storage position, overrun, and recipe solids all change the same scoop. Below we separate “too cold” problems from “wrong balance” problems so you know whether to wait five minutes or reformulate.",
+  "quickAnswer": "Brick-hard ice cream usually means too little of the dissolved stuff that keeps a liquid phase alive at freezer temps—sugar, dairy solids, sometimes alcohol—or a freezer that is colder than you think. Let the pint temper five to ten minutes; if it still shatters, look at total solids and water, not biceps.",
+  "intro": "Scooping is rheology, not arm wrestling: ice cream is ice, air, fat, and unfrozen syrup holding hands. Freezing point depression is the chemistry name for why sugar and dissolved solids make it harder for water to freeze solid—more syrup phase usually means easier scooping. Skip tempering and you shatter ice sheets into powdery chips even when the recipe is fine. Freezer placement, overrun from churn, and MSNF (milk solids-not-fat—the protein plus mineral \"dry stuff\" in dairy besides butterfat) all nudge the same spoon feel. Below we split \"too cold\" from \"wrong balance\" so you know whether to wait or reformulate.",
   "sections": [
     {
       "heading": "Freezer temperature as part of the recipe",

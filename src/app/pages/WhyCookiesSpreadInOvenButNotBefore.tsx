@@ -7,58 +7,53 @@ const SPEC: ScienceArticleSpec = {
   "segment": "cookie-science",
   "categoryLabel": "Cookie Science",
   "title": "Why Cookies Spread in the Oven But Not Before",
-  "subtitle": "Cold fat, flour hydration, and delayed structure set explain the oven-only spread phase.",
+  "subtitle": "Room-temperature scoops can look stubborn while butter is still mostly solid fat crystals; the oven is where those crystals melt, sugar dissolves faster, and the dough finally slacks enough to flow.",
   "readTime": "7 min read",
   "emoji": "🧊➡️🔥",
   "fixRecipe": {
     "category": "cookie",
     "problem": "spreads-too-much"
   },
-  "quickAnswer": "Chilled dough holds solid fat crystals so room-temperature balls look tall; oven heat melts fat and releases free water, slackening dough and letting spread happen late. Flour also hydrates over time, changing viscosity.",
-  "intro": "This pattern confuses people who expect dough to “look ready” on the sheet. Cookies are time-release systems: temperature, fat crystal state, and hydrated starch networks control when flow starts. Seeing no spread cold does not predict no spread hot. Spread requires fat phase transition—butter melts near 90–95°F (32–35°C) body-soft then fully liquefies in the oven—plus sugar dissolution lowering viscosity. Before bake, dough below fat melt stays structured; in-oven flow begins as temperature passes ~100°F (38°C) throughout the piece.",
+  "quickAnswer": "Cold dough holds its shape because fat is still crystalized and the flour matrix has not fully relaxed—so you see little movement on the sheet. Heat melts butter, frees water that was tied up in the emulsion, and lets sugar pull viscosity down; suddenly spread happens late, all at once. A rest in the fridge also keeps hydrating flour, which changes how fast the cookie sets once heat arrives.",
+  "intro": "This pattern breaks beginner intuition because we want dough to \"look right\" before it goes in the oven. Cookies are small heat engines: the same scoop can be stiff at 65°F (18°C) and soupy at 95°F (35°C) because butter crosses a softening range long before it fully liquefies. Spread needs fat to mobilize enough to lubricate sugar and flour, and it needs the protein-starch network not to lock too early. Sugar dissolving into available water also lowers resistance to flow—so chemistry and temperature are holding hands the whole time. Seeing no spread on the counter does not promise no spread in the oven; it usually means you have not crossed the melt-and-slack threshold yet.",
   "sections": [
     {
       "heading": "Fat phase change",
       "paragraphs": [
-        "Butter is a mix of fat crystals and water-in-fat emulsion. Cold keeps crystals solid; heat melts them, lowering viscosity so dough flows."
+        "Butter is not a single thing in the dough; it is fat crystals sitting in a water-in-fat emulsion with some free water hiding in the system. Cold keeps crystals firm, so the dough behaves like a paste you can stack. As the cookie warms, crystals melt, fat becomes more mobile, and the whole matrix can flow across the pan. That is why spread can look like an oven-only event: your eyes on the counter were watching the wrong phase of butter’s personality."
       ]
     },
     {
       "heading": "Hydration kinetics",
       "paragraphs": [
-        "During chill, flour continues absorbing water. That changes how quickly the dough sets in the oven versus how much it flows early."
+        "Flour keeps drinking water during a chill—even when the dough looks \"done mixing.\" That slow hydration changes how quickly the cookie sets versus how far it can move while it is still flexible. A dough that felt stiff at mix time can spread more than you expect later, not because you imagined it, but because starch and protein had more time to take up water and soften the crumb mechanics."
       ]
     },
     {
       "heading": "Leavening timing",
       "paragraphs": [
-        "CO₂ from baking soda/powder expands when batter softens; if acid-base reactions start late, lift and spread coincide visually."
+        "Baking soda reacts with acid and heat; baking powder brings timed CO₂ releases depending on whether it is single- or double-acting. When chemical leavening puffs as the batter softens from melting fat, lift and lateral flow can show up together—your eye reads it as \"it only spread in the oven\" because that is when gas pressure and lowered viscosity lined up. If spread suddenly changed after you swapped leavening brands or acid sources, suspect timing and reaction rate before you blame humidity ghosts."
       ]
     },
     {
       "heading": "Debug spread deliberately",
       "paragraphs": [
-        "If oven spread overshoots, cookie mode in Fix My Recipe checks sugar and butter-heavy ratios, and you pair that with one change: slightly more flour, shorter chill, or lower oven for slower set."
+        "If oven spread overshoots—one big amoeba instead of discrete cookies—cookie mode in Fix My Recipe is a good ratio sanity check for sugar-and-butter-heavy formulas. On the pan, still change one thing: a few extra grams of flour, a shorter chill, a slightly cooler oven, or a lighter pan. Take the same photo at the same minute mark twice; your camera is less nostalgic than your brain."
       ]
     },
     {
       "heading": "Oven heat transfer",
       "paragraphs": [
-        "Edge cookies reach melt faster than center—differential spread in one tray is normal. Aluminum vs insulated sheets change bottom heat flux. Sugar type changes melt curve—more dissolved sugar flows earlier."
+        "Edge cookies see hotter metal and more air contact first, so differential spread on one tray is normal, not a personal insult from the universe. Insulated and dark pans change how fast bottoms melt and set; sugar type changes how early dissolved sugar helps the dough slack—brown sugar’s invert sugar and extra moisture often encourage earlier flow than white sugar alone.",
+        "Rotating the sheet halfway is not fussy theater; it is acknowledging that most home ovens have personalities. If one corner always races, that is data you can bake around."
       ]
     },
     {
-      "heading": "Leavening timing",
+      "heading": "What to tweak first when spread surprises you",
       "paragraphs": [
-        "Baking soda releases with acid and heat; delayed spread can pair with late CO₂ puff after fat has flowed."
-      ]
-    },
-    {
-      "heading": "Benchmark temperatures and a repeatable test protocol",
-      "paragraphs": [
-        "This guide on why cookies spread in the oven but not before is easier to act on when you anchor numbers instead of vibes. Cookie spread begins as butter phases soften near body temperature and fully mobilizes in the oven—edges often see higher heat first, so tray position and rotation matter. For chewy vs crisp targets, final internal moisture and surface dehydration differ: lower final moisture and more edge browning read “crisp,” while higher moisture and less Maillard read “chewy.” Chill dough near 38°F (3°C) to delay fat flow and reduce spread if needed. Sheet color changes bottom heat flux; light aluminum often gentler than dark nonstick for the same set temperature. Write down ambient kitchen temperature (°F), the set point on your oven or machine, and—when relevant—an internal probe reading or brew time. Change one input per trial: flour brand, hydration percentage, grind setting, chill time, or rack position. Photograph crumb or cup side-by-side after each change. SenseiFood’s Fix My Recipe debugger pairs these observations with ratio checks for your category so the next bake or brew is a measured step, not a guess.",
-        "If you use °C in the kitchen, convert critical bands once and tape them inside a cabinet: 200°F ≈ 93°C (cake/bread finish neighborhood), 350°F ≈ 177°C (common cake/cookie air set point), 212°F = 100°C (sea-level water boil), and espresso extraction times often discussed in the 25–35 second range for classic 9-bar shots—always taste-adjusted to your machine. Altitude lowers water’s boiling point, which shifts extraction and evaporation; bakers at elevation should rely more on internal temperature and visual set than on clock alone.",
-        "Humidity changes how dough skins, how icing behaves, and how staling feels the next day—note outdoor weather when results swing for no obvious reason. For anything oven-based, log preheat completion time: many ovens continue drifting 10–20°F after the beep. For frozen desserts, log freezer display temp if available; a chest freezer near −10°F (−23°C) behaves differently than a frost-free kitchen freezer with defrost cycles. Small environmental logs turn one-off failures into solvable patterns."
+        "Most drop cookies bake happily somewhere in the wide neighborhood people call \"moderate\" oven heat—often discussed around 325–375°F (163–190°C) depending on thickness, sugar, and how much color you want. Lower temperatures generally extend the spread window before the top skins; higher temperatures set edges faster. Chilling near refrigerator temperature (about 38°F / 3°C) slows early fat flow if you need less spread, while warmer dough and softer butter increase pre-oven movement—both are tools, not sins.",
+        "If you are fighting spread, write one line per batch: dough temperature going in, pan type, rack height, and set temperature. You are not building a compliance binder—just enough breadcrumbs to connect \"Tuesday’s puddle\" to \"Tuesday was 10°F hotter\" or \"Tuesday was dark pan day.\"",
+        "SenseiFood’s Fix My Recipe debugger is built to pair those observations with ratio checks so the next bake is a step, not a dice roll."
       ]
     }
   ],
@@ -74,12 +69,12 @@ const SPEC: ScienceArticleSpec = {
   ],
   "faqs": [
     {
-      "q": "Room temp butter effect?",
-      "a": "More pre-melt on sheet—often more pre-spread before oven."
+      "q": "What changes if my butter is truly room temperature?",
+      "a": "Softer butter means more fat has already mobilized before the oven, so you often see more pre-spread on the sheet and sometimes faster merging in the heat—not automatically bad, just a different timing story than chilled dough."
     },
     {
-      "q": "Frozen dough disk?",
-      "a": "Delays melt—less spread until thaw in oven."
+      "q": "Why does frozen dough sometimes spread less early?",
+      "a": "Cold delays fat melting and keeps viscosity high, so a lot of the action waits until the oven thaws the interior. You can get a narrower spread window and thicker cookies depending on scoop size and bake temperature—again, timing, not magic."
     }
   ]
 };

@@ -7,7 +7,7 @@ const SPEC: ScienceArticleSpec = {
   "segment": "cake-science",
   "categoryLabel": "Cake Science",
   "title": "Why Cakes Stick to Themselves When Layering",
-  "subtitle": "Surface tack from sugar glass, incomplete cool-down, and pressure during stacking.",
+  "subtitle": "A tacky, sugary cut surface, layers that have not cooled all the way through, and even moderate pressure during stacking can fuse cake faces together.",
   "readTime": "7 min read",
   "level": "Post-bake handling",
   "emoji": "🥞",
@@ -15,57 +15,57 @@ const SPEC: ScienceArticleSpec = {
     "category": "cake",
     "problem": "general"
   },
-  "quickAnswer": "Layers fuse when cut faces are still warm, steam-soft, or high in hygroscopic sugar. Chill fully, brush crumbs away, and use a thin barrier (simple syrup with restraint, buttercream dam) before stacking.",
-  "intro": "Layering is friction welding with frosting. Fresh-cut sponge faces are moist, slightly plastic, and rich in exposed starch and sugar—perfect for sticking to each other and to your bench knife. Warm interiors drive steam outward through those faces, re-softening crumb and turning sugar syrupy. Add jam, ganache, or buttercream under pressure and you squeeze adhesive into the cell structure. Bakers treat chill time, crumb cleanliness, and barrier films as structural steps: cool until the mass is handleable, remove loose crumbs that nucleate tack, and apply fillings at temperatures that do not re-melt the crumb. This guide walks through the thermal sequence, moisture sources, and mechanical pressure that turn innocent layers into a fused stack.",
+  "quickAnswer": "Layers fuse to each other when the cut faces are still warm, still slightly steamy, or rich in hygroscopic sugar (sugar that grabs moisture from the air). Chill the layers all the way through, brush stray crumbs away, and apply a thin barrier between layers—either a restrained brush of simple syrup or a piped buttercream dam around the rim—before stacking.",
+  "intro": "Stacking a cake is essentially friction welding with frosting as the glue. Freshly cut sponge faces are moist, slightly plastic, and rich in exposed starch and sugar—everything you would design if you wanted two surfaces to stick to each other (and to your bench knife). A warm interior drives steam outward through those cut faces, re-softening the crumb and turning the sugar at the surface syrupy. Then you add jam, ganache, or buttercream, press down even slightly, and you have squeezed all that adhesive deep into the cell structure. Bakers treat chill time, crumb cleanliness, and a thin barrier film as structural steps in the build, not optional extras: cool until the cake is solid enough to handle, remove loose crumbs that would create sticky points, and apply fillings at temperatures that will not re-melt the crumb under them. This guide walks through the thermal sequence, where the moisture is coming from, and how mechanical pressure can turn innocent layers into one fused mass.",
   "sections": [
     {
-      "heading": "Cooling sequence before the knife",
+      "heading": "Cooling sequence before the knife touches it",
       "paragraphs": [
-        "Depan and cool until the center no longer radiates heat through the bottom—warm centers continue to steam through trimmed faces during torting. If you must trim early, return layers to the fridge between cuts so shear happens in a firmer matrix. Cold layers fracture more cleanly; warm layers smear, leaving smeared starch-sugar films that glue."
+        "Take the layers out of the pan and cool them until the center no longer radiates heat through the bottom of the pan or wire rack—a warm core keeps pumping steam through whatever surfaces you torte (slice horizontally to make thinner layers). If you have to start trimming before the cake is fully cool, return the layers to the fridge in between cuts so the shear actually happens through a firmer matrix. Cold layers fracture much more cleanly; warm layers smear, and the smeared film of starch and sugar is exactly the glue that fuses everything together later."
       ],
       "bullets": [
         {
           "title": "Crumb coat reality",
-          "text": "Loose crumbs mixed into buttercream become gritty bond sites—brush or vacuum crumbs first."
+          "text": "Loose crumbs mixed into the buttercream become gritty little bond sites that drag and lock against the next layer. Sweep or vacuum stray crumbs off the layer before you apply any frosting."
         },
         {
           "title": "Freezer shortcuts",
-          "text": "Brief chilling firms surfaces for trimming; avoid freeze-drying edges unless your formula tolerates it."
+          "text": "Brief chilling in the freezer firms the surfaces nicely for clean trimming; just do not leave them long enough to freezer-dry the edges, unless your formula and frosting plan tolerate that."
         }
       ]
     },
     {
       "heading": "Holding frostings and fillings",
       "paragraphs": [
-        "Warm jam or loose ganache pumps water into the cut face faster than buttercream alone. Bring fillings to workable coolness; ganache should be pipeable, not pourable, unless the design expects absorption. Fruit macerations release juice under weight—drain before interior layers or accept slide risk."
+        "Warm jam or loose ganache pumps water into the cut face of a cake much faster than buttercream alone—both because the filling is wetter, and because the heat opens up the crumb. Bring fillings to a workable coolness; ganache should be pipeable, not pourable, unless the design intentionally wants the layer to absorb some. Macerated fruit (fruit that has been mixed with sugar to draw out juice) releases more juice under the weight of the stack above—drain it before placing it between interior layers, or accept that you may end up with some lateral slide."
       ]
     },
     {
       "heading": "Pressure and flatness",
       "paragraphs": [
-        "Aggressive bench scrapers and palm presses extrude syrup from filling and collapse crumb. Use light, even pressure when applying coats; rotate the stand rather than wrestling one stuck side. Overfilled layers squish outward, increasing contact area and tack between tiers—level and thickness matter."
+        "Aggressive bench scrapers and palm presses extrude syrup out of the filling and collapse the crumb underneath. Apply each coat with light, even pressure; rotate the cake stand to come at any stubborn spot instead of wrestling one side flat. Overfilled layers squish outward and increase the surface area where layers contact each other, which raises the chance of tack between tiers—keep your filling thickness and level honest."
       ],
-      "tip": "If layers skate but then lock solid in the fridge, you likely had warm-soft interfaces that refirmed—chill between operations."
+      "tip": "If layers feel like they slide around on you at first, then lock together rock-solid in the fridge, you almost certainly had warm-soft interfaces that simply re-firmed in the cold. Chill between operations."
     },
     {
       "heading": "Time between crumb coat and final coat",
       "paragraphs": [
-        "Crumb coats exist partly to seal faces so the next coat does not re-wet the sponge. Rushing skips that benefit: the final pass drags moisture back into the crumb and can tear surfaces that then stick to tools and neighbors. Hands transfer heat even through gloves; handle chilled cakes briefly or use a turntable and offset spatula to minimize palm contact."
+        "The crumb coat exists partly to seal the surfaces so the next, prettier coat does not re-wet the sponge underneath. Rushing the crumb coat skips that benefit: the final pass then drags moisture back into the crumb and can tear surfaces, which then stick to your tools and to each other. Even your hands transfer real heat through gloves; handle chilled cakes briefly, and use a turntable and offset spatula to keep your palms off the cake as much as possible."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why does parchment between layers help sometimes but not always?",
-      "a": "It interrupts contact while cold, but peels can disturb soft crumb if the cake is warm or the frosting is tacky—chill until sets are firm before removing separators."
+      "q": "Why does putting parchment between layers help sometimes but not always?",
+      "a": "Parchment interrupts the contact while the cake is cold, but when you go to peel it away, soft crumb or tacky frosting can disturb the layer. Chill until the surfaces are firm before you remove any separators."
     },
     {
-      "q": "Does simple syrup always make sticking worse?",
-      "a": "Only if over-applied or brushed onto warm cake. Thin, even syrup on cool layers can actually consolidate surfaces for clean icing—technique matters more than the idea."
+      "q": "Does simple syrup always make layers stickier?",
+      "a": "Only if you over-apply it or brush it onto a still-warm cake. A thin, even brush on a fully cooled layer actually consolidates the cut surface for cleaner icing later—technique matters more than the idea itself."
     },
     {
-      "q": "Are chiffon layers worse than butter cake?",
-      "a": "Often more delicate and moist—same principles, gentler handling, and sometimes firmer chill thresholds."
+      "q": "Are chiffon layers harder to work with than butter cake layers?",
+      "a": "Chiffon and sponge layers tend to be more delicate and moist, so the same principles apply but with gentler handling and sometimes a firmer chill before you start trimming and stacking."
     }
   ],
   "related": [

@@ -7,7 +7,7 @@ const SPEC: ScienceArticleSpec = {
   "segment": "pie-science",
   "categoryLabel": "Pie Science",
   "title": "Why Double Crust Pies Trap Steam",
-  "subtitle": "A sealed lid raises internal pressure until vents or edge leaks become the only escape.",
+  "subtitle": "A top crust is a lid on a little kettle: steam from fruit and dough has to leave somewhere, or pressure domes the pastry and turns filling soupy.",
   "readTime": "8 min read",
   "level": "Steam dynamics",
   "emoji": "💨",
@@ -15,8 +15,8 @@ const SPEC: ScienceArticleSpec = {
     "category": "pie",
     "problem": "general"
   },
-  "quickAnswer": "Steam from filling and from dough water has nowhere to go under a sealed top. Without vents—and sometimes even with them—pressure lifts the lid or turns filling soupy. Vent geometry and bake temperature rhythm matter.",
-  "intro": "A double-crust pie is a small steam engine. Heat drives water from fruit, from any added liquids, and from the dough itself; vapor expands and seeks exit paths. With a pastry lid crimped shut, the easiest outs are engineered vents, leaky crimps, or blowouts where dough tears. Until steam leaves, internal pressure can dome the top crust, separate layers, or force juice through weak seams—sometimes violently. After baking, trapped vapor recondenses as the pie cools, which changes how filling sets and how soggy the interior feels. Understanding mass flow (where steam goes) and timing (when the crust sets) helps you choose vent patterns, temperatures, and resting behavior that avoid surprise eruptions.",
+  "quickAnswer": "Steam expands under a sealed lid; without enough vents—or with vents that seal shut from wash—pressure lifts the top or blows juice sideways. Think vent area, crimp tightness, and whether your bake starts hot enough to set structure before the filling hits peak boil.",
+  "intro": "Double-crust pie is honest physics with fruit inside: water leaves cells and dough as heat climbs, vapor pressure rises, and the steam looks for holes like a polite ghost that will become rude if ignored. Crimped edges, decorative slashes, and lattice gaps are not just cute—they are safety valves. When steam cannot exit evenly, you get domed lids, layer separation, or geysers through the weakest seam. After baking, vapor recondenses as everything cools, which changes how thick the filling feels and whether the bottom goes soggy. Understanding steam paths helps you pick vent patterns and temperature rhythms without blaming \"bad luck.\"",
   "sections": [
     {
       "heading": "Venting as engineered mass flow",

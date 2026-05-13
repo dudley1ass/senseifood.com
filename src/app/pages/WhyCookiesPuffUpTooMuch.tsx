@@ -8,7 +8,7 @@ const SPEC: ScienceArticleSpec = {
   categoryLabel: "Cookie Science",
   title: "Why Cookies Puff Up Too Much",
   subtitle:
-    "Ballooned cookies usually mean trapped steam, aggressive leavening, or a dough that sets like cake before it can spread—here is how to tell which story is yours.",
+    "Domed cookies usually mean steam and gas expanded faster than the dough could flow outward—too much leavening, over-aerated butter, a hot oven skinning the top, or a wet dough that carries extra steam per bite.",
   readTime: "8 min read",
   emoji: "🎈",
   fixRecipe: {
@@ -16,16 +16,16 @@ const SPEC: ScienceArticleSpec = {
     problem: "rise-then-fall",
   },
   quickAnswer:
-    "Cookies puff when gas and steam expand faster than the dough can flow outward. Common drivers are too much chemical leavening, warm over-creamed butter that holds excess air, under-hydrated flour, or a hot oven that skins the surface before spread starts. Weigh ingredients, chill if the dough is warm, and verify leavening against the recipe's flour mass.",
+    "Cookies puff when CO₂, air from creaming, and steam from butter, eggs, and milk expand faster than the matrix can relax sideways. Usual suspects: a heavy hand on baking powder or soda, warm over-creamed butter holding extra air, flour measured light so structure is weak, or an oven that sets a top skin before spread starts. Weigh ingredients, chill if the dough is warm, and check leavening against the flour mass before you blame the chocolate chips.",
   intro:
-    "A cookie that domes like a muffin top can feel unrelated to spread problems, but in the oven it is the same physics race: set timing versus flow. Puffing is not a moral failure of your mixer; it is a signal that internal pressure is winning over lateral relaxation. This guide separates vapor pressure, chemical gas, mechanical air from creaming, and structural set so you can change one lever at a time instead of guessing. Home bakers often chase one ingredient when the real issue is a timeline: the cookie briefly behaves like a foam before it behaves like a sheet.",
+    "A cookie that domes like a muffin top is still the same physics story as a flat spreader: set timing versus flow. Puffing is not your mixer being dramatic; it is internal pressure winning over sideways relaxation. This guide separates steam pressure, chemical gas, mechanical air from creaming, and structural set so you can change one lever at a time. Home bakers often chase one ingredient when the headline is really a timeline: for a minute in the oven, the dough behaves like a foam before it behaves like a cookie.",
   sections: [
     {
       heading: "Steam pressure and early crust set",
       paragraphs: [
-        "Water in butter, eggs, and any milk turns to steam above 212°F and does real mechanical work inside a soft matrix. If the outer cookie sets quickly—hot oven, dark pan, convection blast, or very high sugar—the surface forms a shell while the center is still fluid. The next burst of expansion has nowhere to go but up, so the cookie lifts like a small soufflé.",
-        "Sugar and protein browning also stiffen the outer network. That is desirable for chew and color, but an overly fast set turns the cookie into a sealed balloon. Lowering the oven slightly, baking on a lighter pan, or pulling the rack away from the top element buys seconds of flow that change thickness more than intuition suggests.",
-        "Humidity in the dough matters too: wetter doughs carry more latent steam per gram. That does not mean you should starve hydration; it means you should pair hydration with enough flour strength and enough time for the surface to dry evenly rather than flash-seal in spots.",
+        "Water in butter, eggs, and any milk turns to steam once the dough crosses boiling territory at wet spots, and that steam does real mechanical work inside a soft matrix—think tiny balloons inflating. If the outside sets fast—hot oven, dark pan, convection blasting the surface, or a sugar-heavy formula that skins early—you get a shell while the center is still fluid, so the next expansion goes up instead of out, like a baby soufflé with chocolate chips.",
+        "Sugar browning and protein set stiffen the outer network, which is lovely until it happens too fast; then you have sealed balloon behavior instead of gradual spread. Dropping the oven a notch, using a lighter pan, or moving away from aggressive top heat buys a few extra seconds of flow that matter more than they sound.",
+        "Wetter dough carries more potential steam per gram, which is not an argument for dehydrating your recipe—just a reminder to pair hydration with enough flour strength and a bake profile that browns evenly instead of flash-sealing random craters.",
       ],
       bullets: [
         {
@@ -42,17 +42,17 @@ const SPEC: ScienceArticleSpec = {
     {
       heading: "Leavening load versus flour strength",
       paragraphs: [
-        "Baking soda and baking powder release CO₂ on their own schedules: soda reacts with acid immediately and again with heat; double-acting powder puffs early and late. When leavening is high relative to flour and acid balance is off, you get a rapid gas spike inside a batter that is still liquid enough to expand volumetrically—classic puff before collapse or a cakey crumb.",
-        "Old soda in a humid can loses predictability; a heavy hand with powder adds dry alkalinity that can also blunt flavor and encourage tall, tender crumb. If your cookies puff and taste soapy or metallic, suspect leavening first and convert to grams using the label's density for your brand.",
-        "Acid matters for soda: if a recipe leans on baking soda but the dough is not actually acidic enough, you can get uneven reaction timing and odd vertical lift. When in doubt, compare against a trusted baseline formula with similar fat and sugar style before rewriting the whole cookie.",
+        "Baking soda and baking powder are not interchangeable personalities: soda reacts with acid right away and again with heat; double-acting powder gives you an early puff from liquid contact and a second puff from oven heat. When leavening is high for the amount of flour—or the acid partner for soda is missing in action—you get a rapid gas spike while the batter is still liquid enough to balloon vertically, then sometimes collapse into a cakey middle.",
+        "Old baking soda in a humid kitchen turns into a lottery ticket; too much baking powder adds dry alkalinity that can taste soapy and still dome the cookie. If the flavor whispers \"cleaning supplies,\" weigh leavening in grams for your brand instead of trusting dusty teaspoons.",
+        "Soda needs real acidity—brown sugar is not always enough by itself depending on the rest of the formula. If acid is shy, reaction timing goes weird and you can get odd vertical lift. Before you rewrite the cookie from scratch, compare against a trusted baseline with similar fat and sugar style.",
       ],
     },
     {
       heading: "Creaming, aeration, and cakey structure",
       paragraphs: [
-        "Creaming traps air in fat crystals; that air expands with heat. Warm butter creams fluffy fast, which feels productive, but it often over-aerates drop cookies that also carry chemical leaveners. You can end up with a foamy interior that bakes like a mini cake: tall, soft, sometimes dry after cooling.",
-        "High liquid relative to flour (extra egg white, splash of milk) or low protein flour in a butter-heavy formula pushes the system toward cake mechanics—starch gelatinization and egg set dominate before spread finishes. Chilling firms fat, slows gas release slightly, and lets edges melt later, which usually reduces doming.",
-        "Mixer speed hides information: a minute at high speed can incorporate more air than a recipe written for hand mixing assumes. If puffing started when you upgraded appliances, end creaming earlier or finish folding dry ingredients by hand to knock down excess bubbles.",
+        "Creaming traps air in the fat phase; heat expands that air like any gas. Warm butter creams fast and fluffy, which feels efficient, but it is easy to over-aerate drop cookies that also carry chemical leaveners—now you have two air sources racing the clock. The crumb can bake like a mini cake: tall, tender, sometimes oddly dry after cooling.",
+        "Extra liquid without matching flour (more egg white, a splash of milk) or very low protein flour in a butter-heavy formula pushes the system toward cake rules—starch and egg set can dominate before spread finishes. Chilling firms fat, slows the early gas burst a touch, and often reduces doming without moralizing about your mixing skills.",
+        "Mixer speed is sneaky: sixty seconds on high can beat more air than a vintage recipe assumed. If puffing began the week you got a stronger machine, end creaming earlier or fold the last of the flour by hand to knock down excess bubbles—gentle structure, less balloon.",
       ],
       bullets: [
         {
@@ -68,19 +68,19 @@ const SPEC: ScienceArticleSpec = {
     {
       heading: "How Fix My Recipe helps",
       paragraphs: [
-        "SenseiFood's cookie mode compares your butter, sugar, flour, egg, and leavening bands to common successful profiles. That is useful when puffing is really a ratio symptom—too much leavening for the flour mass, or butter outrunning eggs for structure.",
-        "Treat the next bake as a single-variable test: oven temperature, leavening grams, or chill time. Photograph top view and cross-section; puffy cookies often reveal a tight crumb under a glossy dome that a spreadsheet alone will not explain.",
+        "SenseiFood’s cookie mode lines your butter, sugar, flour, egg, and leavening bands up against common successful neighborhoods. That matters when puffing is really a ratio symptom—too much leavening for the flour mass, or butter running the show without enough structural partners.",
+        "Bake the next tray like a deliberate experiment: change oven temperature, leavening grams, or chill time—not all three. A top-down photo plus a quick cross-section tells you whether you are looking at trapped gas under a glossy dome versus a simple thickness issue numbers alone will not narrate.",
       ],
     },
   ],
   faqs: [
     {
       q: "My cookies puff then fall flat—different fix?",
-      a: "Yes: that pattern points to structure failing after the rise. Look at leavening, under-bake, or weak protein set; see the related article on rise-then-fall for a focused checklist.",
+      a: "Yes—that is often structure collapsing after a big rise. Look at leavening load, under-baking, or weak protein set; the related rise-then-fall article is basically a checklist for that plot twist.",
     },
     {
       q: "Do altitude adjustments cause puffing?",
-      a: "They can: lower air pressure lets bubbles expand more. Reduce leavening slightly and/or increase flour a few percent under guidance, then retest.",
+      a: "Lower air pressure lets bubbles expand more enthusiastically, so high altitude can absolutely read as extra puff. Trim leavening a little and/or bump flour a few percent under good guidance, then retest instead of guessing wildly.",
     },
   ],
   related: [

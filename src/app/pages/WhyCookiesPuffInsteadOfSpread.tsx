@@ -7,7 +7,7 @@ const SPEC: ScienceArticleSpec = {
   "segment": "cookie-science",
   "categoryLabel": "Cookie Science",
   "title": "Why Cookies Puff Instead of Spread",
-  "subtitle": "Cold fat, high flour, strong leavening, and short bake set a dome before flow.",
+  "subtitle": "Tall mounds with tiny footprints usually mean the cookie set like a little cake before butter could melt, flow, and fuse into a wider disk—cold fat, strong structure, bold leavening, and hot-top skin formation are the usual cast.",
   "readTime": "7 min read",
   "level": "Spread mechanics",
   "emoji": "☁️",
@@ -15,14 +15,14 @@ const SPEC: ScienceArticleSpec = {
     "category": "cookie",
     "problem": "wont-spread"
   },
-  "quickAnswer": "Puff without spread means structure set before viscous flow—cold butter, strong flour, too much baking powder or soda, or an oven that sets the top skin before the dough can flow outward. Warm dough slightly, reduce leavening, or de-gas slightly before baking if the recipe tolerates it. Spread needs time above the fat’s flow temperature while the matrix is still extensible.",
-  "intro": "Cookie spread is not guaranteed; it is the outcome of competing rates. Fat must melt and lubricate sugar and flour enough that the mass can flow across the pan. Proteins and gelatinizing starch must not lock a dome before that flow happens. Leavening gas—creamed air, steam, and chemical CO₂—must either escape outward as spread or expand upward as puff depending on viscosity and surface set. When butter stays cold too long, flour is high relative to fat, or chemical leavening peaks after a fast-forming crust, you get tall mounds with minimal footprint. Oven heat matters because radiant top heat can set a skin that traps expanding gases like a small cake, especially on dark pans that pump energy into bottoms unevenly. Fixing puff-without-spread is about aligning temperature, formula balance, and bake profile so flow wins the race for your target cookie.",
+  "quickAnswer": "Puff without spread is a race you lost on timing: structure locked before the dough could relax outward. Cold butter, extra flour (packed cups count), a heavy hand on baking powder or soda, or an oven that skins the top before the middle softens all push \"up\" instead of \"out.\" Let scoops temper slightly, trim leavening to the recipe’s flour mass, and adjust heat or pan so flow gets a fair head start.",
+  "intro": "Spread is not a promise; it is the outcome of a kitchen race. Fat has to melt enough to lubricate sugar and flour so the mass can flow; proteins and gelatinizing starch cannot lock a dome before that happens. Leavening gas—air from creaming, steam from water, CO₂ from chemical leaveners—either escapes outward as spread or expands upward as puff, depending on how viscous the dough is and how fast the surface sets. When butter stays cold too long, flour is high relative to fat, or chemical leavening peaks after a fast-forming crust, you get adorable little domes with tiny footprints. Dark pans and aggressive top heat can set a skin that traps gas like a mini soufflé. Fixing puff-without-spread is about lining up temperature, formula balance, and bake profile so outward flow wins the race you actually want.",
   "sections": [
     {
       "heading": "Starting dough temperature and plasticity",
       "paragraphs": [
-        "Chilling controls spread in many recipes, but excessive cold can overshoot: the dough enters the oven as discrete cold pellets, outer surfaces set while interiors remain rigid, and spread never links into a disk. Letting scoops temper slightly at room temperature—without melting butter—often restores predictable spread.",
-        "Very firm fat also reduces early surface sheen that helps cookies begin flowing; if your room is cold, even “room temperature” butter may be firmer than the recipe author’s kitchen."
+        "Chilling is a spread dial for many recipes, but over-chilled dough can overshoot: you put cold pebbles in the oven, the outside sets while the inside is still stiff, and the cookies never marry into a sheet. Letting scoops temper slightly—without melting the butter—often restores predictable spread.",
+        "In a cold kitchen, \"room temperature\" butter can still be firmer than the recipe author’s kitchen, which changes creaming, hydration, and how quickly the dough starts to move."
       ],
       "bullets": [
         {
@@ -38,35 +38,41 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Flour strength, hydration, and sugar type",
       "paragraphs": [
-        "Extra flour—whether from scoop packing or added bench flour—raises structural modulus, resisting outward flow. Strong bread flour can increase elastic snap compared to all-purpose, sometimes yielding taller, less spread-forward cookies unless balanced with fat and invert sugar. Invert sugar from corn syrup, honey, or molasses increases flow and browning; white sugar–heavy doughs can be crisper and more expansion-dependent on creamed air."
+        "Extra flour—whether from packed cups or heavy bench flour—raises structure and resists outward flow. Bread flour’s higher protein can add elastic snap compared with all-purpose, sometimes yielding taller, less spread-forward cookies unless you balance with fat and invert sugar. Corn syrup, honey, or molasses add invert sugar chemistry that encourages flow and browning; white-sugar-heavy doughs can ride more on trapped air and set faster into puffy rounds.",
       ],
       "tip": "If spread vanished after a flour brand change, test by weight and consider protein content before changing oven temperature."
     },
     {
       "heading": "Leavening sequence and creaming air",
       "paragraphs": [
-        "Double-acting baking powder releases early and late; a late burst after a top crust forms can dome the cookie like a mini-cake. Baking soda needs acid balance; mis-titration changes spread and color unpredictably. Over-creaming incorporates excess air that expands before melt-flow links the dough into a sheet, producing puffy rounds. Match creaming time to the recipe’s fat and sugar style."
+        "Double-acting baking powder puffs early from liquid contact and again from heat; a late burst after a crust forms can dome the cookie like a cupcake top. Baking soda needs acid partners; mismatch the acid and the timing goes weird, changing both spread and color in ways that feel random. Over-creaming traps extra air that expands before melt-flow links the dough into a disk, producing puffy rounds. Match creaming intensity to the recipe’s fat and sugar style instead of always chasing maximum fluff.",
+      ]
+    },
+    {
+      "heading": "Debug spread deliberately",
+      "paragraphs": [
+        "If the sheet story is \"no spread\" one week and \"puddles\" the next, you want a debugger habit, not superstition. Cookie mode in Fix My Recipe is useful for checking sugar-and-butter-heavy ratios against typical bands—but on the pan, change one thing at a time: a few grams of flour, a shorter chill, a slightly cooler oven, or a lighter pan. Photograph the tray at the same minute mark for two batches and let your eyes argue with your memory."
       ]
     },
     {
       "heading": "Oven heat, pans, and top skin formation",
       "paragraphs": [
-        "Dark metal and high rack positions increase radiant heat to tops and bottoms, accelerating crust set. If tops skin before edges relax outward, you lock a dome. Lighter pans, middle racks, or slightly lower temperature extend the flow window. Convection can set surfaces faster; try reducing convection fan speed or temperature when puff replaces spread in fan modes."
+        "Dark metal and high racks throw more radiant heat at tops and bottoms, accelerating crust set. If the top skins before the edges relax outward, you lock a dome. Lighter pans, middle racks, or a slightly lower temperature extend the flow window. Convection can set surfaces faster; if puff replaces spread only in fan mode, try gentler fan or a touch less temperature so the cookie gets seconds of slack.",
       ]
     }
   ],
   "faqs": [
     {
       "q": "Will more butter always increase spread?",
-      "a": "Usually, but only if butter can melt and flow in time. Adding fat without adjusting flour or oven can yield greasy puddles or still-tall cookies if structural balance goes wrong. Change one variable at a time."
+      "a": "Usually more fat helps spread, but only if it can melt and flow in time. Dumping in butter without adjusting flour or oven heat can land you in greasy puddles—or still-tall cookies if structure went lopsided. Change one variable, taste-test, then decide the next move."
     },
     {
       "q": "Why did my cookies spread before but not after chilling longer?",
-      "a": "Long chill firms fat and fully hydrates flour, changing viscosity and sometimes leavening availability. Temper scoops slightly longer before baking or adjust bake temperature to compensate."
+      "a": "Longer chill firms butter and finishes flour hydration, which changes viscosity and sometimes how leavening releases. Let scoops sit a few extra minutes before baking, or adjust oven temperature slightly so the exterior does not set while the center is still a cold rock—your notes from the last good batch are the cheat sheet."
     },
     {
       "q": "Are puffy cookies underbaked?",
-      "a": "Not necessarily—puff can be structural from air and set crust. Check internal texture: if centers are doughy, bake longer or lower; if centers are cakey and dry, you baked through but trapped expansion—process issue, not raw dough."
+      "a": "Not necessarily. Puff can be structural—trapped air and a quick skin—while the center is still tender or even dry-cakey. Poke and look: raw dough means more bake or gentler heat; cakey dryness with a tall dome is often process and timing, not \"underbaked.\""
     }
   ],
   "related": [

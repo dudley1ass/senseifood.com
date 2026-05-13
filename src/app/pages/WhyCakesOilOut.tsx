@@ -7,7 +7,7 @@ const SPEC: ScienceArticleSpec = {
   "segment": "cake-science",
   "categoryLabel": "Cake Science",
   "title": "Why Cakes Oil Out (Fat Separation in Batter)",
-  "subtitle": "Emulsion timing, fat temperature, and mixing sequence decide whether oil beads later weep from the crumb.",
+  "subtitle": "When you bring the fat into the batter, how warm everything is, and the order you mix things in all decide whether the cake will later weep oil out of the crumb.",
   "readTime": "8 min read",
   "level": "Process & temperature",
   "emoji": "🛢️",
@@ -15,59 +15,59 @@ const SPEC: ScienceArticleSpec = {
     "category": "cake",
     "problem": "general"
   },
-  "quickAnswer": "Oil on the surface or greasy streaks usually mean the fat–water emulsion broke during mixing or got too warm before structure set. Match fat softness to method, add eggs gradually, and avoid long holds at room temp before baking.",
-  "intro": "Cake batter is a temporary emulsion: fat droplets stay suspended in watery phases because proteins and emulsifiers (especially eggs) coat interfaces. When that balance fails—wrong temperature path, reversed sequence, or sitting too long—fat coalesces and migrates. The symptom shows up as shine, pools, or “sweating” slices. Oil-out is not always visible in the bowl; sometimes it emerges during baking or cooling when the matrix never fully captured fat droplets. Fixing it is less about “mix less” as a mantra and more about aligning temperature, order of addition, and hold conditions so surfactants meet fat in thin, stable films. SenseiFood treats this as interface physics: restore the conditions where droplets stay small and separated.",
+  "quickAnswer": "Visible oil on the surface or greasy streaks in the crumb almost always mean the emulsion (the suspension of tiny fat droplets in the water-based liquid) broke during mixing or got too warm before the cake structure had a chance to set. Match the softness of the butter to your mixing method, add eggs in stages instead of all at once, and avoid letting the batter sit at warm room temperature before baking.",
+  "intro": "Cake batter is a temporary emulsion: the tiny droplets of fat stay suspended inside the watery phase because proteins from the eggs and other emulsifiers (compounds like lecithin in egg yolk, which can hold onto both fat and water at the same time) coat the surface of each droplet and keep them from merging back together. When that balance fails—because the temperature was wrong at one step, you mixed things in the wrong order, or the batter sat around too long before baking—the fat droplets merge, coalesce, and migrate out of the matrix. The symptoms show up as shine on the surface, pools at the bottom of the pan, or slices that look like they are sweating. Oil-out is not always visible in the mixing bowl; sometimes it only appears during baking or cooling, when it turns out the batter never properly captured all the fat in the first place. Fixing it is less about chanting “do not over-mix” and more about lining up temperature, the order things go in, and how the batter is held so the emulsifiers can meet the fat in thin, stable films. SenseiFood treats this as interface physics: restore the conditions where the droplets stay small and well-separated from each other.",
   "sections": [
     {
-      "heading": "Temperature path through creaming and eggs",
+      "heading": "Temperature path through creaming and adding eggs",
       "paragraphs": [
-        "Butter that is too warm creams faster but creates larger, less stable fat droplets. Cold eggs shock warm fat and encourage splitting. Aim for cool-room butter and eggs that are neither fridge-cold nor warm; the old “same temperature” advice is really about avoiding shock at the oil–water boundary. If the bowl heats from a long mix, pause and scrape; surface heat is a silent emulsion killer. In warm kitchens, a slightly cooler fat starting point or a brief chill mid-process can save a borderline batter."
+        "Butter that is too warm creams faster, but it also produces larger, less stable fat droplets that are easier to coalesce later. Adding cold eggs straight from the fridge into warm butter shocks the fat and encourages the emulsion to split. Aim for cool-room butter and eggs that are neither fridge-cold nor warm; the classic “bring everything to the same temperature” advice is really about avoiding shock at the boundary between oil and water. If the mixer bowl is heating up from a long mix, pause and scrape down the sides—heat is a silent emulsion killer. In a warm kitchen, starting with slightly cooler butter or chilling the bowl briefly partway through can save a borderline batter."
       ]
     },
     {
       "heading": "Sequence: water and fat meet on your schedule",
       "paragraphs": [
-        "Dumping liquid before the fat phase is properly aerated and coated can wash out structure. Alternate dry and wet in stages so surfactants from yolk encounter fat in thin films, not floods. The goal is repeated small contacts, not one heroic pour. Reverse-creaming and other methods change where gluten develops; pick a method and commit. Halfway hybrid technique is a common way to split emulsions because the fat phase never got the treatment it assumed."
+        "Dumping a slug of liquid into a fat phase that has not yet been properly aerated and coated will wash out the structure. Alternate dry and wet ingredients in stages so the emulsifiers from the egg yolk meet the fat in thin films, not big floods. The goal is repeated small contacts, not one heroic pour. Different methods (creaming, reverse creaming, foam, oil-based one-bowl) develop gluten differently—pick one and commit. A halfway-hybrid method is a common way to split an emulsion, because the fat phase never got the careful treatment the original method assumed it would."
       ],
       "bullets": [
         {
           "title": "Egg addition",
-          "text": "Add eggs in portions, beating until each addition disappears before the next. Racing this step is how beginners create a curdled-looking batter that still bakes—but poorly."
+          "text": "Add the eggs in portions and beat until each addition fully disappears into the batter before you add the next one. Rushing this step is how beginners create a batter that looks curdled in the bowl—it can still bake, but poorly."
         }
       ]
     },
     {
-      "heading": "Holding phase before the oven",
+      "heading": "Holding the batter before the oven",
       "paragraphs": [
-        "Batters held hot (near a stove or in sun) can partially melt fat microstructure. If you must hold, keep covered and cool; rebalance by slightly chilling the pan before loading. Time is not neutral: emulsions age. Pouring into a hot metal pan that sat on a warm burner can reliquefy fat at the contact layer. Use a trivet and a room-temperature pan when possible."
+        "A batter that sits warm—near a hot stove, or in a sunny window—can lose its fat microstructure as the tiny solid butter crystals melt. If you must hold the batter, cover it and keep it cool, and slightly chill the pan before loading so the fat at the contact layer does not reliquefy. Time is not neutral: emulsions age. Pouring fresh batter into a hot metal pan that has been sitting on a warm stovetop will essentially melt the fat at the bottom layer of the cake before the oven even gets a say. Use a trivet and a room-temperature pan whenever you can."
       ]
     },
     {
-      "heading": "Bake set locks fat in place",
+      "heading": "Once the cake bakes, the fat is locked in place",
       "paragraphs": [
-        "Until starch gelatinizes and proteins denature, fat can still move. Under-baked centers often release more free fat as they cool because the network never fully imprisoned droplets. If your crumb is oily but wet, finish concerns may overlap with emulsion concerns—address doneness honestly. Over-baking can also squeeze fat from damaged protein networks, so the fix is not always “more time.” Look for the intersection of set structure and retained moisture your formula intends."
+        "Until the starch gelatinizes (absorbs water and swells into a set network) and the proteins denature (uncurl and link up into the cake’s permanent structure), fat is free to move around. An under-baked center often releases more free fat as it cools because the matrix never fully imprisoned the fat droplets. If the crumb is greasy and wet, doneness and emulsion are probably overlapping issues—do not just blame one. Over-baking can also squeeze fat out of damaged protein networks, so “bake it longer” is not always the right answer either. Look for the sweet spot where the structure is set and the moisture the recipe intended is still inside the crumb."
       ],
-      "tip": "If you see oil pooling on raw batter, remix is rarely safe—portion into a fresh bowl, slightly warm yolk with a splash of milk, and whisk back in off heat, or restart that stage."
+      "tip": "If you can already see oil pooling in raw batter, remixing the broken bowl is rarely a clean save—portion the broken batter into a new bowl, gently warm a yolk with a splash of milk, and whisk it back in off heat to rebuild the emulsion, or just restart that stage."
     },
     {
       "heading": "Oil after cooling: storage and slicing",
       "paragraphs": [
-        "Sometimes fat blooms on the surface after refrigeration because saturated fractions migrate and recrystallize. That can look like oil-out even when the batter was fine—taste and texture will differ from true separation. If slices are greasy only when cold, warm a piece slightly and compare. True emulsion failure tends to show consistently across temperatures."
+        "Sometimes fat blooms on the surface of a slice after refrigeration because the saturated fat fractions migrate and recrystallize at the surface. That can look like an oil-out problem even when the batter itself was fine—the taste and texture will be different from a true emulsion break. If the slices are only greasy when cold and seem fine after warming briefly, you are probably seeing fat bloom rather than a real failure. A true emulsion break tends to show up consistently across temperatures."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "My batter looks curdled but the recipe says it will come together—will it?",
-      "a": "Sometimes yes with continued mixing at the right temperature; sometimes no if fat is too warm or liquid was added too fast. If it stays broken after patient mixing, restart the fat–egg stage rather than baking hope."
+      "q": "My batter looks curdled but the recipe says it will come together—will it actually?",
+      "a": "Sometimes yes, with continued patient mixing at the right temperature it pulls itself back together. Sometimes no, if the fat got too warm or the liquid was added too fast and the emulsion has truly broken. If it still looks broken after a minute of patient mixing, restart the fat–egg stage rather than baking a hope."
     },
     {
-      "q": "Does oil-out mean I should reduce fat?",
-      "a": "Not automatically. Reducing fat changes tenderness and volume. First stabilize the emulsion and match process to the fat level you chose. Only adjust formula after process is sound."
+      "q": "Does oiling out mean I should use less fat next time?",
+      "a": "Not automatically. Cutting fat changes both the tenderness and the volume of the cake, so it is a big change for the wrong reason. First, stabilize the emulsion by fixing your process—temperature path, order of addition, how long the batter is held. Only adjust the formula after the process is solid."
     },
     {
-      "q": "Can oil-free or vegan batters oil out?",
-      "a": "They can still show separation-like symptoms—pooled oil from nut butters, split aquafaba emulsions, or melted coconut oil layers. The interface idea is the same: control temperature and gradual incorporation."
+      "q": "Can oil-free or vegan batters still oil out?",
+      "a": "Yes. They can still show separation-like symptoms—pooled oil leaking from nut butters, a split aquafaba (whipped chickpea liquid used as an egg substitute) emulsion, or a layer of melted coconut oil on top. The interface science is the same: control the temperature, and add ingredients gradually so the emulsifiers can actually do their job."
     }
   ],
   "related": [

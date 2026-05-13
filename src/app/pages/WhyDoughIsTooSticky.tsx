@@ -7,15 +7,15 @@ const SPEC: ScienceArticleSpec = {
   "segment": "bread-science",
   "categoryLabel": "Bread Science",
   "title": "Why Dough Is Too Sticky",
-  "subtitle": "Stickiness is usually hydration, weak gluten early in mixing, or flour absorption—not necessarily “too much water.”",
+  "subtitle": "Sticky usually means high hydration for your flour, gluten still organizing, or hands/tools grabbing the surface—not automatically \"you added too much water\" in a simple way.",
   "readTime": "7 min read",
   "emoji": "🖐️",
   "fixRecipe": {
     "category": "bread",
     "problem": "general"
   },
-  "quickAnswer": "Sticky dough often means you are mid-mix before gluten aligns, your hydration is high for your flour, or your hands/tools are dry and grabbing the surface. Wait for rest, use wet hands, and adjust flour brand or hydration on the next bake.",
-  "intro": "Sticky is the wrong word for what beginners feel; “highly hydrated and under-developed” is closer. Professional bakers expect tackiness in many doughs and use technique—folds, scrapers, wet hands—to manage it. This article separates normal tack from true errors so you do not panic-flour your way into a brick. Stickiness often reflects hydration above flour absorption, incomplete gluten development, or amylase activity making slack dough. Finished dough temperature near 75–80°F (24–27°C) feels stickier than cold dough at same hydration due to fat and water mobility.",
+  "quickAnswer": "Tacky dough is often a phase: early mixing looks like glue until gluten aligns, or your hydration is high for this bag of flour, or your dry hands are tearing the surface. Wait through a rest, use wet hands and a bench scraper, and adjust hydration next bake if stickiness survives full development.",
+  "intro": "\"Sticky\" is the word beginners reach for when professionals would say \"highly hydrated\" or \"under-developed.\" Many artisan formulas are supposed to feel tacky; technique—folds, scraper work, timed rests—carries you across the ugly stage. True problems show up when tackiness never resolves after development, or when the loaf spreads instead of holding tension. Flour absorption, dough temperature, and even amylase activity in some grains can make slack dough. Finished dough near 75–80°F (24–27°C) feels sticker than the same dough colder because water and fat move more freely. You are not failing because it clings; you are learning what your flour asked for.",
   "sections": [
     {
       "heading": "Development timeline",
@@ -26,14 +26,14 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Hydration vs flour absorption",
       "paragraphs": [
-        "An 80% hydration recipe written for a specific mill may feel impossible with another brand. Protein, damaged starch, and milling style change how water binds."
+        "An 80% hydration recipe written for one mill can feel like soup with another bag because protein level, damaged starch, and milling style all change how water binds. That is not you \"doing it wrong\"; it is two flours having different opinions about the same number.",
       ],
       "tip": "Reserve 5% water; add only if the dough genuinely refuses to hydrate after folds."
     },
     {
       "heading": "Technique: friction and temperature",
       "paragraphs": [
-        "Cold, dry hands grab dough. Wet hands and a bench scraper reduce tearing. Warm dough is softer; cold dough is firmer—temperature is a texture knob."
+        "Cold, dry hands mechanically grab and tear the dough surface, which feels like extra stickiness that is not really extra water. Wet hands and a bench scraper let you fold without shredding. Temperature is a texture knob: warm dough is softer, cold dough is firmer at the same hydration.",
       ]
     },
     {
@@ -51,15 +51,15 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Handling technique",
       "paragraphs": [
-        "Wet hands and bench scraper beat adding flour repeatedly—which changes ratio."
+        "Wet hands and a bench scraper beat reflexively dusting flour into the dough, which silently rewrites your formula and then confuses every later step.",
       ]
     },
     {
-      "heading": "Benchmark temperatures and a repeatable test protocol",
+      "heading": "What to measure when stickiness is the whole mood",
       "paragraphs": [
-        "This guide on why dough is too sticky is easier to act on when you anchor numbers instead of vibes. For lean wheat doughs, internal doneness often lands near 200–208°F (93–97°C) in the thickest part; enriched doughs may finish a few degrees lower while still safe. Bulk fermentation is most predictable around 75–80°F (24–27°C) for many straight doughs—colder slows yeast exponentially; warmer accelerates alcohol and acid production. If you shape cold, allow bench rest until the dough yields when pressed—typically 10–20 minutes at room temperature—before final tension. Steam in the first minutes of baking keeps crust extensible for oven spring; venting later drives Maillard browning. Write down ambient kitchen temperature (°F), the set point on your oven or machine, and—when relevant—an internal probe reading or brew time. Change one input per trial: flour brand, hydration percentage, grind setting, chill time, or rack position. Photograph crumb or cup side-by-side after each change. SenseiFood’s Fix My Recipe debugger pairs these observations with ratio checks for your category so the next bake or brew is a measured step, not a guess.",
-        "If you use °C in the kitchen, convert critical bands once and tape them inside a cabinet: 200°F ≈ 93°C (cake/bread finish neighborhood), 350°F ≈ 177°C (common cake/cookie air set point), 212°F = 100°C (sea-level water boil), and espresso extraction times often discussed in the 25–35 second range for classic 9-bar shots—always taste-adjusted to your machine. Altitude lowers water’s boiling point, which shifts extraction and evaporation; bakers at elevation should rely more on internal temperature and visual set than on clock alone.",
-        "Humidity changes how dough skins, how icing behaves, and how staling feels the next day—note outdoor weather when results swing for no obvious reason. For anything oven-based, log preheat completion time: many ovens continue drifting 10–20°F after the beep. For frozen desserts, log freezer display temp if available; a chest freezer near −10°F (−23°C) behaves differently than a frost-free kitchen freezer with defrost cycles. Small environmental logs turn one-off failures into solvable patterns."
+        "Sticky dough often improves once gluten finishes organizing, but while you are in the messy middle, temperature still matters: finished dough around 75–80°F (24–27°C) feels tackier than the same hydration at 65°F (18°C) because fat and water move more freely. For baked loaves, internal doneness for many lean doughs lands near 200–208°F (93–97°C) in the thickest part; enriched breads may finish a few degrees lower while still being safe—those numbers help you separate \"sticky dough problem\" from \"underbaked crumb problem\" when troubleshooting.",
+        "If you prefer Celsius, translate your common bands once and tape them inside a cupboard: 24–27°C is a familiar bulk-fermentation comfort zone for many straight doughs; 93–97°C is the usual internal finish neighborhood for lean loaves. Altitude lowers water’s boiling point, so crust set and stovetop evaporation behave differently in mountain kitchens—lean on internal temperature and crumb look more than the clock alone.",
+        "Humidity changes how flour behaves from the bag and how fast dough skins on the counter; rainy-week flour can feel thirstier without you changing the recipe text. For ovens, remember the beep often lies: many units drift another 10–20°F after preheat. None of this requires a lab coat—just enough notes that \"Wednesday sticky\" can find Wednesday’s actual culprit."
       ]
     }
   ],
@@ -76,11 +76,11 @@ const SPEC: ScienceArticleSpec = {
   "faqs": [
     {
       "q": "Sticky vs wet?",
-      "a": "Wet is excess water; sticky can be protease or high hydration design."
+      "a": "Wet usually means free water pooling; sticky can be normal tack or enzyme-softened dough that still has the right hydration for an open crumb. Taste the process: if it smooths after folds, trust the folds.",
     },
     {
       "q": "Fix with more flour always?",
-      "a": "Last resort—better folds and time."
+      "a": "Last resort—bench flour permanently changes the formula. Better folds, time, wet hands, and adjusting hydration on the next bake beat panic-scooping dry flour into a finished dough.",
     }
   ]
 };

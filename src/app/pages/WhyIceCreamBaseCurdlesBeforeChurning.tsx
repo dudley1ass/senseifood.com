@@ -7,7 +7,7 @@ const SPEC: ScienceArticleSpec = {
   "segment": "ice-cream-science",
   "categoryLabel": "Ice Cream Science",
   "title": "Why Ice Cream Base Curdles Before Churning",
-  "subtitle": "Egg yolk + heat + acid without enough buffering crosses the tight curd line.",
+  "subtitle": "Curdled base before the churn usually means yolk proteins hit their tight-curd zone too fast—too much heat, too little tempering, or acid joining the party before the emulsion was stable.",
   "readTime": "7 min read",
   "level": "Cook step",
   "emoji": "🥚",
@@ -15,8 +15,8 @@ const SPEC: ScienceArticleSpec = {
     "category": "iceCream",
     "problem": "general"
   },
-  "quickAnswer": "Curdled bases come from cooking custard too hot or too fast, or acid added before proteins are protected by enough fat/sugar. Temper, lower heat, strain if needed.",
-  "intro": "French-style ice cream bases are thin custards: egg yolk proteins, dairy fat, water, and sugar in a delicate balance. Heat thickens by unfolding and bonding yolk proteins into a network that traps moisture; push too hard and the same proteins aggregate into visible curds—the same failure mode as scrambled eggs or broken hollandaise. Acids tighten protein networks; alcohol and some chocolates shift set behavior. This guide covers temperature ramps, ingredient sequencing for acidic or bitter additions, holding and carryover heat, and how to recover or restart when you catch grain early.",
+  "quickAnswer": "French-style bases are thin custards: heat thickens yolks by unfolding proteins into a network, but push too hard and the same proteins clump into grains. Cook gently to nappe, temper acids, and move the pan off heat early—heavy metal keeps writing checks after the burner stops.",
+  "intro": "Ice cream base curdle is the same family as scrambled eggs in a tuxedo: dairy plus yolk plus heat, with sugar and fat trying to keep proteins smooth. Winey reductions, bright citrus, and some chocolates all move the pH and tannin chess pieces. This guide is about ramps and sequencing—double boiler when your stove runs hot, constant scraping at corners, and catching grain while straining still helps—so you churn silk instead of sand.",
   "sections": [
     {
       "heading": "Temperature ramp for yolk set",

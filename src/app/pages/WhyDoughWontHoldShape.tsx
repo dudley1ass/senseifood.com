@@ -7,59 +7,59 @@ const SPEC: ScienceArticleSpec = {
   "segment": "bread-science",
   "categoryLabel": "Bread Science",
   "title": "Why Dough Won't Hold Shape",
-  "subtitle": "Slack dough is about strength, proof state, and hydration relative to protein—not “bad yeast.”",
+  "subtitle": "A loaf that puddles usually needs more gluten strength, a tighter proof window, or better surface tension—not a shame spiral about yeast brands.",
   "readTime": "8 min read",
   "emoji": "🫓",
   "fixRecipe": {
     "category": "bread",
     "problem": "dense"
   },
-  "quickAnswer": "Dough spreads when gluten is too weak for the hydration used, when it is over-proofed and relaxed, or when shaping skipped surface tension. Strengthen with folds, moderate hydration, or shorter proof.",
-  "intro": "Shape memory in bread is elastic energy stored in gluten. If that network is slack, the dough obeys gravity and becomes a puddle. Fixing shape is about aligning time, temperature, and strength so the loaf you place in the oven is the loaf you meant to bake. Shape retention needs gluten tension and surface dryness; over-hydrated or over-proofed dough flows. Bench rest at 68–75°F (20–24°C) allows relaxation without collapse—too cold and it springs back, too warm and it spreads.",
+  "quickAnswer": "Slack dough spreads when the gluten net cannot hold the hydration you chose, when proof sailed past the peak, or when shaping never created real surface tension. Add folds, trim hydration a few percent, proof to the right jiggle, and finish with confident tensioning—not timid patting.",
+  "intro": "Bread shape is stored elastic energy: if the gluten jacket is loose, gravity wins and you get a puddle. Over-hydration beyond your flour’s comfort zone, over-proofing that relaxes structure, or under-shaping that skips tension all read as \"won't hold shape\" in the banneton. Bench rest around comfortable room temperature lets gluten relax without collapse—too cold and it springs forever, too warm and it flows. This is alignment work: time, temperature, and strength have to agree.",
   "sections": [
     {
       "heading": "Hydration beyond flour strength",
       "paragraphs": [
-        "Social media hydration numbers are not universal. Your flour may not support 78% for a tall batard without careful technique."
+        "Internet hydration brags are not universal. Your flour may not support 78% for a tall batard unless you have the folds, the fermentation control, and the shaping practice that recipe assumed—sometimes the author did not say the quiet part out loud."
       ]
     },
     {
       "heading": "Proofing past the peak",
       "paragraphs": [
-        "An over-proofed dough relaxes; shaping tension dissipates within minutes. The poke test and volume cues matter more than the clock."
+        "Over-proofed dough relaxes; the skin you created disintegrates within minutes. Poke tests and volume cues beat the clock on the recipe card because your kitchen temperature is not the author's kitchen temperature."
       ]
     },
     {
       "heading": "Shaping skills",
       "paragraphs": [
-        "Tension pulls align outer gluten strands like a rubber band. Under-shaped loaves flatten. Practice with lower hydration dough first."
+        "Tension pulls align outer gluten strands so the loaf holds its spring in the oven. Under-shaped loaves flatten. Practice on a lower hydration dough if high hydration feels like wrestling an octopus.",
       ],
-      "tip": "Cold final proof (retard) firms butter-rich doughs for easier scoring."
+      "tip": "Cold final proof (retard) firms enriched dough for easier scoring and less spread on the flip."
     },
     {
       "heading": "Structured experiments",
       "paragraphs": [
-        "Change hydration or proof time—not both at once. Use Fix My Recipe to see whether your formula already sits at the extreme edge of typical strength bands."
+        "Change hydration or proof time—not both in the same batch. Fix My Recipe can show if you already live at the extreme edge of strength bands for your style."
       ]
     },
     {
       "heading": "Strength building",
       "paragraphs": [
-        "Letter folds during bulk build structure without aggressive mixing. Final shaping should create surface tension—skin seals expansion. Banneton flour supports wet dough; too little and dough sticks; too much and seam slides."
+        "Letter folds during bulk add structure without tearing. Final shaping should create a skin that seals expansion. Banneton flour supports wet dough; too little sticks, too much lets the seam skate."
       ]
     },
     {
       "heading": "Timing",
       "paragraphs": [
-        "Shape after sufficient strength exists—under-developed dough tears when tensioned."
+        "Shape after strength exists: under-developed dough tears when you tension it, which feels like failure but is really \"not yet.\""
       ]
     },
     {
-      "heading": "Benchmark temperatures and a repeatable test protocol",
+      "heading": "Hydration, proof, and heat in the same language",
       "paragraphs": [
-        "This guide on why dough won't hold shape is easier to act on when you anchor numbers instead of vibes. For lean wheat doughs, internal doneness often lands near 200–208°F (93–97°C) in the thickest part; enriched doughs may finish a few degrees lower while still safe. Bulk fermentation is most predictable around 75–80°F (24–27°C) for many straight doughs—colder slows yeast exponentially; warmer accelerates alcohol and acid production. If you shape cold, allow bench rest until the dough yields when pressed—typically 10–20 minutes at room temperature—before final tension. Steam in the first minutes of baking keeps crust extensible for oven spring; venting later drives Maillard browning. Write down ambient kitchen temperature (°F), the set point on your oven or machine, and—when relevant—an internal probe reading or brew time. Change one input per trial: flour brand, hydration percentage, grind setting, chill time, or rack position. Photograph crumb or cup side-by-side after each change. SenseiFood’s Fix My Recipe debugger pairs these observations with ratio checks for your category so the next bake or brew is a measured step, not a guess.",
-        "If you use °C in the kitchen, convert critical bands once and tape them inside a cabinet: 200°F ≈ 93°C (cake/bread finish neighborhood), 350°F ≈ 177°C (common cake/cookie air set point), 212°F = 100°C (sea-level water boil), and espresso extraction times often discussed in the 25–35 second range for classic 9-bar shots—always taste-adjusted to your machine. Altitude lowers water’s boiling point, which shifts extraction and evaporation; bakers at elevation should rely more on internal temperature and visual set than on clock alone.",
-        "Humidity changes how dough skins, how icing behaves, and how staling feels the next day—note outdoor weather when results swing for no obvious reason. For anything oven-based, log preheat completion time: many ovens continue drifting 10–20°F after the beep. For frozen desserts, log freezer display temp if available; a chest freezer near −10°F (−23°C) behaves differently than a frost-free kitchen freezer with defrost cycles. Small environmental logs turn one-off failures into solvable patterns."
+        "This guide on why dough won't hold shape gets calmer when you connect slack dough to proof state and real temperatures, not vibes. Shaping works best when bulk fermentation actually happened—cold, under-proofed dough can be springy; over-proofed dough goes puddle. Finished lean loaves still often finish near 200–208°F (93–97°C) internally even when shaping felt dramatic.",
+        "Celsius anchors help: mid-20s °C bulk is common for straight doughs; fridge retard is ~3–4°C depending on your drawer. Altitude changes crust behavior and evaporation; it does not remove the need for surface tension in shaping.",
+        "Humidity and flour absorption change how the same percent hydration behaves in your hands. If the loaf spreads, write dough temperature at shaping and proof time—two numbers that prevent mythology."
       ]
     }
   ],

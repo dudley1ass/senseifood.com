@@ -7,7 +7,7 @@ const SPEC: ScienceArticleSpec = {
   "segment": "coffee-science",
   "categoryLabel": "Coffee Science",
   "title": "Why Coffee Tastes Better at Certain Temperatures",
-  "subtitle": "Sweet–sour–bitter balance moves as solubility and volatility change down the cooling curve.",
+  "subtitle": "The balance of sweet, sour, and bitter in a cup shifts as the coffee cools, because the chemistry of solubility and the way aromas evaporate both change with temperature.",
   "readTime": "8 min read",
   "level": "Temperature curve",
   "emoji": "🌡️",
@@ -15,58 +15,58 @@ const SPEC: ScienceArticleSpec = {
     "category": "coffee",
     "problem": "general"
   },
-  "quickAnswer": "Many coffees “open up” between roughly 120–150°F where acids integrate with sugars; too hot masks detail, too cold exposes ash and tannin. Taste the same cup across a 10-minute window. Temperature changes volatility, so aroma intensity and perceived balance shift even when dissolved solids stay the same.",
-  "intro": "Coffee flavor is not a static label on a bag—it is what reaches your nose and tongue at the moment of sipping, and that depends strongly on temperature. Near boiling, volatile aromatics can be so abundant that they crowd out subtle floral or fruit notes, while painful heat also limits taste bud discrimination. As the cup cools, different compound classes become more or less obvious: acids may first read sharp, then integrate with perceived sweetness, while bitter and astringent notes that were hidden behind heat can emerge late if extraction was uneven. Light roasts with prominent acids and delicate aromatics often show a sweet spot where brightness is lively but not shrill; darker roasts may taste most balanced when bitterness and roast-derived sweetness meet at a drinkable warmth. Milk modifies the curve because lactose sweetness, protein texture, and fat coat the palate differently across temperatures. Treat cooling as part of the recipe: the same brew can be “too sour” at minute two and “just right” at minute eight, which is not inconsistency—it is physics and sensory physiology working as designed.",
+  "quickAnswer": "A lot of coffees “open up” somewhere between roughly 120–150°F (about 49–66°C), where the acidity finally feels like it is sitting nicely next to the sweetness. Hotter than that and the heat masks the detail; colder than that and ashy or tannic notes can start showing up. Try tasting the same cup three or four times across a 10-minute window. Temperature changes how easily the aroma molecules float up to your nose, so the perceived balance shifts even when the dissolved solids in the cup are exactly the same.",
+  "intro": "Coffee flavor is not a fixed label written on the bag—it is whatever actually reaches your nose and tongue at the moment you sip, and that depends strongly on temperature. Near-boiling coffee can throw so many volatile aromatics (the easily-evaporating compounds that build smell) at your nose that they crowd out subtle floral or fruit notes; painful heat also limits how well your taste buds can pick out detail. As the cup cools, different families of compounds become more or less obvious. Acids may first read as sharp, then integrate with the perceived sweetness, while bitter and astringent notes that were hidden behind the heat can quietly emerge later if the extraction was uneven. Light roasts with prominent acids and delicate aromatics often have a sweet spot where the brightness is lively but not shrill; darker roasts may taste their most balanced where bitterness and roast-derived sweetness meet at a comfortably drinkable warmth. Milk modifies the cooling curve because the lactose (milk sugar) sweetness, the milk proteins, and the milk fat coat your palate differently at different temperatures. So treat cooling as part of the recipe: the same brew can be “too sour” at minute two and “just right” at minute eight, and that is not inconsistency—it is physics and your sensory physiology working exactly as designed.",
   "sections": [
     {
-      "heading": "Cooling as part of recipe design",
+      "heading": "Cooling as part of how a coffee actually tastes",
       "paragraphs": [
-        "Professional cupping cups cool on purpose because flavor is a trajectory, not a snapshot. What you taste at 160°F is not what you taste at 130°F, and evaluators often wait for heat to fall before scoring acidity or aftertaste. Home drinkers can use the same idea: if a coffee seems one-dimensional hot, wait—complexity may arrive later.",
-        "Volatility drops as temperature falls, which can paradoxically make specific notes easier to name because the nose is not overwhelmed. Conversely, defects like rubber, phenolic, or stale cardboard may hide under heat and show only as the cup cools—cooling is both a reveal and a diagnostic."
+        "Professional cupping bowls (the formal evaluation cups used by tasters to score coffees) cool on purpose, because flavor is a trajectory across time, not a single snapshot. What you taste at 160°F (71°C) is not what you taste at 130°F (54°C), and evaluators often wait for the heat to drop before scoring acidity and aftertaste. Home drinkers can use the same idea: if a coffee feels flat or one-dimensional while it is still scalding hot, just wait—complexity often arrives later.",
+        "Volatility (how easily molecules evaporate) drops as the cup cools, which can paradoxically make specific aromas easier to name because your nose is not overwhelmed. The reverse is also true: defects like rubbery, phenolic (a medicinal, plastic-like aroma), or stale cardboard notes may be hidden under heat and only reveal themselves as the cup cools—so cooling is both a way of revealing more flavor and a useful diagnostic tool for figuring out what is going on."
       ],
       "bullets": [
         {
           "title": "Sip twice",
-          "text": "Take a small sip while hot for mouthfeel, then revisit after five minutes for acidity and after ten for balance—your brain is comparing different sensory mixes."
+          "text": "Take a small sip while the coffee is hot to assess mouthfeel and texture, then revisit after five minutes for acidity, and again after ten for overall balance—your brain is comparing different sensory mixes each time."
         },
         {
           "title": "Same brew, different story",
-          "text": "If flavor only improves with cooling, extraction or roast pairing may be fine; you simply prefer the volatile profile in a cooler window."
+          "text": "If a coffee only really tastes good after it has cooled a bit, your extraction and roast match are probably fine; you simply prefer the aroma profile in a cooler window."
         }
       ]
     },
     {
-      "heading": "Sweetness, acidity, and bitterness on the curve",
+      "heading": "Sweetness, acidity, and bitterness as the cup cools",
       "paragraphs": [
-        "Human sweetness perception interacts with temperature, but coffee sweetness is also tied to aromatics and viscosity. Cooling can make sucrose-like impressions more obvious if acids relax relative to sugars, or can expose sourness if acids remain dominant and bitter compounds were low. Bitter and astringent sensations from chlorogenic derivatives and tannins can become more noticeable in lukewarm coffee, especially if the shot or brew carried channeling or over-extraction. That is why “great hot, unpleasant cold” sometimes flags process issues, not preference."
+        "How sweet you perceive coffee to be is partly a function of temperature, but coffee sweetness is also tied to aromatics and viscosity (how thick the cup feels in your mouth). Cooling can make sucrose-like sweet impressions more obvious if the acidity relaxes relative to the sugars, or it can expose sourness if the acids remain dominant and the bitterness is low. Bitter and astringent sensations from chlorogenic acid breakdown products and tannins (astringent compounds that grip the tongue like over-steeped tea) can become more noticeable in lukewarm coffee, especially if the brew involved channeling or over-extraction. That is why a coffee that tastes “great hot but unpleasant cold” sometimes signals a process issue with the extraction itself, not just personal preference."
       ],
-      "tip": "If coffee is harsh when cool, fix extraction and roast fit before chasing hotter serving—temperature only rearranges what is already in the cup."
+      "tip": "If a coffee turns harsh once it cools, fix the extraction and roast match first—serving it hotter only masks problems; cooling rearranges what is already in the cup but cannot remove anything that should not be there."
     },
     {
-      "heading": "Milk drinks shift the window",
+      "heading": "Milk drinks shift the whole window",
       "paragraphs": [
-        "Cappuccinos and lattes integrate acidity against lactose sweetness and fat-mediated mouthfeel. The perceived peak sweetness for milk coffees often sits in a narrower band than black coffee because overheated milk tastes cooked and underheated milk tastes thin. Foam insulation changes cooling rate: thick microfoam keeps the liquid hotter longer, delaying the window where acidity integrates. That can make the same espresso read brighter in a wet flat white timing versus a dry cappuccino timing even with identical shots."
+        "Cappuccinos and lattes mix the coffee’s acidity against milk’s lactose sweetness and the mouthfeel from milk fat. The perceived peak sweetness for a milk-based coffee often lives in a narrower temperature band than for black coffee, because overheated milk tastes cooked and sulfurous while underheated milk tastes thin and watery. The foam acts as insulation: a thick microfoam (the dense, paint-like milk foam used in latte art) keeps the liquid hotter for longer, delaying the moment where the acidity integrates. That can make the exact same espresso shot read as brighter in a wet flat white timing (more steamed milk, less foam) than in a dry cappuccino timing (more foam, less liquid)."
       ]
     },
     {
       "heading": "Holding, reheating, and service pitfalls",
       "paragraphs": [
-        "Burners and hot plates continue extraction and drive off volatiles; long-held coffee tastes stale even from a fresh grind because time and heat oxidize and evaporate desirable aromatics. Thermal carafes slow that path but do not freeze chemistry—drink within a reasonable window. Microwave reheating can reintroduce uneven hot spots that spike volatility and bitterness perception; gentle swirling after microwaving helps. For iced transitions, rapid chilling changes which acids dominate—cold brew and flash-chilled coffee exist partly to engineer a different balance than slow-cooled hot coffee."
+        "Burners and hot plates keep extracting the coffee (yes, even after the brew is done) and continuously drive off the volatile aromatics. A coffee that has been held on heat for hours tastes stale even when the beans were freshly ground, because time plus heat causes oxidation and aromatic evaporation. A thermal carafe slows that path but does not stop the chemistry—drink within a reasonable window. Microwave reheating can leave uneven hot spots in the cup that spike both volatility and bitterness; a gentle swirl after microwaving helps even things out. For iced transitions, rapid chilling changes which acids dominate the cup—cold brew (coffee brewed for many hours with cold water) and flash-chilled coffee (hot-brewed coffee chilled over ice in seconds) exist partly because they let you engineer a different balance of acids and sugars than you would get by simply letting hot coffee cool slowly."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Is there an ideal thermometer number for best taste?",
-      "a": "Not universally. Use ranges as guides: many people prefer black filter coffee coolest below scalding and above room temperature. Your roast, grind, and water recipe determine whether sweetness peaks early or late on the curve—taste across time and note where you enjoy it."
+      "q": "Is there one ideal serving temperature for the best taste?",
+      "a": "Not universally. Use ranges as guides: most people prefer black filter coffee somewhere below truly scalding and above room temperature, but the exact sweet spot depends on the roast, the grind, and your water recipe. Taste the same cup at multiple temperatures and note where you enjoy it the most—that is your number."
     },
     {
-      "q": "Why does my espresso taste sour only after it cools?",
-      "a": "Cooling reduces masking by heat and high-temperature aromatics, so under-extracted acids can stand out. It can also change how you perceive balance against bitterness. If sourness dominates only when cold, revisit yield, temperature, and evenness of extraction."
+      "q": "Why does my espresso only taste sour once it cools down?",
+      "a": "As the cup cools, the heat is no longer masking the acidity, and your perception of the balance between acid and bitterness shifts toward the acid side. If sourness really only dominates when the espresso is cold, it is worth revisiting the yield (the weight of liquid in the shot), the water temperature, and how evenly the puck extracted."
     },
     {
       "q": "Do light roasts need hotter brewing than dark roasts?",
-      "a": "Roast level changes solubility and bean structure, so recipes differ, but drinking temperature is still about sensory balance. Light roasts are not obligated to be consumed hotter; they often show more fruit as they cool if extraction is clean."
+      "a": "Roast level changes the solubility of the bean and how dense the cell walls are, so brewing recipes do legitimately differ, but the temperature at which you actually drink the coffee is still about sensory balance. Light roasts are not required to be sipped piping hot—they often show more fruit as they cool, as long as the extraction was clean."
     }
   ],
   "related": [

@@ -7,7 +7,7 @@ const SPEC: ScienceArticleSpec = {
   "segment": "sauce-science",
   "categoryLabel": "Sauce Science",
   "title": "Why Sauces Clash With Protein (Pairing Science)",
-  "subtitle": "Intensity, fat level, and Maillard spectrum need to align across the bite timeline.",
+  "subtitle": "Intensity, fat level, and the spectrum of browned (Maillard) notes have to line up across the bite—when they don't, your tongue reads chaos instead of a composed dish.",
   "readTime": "8 min read",
   "level": "Pairing physics",
   "emoji": "🥩",
@@ -15,13 +15,13 @@ const SPEC: ScienceArticleSpec = {
     "category": "baking",
     "problem": "general"
   },
-  "quickAnswer": "Clash is often contrast without bridge: seared bitter crust + sharp acid + sweet glaze overloads sequence. Match weight, bridge with shared brown notes, and stagger peaks of salt/acid.",
-  "intro": "A composed plate is not one flavor—it is a sequence. Protein brings fat, browned-bitter notes, and savory depth; sauces bring acid, sweetness, emulsified richness, and aromatics. Clash happens when several strong peaks arrive at once (bitter plus sharp plus sweet) or when textures fight (silky emulsion on dry lean meat). Good pairings share a frequency range: a little of the sauce’s brown sugar echoes the sear, the acid is timed to cut fat instead of screech across it, and salt is placed so it amplifies both sides. This guide breaks down the usual collision modes—Maillard load, temperature mismatch, and thickness at contact—so you can adjust sauces like you adjust seasoning: with intent, not hope.",
+  "quickAnswer": "A clash is usually contrast without a bridge: a seared, bitter crust plus a sharp vinegar bite plus a sweet glaze all arriving at the same moment overloads the flavor sequence. Match the weight of the sauce to the weight of the protein, build a bridge with shared brown notes (a touch of caramelization, a hint of toasted garlic, similar herbs), and stagger the salt and acid peaks so they don't fire all at once.",
+  "intro": "A composed plate isn't really one flavor—it's a sequence that unfolds across a few seconds in your mouth. Protein brings fat, the browned-bitter notes of a Maillard sear (the browning chemistry between proteins and sugars at high heat), and savory depth. Sauces bring acid, sweetness, emulsified richness, and aromatic compounds. A clash happens when several strong peaks all arrive at once—bitter plus sharp plus sweet stacking on top of each other—or when the textures fight (a silky butter emulsion poured over a dry, lean piece of meat). Good pairings share a frequency range: a little of the sauce's brown sugar echoes the sear, the acid is timed to cut through the fat instead of screech across it, and salt is placed so it amplifies both sides of the bite. This guide breaks down the most common collision modes—Maillard load, temperature mismatch, and sauce thickness at the moment of contact—so you can adjust a sauce the way you adjust seasoning: with intent rather than hope.",
   "sections": [
     {
       "heading": "Maillard load on protein vs acid in sauce",
       "paragraphs": [
-        "Deep sear and long reduction both push roasted, bitter-tending melanoidins. If your sauce also leans on reduced wine, charred allium, or aggressive caramel, you can stack two bitter anchors without a sweet or creamy bridge. The palate reads confusion: nothing feels like the “main note,” so each bite argues. Fixes are reduction-of-intensity or addition-of-bridge: choose either less sear or a mellower sauce base; add a controlled sweet (fruit, mirin used thoughtfully) or dairy/emulsion fat to bind the edges; or lift umami with a small amount of glutamate-rich ingredients so salt does less heavy lifting."
+        "A deep sear on the protein and a long reduction in the sauce both push compounds called melanoidins—the dark, roasted, slightly bitter molecules that come from the Maillard reaction. If your sauce also leans on reduced wine, charred allium, or aggressive caramel, you can quickly stack two bitter anchors on the plate without any sweet or creamy bridge between them. Your palate reads confusion: nothing feels like the 'main note,' so each bite ends up arguing with itself. The fixes are either reduction of intensity or addition of a bridge—choose either less sear or a mellower sauce base; add a controlled sweet element (fresh fruit, a splash of mirin used thoughtfully, a small amount of honey) or a dairy or emulsion fat to round the edges; or lift the umami (the savory, glutamate-driven taste of cured meats, aged cheese, soy, mushrooms) so salt doesn't have to do all the lifting itself."
       ],
       "bullets": [
         {
@@ -37,34 +37,34 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Temperature at contact",
       "paragraphs": [
-        "Temperature changes volatility. A cold chimichurri on scorching steak can flash off aromatics before you taste them, leaving mainly acid and oil. Conversely, a butter-emulsion sauce that is too hot can feel thin and greasy on the tongue because fat separates perceptionally from the protein’s chew. Temper toward closeness: warm the sauce to near service temperature of the meat for emulsions; for bright herb sauces, consider spooning onto rested slices so the meat surface is not still radiating enough heat to obliterate delicate top notes."
+        "Temperature changes how volatile flavor molecules behave on the tongue. A cold chimichurri poured onto scorching-hot steak will flash off most of its aromatic top notes before you taste them, leaving mostly acid and oil on the plate. The opposite is also true—a butter-emulsion sauce that's too hot reads thin and greasy because the fat starts separating from the protein's chew in real time. Aim for closeness: warm an emulsion sauce to nearly the same service temperature as the meat, and for bright herb sauces, spoon them onto rested slices so the meat surface isn't still radiating enough heat to obliterate the delicate top notes you carefully built into the sauce."
       ]
     },
     {
       "heading": "Sequence in composed bites",
       "paragraphs": [
-        "Thickness changes where flavor lands. A thin jus pooled under slices integrates into every bite; a thick glaze painted on top can taste like dessert-on-meat unless sweetness and acid are balanced for that placement. Think about fork behavior: will diners drag through sauce, or lift meat through it? Design one primary contrast per bite—acid *or* sweet spike *or* crunchy garnish—not all three unless you have fat and umami holding the center."
+        "How thick the sauce is at the moment of contact changes where the flavor lands in the bite. A thin jus pooled under sliced meat integrates into every forkful evenly; a thick glaze painted on top can taste like dessert smeared on protein unless the sweetness and acid are deliberately balanced for that placement. Think about fork behavior at the table: will diners drag the meat through the sauce, or lift it through the pool? Design for one primary contrast per bite—an acid hit, or a sweet spike, or a crunchy garnish—rather than all three at once, unless you've got enough fat and umami at the center of the dish to hold those contrasts together."
       ]
     },
     {
       "heading": "Sides as hidden sauce",
       "paragraphs": [
-        "Mashed potatoes, polenta, and rice are often the real moderators: they sponge acid and carry fat. If you omit starchy sides, the same sauce can suddenly feel aggressive on protein alone. When plating lean, account for that missing buffer or reduce sauce intensity."
+        "Mashed potatoes, polenta, and rice are often the real moderators of a plated dish: they sponge up acid and carry fat into the bite at a manageable concentration. If you omit a starchy side and serve the protein lean, the same sauce that worked beautifully last week can suddenly feel aggressive because that buffering mass is missing. When you're plating lean, account for the missing buffer by either dialing the sauce's acid or sweet peaks down a notch or by adding a small amount of starchy garnish (a smear of celeriac purée, a few crispy chickpeas) to do the job the missing side was quietly doing."
       ]
     }
   ],
   "faqs": [
     {
       "q": "Why does the same sauce work on chicken but not beef?",
-      "a": "Fat level, myoglobin flavor, and sear depth shift the backdrop. A sharp caper-brown butter may read bright on mild poultry but harsh on a heavily charred ribeye unless you add sweetness or reduce acid."
+      "a": "Fat level, the iron-rich myoglobin flavor of red meat, and the depth of sear all shift the backdrop the sauce is sitting against. A sharp caper-brown-butter that reads bright and lively on mild poultry can taste harsh against a heavily charred ribeye unless you add a sweet element or reduce the acid to keep the bitter notes from dominating."
     },
     {
-      "q": "Is “clash” the same as overpowering?",
-      "a": "Not exactly. Overpowering is volume; clash is conflicting peaks. A sauce can be quiet and still clash if its acid fights the protein’s bitter edge without a bridge."
+      "q": "Is 'clash' the same as a sauce being overpowering?",
+      "a": "Not exactly. Overpowering is about volume—too much sauce, or sauce that's just too loud for the protein. Clash is specifically about conflicting peaks: a quiet sauce can still clash with the protein if its acid fights the meat's bitter sear without a bridge of sweetness, fat, or shared aromatics to connect them."
     },
     {
       "q": "Does plating order matter at home?",
-      "a": "Yes. Sauce underneath integrates; sauce on top reads separate. Family-style service also mixes juices—plan reductions knowing bowls will mingle on the plate."
+      "a": "More than people expect. Sauce underneath the protein integrates with every bite as you cut through; sauce drizzled on top reads as a separate element until your fork mixes it in. Family-style service mixes juices on the table whether you planned it or not, so when you cook for a crowd, plan your reductions knowing the bowls will mingle on the plate."
     }
   ],
   "related": [

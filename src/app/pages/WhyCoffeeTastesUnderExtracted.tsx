@@ -7,64 +7,64 @@ const SPEC: ScienceArticleSpec = {
   "segment": "coffee-science",
   "categoryLabel": "Coffee Science",
   "title": "Why Coffee Tastes Under-Extracted",
-  "subtitle": "Sour, salty, and thin cups when the brew stops too early on the curve.",
+  "subtitle": "Sour, salty, thin, or \"green\" cups often mean the brew stopped while the grounds still had plenty of pleasant stuff left on the table—early acids showed up, but the sweet balancing act never did.",
   "readTime": "8 min read",
   "emoji": "🍋",
   "fixRecipe": {
     "category": "coffee",
     "problem": "sour"
   },
-  "quickAnswer": "Under-extracted coffee keeps a disproportionate share of early acids and lacks balancing sweetness. Finer grind, longer time, higher temperature within safe bounds, or better saturation fix it.",
-  "intro": "Under-extraction is not the same as “light roast bright.” It is an incomplete dissolution problem: the balance point never arrived. Under-extraction stops before sugars and pleasant acids fully dissolve—often sour, salty, vegetal. Water below ~195°F (90°C) for many methods under-solubilizes; grinding too coarse shortens contact inefficiently.",
+  "quickAnswer": "Under-extracted coffee is the \"stopped reading early\" version of the story: plenty of bright acids dissolve fast, but sugars and deeper flavor compounds never get a fair shot, so the cup skews sour, sometimes almost salty, and often thin. You can nudge the curve with a finer grind, longer brew time, hotter water within a sensible band, or better saturation so there are fewer dry hideouts in the bed.",
+  "intro": "Under-extraction is not the same thing as \"I bought a light roast and it is bright.\" It is closer to an incomplete job: the balance point never arrived because water did not pull enough of the good later solubles, or because a chunk of the bed never really participated. Water that is too cool for your method, grind that is too coarse for your contact time, or accidental bypass (water sneaking around the bed) all land here. Chlorogenic acids and other early actors dissolve readily; sugars and the Maillard-forward molecules that make coffee taste like coffee need more convincing. You are not trying to sound like a textbook at breakfast—just enough of this mental model to pick a lever that matches what you actually tasted.",
   "sections": [
     {
       "heading": "Acids first",
       "paragraphs": [
-        "Chlorogenic and organic acids dissolve readily; sugars and melanoidins need more work."
+        "Acids tend to show up early in the brew because many of them are eager to jump into water. Sugars and the bigger brown, roasty molecules (melanoidins, broadly) need more time, heat, and contact to taste like balance instead of background noise. That is why the same bean can read \"sparkling\" in one recipe and \"unfinished\" in another—nothing mystical, just where you stopped on the curve."
       ]
     },
     {
       "heading": "Channeling masquerading as under",
       "paragraphs": [
-        "Some liquid bypasses the bed, tasting weak-sour even when part of the puck is fine."
+        "Some water can bypass the bed through cracks or along filter walls, tasting weak and sour-ish even while another part of the puck would have been fine if it had gotten its share. That is channeling’s cousin: uneven extraction wearing an under-extracted costume. Before you declare the beans \"too acidic,\" look for dry cliffs, hollow centers, or pour habits that always miss the same compass point."
       ]
     },
     {
       "heading": "Dose and ratio",
       "paragraphs": [
-        "Very high brew ratios can taste dilute and sour-ish if extraction yield stays low."
+        "Very high brew ratios—lots of water per gram of coffee—can taste dilute and sour-adjacent if extraction yield stays low, because you are spreading a thin story across a big cup. That is different from true brightness from a complete extraction. A scale keeps you honest about whether you changed strength, extraction, or both at once."
       ]
     },
     {
       "heading": "Use the tool",
       "paragraphs": [
-        "Fix My Recipe’s sour and weak pathways list method-specific checks; pair with a simple tasting journal."
+        "SenseiFood’s sour and weak pathways are written to match real equipment: pourover, immersion, espresso. Pair the debugger with a tiny tasting note—one sentence after each cup—so you are not trying to remember three mornings ago while the grinder setting drifted in your head."
       ]
     },
     {
       "heading": "Yield window",
       "paragraphs": [
-        "Aim for balanced cup by adjusting grind first in small steps, then temperature ±2°F, then ratio. Bloom phase matters in pour-over—insufficient wetting leaves dry pockets."
+        "A practical sequence for many brewers: adjust grind in small steps first, because surface area is the big lever; then explore temperature in small ±2°F (about ±1°C) nudges if grind alone hits a wall; then ratio. In pour-over, respect the bloom and the pour pattern—dry pockets are under-extraction factories. If every cup is sour no matter what, verify your grinder is not clogged with fines, your water is not ice-cold from the pipes, and your \"two minutes\" timer actually matches your real draw-down time."
       ]
     },
     {
       "heading": "Freshness and CO₂",
       "paragraphs": [
-        "Very fresh espresso off-gasses—first seconds blond; need adjusted yield timing."
+        "Very fresh coffee is still burping carbon dioxide; that gas can disrupt early wetting in espresso and make the first moments of the shot behave oddly until you adjust grind, yield, or preinfusion to match. The defect reads like under-extraction even when your math looks normal, because physics got in the way of contact. Resting beans a short while, improving puck prep, or lengthening yield slightly are everyday fixes—pick the one that matches what you see in the cup and in the bottomless basket if you use one."
       ]
     },
     {
-      "heading": "Benchmark temperatures and a repeatable test protocol",
+      "heading": "What to measure so \"sour\" leads to a real fix",
       "paragraphs": [
-        "This guide on why coffee tastes under-extracted is easier to act on when you anchor numbers instead of vibes. Water temperature for manual filter brewing is often discussed around 195–205°F (90–96°C) off boil, adjusting for roast and altitude—cooler water can under-extract acids while hotter water can over-extract bitter compounds. Espresso puck temperature interacts with pressure and flow: channeling produces mixed under/over pockets in one cup. Grind size changes surface area exponentially in practice—small grind steps move extraction more than large temperature jumps. Record dose, yield, time, and taste notes together; changing only one variable per session isolates cause. Write down ambient kitchen temperature (°F), the set point on your oven or machine, and—when relevant—an internal probe reading or brew time. Change one input per trial: flour brand, hydration percentage, grind setting, chill time, or rack position. Photograph crumb or cup side-by-side after each change. SenseiFood’s Fix My Recipe debugger pairs these observations with ratio checks for your category so the next bake or brew is a measured step, not a guess.",
-        "If you use °C in the kitchen, convert critical bands once and tape them inside a cabinet: 200°F ≈ 93°C (cake/bread finish neighborhood), 350°F ≈ 177°C (common cake/cookie air set point), 212°F = 100°C (sea-level water boil), and espresso extraction times often discussed in the 25–35 second range for classic 9-bar shots—always taste-adjusted to your machine. Altitude lowers water’s boiling point, which shifts extraction and evaporation; bakers at elevation should rely more on internal temperature and visual set than on clock alone.",
-        "Humidity changes how dough skins, how icing behaves, and how staling feels the next day—note outdoor weather when results swing for no obvious reason. For anything oven-based, log preheat completion time: many ovens continue drifting 10–20°F after the beep. For frozen desserts, log freezer display temp if available; a chest freezer near −10°F (−23°C) behaves differently than a frost-free kitchen freezer with defrost cycles. Small environmental logs turn one-off failures into solvable patterns."
+        "For manual filter brewing, many recipes start around 195–205°F (about 90–96°C) off the kettle, then taste-tune for roast and altitude. Cooler water can leave acids loud while never waking sugars enough; hotter water can overshoot into harshness if you are already fine on grind. Espresso adds pressure: channeling can give sour thinness alongside bitter pockets in the same shot, which is confusing until you treat it as unevenness, not \"light roast problems.\"",
+        "If you prefer Celsius, translate your usual kettle band once and tape it inside a cupboard. Small grind steps usually move the cup more than dramatic temperature jumps, because grind changes how much coffee surface water can even talk to. Log dose, water or yield, total time, and one taste phrase—enough pattern to steer without turning breakfast into paperwork.",
+        "Altitude lowers boiling point, so \"just off boil\" is not a universal temperature. Kitchen humidity and whether your kettle fully reheats between pours also change how the slurry behaves. You are allowed to care about those details without becoming a person who brings a clipboard to brunch."
       ]
     },
     {
       "heading": "Extra variables that swing results",
       "paragraphs": [
-        "Grinder retention can silently change dose: purge stale grounds after idle. Water TDS around 75–150 ppm is a common specialty-coffee starting band; extremely soft or hard municipal water shifts extraction without you touching grind. For espresso, track yield in grams alongside time—ratio changes strength independent of extraction."
+        "Purge a few grams from the grinder after it sits idle so yesterday’s retained grounds do not silently dilute today’s recipe. Water that is extremely soft or extremely hard changes extraction and mouthfeel without you touching the dial—if your city water swings seasonally, your taste might swing with it. For espresso, grams out matter as much as seconds on the clock; yield changes strength even when extraction is similar, and confusing those two makes debugging feel like superstition."
       ]
     }
   ],
@@ -84,12 +84,12 @@ const SPEC: ScienceArticleSpec = {
   ],
   "faqs": [
     {
-      "q": "Sour always under?",
-      "a": "Often, but also roast level and water alkalinity interact."
+      "q": "If it tastes sour, is it always under-extracted?",
+      "a": "Often, yes—but roast level, grind quality, and water alkalinity (bicarbonate buffering) also change how acids read. Under-extraction is the \"unfinished\" story; some beans are simply citrus-forward when extracted well. Taste for sweetness and depth, not only pucker."
     },
     {
-      "q": "Cold brew under?",
-      "a": "Time compensates—12h vs 18h changes extraction curve."
+      "q": "What about cold brew—can that be under-extracted too?",
+      "a": "Time replaces heat as the persuader. A 12-hour steep is not the same curve as 18 hours at the same grind; if your cold brew tastes thin and sour-leaning, stretch time, tighten grind slightly, or stir occasionally—pick one change, then taste, instead of doing all three at once."
     }
   ]
 };

@@ -7,7 +7,7 @@ const SPEC: ScienceArticleSpec = {
   "segment": "coffee-science",
   "categoryLabel": "Coffee Science",
   "title": "Why Espresso Channels (Extraction Path Failure)",
-  "subtitle": "Density gradients, edge effects, and uneven prep create least-resistance rivers.",
+  "subtitle": "When water finds easy highways through the puck—clumps, cracks, or edge gaps—it steals extraction from the rest of the bed and the cup gets weird fast.",
   "readTime": "8 min read",
   "level": "Pressure bed physics",
   "emoji": "🌀",

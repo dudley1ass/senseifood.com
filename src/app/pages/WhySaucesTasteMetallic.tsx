@@ -7,7 +7,7 @@ const SPEC: ScienceArticleSpec = {
   "segment": "sauce-science",
   "categoryLabel": "Sauce Science",
   "title": "Why Sauces Taste Metallic",
-  "subtitle": "Reactive pans, long wine reduction, and certain spices release metal ions or perceptions.",
+  "subtitle": "Reactive pans, long wine reductions, and a handful of spices can each release small amounts of metal ions—or perceptions that read as metal—into a sauce that's otherwise well made.",
   "readTime": "7 min read",
   "level": "Equipment & reduction",
   "emoji": "🔩",
@@ -15,13 +15,13 @@ const SPEC: ScienceArticleSpec = {
     "category": "baking",
     "problem": "general"
   },
-  "quickAnswer": "Metallic taste often traces to unlined copper or aluminum contact with acids, long reduced wine, or iron-rich water. Switch to stainless or enamel, shorten aggressive acid cooks, and filter aggressively reduced liquids. Not every “metal” note is iron—copper and aluminum have distinct sensory signatures and different kitchen fixes.",
-  "intro": "Sauces are aqueous, often acidic, often salted, and frequently held hot for long service windows—exactly the conditions that pull trace metals from reactive cookware or concentrate flavors that read as metallic even without large ion concentrations. Tomatoes, wine, and vinegar drop pH enough to dissolve oxides from aluminum over time, while copper exposed to acidic foods can contribute perceptible coppery notes unless properly lined or used only within traditional short-contact roles. Long reductions concentrate not only flavor but also dissolved solids from starting liquids, including minerals from hard water or leached metals from earlier steps. Separating true equipment chemistry from ingredient confusion matters: blood-like notes in meat sauces can be myoglobin chemistry, while tinny edges after overnight storage in the wrong pan are often literal metal pickup. The practical path is to control time, acidity, vessel choice, and holding strategy so the sauce never becomes an electrochemistry experiment.",
+  "quickAnswer": "A metallic taste in your sauce usually traces to one of three things: unlined copper or aluminum sitting in contact with an acidic ingredient for too long, a long wine reduction that concentrated trace minerals already present in the bottle and your tap water, or iron-rich water itself. Switch to stainless steel or enameled cookware for any acidic simmer, shorten aggressive acid cooks, and filter aggressively-reduced liquids if you have hard water. Not every 'metallic' note comes from iron, either—copper and aluminum each have distinct sensory signatures and different kitchen fixes.",
+  "intro": "Sauces sit at the intersection of several conditions that quietly attack reactive cookware: they're watery, often acidic, often well-salted, and frequently held hot for long service windows. Those are precisely the conditions that pull trace metals out of unlined pans, or that concentrate flavors that read as metallic even without big concentrations of any actual metal ion. Tomatoes, wine, and vinegar all bring the pH down enough to slowly dissolve the protective oxide layer off aluminum over the course of a long simmer, and copper exposed to acidic food can contribute distinctly coppery notes unless the pan is properly lined or you're using it only for the traditional quick deglazes the metal was meant for. Long reductions concentrate not only flavor but also the dissolved solids from your starting liquids—including minerals from hard water or trace metals leached during earlier steps. Separating real equipment chemistry from ingredient confusion matters: blood-like notes in a meat-based sauce can be myoglobin chemistry (the iron-rich pigment of muscle tissue) rather than literal cookware leaching, while a tinny edge after a sauce sits overnight in the wrong pan is usually exactly what it sounds like. The practical path is to control time, acidity, vessel choice, and holding strategy so the sauce never accidentally becomes an electrochemistry experiment.",
   "sections": [
     {
       "heading": "Time, temperature, and acid with reactive pans",
       "paragraphs": [
-        "A quick deglaze in an aluminum pan rarely causes trouble; a forty-five minute tomato simmer does. Acid plus heat dissolves the protective oxide layer repeatedly, exposing fresh metal to the sauce. The longer the contact, the more opportunity for ion migration and for off-aromas that people describe as metallic. Copper is prized for heat control but unlined copper is not a long-simmer vessel for acidic sauces unless you accept traditional short-use patterns. Stainless steel and enameled cast iron are workhorses precisely because they resist this class of reaction."
+        "A quick deglaze in an aluminum pan almost never causes trouble; a forty-five minute tomato simmer in that same pan can. Acid plus heat dissolves the thin protective oxide layer on the metal surface again and again, exposing fresh metal to the sauce each time. The longer the contact, the more chance for ion migration and for off-aromas that people describe as metallic. Copper is prized in pro kitchens for its precise heat control, but unlined copper isn't actually a long-simmer vessel for acidic sauces—it's meant for traditional quick-use patterns. Stainless steel and enameled cast iron are the workhorses of acidic cooking precisely because they resist this whole class of reaction."
       ],
       "bullets": [
         {
@@ -37,35 +37,35 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Wine reduction depth and trace mineral concentration",
       "paragraphs": [
-        "Reducing wine drives off ethanol and water but leaves behind acids, salts, and trace metals that were present at low levels in the bottle and in your water. Pushed too far, the concentrate can taste sharp, bitter, and metallic-adjacent even when technique is otherwise sound. Stopping earlier, straining solids, and finishing with fresh butter or cream can polish harsh edges. If a sauce must be intensely reduced, build acidity with smaller additions across time rather than one heroic boil-down that concentrates everything at once."
+        "Reducing wine drives off ethanol and water, but the acids, salts, and trace metals that were present at low levels in the bottle and in your tap water stay behind and get more concentrated with every minute. Push it too far and the concentrate can taste sharp, bitter, and a little metallic-adjacent even when your technique is otherwise textbook. Stop the reduction a bit earlier than instinct says, strain out any solids before the final reduction, and finish the sauce with fresh butter or cream to polish the harsh edges. If a sauce really does need an intense reduction, build acidity in smaller additions across the cooking time rather than letting one heroic boil-down concentrate everything in the pan at once."
       ],
       "tip": "If metallic notes track with how far you reduce wine—but not with pan type—fix reduction strategy before buying new cookware."
     },
     {
       "heading": "Water, brine, and spice misreads",
       "paragraphs": [
-        "Iron-rich well water can add subtle metallic background to stocks and pan sauces, especially when reduced. Filtering or blending water for long simmers helps when geography is the culprit. Certain spices and old herbs taste dusty or bitter and can be mis-labeled as metal. Freshly crack pepper; replace ancient bay and paprika; taste your salt source—though salt rarely adds metal notes, contamination stories exist with impure finishing salts if stored badly."
+        "Iron-rich well water can add a subtle metallic background to stocks and pan sauces, especially once they're reduced—every cup of starting water that boils off leaves its minerals behind in the pan. Filtering or using bottled water for long simmers helps when geography is the actual culprit. Certain spices and old herbs can also taste dusty or bitter and get mislabeled as metallic—freshly crack your pepper, replace ancient bay leaves and paprika, and taste your salt source. Salt itself rarely adds metal notes, but contamination stories do exist with impure finishing salts that have been stored badly."
       ]
     },
     {
       "heading": "Holding, storage, and service metal contact",
       "paragraphs": [
-        "Hotel pans, chafers, and cheap metal bains in steam tables can contribute pickup over hours, especially with acidic tomato or wine sauces. Transfer finished sauces to inserts with stable liners or known stainless grades when holds exceed short service. Overnight storage in reactive metal can continue slow reactions cold—less dramatic than boiling, but not zero. Glass or food-grade plastic for refrigerated storage removes that variable when debugging."
+        "Hotel pans, chafing dishes, and cheap metal bains in steam tables can all contribute slow metal pickup over hours, especially with acidic tomato or wine sauces sitting in them through service. Transfer finished sauces to inserts with stable liners or known-good stainless grades when the hold is going to run long. Overnight storage in a reactive metal container also continues the slow reaction in the fridge—less dramatic than boiling, certainly, but not zero. When you're debugging a persistent metallic note, switch to glass or food-grade plastic for refrigerated storage to remove that variable from the equation entirely."
       ]
     }
   ],
   "faqs": [
     {
       "q": "Is a metallic taste always dangerous?",
-      "a": "Not necessarily—many causes are sensory at trace levels, like brief copper contact. Persistent, strong metallic taste with other symptoms is a medical question; in the kitchen context, switch vessels and retry a small batch to see if it follows equipment."
+      "a": "Not necessarily—many of the causes are sensory at trace levels well below any health threshold, especially brief copper contact during a quick deglaze. A persistent, strong metallic taste paired with other physical symptoms is a question for a doctor, not a kitchen article. In the cooking context, switch vessels and re-cook a small test batch—if the metallic note follows the equipment, you've found your answer."
     },
     {
       "q": "Why does my stainless pan still taste metallic?",
-      "a": "Pitting, harsh scouring, or cooking highly salted acidic foods for extreme durations can still leach trace nickel or iron in edge cases, but first suspect ingredients—overcooked garlic, burned dairy, or heavy reduction—before blaming quality stainless."
+      "a": "Pitted surfaces, harsh scouring, or cooking highly salted acidic foods for very long durations can in some edge cases still leach trace nickel or iron, but suspect ingredients first—overcooked garlic, scorched dairy, or an overly heavy wine reduction—before you blame quality stainless. Most 'metallic from my stainless' complaints turn out to be one of those ingredient stories on closer inspection."
     },
     {
-      "q": "Can emulsion breaking cause metallic perception?",
-      "a": "Broken fat can expose bitter aqueous compounds and oxidized notes that read harsh; it is not metallic chemistry by default, but confused descriptors happen. Fix the emulsion and taste again before chasing metals."
+      "q": "Can a broken emulsion cause a metallic perception?",
+      "a": "Broken fat can expose bitter water-soluble compounds and oxidized notes that read harsh on the tongue, and people sometimes describe that harshness as metallic even though it isn't literal metal chemistry. Fix the emulsion (re-mount, strain, re-balance) and taste again before you start chasing metal contamination as the cause."
     }
   ],
   "related": [

@@ -7,7 +7,7 @@ const SPEC: ScienceArticleSpec = {
   "segment": "ice-cream-science",
   "categoryLabel": "Ice Cream Science",
   "title": "Why Ice Cream Develops Ice Layers Over Time",
-  "subtitle": "Temperature oscillation drives water vapor to refreeze at the coldest interface.",
+  "subtitle": "Frosty sheets and crusty lids show up when the pint warms a little and refreezes—water vapor migrates to the coldest surface and plates out as extra ice.",
   "readTime": "8 min read",
   "level": "Storage degradation",
   "emoji": "❄️",
@@ -15,8 +15,8 @@ const SPEC: ScienceArticleSpec = {
     "category": "iceCream",
     "problem": "icy"
   },
-  "quickAnswer": "Ice layers form when the pint warms slightly then refreezes—water migrates and plates out on the container wall or surface. Limit air headspace, keep steady cold, and press parchment to surface.",
-  "intro": "Homemade and premium ice creams are unstable colloids trapped below freezing: tiny ice crystals, air cells, fat globules, and unfrozen serum in delicate balance. When temperature wanders—even a few degrees—water migrates by sublimation and refreezing toward colder interfaces. The lid, container wall, and surface of the pint are where you see it first as frosty sheets or a leathery crust, not always as uniform iciness throughout. Understanding temperature cycling, headspace and surface area, partial-serve behavior, and stabilizer roles helps you prevent the problem without blaming the recipe alone.",
+  "quickAnswer": "Ice layers mean temperature danced: a warm edge refroze while moisture moved to the coldest wall or lid. Press parchment to the surface, minimize headspace, keep the freezer steady, and avoid softening half the pint with a microwave habit unless you like icy rings.",
+  "intro": "Ice cream is an uneasy peace between ice, air, fat, and syrup; temperature wobble—even a few degrees—lets water relocate and refreeze as ugly sheets on the lid or sides. Headspace acts like a tiny weather system: more air means more exchange and frosting. Stabilizers buy time but do not repeal thermodynamics. This article names the household habits that cause layers so you can fix the freezer story, not blame vanilla quality.",
   "sections": [
     {
       "heading": "Temperature cycling in plain language",

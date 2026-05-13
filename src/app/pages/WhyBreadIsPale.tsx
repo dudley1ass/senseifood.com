@@ -7,58 +7,57 @@ const SPEC: ScienceArticleSpec = {
   "segment": "bread-science",
   "categoryLabel": "Bread Science",
   "title": "Why Bread Is Pale",
-  "subtitle": "Maillard needs surface dryness, heat, and reducing sugars; steam and low sugar slow color.",
+  "subtitle": "A crust only browns when the surface is dry, hot, and has the right sugars to react with proteins; too much steam or not enough sugar leaves it stuck on pale.",
   "readTime": "7 min read",
   "emoji": "⬜",
   "fixRecipe": {
     "category": "bread",
     "problem": "general"
   },
-  "quickAnswer": "Pale crusts usually mean the surface stayed wet too long, the oven ran cool, or the dough lacked reducing sugars for browning. Reduce steam duration, verify temperature with a thermometer, or brush with wash.",
-  "intro": "Color is flavor when it comes to crust. Pale bread often tastes “raw” even when fully baked because our palates associate depth of roast with aroma compounds from Maillard and caramelization. Maillard browning accelerates above roughly 285°F (140°C) surface temperature with available reducing sugars and amino acids. Steam-heavy ovens without a dry finish keep surfaces below effective browning; low sugar doughs lack substrate.",
+  "quickAnswer": "Pale crusts usually mean the outside of the loaf stayed wet for too long, the oven was running cooler than the dial suggests, or the dough did not have enough of the sugars that the browning reaction needs. Cut back on steam in the second half of the bake, check your oven with a separate thermometer, or brush the loaf with an egg or milk wash to give the surface something to work with.",
+  "intro": "Color, on bread, is basically flavor. A pale loaf often tastes “raw” even when it is fully baked through, because our brains link a deep, toasted color with the aroma molecules built by the Maillard reaction (the chemistry between sugars and amino acids that gives roasted, crusty, nutty smells) and caramelization (the breakdown of sugars themselves into amber-colored, complex flavor compounds). Maillard browning really kicks in once the surface of the bread is hotter than about 285°F (140°C), which only happens once the surface is dry, and it needs available reducing sugars (a kind of sugar that easily reacts with proteins—glucose and fructose are reducing sugars, table sugar is not). An oven that pumps steam the whole time keeps the surface cool and soggy; a lean dough with very little sugar simply does not have much fuel for the reaction in the first place.",
   "sections": [
     {
       "heading": "Steam balance",
       "paragraphs": [
-        "Steam that never clears keeps the crust leathery and blond. Transition to a dry oven phase for color development."
+        "Steam in the early minutes of a bake is great—it keeps the crust flexible so the loaf can rise—but steam that never clears out leaves the crust leathery and stuck on pale. The trick is shifting the oven into a dry phase once you have the oven spring you want, so the surface can finally hit the temperatures where color (and flavor) develop."
       ]
     },
     {
       "heading": "Temperature accuracy",
       "paragraphs": [
-        "Home ovens drift. A 25°F low error can add many minutes to browning while the crumb continues to dry."
+        "Home ovens drift, sometimes by a lot. An oven that is 25°F lower than the dial says will add many extra minutes before the crust browns, and during all those extra minutes the crumb is just drying out. A cheap oven thermometer sitting on the rack is one of the highest-leverage upgrades you can make for color, doneness, and consistency at the same time."
       ]
     },
     {
       "heading": "Washes and toppings",
       "paragraphs": [
-        "Egg, milk, or malt syrups increase browning. For lean doughs, a light mist of water before loading still allows color if the dry phase follows."
+        "Brushing the loaf with egg, milk, or a thin malt syrup before or partway through baking adds sugars and proteins to the surface that brown beautifully. For very lean doughs (just flour, water, salt, yeast), even a quick spritz of plain water right before loading buys you stretch in the early minutes—as long as a properly dry phase follows so color can finally happen."
       ]
     },
     {
       "heading": "Formula angle",
       "paragraphs": [
-        "Low-sugar, low-fat lean breads are supposed to be lighter in color than brioche. Compare to style intent. Fix My Recipe can show if your enrichment is unexpectedly low relative to similar formulas."
+        "Lean breads with no added sugar or fat are supposed to be lighter in color than an enriched brioche or a milk loaf; you cannot expect a baguette to come out chocolatey-brown. Compare your loaf to the style you actually meant to make. Fix My Recipe can show whether your enrichment (the amount of sugar, fat, and dairy in the dough) is unexpectedly low compared with similar recipes—which would explain a stubbornly pale crust."
       ]
     },
     {
       "heading": "Finish temperature and environment",
       "paragraphs": [
-        "Remove steam, raise temp last minutes, or use convection to dry and brown. Milk, egg, or malt syrup washes add sugars for color without sweetness spike. Diastatic malt in tiny amounts helps crust color in lean doughs—measure carefully."
+        "Toward the end of the bake, vent the steam, bump up the heat for the last few minutes, or kick the oven into convection (the fan-forced setting that moves hot air around) to dry the surface and chase color. A wash of milk, egg, or thin malt syrup adds sugars for color without leaving the crust sweet. A pinch—truly a pinch—of diastatic malt powder (malted barley flour that contains enzymes which release sugars from starch) goes a long way in lean doughs; weigh it carefully because too much will leave the crumb gummy."
       ]
     },
     {
       "heading": "Oven calibration",
       "paragraphs": [
-        "If tops are chronically pale, verify actual air temp—you may be 30°F low."
+        "If your loaves are pale every single time, no matter what you do, the most likely answer is that your oven simply does not run as hot as it claims. A small oven thermometer parked on the middle rack will tell you within a few minutes whether you are 20–30°F low, and then you can either adjust the dial or have your appliance calibrated."
       ]
     },
     {
-      "heading": "Benchmark temperatures and a repeatable test protocol",
+      "heading": "Pale crusts usually need heat, sugar, or a drier finish",
       "paragraphs": [
-        "This guide on why bread is pale is easier to act on when you anchor numbers instead of vibes. For lean wheat doughs, internal doneness often lands near 200–208°F (93–97°C) in the thickest part; enriched doughs may finish a few degrees lower while still safe. Bulk fermentation is most predictable around 75–80°F (24–27°C) for many straight doughs—colder slows yeast exponentially; warmer accelerates alcohol and acid production. If you shape cold, allow bench rest until the dough yields when pressed—typically 10–20 minutes at room temperature—before final tension. Steam in the first minutes of baking keeps crust extensible for oven spring; venting later drives Maillard browning. Write down ambient kitchen temperature (°F), the set point on your oven or machine, and—when relevant—an internal probe reading or brew time. Change one input per trial: flour brand, hydration percentage, grind setting, chill time, or rack position. Photograph crumb or cup side-by-side after each change. SenseiFood’s Fix My Recipe debugger pairs these observations with ratio checks for your category so the next bake or brew is a measured step, not a guess.",
-        "If you use °C in the kitchen, convert critical bands once and tape them inside a cabinet: 200°F ≈ 93°C (cake/bread finish neighborhood), 350°F ≈ 177°C (common cake/cookie air set point), 212°F = 100°C (sea-level water boil), and espresso extraction times often discussed in the 25–35 second range for classic 9-bar shots—always taste-adjusted to your machine. Altitude lowers water’s boiling point, which shifts extraction and evaporation; bakers at elevation should rely more on internal temperature and visual set than on clock alone.",
-        "Humidity changes how dough skins, how icing behaves, and how staling feels the next day—note outdoor weather when results swing for no obvious reason. For anything oven-based, log preheat completion time: many ovens continue drifting 10–20°F after the beep. For frozen desserts, log freezer display temp if available; a chest freezer near −10°F (−23°C) behaves differently than a frost-free kitchen freezer with defrost cycles. Small environmental logs turn one-off failures into solvable patterns."
+        "Color is the crust’s story about heat and available sugars, not about moral worth. If every loaf is blonde, park an inexpensive oven thermometer on the middle rack and believe it over the beep—many home ovens run cool. Then chase the baking arc: enough steam early for expansion, then real dry heat so the surface can brown.",
+        "On the next few bakes, change one browning lever at a time: finish hotter or longer after venting steam, brush with milk or egg for extra sugars on the surface, add a tiny pinch of diastatic malt if your formula allows it, or lengthen cold proofing to develop more reducing sugars naturally. Snap the crust in the same light each time; your eyes pick up shifts faster than trying to remember \"a little darker than last week.\""
       ]
     }
   ],
@@ -74,12 +73,12 @@ const SPEC: ScienceArticleSpec = {
   ],
   "faqs": [
     {
-      "q": "Pale but baked through?",
-      "a": "Color is optional for safety—texture rules doneness."
+      "q": "My bread is pale but reads the right internal temperature—is it safe to eat?",
+      "a": "Yes. Color is mostly a flavor and visual thing; the loaf is safe and fully baked once the inside has hit the right temperature. It just will not taste as roasted and complex as a darker-crusted version of the same bread."
     },
     {
-      "q": "Whole wheat darker?",
-      "a": "Bran masks crumb color; crust can still be pale without malt."
+      "q": "Why is my whole wheat loaf darker than my white loaf?",
+      "a": "The bran in whole wheat flour is already brown, so the crumb itself looks darker without any browning reactions taking place. The crust can still come out pale on a whole wheat loaf without a wash or a touch of malt; bran color and crust color are separate stories."
     }
   ]
 };

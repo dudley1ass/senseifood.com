@@ -7,7 +7,7 @@ const SPEC: ScienceArticleSpec = {
   "segment": "sauce-science",
   "categoryLabel": "Sauce Science",
   "title": "Why Sauces Break When Reheated",
-  "subtitle": "Second-pass heat exceeds the emulsion’s stability window; fat coalesces and water weeps.",
+  "subtitle": "When you reheat a sauce, the second pass of heat often pushes the fat-and-water emulsion past the window where it stays stable—the fat droplets coalesce and water beads out, and the sauce splits.",
   "readTime": "8 min read",
   "level": "Service-stage heat",
   "emoji": "🔁",
@@ -15,14 +15,14 @@ const SPEC: ScienceArticleSpec = {
     "category": "baking",
     "problem": "general"
   },
-  "quickAnswer": "Reheat gently with a splash of water or stock, whisk constantly, and never boil a finished dairy emulsion. Microwave hotspots are a common breaker—use stove or low oven with foil.",
-  "intro": "The first cook built an emulsion under controlled shear, gradual heat, and often a carefully sequenced fat addition. Reheating asks the same system to survive a second thermal excursion with less margin: proteins may have aged, starch may have retrograded, and water may have evaporated unevenly in storage. Microwaves create hotspots; direct flame superheats pan bottoms even when the surface looks calm; boiling drives off volatile emulsifiers like mustard aromatics. This guide sets a sensible temperature ceiling for rethermalization, a loosen-then-warm sequence for tight leftovers, holding practices for service, and how to recognize when to rebuild rather than rescue.",
+  "quickAnswer": "Reheat gently—just enough to warm through—with a small splash of water or stock to make up for any liquid that evaporated in storage, and whisk constantly to keep the emulsion moving. Never let a finished dairy sauce boil. Microwave hot spots are one of the most common ways sauces break at home, so use the stovetop or a low oven covered loosely with foil for anything bigger than a couple of tablespoons.",
+  "intro": "The first time you cooked the sauce, you built an emulsion (a stable mix of fat droplets suspended in a watery liquid, or vice versa) under controlled shear, gradual heat, and often a carefully sequenced fat addition. Reheating asks that same system to survive a second thermal excursion with less margin for error. The proteins may have aged in the fridge, the starches may have retrograded (re-bonded into a tighter network as they cooled), and water may have evaporated unevenly from the container during storage. Microwaves create hot spots that can briefly push small regions of the sauce well past its stability ceiling; direct flame superheats the bottom of the pan even when the surface looks calm; an actual boil drives off volatile aromatic compounds like mustard's bite. This guide sets a sensible temperature ceiling for rethermalization, walks through a loosen-then-warm sequence for tight leftovers, covers holding for service, and helps you recognize when a sauce needs to be rebuilt from scratch instead of rescued.",
   "sections": [
     {
       "heading": "Temperature ceiling on rethermalization",
       "paragraphs": [
-        "Treat reheat as finishing heat, not a second reduction. Boiling a finished dairy emulsion invites fat coalescence and protein aggregation at the air–liquid interface you worked to stabilize. If you must concentrate flavor, reduce before emulsifying fat in, or reduce the non-fat foundation and re-emulsify fresh butter at service.",
-        "Induction and gas on low can still create thin superheated layers at metal contact; use thicker pans, lower peak heat, and constant motion. Thermometers help when eyeballing simmer fails emulsions repeatedly."
+        "Treat reheat as finishing heat, not a second reduction. Boiling a finished dairy emulsion invites the fat droplets to merge back together and the protein films at the air-liquid interface—the same films you worked hard to stabilize—to clump up. If you need to concentrate flavor, reduce the sauce before emulsifying the fat in, or reduce the non-fat foundation separately and re-emulsify with fresh butter right at service.",
+        "Both induction and gas burners on low can still create a thin superheated layer right where the sauce meets the metal, even when the surface looks like a gentle simmer. Use thicker, heavier pans, keep your peak heat lower than you think you need, and keep the sauce moving with a whisk or wooden spoon. A thermometer helps when you've blown the same emulsion twice trying to judge simmer by eye."
       ],
       "bullets": [
         {
@@ -38,35 +38,35 @@ const SPEC: ScienceArticleSpec = {
     {
       "heading": "Sequence: loosen, hydrate, then adjust",
       "paragraphs": [
-        "Tight refrigerated sauces are often rubbery from gelled starch or chilled fat, not permanently broken. Add a small splash of water, stock, or milk and warm gently while whisking to re-fluidize before judging salt or thickness. Adding dry thickeners to a seized mass without hydrating first compounds grain. If solids separated in storage, re-blend or pass through a fine strainer after gentle recombination—texture memory can remain grainy if curds formed during the first break."
+        "A tight refrigerated sauce is often rubbery from gelled starch or chilled, solid fat—not permanently broken. Add a small splash of water, stock, or milk and warm the sauce gently while whisking to re-fluidize the body before you judge whether the salt is right or whether it needs more thickening. Adding dry thickeners to a seized, cold mass without hydrating first only compounds the graininess. If solids have visibly separated in storage, re-blend with an immersion blender or pass through a fine-mesh strainer after the gentle recombination—texture memory can stay grainy if real curds formed during the first break."
       ],
       "tip": "Taste after reheat, not only straight from the fridge; salt perception and acid brightness shift with temperature."
     },
     {
       "heading": "Holding for service after reheat",
       "paragraphs": [
-        "Bain-marie holding below simmer reduces scorch risk versus direct flame. Stir on pickup; skin formation is both water loss and fat migration—press film or use narrow surface area for long holds. If the line requires long windows, choose sauces that tolerate hold—tomato-brown bases with stable emulsion anchors—or refresh in smaller batches rather than one steam-table marathon."
+        "A bain-marie (a water bath holding the sauce pan in gently warm water) keeps the sauce below a true simmer and is far kinder than direct flame for any kind of hold. Stir whenever you pick up an order, because skin formation on the surface is part water loss and part fat migration upward. For long holds, press a sheet of plastic film right against the surface of the sauce, or hold in a narrow container so less surface is exposed to air. If service requires a really long hold window, switch to a sauce that tolerates it—a tomato or stable brown base with strong emulsifier anchors—rather than asking a butter-mounted emulsion to survive a steam-table marathon."
       ]
     },
     {
       "heading": "When to rebuild instead of whisk harder",
       "paragraphs": [
-        "If repeated gentle reheats never restore gloss and you see free oil after straining, you may need a clean emulsion rebuild: separate phases, clarify the lean liquid, re-mount with controlled fat. Continuing to heat broken dairy can toast proteins into off flavors. Document whether break happened on storage, on first reheat, or only on second reheat—that pattern tells you if the issue is process or recipe solids loading."
+        "If you've reheated gently a few times and the sauce still won't come back to gloss, and you can see free oil pooling after you strain it, the emulsion is past saving with stirring. Time to rebuild: separate the phases, clarify the lean liquid, and re-mount with controlled fat addition the way you did the first time. Continuing to heat broken dairy will eventually toast the proteins into stale, scorched off-flavors you can't whisk back out. When you write this batch up for your own notes, mark whether the break happened in storage, on the first reheat, or only on the second pass—that pattern tells you whether the issue is process (something you did to a basically fine sauce) or recipe (the formula was carrying too much fat for its emulsifier load to handle a second life)."
       ]
     }
   ],
   "faqs": [
     {
       "q": "Why does my hollandaise break on reheat but not the first time?",
-      "a": "Fresh emulsions have optimal droplet size and protein films; reheating crosses temperature thresholds that coalesce fat unless you add water, shear, and gentle heat together."
+      "a": "Fresh emulsions have optimally-sized droplets and intact protein films coating the fat globules. Reheating crosses temperature thresholds where those protein films can stiffen and the fat droplets get nudged together hard enough to merge—you need water (or stock), gentle shear from a whisk, and gentle heat all happening at the same time to keep the system together."
     },
     {
-      "q": "Is the microwave ever okay?",
-      "a": "For small portions with vigilance—low power, frequent stirring. It is riskier for large, uneven volumes."
+      "q": "Is the microwave ever okay for sauces?",
+      "a": "For small portions with vigilance, yes—use low power, pull and stir every fifteen seconds or so, and stop while the sauce is just below the temperature you ultimately want. It's much riskier for larger volumes because microwave hot spots create localized superheating that breaks emulsions before the average temperature looks alarming."
     },
     {
-      "q": "Does adding cornstarch always protect reheats?",
-      "a": "It can stabilize some systems but changes mouthfeel and can retrograde oddly cold; match thickener to sauce class."
+      "q": "Does adding cornstarch always protect a sauce from breaking on reheat?",
+      "a": "It can stabilize some systems by giving the water phase a thicker matrix that holds fat droplets in place, but it also changes mouthfeel toward starchy and can retrograde oddly when chilled (the starch re-bonds and the sauce reads gluey). Match the thickener to the sauce class—wine-based pan sauces are different beasts than butter emulsions or cream reductions, and a single fix doesn't apply equally to all of them."
     }
   ],
   "related": [

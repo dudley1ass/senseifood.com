@@ -7,58 +7,58 @@ const SPEC: ScienceArticleSpec = {
   "segment": "cake-science",
   "categoryLabel": "Cake Science",
   "title": "Why Cakes Sink Around the Edges",
-  "subtitle": "Edges set fast while centers still move, or structural collapse follows uneven gas coalescence.",
+  "subtitle": "The edges of the cake set fast while the center is still moving, or the gas pockets in the batter collapse unevenly—either way you get that telltale ring-shaped dip.",
   "readTime": "8 min read",
   "emoji": "🕳️",
   "fixRecipe": {
     "category": "cake",
     "problem": "sink"
   },
-  "quickAnswer": "Edge sinking often couples to oven too hot (outside sets, inside subsides), under-bake in center, or over-leavened batters that collapse asymmetrically. Lower temp, longer bake, verify leavening.",
-  "intro": "Asymmetric collapse means the rim and core experienced different mechanical histories. Heat gradients and timing usually explain the donut-shaped dip. Edge regions reach gelation and crust formation earlier—often 15–30°F ahead of center on the timeline in metal pans. If leavening produces a rapid CO₂ pulse between 120–160°F (49–71°C) but the center cannot polymerize fast enough to trap it, the middle subsides after the rim has locked shape—creating a trough.",
+  "quickAnswer": "Edge sinking usually points to an oven running too hot (the outside sets before the inside is done, and then the inside subsides), an under-baked center, or a batter that was over-leavened and collapsed asymmetrically. Lower the temperature, bake longer, and double-check that you measured the baking powder or baking soda correctly.",
+  "intro": "An asymmetric collapse means the rim of the cake and the core of the cake lived through different mechanical histories during baking. Heat gradients (the way temperature changes across the cake) and timing usually explain the donut-shaped dip. In a metal pan, the edge regions reach gel temperature and crust formation 15–30°F ahead of the center—they set first. If the chemical leavening (baking powder or baking soda, which produce carbon dioxide gas) creates a fast burst of bubbles between 120–160°F (49–71°C) but the center cannot polymerize (turn from liquid to set network) fast enough to trap the gas, the middle subsides after the rim has already locked shape. That is the moment that creates the trough.",
   "sections": [
     {
       "heading": "Thermal gradients",
       "paragraphs": [
-        "Metal pans heat edges first. If the center is still liquid-ish, it can pull downward as steam escapes later."
+        "Metal pans heat the edges first because metal moves heat well and the sides have direct contact. If the center is still liquidy at that point, it can quietly pull downward as the steam later escapes, while the now-rigid rim holds its shape. Glass and ceramic pans are gentler on the edges, but they have the opposite problem—they can leave a wet bottom because the floor heats so slowly."
       ]
     },
     {
       "heading": "Leavening spikes",
       "paragraphs": [
-        "Too much baking powder yields a rapid rise that cannot be sustained; collapse localizes where structure was weakest."
+        "Too much baking powder produces a fast, dramatic rise that the protein and starch structure simply cannot sustain. The cake puffs up impressively in the first ten minutes and then collapses, with the dip localizing wherever the structure was weakest—often at the edges where the rim set first and the middle had to fall toward someplace."
       ]
     },
     {
       "heading": "Opening the oven",
       "paragraphs": [
-        "Early door openings slam cool air onto rising edges and cause uneven set."
+        "Opening the oven door early slams a wave of cool air against the rising edges and causes them to set in an uneven, premature way. Wait until the dome is clearly established—usually past the halfway mark of the recommended bake time—before opening the door for any reason."
       ]
     },
     {
       "heading": "Next bake",
       "paragraphs": [
-        "Log temps and times; run Fix My Recipe to check leavening-heavy formulas."
+        "Write down the temperatures and times for each test, and run the recipe through Fix My Recipe to flag leavening-heavy formulas before you bake them again. A surprisingly common cause of edge sinking is a recipe that simply asks for too much leavening for its flour."
       ]
     },
     {
-      "heading": "Oven temp and leavening balance",
+      "heading": "Oven temperature and leavening balance",
       "paragraphs": [
-        "Try 325°F (163°C) instead of 350°F (177°C) for longer, gentler rise if your oven runs hot at the perimeter. Verify with a thermometer—many “325” bakes are actually 340°F at the cake zone. Double-check baking powder freshness and measure by weight; an accidental double dose creates a bubble storm that outruns structure."
+        "Try 325°F (163°C) for a longer, gentler bake if your oven runs hot at the perimeter—you can verify the actual zone temperature with a small thermometer on the rack (many ovens set to 325°F are actually 340°F at the cake zone). Double-check that your baking powder is still fresh (stale baking powder loses lift and behaves unpredictably), and measure by weight rather than volume; an accidental double dose makes a bubble storm that outruns the structure."
       ]
     },
     {
       "heading": "Pan size and thermal mass",
       "paragraphs": [
-        "Thicker batters in deeper pans take longer for center set; edges can overset. Match batter volume to pan charts from tested sources when possible."
+        "A thicker, deeper batter takes longer for the center to set, and during that time the edges can keep cooking and oversetting. Match your batter volume to pan-volume charts from tested sources when possible—running a single batter in a pan one inch larger or smaller than the recipe expected can completely change the edge-to-center timing."
       ]
     },
     {
-      "heading": "Benchmark temperatures and a repeatable test protocol",
+      "heading": "Benchmark temperatures and a simple repeatable test",
       "paragraphs": [
-        "This guide on why cakes sink around the edges is easier to act on when you anchor numbers instead of vibes. Butter cakes commonly finish between 200–210°F (93–99°C) at the geometric center, though chocolate and very moist formulas can mislead thermometers—pair probe results with spring-back and clean skewer. Edge-to-center gradients matter: a reading “done” only at the top center can still leave wet bands near the pan floor—check an inch above the bottom in thick layers. Convection and dark pans shift effective heat; if edges race, lower the set temperature about 25°F (14°C) and extend time. Cooling until crumb structure stabilizes—often below 100°F (38°C) internally for large layers—reduces tearing and sticky knife drag. Write down ambient kitchen temperature (°F), the set point on your oven or machine, and—when relevant—an internal probe reading or brew time. Change one input per trial: flour brand, hydration percentage, grind setting, chill time, or rack position. Photograph crumb or cup side-by-side after each change. SenseiFood’s Fix My Recipe debugger pairs these observations with ratio checks for your category so the next bake or brew is a measured step, not a guess.",
-        "If you use °C in the kitchen, convert critical bands once and tape them inside a cabinet: 200°F ≈ 93°C (cake/bread finish neighborhood), 350°F ≈ 177°C (common cake/cookie air set point), 212°F = 100°C (sea-level water boil), and espresso extraction times often discussed in the 25–35 second range for classic 9-bar shots—always taste-adjusted to your machine. Altitude lowers water’s boiling point, which shifts extraction and evaporation; bakers at elevation should rely more on internal temperature and visual set than on clock alone.",
-        "Humidity changes how dough skins, how icing behaves, and how staling feels the next day—note outdoor weather when results swing for no obvious reason. For anything oven-based, log preheat completion time: many ovens continue drifting 10–20°F after the beep. For frozen desserts, log freezer display temp if available; a chest freezer near −10°F (−23°C) behaves differently than a frost-free kitchen freezer with defrost cycles. Small environmental logs turn one-off failures into solvable patterns."
+        "Butter cakes usually finish between 200–210°F (93–99°C) at the center, though chocolate and very moist formulas can fool a thermometer—pair the probe with a spring-back test (press the center gently; if it springs back, it is set) and a clean skewer test. Edge-to-center gradients matter: a reading “done” only at the top center can still leave wet bands near the pan floor—check about an inch above the bottom on thick layers. Convection and dark pans both speed up heating, so if your edges race ahead of the center, lower the set temperature by about 25°F (14°C) and extend the time. Let big layers cool to below about 100°F (38°C) internally before slicing or stacking.",
+        "Write down your kitchen’s ambient temperature, the oven set point, and your probe reading. Change one input at a time—oven temperature, leavening percentage, pan size, or rack position—and photograph the crumb side-by-side. SenseiFood’s Fix My Recipe debugger pairs those observations with ratio checks for your category so the next bake is a measured step, not a guess.",
+        "If you cook in Celsius, write a small cheat sheet and tape it inside a cabinet: 200°F is about 93°C (the cake and bread finish zone), 350°F is about 177°C (a common cake and cookie air temperature), and 212°F is 100°C (sea-level water boiling). Humidity changes how icings dry and how cakes stale overnight—jot the weather when results swing for no obvious reason. Many ovens keep drifting 10–20°F after they beep done preheating, so an extra few minutes of preheat saves a lot of guessing."
       ]
     }
   ],
@@ -78,12 +78,12 @@ const SPEC: ScienceArticleSpec = {
   ],
   "faqs": [
     {
-      "q": "Why donut dip not full middle sink?",
-      "a": "Asymmetric collapse—edges set, center still viscoelastic—localizes the dip as a ring."
+      "q": "Why is the dip a donut shape instead of one big middle sink?",
+      "a": "Because the collapse is asymmetric. The edges had already set hard while the center was still soft and stretchy (viscoelastic), so the dip localizes as a ring right where the firm rim and the not-yet-firm middle meet."
     },
     {
-      "q": "Does opening the oven matter?",
-      "a": "Early openings shock rising foam; wait until dome is established per recipe guidance."
+      "q": "Does opening the oven really matter that much?",
+      "a": "Yes—an early opening can shock the rising foam, and a delicate sponge can sink right where it was rising. Wait until the dome is clearly established, usually well past the halfway mark of the recommended bake time, before you check on the cake."
     }
   ]
 };

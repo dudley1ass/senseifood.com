@@ -7,7 +7,7 @@ const SPEC: ScienceArticleSpec = {
   "segment": "pie-science",
   "categoryLabel": "Pie Science",
   "title": "Why Custard Pies Crack",
-  "subtitle": "Overbake sets egg proteins too tight; cooling shrinkage exceeds what the surface can flex.",
+  "subtitle": "Custard tops crack when egg proteins are pushed past silky into rubbery, or when the filling cools faster on the outside than the inside can shrink without tearing—heat and patience matter as much as the recipe card.",
   "readTime": "7 min read",
   "level": "Egg set & cooling",
   "emoji": "〰️",
@@ -15,8 +15,8 @@ const SPEC: ScienceArticleSpec = {
     "category": "pie",
     "problem": "general"
   },
-  "quickAnswer": "Custard cracks when the interior passes the tight curd stage—usually too hot too long—or cools too fast so the surface tension tears. Pull earlier, use residual heat, and cool gradually.",
-  "intro": "Custard pie filling is a heat-set egg gel suspended in sweet dairy: gentle coagulation creates smooth slices, but the same proteins turn rubbery and prone to fissures when pushed past their comfort zone. Cracks are stress relief: the surface sets, the interior swells or shrinks with temperature change, and something has to give. The usual culprits are overshooting bake endpoint, baking in a way that overheats edges before the center catches up, or shocking the pie thermally during cooling. Unlike cream pies topped after chilling, a baked custard wears its mistakes on top—this guide focuses on temperature targets, shell-filling timing, and cooling ramps that keep the top glossy.",
+  "quickAnswer": "Cracks are stress relief: the surface sets tight while the center still wants to move, so something splits. Pull the pie while the center still has a gentle jiggle, lean on carryover heat to finish, and cool slowly—no steamy oven-to-fridge sprints.",
+  "intro": "Baked custard is a soft egg-and-dairy gel: gentle coagulation gives creamy slices; push it too far and the same proteins lock up like overcooked scrambled eggs, then fracture as they cool. Edges that race ahead of the center, a blowtorch ego on top browning, or slamming a hot pie into cold air all invite cracks. Unlike cream pies you hide under whipped topping, a baked custard wears mistakes on its forehead—this guide stays practical: where to probe, what jiggle means, how to use residual heat, and how to cool without shocking the top glassy layer.",
   "sections": [
     {
       "heading": "Target temperature, not color alone",

@@ -7,7 +7,7 @@ const SPEC: ScienceArticleSpec = {
   "segment": "pie-science",
   "categoryLabel": "Pie Science",
   "title": "Why Fruit Pies Turn Grainy",
-  "subtitle": "Pectin breakdown, sugar crystallization, and overcooked thickeners change mouthfeel.",
+  "subtitle": "Grainy filling usually means starch, pectin, or sugar went past their happy window—overcooked fruit, clumpy starch, or crystals forming on cool-down.",
   "readTime": "7 min read",
   "level": "Heat & starch",
   "emoji": "🌫️",
@@ -15,8 +15,8 @@ const SPEC: ScienceArticleSpec = {
     "category": "pie",
     "problem": "general"
   },
-  "quickAnswer": "Grainy fruit filling often comes from overcooking pectin, undissolved starch, or high sugar driving crystal formation when the filling cools. Control peak temperature and hydrate starch before it hits acid.",
-  "intro": "A silky fruit filling is the sum of several simultaneous processes: fruit cells release juice and pectin, acids rearrange how starch swells, and heat drives water off until the mixture reaches a spoon-coating viscosity. Graininess is what you feel when one of those processes overshoots—pectin networks collapse into sandy textures, starch gels retrograde into chalky bits, or sugar comes out of solution as perceptible crystals. Your tongue does not separate those failure modes automatically; it just registers grit. This article walks through the usual temperature and sequencing mistakes, how acid and sugar shift the windows, and what to change first when the filling looked smooth in the pot but turned sandy in the slice.",
+  "quickAnswer": "Grit often comes from overcooked pectin networks, starch that never fully dispersed before acid hit, or sucrose crystallizing as the filling cools. Control peak boil, hydrate starch slurries, and cool gently—your tongue cannot tell which failure mode it is, but the fix order is still knowable.",
+  "intro": "Silky fruit filling is a truce between heat, acid, sugar, and thickeners; graininess is what you feel when one of those partners overshoots. Pectin from fruit can break down into mealy textures if you boil like you are reducing stock; starch can clump if acid tightens granules before they swell; sugar can come out of solution as fine sand if the filling cools too fast in places. Your tongue just says \"grit\"—this article helps you decide whether you chased color too long, added lemon too early, or shocked the pan.",
   "sections": [
     {
       "heading": "Temperature ceilings for fruit",

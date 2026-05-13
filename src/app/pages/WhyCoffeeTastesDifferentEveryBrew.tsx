@@ -7,64 +7,64 @@ const SPEC: ScienceArticleSpec = {
   "segment": "coffee-science",
   "categoryLabel": "Coffee Science",
   "title": "Why Coffee Tastes Different Every Brew",
-  "subtitle": "Grinder retention, water, bloom, and human variance swamp “the same recipe.”",
+  "subtitle": "The grounds left behind in your grinder, the temperature of your water, how you bloom and pour, and a fair amount of human variation all swamp out the idea of “the same recipe” every morning.",
   "readTime": "8 min read",
   "emoji": "🌀",
   "fixRecipe": {
     "category": "coffee",
     "problem": "general"
   },
-  "quickAnswer": "Inconsistency is grinder steps, temperature drift, pour pattern, and stale vs fresh puck. Purge grinder, weigh inputs, use kettle with stable pour, and track water minerals.",
-  "intro": "Coffee is more sensitive than most baking because you complete the “reaction” at service time. Small input noise becomes large sensory noise. Variance sources: grinder retention, water temp drift, pour pattern, bloom vigor, and bean age changing CO₂. Room humidity changes cooling rate of hot water in kettle between pours.",
+  "quickAnswer": "Inconsistency in your cup almost always comes from the same handful of places: how many grind steps your grinder shifts when it gets bumped, drift in the water temperature, your pour pattern, and how stale or fresh the puck of grounds is. Purge a few grams of stale grounds through the grinder before you brew, weigh your inputs, use a kettle that holds a stable pour, and track the mineral content of your water.",
+  "intro": "Coffee is more sensitive than most baking because you are completing the “reaction”—the extraction from grounds into water—right at service time, with no oven margin to forgive you. So small noise in the inputs becomes much bigger noise in the flavor. The most common sources of variance are grinder retention (grounds from the previous dose that linger in the burrs and chute, then come out with today’s dose), water temperature drift between pours, changes in your pour pattern, how vigorously the coffee blooms (the initial foamy rise when fresh water meets the carbon dioxide trapped in fresh grounds), and the age of the beans, which keeps changing how much CO₂ is escaping during the brew. Even something as quiet as room humidity can change how fast a kettle cools between pours.",
   "sections": [
     {
       "heading": "Grinder purge and retention",
       "paragraphs": [
-        "Yesterday’s grind setting mixes with today’s unless you discard a few grams."
+        "Whatever you ground yesterday at yesterday’s setting is sitting in the burrs and the chute, and it will quietly mix into today’s dose unless you discard a few grams (a “single dose purge”) before measuring your real dose. A clean dose is the cheapest consistency upgrade most home brewers can make."
       ]
     },
     {
-      "heading": "Water as ingredient",
+      "heading": "Water as an ingredient, not just a solvent",
       "paragraphs": [
-        "Filter bypass solids and alkalinity shift extraction. RO with no remineralization tastes different than tap."
+        "The minerals in your water (collectively called the water’s alkalinity and total dissolved solids) actually participate in coffee extraction—they pull out certain flavor compounds more effectively than pure water does. Filter bypass (where some water sneaks past the filter media) and changes in alkalinity will shift your extraction noticeably. Reverse-osmosis water with no remineralization (totally stripped water with no minerals added back) tastes very different than typical tap, even at the same brew recipe."
       ]
     },
     {
       "heading": "Technique drift",
       "paragraphs": [
-        "Pour height and spiral speed move agitation. Video yourself occasionally."
+        "How high you hold the kettle, how fast you spiral the pour, and how aggressively you swirl the slurry all change agitation (how much the water and grounds physically mix), and agitation moves extraction. Once in a while, record yourself brewing on your phone—it is genuinely revealing how much your technique drifts when you are not paying attention."
       ]
     },
     {
       "heading": "Debugger habit",
       "paragraphs": [
-        "When taste swings, log three numbers: dose, yield or water, and time. Feed those into Fix My Recipe before changing two things at once."
+        "When the taste of your daily coffee swings unexpectedly, log three numbers before tweaking anything: your dose (the dry coffee weight), your yield or total water weight, and your brew time. Plug those into Fix My Recipe before you change two variables at once and lose track of what fixed it."
       ]
     },
     {
       "heading": "Checklist",
       "paragraphs": [
-        "Same dose to 0.1g, same water temp measured at pour spout, same pour cadence—remove variables systematically. Clean burrs—old fines change dose silently."
+        "Same dose to the nearest 0.1 g, the same water temperature measured at the kettle spout (not at the heating element), the same pour cadence—remove variables systematically. And clean your burrs: old, oily fines (the smallest particles produced by grinding, which can clump up) silently change the effective dose because they shift how much coffee actually flows out of the grinder."
       ]
     },
     {
       "heading": "Bean state",
       "paragraphs": [
-        "Days 4–14 post-roast often most stable; very fresh or very stale shifts extraction."
+        "Most beans are at their most stable somewhere between days 4 and 14 post-roast—they have degassed enough that the brew is predictable, but they have not lost their aromatic peak yet. Very fresh beans (right after roasting) bloom aggressively and can come out under-extracted. Very stale beans (weeks past roast) lose their nuanced aromatics and trend bitter."
       ]
     },
     {
-      "heading": "Benchmark temperatures and a repeatable test protocol",
+      "heading": "Benchmark temperatures and a simple repeatable test",
       "paragraphs": [
-        "This guide on why coffee tastes different every brew is easier to act on when you anchor numbers instead of vibes. Water temperature for manual filter brewing is often discussed around 195–205°F (90–96°C) off boil, adjusting for roast and altitude—cooler water can under-extract acids while hotter water can over-extract bitter compounds. Espresso puck temperature interacts with pressure and flow: channeling produces mixed under/over pockets in one cup. Grind size changes surface area exponentially in practice—small grind steps move extraction more than large temperature jumps. Record dose, yield, time, and taste notes together; changing only one variable per session isolates cause. Write down ambient kitchen temperature (°F), the set point on your oven or machine, and—when relevant—an internal probe reading or brew time. Change one input per trial: flour brand, hydration percentage, grind setting, chill time, or rack position. Photograph crumb or cup side-by-side after each change. SenseiFood’s Fix My Recipe debugger pairs these observations with ratio checks for your category so the next bake or brew is a measured step, not a guess.",
-        "If you use °C in the kitchen, convert critical bands once and tape them inside a cabinet: 200°F ≈ 93°C (cake/bread finish neighborhood), 350°F ≈ 177°C (common cake/cookie air set point), 212°F = 100°C (sea-level water boil), and espresso extraction times often discussed in the 25–35 second range for classic 9-bar shots—always taste-adjusted to your machine. Altitude lowers water’s boiling point, which shifts extraction and evaporation; bakers at elevation should rely more on internal temperature and visual set than on clock alone.",
-        "Humidity changes how dough skins, how icing behaves, and how staling feels the next day—note outdoor weather when results swing for no obvious reason. For anything oven-based, log preheat completion time: many ovens continue drifting 10–20°F after the beep. For frozen desserts, log freezer display temp if available; a chest freezer near −10°F (−23°C) behaves differently than a frost-free kitchen freezer with defrost cycles. Small environmental logs turn one-off failures into solvable patterns."
+        "This guide is easier to act on when you anchor a few numbers instead of going by vibes. Water temperature for manual filter brewing is often discussed around 195–205°F (90–96°C) off the boil, with the right end of that range shifting a few degrees for roast level and altitude—cooler water can under-extract acids while hotter water can over-extract bitter compounds. For espresso, the temperature of the puck (the compacted disc of grounds in the basket) interacts with the pressure and the flow rate: channeling (water finding a fast path through the puck rather than evenly through all of it) produces a cup that has both under-extracted and over-extracted pockets at once. Grind size changes surface area exponentially in practice—small grind steps move extraction more than even big temperature jumps. Record your dose, yield, time, and taste notes together, and change only one variable per session so you can isolate what mattered.",
+        "Write down your kitchen’s ambient temperature, the brewer or machine setting, and—when relevant—an internal probe reading. Change one input per trial: grind size, water temperature, ratio, or pour technique. Photograph the cup side-by-side after each change. SenseiFood’s Fix My Recipe debugger pairs those observations with ratio checks for your category so the next brew is a measured step, not a guess.",
+        "If you cook in Celsius, write a small cheat sheet and tape it inside a cabinet: 200°F is about 93°C, 212°F is 100°C (where water boils at sea level), and classic espresso shot times are usually discussed in the 25–35 second range for a 9-bar shot (9-bar refers to the brewing pressure of a traditional espresso machine, where bar is a pressure unit). Altitude lowers water’s boiling point, which shifts extraction and evaporation; brewers at elevation should rely on temperature and taste rather than only the clock. Humidity in your kitchen also changes how grounds clump in the grinder—jot the weather when results swing for no obvious reason."
       ]
     },
     {
       "heading": "Extra variables that swing results",
       "paragraphs": [
-        "Grinder retention can silently change dose: purge stale grounds after idle. Water TDS around 75–150 ppm is a common specialty-coffee starting band; extremely soft or hard municipal water shifts extraction without you touching grind. For espresso, track yield in grams alongside time—ratio changes strength independent of extraction."
+        "Grinder retention can silently change your dose, so purge stale grounds after the grinder has been idle. Water with about 75–150 ppm TDS (parts per million of dissolved minerals; you can read this off a water filter spec sheet) is a common specialty-coffee starting band; extremely soft or extremely hard tap water will shift your extraction even when you have not touched the grinder. For espresso, track the yield (the weight of liquid in the cup) alongside the time, because changing your ratio changes the strength independently of how the extraction itself is going."
       ]
     }
   ],
@@ -80,12 +80,12 @@ const SPEC: ScienceArticleSpec = {
   ],
   "faqs": [
     {
-      "q": "Same recipe different baristas?",
-      "a": "Human pour rate dominates in manual brew."
+      "q": "Why does the same recipe taste different with different baristas?",
+      "a": "Because in any manual brewing method, the human pour rate—the height of the pour, the timing of each pour, the swirl after pouring—dominates the agitation and therefore the extraction. Two careful baristas using the same equipment and the same recipe will still produce slightly different cups."
     },
     {
-      "q": "Electric kettle variance?",
-      "a": "Hold temp mode vs boil-then-wait changes first pour temp."
+      "q": "Does my electric kettle’s mode really matter?",
+      "a": "Yes. A hold-temp mode keeps the water at a steady temperature for every pour, while a boil-then-wait setup means your first pour and your last pour can be 5–10°F apart. That difference alone is enough to swing extraction between pours, which shows up as different flavor in different parts of the brew."
     }
   ]
 };

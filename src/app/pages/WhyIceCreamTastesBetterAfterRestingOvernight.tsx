@@ -7,55 +7,55 @@ const SPEC: ScienceArticleSpec = {
   "segment": "ice-cream-science",
   "categoryLabel": "Ice Cream Science",
   "title": "Why Ice Cream Tastes Better After Resting Overnight",
-  "subtitle": "Aged bases hydrate proteins and stabilizers; hardened ice cream tempers for smoother flavor release.",
+  "subtitle": "An aged base lets proteins and stabilizers finish soaking up water, fat crystals settle into a more uniform pattern, and the hardened pint tempers into a smoother, more even flavor release.",
   "readTime": "8 min read",
   "emoji": "✨",
   "fixRecipe": {
     "category": "iceCream",
     "problem": "general"
   },
-  "quickAnswer": "Overnight rest improves ice cream because hydrocolloids fully hydrate, fat globules partially crystallize in a controlled window, and volatile flavors redistribute through the serum. Hardening near proper sub-freezer temps rounds harsh ice notes and lets sweetness read correctly at eating temperature.",
-  "intro": "“Rest the base” is not chef mysticism; it is waiting for proteins and gums to finish their slow jobs and for fat crystal populations to become more uniform. Churning immediately after a hot cook can work, but the texture and flavor window often tightens. This article explains aging chemistry, tempering for serving, and why tasting warm base misleads sweetness judgment for cold dessert. Aging studies are simple: split a base, churn half same-day and half after twenty-four hours blind, with identical draw temperature. Record viscosity with a cheap funnel timing test if you lack lab gear. Note vanilla extract brand and alcohol percent because volatiles partition differently over time. If you use fruit purees, log fiber content from nutrition labels; fiber changes water binding during rest. When scaling, write dairy fat percent from carton math—small label drift shifts mouthfeel. SenseiFood rewards boring data because ice cream is a sum of small physical states. Fresh-churned ice cream is loud: cold suppresses nuance, volatiles are still sorting themselves, and sweetness can read ahead of dairy. A night in the freezer lets crystals and sugars settle into a calmer arrangement, so the same formula tastes more composed on day two. You are not imagining it—you are tasting slower chemistry and quieter texture.",
+  "quickAnswer": "Letting the base rest overnight in the fridge isn't a mystery ritual—it's just time for several slow physical changes to finish. The hydrocolloids (gums and emulsifiers that thicken the base and bind water) fully hydrate, the fat globules partially crystallize into a more uniform population, and volatile flavor molecules redistribute themselves between the fat and the water in the mix. Hardening the finished pint at proper sub-freezer temperatures then smooths out the rougher edges of ice texture and lets sweetness read in tune with the dairy at the temperature you actually eat at.",
+  "intro": "\"Rest the base overnight\" is not chef mysticism—it's just waiting for proteins and gums to finish slow jobs that they can't complete in the ten minutes between cooking and churning. Churning straight off a hot stove can work, but the texture and flavor window often ends up tighter and less forgiving. This article walks through what's actually happening as the base rests, why hardening at the right temperature matters for the way you experience flavor at the spoon, and why a warm taste in the pot misleads your sweetness judgment for the cold dessert that comes out the other end. The simplest aging test is to split one base in half, churn one half the same day and the other after twenty-four hours of cold rest, then taste blind side by side at the exact same temperature. Record the viscosity with a simple test—how long it takes to pour through a small funnel works fine when you don't have lab gear. Note the brand of vanilla and its alcohol percentage, because aromatic molecules redistribute differently depending on the carrier. If you use fruit purées, jot down the fiber content from the nutrition label, since fiber meaningfully changes how the base binds water during rest. When you scale a recipe up, write down the dairy fat percentage from the carton; small label drift will quietly shift the mouthfeel without your noticing. Fresh-churned ice cream is loud in a specific way—the cold suppresses subtler notes, volatile aromatics are still sorting themselves between the fat and water phases, and sweetness can read ahead of dairy. A night in the freezer lets crystals and sugars settle into a calmer arrangement, so the same formula reads more composed on day two. You aren't imagining the improvement—you're tasting slower chemistry and quieter texture.",
   "sections": [
     {
       "heading": "Protein hydration and emulsion polish",
       "paragraphs": [
-        "Dairy proteins need time to fully hydrate after heat; under-hydrated proteins churn unevenly. Egg yolk lecithin benefits from time to adsorb at fat-water interfaces before freezing shear. Straining removes lumps that would become textural noise after churn."
+        "After a heated cook, the proteins in milk and egg yolk are partially denatured (their natural shapes have been unfolded by heat) and they need time in cold liquid to fully take up water around their new shapes. Under-hydrated proteins churn unevenly and create a slightly grainy, restless texture. Egg yolk's lecithin—a natural emulsifier that has one end attracted to fat and one end attracted to water—also benefits from time to settle at the boundary between fat droplets and the watery serum before the dasher starts shearing the mix. Straining the rested base through a fine sieve before churning removes any small lumps of cooked yolk or coagulated protein that would otherwise show up as textural noise in the finished pint."
       ]
     },
     {
       "heading": "Hydrocolloid maturation",
       "paragraphs": [
-        "Locust bean gum and guar continue thickening the serum overnight in ways a five-minute mix cannot replicate. Over-gum feels slimy; aging reveals balance errors clearly before expensive dairy is frozen. Uniform viscosity entering the barrel improves air incorporation consistency."
+        "Hydrocolloids like locust bean gum and guar gum—both common ice cream stabilizers—continue thickening and binding water inside the unfrozen serum overnight in ways a fast five-minute mix simply can't replicate. Overdosing them shows up as a slimy, ropy mouthfeel; aging the base before you commit to churning lets you taste and feel those balance errors before you've turned expensive cream into a finished pint. A uniform, fully developed viscosity going into the freezing bowl also improves how consistently air gets incorporated, since the mix resists the dasher the same way through the entire batch."
       ]
     },
     {
       "heading": "Flavor integration and cold perception",
       "paragraphs": [
-        "Vanilla and spice volatiles partition between fat and water phases over time; the tongue reads a more cohesive profile. Cold suppresses sweetness; rested bases often need slightly less sugar adjustment than same-day tasting suggests. Hardening temp sets crystal populations that change how quickly flavor releases on the palate."
+        "Vanilla, spice, and other aromatic compounds split themselves between the fat phase and the water phase of the base over time—a slow equilibrium that gives the tongue a more cohesive flavor profile rather than a series of sharp peaks. Cold suppresses your perception of sweetness, so a rested base often needs slightly less sugar adjustment than a same-day, warm-pot taste would suggest. Where you finally land the hardening temperature also matters: the population of ice crystals and fat crystals you set during hardening dictates how quickly flavor compounds release from each bite as it melts on your palate."
       ]
     },
     {
       "heading": "How Fix My Recipe helps",
       "paragraphs": [
-        "Ice cream mode compares solids and water to targets for body and scoop. A/B churn same base with and without overnight age on a small batch scale."
+        "Ice cream mode in Fix My Recipe compares your solids, water, sugar, and fat numbers against target ranges for clean body and scoop. Run an A/B churn on the same base at the same draw temperature, with and without an overnight rest, on a small scale—it's the fastest way to see for yourself how much of your formula's quality is locked up in patience rather than ingredients."
       ]
     },
     {
       "heading": "Why patience rewrites the flavor",
       "paragraphs": [
-        "Fresh-churned ice cream is excited: volatile aromatics are loud, ice crystals are still negotiating with sugar, and your tongue is cold enough to miss subtlety. A night in the freezer lets textures even out and lets sweetness read in tune with dairy instead of ahead of it. Taste the same pint at churn versus tomorrow with one sentence each time; you are recording phase, not building an evidence locker."
+        "Fresh-churned ice cream is in an excited state: the volatile aromatics are loud and uneven, the ice crystals are still negotiating with the unfrozen syrupy phase around them, and your tongue is cold enough at first bite to miss the subtler notes entirely. A night in the freezer evens out the textures and lets sweetness read in tune with the dairy instead of running ahead of it. Taste the same pint at draw and then again twenty-four hours later with one short sentence about each. You're recording a phase change, not building a legal brief—the point is just to notice the difference so you start to trust it in future batches."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "How long is too long?",
-      "a": "Most bases are fine 12–48 hours refrigerated; beyond that watch for dairy off flavors in ultra-rich mixes."
+      "q": "How long is too long to age a base?",
+      "a": "Most bases are perfectly happy in the fridge for 12 to 48 hours. Past that, watch closely for off flavors in extra-rich, custard-heavy mixes—the high fat content can start to pick up other smells from the fridge, and oxidative notes can creep in over several days even under refrigeration."
     },
     {
       "q": "Does aging fix sandy texture?",
-      "a": "Lactose sand is a different chemistry; aging helps hydration and emulsion, not supersaturated lactose alone."
+      "a": "Only partially. Aging helps protein hydration and emulsion stability, both of which can contribute to texture, but the sandy grit you're tasting is usually lactose crystals dropping out of solution because there's too much milk solids non-fat for the unfrozen liquid to hold. That's a separate problem and needs a recipe adjustment, not just more rest."
     }
   ],
   "related": [

@@ -7,58 +7,58 @@ const SPEC: ScienceArticleSpec = {
   "segment": "cake-science",
   "categoryLabel": "Cake Science",
   "title": "Why Cakes Bake Unevenly",
-  "subtitle": "Oven airflow, pan color, rack position, and batter depth create hot and cold zones.",
+  "subtitle": "How the air moves inside your oven, the color of your pan, where you set the rack, and how deep the batter sits all create hot and cool spots that show up in the finished cake.",
   "readTime": "7 min read",
   "emoji": "📶",
   "fixRecipe": {
     "category": "cake",
     "problem": "general"
   },
-  "quickAnswer": "Uneven bake is spatial heat variance. Rotate halfway, avoid crowding, use an oven thermometer, match pan size to batter volume, and consider baking strips for edge-to-center timing.",
-  "intro": "A cake is a temperature field evolving in time. If the field is tilted—one side hotter, one taller, one nearer the door—you get domes, dark corners, or wet triangles. Radiant heat from oven walls, convection fan impingement, and pan color shift local surface temperature by tens of degrees. A common home oven might read 350°F (177°C) on the thermostat while the back-left corner cycles hotter during the burner or element phase—your cake records that asymmetry as darker crust or a diagonal dome.",
+  "quickAnswer": "An uneven bake is really just heat that is not evenly distributed inside the oven. Rotate the pan halfway through, do not crowd the oven (heat needs room to move), park an oven thermometer on the rack you actually use, match your pan size to your batter volume, and consider wrapping the pan in damp baking strips to slow the edges down so the center can catch up.",
+  "intro": "A cake is really a temperature field changing over time—every spot in the batter is heating up on its own little schedule. If that field is tilted, with one side hotter than the other, one corner taller than the rest, or one face closer to the oven door, you end up with a dome, dark corners, or wet patches. Three things bias the field most: radiant heat from the oven walls (the heat that travels in straight lines from hot surfaces), the direct blast of a convection fan (which can pile up extra heat on whichever face is closest), and the color of your pan—dark pans soak up radiant heat much more aggressively than light ones, so the same air temperature gives darker, faster-set edges in a dark pan. A common home oven might say 350°F (177°C) on the panel while the back-left corner is actually cycling hotter every time the heating element kicks on. Your cake quietly records that asymmetry as darker crust on one side or a diagonal dome.",
   "sections": [
     {
-      "heading": "Oven truth",
+      "heading": "What your oven is actually doing",
       "paragraphs": [
-        "Calibration errors plus convection patterns dominate. A thermometer on the rack you actually use beats the digital panel."
+        "Calibration errors plus convection airflow patterns dominate uneven bakes. A cheap oven thermometer sitting on the rack you actually use beats whatever number is glowing on the digital control panel almost every single time. If the thermometer says 325°F when the dial says 350°F, you now have actionable information."
       ]
     },
     {
-      "heading": "Pan and batter",
+      "heading": "Pan and batter math",
       "paragraphs": [
-        "Too little batter in a wide pan overbakes edges; too much in a small pan underbakes centers."
+        "Too little batter in a wide pan overbakes the edges before the center even sets, because there is not enough batter mass to absorb the heat slowly. Too much batter in a small pan does the opposite: the center stays underbaked because heat cannot creep all the way through before the edges go too far."
       ]
     },
     {
-      "heading": "Rotation",
+      "heading": "Rotation timing",
       "paragraphs": [
-        "Rotate at the oven’s minimum safe window—usually past initial rise—to avoid lopsided collapse."
+        "Rotate the pan 180° at the earliest safe moment—usually after the initial rise has stabilized and the structure has set enough that opening the door will not collapse a fragile foam. Rotating too early can deflate a delicate sponge; waiting too long means the asymmetry is already baked in."
       ]
     },
     {
-      "heading": "Quantify",
+      "heading": "Quantify the problem",
       "paragraphs": [
-        "Fix My Recipe contextualizes whether your batter is unusually thick or lean for the pan volume you chose—geometry and ratio interact."
+        "Fix My Recipe tells you whether your batter is unusually thick or unusually loose for the pan volume you have chosen. Pan geometry and ingredient ratio interact, and what looks like “my oven hates me” is sometimes just a batter that was 30% too tall for the pan."
       ]
     },
     {
-      "heading": "Target air temperature vs. set temperature",
+      "heading": "Air temperature versus set temperature",
       "paragraphs": [
-        "Preheat until an oven thermometer on your actual rack reads stable—often 15–25 minutes after the beep. Convection modes typically run effective heat faster at the same set point; reduce 25°F (14°C) or time when switching modes mid-recipe testing. Dark pans absorb infrared more aggressively than light pans; the same 350°F air produces faster edge set on dark metal. If one side of your kitchen faces a window of afternoon sun on the oven, even insulation quirks can matter on sensitive sponges."
+        "Preheat until your oven thermometer reads stable on your actual rack—often a full 15–25 minutes after the oven beeps that it is ready. Convection modes (where a fan circulates air around the oven) typically run hotter at the same set temperature because the moving air transfers heat into the cake faster, so when you switch between convection and conventional, reduce the set temperature by about 25°F (14°C) or shorten the time. Dark pans absorb infrared radiation much more aggressively than light pans, so the same 350°F air sets the edges of a dark pan faster. Even external quirks—an oven sitting against an outside wall with afternoon sun hitting one side—can matter for very sensitive sponges."
       ]
     },
     {
       "heading": "Rotation and rack position",
       "paragraphs": [
-        "Rotate 180° at roughly two-thirds through the bake—after structure has risen but before the crumb fully sets—so you do not collapse a fragile foam. Center mass in the oven vertically: too high and the top browns before the center cooks; too low and bottom heat dominates."
+        "Aim to rotate 180° at roughly two-thirds of the way through the bake—after the structure has risen but before the crumb has fully set—so you do not collapse a fragile foam. Set the pan so the cake’s mass sits centered vertically in the oven; too high and the top browns long before the middle is cooked, too low and the bottom dominates and you get a dark base with a pale top."
       ]
     },
     {
-      "heading": "Benchmark temperatures and a repeatable test protocol",
+      "heading": "Benchmark temperatures and a simple repeatable test",
       "paragraphs": [
-        "This guide on why cakes bake unevenly is easier to act on when you anchor numbers instead of vibes. Butter cakes commonly finish between 200–210°F (93–99°C) at the geometric center, though chocolate and very moist formulas can mislead thermometers—pair probe results with spring-back and clean skewer. Edge-to-center gradients matter: a reading “done” only at the top center can still leave wet bands near the pan floor—check an inch above the bottom in thick layers. Convection and dark pans shift effective heat; if edges race, lower the set temperature about 25°F (14°C) and extend time. Cooling until crumb structure stabilizes—often below 100°F (38°C) internally for large layers—reduces tearing and sticky knife drag. Write down ambient kitchen temperature (°F), the set point on your oven or machine, and—when relevant—an internal probe reading or brew time. Change one input per trial: flour brand, hydration percentage, grind setting, chill time, or rack position. Photograph crumb or cup side-by-side after each change. SenseiFood’s Fix My Recipe debugger pairs these observations with ratio checks for your category so the next bake or brew is a measured step, not a guess.",
-        "If you use °C in the kitchen, convert critical bands once and tape them inside a cabinet: 200°F ≈ 93°C (cake/bread finish neighborhood), 350°F ≈ 177°C (common cake/cookie air set point), 212°F = 100°C (sea-level water boil), and espresso extraction times often discussed in the 25–35 second range for classic 9-bar shots—always taste-adjusted to your machine. Altitude lowers water’s boiling point, which shifts extraction and evaporation; bakers at elevation should rely more on internal temperature and visual set than on clock alone.",
-        "Humidity changes how dough skins, how icing behaves, and how staling feels the next day—note outdoor weather when results swing for no obvious reason. For anything oven-based, log preheat completion time: many ovens continue drifting 10–20°F after the beep. For frozen desserts, log freezer display temp if available; a chest freezer near −10°F (−23°C) behaves differently than a frost-free kitchen freezer with defrost cycles. Small environmental logs turn one-off failures into solvable patterns."
+        "Butter cakes usually finish between 200–210°F (93–99°C) at the center, though chocolate and very moist formulas can fool a thermometer—pair the probe with a spring-back test (press the center gently; if it springs back, it is set) and a clean skewer test. Edge-to-center gradients matter: a probe reading “done” at the top center can still leave a wet band near the floor of the pan, so check about an inch above the bottom on thick layers. Convection and dark pans both speed up heating, so if your edges race ahead of the center, lower the set temperature by about 25°F (14°C) and extend the time. Letting big layers cool until the crumb structure has stabilized—often below 100°F (38°C) internally—reduces tearing and that sticky drag on the knife.",
+        "Write down your kitchen’s ambient temperature, the oven set point, and your probe reading. Change one input per trial: flour brand, sugar percentage, chill time, pan color, or rack position. Photograph the crumb side-by-side after each change. SenseiFood’s Fix My Recipe debugger pairs those observations with ratio checks for your category so the next bake is a measured step, not a guess.",
+        "If you cook in Celsius, write a small cheat sheet and tape it inside a cabinet: 200°F ≈ 93°C (the cake and bread finish zone), 350°F ≈ 177°C (a common cake and cookie air temperature), and 212°F = 100°C (sea-level water boiling). Humidity changes how icings behave and how a cake stales the next day—jot the weather when results swing for no obvious reason. Many ovens keep drifting 10–20°F after they beep that preheat is done, so an extra few minutes of preheat saves a lot of guessing."
       ]
     }
   ],
@@ -78,12 +78,12 @@ const SPEC: ScienceArticleSpec = {
   ],
   "faqs": [
     {
-      "q": "Is a baking strip worth it?",
-      "a": "Wet fabric strips slow edge heat, reducing the dome and helping even rise—useful when edges race ahead of centers."
+      "q": "Are baking strips actually worth using?",
+      "a": "Yes, especially for big layer cakes. Wet fabric strips wrapped around the outside of the pan slow the heating of the edges (the wet fabric stays cool while it evaporates), which reduces the dome on top and helps the cake rise more evenly. They are most useful when your edges keep racing ahead of the center."
     },
     {
-      "q": "My oven runs hot on the right—what do I do?",
-      "a": "Bias the pan left, rotate halfway, or bake one layer at a time for competitions where symmetry matters."
+      "q": "My oven runs hot on the right—what should I do?",
+      "a": "Bias the pan toward the cooler (left) side of the oven, rotate halfway through the bake, and if you need real symmetry for a competition cake or wedding cake, bake one layer at a time on the most reliable rack position you have."
     }
   ]
 };

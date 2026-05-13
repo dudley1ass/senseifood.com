@@ -6,16 +6,16 @@ const SPEC: ScienceArticleSpec = {
   "slug": "why-bread-has-large-holes",
   "segment": "bread-science",
   "categoryLabel": "Bread Science",
-  "title": "Why Bread Has Large Holes (Gas Coalescence)",
-  "subtitle": "Uneven bubble distribution merges into chambers when gluten films are uneven.",
+  "title": "Why Bread Has Large Holes",
+  "subtitle": "Big random tunnels usually mean neighboring air pockets merged: gluten walls got thin in spots, gas rushed into the softer lanes, or shaping left one mega-bubble behind. Sometimes that is exactly what you want in an open crumb; sometimes it ruins sandwich slices.",
   "readTime": "8 min read",
-  "level": "Gas dynamics",
+  "level": "Shaping and gas",
   "emoji": "🕳️",
   "fixRecipe": {
     "category": "bread",
     "problem": "general"
   },
-  "quickAnswer": "Random caverns often come from uneven hydration, late uneven yeast pockets, or shaping that trapped mega-bubbles. Pre-shape, bench rest, and gentle tension even the field.",
+  "quickAnswer": "Large holes often come from uneven mixing or yeast pockets, rough temperature spots during proof, or shaping that trapped one big bubble. Even hydration, a bench rest, gentle tension, and steady proofing usually steer you toward smaller, more even holes—unless you are baking an open style on purpose.",
   "intro": "Small, even holes are many stable gas cells that stayed separate through proof and bake. One giant hole—or a few huge ones—is different: it is coalescence, where neighboring bubbles merged because the gluten wall between them thinned and failed. That can be desirable in an open crumb ciabatta and frustrating in a sandwich loaf. This guide explains how mixing, fermentation temperature, degassing, and shaping steer you toward even alveoli versus accidental caverns, and when large holes are a feature instead of a bug.",
   "sections": [
     {
