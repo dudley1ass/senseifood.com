@@ -54,11 +54,10 @@ const SPEC: ScienceArticleSpec = {
       ]
     },
     {
-      "heading": "Benchmark temperatures and a simple repeatable test",
+      "heading": "What to try on the next bake",
       "paragraphs": [
-        "This guide is easier to act on when you anchor a few numbers instead of going by vibes. Butter cakes usually finish baking between 200–210°F (93–99°C) at the geometric center, though chocolate and very moist formulas can fool a thermometer—pair the probe reading with the spring-back test (press the center gently; if it springs back, it is set) and a clean skewer. Edge-to-center heat gradients matter too: a reading that says “done” only at the top center can still leave a wet band near the bottom of the pan, so check about an inch above the floor of a thick layer. Convection ovens and dark pans both transfer heat faster; if your edges race ahead of the center, drop the set temperature by about 25°F (14°C) and extend the time. Letting big layers cool until the crumb structure has stabilized—often below 100°F (38°C) internally—keeps them from tearing or sticking to the knife.",
-        "Write down your kitchen’s ambient temperature, the oven set point, and your probe reading. Change one input at a time—flour brand, sugar percentage, chill time, pan size, or rack position—and photograph crumb cross-sections side by side. SenseiFood’s Fix My Recipe debugger pairs those observations with ratio checks for your category so the next bake is a measured step instead of a guess.",
-        "If you cook in Celsius, write a small cheat sheet and tape it inside a cabinet: 200°F is about 93°C (the cake and bread finish neighborhood), 350°F is about 177°C (a common cake and cookie air temperature), and 212°F is 100°C (sea-level boiling water). Humidity changes how icings behave and how a cake stales the next day—jot down the weather when results swing for no obvious reason. Many ovens keep drifting 10–20°F after they beep done preheating, so an extra few minutes of preheat saves a lot of guessing later."
+        "Most layer-cake headaches get clearer when you treat the oven and the cool-down as part of the recipe, not background noise. Many butter cakes finish somewhere near 200–210°F (93–99°C) in the center, but chocolate and very wet batters can lie to a probe—pair numbers with spring-back and a skewer, and check an inch above the pan floor on thick layers so you do not get a dry top hiding a damp belt.",
+        "Change one variable at a time—rack height, pan color, convection on or off, or the temperature curve—and photograph the crumb after the cake is fully cool. SenseiFood’s Fix My Recipe cake mode still helps when you suspect sugar, fat, or flour ratios have drifted from what the writer assumed."
       ]
     }
   ],

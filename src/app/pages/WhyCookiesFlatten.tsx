@@ -19,18 +19,18 @@ export default function WhyCookiesFlatten() {
 
         <header className="mb-12">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-amber-600 text-white px-4 py-2 rounded-full text-sm mb-6">
-            Cookie Science
+            Cookie science
           </div>
           <h1 className="text-5xl md:text-6xl mb-6 bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent">
-            Why Cookies Flatten
+            Why cookies flatten
           </h1>
           <p className="text-xl text-muted-foreground">
-            Learn why cookies come out flat and thin — and how to fix it with simple adjustments to fat, flour, and temperature.
+            Thin disks usually mean the butter race started too early — the dough flowed before the edges had anything firm to stand on.
           </p>
           <div className="flex items-center gap-4 mt-6 text-sm text-muted-foreground">
             <span>6 min read</span>
             <span>•</span>
-            <span>Beginner Friendly</span>
+            <span>Beginner friendly</span>
           </div>
         </header>
 
@@ -39,160 +39,109 @@ export default function WhyCookiesFlatten() {
         </div>
 
         <div className="prose prose-lg max-w-none">
-
-          {/* Quick Answer */}
           <div className="bg-orange-50 border-l-4 border-orange-400 p-5 rounded-xl mb-8 flex items-start gap-4">
             <span className="text-3xl flex-shrink-0">🫓</span>
             <div>
-              <p className="font-bold text-orange-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
-              <p className="text-foreground/80 leading-relaxed">Flat cookies = butter too warm before it hit the oven. Chill portioned dough balls for at least 30 minutes. Also check pan isn't greased — use parchment instead.</p>
+              <p className="font-bold text-orange-800 text-sm uppercase tracking-wide mb-1">Quick answer</p>
+              <p className="text-foreground/80 text-base leading-relaxed">
+                Flat cookies almost always mean fat melted and sugar moved while the structure was still soft — warm butter, warm dough, or not quite enough flour for the fat load. Chill scooped dough at least half an hour, bake on parchment not extra grease, and measure flour by weight once so you know your “cup” is not secretly a brick.
+              </p>
             </div>
           </div>
 
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">
-            Flat cookies are one of the most common baking frustrations. You expect puffy, thick rounds and pull out pancake-thin wafers instead. Almost always, this comes down to fat melting before the cookie structure has a chance to set.
+            Spread is not a moral failure; it is physics on a sheet pan. When melting wins the first few minutes, you get a frisbee. When setting wins, you get a puck with a tender middle. Flattening is the melting team pulling ahead.
           </p>
 
-          <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent">
-            Why Cookies Spread and Flatten
-          </h2>
-          <p className="text-foreground/80 leading-relaxed mb-6">
-            Cookie dough is a balance between spreading forces (fat melting, sugar dissolving) and setting forces (proteins coagulating, starches gelatinizing). If fat melts before the structure sets — due to warm dough, too much fat, or wrong flour ratio — the cookie collapses outward into a flat disc.
-          </p>
-
-          <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-8 my-8 border-2 border-orange-200">
-            <h3 className="text-2xl mb-4">The Flatness Race</h3>
-            <div className="space-y-4">
-              <div className="bg-white rounded-xl p-4">
-                <div className="flex items-center gap-3 mb-2">
-                  <span className="text-2xl">🏃</span>
-                  <h4 className="font-medium text-red-700">Spreading forces (cause flattening)</h4>
-                </div>
-                <p className="text-sm text-muted-foreground pl-9">Fat melting outward • Sugar dissolving and flowing • Warm dough temperature</p>
-              </div>
-              <div className="text-center text-2xl font-bold text-orange-400">VS</div>
-              <div className="bg-white rounded-xl p-4">
-                <div className="flex items-center gap-3 mb-2">
-                  <span className="text-2xl">🛡️</span>
-                  <h4 className="font-medium text-green-700">Setting forces (prevent flattening)</h4>
-                </div>
-                <p className="text-sm text-muted-foreground pl-9">Proteins coagulating • Starches absorbing fat • Leavening creating lift</p>
-              </div>
-            </div>
-          </div>
-
-          <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent">
-            Top Causes of Flat Cookies
-          </h2>
-
-          <div className="space-y-6">
-            <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-orange-200">
-              <h3 className="text-xl mb-3">🧈 Butter Too Warm or Melted</h3>
-              <p className="text-sm text-muted-foreground mb-3">
-                Room-temperature butter should still hold its shape — if it's greasy or melted, it flows immediately in the oven before the dough sets. This is the #1 cause of flat cookies.
-              </p>
-              <div className="bg-green-50 rounded-lg p-3 text-xs text-green-800">
-                <strong>Fix:</strong> Use butter that's 65–68°F — slightly cool to the touch, holds a fingerprint but doesn't smear. If butter melted, refrigerate the dough for 30 min before baking.
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200">
-              <h3 className="text-xl mb-3">🌡️ Dough Not Chilled</h3>
-              <p className="text-sm text-muted-foreground mb-3">
-                Warm dough goes into the oven already in a softened state. The fat starts melting immediately rather than allowing any structure to form first.
-              </p>
-              <div className="bg-green-50 rounded-lg p-3 text-xs text-green-800">
-                <strong>Fix:</strong> Chill portioned dough balls for at least 1 hour (or overnight) before baking. Cold dough spreads slower, allowing structure to set.
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-yellow-200">
-              <h3 className="text-xl mb-3">🌾 Too Little Flour</h3>
-              <p className="text-sm text-muted-foreground mb-3">
-                Flour provides the structure that holds cookies up. Under-measuring flour (especially by scooping rather than spooning into the cup) means not enough protein and starch to support the fat — the cookie collapses.
-              </p>
-              <div className="bg-green-50 rounded-lg p-3 text-xs text-green-800">
-                <strong>Fix:</strong> Spoon flour into the measuring cup and level off, or weigh it (1 cup = 120–125g). Don't scoop directly from the bag.
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-orange-200">
-              <h3 className="text-xl mb-3">🥚 Too Much Fat or Sugar</h3>
-              <p className="text-sm text-muted-foreground mb-3">
-                Excess butter or white sugar both increase spread. Sugar dissolves and flows; fat melts and lubricates. Too much of either overwhelms the flour's structural capacity.
-              </p>
-              <div className="bg-green-50 rounded-lg p-3 text-xs text-green-800">
-                <strong>Fix:</strong> Follow the recipe ratios carefully. If still flat, reduce butter by 1–2 tablespoons or add 2–4 tablespoons extra flour.
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-red-100">
-              <h3 className="text-xl mb-3">🍳 Greased or Warm Baking Sheet</h3>
-              <p className="text-sm text-muted-foreground mb-3">
-                Greasing a non-stick pan adds extra fat at the base, promoting spreading. Reusing a hot baking sheet from a previous batch starts the melting process before the oven even heats the dough.
-              </p>
-              <div className="bg-green-50 rounded-lg p-3 text-xs text-green-800">
-                <strong>Fix:</strong> Use parchment paper instead of greasing. Always cool baking sheets fully between batches (run cold water over the underside if in a hurry).
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200">
-              <h3 className="text-xl mb-3">🔴 Expired or Missing Leavening</h3>
-              <p className="text-sm text-muted-foreground mb-3">
-                Old baking soda or powder that's lost potency can't create the CO₂ bubbles that lift cookies upward. Without upward loft, the cookie only spreads sideways.
-              </p>
-              <div className="bg-green-50 rounded-lg p-3 text-xs text-green-800">
-                <strong>Fix:</strong> Test baking soda by adding to hot water — it should fizz vigorously. Test baking powder with hot water — should bubble immediately. Replace if old.
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl p-6 my-8 border-l-4 border-cyan-500">
-            <h4 className="text-lg mb-2 text-cyan-800">🔬 Science Note: Oven Temperature Matters</h4>
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              A too-low oven temperature gives fat more time to melt before structure sets, resulting in flatter cookies. A properly preheated oven (325–375°F) sets the outer structure quickly while the interior is still spreading, halting excessive flatness. Always preheat for at least 15–20 minutes.
+          <div className="bg-amber-50/80 border border-amber-200 rounded-2xl p-6 my-10">
+            <p className="font-semibold text-amber-900 mb-2">In plain kitchen terms</p>
+            <p className="text-foreground/80 text-base leading-relaxed mb-0">
+              Picture butter as a doorstop holding the dough up. Warm butter is a puddle — nothing props the cookie until too late. Cold butter buys you minutes so the rim can set while the center is still deciding what shape to be.
             </p>
           </div>
 
+          <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent">
+            What “flatten” is really measuring
+          </h2>
+          <p className="text-base leading-relaxed text-foreground/80 mb-5">
+            Two teams race: spreading forces (liquid fat, dissolved sugar) versus setting forces (egg and flour proteins firming, starch swelling). If the oven is slow to set the outside, or the dough entered already half-melted, you get a wide footprint. Leavening still adds pockets, but sideways flow dominates the look.
+          </p>
+          <p className="text-base leading-relaxed text-foreground/80 mb-8">
+            A too-cool oven can paradoxically flatten as well — fat has more time to flow before the starches set — so “flat” is not only “too hot”; it is often “structure too slow for how fast the fat moved.”
+          </p>
 
-          {/* FAQ Section */}
+          <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent">
+            The usual suspects (and what to try next bake)
+          </h2>
+          <p className="text-base leading-relaxed text-foreground/80 mb-4">
+            <strong>Butter temperature.</strong> Soft enough to leave a smear is usually too soft for thick drop cookies. Aim for cool room temp: still bends, still holds its shape when cubed. If you nuked it or the kitchen is tropical, rest the mixed dough in the fridge before scooping.
+          </p>
+          <p className="text-base leading-relaxed text-foreground/80 mb-4">
+            <strong>Flour measure.</strong> Packed cups sneak in extra starch that should have read as “less spread,” but wildly mis-measured dough can also go slack if fat dominates — the honest fix is a scale: about 120–125 g per cup of AP for most formulas.
+          </p>
+          <p className="text-base leading-relaxed text-foreground/80 mb-4">
+            <strong>Pan prep.</strong> Greasing adds slip and free fat under the cookie. Parchment or a mat adds a little friction and a cleaner bake. Never put dough on a hot sheet from the last batch unless you want instant puddle mode.
+          </p>
+          <p className="text-base leading-relaxed text-foreground/80 mb-8">
+            <strong>Dead leavening</strong> steals upward puff; the same butter still flows sideways, so the cookie reads extra thin. If your soda is old, replace it — fizz in vinegar is a quick sanity check.
+          </p>
+
+          <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl p-6 my-8 border-l-4 border-cyan-500">
+            <h4 className="text-lg mb-2 text-cyan-800">Oven heat is part of the story</h4>
+            <p className="text-base text-muted-foreground leading-relaxed mb-0">
+              Preheat fully so the edge sets while the middle still has options. If you are baking pale and wide, try a slightly higher temperature or a rack closer to the steady heat source — one change at a time, note the result.
+            </p>
+          </div>
+
           <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
-            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <h2 className="text-3xl mb-6">Frequently asked questions</h2>
             <div className="space-y-6">
               <div>
-                <h3 className="text-xl mb-2">Why do my cookies flatten into pancakes?</h3>
-                <p className="text-muted-foreground text-sm">Butter too warm or melted. Chill portioned dough for at least 30 minutes before baking — cold fat spreads slowly, allowing structure to set before the cookie collapses.</p>
+                <h3 className="text-xl mb-2">Why pancake cookies?</h3>
+                <p className="text-muted-foreground text-base leading-relaxed">
+                  Almost always warm fat plus insufficient chill. Second place: greased pan and very white-sugar-heavy dough that liquefies early.
+                </p>
               </div>
               <div className="border-t border-stone-100 pt-6">
-                <h3 className="text-xl mb-2">Can too much sugar cause flat cookies?</h3>
-                <p className="text-muted-foreground text-sm">Yes. Excess white sugar liquefies in the oven and flows outward before structure sets. Try replacing some white sugar with brown sugar, which resists spreading.</p>
+                <h3 className="text-xl mb-2">Does more sugar make them flatter?</h3>
+                <p className="text-muted-foreground text-base leading-relaxed">
+                  White sugar loves to dissolve and flow. Brown sugar holds water and often thickens the party — swapping part of the white for brown is a classic fix when spread is the only complaint.
+                </p>
               </div>
               <div className="border-t border-stone-100 pt-6">
-                <h3 className="text-xl mb-2">Why do the cookies in the center of the pan flatten more?</h3>
-                <p className="text-muted-foreground text-sm">Center cookies stay warmer between batches. Always cool the baking sheet completely between batches, or use a separate cold pan. Warm pans cause immediate butter melting when the dough touches the surface.</p>
+                <h3 className="text-xl mb-2">Center of the tray flattens more — why?</h3>
+                <p className="text-muted-foreground text-base leading-relaxed">
+                  Thermal mass: middles stay warmer, edges radiate heat faster. Cool the sheet between batches or rotate front to back so every mound sees a similar timeline.
+                </p>
               </div>
               <div className="border-t border-stone-100 pt-6">
-                <h3 className="text-xl mb-2">Does baking soda make cookies flat?</h3>
-                <p className="text-muted-foreground text-sm">Too much baking soda can increase spreading. Baking soda is alkaline, which lowers the temperature at which fat melts, causing earlier spreading. Use precise measurements.</p>
+                <h3 className="text-xl mb-2">Does baking soda flatten?</h3>
+                <p className="text-muted-foreground text-base leading-relaxed">
+                  It changes pH and set timing; in some doughs it increases spread and browning. Measure carefully and adjust flour or chill if soda is the only variable you touched.
+                </p>
               </div>
             </div>
           </div>
-          {/* Related Articles */}
+
           <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
-            <h3 className="text-2xl mb-4">Related Articles</h3>
-            <div className="space-y-3">
-              <Link to="/cookie-science/why-cookies-spread" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Spread</Link>
-              <Link to="/cookie-science/why-cookies-are-chewy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Are Chewy</Link>
-              <Link to="/cookie-science/why-cookies-get-crispy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Get Crispy</Link>
-              <Link to="/cookie-science/why-cookies-spread-too-much" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Spread Too Much</Link>
-              <Link to="/cookie-science/brown-sugar-vs-white-sugar" className="block text-amber-700 hover:underline text-sm font-medium">→ Brown Sugar vs White Sugar</Link>
+            <h3 className="text-2xl mb-4">Related</h3>
+            <div className="space-y-2 text-base">
+              <Link to="/cookie-science/why-cookies-spread" className="block text-amber-700 hover:underline font-medium">
+                Why cookies spread
+              </Link>
+              <Link to="/cookie-science/why-cookies-spread-too-much" className="block text-amber-700 hover:underline font-medium">
+                Why cookies spread too much
+              </Link>
+              <Link to="/cookie-science/brown-sugar-vs-white-sugar" className="block text-amber-700 hover:underline font-medium">
+                Brown sugar vs white sugar
+              </Link>
             </div>
           </div>
 
           <div className="bg-gradient-to-r from-orange-500 to-amber-600 text-white rounded-2xl p-8 my-12">
-            <h2 className="text-3xl mb-4">Fix Flat Cookies for Good</h2>
+            <h2 className="text-3xl mb-4">Preview spread in CookieSensei</h2>
             <p className="text-lg text-white/90 mb-6">
-              Use CookieSensei to adjust your recipe and predict spread before you bake.
+              Shift butter and sugar on paper before you spend another stick of butter finding the same puddle.
             </p>
             <a
               href="https://cookiesensei.senseifood.com"

@@ -19,13 +19,13 @@ export default function BrownSugarVsWhiteSugar() {
 
         <header className="mb-12">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-orange-600 text-white px-4 py-2 rounded-full text-sm mb-6">
-            Cookie Science
+            Cookie science
           </div>
           <h1 className="text-5xl md:text-6xl mb-6 bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
             Brown Sugar vs White Sugar in Cookies
           </h1>
           <p className="text-xl text-muted-foreground">
-            Understand how different sugars affect cookie texture, spread, flavor, and moisture.
+            Swapping brown for white is not a one-to-one trade — you are trading molasses, acid, and water for pure sucrose, and the cookie notices every gram.
           </p>
           <div className="flex items-center gap-4 mt-6 text-sm text-muted-foreground">
             <span>6 min read</span>
@@ -45,16 +45,25 @@ export default function BrownSugarVsWhiteSugar() {
             <span className="text-3xl flex-shrink-0">🍬</span>
             <div>
               <p className="font-bold text-orange-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
-              <p className="text-foreground/80 leading-relaxed">Brown sugar makes cookies chewy (hygroscopic molasses retains moisture). White sugar makes cookies crispy (pure sucrose dries out). Mix both for the classic crispy-edge, chewy-center result.</p>
+              <p className="text-foreground/80 text-base leading-relaxed">
+                Brown sugar brings molasses that holds onto water, so the crumb stays softer and often spreads a little less once structure sets. White sugar drives a drier, snappier set and usually more spread. Most “classic” chocolate chip formulas split the difference on purpose — crisp rim from white sugar, tender middle from brown.
+              </p>
             </div>
           </div>
 
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">
-            The type of sugar you use fundamentally changes your cookies. Brown and white sugar aren't interchangeable—they create completely different textures, flavors, and appearances.
+            If you have only ever baked one recipe, changing the sugar is one of the fastest ways to discover how much of what you love was actually the sugar talking — spread, thickness, chew, and how fast the batch goes stale on the counter.
           </p>
 
+          <div className="bg-orange-50/80 border border-orange-200 rounded-2xl p-6 my-10">
+            <p className="font-semibold text-orange-900 mb-2">In plain kitchen terms</p>
+            <p className="text-foreground/80 text-base leading-relaxed mb-0">
+              White sugar is mostly “sweet and dry.” Brown sugar is white sugar with a syrup hitching a ride — that syrup is acidic, a little wet, and clingy about moisture, so the cookie bakes and ages differently from edge to center.
+            </p>
+          </div>
+
           <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
-            The Chemical Difference
+            What is different in the bag
           </h2>
 
           <div className="grid md:grid-cols-2 gap-6 my-10">
@@ -63,7 +72,7 @@ export default function BrownSugarVsWhiteSugar() {
                 ⚪
               </div>
               <h3 className="text-xl mb-3">White Sugar</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-3">
+              <p className="text-muted-foreground text-base leading-relaxed mb-3">
                 Pure sucrose crystals. No molasses, neutral flavor, promotes crisp texture and spread.
               </p>
               <div className="bg-stone-50 rounded-lg p-3 text-xs">
@@ -76,7 +85,7 @@ export default function BrownSugarVsWhiteSugar() {
                 🟤
               </div>
               <h3 className="text-xl mb-3">Brown Sugar</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-3">
+              <p className="text-muted-foreground text-base leading-relaxed mb-3">
                 White sugar + molasses. Contains moisture, minerals, acids. Creates chewier cookies.
               </p>
               <div className="bg-amber-50 rounded-lg p-3 text-xs">
@@ -98,13 +107,13 @@ export default function BrownSugarVsWhiteSugar() {
               <div className="space-y-4">
                 <div>
                   <h4 className="font-medium text-stone-700 mb-2">White Sugar → MORE Spread</h4>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground leading-relaxed">
                     White sugar has smaller crystals that melt more readily at lower temperatures. This allows cookies to spread thin before setting, creating crispy, flat cookies.
                   </p>
                 </div>
                 <div className="border-t border-orange-200 pt-4">
                   <h4 className="font-medium text-amber-700 mb-2">Brown Sugar → LESS Spread</h4>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground leading-relaxed">
                     Molasses is hygroscopic (attracts and holds water). This extra moisture keeps cookies puffy and limits spreading, creating thick, chewy cookies.
                   </p>
                 </div>
@@ -157,7 +166,7 @@ export default function BrownSugarVsWhiteSugar() {
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-white rounded-xl p-6">
                 <h4 className="font-medium text-stone-700 mb-3">White Sugar</h4>
-                <ul className="space-y-2 text-sm text-muted-foreground">
+                <ul className="space-y-2 text-base text-muted-foreground leading-relaxed">
                   <li>• Pure sweetness, no competing flavors</li>
                   <li>• Lets other ingredients shine (vanilla, chocolate)</li>
                   <li>• Clean, simple taste</li>
@@ -166,7 +175,7 @@ export default function BrownSugarVsWhiteSugar() {
               </div>
               <div className="bg-white rounded-xl p-6">
                 <h4 className="font-medium text-amber-700 mb-3">Brown Sugar</h4>
-                <ul className="space-y-2 text-sm text-muted-foreground">
+                <ul className="space-y-2 text-base text-muted-foreground leading-relaxed">
                   <li>• Complex, warm caramel notes</li>
                   <li>• Hints of toffee and butterscotch</li>
                   <li>• Slightly acidic depth</li>
@@ -205,13 +214,13 @@ export default function BrownSugarVsWhiteSugar() {
             <div className="space-y-4">
               <div className="bg-white rounded-xl p-6">
                 <h4 className="font-medium text-amber-600 mb-2">Light Brown Sugar (3.5% molasses)</h4>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground leading-relaxed">
                   Subtle molasses flavor, slightly chewy texture. Best for cookies where you want a hint of caramel without overpowering other flavors.
                 </p>
               </div>
               <div className="bg-white rounded-xl p-6">
                 <h4 className="font-medium text-amber-800 mb-2">Dark Brown Sugar (6.5% molasses)</h4>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground leading-relaxed">
                   Strong molasses flavor, very moist and chewy. Best for gingerbread, spice cookies, and when you want intense caramel flavor.
                 </p>
               </div>
@@ -230,7 +239,7 @@ export default function BrownSugarVsWhiteSugar() {
                   <h4 className="font-medium">100% White Sugar</h4>
                   <span className="text-xs bg-stone-200 px-3 py-1 rounded-full">Very Crispy</span>
                 </div>
-                <p className="text-sm text-muted-foreground">Thin, crispy, flat cookies with maximum spread. Think lace cookies or tuiles.</p>
+                <p className="text-base text-muted-foreground leading-relaxed">Thin, crispy, flat cookies with maximum spread. Think lace cookies or tuiles.</p>
               </div>
 
               <div className="border-l-4 border-amber-400 pl-6 py-3 bg-amber-50 rounded-r-lg">
@@ -238,7 +247,7 @@ export default function BrownSugarVsWhiteSugar() {
                   <h4 className="font-medium">75% White / 25% Brown</h4>
                   <span className="text-xs bg-amber-200 px-3 py-1 rounded-full">Crispy-Chewy</span>
                 </div>
-                <p className="text-sm text-muted-foreground">Crispy edges with slight chew in center. Balanced flavor.</p>
+                <p className="text-base text-muted-foreground leading-relaxed">Crispy edges with slight chew in center. Balanced flavor.</p>
               </div>
 
               <div className="border-l-4 border-orange-500 pl-6 py-3 bg-orange-50 rounded-r-lg">
@@ -246,7 +255,7 @@ export default function BrownSugarVsWhiteSugar() {
                   <h4 className="font-medium">50% White / 50% Brown</h4>
                   <span className="text-xs bg-orange-200 px-3 py-1 rounded-full">Classic</span>
                 </div>
-                <p className="text-sm text-muted-foreground">Traditional chocolate chip texture: crispy edges, chewy center. Most popular ratio.</p>
+                <p className="text-base text-muted-foreground leading-relaxed">Traditional chocolate chip texture: crispy edges, chewy center. Most popular ratio.</p>
               </div>
 
               <div className="border-l-4 border-amber-600 pl-6 py-3 bg-amber-50 rounded-r-lg">
@@ -254,7 +263,7 @@ export default function BrownSugarVsWhiteSugar() {
                   <h4 className="font-medium">25% White / 75% Brown</h4>
                   <span className="text-xs bg-amber-200 px-3 py-1 rounded-full">Very Chewy</span>
                 </div>
-                <p className="text-sm text-muted-foreground">Thick, soft, very chewy with strong caramel notes.</p>
+                <p className="text-base text-muted-foreground leading-relaxed">Thick, soft, very chewy with strong caramel notes.</p>
               </div>
 
               <div className="border-l-4 border-amber-800 pl-6 py-3 bg-amber-50 rounded-r-lg">
@@ -262,14 +271,14 @@ export default function BrownSugarVsWhiteSugar() {
                   <h4 className="font-medium">100% Brown Sugar</h4>
                   <span className="text-xs bg-amber-300 px-3 py-1 rounded-full">Ultra Chewy</span>
                 </div>
-                <p className="text-sm text-muted-foreground">Dense, fudgy, cake-like. Minimal spread, maximum moisture. Rich molasses flavor.</p>
+                <p className="text-base text-muted-foreground leading-relaxed">Dense, fudgy, cake-like. Minimal spread, maximum moisture. Rich molasses flavor.</p>
               </div>
             </div>
           </div>
 
           <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl p-6 my-8 border-l-4 border-cyan-500">
             <h4 className="text-lg mb-2 text-cyan-800">🔬 Science Note: Acidity Matters</h4>
-            <p className="text-sm text-muted-foreground leading-relaxed">
+            <p className="text-base text-muted-foreground leading-relaxed">
               Brown sugar is slightly acidic (pH ~5.5 vs white sugar's pH 7). This acidity affects leavening: if using brown sugar, cookies rise less with baking powder but spread more with baking soda (which reacts with acids).
             </p>
           </div>
@@ -285,7 +294,7 @@ export default function BrownSugarVsWhiteSugar() {
                   <span className="text-2xl">⚪</span>
                   Use White Sugar When...
                 </h4>
-                <ul className="space-y-2 text-sm text-muted-foreground">
+                <ul className="space-y-2 text-base text-muted-foreground leading-relaxed">
                   <li>✓ You want crispy, crunchy cookies</li>
                   <li>✓ You prefer thin, flat cookies</li>
                   <li>✓ You want clean, simple sweetness</li>
@@ -299,7 +308,7 @@ export default function BrownSugarVsWhiteSugar() {
                   <span className="text-2xl">🟤</span>
                   Use Brown Sugar When...
                 </h4>
-                <ul className="space-y-2 text-sm text-muted-foreground">
+                <ul className="space-y-2 text-base text-muted-foreground leading-relaxed">
                   <li>✓ You want soft, chewy cookies</li>
                   <li>✓ You prefer thick, puffy cookies</li>
                   <li>✓ You want caramel/toffee notes</li>
@@ -317,19 +326,19 @@ export default function BrownSugarVsWhiteSugar() {
             <div className="space-y-6">
               <div>
                 <h3 className="text-xl mb-2">Does brown sugar make cookies chewier?</h3>
-                <p className="text-muted-foreground text-sm">Yes. Brown sugar contains molasses which is hygroscopic — it attracts and holds moisture, keeping cookies soft and chewy longer than white sugar.</p>
+                <p className="text-muted-foreground text-base leading-relaxed">Yes. Brown sugar contains molasses which is hygroscopic — it attracts and holds moisture, keeping cookies soft and chewy longer than white sugar.</p>
               </div>
               <div className="border-t border-stone-100 pt-6">
                 <h3 className="text-xl mb-2">Can I substitute white sugar for brown sugar in cookies?</h3>
-                <p className="text-muted-foreground text-sm">You can, but the texture will change. Cookies made with all white sugar spread more, bake thinner, and turn crispier. Expect less chew and a lighter color.</p>
+                <p className="text-muted-foreground text-base leading-relaxed">You can, but the texture will change. Cookies made with all white sugar spread more, bake thinner, and turn crispier. Expect less chew and a lighter color.</p>
               </div>
               <div className="border-t border-stone-100 pt-6">
                 <h3 className="text-xl mb-2">What is the best sugar ratio for chewy cookies?</h3>
-                <p className="text-muted-foreground text-sm">A 50/50 split of brown to white sugar is the classic balance — giving you chewy centers with slightly crispy edges. For maximum chewiness, use 75–100% brown sugar.</p>
+                <p className="text-muted-foreground text-base leading-relaxed">A 50/50 split of brown to white sugar is the classic balance — giving you chewy centers with slightly crispy edges. For maximum chewiness, use 75–100% brown sugar.</p>
               </div>
               <div className="border-t border-stone-100 pt-6">
                 <h3 className="text-xl mb-2">Why does brown sugar go hard in the bag?</h3>
-                <p className="text-muted-foreground text-sm">Brown sugar hardens when moisture evaporates from the molasses. Store it in an airtight container with a piece of bread or a terra cotta sugar saver to keep it soft.</p>
+                <p className="text-muted-foreground text-base leading-relaxed">Brown sugar hardens when moisture evaporates from the molasses. Store it in an airtight container with a piece of bread or a terra cotta sugar saver to keep it soft.</p>
               </div>
             </div>
           </div>

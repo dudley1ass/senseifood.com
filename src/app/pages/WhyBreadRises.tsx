@@ -7,18 +7,16 @@ export default function WhyBreadRises() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50">
       <Navigation />
-      
+
       <article className="max-w-4xl mx-auto px-6 py-16">
-        {/* Back button */}
-        <Link 
-          to="/articles" 
+        <Link
+          to="/articles"
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
           Back to Articles
         </Link>
 
-        {/* Header */}
         <header className="mb-12">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-yellow-600 text-white px-4 py-2 rounded-full text-sm mb-6">
             Bread Science
@@ -27,41 +25,47 @@ export default function WhyBreadRises() {
             Why Bread Rises
           </h1>
           <p className="text-xl text-muted-foreground">
-            Understand the biological and chemical processes that turn dense dough into light, airy bread.
+            From a shaggy lump to a tall loaf: what yeast, gluten, and heat are actually doing while you wait.
           </p>
           <div className="flex items-center gap-4 mt-6 text-sm text-muted-foreground">
             <span>6 min read</span>
             <span>•</span>
-            <span>Beginner Friendly</span>
+            <span>Beginner friendly</span>
           </div>
         </header>
 
-        {/* Hero Image Placeholder */}
         <div className="w-full h-80 bg-gradient-to-br from-amber-200 to-yellow-300 rounded-3xl mb-12 flex items-center justify-center shadow-2xl">
           <span className="text-8xl">🍞</span>
         </div>
 
-        {/* Content */}
         <div className="prose prose-lg max-w-none">
-
-          {/* Quick Answer */}
           <div className="bg-green-50 border-l-4 border-green-400 p-5 rounded-xl mb-8 flex items-start gap-4">
             <span className="text-3xl flex-shrink-0">⬆️</span>
             <div>
-              <p className="font-bold text-green-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
-              <p className="text-foreground/80 leading-relaxed">Bread rises because yeast consumes sugars and produces CO₂, which gets trapped in gluten strands and expands in the oven's heat. Gluten structure sets when proteins coagulate above 140°F.</p>
+              <p className="font-bold text-green-800 text-sm uppercase tracking-wide mb-1">Quick answer</p>
+              <p className="text-foreground/80 text-base leading-relaxed">
+                Yeast eats sugars in the dough and releases carbon dioxide. That gas inflates tiny pockets inside a stretchy gluten web, like blowing up a net of rubber bands. In the oven, heat makes the gas expand even more (oven spring) until the proteins set and the loaf holds its shape.
+              </p>
             </div>
           </div>
+
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">
-            Bread rising looks like magic, but it's actually a simple biological and chemical process. When dough rises, tiny organisms called yeast eat sugars and release gas that expands the dough.
+            You do not need a biology degree to bake good bread. If you picture three players — yeast making gas, gluten holding it, and heat locking the shape — most rise problems suddenly feel less mysterious.
           </p>
 
+          <div className="bg-amber-50/80 border border-amber-200 rounded-2xl p-6 my-10">
+            <p className="font-semibold text-amber-900 mb-2">In plain kitchen terms</p>
+            <p className="text-foreground/80 text-base leading-relaxed mb-0">
+              Think of gluten as bubble wrap around microscopic balloons. Yeast keeps adding air to the balloons. If the wrap is strong and elastic, the loaf puffs up evenly. If the wrap is weak or torn, gas escapes and you get a dense crumb or a collapsed middle.
+            </p>
+          </div>
+
           <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-amber-600 to-yellow-600 bg-clip-text text-transparent">
-            What Happens Inside Bread Dough
+            What the dough is made of (and why it matters)
           </h2>
 
-          <p className="leading-relaxed text-foreground/80">
-            Bread dough contains four key ingredients that work together:
+          <p className="text-base leading-relaxed text-foreground/80 mb-6">
+            Flour and water are doing more than “sticking things together.” Water wakes up two proteins in wheat — glutenin and gliadin — which link into long, elastic gluten strands. Salt tightens that network and reins in yeast so fermentation does not run away. Yeast is alive: it snacks on sugars from flour and any sweetener you add, and its waste products are exactly what bakers want.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6 my-10">
@@ -70,8 +74,8 @@ export default function WhyBreadRises() {
                 <Wheat className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-xl mb-3">Flour</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                Contains proteins (glutenin and gliadin) that form gluten when mixed with water, creating a stretchy network.
+              <p className="text-muted-foreground text-base leading-relaxed">
+                Those wheat proteins, once hydrated and kneaded, form the stretchy gluten that traps gas. Without enough development or rest, the dough cannot hold a good rise.
               </p>
             </div>
 
@@ -80,8 +84,8 @@ export default function WhyBreadRises() {
                 <span className="text-2xl">💧</span>
               </div>
               <h3 className="text-xl mb-3">Water</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                Activates the proteins in flour and hydrates yeast, enabling fermentation to begin.
+              <p className="text-muted-foreground text-base leading-relaxed">
+                Hydration starts gluten formation and keeps yeast comfortable enough to work. Too dry and fermentation crawls; too wet can be harder to shape but often yields an open crumb.
               </p>
             </div>
 
@@ -90,8 +94,8 @@ export default function WhyBreadRises() {
                 <FlaskConical className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-xl mb-3">Yeast</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                Living microorganisms that consume sugars and produce carbon dioxide gas and flavor compounds.
+              <p className="text-muted-foreground text-base leading-relaxed">
+                These single-celled fungi turn sugars into CO₂, a little alcohol, and a pile of flavor molecules you taste as “bready” or tangy, depending on time and temperature.
               </p>
             </div>
 
@@ -100,180 +104,126 @@ export default function WhyBreadRises() {
                 <span className="text-2xl">🧂</span>
               </div>
               <h3 className="text-xl mb-3">Salt</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                Controls yeast activity, strengthens gluten, and enhances flavor development.
+              <p className="text-muted-foreground text-base leading-relaxed">
+                Salt strengthens gluten and slows yeast slightly, which usually means better flavor because the dough ferments on a calmer timeline. It belongs in the mix, not sprinkled straight onto dry yeast.
               </p>
             </div>
           </div>
 
           <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-amber-600 to-yellow-600 bg-clip-text text-transparent">
-            The Fermentation Process
+            Fermentation: where the bubbles come from
           </h2>
 
           <div className="bg-gradient-to-br from-yellow-50 to-amber-50 rounded-2xl p-8 my-8 border-2 border-yellow-200">
             <h3 className="text-2xl mb-4 flex items-center gap-3">
               <Wind className="w-7 h-7 text-yellow-600" />
-              What Yeast Produces
+              What yeast leaves behind
             </h3>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              During fermentation, yeast consumes sugars in the flour and produces three key outputs:
+            <p className="text-muted-foreground text-base leading-relaxed">
+              As yeast ferments, carbon dioxide collects in the gluten matrix — that is the mechanical rise you see in the bowl. Alcohol forms too; most of it bakes off, but it still shapes aroma during proofing. Alongside those, organic acids and esters build the difference between a bland same-day loaf and something that tastes like it had time to think.
             </p>
-            <ul className="space-y-3 text-muted-foreground">
-              <li className="flex items-start gap-3">
-                <span className="text-yellow-600 font-bold text-lg">•</span>
-                <span><strong>Carbon dioxide gas</strong> — Forms tiny bubbles that expand the dough</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-yellow-600 font-bold text-lg">•</span>
-                <span><strong>Alcohol</strong> — Evaporates during baking</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-yellow-600 font-bold text-lg">•</span>
-                <span><strong>Flavor compounds</strong> — Create the characteristic taste of bread</span>
-              </li>
-            </ul>
           </div>
 
           <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-amber-600 to-yellow-600 bg-clip-text text-transparent">
-            How Gluten Traps the Gas
+            How gluten holds the rise
           </h2>
 
-          <p className="leading-relaxed text-foreground/80 mb-6">
-            The gluten network acts like thousands of tiny balloons. As yeast produces carbon dioxide, these balloons trap the gas and expand. The more gas produced, the more the dough rises in volume.
+          <p className="text-base leading-relaxed text-foreground/80 mb-6">
+            Gluten is not a single ingredient you pour from a bag; it is a structure you develop by mixing and time. A well-developed dough feels smooth and elastic: it can stretch without tearing immediately, which is exactly what you want so expanding gas does not find weak spots and burst through.
           </p>
 
           <div className="bg-white rounded-2xl p-8 my-8 shadow-lg border-2 border-amber-200">
-            <h3 className="text-xl mb-4">The Gluten Structure</h3>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              When flour proteins (glutenin and gliadin) mix with water, they bond together forming long, elastic strands of gluten. This stretchy network is essential for:
+            <h3 className="text-xl mb-4">Why “strong” gluten feels different</h3>
+            <p className="text-muted-foreground text-base leading-relaxed">
+              Strong gluten traps more gas before the walls thin out, which usually means taller bread and a chewier bite. If gluten is underdeveloped or over-oxidized from endless machine mixing, you can get poor volume or a tight crumb — opposite problems, same underlying idea: the network and the gas have to stay in balance.
             </p>
-            <ul className="space-y-2 text-muted-foreground">
-              <li>✓ Trapping carbon dioxide bubbles</li>
-              <li>✓ Giving bread its chewy texture</li>
-              <li>✓ Maintaining structure as the dough rises</li>
-            </ul>
           </div>
 
           <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-amber-600 to-yellow-600 bg-clip-text text-transparent">
-            Oven Spring: The Final Rise
+            Oven spring: the last big puff
           </h2>
-
-
-          {/* FAQ Section */}
-          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
-            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-xl mb-2">Why did my bread not rise?</h3>
-                <p className="text-muted-foreground text-sm">Most commonly: yeast was killed by water that was too hot (above 140°F), yeast was old and no longer active, or the dough didn't have enough time to proof. Always test yeast by proofing it in warm water first.</p>
-              </div>
-              <div className="border-t border-stone-100 pt-6">
-                <h3 className="text-xl mb-2">Can bread rise too much?</h3>
-                <p className="text-muted-foreground text-sm">Yes — this is called over-proofing. Over-proofed dough collapses during baking because the gluten network has weakened and can't hold the gas. The crust can blister and the crumb becomes dense.</p>
-              </div>
-              <div className="border-t border-stone-100 pt-6">
-                <h3 className="text-xl mb-2">Does salt affect bread rising?</h3>
-                <p className="text-muted-foreground text-sm">Yes. Salt slows yeast activity, which is actually desirable — slower fermentation develops more flavor. However, adding salt directly to yeast can kill it. Always mix salt into flour before combining with yeast.</p>
-              </div>
-              <div className="border-t border-stone-100 pt-6">
-                <h3 className="text-xl mb-2">Why does bread rise more in a warm place?</h3>
-                <p className="text-muted-foreground text-sm">Yeast is more metabolically active at warmer temperatures (75–80°F is ideal for most breads). Warmer environments accelerate CO₂ production, speeding the rise. Too hot and yeast dies; too cold and it barely activates.</p>
-              </div>
-            </div>
-          </div>
-          {/* Related Articles */}
-          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
-            <h3 className="text-2xl mb-4">Related Articles</h3>
-            <div className="space-y-3">
-              <Link to="/bread-science/how-yeast-works" className="block text-amber-700 hover:underline text-sm font-medium">→ How Yeast Works in Baking</Link>
-            </div>
-          </div>
 
           <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-8 my-8 border-2 border-orange-200">
             <h3 className="text-2xl mb-4 flex items-center gap-3">
               <Thermometer className="w-7 h-7 text-orange-600" />
-              What Happens in the Oven
+              What happens in the first minutes of baking
             </h3>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              When bread enters the oven, several rapid changes occur:
+            <p className="text-muted-foreground text-base leading-relaxed mb-4">
+              Heat wakes yeast up one last time, so CO₂ production spikes right as the gas inside each pocket also expands from temperature — that one-two punch is oven spring. Steam in the dough adds pressure too. In a good loaf you can sometimes see a visible jump in height early in the bake before the crust sets.
             </p>
-            <ol className="space-y-3 text-muted-foreground list-decimal list-inside">
-              <li><strong>Yeast becomes very active</strong> at warm temperatures and produces more gas</li>
-              <li><strong>Gas expands rapidly</strong> from the heat (Charles's Law in action)</li>
-              <li><strong>Water turns to steam</strong>, adding even more pressure</li>
-              <li><strong>Dough rises dramatically</strong> in the first 10-15 minutes</li>
-            </ol>
-            <div className="bg-white rounded-xl p-4 text-sm mt-4">
-              <strong className="text-orange-600">Fun Fact:</strong> This rapid expansion is called "oven spring" and can increase bread volume by 30-50%!
-            </div>
+            <p className="text-muted-foreground text-base leading-relaxed mb-0">
+              That early burst can add a surprising amount of volume — often cited on the order of a third or more for some breads — which is why under-proofed dough sometimes still looks okay until it stalls, and why scoring gives steam a planned escape route instead of a random blowout.
+            </p>
           </div>
 
           <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-amber-600 to-yellow-600 bg-clip-text text-transparent">
-            Why Bread Stops Rising
+            Why rising eventually stops
           </h2>
 
-          <p className="leading-relaxed text-foreground/80 mb-6">
-            Eventually the bread stops rising because the structure solidifies. Three key changes happen:
+          <p className="text-base leading-relaxed text-foreground/80 mb-4">
+            Around roughly 140°F (60°C), yeast dies, so fermentation stops. Meanwhile heat sets the protein structure: gluten coagulates, starches gelatinize, and the crumb firms enough to keep its holes. The outside dries and browns into a crust that holds the loaf’s shape. After that point, you are not “rising” anymore — you are finishing texture and flavor.
           </p>
 
-          <div className="space-y-4 mb-8">
-            <div className="bg-white rounded-xl p-6 shadow-md border-l-4 border-red-500">
-              <h4 className="font-bold mb-2 text-lg">Yeast Dies</h4>
-              <p className="text-muted-foreground text-sm">
-                At about 140°F (60°C), yeast cells die and stop producing gas.
-              </p>
-            </div>
+          <p className="text-base leading-relaxed text-foreground/80 mb-10">
+            Over-proofed dough can still collapse because the gluten network stretches past its elastic limit before the oven sets it — so more time is not always more rise. It is a race between gas production, gluten strength, and heat.
+          </p>
 
-            <div className="bg-white rounded-xl p-6 shadow-md border-l-4 border-yellow-500">
-              <h4 className="font-bold mb-2 text-lg">Gluten Sets</h4>
-              <p className="text-muted-foreground text-sm">
-                Heat causes gluten proteins to coagulate into a firm, permanent structure.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl p-6 shadow-md border-l-4 border-amber-500">
-              <h4 className="font-bold mb-2 text-lg">Crust Forms</h4>
-              <p className="text-muted-foreground text-sm">
-                The dough transforms into solid bread with trapped air pockets creating the soft, airy crumb.
-              </p>
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
+            <h2 className="text-3xl mb-6">Frequently asked questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl mb-2">Why did my bread not rise?</h3>
+                <p className="text-muted-foreground text-base leading-relaxed">
+                  Most often the yeast never really got going: liquid that was too hot killed it, the yeast was old, or the dough sat somewhere too cold to ferment in a reasonable window. If you are unsure, blooming active dry yeast in lukewarm water with a pinch of sugar tells you quickly whether the culture is alive.
+                </p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Can bread rise too much?</h3>
+                <p className="text-muted-foreground text-base leading-relaxed">
+                  Yes — over-proofing weakens the gluten so it cannot hold gas. The loaf may deflate in the oven, look flat, or have a coarse, uneven crumb. When the dough feels fragile and smells very sharp, you are often past the sweet spot.
+                </p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Does salt affect rising?</h3>
+                <p className="text-muted-foreground text-base leading-relaxed">
+                  Salt slows yeast a bit, which is usually good for flavor. What hurts is dumping salt directly onto concentrated yeast; mix salt evenly into flour first so it is diluted before it meets the organisms.
+                </p>
+              </div>
+              <div className="border-t border-stone-100 pt-6">
+                <h3 className="text-xl mb-2">Why does dough rise faster in a warm spot?</h3>
+                <p className="text-muted-foreground text-base leading-relaxed">
+                  Yeast runs its chemistry faster in a comfortable band — often quoted around the mid-70s to low 80s °F for many breads. Too warm and you risk off-flavors or dying yeast; too cold and you wait forever for the same CO₂ budget.
+                </p>
+              </div>
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-amber-100 to-yellow-100 rounded-2xl p-8 my-12 border-2 border-amber-300">
-            <h3 className="text-2xl mb-4">Key Takeaways</h3>
-            <ul className="space-y-3 text-foreground/80">
-              <li className="flex items-start gap-3">
-                <span className="text-yellow-600 font-bold text-xl">→</span>
-                <span>Yeast fermentation produces CO₂ gas that makes dough rise</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-yellow-600 font-bold text-xl">→</span>
-                <span>Gluten forms a network that traps gas bubbles like balloons</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-yellow-600 font-bold text-xl">→</span>
-                <span>Oven spring causes dramatic final expansion from heat</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-yellow-600 font-bold text-xl">→</span>
-                <span>Heat eventually kills yeast and sets the structure permanently</span>
-              </li>
-            </ul>
+          <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
+            <h3 className="text-2xl mb-4">Related</h3>
+            <Link
+              to="/bread-science/how-yeast-works"
+              className="block text-amber-700 hover:underline text-base font-medium"
+            >
+              How yeast works in baking
+            </Link>
           </div>
 
-          {/* CTA Section */}
+          <p className="text-base leading-relaxed text-foreground/80 my-12">
+            Once you see rise as trapped gas inside a timed gluten clock, troubleshooting gets easier: feed the yeast, strengthen the web, give it a warm-enough stage, then hit it with enough heat to spring before you set the crumb.
+          </p>
+
           <div className="bg-gradient-to-br from-amber-600 to-yellow-600 rounded-3xl p-10 text-white my-16 shadow-2xl">
-            <h3 className="text-3xl mb-4">Ready to Master Bread Baking?</h3>
+            <h3 className="text-3xl mb-4">Keep experimenting</h3>
             <p className="text-white/90 mb-6 text-lg">
-              Understanding the science is just the beginning. Try different techniques and see how fermentation time, temperature, and ingredients affect your results.
+              Small changes to fermentation time and dough temperature show up clearly in the loaf — that is half the fun of bread baking.
             </p>
-            <a 
-              href="https://beansensei.senseifood.com" 
+            <a
+              href="https://beansensei.senseifood.com"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-white text-amber-600 px-8 py-4 rounded-xl font-bold hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
             >
-              Explore More Science →
+              Explore more science →
             </a>
           </div>
         </div>

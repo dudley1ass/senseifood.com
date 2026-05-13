@@ -240,7 +240,7 @@ export function ScienceArticlePage({ spec }: Props) {
             <FlaskConical className="w-8 h-8 text-purple-600 shrink-0 mt-1" />
             <div>
               <p className="text-xs font-semibold uppercase tracking-wide text-purple-800 mb-1">Apply this in your kitchen</p>
-              <p className="text-foreground/80 text-sm leading-relaxed mb-4">
+              <p className="text-foreground/80 text-base leading-relaxed mb-4">
                 SenseiFood’s rule-based <strong>Fix My Recipe</strong> debugger walks through ratios and process using the same
                 category you’re reading about—no signup, no black-box AI. Add optional gram weights to see how your formula
                 compares to reference patterns.
@@ -278,7 +278,7 @@ export function ScienceArticlePage({ spec }: Props) {
             <span className="text-3xl flex-shrink-0">⚡</span>
             <div>
               <p className={`font-bold ${t.quickLabel} text-sm uppercase tracking-wide mb-1`}>Quick answer</p>
-              <p className="text-foreground/80 leading-relaxed">{spec.quickAnswer}</p>
+              <p className="text-foreground/80 text-base leading-relaxed">{spec.quickAnswer}</p>
             </div>
           </div>
 
@@ -288,26 +288,26 @@ export function ScienceArticlePage({ spec }: Props) {
             <section key={sec.heading}>
               <h2 className={`text-3xl mt-12 mb-6 bg-gradient-to-r ${t.h2} bg-clip-text text-transparent`}>{sec.heading}</h2>
               {sec.paragraphs.map((p, i) => (
-                <p key={`${sec.heading}-${i}`} className="leading-relaxed text-foreground/80 mb-5">
+                <p key={`${sec.heading}-${i}`} className="text-base leading-relaxed text-foreground/80 mb-5">
                   {p}
                 </p>
               ))}
               {sec.bullets && sec.bullets.length > 0 && (
-                <ul className="space-y-3 my-6 not-prose">
+                <ul className="space-y-4 my-6 not-prose list-none pl-0">
                   {sec.bullets.map((b) => (
-                    <li key={(b.title ?? '') + b.text.slice(0, 40)} className="flex gap-3 text-foreground/80">
-                      <span className="text-lg leading-none">•</span>
-                      <span>
-                        {b.title ? <strong className="text-foreground">{b.title}: </strong> : null}
-                        {b.text}
-                      </span>
+                    <li
+                      key={(b.title ?? '') + b.text.slice(0, 40)}
+                      className="text-base leading-relaxed text-foreground/80 border-l-4 border-stone-200 pl-4 py-1"
+                    >
+                      {b.title ? <strong className="text-foreground">{b.title}. </strong> : null}
+                      {b.text}
                     </li>
                   ))}
                 </ul>
               )}
               {sec.tip ? (
-                <div className="bg-green-50 border border-green-200 rounded-xl p-4 text-sm text-green-900 not-prose my-6">
-                  <strong>Practical fix: </strong>
+                <div className="bg-amber-50/90 border border-amber-200 rounded-xl p-5 text-base text-amber-950 not-prose my-6">
+                  <strong className="text-amber-900">In plain kitchen terms: </strong>
                   {sec.tip}
                 </div>
               ) : null}
@@ -321,7 +321,7 @@ export function ScienceArticlePage({ spec }: Props) {
                 {spec.faqs.map((f, i) => (
                   <div key={i} className={i > 0 ? 'border-t border-stone-100 pt-6' : ''}>
                     <h3 className="text-xl mb-2 text-foreground">{f.q}</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">{f.a}</p>
+                    <p className="text-muted-foreground text-base leading-relaxed">{f.a}</p>
                   </div>
                 ))}
               </div>
@@ -336,7 +336,7 @@ export function ScienceArticlePage({ spec }: Props) {
                   key={r.path}
                   to={r.path}
                   state={articlesListState}
-                  className={`block ${t.linkClass} hover:underline text-sm font-medium`}
+                  className={`block ${t.linkClass} hover:underline text-base font-medium`}
                 >
                   → {r.title}
                 </Link>

@@ -54,11 +54,10 @@ const SPEC: ScienceArticleSpec = {
       ]
     },
     {
-      "heading": "Benchmark temperatures and a simple repeatable test",
+      "heading": "What to try on the next bake",
       "paragraphs": [
-        "Butter cakes usually finish between 200–210°F (93–99°C) at the center. Chocolate and very moist formulas can fool a thermometer, so pair the probe with a spring-back test (press the center gently; if it springs back, it is set) and a clean skewer test. A “done” reading at the top center can still leave wet bands near the bottom of the pan, so check about an inch above the floor on thick layers. Convection and dark pans both speed up the heating, so if your edges race ahead, lower the set temperature by about 25°F (14°C) and extend the time. Let big layers cool to below about 100°F (38°C) internally before slicing—the crumb structure keeps stabilizing as it cools, and slicing too hot guarantees a sticky knife.",
-        "Write down your kitchen’s ambient temperature, the oven set point, and the probe reading. Change one input per attempt—flour brand, sugar percentage, fat type, or rack position—and photograph the crumb side-by-side. SenseiFood’s Fix My Recipe debugger pairs those observations with ratio checks for your category so the next bake is a measured step, not a guess.",
-        "If you cook in Celsius, write a small cheat sheet and tape it inside a cabinet: 200°F ≈ 93°C (the cake and bread finish zone), 350°F ≈ 177°C (a common cake and cookie air temperature), and 212°F = 100°C (sea-level water boiling). Humidity changes how icings behave when slicing—note the weather when results swing for no obvious reason. Many ovens keep drifting 10–20°F after they beep done preheating, so an extra few minutes of preheat saves a lot of guessing."
+        "Most layer-cake headaches get clearer when you treat the oven and the cool-down as part of the recipe, not background noise. Many butter cakes finish somewhere near 200–210°F (93–99°C) in the center, but chocolate and very wet batters can lie to a probe—pair numbers with spring-back and a skewer, and check an inch above the pan floor on thick layers so you do not get a dry top hiding a damp belt.",
+        "Change one variable at a time—rack height, pan color, convection on or off, or the temperature curve—and photograph the crumb after the cake is fully cool. SenseiFood’s Fix My Recipe cake mode still helps when you suspect sugar, fat, or flour ratios have drifted from what the writer assumed."
       ]
     }
   ],

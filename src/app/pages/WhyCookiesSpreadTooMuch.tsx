@@ -19,18 +19,18 @@ export default function WhyCookiesSpreadTooMuch() {
 
         <header className="mb-12">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-red-500 to-orange-500 text-white px-4 py-2 rounded-full text-sm mb-6">
-            Cookie Science
+            Cookie science
           </div>
           <h1 className="text-5xl md:text-6xl mb-6 bg-gradient-to-r from-red-600 to-orange-600 bg-clip-text text-transparent">
-            Why Cookies Spread Too Much
+            Why cookies spread too much
           </h1>
           <p className="text-xl text-muted-foreground">
-            Find out why cookies merge into each other and run off the pan — and how to dial back the spread.
+            One giant lace sheet on the pan means the dough never found a wall in time — almost always temperature, sugar, flour, or the pan underneath.
           </p>
           <div className="flex items-center gap-4 mt-6 text-sm text-muted-foreground">
             <span>6 min read</span>
             <span>•</span>
-            <span>Beginner Friendly</span>
+            <span>Beginner friendly</span>
           </div>
         </header>
 
@@ -39,164 +39,105 @@ export default function WhyCookiesSpreadTooMuch() {
         </div>
 
         <div className="prose prose-lg max-w-none">
-
-          {/* Quick Answer */}
           <div className="bg-red-50 border-l-4 border-red-400 p-5 rounded-xl mb-8 flex items-start gap-4">
             <span className="text-3xl flex-shrink-0">😱</span>
             <div>
-              <p className="font-bold text-red-800 text-sm uppercase tracking-wide mb-1">Quick Answer</p>
-              <p className="text-foreground/80 leading-relaxed">Over-spreading is caused by warm butter, too much white sugar, or not enough flour. Chill the dough, swap some white sugar for brown, and add 2 tablespoons more flour.</p>
+              <p className="font-bold text-red-800 text-sm uppercase tracking-wide mb-1">Quick answer</p>
+              <p className="text-foreground/80 text-base leading-relaxed">
+                Extreme spread is warm butter plus liquid sugar behavior running ahead of structure. Chill portioned dough, confirm butter was not greasy-soft, add a couple tablespoons of flour if the formula is loose, swap some white sugar for brown, and bake on parchment — not a freshly greased pan — on a cool sheet.
+              </p>
             </div>
           </div>
 
           <p className="text-xl leading-relaxed text-foreground/80 mb-8">
-            Opening the oven to find your cookies have merged into one giant flat sheet is a baker's nightmare. Excessive spreading happens when the fat melts and the dough flows outward faster than the structure can set. Several small fixes can solve this completely.
+            You cannot un-merge a baked sheet, but you can treat the last batch as data: the oven told you the fat phase won before proteins and starch locked the outline.
+          </p>
+
+          <div className="bg-orange-50/80 border border-orange-200 rounded-2xl p-6 my-10">
+            <p className="font-semibold text-orange-900 mb-2">In plain kitchen terms</p>
+            <p className="text-foreground/80 text-base leading-relaxed mb-0">
+              Think of each cookie as a puddle waiting to happen. Your job is to keep butter solid long enough that the rim sets like a shoreline before the middle finishes sliding toward the neighbors.
+            </p>
+          </div>
+
+          <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-red-600 to-orange-600 bg-clip-text text-transparent">
+            Why it turns into one big cookie
+          </h2>
+          <p className="text-base leading-relaxed text-foreground/80 mb-5">
+            Heat melts fat and dissolves sugar; both lower viscosity. If that happens everywhere at once, disks touch while still liquid and weld together. Chilling raises the temperature you need before flow starts. Flour and eggs build the dam; if the dam is short on material or the flood is oversized, you get a lake.
+          </p>
+          <p className="text-base leading-relaxed text-foreground/80 mb-8">
+            A warm baking sheet from batch one is an underrated accelerator — the bottom layer of butter hits liquid range on contact.
           </p>
 
           <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-red-600 to-orange-600 bg-clip-text text-transparent">
-            The Spreading Mechanism
+            Fix order that matches most kitchens
           </h2>
-          <p className="text-foreground/80 leading-relaxed mb-6">
-            Cookie dough is held together by fat, flour, and eggs in a semi-solid suspension. When you put it in the oven, heat melts the fat and dissolves the sugar — both of which cause outward flow. If this happens before the egg proteins coagulate and flour starches absorb the fat and gelatinize, the cookie spreads unchecked. The goal is to slow the spread and speed the set.
+          <p className="text-base leading-relaxed text-foreground/80 mb-4">
+            <strong>1. Chill.</strong> Fastest return for most drop cookies — even thirty minutes changes the first-minute story.
+          </p>
+          <p className="text-base leading-relaxed text-foreground/80 mb-4">
+            <strong>2. Butter discipline.</strong> Soft should still feel like butter, not lotion. If the recipe used melted butter by design, expect width — that is not a bug for that style.
+          </p>
+          <p className="text-base leading-relaxed text-foreground/80 mb-4">
+            <strong>3. Flour reality check.</strong> Two tablespoons can tame a known-loose dough; a scale ends the cup lottery.
+          </p>
+          <p className="text-base leading-relaxed text-foreground/80 mb-4">
+            <strong>4. Sugar mix.</strong> Brown sugar binds water and often reins in spread versus white alone at the same fat level.
+          </p>
+          <p className="text-base leading-relaxed text-foreground/80 mb-8">
+            <strong>5. Pan surface.</strong> Parchment or silicone vs grease changes slip — pick one and keep it consistent batch to batch.
           </p>
 
-          <h2 className="text-3xl mt-12 mb-6 bg-gradient-to-r from-red-600 to-orange-600 bg-clip-text text-transparent">
-            Causes & Fixes
-          </h2>
-
-          <div className="space-y-6">
-            <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-red-200">
-              <h3 className="text-xl mb-3">🧈 Butter Too Soft or Melted</h3>
-              <p className="text-sm text-muted-foreground mb-3">
-                Butter that's too warm is already partially liquid. The moment it hits the oven, it flows immediately before any structure forms. This is the single most common cause of excessive spreading.
-              </p>
-              <div className="grid md:grid-cols-2 gap-3 text-xs">
-                <div className="bg-red-50 rounded-lg p-3 text-red-800">
-                  <strong>❌ Problem:</strong> Greasy, soft butter or accidentally melted butter in the recipe.
-                </div>
-                <div className="bg-green-50 rounded-lg p-3 text-green-800">
-                  <strong>✓ Fix:</strong> Butter at 65–68°F. Should hold a shape, not smear. Chill dough after mixing.
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-orange-200">
-              <h3 className="text-xl mb-3">⚪ Too Much White Sugar</h3>
-              <p className="text-sm text-muted-foreground mb-3">
-                White sugar liquefies readily in the oven's heat, lowering the dough's viscosity and promoting spread. A recipe heavy in white sugar will always spread more than one with brown sugar.
-              </p>
-              <div className="grid md:grid-cols-2 gap-3 text-xs">
-                <div className="bg-red-50 rounded-lg p-3 text-red-800">
-                  <strong>❌ Problem:</strong> Recipe calls for all or mostly white sugar.
-                </div>
-                <div className="bg-green-50 rounded-lg p-3 text-green-800">
-                  <strong>✓ Fix:</strong> Swap up to half the white sugar for brown sugar, which holds moisture and resists spreading.
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200">
-              <h3 className="text-xl mb-3">🌾 Too Little Flour</h3>
-              <p className="text-sm text-muted-foreground mb-3">
-                Flour is the backbone of cookie structure. Insufficient flour means not enough protein and starch to contain the fat as it melts — the dough simply can't hold its shape.
-              </p>
-              <div className="grid md:grid-cols-2 gap-3 text-xs">
-                <div className="bg-red-50 rounded-lg p-3 text-red-800">
-                  <strong>❌ Problem:</strong> Scooping flour compacts it, leading to over-measuring. Resulting in surprisingly under-floured dough.
-                </div>
-                <div className="bg-green-50 rounded-lg p-3 text-green-800">
-                  <strong>✓ Fix:</strong> Spoon flour into the cup and level. Or use a scale: 1 cup = 120–125g.
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-yellow-200">
-              <h3 className="text-xl mb-3">🧊 Warm Dough Going into Hot Oven</h3>
-              <p className="text-sm text-muted-foreground mb-3">
-                Dough at room temperature (or warmer) means the fat is already near its melting point. It reaches liquid state in seconds once inside the oven.
-              </p>
-              <div className="grid md:grid-cols-2 gap-3 text-xs">
-                <div className="bg-red-50 rounded-lg p-3 text-red-800">
-                  <strong>❌ Problem:</strong> Baking straight from mixing, or on a warm day.
-                </div>
-                <div className="bg-green-50 rounded-lg p-3 text-green-800">
-                  <strong>✓ Fix:</strong> Refrigerate portioned dough balls for 30 min–24 hours before baking.
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-red-100">
-              <h3 className="text-xl mb-3">🍳 Greased Baking Sheet</h3>
-              <p className="text-sm text-muted-foreground mb-3">
-                Extra grease at the base of the cookie means zero friction — the dough slides and spreads freely as soon as the fat softens.
-              </p>
-              <div className="grid md:grid-cols-2 gap-3 text-xs">
-                <div className="bg-red-50 rounded-lg p-3 text-red-800">
-                  <strong>❌ Problem:</strong> Greasing non-stick pans or reusing pan without cleaning.
-                </div>
-                <div className="bg-green-50 rounded-lg p-3 text-green-800">
-                  <strong>✓ Fix:</strong> Use parchment paper or silicone mat — no grease needed, and they reduce spread.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-red-200 my-10">
-            <h3 className="text-xl mb-6 text-center">Quick Fix Priority Order</h3>
-            <div className="space-y-3">
-              {[
-                { num: '1', text: 'Chill the dough — easiest, highest impact', color: 'border-red-500 bg-red-50' },
-                { num: '2', text: 'Check butter temp — should be firm, not greasy', color: 'border-orange-500 bg-orange-50' },
-                { num: '3', text: 'Add 2 tbsp more flour — raises the spread threshold', color: 'border-amber-500 bg-amber-50' },
-                { num: '4', text: 'Swap some white sugar for brown sugar', color: 'border-yellow-500 bg-yellow-50' },
-                { num: '5', text: 'Switch from greased pan to parchment', color: 'border-green-500 bg-green-50' },
-              ].map(item => (
-                <div key={item.num} className={`border-l-4 ${item.color} pl-6 py-3 rounded-r-lg`}>
-                  <span className="font-bold text-lg mr-3">{item.num}.</span>
-                  <span className="text-sm text-muted-foreground">{item.text}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-
-          {/* FAQ Section */}
           <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-stone-200 my-10">
-            <h2 className="text-3xl mb-6">Frequently Asked Questions</h2>
+            <h2 className="text-3xl mb-6">Frequently asked questions</h2>
             <div className="space-y-6">
               <div>
-                <h3 className="text-xl mb-2">Can I fix cookies that have already spread too much?</h3>
-                <p className="text-muted-foreground text-sm">Not the current batch — once baked, the structure is set. For future batches: chill the dough, verify butter was at the right temperature, add 2 tablespoons more flour, and check that leavening is fresh.</p>
+                <h3 className="text-xl mb-2">Can I save a merged batch?</h3>
+                <p className="text-muted-foreground text-base leading-relaxed">
+                  Not structurally — enjoy cookie brittle or trim shapes for ice cream sandwiches. Fix forward with chill and spacing.
+                </p>
               </div>
               <div className="border-t border-stone-100 pt-6">
-                <h3 className="text-xl mb-2">Why do cookies spread more on the second baking sheet?</h3>
-                <p className="text-muted-foreground text-sm">The pan is still warm from the first batch, causing butter to melt immediately on contact. Always cool baking sheets completely between batches, or use multiple pans.</p>
+                <h3 className="text-xl mb-2">Second tray spreads more — why?</h3>
+                <p className="text-muted-foreground text-base leading-relaxed">
+                  Hot metal pre-melts the foot contact layer. Cool the sheet or rotate in a second cold pan.
+                </p>
               </div>
               <div className="border-t border-stone-100 pt-6">
-                <h3 className="text-xl mb-2">Does brown sugar prevent spreading?</h3>
-                <p className="text-muted-foreground text-sm">Yes — brown sugar is hygroscopic and retains moisture, which increases dough viscosity and reduces spreading. Replacing some white sugar with brown is an effective fix for over-spreading.</p>
+                <h3 className="text-xl mb-2">Does brown sugar “fix” spread?</h3>
+                <p className="text-muted-foreground text-base leading-relaxed">
+                  Often yes, a partial swap thickens the melt curve. It also changes chew and color — track one variable at a time.
+                </p>
               </div>
               <div className="border-t border-stone-100 pt-6">
-                <h3 className="text-xl mb-2">Why do cookies spread in the oven but puff up on the cooling rack?</h3>
-                <p className="text-muted-foreground text-sm">That's actually normal and desirable. In the oven, fat melts and the cookie spreads. As it cools, the fat re-solidifies and pulls the cookie up slightly. A small rise during cooling indicates good fat structure.</p>
+                <h3 className="text-xl mb-2">Tiny puff on the rack after a flat bake?</h3>
+                <p className="text-muted-foreground text-base leading-relaxed">
+                  Fat re-firms as it cools; a little lift is normal. That is not the same as good in-oven control, but it is not dangerous.
+                </p>
               </div>
             </div>
           </div>
-          {/* Related Articles */}
+
           <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-amber-200 my-10">
-            <h3 className="text-2xl mb-4">Related Articles</h3>
-            <div className="space-y-3">
-              <Link to="/cookie-science/why-cookies-are-chewy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Are Chewy</Link>
-              <Link to="/cookie-science/why-cookies-get-crispy" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Get Crispy</Link>
-              <Link to="/cookie-science/why-cookies-flatten" className="block text-amber-700 hover:underline text-sm font-medium">→ Why Cookies Flatten</Link>
-              <Link to="/cookie-science/brown-sugar-vs-white-sugar" className="block text-amber-700 hover:underline text-sm font-medium">→ Brown Sugar vs White Sugar</Link>
+            <h3 className="text-2xl mb-4">Related</h3>
+            <div className="space-y-2 text-base">
+              <Link to="/cookie-science/why-cookies-spread" className="block text-amber-700 hover:underline font-medium">
+                Why cookies spread
+              </Link>
+              <Link to="/cookie-science/why-cookies-flatten" className="block text-amber-700 hover:underline font-medium">
+                Why cookies flatten
+              </Link>
+              <Link to="/cookie-science/brown-sugar-vs-white-sugar" className="block text-amber-700 hover:underline font-medium">
+                Brown sugar vs white sugar
+              </Link>
             </div>
           </div>
 
           <div className="bg-gradient-to-r from-red-500 to-orange-500 text-white rounded-2xl p-8 my-12">
-            <h2 className="text-3xl mb-4">Stop the Spread</h2>
+            <h2 className="text-3xl mb-4">Model the tray before you bake</h2>
             <p className="text-lg text-white/90 mb-6">
-              Use CookieSensei to predict how much your cookies will spread before you bake.
+              CookieSensei is useful when you are tired of guessing which knob actually moved the footprint.
             </p>
             <a
               href="https://cookiesensei.senseifood.com"

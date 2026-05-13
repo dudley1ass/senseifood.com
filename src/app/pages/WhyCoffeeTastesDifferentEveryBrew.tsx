@@ -54,11 +54,10 @@ const SPEC: ScienceArticleSpec = {
       ]
     },
     {
-      "heading": "Benchmark temperatures and a simple repeatable test",
+      "heading": "Dialing the next session without chasing every knob",
       "paragraphs": [
-        "This guide is easier to act on when you anchor a few numbers instead of going by vibes. Water temperature for manual filter brewing is often discussed around 195–205°F (90–96°C) off the boil, with the right end of that range shifting a few degrees for roast level and altitude—cooler water can under-extract acids while hotter water can over-extract bitter compounds. For espresso, the temperature of the puck (the compacted disc of grounds in the basket) interacts with the pressure and the flow rate: channeling (water finding a fast path through the puck rather than evenly through all of it) produces a cup that has both under-extracted and over-extracted pockets at once. Grind size changes surface area exponentially in practice—small grind steps move extraction more than even big temperature jumps. Record your dose, yield, time, and taste notes together, and change only one variable per session so you can isolate what mattered.",
-        "Write down your kitchen’s ambient temperature, the brewer or machine setting, and—when relevant—an internal probe reading. Change one input per trial: grind size, water temperature, ratio, or pour technique. Photograph the cup side-by-side after each change. SenseiFood’s Fix My Recipe debugger pairs those observations with ratio checks for your category so the next brew is a measured step, not a guess.",
-        "If you cook in Celsius, write a small cheat sheet and tape it inside a cabinet: 200°F is about 93°C, 212°F is 100°C (where water boils at sea level), and classic espresso shot times are usually discussed in the 25–35 second range for a 9-bar shot (9-bar refers to the brewing pressure of a traditional espresso machine, where bar is a pressure unit). Altitude lowers water’s boiling point, which shifts extraction and evaporation; brewers at elevation should rely on temperature and taste rather than only the clock. Humidity in your kitchen also changes how grounds clump in the grinder—jot the weather when results swing for no obvious reason."
+        "Coffee rewards boring notes: dose, grind, water temperature, pour pattern or pressure, and total brew time. Filter brews are often happiest somewhere in the 195–205°F (90–96°C) neighborhood depending on roast, but taste still beats the sticker on the kettle. For espresso, watch for channeling—holes in the puck that let water sneak through—because it mixes bitter and thin in the same cup.",
+        "Change one variable per session and write a single line about the cup (sweet, sour, hollow, muddy). SenseiFood’s Fix My Recipe coffee checks are useful when you want to confirm your ratio bands, but your tongue on a steady recipe tells you faster than retuning six things at once."
       ]
     },
     {
