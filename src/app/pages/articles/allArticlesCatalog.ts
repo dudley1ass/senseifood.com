@@ -1846,7 +1846,7 @@ const TOPIC_GAP_ARTICLE_CATALOG_ROWS: ArticleCardBase[] = [
     description:
       'After midlife, muscle responds more softly to the same protein dose—spread anchors through the day and pair food with simple strength work.',
     category: 'Nutrition · Eating over 50',
-    readTime: '7 min read',
+    readTime: '9 min read',
     color: 'from-emerald-500 to-teal-600',
     url: '/nutrition-science/why-protein-matters-more-after-50',
   },
@@ -1855,7 +1855,7 @@ const TOPIC_GAP_ARTICLE_CATALOG_ROWS: ArticleCardBase[] = [
     description:
       'Hormones, medications, and duller taste and smell can quiet hunger cues—patterns shift even when “nothing changed” on purpose.',
     category: 'Nutrition · Eating over 50',
-    readTime: '7 min read',
+    readTime: '9 min read',
     color: 'from-teal-500 to-cyan-600',
     url: '/nutrition-science/why-appetite-changes-after-50',
   },
@@ -1864,7 +1864,7 @@ const TOPIC_GAP_ARTICLE_CATALOG_ROWS: ArticleCardBase[] = [
     description:
       'Thirst signaling softens while kidneys and sweat patterns change—dehydration risk rises before you feel obviously thirsty.',
     category: 'Nutrition · Eating over 50',
-    readTime: '6 min read',
+    readTime: '9 min read',
     color: 'from-cyan-500 to-sky-600',
     url: '/nutrition-science/why-hydration-gets-harder-with-age',
   },
@@ -1873,7 +1873,7 @@ const TOPIC_GAP_ARTICLE_CATALOG_ROWS: ArticleCardBase[] = [
     description:
       'Nutrient density, enough protein, fiber, and anti-inflammatory patterns matter more than chasing a perfect calorie number on the label.',
     category: 'Nutrition · Eating over 50',
-    readTime: '7 min read',
+    readTime: '9 min read',
     color: 'from-sky-500 to-blue-600',
     url: '/nutrition-science/best-foods-for-healthy-aging',
   },
@@ -1882,7 +1882,7 @@ const TOPIC_GAP_ARTICLE_CATALOG_ROWS: ArticleCardBase[] = [
     description:
       'Sarcopenia is gradual loss of strength and mass—food quality, protein timing, and resistance training are the practical brakes.',
     category: 'Nutrition · Eating over 50',
-    readTime: '7 min read',
+    readTime: '9 min read',
     color: 'from-blue-500 to-indigo-600',
     url: '/nutrition-science/why-muscle-loss-happens-as-you-age',
   },
@@ -1891,7 +1891,7 @@ const TOPIC_GAP_ARTICLE_CATALOG_ROWS: ArticleCardBase[] = [
     description:
       'Protein synthesis, inflammation, and sleep architecture shift—meals and rest need a gentler, steadier plan than “push through.”',
     category: 'Nutrition · Eating over 50',
-    readTime: '6 min read',
+    readTime: '9 min read',
     color: 'from-indigo-500 to-violet-600',
     url: '/nutrition-science/why-recovery-takes-longer-after-50',
   },
@@ -1900,7 +1900,7 @@ const TOPIC_GAP_ARTICLE_CATALOG_ROWS: ArticleCardBase[] = [
     description:
       'Bitterness sensitivity, unfamiliar textures, and a cautious brain read many vegetables as “unknown”—biology more than defiance.',
     category: 'Nutrition · Feeding kids',
-    readTime: '6 min read',
+    readTime: '9 min read',
     color: 'from-lime-500 to-green-600',
     url: '/nutrition-science/why-kids-reject-vegetables',
   },
@@ -1909,7 +1909,7 @@ const TOPIC_GAP_ARTICLE_CATALOG_ROWS: ArticleCardBase[] = [
     description:
       'Small environment tweaks—predictable structure, choice within limits, and calm modeling—beat clean-plate pressure for long-term habits.',
     category: 'Nutrition · Feeding kids',
-    readTime: '7 min read',
+    readTime: '9 min read',
     color: 'from-green-500 to-emerald-600',
     url: '/nutrition-science/how-to-build-healthier-kids-meals-without-food-fights',
   },
@@ -1918,7 +1918,7 @@ const TOPIC_GAP_ARTICLE_CATALOG_ROWS: ArticleCardBase[] = [
     description:
       'Engineered crunch, salt–fat–sugar loops, and rapid eating strongly light up reward circuits—palatability science, not weak willpower.',
     category: 'Nutrition · Feeding kids',
-    readTime: '6 min read',
+    readTime: '9 min read',
     color: 'from-emerald-500 to-teal-600',
     url: '/nutrition-science/why-kids-love-processed-foods',
   },
@@ -1927,7 +1927,7 @@ const TOPIC_GAP_ARTICLE_CATALOG_ROWS: ArticleCardBase[] = [
     description:
       'Most kids land near needs with normal portions; gaps show up as grazing, low variety, or ultra-processed patterns more than “not enough grams.”',
     category: 'Nutrition · Feeding kids',
-    readTime: '6 min read',
+    readTime: '9 min read',
     color: 'from-teal-500 to-cyan-600',
     url: '/nutrition-science/protein-for-growing-kids-what-actually-matters',
   },
@@ -1936,7 +1936,7 @@ const TOPIC_GAP_ARTICLE_CATALOG_ROWS: ArticleCardBase[] = [
     description:
       'Morning fuel changes blood sugar stability, attention, and mood—what matters is a steady pattern more than one “superfood.”',
     category: 'Nutrition · Feeding kids',
-    readTime: '6 min read',
+    readTime: '9 min read',
     color: 'from-cyan-500 to-blue-600',
     url: '/nutrition-science/why-breakfast-affects-school-performance',
   },
@@ -1945,7 +1945,7 @@ const TOPIC_GAP_ARTICLE_CATALOG_ROWS: ArticleCardBase[] = [
     description:
       'Repeated low-pressure exposure beats negotiation—tiny tastes, pairing with liked foods, and predictable routines build familiarity.',
     category: 'Nutrition · Feeding kids',
-    readTime: '6 min read',
+    readTime: '9 min read',
     color: 'from-blue-500 to-indigo-600',
     url: '/nutrition-science/how-to-introduce-new-foods-to-kids',
   },
@@ -1954,7 +1954,7 @@ const TOPIC_GAP_ARTICLE_CATALOG_ROWS: ArticleCardBase[] = [
     description:
       'Growth spurts, sleep debt, protein-poor snacks, and hyper-palatable foods can all short-circuit fullness signals in busy weeks.',
     category: 'Nutrition · Feeding kids',
-    readTime: '6 min read',
+    readTime: '9 min read',
     color: 'from-indigo-500 to-violet-600',
     url: '/nutrition-science/why-some-kids-are-always-hungry',
   },
@@ -1963,7 +1963,7 @@ const TOPIC_GAP_ARTICLE_CATALOG_ROWS: ArticleCardBase[] = [
     description:
       'Batching cuts decision fatigue and defaults—consistency often comes from fewer evening choices, not from superhuman discipline.',
     category: 'Nutrition · Family meals',
-    readTime: '6 min read',
+    readTime: '9 min read',
     color: 'from-orange-500 to-amber-600',
     url: '/nutrition-science/why-meal-prep-actually-works',
   },
@@ -1972,7 +1972,7 @@ const TOPIC_GAP_ARTICLE_CATALOG_ROWS: ArticleCardBase[] = [
     description:
       'A simple plate method—protein anchor, colorful produce, smart carbs, and a fat that satisfies—keeps weeknight cooking flexible.',
     category: 'Nutrition · Family meals',
-    readTime: '7 min read',
+    readTime: '9 min read',
     color: 'from-amber-500 to-yellow-600',
     url: '/nutrition-science/how-to-build-balanced-family-meals',
   },
@@ -1981,7 +1981,7 @@ const TOPIC_GAP_ARTICLE_CATALOG_ROWS: ArticleCardBase[] = [
     description:
       'Modern food environments prioritize speed, novelty, and calories per dollar—your brain is navigating engineered convenience, not laziness.',
     category: 'Nutrition · Family meals',
-    readTime: '6 min read',
+    readTime: '9 min read',
     color: 'from-yellow-500 to-lime-600',
     url: '/nutrition-science/why-healthy-eating-feels-hard',
   },
@@ -1990,7 +1990,7 @@ const TOPIC_GAP_ARTICLE_CATALOG_ROWS: ArticleCardBase[] = [
     description:
       'Satisfaction and identity foods belong in a sustainable plan—restriction-only plans break first when stress arrives.',
     category: 'Nutrition · Family meals',
-    readTime: '6 min read',
+    readTime: '9 min read',
     color: 'from-lime-500 to-green-600',
     url: '/nutrition-science/how-to-eat-better-without-giving-up-comfort-food',
   },
@@ -1999,7 +1999,7 @@ const TOPIC_GAP_ARTICLE_CATALOG_ROWS: ArticleCardBase[] = [
     description:
       'Packages, restaurant plates, and “value” sizing reset what looks normal—your eyes stop being a reliable calorie gauge.',
     category: 'Nutrition · Family meals',
-    readTime: '6 min read',
+    readTime: '9 min read',
     color: 'from-green-500 to-emerald-600',
     url: '/nutrition-science/why-portion-sizes-have-changed-so-much',
   },
@@ -2008,7 +2008,7 @@ const TOPIC_GAP_ARTICLE_CATALOG_ROWS: ArticleCardBase[] = [
     description:
       'Stress, short sleep, skipped daytime meals, and blood sugar dips team up—midnight kitchen trips are often physiology meeting habit.',
     category: 'Nutrition · Family meals',
-    readTime: '6 min read',
+    readTime: '9 min read',
     color: 'from-emerald-500 to-teal-600',
     url: '/nutrition-science/why-late-night-snacking-happens',
   },
@@ -2017,7 +2017,7 @@ const TOPIC_GAP_ARTICLE_CATALOG_ROWS: ArticleCardBase[] = [
     description:
       'Extreme cuts wake hunger hormones, cost muscle alongside fat, and teach your brain that restraint equals misery—rebounds meet biology.',
     category: 'Nutrition · Weight & metabolism',
-    readTime: '7 min read',
+    readTime: '9 min read',
     color: 'from-rose-500 to-red-600',
     url: '/nutrition-science/why-crash-diets-fail',
   },
@@ -2026,7 +2026,7 @@ const TOPIC_GAP_ARTICLE_CATALOG_ROWS: ArticleCardBase[] = [
     description:
       'Fiber slows digestion, adds chew time, and shifts fermentation—fullness and steadier energy beat “willpower only” framing.',
     category: 'Nutrition · Weight & metabolism',
-    readTime: '6 min read',
+    readTime: '9 min read',
     color: 'from-red-500 to-orange-600',
     url: '/nutrition-science/why-fiber-helps-with-weight-control',
   },
@@ -2035,7 +2035,7 @@ const TOPIC_GAP_ARTICLE_CATALOG_ROWS: ArticleCardBase[] = [
     description:
       'Drinks clear the stomach quickly and skip many oral-texture satiety cues—your brain gets calories without the usual “meal” signals.',
     category: 'Nutrition · Weight & metabolism',
-    readTime: '6 min read',
+    readTime: '9 min read',
     color: 'from-orange-500 to-amber-600',
     url: '/nutrition-science/why-liquid-calories-dont-feel-filling',
   },
@@ -2044,7 +2044,7 @@ const TOPIC_GAP_ARTICLE_CATALOG_ROWS: ArticleCardBase[] = [
     description:
       'Protein shifts satiety hormones and helps protect lean mass—many people simply feel less “white-knuckle hungry” day to day.',
     category: 'Nutrition · Weight & metabolism',
-    readTime: '6 min read',
+    readTime: '9 min read',
     color: 'from-amber-500 to-yellow-600',
     url: '/nutrition-science/why-high-protein-diets-feel-easier',
   },
@@ -2053,7 +2053,7 @@ const TOPIC_GAP_ARTICLE_CATALOG_ROWS: ArticleCardBase[] = [
     description:
       'Prioritize protein anchors, hydration habits, appetite shifts, and easy-to-chew textures—safety and enjoyment share the plate.',
     category: 'Nutrition · Seniors & families',
-    readTime: '7 min read',
+    readTime: '9 min read',
     color: 'from-violet-500 to-purple-600',
     url: '/nutrition-science/cooking-for-aging-parents-nutrition-that-matters',
   },
@@ -2062,7 +2062,7 @@ const TOPIC_GAP_ARTICLE_CATALOG_ROWS: ArticleCardBase[] = [
     description:
       'Simple skillet patterns, grocery shortcuts, and soft-but-substantial options keep strength practical on low-energy days.',
     category: 'Nutrition · Seniors & families',
-    readTime: '6 min read',
+    readTime: '9 min read',
     color: 'from-purple-500 to-fuchsia-600',
     url: '/nutrition-science/easy-high-protein-meals-for-older-adults',
   },
@@ -2071,7 +2071,7 @@ const TOPIC_GAP_ARTICLE_CATALOG_ROWS: ArticleCardBase[] = [
     description:
       'Defaults beat ideals—batch proteins, frozen vegetables, and repeatable templates beat chasing picture-perfect from-scratch every night.',
     category: 'Nutrition · Seniors & families',
-    readTime: '6 min read',
+    readTime: '9 min read',
     color: 'from-fuchsia-500 to-pink-600',
     url: '/nutrition-science/nutrition-for-busy-families',
   },
@@ -2080,7 +2080,7 @@ const TOPIC_GAP_ARTICLE_CATALOG_ROWS: ArticleCardBase[] = [
     description:
       'Shared tables model pacing, variety, and conversation—kids pick up eating norms from what they see repeated calmly.',
     category: 'Nutrition · Seniors & families',
-    readTime: '6 min read',
+    readTime: '9 min read',
     color: 'from-pink-500 to-rose-600',
     url: '/nutrition-science/why-family-dinners-matter',
   },
