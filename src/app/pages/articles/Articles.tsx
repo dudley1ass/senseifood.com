@@ -51,6 +51,11 @@ export default function Articles() {
     }
     if (activeTab === 'fix-it') return articles.filter((a) => FIX_IT_URLS.has(a.url));
     if (activeTab === 'all') return articles;
+    if (activeTab === 'nutrition') {
+      return articles.filter(
+        (a) => a.category === 'Nutrition' || a.category.startsWith('Nutrition ·')
+      );
+    }
     const tab = ARTICLE_TABS.find((t) => t.id === activeTab);
     const cat = tab?.category;
     if (!cat || cat === 'FIX_IT' || cat === 'ALL') return articles;

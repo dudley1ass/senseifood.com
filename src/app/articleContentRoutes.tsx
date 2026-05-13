@@ -96,6 +96,33 @@ import WhyProteinKeepsYouFullLonger from './pages/WhyProteinKeepsYouFullLonger';
 import WhyPumpkinPieWeeps from './pages/WhyPumpkinPieWeeps';
 import WhySaucesTasteBetterTheNextDay from './pages/WhySaucesTasteBetterTheNextDay';
 import BasilPesto from './pages/BasilPesto';
+import BestFoodsForHealthyAging from './pages/BestFoodsForHealthyAging';
+import CookingForAgingParentsNutritionThatMatters from './pages/CookingForAgingParentsNutritionThatMatters';
+import EasyHighProteinMealsForOlderAdults from './pages/EasyHighProteinMealsForOlderAdults';
+import HowToBuildBalancedFamilyMeals from './pages/HowToBuildBalancedFamilyMeals';
+import HowToBuildHealthierKidsMealsWithoutFoodFights from './pages/HowToBuildHealthierKidsMealsWithoutFoodFights';
+import HowToEatBetterWithoutGivingUpComfortFood from './pages/HowToEatBetterWithoutGivingUpComfortFood';
+import HowToIntroduceNewFoodsToKids from './pages/HowToIntroduceNewFoodsToKids';
+import NutritionForBusyFamilies from './pages/NutritionForBusyFamilies';
+import ProteinForGrowingKidsWhatActuallyMatters from './pages/ProteinForGrowingKidsWhatActuallyMatters';
+import WhyAppetiteChangesAfter50 from './pages/WhyAppetiteChangesAfter50';
+import WhyBreakfastAffectsSchoolPerformance from './pages/WhyBreakfastAffectsSchoolPerformance';
+import WhyCrashDietsFail from './pages/WhyCrashDietsFail';
+import WhyFamilyDinnersMatter from './pages/WhyFamilyDinnersMatter';
+import WhyFiberHelpsWithWeightControl from './pages/WhyFiberHelpsWithWeightControl';
+import WhyHealthyEatingFeelsHard from './pages/WhyHealthyEatingFeelsHard';
+import WhyHighProteinDietsFeelEasier from './pages/WhyHighProteinDietsFeelEasier';
+import WhyHydrationGetsHarderWithAge from './pages/WhyHydrationGetsHarderWithAge';
+import WhyKidsLoveProcessedFoods from './pages/WhyKidsLoveProcessedFoods';
+import WhyKidsRejectVegetables from './pages/WhyKidsRejectVegetables';
+import WhyLateNightSnackingHappens from './pages/WhyLateNightSnackingHappens';
+import WhyLiquidCaloriesDontFeelFilling from './pages/WhyLiquidCaloriesDontFeelFilling';
+import WhyMealPrepActuallyWorks from './pages/WhyMealPrepActuallyWorks';
+import WhyMuscleLossHappensAsYouAge from './pages/WhyMuscleLossHappensAsYouAge';
+import WhyPortionSizesHaveChangedSoMuch from './pages/WhyPortionSizesHaveChangedSoMuch';
+import WhyProteinMattersMoreAfter50 from './pages/WhyProteinMattersMoreAfter50';
+import WhyRecoveryTakesLongerAfter50 from './pages/WhyRecoveryTakesLongerAfter50';
+import WhySomeKidsAreAlwaysHungry from './pages/WhySomeKidsAreAlwaysHungry';
 
 export const articleContentRoutes = [
   { path: 'bread-science/why-bread-doesnt-rise', Component: WhyBreadDoesntRise },
@@ -167,6 +194,33 @@ export const articleContentRoutes = [
   { path: 'nutrition-science/why-protein-keeps-you-full-longer', Component: WhyProteinKeepsYouFullLonger },
   { path: 'nutrition-science/why-processed-foods-are-easy-to-overeat', Component: WhyProcessedFoodsAreEasyToOvereat },
   { path: 'nutrition-science/why-fiber-matters-for-blood-sugar', Component: WhyFiberMattersForBloodSugar },
+  { path: 'nutrition-science/best-foods-for-healthy-aging', Component: BestFoodsForHealthyAging },
+  { path: 'nutrition-science/cooking-for-aging-parents-nutrition-that-matters', Component: CookingForAgingParentsNutritionThatMatters },
+  { path: 'nutrition-science/easy-high-protein-meals-for-older-adults', Component: EasyHighProteinMealsForOlderAdults },
+  { path: 'nutrition-science/how-to-build-balanced-family-meals', Component: HowToBuildBalancedFamilyMeals },
+  { path: 'nutrition-science/how-to-build-healthier-kids-meals-without-food-fights', Component: HowToBuildHealthierKidsMealsWithoutFoodFights },
+  { path: 'nutrition-science/how-to-eat-better-without-giving-up-comfort-food', Component: HowToEatBetterWithoutGivingUpComfortFood },
+  { path: 'nutrition-science/how-to-introduce-new-foods-to-kids', Component: HowToIntroduceNewFoodsToKids },
+  { path: 'nutrition-science/nutrition-for-busy-families', Component: NutritionForBusyFamilies },
+  { path: 'nutrition-science/protein-for-growing-kids-what-actually-matters', Component: ProteinForGrowingKidsWhatActuallyMatters },
+  { path: 'nutrition-science/why-appetite-changes-after-50', Component: WhyAppetiteChangesAfter50 },
+  { path: 'nutrition-science/why-breakfast-affects-school-performance', Component: WhyBreakfastAffectsSchoolPerformance },
+  { path: 'nutrition-science/why-crash-diets-fail', Component: WhyCrashDietsFail },
+  { path: 'nutrition-science/why-family-dinners-matter', Component: WhyFamilyDinnersMatter },
+  { path: 'nutrition-science/why-fiber-helps-with-weight-control', Component: WhyFiberHelpsWithWeightControl },
+  { path: 'nutrition-science/why-healthy-eating-feels-hard', Component: WhyHealthyEatingFeelsHard },
+  { path: 'nutrition-science/why-high-protein-diets-feel-easier', Component: WhyHighProteinDietsFeelEasier },
+  { path: 'nutrition-science/why-hydration-gets-harder-with-age', Component: WhyHydrationGetsHarderWithAge },
+  { path: 'nutrition-science/why-kids-love-processed-foods', Component: WhyKidsLoveProcessedFoods },
+  { path: 'nutrition-science/why-kids-reject-vegetables', Component: WhyKidsRejectVegetables },
+  { path: 'nutrition-science/why-late-night-snacking-happens', Component: WhyLateNightSnackingHappens },
+  { path: 'nutrition-science/why-liquid-calories-dont-feel-filling', Component: WhyLiquidCaloriesDontFeelFilling },
+  { path: 'nutrition-science/why-meal-prep-actually-works', Component: WhyMealPrepActuallyWorks },
+  { path: 'nutrition-science/why-muscle-loss-happens-as-you-age', Component: WhyMuscleLossHappensAsYouAge },
+  { path: 'nutrition-science/why-portion-sizes-have-changed-so-much', Component: WhyPortionSizesHaveChangedSoMuch },
+  { path: 'nutrition-science/why-protein-matters-more-after-50', Component: WhyProteinMattersMoreAfter50 },
+  { path: 'nutrition-science/why-recovery-takes-longer-after-50', Component: WhyRecoveryTakesLongerAfter50 },
+  { path: 'nutrition-science/why-some-kids-are-always-hungry', Component: WhySomeKidsAreAlwaysHungry },
   { path: 'sauce-science/why-cream-sauces-curdle', Component: WhyCreamSaucesCurdle },
   { path: 'sauce-science/why-sauces-taste-better-the-next-day', Component: WhySaucesTasteBetterTheNextDay },
   { path: 'sauce-science/why-butter-sauces-separate', Component: WhyButterSaucesSeparate },

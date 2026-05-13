@@ -27,6 +27,7 @@ export function senseiPeiForArticle(category: string, url: string): string {
   if (
     category === 'Baking Science' ||
     category === 'Nutrition' ||
+    category.startsWith('Nutrition ·') ||
     category === 'Cake Science' ||
     category === 'Pie Science' ||
     category === 'Ice Cream Science' ||
@@ -736,42 +737,27 @@ const FOUNDATIONAL_ARTICLE_ROWS: ArticleCardBase[] = [
     {
       title: 'How Much Protein Do You Actually Need?',
       description: 'Most people under-eat protein for health and recovery. Learn evidence-based daily ranges and why meal-by-meal distribution matters.',
-      category: 'Nutrition',
-      readTime: '9 min read',
-      color: 'from-emerald-500 to-green-600',
-      url: '/nutrition-science/how-much-protein-do-you-actually-need',
+      category: 'Nutrition · Eating over 50',
     },
     {
       title: 'The Power of Vegetables: Why Quantity Matters',
       description: 'Vegetables are fiber and phytochemical systems that influence satiety, inflammation, and microbiome health far beyond calorie count.',
-      category: 'Nutrition',
-      readTime: '8 min read',
-      color: 'from-green-500 to-lime-600',
-      url: '/nutrition-science/power-of-vegetables-why-quantity-matters',
+      category: 'Nutrition · Family meals',
     },
     {
       title: 'Balanced Plates Without Counting Calories',
       description: 'Use a visual plate method to stabilize blood sugar, improve satiety, and eat well without tracking every macro.',
-      category: 'Nutrition',
-      readTime: '8 min read',
-      color: 'from-teal-500 to-cyan-600',
-      url: '/nutrition-science/balanced-plates-without-counting-calories',
+      category: 'Nutrition · Family meals',
     },
     {
       title: "Why You're Still Hungry: The Science of Satiety",
       description: 'If you are always hungry, it is often meal construction, not discipline. Learn hormone and food-structure drivers of fullness.',
-      category: 'Nutrition',
-      readTime: '8 min read',
-      color: 'from-orange-500 to-amber-600',
-      url: '/nutrition-science/why-youre-still-hungry-science-of-satiety',
+      category: 'Nutrition · Weight & metabolism',
     },
     {
       title: 'Protein + Fiber for Health and Weight Control',
       description: 'Pairing protein and fiber improves fullness, reduces cravings, and supports metabolic health with practical per-meal target ranges.',
-      category: 'Nutrition',
-      readTime: '8 min read',
-      color: 'from-indigo-500 to-blue-600',
-      url: '/nutrition-science/protein-plus-fiber-for-health-and-weight-control',
+      category: 'Nutrition · Weight & metabolism',
     },
 ];
 
@@ -1819,7 +1805,7 @@ const TOPIC_GAP_ARTICLE_CATALOG_ROWS: ArticleCardBase[] = [
   {
     title: 'Why Protein Keeps You Full Longer',
     description: 'Gut hormones, slower gastric emptying, and higher thermic effect stack for durable satiety.',
-    category: 'Nutrition',
+    category: 'Nutrition · Weight & metabolism',
     readTime: '8 min read',
     color: 'from-emerald-500 to-teal-600',
     url: '/nutrition-science/why-protein-keeps-you-full-longer',
@@ -1827,7 +1813,7 @@ const TOPIC_GAP_ARTICLE_CATALOG_ROWS: ArticleCardBase[] = [
   {
     title: 'Why Processed Foods Are Easy to Overeat',
     description: 'Energy density, rapid oral processing, and engineered palatability bypass normal brakes.',
-    category: 'Nutrition',
+    category: 'Nutrition · Weight & metabolism',
     readTime: '8 min read',
     color: 'from-teal-500 to-green-600',
     url: '/nutrition-science/why-processed-foods-are-easy-to-overeat',
@@ -1835,10 +1821,253 @@ const TOPIC_GAP_ARTICLE_CATALOG_ROWS: ArticleCardBase[] = [
   {
     title: 'Why Fiber Matters for Blood Sugar',
     description: 'Viscosity, absorption rate, and fermentation products change glucose curves beyond sugar grams alone.',
-    category: 'Nutrition',
+    category: 'Nutrition · Weight & metabolism',
     readTime: '8 min read',
     color: 'from-green-500 to-emerald-600',
     url: '/nutrition-science/why-fiber-matters-for-blood-sugar',
+  },
+  {
+    title: 'Why Protein Matters More After 50',
+    description:
+      'After midlife, muscle responds more softly to the same protein dose—spread anchors through the day and pair food with simple strength work.',
+    category: 'Nutrition · Eating over 50',
+    readTime: '7 min read',
+    color: 'from-emerald-500 to-teal-600',
+    url: '/nutrition-science/why-protein-matters-more-after-50',
+  },
+  {
+    title: 'Why Appetite Changes After 50',
+    description:
+      'Hormones, medications, and duller taste and smell can quiet hunger cues—patterns shift even when “nothing changed” on purpose.',
+    category: 'Nutrition · Eating over 50',
+    readTime: '7 min read',
+    color: 'from-teal-500 to-cyan-600',
+    url: '/nutrition-science/why-appetite-changes-after-50',
+  },
+  {
+    title: 'Why Hydration Gets Harder With Age',
+    description:
+      'Thirst signaling softens while kidneys and sweat patterns change—dehydration risk rises before you feel obviously thirsty.',
+    category: 'Nutrition · Eating over 50',
+    readTime: '6 min read',
+    color: 'from-cyan-500 to-sky-600',
+    url: '/nutrition-science/why-hydration-gets-harder-with-age',
+  },
+  {
+    title: 'Best Foods for Healthy Aging',
+    description:
+      'Nutrient density, enough protein, fiber, and anti-inflammatory patterns matter more than chasing a perfect calorie number on the label.',
+    category: 'Nutrition · Eating over 50',
+    readTime: '7 min read',
+    color: 'from-sky-500 to-blue-600',
+    url: '/nutrition-science/best-foods-for-healthy-aging',
+  },
+  {
+    title: 'Why Muscle Loss Happens as You Age',
+    description:
+      'Sarcopenia is gradual loss of strength and mass—food quality, protein timing, and resistance training are the practical brakes.',
+    category: 'Nutrition · Eating over 50',
+    readTime: '7 min read',
+    color: 'from-blue-500 to-indigo-600',
+    url: '/nutrition-science/why-muscle-loss-happens-as-you-age',
+  },
+  {
+    title: 'Why Recovery Takes Longer After 50',
+    description:
+      'Protein synthesis, inflammation, and sleep architecture shift—meals and rest need a gentler, steadier plan than “push through.”',
+    category: 'Nutrition · Eating over 50',
+    readTime: '6 min read',
+    color: 'from-indigo-500 to-violet-600',
+    url: '/nutrition-science/why-recovery-takes-longer-after-50',
+  },
+  {
+    title: 'Why Kids Reject Vegetables',
+    description:
+      'Bitterness sensitivity, unfamiliar textures, and a cautious brain read many vegetables as “unknown”—biology more than defiance.',
+    category: 'Nutrition · Feeding kids',
+    readTime: '6 min read',
+    color: 'from-lime-500 to-green-600',
+    url: '/nutrition-science/why-kids-reject-vegetables',
+  },
+  {
+    title: 'How to Build Healthier Kids Meals Without Food Fights',
+    description:
+      'Small environment tweaks—predictable structure, choice within limits, and calm modeling—beat clean-plate pressure for long-term habits.',
+    category: 'Nutrition · Feeding kids',
+    readTime: '7 min read',
+    color: 'from-green-500 to-emerald-600',
+    url: '/nutrition-science/how-to-build-healthier-kids-meals-without-food-fights',
+  },
+  {
+    title: 'Why Kids Love Processed Foods',
+    description:
+      'Engineered crunch, salt–fat–sugar loops, and rapid eating strongly light up reward circuits—palatability science, not weak willpower.',
+    category: 'Nutrition · Feeding kids',
+    readTime: '6 min read',
+    color: 'from-emerald-500 to-teal-600',
+    url: '/nutrition-science/why-kids-love-processed-foods',
+  },
+  {
+    title: 'Protein for Growing Kids: What Actually Matters',
+    description:
+      'Most kids land near needs with normal portions; gaps show up as grazing, low variety, or ultra-processed patterns more than “not enough grams.”',
+    category: 'Nutrition · Feeding kids',
+    readTime: '6 min read',
+    color: 'from-teal-500 to-cyan-600',
+    url: '/nutrition-science/protein-for-growing-kids-what-actually-matters',
+  },
+  {
+    title: 'Why Breakfast Affects School Performance',
+    description:
+      'Morning fuel changes blood sugar stability, attention, and mood—what matters is a steady pattern more than one “superfood.”',
+    category: 'Nutrition · Feeding kids',
+    readTime: '6 min read',
+    color: 'from-cyan-500 to-blue-600',
+    url: '/nutrition-science/why-breakfast-affects-school-performance',
+  },
+  {
+    title: 'How to Introduce New Foods to Kids',
+    description:
+      'Repeated low-pressure exposure beats negotiation—tiny tastes, pairing with liked foods, and predictable routines build familiarity.',
+    category: 'Nutrition · Feeding kids',
+    readTime: '6 min read',
+    color: 'from-blue-500 to-indigo-600',
+    url: '/nutrition-science/how-to-introduce-new-foods-to-kids',
+  },
+  {
+    title: 'Why Some Kids Are “Always Hungry”',
+    description:
+      'Growth spurts, sleep debt, protein-poor snacks, and hyper-palatable foods can all short-circuit fullness signals in busy weeks.',
+    category: 'Nutrition · Feeding kids',
+    readTime: '6 min read',
+    color: 'from-indigo-500 to-violet-600',
+    url: '/nutrition-science/why-some-kids-are-always-hungry',
+  },
+  {
+    title: 'Why Meal Prep Actually Works',
+    description:
+      'Batching cuts decision fatigue and defaults—consistency often comes from fewer evening choices, not from superhuman discipline.',
+    category: 'Nutrition · Family meals',
+    readTime: '6 min read',
+    color: 'from-orange-500 to-amber-600',
+    url: '/nutrition-science/why-meal-prep-actually-works',
+  },
+  {
+    title: 'How to Build Balanced Family Meals',
+    description:
+      'A simple plate method—protein anchor, colorful produce, smart carbs, and a fat that satisfies—keeps weeknight cooking flexible.',
+    category: 'Nutrition · Family meals',
+    readTime: '7 min read',
+    color: 'from-amber-500 to-yellow-600',
+    url: '/nutrition-science/how-to-build-balanced-family-meals',
+  },
+  {
+    title: 'Why Healthy Eating Feels Hard',
+    description:
+      'Modern food environments prioritize speed, novelty, and calories per dollar—your brain is navigating engineered convenience, not laziness.',
+    category: 'Nutrition · Family meals',
+    readTime: '6 min read',
+    color: 'from-yellow-500 to-lime-600',
+    url: '/nutrition-science/why-healthy-eating-feels-hard',
+  },
+  {
+    title: 'How to Eat Better Without Giving Up Comfort Food',
+    description:
+      'Satisfaction and identity foods belong in a sustainable plan—restriction-only plans break first when stress arrives.',
+    category: 'Nutrition · Family meals',
+    readTime: '6 min read',
+    color: 'from-lime-500 to-green-600',
+    url: '/nutrition-science/how-to-eat-better-without-giving-up-comfort-food',
+  },
+  {
+    title: 'Why Portion Sizes Have Changed So Much',
+    description:
+      'Packages, restaurant plates, and “value” sizing reset what looks normal—your eyes stop being a reliable calorie gauge.',
+    category: 'Nutrition · Family meals',
+    readTime: '6 min read',
+    color: 'from-green-500 to-emerald-600',
+    url: '/nutrition-science/why-portion-sizes-have-changed-so-much',
+  },
+  {
+    title: 'Why Late-Night Snacking Happens',
+    description:
+      'Stress, short sleep, skipped daytime meals, and blood sugar dips team up—midnight kitchen trips are often physiology meeting habit.',
+    category: 'Nutrition · Family meals',
+    readTime: '6 min read',
+    color: 'from-emerald-500 to-teal-600',
+    url: '/nutrition-science/why-late-night-snacking-happens',
+  },
+  {
+    title: 'Why Crash Diets Fail',
+    description:
+      'Extreme cuts wake hunger hormones, cost muscle alongside fat, and teach your brain that restraint equals misery—rebounds meet biology.',
+    category: 'Nutrition · Weight & metabolism',
+    readTime: '7 min read',
+    color: 'from-rose-500 to-red-600',
+    url: '/nutrition-science/why-crash-diets-fail',
+  },
+  {
+    title: 'Why Fiber Helps With Weight Control',
+    description:
+      'Fiber slows digestion, adds chew time, and shifts fermentation—fullness and steadier energy beat “willpower only” framing.',
+    category: 'Nutrition · Weight & metabolism',
+    readTime: '6 min read',
+    color: 'from-red-500 to-orange-600',
+    url: '/nutrition-science/why-fiber-helps-with-weight-control',
+  },
+  {
+    title: "Why Liquid Calories Don't Feel Filling",
+    description:
+      'Drinks clear the stomach quickly and skip many oral-texture satiety cues—your brain gets calories without the usual “meal” signals.',
+    category: 'Nutrition · Weight & metabolism',
+    readTime: '6 min read',
+    color: 'from-orange-500 to-amber-600',
+    url: '/nutrition-science/why-liquid-calories-dont-feel-filling',
+  },
+  {
+    title: 'Why High-Protein Diets Feel Easier',
+    description:
+      'Protein shifts satiety hormones and helps protect lean mass—many people simply feel less “white-knuckle hungry” day to day.',
+    category: 'Nutrition · Weight & metabolism',
+    readTime: '6 min read',
+    color: 'from-amber-500 to-yellow-600',
+    url: '/nutrition-science/why-high-protein-diets-feel-easier',
+  },
+  {
+    title: 'Cooking for Aging Parents: Nutrition That Matters',
+    description:
+      'Prioritize protein anchors, hydration habits, appetite shifts, and easy-to-chew textures—safety and enjoyment share the plate.',
+    category: 'Nutrition · Seniors & families',
+    readTime: '7 min read',
+    color: 'from-violet-500 to-purple-600',
+    url: '/nutrition-science/cooking-for-aging-parents-nutrition-that-matters',
+  },
+  {
+    title: 'Easy High-Protein Meals for Older Adults',
+    description:
+      'Simple skillet patterns, grocery shortcuts, and soft-but-substantial options keep strength practical on low-energy days.',
+    category: 'Nutrition · Seniors & families',
+    readTime: '6 min read',
+    color: 'from-purple-500 to-fuchsia-600',
+    url: '/nutrition-science/easy-high-protein-meals-for-older-adults',
+  },
+  {
+    title: 'Nutrition for Busy Families',
+    description:
+      'Defaults beat ideals—batch proteins, frozen vegetables, and repeatable templates beat chasing picture-perfect from-scratch every night.',
+    category: 'Nutrition · Seniors & families',
+    readTime: '6 min read',
+    color: 'from-fuchsia-500 to-pink-600',
+    url: '/nutrition-science/nutrition-for-busy-families',
+  },
+  {
+    title: 'Why Family Dinners Matter',
+    description:
+      'Shared tables model pacing, variety, and conversation—kids pick up eating norms from what they see repeated calmly.',
+    category: 'Nutrition · Seniors & families',
+    readTime: '6 min read',
+    color: 'from-pink-500 to-rose-600',
+    url: '/nutrition-science/why-family-dinners-matter',
   },
 ];
 
@@ -1880,7 +2109,12 @@ export const ARTICLE_TABS: { id: TabId; label: string; category: 'FIX_IT' | 'ALL
   { id: 'coffee', label: 'Coffee', category: 'Coffee Science' },
   { id: 'sauces', label: 'Sauces', category: 'Sauce Science' },
   { id: 'baking', label: 'Baking science', category: 'Baking Science' },
-  { id: 'nutrition', label: 'Nutrition', category: 'Nutrition' },
+  { id: 'nutrition', label: 'Nutrition (all)', category: 'Nutrition' },
+  { id: 'nutrition-over-50', label: 'Eating over 50', category: 'Nutrition · Eating over 50' },
+  { id: 'nutrition-kids', label: 'Feeding kids', category: 'Nutrition · Feeding kids' },
+  { id: 'nutrition-family', label: 'Family meals', category: 'Nutrition · Family meals' },
+  { id: 'nutrition-weight', label: 'Weight & metabolism', category: 'Nutrition · Weight & metabolism' },
+  { id: 'nutrition-seniors', label: 'Seniors & families', category: 'Nutrition · Seniors & families' },
   { id: 'all', label: 'All', category: 'ALL' },
 ];
 

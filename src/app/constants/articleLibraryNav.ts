@@ -10,6 +10,11 @@ export const ARTICLE_LIBRARY_TAB_IDS = [
   'sauces',
   'baking',
   'nutrition',
+  'nutrition-over-50',
+  'nutrition-kids',
+  'nutrition-family',
+  'nutrition-weight',
+  'nutrition-seniors',
   'all',
 ] as const;
 

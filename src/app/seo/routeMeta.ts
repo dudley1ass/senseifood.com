@@ -292,6 +292,141 @@ const SEO_OVERRIDES: Record<string, SeoOverride> = {
     description:
       'Fiber slows glucose absorption and supports fermentation metabolites—whole-food patterns beyond supplement shortcuts.',
   },
+  '/nutrition-science/best-foods-for-healthy-aging': {
+    title: 'Best foods for healthy aging: density, protein & fiber',
+    description:
+      'Prioritize nutrient-dense plates, enough protein, fiber, and anti-inflammatory patterns—practical aging nutrition without obsession.',
+  },
+  '/nutrition-science/cooking-for-aging-parents-nutrition-that-matters': {
+    title: 'Cooking for aging parents: protein, hydration & ease',
+    description:
+      'Focus on protein anchors, reliable hydration, appetite changes, and textures that are easy to chew and enjoy.',
+  },
+  '/nutrition-science/easy-high-protein-meals-for-older-adults': {
+    title: 'Easy high-protein meals for older adults',
+    description:
+      'Simple skillet templates, grocery shortcuts, and soft-but-filling options for strength and steady energy.',
+  },
+  '/nutrition-science/how-to-build-balanced-family-meals': {
+    title: 'Balanced family meals: practical plate building',
+    description:
+      'A flexible plate method for protein, vegetables, carbs, and fats that survives busy weeknights.',
+  },
+  '/nutrition-science/how-to-build-healthier-kids-meals-without-food-fights': {
+    title: 'Healthier kids meals without food fights',
+    description:
+      'Structure, choices within limits, and environment tweaks beat pressure and negotiation at the table.',
+  },
+  '/nutrition-science/how-to-eat-better-without-giving-up-comfort-food': {
+    title: 'Eat better without giving up comfort food',
+    description:
+      'Satisfaction and favorite foods belong in sustainable plans—consistency beats perfection when stress hits.',
+  },
+  '/nutrition-science/how-to-introduce-new-foods-to-kids': {
+    title: 'Introduce new foods to kids: low-pressure exposure',
+    description:
+      'Repeated tiny tastes, pairing with liked foods, and calm routines build familiarity better than bribery.',
+  },
+  '/nutrition-science/nutrition-for-busy-families': {
+    title: 'Nutrition for busy families: defaults that stick',
+    description:
+      'Batch proteins, frozen vegetables, and repeatable templates beat chasing idealized scratch cooking every night.',
+  },
+  '/nutrition-science/protein-for-growing-kids-what-actually-matters': {
+    title: 'Protein for growing kids: needs vs myths',
+    description:
+      'What most kids actually need, common misunderstandings, and simple whole-food patterns that cover growth.',
+  },
+  '/nutrition-science/why-appetite-changes-after-50': {
+    title: 'Why appetite changes after 50',
+    description:
+      'Hormones, medications, and sensory shifts can blunt hunger cues—eating patterns change even without “trying.”',
+  },
+  '/nutrition-science/why-breakfast-affects-school-performance': {
+    title: 'Breakfast and school performance: steady fuel',
+    description:
+      'Morning meals influence blood sugar stability, attention, and mood—patterns matter as much as labels.',
+  },
+  '/nutrition-science/why-crash-diets-fail': {
+    title: 'Why crash diets fail: hormones, muscle & rebound',
+    description:
+      'Extreme restriction fights hunger biology and muscle preservation—slower change often wins long term.',
+  },
+  '/nutrition-science/why-family-dinners-matter': {
+    title: 'Why family dinners matter for habits & connection',
+    description:
+      'Shared meals shape pacing, variety, and norms—kids absorb eating culture from what they see repeated.',
+  },
+  '/nutrition-science/why-fiber-helps-with-weight-control': {
+    title: 'Fiber and weight control: fullness & steady energy',
+    description:
+      'How fiber changes satiety, digestion speed, and post-meal energy—beyond counting calories alone.',
+  },
+  '/nutrition-science/why-healthy-eating-feels-hard': {
+    title: 'Why healthy eating feels hard in modern food environments',
+    description:
+      'Convenience engineering, portion creep, and palatability science stack the deck—strategy beats blame.',
+  },
+  '/nutrition-science/why-high-protein-diets-feel-easier': {
+    title: 'Why higher-protein patterns feel easier to sustain',
+    description:
+      'Protein shifts satiety signals and helps protect lean mass—practical reasons many people feel less ravenous.',
+  },
+  '/nutrition-science/why-hydration-gets-harder-with-age': {
+    title: 'Why hydration gets harder with age',
+    description:
+      'Weaker thirst signaling and shifting fluid balance raise dehydration risk before obvious thirst.',
+  },
+  '/nutrition-science/why-kids-love-processed-foods': {
+    title: 'Why kids love processed foods: reward & texture',
+    description:
+      'Salt, sugar, fat combinations and engineered textures strongly activate reward circuits—biology meets formulation.',
+  },
+  '/nutrition-science/why-kids-reject-vegetables': {
+    title: 'Why kids reject vegetables: bitterness & novelty',
+    description:
+      'Sensitivity to bitter compounds, texture caution, and evolutionary food neophobia explain picky patterns.',
+  },
+  '/nutrition-science/why-late-night-snacking-happens': {
+    title: 'Late-night snacking: stress, sleep & blood sugar',
+    description:
+      'Why evenings unravel into extra calories—habits meet physiology, with practical levers to test.',
+  },
+  '/nutrition-science/why-liquid-calories-dont-feel-filling': {
+    title: "Liquid calories and satiety: why drinks don't fill you",
+    description:
+      'Drinks bypass chewing, gastric stretch timing, and many oral cues—calories without the usual fullness signals.',
+  },
+  '/nutrition-science/why-meal-prep-actually-works': {
+    title: 'Why meal prep works: fewer decisions, better defaults',
+    description:
+      'Batching cuts decision fatigue so healthy choices become the path of least resistance at dinner time.',
+  },
+  '/nutrition-science/why-muscle-loss-happens-as-you-age': {
+    title: 'Muscle loss with age: sarcopenia basics & levers',
+    description:
+      'How sarcopenia develops and how protein plus resistance training slow the slide in real life.',
+  },
+  '/nutrition-science/why-portion-sizes-have-changed-so-much': {
+    title: 'Why portion sizes changed: packages, plates & norms',
+    description:
+      'How serving-size creep resets expectations and hunger cues—eyes stop being reliable calorie gauges.',
+  },
+  '/nutrition-science/why-protein-matters-more-after-50': {
+    title: 'Protein after 50: timing, spread meals & muscle',
+    description:
+      'Anabolic resistance and recovery shifts make protein distribution and training partners to food quality.',
+  },
+  '/nutrition-science/why-recovery-takes-longer-after-50': {
+    title: 'Why recovery takes longer after 50',
+    description:
+      'Protein synthesis, inflammation, and sleep architecture change—gentler plans beat “push through” alone.',
+  },
+  '/nutrition-science/why-some-kids-are-always-hungry': {
+    title: 'Why some kids seem always hungry',
+    description:
+      'Growth spurts, sleep, protein balance, and ultra-processed snacks can all skew fullness and grazing.',
+  },
   '/baking-science/why-butter-temperature-matters': {
     title: 'Butter temp in baking: cold vs soft vs melted',
     description:
