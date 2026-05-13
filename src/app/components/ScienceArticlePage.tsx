@@ -282,7 +282,7 @@ export function ScienceArticlePage({ spec }: Props) {
             </div>
           </div>
 
-          <p className="text-xl leading-relaxed text-foreground/80 mb-8">{spec.intro}</p>
+          <p className="text-xl leading-relaxed text-foreground/80 mb-8 whitespace-pre-line">{spec.intro}</p>
 
           {spec.sections.map((sec) => (
             <section key={sec.heading}>
