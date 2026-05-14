@@ -1,2 +1,21 @@
 /favicon.ico    /favicon.svg    200
+
+# Legacy / mistaken URLs (GSC Soft 404) → canonical article paths
+/types-of-cookies    /articles    301
+/types-of-pies       /articles    301
+/types-of-ice-cream  /articles    301
+/articles/why-cookies-spread        /cookie-science/why-cookies-spread        301
+/articles/brown-sugar-vs-white-sugar  /cookie-science/brown-sugar-vs-white-sugar  301
+/articles/why-cookies-turn-hard      /cookie-science/why-cookies-turn-hard      301
+/articles/why-bread-rises            /bread-science/why-bread-rises            301
+/articles/how-yeast-works            /bread-science/how-yeast-works            301
+/articles/why-cakes-dome             /cake-science/why-cakes-dome             301
+/articles/why-cakes-collapse         /cake-science/why-cakes-collapse         301
+/articles/why-cakes-sink             /cake-science/why-cakes-sink             301
+/articles/why-pie-crust-is-flaky     /pie-science/why-pie-crust-is-flaky     301
+/articles/why-ice-cream-gets-icy     /ice-cream-science/why-ice-cream-gets-icy     301
+/articles/coffee-extraction-science  /coffee-science/coffee-extraction-science  301
+/articles/why-coffee-tastes-bitter   /coffee-science/why-coffee-tastes-bitter   301
+/articles/why-coffee-tastes-sour     /coffee-science/why-coffee-tastes-sour     301
+
 /*    /index.html   200

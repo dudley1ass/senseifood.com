@@ -108,10 +108,13 @@ import ProteinForGrowingKidsWhatActuallyMatters from './pages/ProteinForGrowingK
 import WhyAppetiteChangesAfter50 from './pages/WhyAppetiteChangesAfter50';
 import WhyBreakfastAffectsSchoolPerformance from './pages/WhyBreakfastAffectsSchoolPerformance';
 import WhyCrashDietsFail from './pages/WhyCrashDietsFail';
+import WhyEvolutionTunedUsForSugarAndFat from './pages/WhyEvolutionTunedUsForSugarAndFat';
 import WhyFamilyDinnersMatter from './pages/WhyFamilyDinnersMatter';
 import WhyFiberHelpsWithWeightControl from './pages/WhyFiberHelpsWithWeightControl';
+import WhyFriedFoodTastesSoGoodToHumanBrains from './pages/WhyFriedFoodTastesSoGoodToHumanBrains';
 import WhyHealthyEatingFeelsHard from './pages/WhyHealthyEatingFeelsHard';
 import WhyHighProteinDietsFeelEasier from './pages/WhyHighProteinDietsFeelEasier';
+import WhyHumansCraveJunkFoodMoreThanVegetables from './pages/WhyHumansCraveJunkFoodMoreThanVegetables';
 import WhyHydrationGetsHarderWithAge from './pages/WhyHydrationGetsHarderWithAge';
 import WhyKidsLoveProcessedFoods from './pages/WhyKidsLoveProcessedFoods';
 import WhyKidsRejectVegetables from './pages/WhyKidsRejectVegetables';
@@ -122,7 +125,10 @@ import WhyMuscleLossHappensAsYouAge from './pages/WhyMuscleLossHappensAsYouAge';
 import WhyPortionSizesHaveChangedSoMuch from './pages/WhyPortionSizesHaveChangedSoMuch';
 import WhyProteinMattersMoreAfter50 from './pages/WhyProteinMattersMoreAfter50';
 import WhyRecoveryTakesLongerAfter50 from './pages/WhyRecoveryTakesLongerAfter50';
+import WhySaltMakesSweetDessertsTasteLessFlat from './pages/WhySaltMakesSweetDessertsTasteLessFlat';
 import WhySomeKidsAreAlwaysHungry from './pages/WhySomeKidsAreAlwaysHungry';
+import WhyStressReshapesAppetiteAndSnacking from './pages/WhyStressReshapesAppetiteAndSnacking';
+import WhyUltraProcessedFoodWorksWithYourBiology from './pages/WhyUltraProcessedFoodWorksWithYourBiology';
 
 export const articleContentRoutes = [
   { path: 'bread-science/why-bread-doesnt-rise', Component: WhyBreadDoesntRise },
@@ -206,10 +212,13 @@ export const articleContentRoutes = [
   { path: 'nutrition-science/why-appetite-changes-after-50', Component: WhyAppetiteChangesAfter50 },
   { path: 'nutrition-science/why-breakfast-affects-school-performance', Component: WhyBreakfastAffectsSchoolPerformance },
   { path: 'nutrition-science/why-crash-diets-fail', Component: WhyCrashDietsFail },
+  { path: 'nutrition-science/why-evolution-tuned-us-for-sugar-and-fat', Component: WhyEvolutionTunedUsForSugarAndFat },
   { path: 'nutrition-science/why-family-dinners-matter', Component: WhyFamilyDinnersMatter },
   { path: 'nutrition-science/why-fiber-helps-with-weight-control', Component: WhyFiberHelpsWithWeightControl },
+  { path: 'nutrition-science/why-fried-food-tastes-so-good-to-human-brains', Component: WhyFriedFoodTastesSoGoodToHumanBrains },
   { path: 'nutrition-science/why-healthy-eating-feels-hard', Component: WhyHealthyEatingFeelsHard },
   { path: 'nutrition-science/why-high-protein-diets-feel-easier', Component: WhyHighProteinDietsFeelEasier },
+  { path: 'nutrition-science/why-humans-crave-junk-food-more-than-vegetables', Component: WhyHumansCraveJunkFoodMoreThanVegetables },
   { path: 'nutrition-science/why-hydration-gets-harder-with-age', Component: WhyHydrationGetsHarderWithAge },
   { path: 'nutrition-science/why-kids-love-processed-foods', Component: WhyKidsLoveProcessedFoods },
   { path: 'nutrition-science/why-kids-reject-vegetables', Component: WhyKidsRejectVegetables },
@@ -220,7 +229,10 @@ export const articleContentRoutes = [
   { path: 'nutrition-science/why-portion-sizes-have-changed-so-much', Component: WhyPortionSizesHaveChangedSoMuch },
   { path: 'nutrition-science/why-protein-matters-more-after-50', Component: WhyProteinMattersMoreAfter50 },
   { path: 'nutrition-science/why-recovery-takes-longer-after-50', Component: WhyRecoveryTakesLongerAfter50 },
+  { path: 'nutrition-science/why-salt-makes-sweet-desserts-taste-less-flat', Component: WhySaltMakesSweetDessertsTasteLessFlat },
   { path: 'nutrition-science/why-some-kids-are-always-hungry', Component: WhySomeKidsAreAlwaysHungry },
+  { path: 'nutrition-science/why-stress-reshapes-appetite-and-snacking', Component: WhyStressReshapesAppetiteAndSnacking },
+  { path: 'nutrition-science/why-ultra-processed-food-works-with-your-biology', Component: WhyUltraProcessedFoodWorksWithYourBiology },
   { path: 'sauce-science/why-cream-sauces-curdle', Component: WhyCreamSaucesCurdle },
   { path: 'sauce-science/why-sauces-taste-better-the-next-day', Component: WhySaucesTasteBetterTheNextDay },
   { path: 'sauce-science/why-butter-sauces-separate', Component: WhyButterSaucesSeparate },

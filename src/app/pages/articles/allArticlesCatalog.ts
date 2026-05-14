@@ -24,6 +24,7 @@ export function senseiPeiForArticle(category: string, url: string): string {
   if (category === 'Sauce Science' || url.startsWith('/sauce-science/')) return 'Sauce Sensei';
   if (category === 'Cookie Science') return 'CookieSensei';
   if (category === 'Bread Science') return 'Bread Sensei';
+  if (category.startsWith('Human appetite ·')) return 'SenseiFood';
   if (
     category === 'Baking Science' ||
     category === 'Nutrition' ||
@@ -2086,6 +2087,64 @@ const TOPIC_GAP_ARTICLE_CATALOG_ROWS: ArticleCardBase[] = [
   },
 ];
 
+/** Human appetite / brain–flavor–evolution series (library tabs: human-brain, human-chemistry, human-evolution). */
+const HUMAN_APPETITE_ARTICLE_ROWS: ArticleCardBase[] = [
+  {
+    title: 'Why Humans Crave Junk Food More Than Vegetables',
+    description:
+      'Energy density, speed-eating textures, salt–fat–sugar synergy, and dopamine-friendly novelty meet a brain that evolved to notice calories fast.',
+    category: 'Human appetite · Brain & behavior',
+    readTime: '9 min read',
+    color: 'from-indigo-500 to-violet-600',
+    url: '/nutrition-science/why-humans-crave-junk-food-more-than-vegetables',
+  },
+  {
+    title: 'Why Stress Reshapes Appetite and Snacking',
+    description:
+      'Cortisol, sleep debt, executive fatigue, and faster-reward foods stack—stress does not “create weakness,” it shifts priorities in the nervous system.',
+    category: 'Human appetite · Brain & behavior',
+    readTime: '9 min read',
+    color: 'from-violet-500 to-purple-600',
+    url: '/nutrition-science/why-stress-reshapes-appetite-and-snacking',
+  },
+  {
+    title: 'Why Fried Food Tastes So Good to Human Brains',
+    description:
+      'Maillard browning, crispy–moist contrast, fat as flavor solvent, and aroma compounds that spike before you even swallow.',
+    category: 'Human appetite · Food chemistry',
+    readTime: '9 min read',
+    color: 'from-amber-500 to-orange-600',
+    url: '/nutrition-science/why-fried-food-tastes-so-good-to-human-brains',
+  },
+  {
+    title: 'Why Salt Makes Sweet Desserts Taste Less Flat',
+    description:
+      'Salt suppresses bitterness, lifts volatile aromas, and sharpens contrast so sugar reads brighter without always needing more sugar.',
+    category: 'Human appetite · Food chemistry',
+    readTime: '8 min read',
+    color: 'from-orange-500 to-rose-600',
+    url: '/nutrition-science/why-salt-makes-sweet-desserts-taste-less-flat',
+  },
+  {
+    title: 'Why Evolution Tuned Us for Sugar and Fat',
+    description:
+      'Sweetness signaled ripe fruit; fat carried dense calories—modern portions simply arrive faster than the old feedback loops expected.',
+    category: 'Human appetite · Evolution',
+    readTime: '9 min read',
+    color: 'from-stone-500 to-amber-700',
+    url: '/nutrition-science/why-evolution-tuned-us-for-sugar-and-fat',
+  },
+  {
+    title: 'Why Ultra-Processed Food Works With Your Biology',
+    description:
+      'Engineered textures, bliss-point seasoning, and low fiber/protein defaults are not a fair fight against stone-age appetite wiring.',
+    category: 'Human appetite · Evolution',
+    readTime: '9 min read',
+    color: 'from-amber-700 to-yellow-700',
+    url: '/nutrition-science/why-ultra-processed-food-works-with-your-biology',
+  },
+];
+
 function withSensei(row: ArticleCardBase): ArticleLibraryCard {
   return { ...row, senseiPei: senseiPeiForArticle(row.category, row.url) };
 }
@@ -2095,6 +2154,7 @@ export const ALL_ARTICLES_CATALOG: ArticleLibraryCard[] = [
   ...FOUNDATIONAL_ARTICLE_ROWS.map(withSensei),
   ...SCIENCE_GAP_AND_SAUCE_ARTICLE_ROWS.map(withSensei),
   ...TOPIC_GAP_ARTICLE_CATALOG_ROWS.map(withSensei),
+  ...HUMAN_APPETITE_ARTICLE_ROWS.map(withSensei),
 ];
 
 export const FIX_IT_URLS = new Set<string>([
@@ -2124,6 +2184,9 @@ export const ARTICLE_TABS: { id: TabId; label: string; category: 'FIX_IT' | 'ALL
   { id: 'coffee', label: 'Coffee', category: 'Coffee Science' },
   { id: 'sauces', label: 'Sauces', category: 'Sauce Science' },
   { id: 'baking', label: 'Baking science', category: 'Baking Science' },
+  { id: 'human-brain', label: 'Brain & eating', category: 'Human appetite · Brain & behavior' },
+  { id: 'human-chemistry', label: 'Flavor chemistry', category: 'Human appetite · Food chemistry' },
+  { id: 'human-evolution', label: 'Evolution', category: 'Human appetite · Evolution' },
   { id: 'nutrition', label: 'Nutrition (all)', category: 'Nutrition' },
   { id: 'nutrition-over-50', label: 'Eating over 50', category: 'Nutrition · Eating over 50' },
   { id: 'nutrition-kids', label: 'Feeding kids', category: 'Nutrition · Feeding kids' },

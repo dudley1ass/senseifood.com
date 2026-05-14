@@ -72,7 +72,7 @@ export function FeaturedExperiments() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12 md:mb-16">
           <p className="text-sm md:text-base text-purple-600/90 font-medium mb-3 max-w-2xl mx-auto">
-            Read the why — then open Fix My Recipe for baking tweaks, or the nutrition library for appetite science.
+            Start with the why—then jump into Fix My Recipe or a Sensei tool when you want to change something on the counter.
           </p>
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-5 py-2 rounded-full mb-5 shadow-md">
             <BookOpen className="w-4 h-4 shrink-0" />

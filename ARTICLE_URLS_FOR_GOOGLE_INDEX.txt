@@ -1,32 +1,33 @@
 SenseiFood Article URLs for Google Search Console Indexing
 ==============================================================
 
-Submit these URLs to Google Search Console for indexing:
+Use the live sitemap (https://senseifood.com/sitemap.xml) as the source of truth.
+Article URLs are NOT under /articles/<slug>; each lives under its topic segment.
 
 Cookie Science (3 articles):
-https://senseifood.com/articles/why-cookies-spread
-https://senseifood.com/articles/brown-sugar-vs-white-sugar
-https://senseifood.com/articles/why-cookies-turn-hard
+https://senseifood.com/cookie-science/why-cookies-spread
+https://senseifood.com/cookie-science/brown-sugar-vs-white-sugar
+https://senseifood.com/cookie-science/why-cookies-turn-hard
 
 Bread Science (2 articles):
-https://senseifood.com/articles/why-bread-rises
-https://senseifood.com/articles/how-yeast-works
+https://senseifood.com/bread-science/why-bread-rises
+https://senseifood.com/bread-science/how-yeast-works
 
 Cake Science (3 articles):
-https://senseifood.com/articles/why-cakes-dome
-https://senseifood.com/articles/why-cakes-collapse
-https://senseifood.com/articles/why-cakes-sink
+https://senseifood.com/cake-science/why-cakes-dome
+https://senseifood.com/cake-science/why-cakes-collapse
+https://senseifood.com/cake-science/why-cakes-sink
 
 Pie Science (1 article):
-https://senseifood.com/articles/why-pie-crust-is-flaky
+https://senseifood.com/pie-science/why-pie-crust-is-flaky
 
 Ice Cream Science (1 article):
-https://senseifood.com/articles/why-ice-cream-gets-icy
+https://senseifood.com/ice-cream-science/why-ice-cream-gets-icy
 
 Coffee Science (3 articles):
-https://senseifood.com/articles/coffee-extraction-science
-https://senseifood.com/articles/why-coffee-tastes-bitter
-https://senseifood.com/articles/why-coffee-tastes-sour
+https://senseifood.com/coffee-science/coffee-extraction-science
+https://senseifood.com/coffee-science/why-coffee-tastes-bitter
+https://senseifood.com/coffee-science/why-coffee-tastes-sour
 
 Additional Pages:
 https://senseifood.com/
@@ -39,18 +40,16 @@ TOTAL: 13 Articles + 2 Main Pages = 15 URLs
 To submit to Google Search Console:
 1. Go to https://search.google.com/search-console
 2. Select your senseifood.com property
-3. Go to "URL Inspection" in the left sidebar
-4. Paste each URL and click "Request Indexing"
+3. Prefer submitting https://senseifood.com/sitemap.xml under Sitemaps
 
-OR use the Bulk URL Submission method:
-1. Create a sitemap.xml (recommended)
-2. Submit sitemap to Google Search Console
+Legacy wrong paths (e.g. /articles/why-cookies-spread, /types-of-cookies) are
+301-redirected in public/_redirects to the canonical URLs above or to /articles.
 
 High-Priority URLs (High Search Volume):
-- https://senseifood.com/articles/why-cakes-sink (huge traffic potential)
-- https://senseifood.com/articles/why-cookies-turn-hard (high search volume)
-- https://senseifood.com/articles/why-coffee-tastes-sour (huge volume)
-- https://senseifood.com/articles/why-pie-crust-is-flaky (introducing Pie Science)
+- https://senseifood.com/cake-science/why-cakes-sink (huge traffic potential)
+- https://senseifood.com/cookie-science/why-cookies-turn-hard (high search volume)
+- https://senseifood.com/coffee-science/why-coffee-tastes-sour (huge volume)
+- https://senseifood.com/pie-science/why-pie-crust-is-flaky (introducing Pie Science)
 
 Gluten-Free Baking Science (5 new articles):
 https://senseifood.com/baking-science/why-gluten-matters-and-what-youre-replacing

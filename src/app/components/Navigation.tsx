@@ -1,8 +1,31 @@
 import { Menu, X } from 'lucide-react';
-import { useState } from 'react';
-import { Link } from 'react-router';
+import { useState, type MouseEvent } from 'react';
+import { Link, useLocation } from 'react-router';
+import { trackCTAClick } from '../utils/analytics';
+
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+
+  const handleLearnNav = (e: MouseEvent<HTMLAnchorElement>) => {
+    trackCTAClick('nav', 'learn', '/#learn-pillars');
+    setIsOpen(false);
+    if (location.pathname === '/') {
+      e.preventDefault();
+      document.getElementById('learn-pillars')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      window.history.replaceState(null, '', '#learn-pillars');
+    }
+  };
+
+  const handleToolsNav = (e: MouseEvent<HTMLAnchorElement>) => {
+    trackCTAClick('nav', 'tools', '/#pick-starting-point');
+    setIsOpen(false);
+    if (location.pathname === '/') {
+      e.preventDefault();
+      document.getElementById('pick-starting-point')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      window.history.replaceState(null, '', '#pick-starting-point');
+    }
+  };
 
   return (
     <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b-2 border-purple-200 shadow-sm">
@@ -15,13 +38,24 @@ export function Navigation() {
             </div>
             <div className="flex flex-col">
               <span className="text-2xl bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">SenseiFood</span>
-              <span className="text-xs text-muted-foreground -mt-1">Food Science Tools</span>
+              <span className="text-xs text-muted-foreground -mt-1">Science, nutrition &amp; tools</span>
             </div>
           </Link>
 
           {/* Desktop Navigation — matches marketing layout */}
           <div className="hidden md:flex items-center gap-8 text-[15px]">
-            <a href="/#pick-starting-point" className="text-stone-700 hover:text-purple-600 transition-colors font-medium">
+            <a
+              href="/#learn-pillars"
+              onClick={handleLearnNav}
+              className="text-stone-700 hover:text-purple-600 transition-colors font-medium"
+            >
+              Learn
+            </a>
+            <a
+              href="/#pick-starting-point"
+              onClick={handleToolsNav}
+              className="text-stone-700 hover:text-purple-600 transition-colors font-medium"
+            >
               Tools
             </a>
             <Link to="/articles" className="text-stone-700 hover:text-purple-600 transition-colors font-medium">
@@ -49,9 +83,16 @@ export function Navigation() {
         {isOpen && (
           <div className="md:hidden mt-4 pb-4 flex flex-col gap-1 border-t border-purple-100 pt-4">
             <a
+              href="/#learn-pillars"
+              className="text-stone-800 hover:text-purple-600 transition-colors py-2.5 font-medium"
+              onClick={handleLearnNav}
+            >
+              Learn
+            </a>
+            <a
               href="/#pick-starting-point"
               className="text-stone-800 hover:text-purple-600 transition-colors py-2.5 font-medium"
-              onClick={() => setIsOpen(false)}
+              onClick={handleToolsNav}
             >
               Tools
             </a>

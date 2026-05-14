@@ -131,9 +131,9 @@ function SenseiCard({ row }: { row: SenseiRow }) {
 export function SenseiMiniHeroes() {
   return (
     <section
-      id="sensei-mini-heroes"
+      id="pick-starting-point"
       aria-labelledby="sensei-mini-heroes-heading"
-      className="relative px-4 sm:px-6 pt-4 pb-8 md:pt-6 md:pb-10 bg-[#F8F7FF] border-t border-purple-100/70"
+      className="relative px-4 sm:px-6 pt-4 pb-8 md:pt-6 md:pb-10 bg-[#F8F7FF] border-t border-purple-100/70 scroll-mt-24"
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-6 md:mb-8">

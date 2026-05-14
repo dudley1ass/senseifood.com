@@ -91,10 +91,10 @@ export default function Articles() {
             Food Science Articles
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mb-8">
-            Use the tabs to jump straight to a topic—start with <strong>Fix it</strong> if something just went wrong, then
-            open the rule-based debugger to see what to try next. Practical nutrition essays (eating over 50, kids, family
-            meals, and more) are under <strong>Nutrition (all)</strong> and the nutrition sub-tabs—scroll the tab bar if you
-            do not see them.
+            Use the tabs to jump straight to a topic—<strong>Brain &amp; eating</strong>, <strong>Flavor chemistry</strong>, and{' '}
+            <strong>Evolution</strong> cover why humans crave what we crave (not recipe SEO). Start with <strong>Fix it</strong> if
+            something just went wrong in the kitchen, then open the rule-based debugger. Practical nutrition essays live under{' '}
+            <strong>Nutrition (all)</strong> and the nutrition sub-tabs—scroll the tab bar if you do not see them.
           </p>
 
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 max-w-6xl">
