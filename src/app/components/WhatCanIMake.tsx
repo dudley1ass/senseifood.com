@@ -641,7 +641,17 @@ export function WhatCanIMake() {
             <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-to-br from-green-400 to-emerald-500 rounded-full blur-2xl opacity-50 pointer-events-none" />
           </div>
 
-          <div className="order-1 lg:order-2">
+          <div className="order-1 lg:order-2 relative isolate">
+            <div
+              className="pointer-events-none absolute inset-0 z-0 flex items-center justify-center overflow-hidden"
+              aria-hidden
+            >
+              <span className="select-none whitespace-nowrap text-4xl sm:text-5xl md:text-6xl font-black uppercase tracking-[0.2em] text-emerald-700/[0.07] rotate-[-14deg] translate-y-8">
+                Coming soon
+              </span>
+            </div>
+
+            <div className="relative z-10">
             <div className="inline-flex items-center gap-2 bg-gradient-to-r from-green-500 to-emerald-600 text-white px-4 py-2 rounded-full text-sm mb-6 shadow-lg">
               <ChefHat className="w-4 h-4" />
               <span>Ingredient discovery</span>
@@ -710,6 +720,7 @@ export function WhatCanIMake() {
               >
                 Browse all tools
               </a>
+            </div>
             </div>
           </div>
         </div>

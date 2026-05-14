@@ -2,10 +2,7 @@ import { Apple, ArrowRight, BookOpen, FlaskConical, ScanSearch, Sparkles } from 
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router';
 import { articlesIndexHref } from '../constants/articleLibraryNav';
-import { trackCTAClick, trackClicksToFixRecipe, trackHomePath, trackToolStart } from '../utils/analytics';
-
-const BEANSENSEI = 'https://beansensei.senseifood.com';
-const ICECREAM_URL = 'https://icecreamsensei.senseifood.com';
+import { trackCTAClick, trackClicksToFixRecipe, trackHomePath } from '../utils/analytics';
 
 const FOOD_SCIENCE_HREF = articlesIndexHref('all');
 const NUTRITION_HREF = articlesIndexHref('nutrition');
@@ -51,23 +48,6 @@ export function Hero() {
     trackClicksToFixRecipe('home_pillar');
   };
 
-  const handleBakeClick = () => {
-    trackHomePath('bake', 'home_hero');
-    trackCTAClick('home_hero', 'path_bake', '#pick-starting-point');
-  };
-
-  const handleBrewClick = () => {
-    trackHomePath('brew', 'home_hero');
-    trackCTAClick('home_hero', 'path_brew', BEANSENSEI);
-    trackToolStart('BeanSensei', 'home_hero_brew');
-  };
-
-  const handleCreateClick = () => {
-    trackHomePath('create', 'home_hero');
-    trackCTAClick('home_hero', 'path_create', ICECREAM_URL);
-    trackToolStart('IceCreamSensei', 'home_hero_create');
-  };
-
   const handleIngredientsClick = () => {
     trackHomePath('ingredients', 'home_hero');
     trackCTAClick('home_hero', 'start_with_ingredients', '#ingredient-picker');
@@ -92,9 +72,8 @@ export function Hero() {
             Learn why food works
           </h1>
           <p className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-4">
-            Your brain still runs code written for scarcity—while modern food is loud on purpose. SenseiFood connects
-            neuroscience, chemistry, evolution, and nutrition so cravings feel less like a character flaw and more like
-            biology meeting the supermarket.
+            SenseiFood explains the science of cooking, what ingredients do in your body, and how to read a recipe like a
+            debugger—then we point you to free tools when you are ready to apply it.
           </p>
 
           <div className="max-w-2xl mx-auto mb-5 rounded-2xl border border-indigo-200/90 bg-white/85 px-4 py-3.5 shadow-sm backdrop-blur-sm">
@@ -227,63 +206,6 @@ export function Hero() {
             Open debugger →
           </span>
         </Link>
-
-        <p className="text-sm md:text-base text-muted-foreground mb-2 sm:mb-3 max-w-2xl mx-auto leading-snug">
-          Ready to build or dial something in? Pick a path—we&apos;ll send you to the right Sensei tool.
-        </p>
-
-        <div className="grid sm:grid-cols-3 gap-2 sm:gap-3 max-w-3xl mx-auto mb-2 sm:mb-3">
-          <a
-            href="#pick-starting-point"
-            onClick={handleBakeClick}
-            className="group flex flex-col items-center justify-center gap-1 rounded-xl border-2 border-amber-200 bg-gradient-to-br from-amber-50 to-orange-50 px-3 py-4 sm:py-5 shadow-md hover:shadow-lg hover:border-amber-400 hover:scale-[1.02] transition-all text-center min-h-[112px] sm:min-h-[118px]"
-          >
-            <span className="text-2xl sm:text-3xl leading-none" aria-hidden>
-              🍪
-            </span>
-            <span className="text-base sm:text-lg font-bold text-amber-900">Bake</span>
-            <span className="text-[11px] sm:text-xs text-muted-foreground leading-tight px-0.5">
-              Bread, cookies, cakes &amp; brownies
-            </span>
-            <span className="text-[11px] sm:text-xs font-medium text-amber-700 flex items-center gap-0.5 mt-0.5 opacity-80 group-hover:opacity-100">
-              Pick a baking tool <ArrowRight className="w-3 h-3 shrink-0" aria-hidden />
-            </span>
-          </a>
-
-          <a
-            href={BEANSENSEI}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={handleBrewClick}
-            className="group flex flex-col items-center justify-center gap-1 rounded-xl border-2 border-stone-200 bg-gradient-to-br from-stone-50 to-amber-50 px-3 py-4 sm:py-5 shadow-md hover:shadow-lg hover:border-stone-400 hover:scale-[1.02] transition-all text-center min-h-[112px] sm:min-h-[118px]"
-          >
-            <span className="text-2xl sm:text-3xl leading-none" aria-hidden>
-              ☕
-            </span>
-            <span className="text-base sm:text-lg font-bold text-stone-900">Brew</span>
-            <span className="text-[11px] sm:text-xs text-muted-foreground leading-tight">Coffee &amp; extraction</span>
-            <span className="text-[11px] sm:text-xs font-medium text-stone-700 flex items-center gap-0.5 mt-0.5 opacity-80 group-hover:opacity-100">
-              Open BeanSensei <ArrowRight className="w-3 h-3 shrink-0" aria-hidden />
-            </span>
-          </a>
-
-          <a
-            href={ICECREAM_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={handleCreateClick}
-            className="group flex flex-col items-center justify-center gap-1 rounded-xl border-2 border-cyan-200 bg-gradient-to-br from-cyan-50 to-blue-50 px-3 py-4 sm:py-5 shadow-md hover:shadow-lg hover:border-cyan-400 hover:scale-[1.02] transition-all text-center min-h-[112px] sm:min-h-[118px]"
-          >
-            <span className="text-2xl sm:text-3xl leading-none" aria-hidden>
-              🍨
-            </span>
-            <span className="text-base sm:text-lg font-bold text-cyan-900">Create</span>
-            <span className="text-[11px] sm:text-xs text-muted-foreground leading-tight">Ice cream &amp; frozen desserts</span>
-            <span className="text-[11px] sm:text-xs font-medium text-cyan-800 flex items-center gap-0.5 mt-0.5 opacity-80 group-hover:opacity-100">
-              Open IceCreamSensei <ArrowRight className="w-3 h-3 shrink-0" aria-hidden />
-            </span>
-          </a>
-        </div>
 
         <div className="max-w-xl mx-auto rounded-xl border-2 border-purple-200 bg-white/90 backdrop-blur-sm p-3 sm:p-4 shadow-md">
           <p className="text-xs sm:text-sm font-medium text-purple-900 mb-0.5">Tell us what you have</p>
