@@ -18,18 +18,18 @@ export function Navigation() {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-[#faf8f5]/95 backdrop-blur border-b border-stone-200/90 shadow-sm">
+    <nav className="sticky top-0 z-50 bg-[#faf3e8]/95 backdrop-blur border-b border-amber-200/60 shadow-sm shadow-amber-900/5">
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2.5">
-            <div className="w-10 h-10 bg-stone-900 rounded-lg flex items-center justify-center shadow-sm">
+            <div className="w-10 h-10 bg-[#9a3412] rounded-lg flex items-center justify-center shadow-sm shadow-amber-900/20">
               <span className="text-xl" aria-hidden>
                 🧪
               </span>
             </div>
             <div className="flex flex-col">
-              <span className="text-xl font-serif font-bold text-stone-900 tracking-tight">SenseiFood</span>
-              <span className="text-[11px] text-stone-500 -mt-0.5">Where food meets how-to</span>
+              <span className="text-xl font-serif font-bold text-[#3d2914] tracking-tight">SenseiFood</span>
+              <span className="text-[11px] text-[#7a5c44] -mt-0.5">Where food meets how-to</span>
             </div>
           </Link>
 
@@ -37,14 +37,14 @@ export function Navigation() {
             <a
               href="/#home-journeys"
               onClick={(e) => scrollToHash(e, 'home-journeys', 'home-journeys', 'how_to')}
-              className="text-stone-700 hover:text-amber-900 transition-colors font-medium"
+              className="text-[#5c4535] hover:text-[#9a3412] transition-colors font-medium"
             >
               How-to
             </a>
             <a
               href="/#create-food"
               onClick={(e) => scrollToHash(e, 'create-food', 'create-food', 'tools')}
-              className="text-stone-700 hover:text-amber-900 transition-colors font-medium"
+              className="text-[#5c4535] hover:text-[#9a3412] transition-colors font-medium"
             >
               Tools
             </a>
@@ -54,14 +54,14 @@ export function Navigation() {
             <a
               href="/#about"
               onClick={(e) => scrollToHash(e, 'about', 'about', 'about')}
-              className="text-stone-700 hover:text-amber-900 transition-colors font-medium"
+              className="text-[#5c4535] hover:text-[#9a3412] transition-colors font-medium"
             >
               About
             </a>
           </div>
 
           <button
-            className="md:hidden p-2 text-stone-800"
+            className="md:hidden p-2 text-[#5c4535]"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
@@ -70,31 +70,31 @@ export function Navigation() {
         </div>
 
         {isOpen && (
-          <div className="md:hidden mt-4 pb-4 flex flex-col gap-1 border-t border-stone-200 pt-4">
+          <div className="md:hidden mt-4 pb-4 flex flex-col gap-1 border-t border-amber-200/60 pt-4">
             <a
               href="/#home-journeys"
-              className="text-stone-800 hover:text-amber-900 py-2.5 font-medium"
+              className="text-[#5c4535] hover:text-[#9a3412] py-2.5 font-medium"
               onClick={(e) => scrollToHash(e, 'home-journeys', 'home-journeys', 'how_to')}
             >
               How-to
             </a>
             <a
               href="/#create-food"
-              className="text-stone-800 hover:text-amber-900 py-2.5 font-medium"
+              className="text-[#5c4535] hover:text-[#9a3412] py-2.5 font-medium"
               onClick={(e) => scrollToHash(e, 'create-food', 'create-food', 'tools')}
             >
               Tools
             </a>
             <Link
               to="/articles"
-              className="text-stone-800 hover:text-amber-900 py-2.5 font-medium"
+              className="text-[#5c4535] hover:text-[#9a3412] py-2.5 font-medium"
               onClick={() => setIsOpen(false)}
             >
               Articles
             </Link>
             <a
               href="/#about"
-              className="text-stone-800 hover:text-amber-900 py-2.5 font-medium"
+              className="text-[#5c4535] hover:text-[#9a3412] py-2.5 font-medium"
               onClick={(e) => scrollToHash(e, 'about', 'about', 'about')}
             >
               About

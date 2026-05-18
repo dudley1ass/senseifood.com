@@ -100,7 +100,7 @@ const JOURNEYS: Journey[] = [
 
 function JourneyLinkRow({ link }: { link: JourneyLink }) {
   const className =
-    'inline-flex items-center gap-1 text-sm font-semibold text-amber-900 hover:text-amber-950 underline-offset-2 hover:underline';
+    'inline-flex items-center gap-1 text-sm font-semibold text-[#9a3412] hover:text-[#7c2d12] underline-offset-2 hover:underline';
 
   if (link.external) {
     return (
@@ -124,20 +124,20 @@ export function HomeJourneys() {
     <section
       id="home-journeys"
       aria-labelledby="home-journeys-heading"
-      className="scroll-mt-24 border-t border-stone-200/80 bg-[#f5f0e8] px-4 sm:px-6 py-14 md:py-16"
+      className="scroll-mt-24 border-t border-amber-200/50 bg-[#f0e4d4] px-4 sm:px-6 py-14 md:py-16"
     >
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-10 md:mb-12 max-w-2xl mx-auto">
-          <p className="text-[11px] sm:text-xs font-semibold uppercase tracking-[0.22em] text-amber-800/80 mb-3">
+          <p className="text-[11px] sm:text-xs font-semibold uppercase tracking-[0.22em] text-[#9a3412]/90 mb-3">
             What you can do here
           </p>
           <h2
             id="home-journeys-heading"
-            className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-stone-900 tracking-tight"
+            className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-[#3d2914] tracking-tight"
           >
             Pick a path, then go deeper
           </h2>
-          <p className="mt-3 text-sm sm:text-base text-stone-600 leading-relaxed">
+          <p className="mt-3 text-sm sm:text-base text-[#5c4535] leading-relaxed">
             Each journey links to articles and free tools you already have—fix failures, bake better, nail frozen
             texture, or eat with more clarity.
           </p>
@@ -149,18 +149,18 @@ export function HomeJourneys() {
             return (
               <article
                 key={journey.title}
-                className="flex flex-col rounded-2xl border border-stone-200/90 bg-[#faf8f5] p-5 sm:p-6 shadow-sm hover:shadow-md hover:border-stone-300/90 transition-all"
+                className="flex flex-col rounded-2xl border border-amber-200/70 bg-[#faf3e8] p-5 sm:p-6 shadow-sm shadow-amber-900/5 hover:shadow-md hover:border-amber-300/80 transition-all"
               >
                 <div className="flex items-start gap-3 mb-3">
-                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-amber-900/10 text-amber-900">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#9a3412]/12 text-[#9a3412]">
                     <Icon className="h-5 w-5" aria-hidden />
                   </span>
-                  <h3 className="font-serif text-lg sm:text-xl font-bold text-stone-900 leading-snug pt-0.5">
+                  <h3 className="font-serif text-lg sm:text-xl font-bold text-[#3d2914] leading-snug pt-0.5">
                     {journey.title}
                   </h3>
                 </div>
-                <p className="text-sm text-stone-600 leading-relaxed mb-4 flex-1">{journey.description}</p>
-                <div className="flex flex-col gap-2 pt-3 border-t border-stone-200/80">
+                <p className="text-sm text-[#5c4535] leading-relaxed mb-4 flex-1">{journey.description}</p>
+                <div className="flex flex-col gap-2 pt-3 border-t border-amber-200/60">
                   {journey.links.map((link) => (
                     <JourneyLinkRow key={link.label} link={link} />
                   ))}

@@ -30,7 +30,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#faf8f5]">
+    <div className="min-h-screen bg-[#faf3e8]">
       <Navigation />
       <Hero />
       <HomeJourneys />

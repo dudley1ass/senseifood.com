@@ -45,17 +45,17 @@ export function FeaturedExperiments() {
   return (
     <section
       id="learn-why-food-works"
-      className="scroll-mt-24 border-t border-stone-200/80 bg-[#f5f0e8] px-4 sm:px-6 pt-14 pb-20 md:pt-16 md:pb-24"
+      className="scroll-mt-24 border-t border-amber-200/50 bg-[#f0e4d4] px-4 sm:px-6 pt-14 pb-20 md:pt-16 md:pb-24"
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10 md:mb-14 max-w-2xl mx-auto">
-          <p className="text-[11px] sm:text-xs font-semibold uppercase tracking-[0.22em] text-amber-800/80 mb-3">
+          <p className="text-[11px] sm:text-xs font-semibold uppercase tracking-[0.22em] text-[#9a3412]/90 mb-3">
             Deep dives
           </p>
-          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-stone-900 tracking-tight mb-3">
+          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-[#3d2914] tracking-tight mb-3">
             Learn why food works
           </h2>
-          <p className="text-sm sm:text-base text-stone-600 leading-relaxed">
+          <p className="text-sm sm:text-base text-[#5c4535] leading-relaxed">
             Read the science first—then use the how-to paths above when you want to change something on the counter.
           </p>
         </div>
@@ -66,9 +66,9 @@ export function FeaturedExperiments() {
               key={article.url}
               to={article.url}
               onClick={() => handleArticleClick(article.title, article.url)}
-              className="group flex flex-col overflow-hidden rounded-2xl border border-stone-200/90 bg-[#faf8f5] shadow-sm hover:shadow-md hover:border-stone-300 transition-all h-full"
+              className="group flex flex-col overflow-hidden rounded-2xl border border-amber-200/70 bg-[#faf3e8] shadow-sm shadow-amber-900/5 hover:shadow-md hover:border-amber-300/80 transition-all h-full"
             >
-              <div className="relative aspect-[16/10] overflow-hidden bg-stone-200">
+              <div className="relative aspect-[16/10] overflow-hidden bg-amber-100/80">
                 <img
                   src={
                     article.url.includes('cookie')
@@ -82,20 +82,20 @@ export function FeaturedExperiments() {
                   loading="lazy"
                 />
                 <div className="absolute top-3 left-3 flex flex-wrap gap-2">
-                  <span className="rounded-full bg-stone-900/85 px-3 py-1 text-xs font-semibold text-[#faf8f5]">
+                  <span className="rounded-full bg-[#9a3412]/90 px-3 py-1 text-xs font-semibold text-[#faf3e8]">
                     {article.category}
                   </span>
-                  <span className="rounded-full bg-white/95 px-2.5 py-1 text-xs font-medium text-stone-700">
+                  <span className="rounded-full bg-[#fff7ed]/95 px-2.5 py-1 text-xs font-medium text-[#7c2d12]">
                     {article.readTime}
                   </span>
                 </div>
               </div>
               <div className="flex flex-1 flex-col p-5 sm:p-6">
-                <h3 className="font-serif text-xl font-bold text-stone-900 mb-2 leading-snug group-hover:text-amber-950 transition-colors">
+                <h3 className="font-serif text-xl font-bold text-[#3d2914] mb-2 leading-snug group-hover:text-[#9a3412] transition-colors">
                   {article.title}
                 </h3>
-                <p className="text-sm text-stone-600 leading-relaxed flex-1 mb-4">{article.description}</p>
-                <span className="inline-flex items-center gap-1 text-sm font-semibold text-amber-900">
+                <p className="text-sm text-[#5c4535] leading-relaxed flex-1 mb-4">{article.description}</p>
+                <span className="inline-flex items-center gap-1 text-sm font-semibold text-[#9a3412]">
                   Read article
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden />
                 </span>
@@ -108,13 +108,13 @@ export function FeaturedExperiments() {
           <Link
             to="/articles"
             onClick={() => trackCTAClick('home_learn_why', 'all_articles', '/articles')}
-            className="inline-flex items-center gap-2 rounded-lg bg-stone-900 text-[#faf8f5] px-8 py-3.5 text-sm font-semibold shadow-md hover:bg-stone-800 transition-colors"
+            className="inline-flex items-center gap-2 rounded-lg bg-[#9a3412] text-[#faf3e8] px-8 py-3.5 text-sm font-semibold shadow-md shadow-amber-900/15 hover:bg-[#7c2d12] transition-colors"
           >
             <BookOpen className="h-5 w-5 shrink-0" aria-hidden />
             Explore all articles
             <ArrowRight className="h-5 w-5 shrink-0" aria-hidden />
           </Link>
-          <p className="text-sm text-stone-500 mt-4">
+          <p className="text-sm text-[#7a5c44] mt-4">
             Cookies, bread, nutrition, coffee, ice cream, sauces &amp; more
           </p>
         </div>
