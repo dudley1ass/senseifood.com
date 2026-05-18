@@ -67,9 +67,9 @@ type SeoOverride = Partial<Pick<RouteSeo, 'title' | 'description'>>;
 
 const SEO_OVERRIDES: Record<string, SeoOverride> = {
   '/': {
-    title: 'SenseiFood — learn why food works: science, nutrition & recipes',
+    title: 'SenseiFood — where food meets how-to',
     description:
-      'Brains, cravings, flavor chemistry, evolution, and practical nutrition—explained for curious humans. Plus free Sensei tools and Fix My Recipe when you want to apply science in the kitchen. No signup.',
+      'Fix recipe failures, bake better bread, make smoother ice cream, and eat well—food science articles plus free Sensei builders and Fix My Recipe. No signup.',
   },
   '/articles': {
     title: 'Food science articles — baking, coffee & more | SenseiFood',

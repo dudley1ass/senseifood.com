@@ -10,8 +10,6 @@ type SenseiRow = {
   emoji: string;
   href: string;
   external: boolean;
-  cardClass: string;
-  titleClass: string;
 };
 
 const SENSEIS: SenseiRow[] = [
@@ -22,8 +20,6 @@ const SENSEIS: SenseiRow[] = [
     emoji: '🍪',
     href: 'https://cookiesensei.senseifood.com',
     external: true,
-    cardClass: 'border-amber-200/90 bg-gradient-to-br from-amber-50/90 to-orange-50/80 hover:border-amber-300',
-    titleClass: 'text-amber-950',
   },
   {
     toolName: 'CakeSensei',
@@ -32,8 +28,6 @@ const SENSEIS: SenseiRow[] = [
     emoji: '🎂',
     href: 'https://cakesensei.senseifood.com',
     external: true,
-    cardClass: 'border-pink-200/90 bg-gradient-to-br from-pink-50/90 to-purple-50/80 hover:border-pink-300',
-    titleClass: 'text-purple-950',
   },
   {
     toolName: 'PieSensei',
@@ -42,8 +36,6 @@ const SENSEIS: SenseiRow[] = [
     emoji: '🥧',
     href: 'https://piesensei.senseifood.com',
     external: true,
-    cardClass: 'border-rose-200/90 bg-gradient-to-br from-rose-50/90 to-orange-50/70 hover:border-rose-300',
-    titleClass: 'text-rose-950',
   },
   {
     toolName: 'IceCreamSensei',
@@ -52,8 +44,6 @@ const SENSEIS: SenseiRow[] = [
     emoji: '🍨',
     href: 'https://icecreamsensei.senseifood.com',
     external: true,
-    cardClass: 'border-cyan-200/90 bg-gradient-to-br from-cyan-50/90 to-blue-50/80 hover:border-cyan-300',
-    titleClass: 'text-cyan-950',
   },
   {
     toolName: 'BeanSensei',
@@ -62,8 +52,6 @@ const SENSEIS: SenseiRow[] = [
     emoji: '☕',
     href: 'https://beansensei.senseifood.com',
     external: true,
-    cardClass: 'border-stone-200/90 bg-gradient-to-br from-stone-50/90 to-amber-50/70 hover:border-stone-300',
-    titleClass: 'text-stone-900',
   },
   {
     toolName: 'BreadSensei',
@@ -72,8 +60,6 @@ const SENSEIS: SenseiRow[] = [
     emoji: '🍞',
     href: '/bread-sensei',
     external: false,
-    cardClass: 'border-amber-200/80 bg-gradient-to-br from-amber-50/80 to-yellow-50/70 hover:border-amber-300',
-    titleClass: 'text-amber-950',
   },
   {
     toolName: 'SauceSensei',
@@ -82,25 +68,23 @@ const SENSEIS: SenseiRow[] = [
     emoji: '🥄',
     href: SAUCE_SENSEI_APP_URL,
     external: true,
-    cardClass: 'border-orange-200/90 bg-gradient-to-br from-orange-50/90 to-rose-50/70 hover:border-orange-300',
-    titleClass: 'text-orange-950',
   },
 ];
 
 function SenseiCard({ row }: { row: SenseiRow }) {
   const onOpen = () => {
-    trackCTAClick('home_sensei_mini_hero', row.toolName, row.href);
-    trackToolStart(row.toolName, 'home_sensei_mini_hero');
+    trackCTAClick('home_create_food', row.toolName, row.href);
+    trackToolStart(row.toolName, 'home_create_food');
   };
 
   const inner = (
     <>
-      <span className="text-xl sm:text-2xl leading-none mb-1.5" aria-hidden>
+      <span className="text-xl sm:text-2xl leading-none mb-2" aria-hidden>
         {row.emoji}
       </span>
-      <h3 className={`text-sm sm:text-base font-bold leading-tight mb-0.5 ${row.titleClass}`}>{row.displayName}</h3>
-      <p className="text-[11px] sm:text-xs text-muted-foreground leading-snug mb-2 flex-1">{row.tagline}</p>
-      <span className={`inline-flex items-center gap-1 text-[11px] sm:text-xs font-semibold ${row.titleClass} opacity-90`}>
+      <h3 className="text-sm sm:text-base font-bold leading-tight text-stone-900 mb-0.5">{row.displayName}</h3>
+      <p className="text-[11px] sm:text-xs text-stone-600 leading-snug mb-2 flex-1">{row.tagline}</p>
+      <span className="inline-flex items-center gap-1 text-[11px] sm:text-xs font-semibold text-amber-900">
         Open
         {row.external ? (
           <ExternalLink className="w-3 h-3 shrink-0 opacity-80" aria-hidden />
@@ -111,7 +95,8 @@ function SenseiCard({ row }: { row: SenseiRow }) {
     </>
   );
 
-  const className = `group flex flex-col items-center text-center rounded-xl border px-3 py-3.5 sm:py-4 shadow-sm transition-all hover:shadow-md hover:scale-[1.02] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-500 min-h-[108px] sm:min-h-[118px] ${row.cardClass}`;
+  const className =
+    'group flex flex-col items-center text-center rounded-xl border border-stone-200 bg-[#faf8f5] px-3 py-4 shadow-sm transition-all hover:shadow-md hover:border-stone-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-900 min-h-[112px]';
 
   if (row.external) {
     return (
@@ -131,24 +116,30 @@ function SenseiCard({ row }: { row: SenseiRow }) {
 export function SenseiMiniHeroes() {
   return (
     <section
-      id="pick-starting-point"
-      aria-labelledby="sensei-mini-heroes-heading"
-      className="relative px-4 sm:px-6 pt-4 pb-8 md:pt-6 md:pb-10 bg-[#F8F7FF] border-t border-purple-100/70 scroll-mt-24"
+      id="create-food"
+      aria-labelledby="create-food-heading"
+      className="scroll-mt-24 border-t border-stone-200/80 bg-[#faf8f5] px-4 sm:px-6 py-14 md:py-16"
     >
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-6 md:mb-8">
+      {/* Legacy anchor for older links */}
+      <span id="pick-starting-point" className="sr-only scroll-mt-24" aria-hidden />
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-10 max-w-2xl mx-auto">
+          <p className="text-[11px] sm:text-xs font-semibold uppercase tracking-[0.22em] text-amber-800/80 mb-3">
+            Free builders
+          </p>
           <h2
-            id="sensei-mini-heroes-heading"
-            className="text-lg sm:text-xl font-semibold text-purple-950 tracking-tight"
+            id="create-food-heading"
+            className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-stone-900 tracking-tight"
           >
-            Pick a Sensei
+            Create your own food
           </h2>
-          <p className="text-xs sm:text-sm text-muted-foreground mt-1 max-w-xl mx-auto">
-            Same tools as above—quick links before featured articles.
+          <p className="mt-3 text-sm sm:text-base text-stone-600 leading-relaxed">
+            Real controls—hydration, ratios, extraction, emulsions—not static recipe pages. Pick a Sensei and dial it
+            in.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5 sm:gap-3 max-w-5xl mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 max-w-5xl mx-auto">
           {SENSEIS.map((row) => (
             <SenseiCard key={row.toolName} row={row} />
           ))}

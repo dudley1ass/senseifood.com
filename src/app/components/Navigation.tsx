@@ -7,71 +7,61 @@ export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
-  const handleLearnNav = (e: MouseEvent<HTMLAnchorElement>) => {
-    trackCTAClick('nav', 'learn', '/#learn-pillars');
+  const scrollToHash = (e: MouseEvent<HTMLAnchorElement>, hash: string, targetId: string, label: string) => {
+    trackCTAClick('nav', label, `/#${hash}`);
     setIsOpen(false);
     if (location.pathname === '/') {
       e.preventDefault();
-      document.getElementById('learn-pillars')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      window.history.replaceState(null, '', '#learn-pillars');
-    }
-  };
-
-  const handleToolsNav = (e: MouseEvent<HTMLAnchorElement>) => {
-    trackCTAClick('nav', 'tools', '/#pick-starting-point');
-    setIsOpen(false);
-    if (location.pathname === '/') {
-      e.preventDefault();
-      document.getElementById('pick-starting-point')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      window.history.replaceState(null, '', '#pick-starting-point');
+      document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      window.history.replaceState(null, '', `#${hash}`);
     }
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b-2 border-purple-200 shadow-sm">
+    <nav className="sticky top-0 z-50 bg-[#faf8f5]/95 backdrop-blur border-b border-stone-200/90 shadow-sm">
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-purple-600 to-pink-600 rounded-xl flex items-center justify-center shadow-lg">
-              <span className="text-2xl">🧪</span>
+          <Link to="/" className="flex items-center gap-2.5">
+            <div className="w-10 h-10 bg-stone-900 rounded-lg flex items-center justify-center shadow-sm">
+              <span className="text-xl" aria-hidden>
+                🧪
+              </span>
             </div>
             <div className="flex flex-col">
-              <span className="text-2xl bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">SenseiFood</span>
-              <span className="text-xs text-muted-foreground -mt-1">Science, nutrition &amp; tools</span>
+              <span className="text-xl font-serif font-bold text-stone-900 tracking-tight">SenseiFood</span>
+              <span className="text-[11px] text-stone-500 -mt-0.5">Where food meets how-to</span>
             </div>
           </Link>
 
-          {/* Desktop Navigation — matches marketing layout */}
           <div className="hidden md:flex items-center gap-8 text-[15px]">
             <a
-              href="/#learn-pillars"
-              onClick={handleLearnNav}
-              className="text-stone-700 hover:text-purple-600 transition-colors font-medium"
+              href="/#home-journeys"
+              onClick={(e) => scrollToHash(e, 'home-journeys', 'home-journeys', 'how_to')}
+              className="text-stone-700 hover:text-amber-900 transition-colors font-medium"
             >
-              Learn
+              How-to
             </a>
             <a
-              href="/#pick-starting-point"
-              onClick={handleToolsNav}
-              className="text-stone-700 hover:text-purple-600 transition-colors font-medium"
+              href="/#create-food"
+              onClick={(e) => scrollToHash(e, 'create-food', 'create-food', 'tools')}
+              className="text-stone-700 hover:text-amber-900 transition-colors font-medium"
             >
               Tools
             </a>
-            <Link to="/articles" className="text-stone-700 hover:text-purple-600 transition-colors font-medium">
+            <Link to="/articles" className="text-stone-700 hover:text-amber-900 transition-colors font-medium">
               Articles
             </Link>
-            <a href="/#how-it-works" className="text-stone-700 hover:text-purple-600 transition-colors font-medium">
-              How It Works
-            </a>
-            <a href="/#about" className="text-stone-700 hover:text-purple-600 transition-colors font-medium">
+            <a
+              href="/#about"
+              onClick={(e) => scrollToHash(e, 'about', 'about', 'about')}
+              className="text-stone-700 hover:text-amber-900 transition-colors font-medium"
+            >
               About
             </a>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button 
-            className="md:hidden p-2"
+          <button
+            className="md:hidden p-2 text-stone-800"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
@@ -79,41 +69,33 @@ export function Navigation() {
           </button>
         </div>
 
-        {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden mt-4 pb-4 flex flex-col gap-1 border-t border-purple-100 pt-4">
+          <div className="md:hidden mt-4 pb-4 flex flex-col gap-1 border-t border-stone-200 pt-4">
             <a
-              href="/#learn-pillars"
-              className="text-stone-800 hover:text-purple-600 transition-colors py-2.5 font-medium"
-              onClick={handleLearnNav}
+              href="/#home-journeys"
+              className="text-stone-800 hover:text-amber-900 py-2.5 font-medium"
+              onClick={(e) => scrollToHash(e, 'home-journeys', 'home-journeys', 'how_to')}
             >
-              Learn
+              How-to
             </a>
             <a
-              href="/#pick-starting-point"
-              className="text-stone-800 hover:text-purple-600 transition-colors py-2.5 font-medium"
-              onClick={handleToolsNav}
+              href="/#create-food"
+              className="text-stone-800 hover:text-amber-900 py-2.5 font-medium"
+              onClick={(e) => scrollToHash(e, 'create-food', 'create-food', 'tools')}
             >
               Tools
             </a>
             <Link
               to="/articles"
-              className="text-stone-800 hover:text-purple-600 transition-colors py-2.5 font-medium"
+              className="text-stone-800 hover:text-amber-900 py-2.5 font-medium"
               onClick={() => setIsOpen(false)}
             >
               Articles
             </Link>
             <a
-              href="/#how-it-works"
-              className="text-stone-800 hover:text-purple-600 transition-colors py-2.5 font-medium"
-              onClick={() => setIsOpen(false)}
-            >
-              How It Works
-            </a>
-            <a
               href="/#about"
-              className="text-stone-800 hover:text-purple-600 transition-colors py-2.5 font-medium"
-              onClick={() => setIsOpen(false)}
+              className="text-stone-800 hover:text-amber-900 py-2.5 font-medium"
+              onClick={(e) => scrollToHash(e, 'about', 'about', 'about')}
             >
               About
             </a>
