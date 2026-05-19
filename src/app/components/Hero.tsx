@@ -1,17 +1,41 @@
 import { ArrowRight, BookOpen, Wrench } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router';
-import { trackCTAClick, trackClicksToFixRecipe } from '../utils/analytics';
+import { trackArticleClick, trackCTAClick, trackClicksToFixRecipe } from '../utils/analytics';
 
 const HOW_TO_PROMPTS = [
-  'How to fix cookies that spread too much',
-  'How to make ice cream that is not icy',
-  'How to bake bread with a better rise',
-  'How to build a balanced plate without counting every calorie',
-  'How to correct a cake that sinks in the middle',
-  'How to dial in coffee that tastes sour or bitter',
-  'How to understand why your recipe failed',
-  'How to eat well on busy weeknights',
+  {
+    label: 'How to fix cookies that spread too much',
+    href: '/cookie-science/why-cookies-spread-too-much',
+  },
+  {
+    label: 'How to make ice cream that is not icy',
+    href: '/ice-cream-science/why-ice-cream-gets-icy',
+  },
+  {
+    label: 'How to bake bread with a better rise',
+    href: '/bread-science/why-bread-rises',
+  },
+  {
+    label: 'How to build a balanced plate without counting every calorie',
+    href: '/nutrition-science/balanced-plates-without-counting-calories',
+  },
+  {
+    label: 'How to correct a cake that sinks in the middle',
+    href: '/cake-science/why-cakes-sink',
+  },
+  {
+    label: 'How to dial in coffee that tastes sour or bitter',
+    href: '/coffee-science/how-to-debug-your-coffee',
+  },
+  {
+    label: 'How to understand why your recipe failed',
+    href: '/baking-science/how-to-use-fix-my-recipe',
+  },
+  {
+    label: 'How to eat well on busy weeknights',
+    href: '/nutrition-science/nutrition-for-busy-families',
+  },
 ] as const;
 
 const ROTATE_MS = 4200;
@@ -26,7 +50,7 @@ export function Hero() {
     return () => window.clearInterval(id);
   }, []);
 
-  const prompt = HOW_TO_PROMPTS[promptIndex];
+  const prompt = HOW_TO_PROMPTS[promptIndex]!;
 
   const scrollToCreate = () => {
     trackCTAClick('home_hero', 'create_food', '#create-food');
@@ -55,7 +79,7 @@ export function Hero() {
         </p>
 
         <h1 className="font-serif text-[1.85rem] leading-tight sm:text-4xl md:text-[2.75rem] font-bold tracking-tight text-[#3d2914] mb-4">
-          Where food meets how-to
+          Where Food Meets How-To
         </h1>
 
         <p className="text-base sm:text-lg text-[#5c4535] leading-relaxed max-w-2xl mx-auto mb-6">
@@ -67,13 +91,19 @@ export function Hero() {
           <p className="text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.2em] text-[#9a3412]/80 mb-2 text-center">
             Start here
           </p>
-          <p
-            className="font-serif text-lg sm:text-2xl text-[#3d2914] leading-snug min-h-[3rem] sm:min-h-[2.75rem] flex items-center justify-center text-center"
+          <Link
+            key={prompt.href}
+            to={prompt.href}
+            onClick={() => {
+              trackArticleClick(prompt.label);
+              trackCTAClick('home_hero', 'start_here_rotator', prompt.href);
+            }}
+            className="font-serif text-lg sm:text-2xl text-[#3d2914] leading-snug min-h-[3rem] sm:min-h-[2.75rem] flex items-center justify-center text-center hover:text-[#9a3412] hover:underline underline-offset-4 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#9a3412] rounded-sm"
             aria-live="polite"
             aria-atomic="true"
           >
-            {prompt}
-          </p>
+            {prompt.label}
+          </Link>
         </div>
 
         <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 mb-6">

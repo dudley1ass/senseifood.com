@@ -29,7 +29,7 @@ export function Navigation() {
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-serif font-bold text-[#3d2914] tracking-tight">SenseiFood</span>
-              <span className="text-[11px] text-[#7a5c44] -mt-0.5">Where food meets how-to</span>
+              <span className="text-[11px] text-[#7a5c44] -mt-0.5">Where Food Meets How-To</span>
             </div>
           </Link>
 

@@ -25,7 +25,7 @@ export function Footer() {
                 <span className="text-xl">SenseiFood</span>
               </div>
               <p className="text-sm text-[#faf3e8]/85 leading-relaxed">
-                Where food meets how-to—science articles and free Sensei tools for the kitchen.
+                Where Food Meets How-To—science articles and free Sensei tools for the kitchen.
               </p>
             </div>
 
